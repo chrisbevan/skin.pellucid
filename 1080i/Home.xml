@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="0">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+	
+		<!--testing fonts-->
+		<control type="group">
+			<posx>col-1-begin</posx>
+			<posy>row-4-begin</posy>
+			<control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>regular</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>regular text</label>
+            </control>
+
+			<control type="label">
+                <posx>0</posx>
+                <posy>1-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>regularSemibold</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>regular semibold</label>
+            </control>
+
+			<control type="label">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>regularStrong</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>regular bold</label>
+            </control>
+
+			<control type="label">
+                <posx>0</posx>
+                <posy>3-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>regularLight</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>regular light</label>
+            </control>
+
+			<control type="label">
+                <posx>0</posx>
+                <posy>4-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>small</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>small</label>
+            </control>
+
+			<control type="label">
+                <posx>0</posx>
+                <posy>5-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>smallStrong</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>small bold</label>
+            </control>
+
+			<control type="textbox">
+                <posx>6-col</posx>
+                <posy>0</posy>
+                <font>regularStrong</font>
+                <width>6-col-gutter</width>
+                <align>left</align>
+                <textcolor>selected</textcolor>
+                <height>6-row</height>
+                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </label>
+                 <autoscroll>false</autoscroll>
+				<shadowcolor>-</shadowcolor>
+            </control>
+
+			<control type="textbox">
+                <posx>6-col</posx>
+                <posy>7-row</posy>
+                <font>small</font>
+                <width>8-col-gutter</width>
+                <align>left</align>
+                <textcolor>selected</textcolor>
+                <height>6-row</height>
+                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </label>
+                <autoscroll>false</autoscroll>
+				<shadowcolor>-</shadowcolor>
+            </control>
+
+			<control type="label">
+                <posx>12-col</posx>
+                <posy>1-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>largeLight</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>Title Light</label>
+            </control>
+
+			<control type="label">
+                <posx>12-col</posx>
+                <posy>2-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>large</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>Title</label>
+            </control>
+
+			<control type="label">
+                <posx>12-col</posx>
+                <posy>3-row</posy>
+                <width>6-col-gutter</width>
+                <height>1-row</height>
+                <font>largeStrong</font>
+                <textcolor>selected</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>Title bold</label>
+            </control>
+		</control>
+	
+		
+        <!--browse controls-->
+        <control type="group">
+            <posx>col-1-begin</posx>
+			<posy>row-1-begin</posy>
+            <!--animations-->
+            <animation effect="fade" start="0" end="100" delay="500" time="600">WindowOpen</animation>
+			<animation condition="SubString(Container(9000).NumItems,3)" effect="slide" end="575,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,4)" effect="slide" end="468,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,5)" effect="slide" end="361,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,6)" effect="slide" end="254,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,7)" effect="slide" end="147,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,8)" effect="slide" end="40,0" time="0">conditional</animation>
+			<animation condition="SubString(Container(9000).NumItems,9)" effect="slide" end="-67,0" time="0">conditional</animation>
+            <control type="list" id="9000">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>2000</width>
+                <height>3-col</height>
+                <orientation>horizontal</orientation>
+                <onup>ActivateWindow(systeminfo)</onup>
+                <ondown>ActivateWindow(weather)</ondown>
+                <itemlayout width="3-col" height="3-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <height>2-col</height>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>99FFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>25</posx>
+                        <posy>-38</posy>
+                        <width>3-col</width>
+                        <height>3-col</height>
+                        <font>symbolVeryLarge</font>
+                        <textcolor>selected</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="3-col" height="3-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <height>2-col</height>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <texture diffuse="masks/circle.png" border="0">colors/selected.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>ccFFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>25</posx>
+                        <posy>-38</posy>
+                        <width>3-col</width>
+                        <height>3-col</height>
+                        <font>symbolVeryLarge</font>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item>
+						<visible>!Skin.HasSetting(hideVideo)</visible>
+                        <label>31000</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>activateWindow(videolibrary)</onclick>
+                        <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
+                    </item>
+                    <item>
+						<visible>!Skin.HasSetting(hideMusic)</visible>
+                        <label>31001</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(musiclibrary)</onclick>
+                        <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+                    </item>
+                    <item>
+						<visible>!Skin.HasSetting(hidePictures)</visible>
+                        <label>31002</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(pictures)</onclick>
+                    </item>
+					<item>
+						<visible>!Skin.HasSetting(hideGames) + System.HasAddon(script.games.rom.collection.browser)</visible>
+                        <label>31156</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>RunScript(script.games.rom.collection.browser)</onclick>
+                    </item>
+					<item>
+						<visible>!Skin.HasSetting(hidePrograms)</visible>
+                        <label>0</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(programs,addons,return)</onclick>
+                    </item>
+					<item>
+						<visible>!Skin.HasSetting(hideSearch)</visible>
+                        <label>137</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>RunScript(script.globalsearch)</onclick>
+						<onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+						<onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                    </item>
+					<item>
+						<visible>!Skin.HasSetting(hideFavourites)</visible>
+                        <label>1036</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ReplaceWindow(favourites)</onclick>
+                    </item>
+                    <item>
+                        <label>5</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(settings)</onclick>
+                    </item>
+                    <item>
+                        <label>31004</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(ShutdownMenu)</onclick>
+                    </item>
+                </content>
+            </control>
+        </control>		
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>WindowID</include>
+            <label>Home.xml</label>
+        </control>
+    </controls>
+</window>

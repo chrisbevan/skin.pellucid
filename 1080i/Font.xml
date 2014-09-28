@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fonts>
+    <fontset id="default">
+        <!--Roboto L fontset-->
+        <!--proportional font sizes for reference 6,8,9,10,11,12,14,18,24,30,36,48,60,72 -->
+        <font>
+            <name>veryLarge</name>
+            <filename>roboto/black.ttf</filename>
+            <size>195</size>
+        </font>
+        <font>
+            <name>large</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>largeStrong</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>largeLight</name>
+            <filename>roboto/light.ttf</filename>
+            <size>60</size>
+        </font>
+        <font>
+            <name>medium</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>48</size>
+        </font>
+        <font>
+            <name>mediumStrong</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>48</size>
+        </font>
+        <font>
+            <name>regular</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>36</size>
+			<linespacing>1.38</linespacing>
+        </font>
+        <font>
+            <name>regularStrong</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>36</size>
+			<linespacing>1.38</linespacing>
+        </font>
+        <font>
+            <name>regularSemibold</name>
+            <filename>roboto/medium.ttf</filename>
+            <size>36</size>
+			<linespacing>1.38</linespacing>
+        </font>
+        <font>
+            <name>regularLight</name>
+            <filename>roboto/light.ttf</filename>
+            <size>36</size>
+			<linespacing>1.38</linespacing>
+        </font>
+        <font>
+            <name>small</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>30</size>
+			<linespacing>1.38</linespacing>
+        </font>
+        <font>
+            <name>smallStrong</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>30</size>
+            <linespacing>1.0</linespacing>
+        </font>
+       
+        <!--element specific-->
+        
+        <font>
+            <name>symbol</name>
+            <filename>symbol.ttf</filename>
+            <size>20</size>
+            <style></style>
+        </font>
+        <font>
+            <name>symbolSmall</name>
+            <filename>symbol.ttf</filename>
+            <size>14</size>
+            <style></style>
+        </font>
+        <font>
+            <name>symbolLarge</name>
+            <filename>symbol.ttf</filename>
+            <size>36</size>
+            <style></style>
+        </font>
+        <font>
+            <name>symbolVeryLarge</name>
+            <filename>symbol.ttf</filename>
+            <size>96</size>
+            <style></style>
+        </font>
+		<font>
+			<name>symbolWeather</name>
+			<filename>weather.ttf</filename>
+			<size>180</size>
+		</font>
+        <!-- Required for system -->
+        <font>
+            <name>font13</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>30</size>
+        </font>
+    </fontset>
+</fonts>
