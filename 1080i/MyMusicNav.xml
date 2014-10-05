@@ -15,36 +15,13 @@
                 <control type="group">
                     <posx>col-1-begin</posx>
                     <posy>row-2-begin</posy>
-                    <include>dateTime</include>
                     <include>menuItems</include>
                 </control>
-                <!--Folder titles-->
-                <control type="group">
-                    <posx>col-4-begin</posx>
-                    <posy>row-2-begin</posy>
-                    <!--source title-->
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>18-col</width>
-                        <font>pageTitle</font>
-                        <label>$VAR[listTitle]</label>
-                        <textcolor>selected</textcolor>
-                    </control>
-                    <!--source subtitle-->
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>45</posy>
-                        <width>24-col</width>
-                        <font>regular</font>
-                        <label>$VAR[listSubTitle]</label>
-                        <textcolor>selected</textcolor>
-                    </control>
-                </control>
+                
                 <!--Main content listing-->
                 <control type="group" id="9999">
-                    <posx>col-4-begin</posx>
-                    <posy>row-2-begin</posy>
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
                     <!--source content-->
                     <control type="group" id="9500">
                         <include>viewMusicList</include>
@@ -66,10 +43,9 @@
                 </control>
                 <!--Sort / misc labels (footer)-->
                 <control type="group">
-                    <visible>SubString(skin.string(showRecentMusicItems),false)</visible>
                     <posx>col-4-begin</posx>
                     <posy>row-18-begin</posy>
-					<include>mediaListFooter</include>
+					<!--<include>mediaListFooter</include>-->
                 </control>
             </control>
         </control>

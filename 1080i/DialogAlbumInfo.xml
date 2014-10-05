@@ -261,7 +261,7 @@
                     <align>left</align>
                     <font>pageTitle</font>
                     <textcolor>black</textcolor>
-                    <label>$INFO[ListItem.album]</label>
+                    <label>[B]$INFO[listitem.artist][/B] $INFO[ListItem.album]</label>
 					<scroll>true</scroll>
 					<shadowcolor>-</shadowcolor>
                 </control>
@@ -272,19 +272,19 @@
                     <align>left</align>
                     <font>itemTitleSmall</font>
                     <textcolor>black</textcolor>
-                    <label>$INFO[listitem.artist]$INFO[Listitem.year, - ,]</label>
+                    <label>$INFO[Listitem.year]</label>
 					<shadowcolor>-</shadowcolor>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>132</posy>
-                    <font>textboxExtraLeading</font>
+                    <posy>2-row</posy>
+                    <font>small</font>
                     <width>8-col-gutter</width>
                     <align>left</align>
                     <textcolor>selected</textcolor>
                     <height>528</height>
-                    <label>[B]$INFO[ListItem.Property(Album_Description)][/B]</label>
+                    <label>$INFO[ListItem.Property(Album_Description)]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"></autoscroll>
 					<shadowcolor>-</shadowcolor>
                 </control>        
