@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!--video submenu items-->
+    <include name="videoSideMenu">
+        <control type="button" id="501">
+            <description>Video Playlist</description>
+            <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + IntegerGreaterThan(Playlist.Length(video),0)</visible>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-7-begin</textoffsetx>
+            <label>31123</label>
+            <onclick>right</onclick>
+            <onclick>ActivateWindow(videoplaylist)</onclick>
+        </control>
+        <control type="button" id="502">
+            <description>Search (videos)</description>
+            <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + System.HasAddon(script.globalsearch)</visible>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>137</label>
+            <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+            <onclick>activateWindow(videos,movietitles)</onclick>
+            <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
+            <onclick>right</onclick>
+        </control>
+        <control type="button" id="503">
+            <description>Search (PVR)</description>
+            <visible>window.isactive(pvr)</visible>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>137</label>
+            <onclick>right</onclick>
+            <onclick>activateWindow(pvrguidesearch)</onclick>
+        </control>
+        <control type="button" id="3">
+            <description>Sort by</description>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>103</label>
+        </control>
+        <control type="togglebutton" id="4">
+            <description>Sort direction</description>
+            <label>31109</label>
+            <altlabel>31110</altlabel>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+        </control>
+        <control type="button" id="504">
+            <description>Timers / scheduler</description>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>31119</label>
+            <onclick>ActivateWindow(tvtimers)</onclick>
+            <onclick>Control.SetFocus(50)</onclick>
+        </control>
+        <control type="button" id="505">
+            <description>Menu shortcuts (video)</description>
+            <visible/>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>31041</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
+            <onclick>ActivateWindow(5000)</onclick>
+        </control>
+        <control type="button" id="506">
+            <description>Set recent content</description>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>31175</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
+            <onclick>ActivateWindow(5900)</onclick>
+        </control>
+        <control type="button" id="507">
+            <visible/>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>653</label>
+            <onclick>UpdateLibrary(video)</onclick>
+            <onclick>right</onclick>
+        </control>
+        <control type="radiobutton" id="14">
+            <description>Watched Toggle</description>
+            <label>20367</label>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+        </control>
+        <control type="radiobutton" id="508">
+            <description>Filter</description>
+            <visible>Container.CanFilterAdvanced</visible>
+            <label>587</label>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>right</onclick>
+            <onclick>Filter</onclick>
+        </control>
+        <control type="radiobutton" id="11">
+            <description>Unlock Shares</description>
+            <label>20336</label>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>right</onclick>
+            <onclick>xbmc.mastermode</onclick>
+            <selected>system.ismaster</selected>
+            <visible>system.haslocks</visible>
+        </control>
+    </include>
+
+    <!--music submenu items-->
+    <include name="musicSideMenu">
+        <control type="button" id="501">
+            <description>current music playlist (if available)</description>
+            <visible>MusicPlayer.Offset(0).Exists</visible>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>31123</label>
+            <onclick>right</onclick>
+            <onclick>activateWindow(musicplaylist)</onclick>
+        </control>
+        <control type="button" id="502">
+            <description>Search (music)</description>
+            <visible>System.HasAddon(script.globalsearch)</visible>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>137</label>
+            <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
+            <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+            <onclick>right</onclick>
+        </control>
+        <control type="button" id="3">
+            <description>Sort by</description>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>103</label>
+        </control>
+        <control type="togglebutton" id="4">
+            <description>Sort direction</description>
+            <label>31109</label>
+            <altlabel>31110</altlabel>
+            <align>left</align>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <alttexturefocus>colors/black.png</alttexturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+        </control>
+        <control type="button" id="503">
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>31041</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
+            <onclick>ActivateWindow(5000)</onclick>
+        </control>
+        <control type="button" id="505">
+            <description>Set recent content</description>
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>31175</label>
+            <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
+            <onclick>ActivateWindow(5900)</onclick>
+        </control>
+        <control type="button" id="504">
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>653</label>
+            <onclick>UpdateLibrary(music)</onclick>
+            <onclick>right</onclick>
+        </control>
+        <control type="radiobutton" id="20">
+            <description>Shuffle</description>
+            <visible/>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>191</label>
+        </control>
+        <control type="radiobutton" id="16">
+            <description>Party Mode!!</description>
+            <visible/>
+            <label>589</label>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+        </control>
+    </include>
+
+    <!--pictures submenu items-->
+    <include name="picturesSideMenu">
+        <!--sorting-->
+        <control type="button" id="3">
+            <description>Sort by</description>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>103</label>
+        </control>
+        <control type="togglebutton" id="4">
+            <description>Sort direction</description>
+            <label>31109</label>
+            <altlabel>31110</altlabel>
+            <align>left</align>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <alttexturefocus>colors/black.png</alttexturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+        </control>
+        <control type="button" id="500">
+            <description>Files (pictures)</description>
+            <height>54</height>
+            <width>4-col</width>
+            <font>menuTitle</font>
+            <textcolor>black</textcolor>
+            <focusedcolor>selected</focusedcolor>
+            <texturefocus>colors/black.png</texturefocus>
+            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textoffsetx>12</textoffsetx>
+            <label>1214</label>
+            <onclick>right</onclick>
+            <onclick>ActivateWindow(pictures,root)</onclick>
+        </control>
+    </include>
+</includes>

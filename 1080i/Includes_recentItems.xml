@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!--movies-->
+    <include name="movieRecentItems">
+        <control type="panel" id="9998">
+            <visible>!stringcompare(Window(Home).Property(Movies.UnWatched),0)</visible>
+            <posx>col-1-begin</posx>
+            <posy>row-5-begin</posy>
+            <width>24-col</width>
+            <height>11-row</height>
+            <onleft>9000</onleft>
+            <onup>control.setfocus(9997,$INFO[Container(9998).Position])</onup>
+            <ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
+            <onback>activateWindow(home)</onback>
+            <orientation>horizontal</orientation>
+            <animation type="windowopen">
+                <include>listSlideIn</include>
+            </animation>
+            <animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="300"/>
+            </animation>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsMoviesSource)]</content>
+            <itemlayout width="4-col" height="396">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <height>396</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
+            </itemlayout>
+            <focusedlayout width="4-col" height="396">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <height>396</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                    <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffFFFFFF</colordiffuse>
+                </control>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>44FFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>4-row</posy>
+                        <width>3-col</width>
+                        <align>center</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>5-row</posy>
+                        <width>3-col</width>
+                        <align>center</align>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[listitem.year]</label>
+                    </control>
+                </control>
+            </focusedlayout>
+        </control>
+    </include>
+    <!--tvshows-->
+    <include name="tvRecentItems">
+        <control type="panel" id="9997">
+            <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
+            <posx>col-1-begin</posx>
+            <posy>row-17-begin</posy>
+            <width>24-col</width>
+            <onleft>9000</onleft>
+            <ondown>control.setfocus(9998,$INFO[Container(9997).Position])</ondown>
+            <onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
+            <onback>activateWindow(home)</onback>
+            <orientation>horizontal</orientation>
+            <animation type="windowopen">
+                <include>listSlideIn</include>
+            </animation>
+            <animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="300"/>
+            </animation>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsEpisodesSource)]</content>
+            <itemlayout width="4-col" height="396">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <height>396</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.property(season_poster)]</texture>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
+            </itemlayout>
+            <focusedlayout width="4-col" height="396">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <height>396</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[ListItem.property(season_poster)]</texture>
+                    <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>44FFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>4-row</posy>
+                        <width>3-col</width>
+                        <align>center</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.TVshowTitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
+                        <posx>24</posx>
+                        <posy>5-row</posy>
+                        <width>3-col</width>
+                        <align>center</align>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[listitem.property(episodecount),, $LOCALIZE[16101]]</label>
+                    </control>
+                    <control type="label">
+                        <visible>SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
+                        <posx>24</posx>
+                        <posy>5-row</posy>
+                        <width>3-col</width>
+                        <align>center</align>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
+                    </control>
+                </control>
+            </focusedlayout>
+        </control>
+    </include>
+    <!--albums-->
+    <include name="albumRecentItems">
+        <control type="panel" id="9998">
+            <posx>-12</posx>
+            <posy>0</posy>
+            <width>22-col</width>
+            <height>768</height>
+            <onleft>9000</onleft>
+            <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(musicHomeItemsSource)]</content>
+            <itemlayout width="312" height="366">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>276</width>
+                    <height>273</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <bordertexture border="3" colordiffuse="22FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffFFFFFF</colordiffuse>
+                </control>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>276</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>276</width>
+                        <height>64</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>77FFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>-11</posy>
+                        <width>252</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>18</posy>
+                        <width>252</width>
+                        <font>smallMedium</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.artist]</label>
+                    </control>
+                </control>
+            </itemlayout>
+            <focusedlayout width="312" height="366">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>276</width>
+                    <height>273</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffFFFFFF</colordiffuse>
+                </control>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>276</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>276</width>
+                        <height>64</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/white.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>-11</posy>
+                        <width>252</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>18</posy>
+                        <width>252</width>
+                        <font>smallMedium</font>
+                        <textcolor>black</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.artist]</label>
+                    </control>
+                </control>
+            </focusedlayout>
+        </control>
+    </include>
+</includes>

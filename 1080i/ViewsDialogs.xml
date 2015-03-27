@@ -26,7 +26,7 @@
                     <posy>0</posy>
                     <width>7-col</width>
                     <font>itemTitle</font>
-                    <textcolor>selected</textcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
@@ -37,7 +37,7 @@
                     <align>right</align>
                     <label>$INFO[ListItem.Label2]</label>
                     <font>smallMedium</font>
-                    <textcolor>selected</textcolor>
+                    <textcolor>textActive</textcolor>
                     <selectedcolor>selected</selectedcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>

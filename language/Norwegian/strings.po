@@ -1,10 +1,10 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Maximinimalism
 # Addon id: skin.maximinimalism
 # Addon Provider: chrisbevan
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Skins\n"
+"Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "Addon Summary"
-msgid "A skin for XBMC from theDeadman"
-msgstr "Et skall for XBMC fra theDeadman"
+msgid "A skin for Kodi from theDeadman"
+msgstr "Et skall for Kodi fra theDeadman"
 
 msgctxt "Addon Description"
 msgid ""
-"Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
+"Maximinimalism is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
 msgstr "Maximinimalism er et enkelt og rent skall utformet for maksimum brukervennlighet og minimalt styr."
 
 msgctxt "#31000"
@@ -66,8 +66,8 @@ msgid "No plot info available"
 msgstr "Sammendrag ikke tilgjengelig"
 
 msgctxt "#31010"
-msgid "All Addons"
-msgstr "Alle utvidelser"
+msgid "Add-ons"
+msgstr "Utvidelser"
 
 msgctxt "#31011"
 msgid "Season"
@@ -203,10 +203,6 @@ msgctxt "#31054"
 msgid "by"
 msgstr "etter"
 
-msgctxt "#31055"
-msgid "Addons"
-msgstr "Utvidelser"
-
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr "Bildebiblioteker"
@@ -296,7 +292,7 @@ msgid "Now and Next"
 msgstr "Nå og neste"
 
 msgctxt "#31079"
-msgid "XBMC"
+msgid "Kodi"
 msgstr ""
 
 msgctxt "#31080"
@@ -534,3 +530,75 @@ msgstr "FPS"
 msgctxt "#31145"
 msgid "Items"
 msgstr "elementer"
+
+msgctxt "#31146"
+msgid "Director"
+msgstr "Regissør"
+
+msgctxt "#31147"
+msgid "Home: Hide Video"
+msgstr "Hjem: Skjul «Video»"
+
+msgctxt "#31148"
+msgid "Home: Hide Music"
+msgstr "Hjem: Skjul «Musikk»"
+
+msgctxt "#31149"
+msgid "Home: Hide Pictures"
+msgstr "Hjem: Skjul «Bilder»"
+
+msgctxt "#31150"
+msgid "Home: Hide Search"
+msgstr "Hjem: Skjul «Søk»"
+
+msgctxt "#31151"
+msgid "Home: Hide Programs"
+msgstr "Hjem: Skjul «Programmer»"
+
+msgctxt "#31152"
+msgid "Press OK to cancel"
+msgstr "Trykk OK for å avbryte"
+
+msgctxt "#31153"
+msgid "Playlist saved"
+msgstr "Spilleliste lagret"
+
+msgctxt "#31154"
+msgid "Search for Subtitles"
+msgstr "Søk etter undertekst"
+
+msgctxt "#31155"
+msgid "Adjust Subtitle Offset"
+msgstr "Endre tidsforskyvning"
+
+msgctxt "#31156"
+msgid "Games"
+msgstr "Spill"
+
+msgctxt "#31157"
+msgid "Home: Hide Games"
+msgstr "Hjem: Skjul «Spill»"
+
+msgctxt "#31158"
+msgid "Playback stopped. Press [Back] to return."
+msgstr "Avspilling stoppet. Trykk [Tilbake]."
+
+msgctxt "#31159"
+msgid "Unknown"
+msgstr "Ukjent"
+
+msgctxt "#31160"
+msgid "Home: Hide Favourites"
+msgstr "Hjem: Skjul «Favoritter»"
+
+msgctxt "#31161"
+msgid "Hide Info"
+msgstr "Skjul info"
+
+msgctxt "#31162"
+msgid "Home menu items"
+msgstr "Hjem"
+
+msgctxt "#31163"
+msgid "Low CPU power mode"
+msgstr "Lav CPU kraft modus"

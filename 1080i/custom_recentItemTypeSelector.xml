@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="5900">
+    <defaultcontrol always="true">6000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control type="group">
+            <animation type="windowopen">
+                <effect type="fade" start="0" end="100" time="300"/>
+                <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400"/>
+            </animation>
+            <animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="300"/>
+                <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
+            </animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>col-7-begin</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>500</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--titles-->
+
+            <!--set recent items type-->
+            <control type="panel" id="6000">
+                <posx>0</posx>
+                <posy>row-4-begin</posy>
+                <width>8-col</width>
+                <height>27-row</height>
+                <orientation>vertical</orientation>
+                <onup>6000</onup>
+                <onright>dialog.close(5900)</onright>
+                <itemlayout width="col-7-begin" height="2-row">
+                    <control type="label">
+                        <visible>stringcompare(skin.string(videoHomeItemsMoviesSource),ListItem.Label2) | stringcompare(skin.string(videoHomeItemsEpisodesSource),ListItem.Label2) | stringcompare(skin.string(musicHomeItemsSource),ListItem.Label2)</visible>
+                        <posx>60</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <label></label>
+                        <textcolor>50</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>col-1-begin</posx>
+                        <posy>0</posy>
+                        <width>7-col</width>
+                        <height>2-row</height>
+                        <font>menuTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>50</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="col-7-begin" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>col-7-begin</width>
+                        <height>2-row</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>50</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <visible>stringcompare(skin.string(videoHomeItemsMoviesSource),ListItem.Label2) | stringcompare(skin.string(videoHomeItemsEpisodesSource),ListItem.Label2) | stringcompare(skin.string(musicHomeItemsSource),ListItem.Label2)</visible>
+                        <posx>60</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <label></label>
+                        <textcolor>500</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>col-1-begin</posx>
+                        <posy>0</posy>
+                        <width>8-col</width>
+                        <height>2-row</height>
+                        <font>menuTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>500</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <!--video shortcuts-->
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
+                        <label>Recent Movies</label>
+                        <label2>recentmovies</label2>
+                        <onclick>Skin.SetString(videoHomeItemsMoviesSource,recentmovies)</onclick>
+                    </item>
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
+                        <label>Random Movies</label>
+                        <label2>randommovies</label2>
+                        <onclick>Skin.SetString(videoHomeItemsMoviesSource,randommovies)</onclick>
+                    </item>
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
+                        <label>Recent Episodes</label>
+                        <label2>recentepisodes</label2>
+                        <onclick>Skin.SetString(videoHomeItemsEpisodesSource,recentepisodes)</onclick>
+                    </item>
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
+                        <label>Random Episodes</label>
+                        <label2>randomepisodes</label2>
+                        <onclick>Skin.SetString(videoHomeItemsEpisodesSource,randomepisodes)</onclick>
+                    </item>
+                    <!--audio shortcuts-->
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),audio)</visible>
+                        <label>Recent Albums</label>
+                        <label2>recentalbums</label2>
+                        <onclick>Skin.SetString(musicHomeItemsSource,recentalbums)</onclick>
+                    </item>
+                    <item>
+                        <visible>stringcompare(skin.string(menuItemTypeFilter),audio)</visible>
+                        <label>Random Albums</label>
+                        <label2>randomalbums</label2>
+                        <onclick>Skin.SetString(musicHomeItemsSource,randomalbums)</onclick>
+                    </item>
+                </content>
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>custom_recentItemTypeSelector.xml</label>
+        </control>
+    </controls>
+</window>

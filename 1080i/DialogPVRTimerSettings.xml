@@ -27,7 +27,7 @@
                     <posy>44</posy>
                     <width>fullscreenWidth</width>
                     <height>1-row</height>
-                    <texture>colors/selected.png</texture>
+                    <texture>colors/white.png</texture>
                     <colordiffuse>ffffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
@@ -36,18 +36,18 @@
                     <posy>44</posy>
                     <width>1155</width>
                     <height>1-row</height>
-                    <texture>colors/selected.png</texture>
+                    <texture>colors/white.png</texture>
                     <bordertexture border="0">colors/black.png</bordertexture>
                     <bordersize>3,0,0,0</bordersize>
                     <colordiffuse>ffffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="label" id="2">
+                <control type="label">
                     <posx>12</posx>
                     <posy>44</posy>
                     <width>16-col</width>
                     <font>pageTitle</font>
-                    <label>-</label>
+                    <label>19056</label>
                     <textcolor>black</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
@@ -86,7 +86,7 @@
                             <posy>0</posy>
                             <width>1-col</width>
                             <font>symbol</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
@@ -95,7 +95,7 @@
                             <posy>2</posy>
                             <width>3-col</width>
                             <font>menuTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
@@ -107,7 +107,7 @@
                             <width>4-col</width>
                             <height>53</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -151,9 +151,9 @@
                     <align>left</align>
                     <height>54</height>
                     <font>itemTitle</font>
-                    <textcolor>selected</textcolor>
+                    <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/selected.png</texturefocus>
+                    <texturefocus>colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>12</textoffsetx>
                 </control>
@@ -168,6 +168,10 @@
                 </control>
                 <control type="edit" id="12">
                     <description>Default Edit</description>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>colors/white.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>black</focusedcolor>
                 </control>
             </control>
             <control type="group">

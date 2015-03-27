@@ -9,7 +9,7 @@
             <include>globalBackground</include>
             <!--window fader-->
             <animation type="conditional" condition="window.next(0)">
-                <effect type="fade" start="100" end="0" time="300" />
+                <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--content provider-->
             <control type="group">
@@ -27,7 +27,7 @@
                         <align>left</align>
                         <font>pageTitle</font>
                         <label>10506</label>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <!--source subtitle-->
                     <control type="label">
@@ -37,7 +37,7 @@
                         <align>left</align>
                         <font>regular</font>
                         <label>$INFO[container.Numitems,, $LOCALIZE[31145]]</label>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                 </control>
                 <!--Main content listing-->
@@ -46,7 +46,7 @@
                     <posy>row-2-begin</posy>
                     <!--source content-->
                     <control type="group">
-						<include>viewGridList</include>
+                        <include>viewGridList</include>
                         <include>viewDialogList</include>
                     </control>
                 </control>

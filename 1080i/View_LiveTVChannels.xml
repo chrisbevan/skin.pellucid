@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="liveTVChannels">
+        <control type="group">
+
+            <control type="panel" id="50">
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>24-col</width>
+                <height>22-row</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout height="2-row" width="24-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-row</width>
+                        <height>2-row</height>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="image">
+                        <posx>6-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>6-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.starttime]</label>
+                    </control>
+                    <control type="image">
+                        <posx>8-col</posx>
+                        <posy>0</posy>
+                        <width>7-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>8-col-indent</posx>
+                        <posy>0</posy>
+                        <width>7-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Title]</label>
+                    </control>
+                    <control type="image">
+                        <posx>15-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>15-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.nextstarttime]</label>
+                    </control>
+                    <control type="image">
+                        <posx>17-col</posx>
+                        <posy>0</posy>
+                        <width>7-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>17-col-indent</posx>
+                        <posy>0</posy>
+                        <width>7-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.nextTitle]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="2-row" width="20-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-row</width>
+                        <height>2-row</height>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="image">
+                        <posx>6-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>6-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.starttime]</label>
+                    </control>
+                    <control type="image">
+                        <posx>8-col</posx>
+                        <posy>0</posy>
+                        <width>7-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>8-col-indent</posx>
+                        <posy>0</posy>
+                        <width>7-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Title]</label>
+                    </control>
+                    <control type="image">
+                        <posx>15-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>15-col</posx>
+                        <posy>0</posy>
+                        <width>2-col-textbox</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.nextstarttime]</label>
+                    </control>
+                    <control type="image">
+                        <posx>17-col</posx>
+                        <posy>0</posy>
+                        <width>7-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>17-col-indent</posx>
+                        <posy>0</posy>
+                        <width>7-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.nextTitle]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

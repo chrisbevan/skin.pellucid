@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>160</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+    <allowoverlay>no</allowoverlay>
     <coordinates>
         <system>1</system>
         <posx>0</posx>
@@ -28,7 +28,7 @@
                 <posy>44</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -41,32 +41,32 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--query results-->
-            <control type="label" id="100">
+            <control type="label">
                 <posx>12</posx>
                 <posy>44</posy>
-                <width>16-col-gutter</width>
+                <width>18-col-gutter</width>
                 <height>1-row</height>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
+                <label>$LOCALIZE[31154] - $INFO[Player.Filename]</label>
                 <wrapmultiline>false</wrapmultiline>
             </control>
-            <control type="image" id="110">
-                <description>Service Logo</description>
-                <visible>false</visible>
-                <posx>0</posx>
-                <posy>3-row</posy>
-                <width>2-col</width>
-                <height>1-row</height>
-                <aspectratio>keep</aspectratio>
+            <control type="label" id="140">
+                <posx>300</posx>
+                <posy>86</posy>
+                <width>12-col</width>
+                <height>2-row</height>
+                <font>itemTitle</font>
+                <textcolor>accented</textcolor>
+                <wrapmultiline>true</wrapmultiline>
             </control>
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
                 <!--subtitle file selection-->
                 <control type="panel" id="120">
                     <posx>4-col</posx>
-                    <posy>120</posy>
+                    <posy>177</posy>
                     <width>16-col</width>
                     <height>13-row</height>
                     <onleft>150</onleft>
@@ -80,7 +80,7 @@
                             <posy>0</posy>
                             <width>12-col-gutter</width>
                             <font>itemTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label2</info>
@@ -91,7 +91,7 @@
                             <posy>0</posy>
                             <width>4-col-gutter</width>
                             <font>smallStrong</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Label] - $INFO[ListItem.ActualIcon]*</label>
@@ -103,7 +103,7 @@
                             <posy>0</posy>
                             <width>1-col</width>
                             <font>smallStrong</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>31121</label>
@@ -115,7 +115,7 @@
                             <posy>0</posy>
                             <width>1-col</width>
                             <font>smallStrong</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>31122</label>
@@ -128,7 +128,7 @@
                             <width>16-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>FFFFFFFF</colordiffuse>
                         </control>
@@ -193,21 +193,21 @@
                 </control>
             </control>
             <!--manual search button-->
-			<control type="button" id="160">
+            <control type="button" id="160">
                 <posy>120</posy>
-				<height>54</height>
+                <height>54</height>
                 <width>4-col-gutter</width>
                 <align>left</align>
                 <textoffsetx>12</textoffsetx>
                 <font>menuTitle</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <focusedcolor>black</focusedcolor>
-                <texturefocus>colors/selected.png</texturefocus>
+                <texturefocus>colors/white.png</texturefocus>
                 <label>31134</label>
-				<ondown>150</ondown>
-				<onright>120</onright>
+                <ondown>150</ondown>
+                <onright>120</onright>
             </control>
-			<!--subtitle service choice-->
+            <!--subtitle service choice-->
             <control type="group">
                 <control type="list" id="150">
                     <posx>0</posx>
@@ -215,7 +215,7 @@
                     <width>4-col-gutter</width>
                     <height>11-row</height>
                     <onright>120</onright>
-					<onup>160</onup>
+                    <onup>160</onup>
                     <scrolltime>200</scrolltime>
                     <itemlayout width="4-col" height="1-row">
                         <control type="label">
@@ -223,7 +223,7 @@
                             <posy>0</posy>
                             <width>6-col-gutter</width>
                             <font>menuTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label</info>
@@ -234,7 +234,7 @@
                             <posy>0</posy>
                             <width>6-col-gutter</width>
                             <font>menuTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label</info>
@@ -249,7 +249,7 @@
                             <width>6-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -260,7 +260,7 @@
                             <width>6-col</width>
                             <height>54</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>aaFFFFFF</colordiffuse>
                         </control>

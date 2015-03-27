@@ -1,10 +1,10 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Maximinimalism
 # Addon id: skin.maximinimalism
 # Addon Provider: chrisbevan
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Skins\n"
+"Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -17,24 +17,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "Addon Summary"
-msgid "A skin for XBMC from theDeadman"
+msgid "A skin for Kodi from theDeadman"
 msgstr ""
 
 msgctxt "Addon Description"
 msgid ""
-"Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
+"Maximinimalism is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
 msgstr ""
 
 msgctxt "#31000"
-msgid "Watch"
+msgid "Watch Videos"
 msgstr ""
 
 msgctxt "#31001"
-msgid "Listen"
+msgid "Listen to Music"
 msgstr ""
 
 msgctxt "#31002"
-msgid "Play"
+msgid "View Photos"
 msgstr ""
 
 msgctxt "#31003"
@@ -42,7 +42,7 @@ msgid "Program Addons"
 msgstr ""
 
 msgctxt "#31004"
-msgid "Power"
+msgid "Power Off"
 msgstr ""
 
 msgctxt "#31005"
@@ -85,7 +85,13 @@ msgctxt "#31014"
 msgid "title(s)"
 msgstr ""
 
-//#31015 - #31016 Empty strings
+msgctxt "#31015"
+msgid "Random Selection"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Recommended Items"
+msgstr ""
 
 msgctxt "#31017"
 msgid "Channels"
@@ -203,10 +209,6 @@ msgctxt "#31054"
 msgid "by"
 msgstr ""
 
-msgctxt "#31055"
-msgid "Add-ons"
-msgstr ""
-
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr ""
@@ -296,7 +298,7 @@ msgid "Now and Next"
 msgstr ""
 
 msgctxt "#31079"
-msgid "XBMC"
+msgid "Kodi"
 msgstr ""
 
 msgctxt "#31080"
@@ -576,15 +578,11 @@ msgid "Adjust Subtitle Offset"
 msgstr ""
 
 msgctxt "#31156"
-msgid "Games"
+msgid "Play Games"
 msgstr ""
 
 msgctxt "#31157"
 msgid "Home: Hide Games"
-msgstr ""
-
-msgctxt "#31158"
-msgid "Playback stopped. Press [Back] to return."
 msgstr ""
 
 msgctxt "#31159"
@@ -604,5 +602,61 @@ msgid "Home menu items"
 msgstr ""
 
 msgctxt "#31163"
-msgid "Disable Fanart Animations (for low powered devices)"
+msgid "Low CPU power mode"
+msgstr ""
+
+msgctxt "#31164"
+msgid "Radio"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Recordings"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Subtitle Language:"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Disable all background imagery in fullscreen music view"
+msgstr ""
+
+msgctxt "#31170"
+msgid "No recent items found"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Start music visualisation immediately upon playback"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Content Guide"
+msgstr ""
+
+msgctxt "#31173"
+msgid "No content guide available"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Rated"
+msgstr ""
+
+msgctxt "#31175"
+msgid "Set Latest Content"
+msgstr ""
+
+msgctxt "#31176"
+msgid "Recent Movies / Recent TVshows"
+msgstr ""
+
+msgctxt "#31177"
+msgid "Recent Movies / Random TVshows"
+msgstr ""
+
+msgctxt "#31178"
+msgid "Random Movies / Recent TVshows"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Random Movies / Random TVshows"
 msgstr ""

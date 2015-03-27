@@ -2,87 +2,103 @@
 <window>
     <defaultcontrol always="true">300</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <coordinates>
-		<system>2</system>
-        <origin x="0" y="540" />
-    </coordinates>
     <controls>
         <control type="group">
             <visible>!Window.IsVisible(numericinput)</visible>
-            <posx>col-3-begin</posx>
+            <posx>0</posx>
+            <posy>row-12-begin</posy>
             <!--animations-->
             <animation effect="slide" start="0,500" end="0,0" time="200" tween="sine" easing="out">Windowopen</animation>
             <animation effect="slide" start="0,0" end="0,500" time="200" tween="sine" easing="out">Windowclose</animation>
             <!--background-->
             <control type="image">
-                <posx>-240</posx>
-                <posy>-24</posy>
+                <posx>0</posx>
+                <posy>-36</posy>
                 <width>fullscreenWidth</width>
-                <height>15-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>ccffffff</colordiffuse>
+                <colordiffuse>ddffffff</colordiffuse>
             </control>
             <!--headers-->
             <control type="group">
                 <posx>col-1-begin</posx>
                 <posy>row-1-begin</posy>
                 <control type="label" id="311">
-					<description>header label</description>
-					<posx>0</posx>
+                    <description>header label</description>
+                    <posx>0</posx>
                     <posy>-64</posy>
-					<width>17-col-gutter</width>
+                    <width>24-col</width>
                     <height>1-row</height>
                     <align>center</align>
-					<font>itemTitleSmall</font>
-					<textcolor>selected</textcolor>
-				</control> 
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                </control>
                 <control type="edit" id="312">
                     <description>Edit Text</description>
                     <posx>0</posx>
                     <posy>-12</posy>
-                    <width>17-col</width>
+                    <width>24-col</width>
                     <align>center</align>
-					<onup>300</onup>
-					<ondown>309</ondown>
+                    <onup>300</onup>
+                    <ondown>309</ondown>
                 </control>
             </control>
             <!--keyboard-->
             <control type="group">
-                <posx>col-3-begin</posx>
-                <posy>2-row</posy>
+                <posx>col-6-begin</posx>
+                <posy>4-row</posy>
                 <!--row 1-->
                 <control type="group">
-                    <control type="button" id="309">
-                        <description>Layout button</description>
+                    <control type="button" id="300">
+                        <description>Done</description>
                         <posx>-72</posx>
                         <posy>0</posy>
-                        <width>4-col</width>
+                        <width>136</width>
                         <height>1-col</height>
                         <label>20177</label>
                         <onleft>111</onleft>
+                        <onright>500</onright>
+                        <onup>312</onup>
+                        <ondown>302</ondown>
+                        <texturenofocus>colors/keyunselected.png</texturenofocus>
+                        <texturefocus>colors/keyaccent.png</texturefocus>
+                        <focusedcolor>selected</focusedcolor>
+                        <textcolor>textActive</textcolor>
+                        <align>center</align>
+                        <font>buttonTitle</font>
+                    </control>
+                    <control type="button" id="500">
+                        <description>Cancel</description>
+                        <posx>70</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <height>1-col</height>
+                        <label>222</label>
+                        <onleft>300</onleft>
                         <onright>100</onright>
                         <onup>312</onup>
                         <ondown>302</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
+                        <onclick>action(close)</onclick>
                     </control>
                     <control type="button" id="100">
                         <posx>222</posx>
                         <posy>0</posy>
                         <width>1-col</width>
                         <height>1-col</height>
-                        <onleft>309</onleft>
+                        <onleft>500</onleft>
                         <onright>101</onright>
                         <onup>312</onup>
                         <ondown>120</ondown>
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="101">
@@ -97,7 +113,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="102">
@@ -112,7 +128,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="103">
@@ -127,7 +143,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="104">
@@ -142,7 +158,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="105">
@@ -157,7 +173,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="106">
@@ -172,7 +188,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="107">
@@ -187,7 +203,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="108">
@@ -202,7 +218,7 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="109">
@@ -217,10 +233,10 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="110">
+                    <control type="button" id="110">
                         <posx>1002</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -232,25 +248,25 @@
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="111">
+                    <control type="button" id="111">
                         <posx>1080</posx>
                         <posy>0</posy>
                         <width>1-col</width>
                         <height>1-col</height>
                         <onleft>110</onleft>
-                        <onright>309</onright>
+                        <onright>300</onright>
                         <onup>312</onup>
                         <ondown>131</ondown>
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-              </control>
+                </control>
                 <!--row 2-->
                 <control type="group">
                     <posy>78</posy>
@@ -263,20 +279,20 @@
                         <label>20178</label>
                         <onleft>131</onleft>
                         <onright>120</onright>
-                        <onup>309</onup>
+                        <onup>300</onup>
                         <ondown>303</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
-						<textureradioonfocus>-</textureradioonfocus>
-						<textureradioonnofocus>-</textureradioonnofocus>
-						<textureradioofffocus>-</textureradioofffocus>
-						<textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus>-</textureradioonfocus>
+                        <textureradioonnofocus>-</textureradioonnofocus>
+                        <textureradioofffocus>-</textureradioofffocus>
+                        <textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
                         <radioposx>252</radioposx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
@@ -293,7 +309,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="121">
@@ -309,7 +325,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="122">
@@ -325,7 +341,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="123">
@@ -341,7 +357,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="124">
@@ -357,7 +373,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="125">
@@ -373,7 +389,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="126">
@@ -389,7 +405,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="127">
@@ -405,7 +421,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="128">
@@ -421,7 +437,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="129">
@@ -437,10 +453,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="130">
+                    <control type="button" id="130">
                         <posx>1002</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -453,10 +469,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="131">
+                    <control type="button" id="131">
                         <posx>1080</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -469,7 +485,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                 </control>
@@ -489,17 +505,17 @@
                         <ondown>304</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
-						<textureradioonfocus>-</textureradioonfocus>
-						<textureradioonnofocus>-</textureradioonnofocus>
-						<textureradioofffocus>-</textureradioofffocus>
-						<textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus>-</textureradioonfocus>
+                        <textureradioonnofocus>-</textureradioonnofocus>
+                        <textureradioofffocus>-</textureradioofffocus>
+                        <textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
                         <radioposx>252</radioposx>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
@@ -516,7 +532,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="141">
@@ -532,7 +548,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="142">
@@ -548,7 +564,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="143">
@@ -564,7 +580,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="144">
@@ -580,7 +596,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="145">
@@ -596,7 +612,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="146">
@@ -612,7 +628,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="147">
@@ -628,7 +644,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="148">
@@ -644,7 +660,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="149">
@@ -660,10 +676,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="150">
+                    <control type="button" id="150">
                         <posx>1002</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -676,10 +692,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="151">
+                    <control type="button" id="151">
                         <posx>1080</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -692,7 +708,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                 </control>
@@ -709,24 +725,24 @@
                         <onleft>171</onleft>
                         <onright>307</onright>
                         <onup>303</onup>
-                        <ondown>300</ondown>
+                        <ondown>309</ondown>
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
-						<textureradioonfocus>-</textureradioonfocus>
-						<textureradioonnofocus>-</textureradioonnofocus>
-						<textureradioofffocus>-</textureradioofffocus>
-						<textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus>-</textureradioonfocus>
+                        <textureradioonnofocus>-</textureradioonnofocus>
+                        <textureradioofffocus>-</textureradioofffocus>
+                        <textureradiooffnofocus>-</textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <textoffsetx>0</textoffsetx>
                         <radioposy>12</radioposy>
                         <radioposx>252</radioposx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
-					<control type="button" id="307">
+                    <control type="button" id="307">
                         <description>IP Input button</description>
                         <posx>70</posx>
                         <posy>0</posy>
@@ -739,9 +755,9 @@
                         <onleft>304</onleft>
                         <onright>160</onright>
                         <onup>303</onup>
-                        <ondown>300</ondown>
+                        <ondown>309</ondown>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
@@ -758,7 +774,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="161">
@@ -774,7 +790,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="162">
@@ -790,7 +806,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="163">
@@ -806,7 +822,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="164">
@@ -822,7 +838,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
                     <control type="button" id="165">
@@ -838,10 +854,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="166">
+                    <control type="button" id="166">
                         <posx>690</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -854,10 +870,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="167">
+                    <control type="button" id="167">
                         <posx>768</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -870,10 +886,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="168">
+                    <control type="button" id="168">
                         <posx>846</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -886,10 +902,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="169">
+                    <control type="button" id="169">
                         <posx>924</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -902,10 +918,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="170">
+                    <control type="button" id="170">
                         <posx>1002</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -918,10 +934,10 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                     </control>
-					<control type="button" id="171">
+                    <control type="button" id="171">
                         <posx>1080</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -934,15 +950,15 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
-                    </control>		
+                    </control>
                 </control>
                 <!--row 5-->
                 <control type="group">
                     <posy>312</posy>
-                    <control type="button" id="300">
-                        <description>Done button</description>
+                    <control type="button" id="309">
+                        <description>Layout</description>
                         <posx>-72</posx>
                         <posy>0</posy>
                         <width>4-col</width>
@@ -955,7 +971,7 @@
                         <texturenofocus>colors/keyunselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
@@ -970,9 +986,9 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
-                        <onleft>300</onleft>
+                        <onleft>309</onleft>
                         <onright>305</onright>
                         <onup>160</onup>
                         <ondown>312</ondown>
@@ -986,18 +1002,18 @@
                         <height>1-col</height>
                         <label>20181</label>
                         <onleft>306</onleft>
-                        <onright>300</onright>
+                        <onright>309</onright>
                         <onup>171</onup>
                         <ondown>312</ondown>
                         <texturenofocus>colors/keyselected.png</texturenofocus>
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <font>buttonTitle</font>
                     </control>
-					<control type="button" id="305">
+                    <control type="button" id="305">
                         <description>previous button</description>
                         <posx>690</posx>
                         <posy>0</posy>
@@ -1008,7 +1024,7 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <onleft>32</onleft>
                         <onright>306</onright>
@@ -1026,13 +1042,13 @@
                         <texturefocus>colors/keyaccent.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <align>center</align>
                         <onleft>305</onleft>
                         <onright>8</onright>
                         <onup>167</onup>
                         <ondown>312</ondown>
-                    </control>					
+                    </control>
                 </control>
             </control>
         </control>

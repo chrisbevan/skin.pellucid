@@ -8,122 +8,127 @@
         <!--main menu-->
         <control type="group">
             <posx>col-4-begin</posx>
-            <posy>row-4-begin</posy>
-            <!--overlay-->
-            <control type="image">
-                <posx>-312</posx>
-                <posy>118</posy>
-                <width>fullscreenWidth</width>
-                <height>430</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>88ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <posy>row-7-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
-                <posx>-384</posx>
-                <posy>44</posy>
-                <width>2500</width>
-                <height>1-row</height>
-                <texture>colors/selected.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>18-col</width>
+                <height>2-row</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>18-col</width>
+                <height>12-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
                 <posx>12</posx>
-                <posy>44</posy>
+                <posy>0</posy>
                 <width>8-col</width>
-                <font>pageTitle</font>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <font>dialogTitle</font>
                 <label>$LOCALIZE[5]</label>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
             <!--menu-->
             <control type="Panel" id="9000">
-                <posx>0</posx>
+                <posx>12</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
                 <height>12-col</height>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
-                <itemlayout width="6-col" height="2-row">
+                <itemlayout width="6-col" height="3-row">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>12</posy>
-                        <width>72</width>
-                        <height>72</height>
+                        <posy>18</posy>
+                        <width>1-col</width>
+                        <height>1-col</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>ccFFFFFF</colordiffuse>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>18</posx>
-                        <posy>18</posy>
-                        <width>326</width>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>3-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>unselected</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
-                        <posx>101</posx>
-                        <posy>5</posy>
-                        <width>326</width>
+                        <posx>84</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>unselected</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
-                        <posx>101</posx>
-                        <posy>38</posy>
-                        <width>326</width>
-                        <font>smallStrong</font>
+                        <posx>84</posx>
+                        <posy>1-row</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
                         <textcolor>unselected</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="2-row">
+                <focusedlayout width="6-col" height="3-row">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>12</posy>
-                        <width>72</width>
-                        <height>72</height>
+                        <posy>18</posy>
+                        <width>1-col</width>
+                        <height>1-col</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>textActive</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>18</posx>
-                        <posy>18</posy>
-                        <width>326</width>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>3-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>ff222222</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
-                        <posx>85</posx>
-                        <posy>5</posy>
-                        <width>326</width>
+                        <posx>84</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
-                        <label>[ $INFO[ListItem.label] ]</label>
-                        <scroll>true</scroll>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
-                        <posx>101</posx>
-                        <posy>38</posy>
-                        <width>326</width>
-                        <font>smallStrong</font>
-                        <textcolor>selected</textcolor>
+                        <posx>84</posx>
+                        <posy>1-row</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
                 </focusedlayout>
@@ -204,7 +209,7 @@
                         <property name="label3">$LOCALIZE[31095] • $LOCALIZE[31111]</property>
                         <onclick>activatewindow(3)</onclick>
                     </item>
-					<item id="11">
+                    <item id="11">
                         <description>Programs</description>
                         <label>31003</label>
                         <label2></label2>

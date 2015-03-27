@@ -27,7 +27,7 @@
                 <width>8-col</width>
                 <label>31124</label>
                 <font>pageTitle</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
             </control>
             <!--'Searching...' label-->
             <control type="label" id="190">
@@ -37,7 +37,7 @@
                 <width>8-col</width>
                 <label>-</label>
                 <font>medium</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
             </control>
             <!--Search category label, visible when the script is searching-->
             <control type="label" id="191">
@@ -47,7 +47,7 @@
                 <width>8-col</width>
                 <label>-</label>
                 <font>regularStrong</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
             </control>
             <!--'New search' button, visible when the script finished searching-->
             <control type="label" id="199">
@@ -57,7 +57,7 @@
                 <width>8-col</width>
                 <label>$LOCALIZE[284]</label>
                 <font>regular</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
             </control>
             <!--'No results found'-->
             <control type="button" id="198">
@@ -68,10 +68,10 @@
                 <height>20</height>
                 <label>-</label>
                 <font>regular</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
-                <texturefocus>colors/selected.png</texturefocus>
+                <texturefocus>colors/white.png</texturefocus>
                 <texturenofocus>colors/black.png</texturenofocus>
                 <onup>101</onup>
                 <ondown>101</ondown>
@@ -95,7 +95,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[342]: $INFO[control.getlabel(110)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="110">
                         <visible>false</visible>
@@ -108,7 +108,7 @@
                         <height>6-row</height>
                         <orientation>horizontal</orientation>
                         <preloaditems>2</preloaditems>
-                        <onup></onup>
+                        <onup/>
                         <ondown>121</ondown>
                         <itemlayout width="387" height="354">
                             <control type="image">
@@ -138,15 +138,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -154,7 +154,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
                                 </control>
                             </control>
@@ -188,7 +188,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -205,7 +205,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -233,7 +233,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[20343]: $INFO[control.getlabel(120)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="120">
                         <visible>false</visible>
@@ -276,15 +276,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -292,7 +292,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(Year),, • ]$INFO[ListItem.Property(genre)]</label>
                                 </control>
                             </control>
@@ -326,7 +326,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -343,7 +343,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -371,7 +371,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[33054]: $INFO[control.getlabel(130)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="130">
                         <visible>false</visible>
@@ -414,15 +414,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -430,7 +430,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(episode)]</label>
                                 </control>
                             </control>
@@ -464,7 +464,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -481,7 +481,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -509,7 +509,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[20360]: $INFO[control.getlabel(140)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="140">
                         <visible>false</visible>
@@ -552,15 +552,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -568,7 +568,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(TvShowTitle),, • ]$INFO[ListItem.Property(Season),s]$INFO[ListItem.Property(Episode),e]</label>
                                 </control>
                             </control>
@@ -602,7 +602,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -619,7 +619,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -647,7 +647,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[20389]: $INFO[control.getlabel(150)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="150">
                         <visible>false</visible>
@@ -690,15 +690,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -706,7 +706,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(Artist)]</label>
                                 </control>
                             </control>
@@ -740,7 +740,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -757,7 +757,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -785,7 +785,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[133]: $INFO[control.getlabel(160)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="160">
                         <visible>false</visible>
@@ -828,15 +828,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -844,7 +844,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.property(artist_genre)]</label>
                                 </control>
                             </control>
@@ -878,7 +878,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -895,7 +895,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -923,7 +923,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[132]: $INFO[control.getlabel(170)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="170">
                         <visible>false</visible>
@@ -966,15 +966,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -982,7 +982,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(Artist)]</label>
                                 </control>
                             </control>
@@ -1016,7 +1016,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -1033,7 +1033,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>
@@ -1061,7 +1061,7 @@
                         <width>6-col</width>
                         <label>$LOCALIZE[134]: $INFO[control.getlabel(180)]</label>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                     </control>
                     <control type="label" id="180">
                         <visible>false</visible>
@@ -1075,7 +1075,7 @@
                         <orientation>horizontal</orientation>
                         <preloaditems>2</preloaditems>
                         <onup>171</onup>
-                        <ondown></ondown>
+                        <ondown/>
                         <itemlayout width="387" height="354">
                             <control type="image">
                                 <posx>0</posx>
@@ -1104,15 +1104,15 @@
                                     <posy>-1</posy>
                                     <width>1-col</width>
                                     <font>symbolLarge</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label></label>
                                 </control>
                                 <control type="label">
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
-                                    <textcolor>selected</textcolor>
+                                    <font>itemSubTitle</font>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
@@ -1120,7 +1120,7 @@
                                     <posy>18</posy>
                                     <width>252</width>
                                     <font>smallMedium</font>
-                                    <textcolor>selected</textcolor>
+                                    <textcolor>textActive</textcolor>
                                     <label>$INFO[ListItem.Property(Artist)] • $INFO[ListItem.Property(Album)]</label>
                                 </control>
                             </control>
@@ -1154,7 +1154,7 @@
                                     <width>363</width>
                                     <height>64</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture>colors/selected.png</texture>
+                                    <texture>colors/white.png</texture>
                                     <bordersize>0</bordersize>
                                     <colordiffuse>ffFFFFFF</colordiffuse>
                                 </control>
@@ -1171,7 +1171,7 @@
                                     <posx>60</posx>
                                     <posy>-8</posy>
                                     <width>252</width>
-                                    <font>itemTitleSmall</font>
+                                    <font>itemSubTitle</font>
                                     <textcolor>black</textcolor>
                                     <shadowcolor>-</shadowcolor>
                                     <label>$INFO[ListItem.Label]</label>

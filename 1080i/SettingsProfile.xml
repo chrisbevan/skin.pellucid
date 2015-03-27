@@ -21,7 +21,7 @@
                 <posy>44</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -38,7 +38,7 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>31103</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -69,7 +69,7 @@
                 <posy>5-row</posy>
                 <width>12-col</width>
                 <align>center</align>
-                <font>itemTitleSmall</font>
+                <font>itemSubTitle</font>
                 <label>31104</label>
                 <textcolor>white</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -104,7 +104,7 @@
                         <posy>0</posy>
                         <width>312</width>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>

@@ -2,8 +2,11 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-	<onload>Skin.Reset(DebugInfo)</onload>
-	<onload>Skin.Reset(DebugGrid)</onload>
+    <onload>Skin.Reset(DebugInfo)</onload>
+    <onload>Skin.Reset(DebugGrid)</onload>
+    <onload condition="!Skin.String(videoHomeItemsMoviesSource)">Skin.SetString(videoHomeItemsMoviesSource,recentmovies)</onload>
+    <onload condition="!Skin.String(videoHomeItemsEpisodesSource)">Skin.SetString(videoHomeItemsEpisodesSource,recentepisodes)</onload>
+    <onload condition="!Skin.String(musicHomeItemsSource)">Skin.SetString(musicHomeItemsSource,recentalbums)</onload>
     <coordinates>
         <posx>15</posx>
         <posy>15</posy>
@@ -11,7 +14,7 @@
     <controls>
         <control type="button" id="10">
             <description>Startup Trigger</description>
-            <onfocus>ReplaceWindow(home)</onfocus>
+            <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
         </control>

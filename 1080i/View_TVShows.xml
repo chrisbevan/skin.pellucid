@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="tvshows">
+        <visible>!isEmpty(container.foldername)</visible>
+
+        <control type="group">
+
+            <!--this is a list - it needs to be moved elsewhere-->
+            <control type="panel" id="50">
+                <visible>!container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>12-col</width>
+                <height>25-row</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <ondown>50</ondown>
+                <onup>50</onup>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="12-col" height="3-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>3-row</height>
+                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>11-col</width>
+                        <height>3-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>1-row</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$VAR[itemDetail]</label>
+                    </control>
+                    <control type="label">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
+                    </control>
+                    <control type="label">
+                        <visible>!isempty(ListItem.playcount)</visible>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="12-col" height="3-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>3-row</height>
+                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>11-col</width>
+                        <height>3-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>1-row</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$VAR[itemDetail]</label>
+                    </control>
+                    <control type="label">
+                        <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
+                    </control>
+                    <control type="label">
+                        <visible>!isempty(ListItem.playcount)</visible>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbol</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
+                    </control>
+
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

@@ -16,7 +16,7 @@
                 <posy>44</posy>
                 <width>2500</width>
                 <height>1-row</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -33,11 +33,11 @@
             <control type="spincontrolex" id="3">
                 <description>Location Select</description>
                 <posx>12</posx>
-                <posy>44</posy>
+                <posy>47</posy>
                 <label>-</label>
                 <label2>-</label2>
-                <font>pageTitle</font>
-                <textcolor>selected</textcolor>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
                 <width>1-col</width>
                 <align>right</align>
                 <onup>activateWindow(home)</onup>
@@ -48,7 +48,7 @@
                 <posx>84</posx>
                 <posy>44</posy>
                 <width>18-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <label>$INFO[Window.Property(Location)]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
@@ -75,16 +75,16 @@
                         <posy>72</posy>
                         <width>5-col-gutter</width>
                         <font>symbolWeather</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$VAR[weatherIcon]</label>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>0</posx>
                         <posy>4-row</posy>
                         <width>6-col-gutter</width>
                         <align>center</align>
                         <font>largeStrong</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="textbox">
@@ -94,8 +94,8 @@
                         <height>1-row</height>
                         <align>center</align>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
-						<autoscroll delay="3000" time="1000" repeat="3000"></autoscroll>
+                        <textcolor>textActive</textcolor>
+                        <autoscroll delay="3000" time="1000" repeat="3000"/>
                         <label>$INFO[ListItem.Property(Outlook)]</label>
                     </control>
                     <control type="textbox">
@@ -104,8 +104,8 @@
                         <width>5-col-gutter</width>
                         <height>1-row</height>
                         <align>center</align>
-                        <font>itemTitleSmall</font>
-                        <textcolor>selected</textcolor>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
                         <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
                     </control>
                 </itemlayout>
@@ -115,16 +115,16 @@
                         <posy>72</posy>
                         <width>5-col-gutter</width>
                         <font>symbolWeather</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$VAR[weatherIcon]</label>
                     </control>
                     <control type="label">
-                        <posx>204</posx>
+                        <posx>0</posx>
                         <posy>4-row</posy>
                         <width>6-col-gutter</width>
                         <align>center</align>
                         <font>largeStrong</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="textbox">
@@ -134,7 +134,7 @@
                         <height>1-row</height>
                         <align>center</align>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.Property(Outlook)]</label>
                     </control>
                     <control type="textbox">
@@ -143,8 +143,8 @@
                         <width>5-col-gutter</width>
                         <height>1-row</height>
                         <align>center</align>
-                        <font>itemTitleSmall</font>
-                        <textcolor>selected</textcolor>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
                         <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
                     </control>
                 </focusedlayout>
@@ -162,7 +162,7 @@
                     <item id="2">
                         <description>Day 1</description>
                         <label>$INFO[Window.Property(Day1.Title)]</label>
-						<property name="fanartCode">$INFO[Window.Property(Day1.fanartCode)]</property>
+                        <property name="fanartCode">$INFO[Window.Property(Day1.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day1.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day1.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day1.Outlook)]</property>
@@ -172,7 +172,7 @@
                     <item id="3">
                         <description>Day 2</description>
                         <label>$INFO[Window.Property(Day2.Title)]</label>
-						<property name="fanartCode">$INFO[Window.Property(Day2.fanartCode)]</property>
+                        <property name="fanartCode">$INFO[Window.Property(Day2.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day2.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day2.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day2.Outlook)]</property>
@@ -182,7 +182,7 @@
                     <item id="4">
                         <description>Day 3</description>
                         <label>$INFO[Window.Property(Day3.Title)]</label>
-						<property name="fanartCode">$INFO[Window.Property(Day3.fanartCode)]</property>
+                        <property name="fanartCode">$INFO[Window.Property(Day3.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day3.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day3.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day3.Outlook)]</property>
@@ -192,7 +192,7 @@
                     <item id="5">
                         <description>Day 4</description>
                         <label>$INFO[Window.Property(Day4.Title)]</label>
-						<property name="fanartCode">$INFO[Window.Property(Day4.fanartCode)]</property>
+                        <property name="fanartCode">$INFO[Window.Property(Day4.fanartCode)]</property>
                         <property name="HighTemp">$INFO[Window.Property(Day4.HighTemp)]</property>
                         <property name="LowTemp">$INFO[Window.Property(Day4.LowTemp)]</property>
                         <property name="Outlook">$INFO[Window.Property(Day4.Outlook)]</property>

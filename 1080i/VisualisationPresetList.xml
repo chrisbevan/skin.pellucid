@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>2</defaultcontrol>
+    <defaultcontrol>2</defaultcontrol>
     <controls>
         <control type="image">
             <posx>0</posx>
@@ -22,7 +22,7 @@
                 <posy>44</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -39,24 +39,22 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>12-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
-				<label>$LOCALIZE[24010]</label>
+                <label>$LOCALIZE[24010]</label>
             </control>
-
-			<control type="label" id="4">
+            <control type="label" id="4">
                 <posx>12</posx>
                 <posy>120</posy>
                 <width>12-col</width>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
-				<label>13389</label>
+                <label>13389</label>
             </control>
-
-			<!--visualisation list-->
-			<control type="list" id="2">
+            <!--visualisation list-->
+            <control type="list" id="2">
                 <posx>0</posx>
                 <posy>120</posy>
                 <width>12-col</width>
@@ -89,7 +87,7 @@
                         <posy>0</posy>
                         <width>312</width>
                         <font>itemTitle</font>
-                        <textcolor>selected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
@@ -125,8 +123,8 @@
                     </control>
                 </focusedlayout>
             </control>
-		</control>
-		<!--debugging-->
+        </control>
+        <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>

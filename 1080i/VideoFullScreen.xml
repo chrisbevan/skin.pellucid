@@ -18,27 +18,27 @@
                 <posx>col-1-begin</posx>
                 <posy>row-1-begin</posy>
                 <font>smallMedium</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <width>24-col</width>
                 <height>2-row</height>
                 <label>-</label>
                 <shadowcolor>-</shadowcolor>
             </control>
-			<control type="label" id="11">
+            <control type="label" id="11">
                 <posx>col-1-begin</posx>
                 <posy>row-2-begin</posy>
                 <font>smallMedium</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <width>24-col</width>
                 <height>2-row</height>
                 <label>-</label>
                 <shadowcolor>-</shadowcolor>
             </control>
-			<control type="label" id="12">
+            <control type="label" id="12">
                 <posx>col-1-begin</posx>
                 <posy>row-3-begin</posy>
                 <font>smallMedium</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <width>24-col</width>
                 <height>3-row</height>
                 <label>-</label>
@@ -55,7 +55,7 @@
                 <posy>-12</posy>
                 <width>8-col</width>
                 <height>102</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>eeFFFFFF</colordiffuse>
             </control>
             <control type="label">
@@ -66,7 +66,6 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>20186</label>
-                <scroll>true</scroll>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -74,12 +73,11 @@
                 <description>buffering label</description>
                 <posx>24</posx>
                 <posy>30</posy>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>
                 <height>1-row</height>
                 <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-                <scroll>true</scroll>
                 <shadowcolor>-</shadowcolor>
             </control>
         </control>

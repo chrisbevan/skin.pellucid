@@ -25,7 +25,7 @@
                 <posy>44</posy>
                 <width>fullscreenWidth</width>
                 <height>1-row</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -43,8 +43,8 @@
                 <posx>12</posx>
                 <posy>44</posy>
                 <width>16-col</width>
-                <font>pageTitle</font>
-                <label>1026</label>
+                <font>dialogTitle</font>
+                <label>$LOCALIZE[1026]</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -57,9 +57,9 @@
                     <posx>12</posx>
                     <posy>0</posy>
                     <width>16-col</width>
-                    <font>itemTitleSmallCondensed</font>
+                    <font>itemSubTitleCondensed</font>
                     <label>1021</label>
-                    <textcolor>selected</textcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="image">
@@ -98,7 +98,7 @@
                             <width>12-col</width>
                             <height>1-row</height>
                             <font>itemTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <selectedcolor>selected</selectedcolor>
                             <info>ListItem.Label</info>
                             <shadowcolor>-</shadowcolor>
@@ -111,7 +111,7 @@
                             <width>12-col</width>
                             <height>53</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
@@ -136,14 +136,14 @@
                     <width>12-col-gutter</width>
                     <font>itemTitle</font>
                     <label>31045</label>
-                    <textcolor>selected</textcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="edit" id="12">
                     <description>Name Button</description>
                     <posx>3-col</posx>
                     <posy>7-row</posy>
-                    <width>9-col-gutter</width>                    
+                    <width>9-col-gutter</width>
                     <label>-</label>
                     <onup>10</onup>
                     <onright>8000</onright>
@@ -176,16 +176,16 @@
                             <posy>0</posy>
                             <width>1-col</width>
                             <font>symbol</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col</posx>
-                            <posy>2</posy>
+                            <posy>-1</posy>
                             <width>3-col</width>
                             <font>menuTitle</font>
-                            <textcolor>selected</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
@@ -197,7 +197,7 @@
                             <width>4-col</width>
                             <height>53</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/selected.png</texture>
+                            <texture>colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -210,7 +210,7 @@
                         </control>
                         <control type="label">
                             <posx>1-col</posx>
-                            <posy>2</posy>
+                            <posy>-1</posy>
                             <width>3-col</width>
                             <font>menuTitle</font>
                             <textcolor>black</textcolor>

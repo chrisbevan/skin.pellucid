@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="addons">
+
+        <control type="group">
+            <visible>container.content(addons)</visible>
+
+            <control type="panel" id="59">
+                <visible>!container.content(movies) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>24-col</width>
+                <height>22-row</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <ondown>59</ondown>
+                <onup>59</onup>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/black.png</texture>
+                            <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>44FFFFFF</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>24</posx>
+                            <posy>3-row</posy>
+                            <width>3-col</width>
+                            <align>center</align>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>24</posx>
+                            <posy>4-row</posy>
+                            <width>3-col</width>
+                            <align>center</align>
+                            <font>itemSubTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Property(Addon.summary)]</label>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

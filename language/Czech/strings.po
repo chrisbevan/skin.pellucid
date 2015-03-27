@@ -1,11 +1,11 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Maximinimalism
 # Addon id: skin.maximinimalism
 # Addon Provider: chrisbevan
 # Translators: MarhyCZ
 msgid ""
 msgstr ""
-"Project-Id-Version: XBMC Skins\n"
+"Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 msgctxt "Addon Summary"
-msgid "A skin for XBMC from theDeadman"
-msgstr "Skin pro XBMC od theDeadman"
+msgid "A skin for Kodi from theDeadman"
+msgstr "Skin pro Kodi od theDeadman"
 
 msgctxt "Addon Description"
 msgid ""
-"Maximinimalism is a lightweight, clean and simple XBMC experience designed for maximum usability and minimum fuss."
-msgstr "Maximinimalism je lehký, čistý a jednoduchý XBMC motiv navržený pro maximální použitelnost a minimum chaosu."
+"Maximinimalism is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
+msgstr "Maximinimalism je lehký, čistý a jednoduchý Kodi motiv navržený pro maximální použitelnost a minimum chaosu."
 
 msgctxt "#31000"
 msgid "Watch"
@@ -67,7 +67,7 @@ msgid "No plot info available"
 msgstr "Žádný děj k dispozici"
 
 msgctxt "#31010"
-msgid "All Addons"
+msgid "Add-ons"
 msgstr "Všechny Doplňky"
 
 msgctxt "#31011"
@@ -204,10 +204,6 @@ msgctxt "#31054"
 msgid "by"
 msgstr "od"
 
-msgctxt "#31055"
-msgid "Addons"
-msgstr "Doplňky"
-
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr "Knihovna Obrázků"
@@ -297,8 +293,8 @@ msgid "Now and Next"
 msgstr "Nyní a Další"
 
 msgctxt "#31079"
-msgid "XBMC"
-msgstr "XBMC"
+msgid "Kodi"
+msgstr "Kodi"
 
 msgctxt "#31080"
 msgid "Programme Guide"
@@ -591,3 +587,7 @@ msgstr "Přehrávní zastaveno. Stiskněte [Zpět] pro návrat."
 msgctxt "#31159"
 msgid "Unknown"
 msgstr "Neznámý"
+
+msgctxt "#31163"
+msgid "Low CPU power mode"
+msgstr "Napájecí režim Low CPU"

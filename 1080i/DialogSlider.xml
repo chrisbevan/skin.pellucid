@@ -5,21 +5,22 @@
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
-            <posy>83</posy>
+            <include condition="!window.isactive(infodialog)">progressPosition1</include>
+            <include condition="window.isactive(infodialog)">progressPosition2</include>
             <!--animations-->
             <animation type="Windowclose">
-                <effect type="fade" start="100" end="0" time="400" tween="sine" />
+                <effect type="fade" start="100" end="0" time="400" tween="sine"/>
             </animation>
             <control type="image">
                 <posx>0</posx>
                 <posy>-12</posy>
                 <width>8-col</width>
                 <height>102</height>
-                <texture>colors/selected.png</texture>
+                <texture>colors/white.png</texture>
                 <colordiffuse>eeFFFFFF</colordiffuse>
                 <!--animations-->
                 <animation type="Windowopen">
-                    <effect type="slide" start="1000,0" end="0,0" time="400" tween="sine" />
+                    <effect type="slide" start="1000,0" end="0,0" time="400" tween="sine"/>
                 </animation>
             </control>
             <control type="label" id="10">
@@ -30,44 +31,47 @@
                 <width>468</width>
                 <height>1-row</height>
                 <label>-</label>
-                <scroll>true</scroll>
+                <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
+                <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
-                    <effect type="fade" start="0" end="100" delay="400" time="400" tween="sine" />
+                    <effect type="fade" start="0" end="100" delay="400" time="400" tween="sine"/>
                 </animation>
             </control>
             <control type="label">
                 <description>Control indicator</description>
                 <posx>24</posx>
                 <posy>30</posy>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>
                 <height>1-row</height>
                 <label>◀ ▶</label>
-                <scroll>true</scroll>
+
+
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
-                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine" />
+                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
                 </animation>
             </control>
             <control type="label" id="12">
                 <description>message</description>
-                <posx>96</posx>
+                <posx>108</posx>
                 <posy>30</posy>
-                <font>pageTitle</font>
+                <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>
                 <height>1-row</height>
                 <label>-</label>
-                <scroll>true</scroll>
+
+
                 <shadowcolor>-</shadowcolor>
                 <!--animations-->
                 <animation type="Windowopen">
-                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine" />
+                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
                 </animation>
             </control>
             <control type="slider" id="11">
