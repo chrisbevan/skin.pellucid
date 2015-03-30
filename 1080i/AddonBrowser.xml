@@ -6,115 +6,176 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
         <control type="group" id="9001">
-            <posx>col-2-begin</posx>
+            <posx>col-1-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
-                <posx>-168</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>24-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <!--title-->
             <control type="label">
-                <posx>12</posx>
-                <posy>44</posy>
-                <width>16-col</width>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>20-col</width>
+                <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[24001]</label>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-            <control type="grouplist">
-                <posx>5-col-gutter</posx>
-                <posy>44</posy>
-                <width>20-col</width>
-                <orientation>horizontal</orientation>
+            <!--options-->
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>24-col</width>
+                <height>21-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="grouplist" id="9000">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>6-col</width>
+                <orientation>vertical</orientation>
                 <control type="radiobutton" id="6">
-                    <aligny>center</aligny>
-                    <height>57</height>
-                    <width>4-col</width>
-                    <font>smallStrong</font>
+                    <width>6-col</width>
+                    <texturenofocus>-</texturenofocus>
                     <label>25000</label>
-                    <textcolor>black</textcolor>
-                    <focusedcolor>selected</focusedcolor>
-                    <texturefocus>colors/black.png</texturefocus>
-                    <textoffsetx>12</textoffsetx>
-                    <textoffsety>-6</textoffsety>
-                    <ondown>9999</ondown>
+                    <onright>9999</onright>
                 </control>
                 <control type="radiobutton" id="7">
-                    <aligny>center</aligny>
-                    <height>57</height>
-                    <width>4-col</width>
-                    <font>smallStrong</font>
+                    <width>6-col</width>
+                    <texturenofocus>-</texturenofocus>
                     <label>25001</label>
-                    <textcolor>black</textcolor>
-                    <focusedcolor>selected</focusedcolor>
-                    <texturefocus>colors/black.png</texturefocus>
-                    <textoffsetx>12</textoffsetx>
-                    <textoffsety>-6</textoffsety>
                     <ondown>9999</ondown>
                 </control>
                 <control type="radiobutton" id="8">
-                    <aligny>center</aligny>
-                    <height>57</height>
-                    <width>5-col</width>
-                    <font>smallStrong</font>
+                    <width>6-col</width>
+                    <texturenofocus>-</texturenofocus>
                     <label>24999</label>
-                    <textcolor>black</textcolor>
-                    <focusedcolor>selected</focusedcolor>
-                    <texturefocus>colors/black.png</texturefocus>
-                    <textoffsetx>12</textoffsetx>
-                    <textoffsety>-6</textoffsety>
-                    <ondown>9999</ondown>
+                    <onright>9999</onright>
                 </control>
                 <control type="button" id="5">
-                    <aligny>center</aligny>
-                    <height>57</height>
-                    <width>5-col</width>
-                    <font>smallStrong</font>
+                    <width>6-col</width>
+                    <texturenofocus>-</texturenofocus>
                     <label>24063</label>
-                    <textcolor>black</textcolor>
-                    <focusedcolor>selected</focusedcolor>
-                    <texturefocus>colors/black.png</texturefocus>
-                    <textoffsetx>12</textoffsetx>
-                    <textoffsety>-6</textoffsety>
-                    <ondown>9999</ondown>
+                    <onright>9999</onright>
                 </control>
             </control>
             <!--content listing-->
             <control type="group" id="9999">
-                <onup>6</onup>
-                <posx>0</posx>
-                <posy>-50</posy>
-                <include>viewDialogList</include>
+                <posx>6-col</posx>
+                <posy>2-row</posy>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>18-col</width>
+                    <height>21-row</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="panel" id="50">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>12-col</width>
+                    <height>21-row</height>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <ondown>50</ondown>
+                    <onup>50</onup>
+                    <pagecontrol>60</pagecontrol>
+                    <itemlayout height="2-row" width="12-col">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>2-row</width>
+                            <height>2-row</height>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>11-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>9-col</posx>
+                            <posy>0</posy>
+                            <width>3-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="2-row" width="12-col">
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>11-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/white.png</texture>
+                            <bordersize>0</bordersize>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>2-row</width>
+                            <height>2-row</height>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+                            <include>spinFocus</include>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>11-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>9-col</posx>
+                            <posy>0</posy>
+                            <width>3-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>selected</selectedcolor>
+                        </control>
+                    </focusedlayout>
+                </control>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">
                 <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="70" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>col-22-begin</posx>
+                    <posx>col-24-begin</posx>
                     <posy>126</posy>
                     <height>11-row</height>
                     <onleft>9999</onleft>

@@ -20,12 +20,10 @@
             <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
         </animation>
     </include>
-    <!--slow slide-->
-    <include name="imageSlider">
-        <animation type="conditional" condition="true" loop="true">
-            <effect type="fade" start="0" end="100" time="4000"/>
-            <effect type="slide" center="auto" start="0" end="-138" time="8000"/>
-            <effect type="fade" start="100" end="0" time="3000" delay="5000"/>
+    <!--focus item spinner-->
+    <include name="spinFocus">
+        <animation type="focus" loop="false" reversible="false">
+            <effect type="rotatey" end="180" center="36" tween="back" easing="out" time="1000"/>
         </animation>
     </include>
     <!--modal dialog handling-->
@@ -50,7 +48,7 @@
         </animation>
     </include>
     <include name="modalDialogContentShift">
-        <animation type="Conditional" condition="controlgroup(61).hasfocus | controlgroup(100).hasfocus">
+        <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus">
             <effect type="zoom" end="95" time="200" center="auto" tween="sine" easing="in"/>
         </animation>
     </include>

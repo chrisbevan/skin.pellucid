@@ -1,10 +1,7 @@
-skin.maximinimalism
+skin.untitled
 ===================
 
-Maximinimalism is a skin for Kodi 14 (Helix) by theDeadman.
-
-Maximinimalism is built from scratch to provide a simple, elegant and fast media browsing experience for home tv / remote setups.
-Well suited for lower power devices such as the Raspberry Pi.
+An as yet untitled Skin for Kodi by theDeadMan
 
 Built in support for:
 - PVR

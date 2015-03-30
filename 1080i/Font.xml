@@ -6,7 +6,7 @@
         <font>
             <name>veryLarge</name>
             <filename>roboto/black.ttf</filename>
-            <size>60</size>
+            <size>144</size>
             <linespacing>0.8</linespacing>
         </font>
         <font>
@@ -89,11 +89,18 @@
         </font>
         <!--element specific-->
         <font>
+            <name>textbox</name>
+            <filename>roboto/regular.ttf</filename>
+            <size>30</size>
+            <linespacing>1.1</linespacing>
+        </font>
+        <font>
             <name>textboxExtraLeading</name>
             <filename>roboto/regular.ttf</filename>
             <size>30</size>
             <linespacing>1</linespacing>
         </font>
+
         <font>
             <name>pageTitle</name>
             <filename>roboto/condensedBold.ttf</filename>
@@ -102,7 +109,7 @@
         </font>
         <font>
             <name>pageSubTitle</name>
-            <filename>roboto/condensedRegular.ttf</filename>
+            <filename>roboto/medium.ttf</filename>
             <size>36</size>
             <linespacing>1.0</linespacing>
         </font>

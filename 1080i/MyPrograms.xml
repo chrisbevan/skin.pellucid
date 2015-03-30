@@ -47,7 +47,7 @@
                     <!--source content-->
                     <control type="group">
                         <include>viewGridList</include>
-                        <include>viewDialogList</include>
+                        <include>viewFileList</include>
                     </control>
                 </control>
                 <!--page scrollbar-->

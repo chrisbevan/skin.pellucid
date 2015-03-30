@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <!--list-->
-    <include name="viewDialogList">
+    <include name="viewFileList">
         <control type="panel" id="50">
             <posx>0</posx>
-            <posy>3-row</posy>
-            <width>22-col</width>
-            <height>11-row</height>
+            <posy>0</posy>
+            <width>18-col</width>
+            <height>21-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>50</ondown>
             <onup>5</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout height="1-row" width="11-col">
+            <itemlayout height="3-row" width="9-col">
                 <control type="image">
-                    <posx>4</posx>
-                    <posy>4</posy>
-                    <width>48</width>
-                    <height>48</height>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>3-row</width>
+                    <height>3-row</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+                    <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
                 </control>
                 <control type="label">
-                    <posx>1-col</posx>
+                    <posx>2-col</posx>
                     <posy>0</posy>
                     <width>7-col</width>
                     <font>itemTitle</font>
@@ -31,55 +30,54 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <right>48</right>
+                    <posx>5-col</posx>
                     <posy>0</posy>
                     <width>4-col</width>
-                    <align>right</align>
+                    <aligny>center</aligny>
                     <label>$INFO[ListItem.Label2]</label>
-                    <font>smallMedium</font>
+                    <font>itemSubtitle</font>
                     <textcolor>textActive</textcolor>
                     <selectedcolor>selected</selectedcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
             </itemlayout>
-            <focusedlayout height="1-row" width="11-col">
+            <focusedlayout height="3-row" width="9-col">
                 <control type="image">
                     <posx>0</posx>
-                    <posy>2</posy>
-                    <width>11-col-gutter</width>
-                    <height>53</height>
+                    <posy>0</posy>
+                    <width>9-col</width>
+                    <height>3-row</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture border="24,0,24,0">UIControls/listitemFO.png</texture>
+                    <texture>colors/white.png</texture>
                     <bordersize>0</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
+                    <colordiffuse>500</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>4</posx>
-                    <posy>4</posy>
-                    <width>48</width>
-                    <height>48</height>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>3-row</width>
+                    <height>3-row</height>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+                    <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
                 </control>
                 <control type="label">
-                    <posx>1-col</posx>
+                    <posx>2-col</posx>
                     <posy>0</posy>
                     <width>7-col</width>
                     <font>itemTitle</font>
-                    <textcolor>black</textcolor>
-                    <selectedcolor>black</selectedcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <right>48</right>
+                    <posx>5-col</posx>
                     <posy>0</posy>
                     <width>4-col</width>
-                    <align>right</align>
+                    <aligny>center</aligny>
                     <label>$INFO[ListItem.Label2]</label>
-                    <font>smallMedium</font>
-                    <textcolor>black</textcolor>
-                    <selectedcolor>black</selectedcolor>
+                    <font>itemSubtitle</font>
+                    <textcolor>textActive</textcolor>
+                    <selectedcolor>selected</selectedcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
             </focusedlayout>

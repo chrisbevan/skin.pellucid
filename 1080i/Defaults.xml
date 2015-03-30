@@ -56,7 +56,7 @@
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
         <texturefocus>colors/white.png</texturefocus>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturenofocus>-</texturenofocus>
         <textoffsetx>24</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
         <invalidcolor>disabled</invalidcolor>
@@ -96,10 +96,10 @@
         <disabledcolor>textDisabled</disabledcolor>
         <radiowidth>64</radiowidth>
         <radioheight>64</radioheight>
-        <radioposx/>
-        <radioposy/>
+        <radioposx>0</radioposx>
+        <radioposy>0</radioposy>
         <texturefocus>colors/white.png</texturefocus>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturenofocus>-</texturenofocus>
         <textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
         <textureradionofocus>UIControls/radio-button-nf.png</textureradionofocus>
         <pulseonselect>false</pulseonselect>
@@ -121,7 +121,7 @@
         <spinwidth>30</spinwidth>
         <spinheight>30</spinheight>
         <texturefocus>colors/white.png</texturefocus>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturenofocus>-</texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
         <textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
@@ -144,7 +144,7 @@
         <spinwidth>36</spinwidth>
         <spinheight>36</spinheight>
         <texturefocus>colors/white.png</texturefocus>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturenofocus>-</texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
         <textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>

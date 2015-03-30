@@ -10,7 +10,8 @@
     <color name="background">ff424242</color>
     <color name="overlay">44ffffff</color>
     <color name="textActive">fff0f0f0</color>
-    <color name="textDisabled">ffEF9A9A</color>
+    <color name="textDisabled">ff757575</color>
+    <color name="menuDisabled">ffEF9A9A</color>
     <color name="textboxInactive">99FFFFFF</color>
 
     <color name="500">FFF44336</color>

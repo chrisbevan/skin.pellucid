@@ -8,6 +8,28 @@
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
     <controls>
         <include>globalBackground</include>
+
+        <!--fanart test-->
+        <control type="multiimage">
+            <posx>0</posx>
+            <posy>0</posy>
+            <include>dimensionsFullscreen</include>
+            <imagepath>$INFO[Skin.String(videoFanartLocation)]</imagepath>
+            <timeperimage>25000</timeperimage>
+            <fadetime>1000</fadetime>
+            <pauseatend>10000</pauseatend>
+            <randomize>true</randomize>
+            <aspectratio>stretch</aspectratio>
+            <colordiffuse>11ffffff</colordiffuse>
+            <include>kenBurnsey</include>
+        </control>
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/vignette.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+
         <!--system info indicator-->
         <control type="label">
             <posx>col-1-begin</posx>
@@ -162,6 +184,43 @@
                         <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     </item>
                 </content>
+            </control>
+        </control>
+        <!--Date / time and weather-->
+        <control type="group">
+            <posx>col-17-begin</posx>
+            <posy>row-21-begin</posy>
+            <control type="label">
+                <posx>8-col</posx>
+                <posy>12</posy>
+                <width>8-col</width>
+                <height>4-row</height>
+                <align>right</align>
+                <font>veryLarge</font>
+                <textcolor>selected</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="label">
+                <posx>8-col</posx>
+                <posy>3-row</posy>
+                <width>8-col</width>
+                <height>4-row</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>Large</font>
+                <textcolor>selected</textcolor>
+                <label>$INFO[System.Date(DDD)] [COLOR 500][B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)][/COLOR]</label>
+            </control>
+            <control type="label">
+                <posx>8-col</posx>
+                <posy>5-row</posy>
+                <width>8-col</width>
+                <height>3-row</height>
+                <align>right</align>
+                <aligny>center</aligny>
+                <font>regular</font>
+                <textcolor>selected</textcolor>
+                <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
         </control>
         <!--debugging-->

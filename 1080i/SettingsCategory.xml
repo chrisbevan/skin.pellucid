@@ -52,25 +52,28 @@
             </control>
             <!--settings level button-->
             <control type="grouplist">
-                <posx>800</posx>
+                <posx>13-col</posx>
                 <posy>0</posy>
                 <orientation>horizontal</orientation>
                 <control type="label">
                     <width>auto</width>
-                    <font>regular</font>
+                    <height>2-row</height>
+                    <font>small</font>
+                    <aligny>center</aligny>
                     <label>$LOCALIZE[31126]:</label>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="button" id="20">
                     <align>left</align>
-                    <height>57</height>
-                    <width>3-col</width>
-                    <font>regularStrong</font>
+                    <height>2-row</height>
+                    <width>2-col</width>
+                    <font>small</font>
                     <label>$LOCALIZE[10037]</label>
-                    <textcolor>black</textcolor>
-                    <focusedcolor>selected</focusedcolor>
-                    <texturefocus>colors/black.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>black</focusedcolor>
+                    <texturefocus>colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="500">colors/white.png</texturenofocus>
                     <textoffsetx>12</textoffsetx>
                     <textoffsety>0</textoffsety>
                     <onclick>SettingsLevelChange</onclick>
@@ -90,6 +93,15 @@
                 <orientation>vertical</orientation>
             </control>
             <!--options-->
+            <control type="image">
+                <posx>4-col</posx>
+                <posy>2-row</posy>
+                <width>14-col</width>
+                <height>18-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <control type="grouplist" id="5">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
@@ -104,15 +116,19 @@
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
+                <texturenofocus>-</texturenofocus>
             </control>
             <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
+                <texturenofocus>-</texturenofocus>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
+                <texturenofocus>-</texturenofocus>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
+                <texturenofocus>-</texturenofocus>
             </control>
             <!--subcat menu buttons-->
             <control type="button" id="10">

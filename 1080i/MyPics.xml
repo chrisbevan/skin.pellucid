@@ -8,120 +8,117 @@
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
+
             <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
+
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-            <!--content provider-->
-            <control type="group">
-                <posx>0</posx>
-                <posy>0</posy>
-                <!--main menu-->
-                <control type="group">
-                    <posx>col-1-begin</posx>
-                    <posy>row-2-begin</posy>
-                    <include>dateTime</include>
-                    <control type="list" id="9000">
-                        <posx>-14</posx>
-                        <posy>180</posy>
-                        <width>4-col</width>
-                        <height>12-row</height>
-                        <orientation>vertical</orientation>
-                        <onleft>61</onleft>
-                        <onright>9999</onright>
-                        <ondown>9000</ondown>
-                        <itemlayout width="4-col" height="43">
-                            <control type="label">
-                                <posx>14</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <font>menuTitle</font>
-                                <info>ListItem.Label</info>
-                                <textcolor>unselected</textcolor>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="4-col" height="43">
-                            <control type="label">
-                                <visible>Control.HasFocus(9000)</visible>
-                                <posx>1</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <font>menuTitle</font>
-                                <label>[ $INFO[ListItem.Label] ]</label>
-                                <textcolor>textActive</textcolor>
-                            </control>
-                            <control type="label">
-                                <visible>!Control.HasFocus(9000)</visible>
-                                <posx>14</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <font>menuTitle</font>
-                                <label>$INFO[ListItem.Label]</label>
-                                <textcolor>unselected</textcolor>
-                            </control>
-                        </focusedlayout>
-                        <!--<content target="pictures">addons://sources/image/</content>-->
-                        <content target="pictures">sources://pictures/</content>
-                    </control>
-                </control>
-                <!--Folder titles-->
-                <control type="group">
-                    <posx>col-4-begin</posx>
-                    <posy>row-2-begin</posy>
-                    <!--source title-->
-                    <control type="label">
-                        <visible>IntegerGreaterThan(container.Numitems,0)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>14-col</width>
-                        <font>pageTitle</font>
-                        <label>31056</label>
-                        <textcolor>textActive</textcolor>
-                    </control>
-                    <!--source subtitle-->
-                    <control type="label">
-                        <visible>IntegerGreaterThan(container.Numitems,0) + Container.HasFolders</visible>
-                        <posx>0</posx>
-                        <posy>45</posy>
-                        <width>24-col</width>
-                        <font>regular</font>
-                        <label>$INFO[container.Numitems,, $LOCALIZE[31037]]</label>
-                        <textcolor>textActive</textcolor>
-                    </control>
-                    <control type="label">
-                        <visible>IntegerGreaterThan(container.Numitems,0) + !Container.HasFolders</visible>
-                        <posx>0</posx>
-                        <posy>45</posy>
-                        <width>24-col</width>
-                        <font>regular</font>
-                        <label>$INFO[container.Numitems,, $LOCALIZE[31050]]$INFO[container.foldername, - ,]</label>
-                        <textcolor>textActive</textcolor>
-                    </control>
-                </control>
-                <!--Main content listing-->
-                <control type="group" id="9999">
-                    <posx>col-4-begin</posx>
-                    <posy>row-5-begin</posy>
-                    <!--source content-->
-                    <control type="group">
-                        <include>viewPictureGrid</include>
-                    </control>
-                </control>
-                <!--page scrollbar-->
-                <control type="group" id="8000">
-                    <visible>Control.IsVisible(60)</visible>
-                    <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
-                    <control type="scrollbar" id="60">
-                        <posx>72r</posx>
-                        <posy>258</posy>
-                        <height>672</height>
-                        <onleft>9999</onleft>
-                    </control>
+
+
+            <!--Main content listing-->
+            <control type="group" id="9999">
+                <include>photos</include>
+            </control>
+
+            <!--page scrollbar-->
+            <control type="group" id="8000">
+                <visible>Control.IsVisible(60)</visible>
+                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+                <control type="scrollbar" id="60">
+                    <posx>72r</posx>
+                    <posy>258</posy>
+                    <height>672</height>
+                    <onleft>9999</onleft>
                 </control>
             </control>
+
+            <!--Folder titles-->
+            <control type="group">
+                <posx>col-1-begin</posx>
+                <posy>row-1-begin</posy>
+                <!--source title-->
+                <control type="label">
+                    <visible>IntegerGreaterThan(container.Numitems,0)</visible>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>14-col</width>
+                    <font>pageTitle</font>
+                    <label>31056</label>
+                    <textcolor>textActive</textcolor>
+                </control>
+                <!--source subtitle-->
+                <control type="label">
+                    <visible>IntegerGreaterThan(container.Numitems,0) + Container.HasFolders</visible>
+                    <posx>0</posx>
+                    <posy>45</posy>
+                    <width>24-col</width>
+                    <font>regular</font>
+                    <label>$INFO[container.Numitems,, $LOCALIZE[31037]]</label>
+                    <textcolor>textActive</textcolor>
+                </control>
+                <control type="label">
+                    <visible>IntegerGreaterThan(container.Numitems,0) + !Container.HasFolders</visible>
+                    <posx>0</posx>
+                    <posy>45</posy>
+                    <width>24-col</width>
+                    <font>regular</font>
+                    <label>$INFO[container.Numitems,, $LOCALIZE[31050]]$INFO[container.foldername, - ,]</label>
+                    <textcolor>textActive</textcolor>
+                </control>
+            </control>
+
+            <!--dateTime-->
+            <include>dateTime</include>
+
         </control>
+
+        <control type="list" id="9000">
+            <posx>-14</posx>
+            <posy>180</posy>
+            <width>4-col</width>
+            <height>12-row</height>
+            <orientation>vertical</orientation>
+            <onleft>61</onleft>
+            <onright>9999</onright>
+            <ondown>9000</ondown>
+            <itemlayout width="4-col" height="43">
+                <control type="label">
+                    <posx>14</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <font>menuTitle</font>
+                    <info>ListItem.Label</info>
+                    <textcolor>unselected</textcolor>
+                </control>
+            </itemlayout>
+            <focusedlayout width="4-col" height="43">
+                <control type="label">
+                    <visible>Control.HasFocus(9000)</visible>
+                    <posx>1</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <font>menuTitle</font>
+                    <label>[ $INFO[ListItem.Label] ]</label>
+                    <textcolor>textActive</textcolor>
+                </control>
+                <control type="label">
+                    <visible>!Control.HasFocus(9000)</visible>
+                    <posx>14</posx>
+                    <posy>0</posy>
+                    <width>4-col-gutter</width>
+                    <font>menuTitle</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <textcolor>unselected</textcolor>
+                </control>
+            </focusedlayout>
+            <!--<content target="pictures">addons://sources/image/</content>-->
+            <content target="pictures">sources://pictures/</content>
+            </control>
+
+
         <!--sorting and misc controls-->
         <control type="group" id="61">
             <!--titles-->

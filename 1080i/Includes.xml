@@ -14,10 +14,11 @@
     <include file="View_Movies.xml"/>
     <include file="View_TVShows.xml"/>
     <include file="View_Addons.xml"/>
+    <include file="View_Files.xml"/>
+    <include file="View_Photos.xml"/>
 
-    <include file="ViewsDialogs.xml"/>
     <include file="ViewsMusic.xml"/>
-    <include file="ViewsPictures.xml"/>
+
     <!--modal dialogs-->
     <include name="modalDialog">
         <control type="image">
@@ -107,7 +108,7 @@
     </include>
      <!--conditional positioning for progress dialogs (avoid overlaps)-->
     <include name="progressPosition1"><posy>row-2-begin</posy></include>
-    <include name="progressPosition2"><posy>row-4-begin</posy></include>
+    <include name="progressPosition2"><posy>row-6-begin</posy></include>
     <!--scroll suppression for low power mode-->
     <!--text scrolling suppression for low power mode-->
     <include name="scrollSuppressionActive"><scroll>False</scroll></include>

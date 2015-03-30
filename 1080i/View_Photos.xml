@@ -1,67 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!--Photo browser-->
-    <include name="viewPictureGrid">
+    <include name="photos">
         <control type="panel" id="52">
-            <visible>true</visible>
-            <posx>0</posx>
-            <posy>-12</posy>
-            <width>22-col</width>
-            <height>744</height>
+            <posx>col-1-begin</posx>
+            <posy>row-5-begin</posy>
+            <width>24-col</width>
+            <height>23-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>51</ondown>
             <onup>51</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout width="312" height="366">
+            <itemlayout width="6-col" height="294">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>276</width>
-                    <height>273</height>
+                    <width>6-col-gutter</width>
+                    <height>272</height>
                     <aspectratio>scale</aspectratio>
                     <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
-                <control type="group">
-                    <posx>0</posx>
-                    <posy>276</posy>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>276</width>
-                        <height>64</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>77FFFFFF</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>-11</posy>
-                        <width>252</width>
-                        <font>itemSubTitleCondensed</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>18</posy>
-                        <width>252</width>
-                        <font>smallMedium</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.PictureResolution,, • ]$INFO[ListItem.label2]</label>
-                    </control>
-                </control>
             </itemlayout>
-            <focusedlayout width="312" height="366">
+            <focusedlayout width="6-col" height="294">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>276</width>
-                    <height>273</height>
+                    <width>6-col-gutter</width>
+                    <height>272</height>
                     <aspectratio>scale</aspectratio>
                     <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
@@ -70,12 +39,12 @@
                 </control>
                 <control type="group">
                     <posx>0</posx>
-                    <posy>276</posy>
+                    <posy>272</posy>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>276</width>
-                        <height>64</height>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
@@ -83,20 +52,21 @@
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>-11</posy>
-                        <width>252</width>
-                        <font>itemSubTitleCondensed</font>
+                        <posy>0</posy>
+                        <width>5-col</width>
+                        <height>1-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
-                        
-                
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>18</posy>
-                        <width>252</width>
-                        <font>smallMedium</font>
+                        <posy>34</posy>
+                        <width>5-col</width>
+                        <height>1-row</height>
+                        <font>itemSubTitle</font>
                         <textcolor>black</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.PictureResolution,, • ]$INFO[ListItem.label2]</label>

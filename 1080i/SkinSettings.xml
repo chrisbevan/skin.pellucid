@@ -5,76 +5,73 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
+
         <control type="group">
             <posx>col-3-begin</posx>
-            <posy>row-2-begin</posy>
+            <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
-                <posx>-240</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>20-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <!--title-->
             <control type="label">
-                <posx>12</posx>
-                <posy>44</posy>
-                <width>8-col</width>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>20-col-gutter</width>
+                <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>20-col</width>
+                <height>20-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <!--sub menu-->
             <control type="group">
                 <posx>0</posx>
-                <posy>118</posy>
+                <posy>2-row</posy>
                 <!-- Category buttons -->
                 <control type="list" id="8000">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>276</width>
-                    <height>6-row</height>
-                    <onleft>noop</onleft>
+                    <width>4-col</width>
+                    <height>19-row</height>
                     <onright>200</onright>
                     <pagecontrol>-</pagecontrol>
-                    <itemgap>3</itemgap>
-                    <itemlayout height="1-row" width="4-col">
+                    <itemlayout height="2-row" width="4-col">
                         <control type="label">
-                            <posx>12</posx>
+                            <posx>24</posx>
                             <posy>2</posy>
                             <width>4-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
                             <font>menuTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="1-row" width="4-col">
+                    <focusedlayout height="2-row" width="4-col">
                         <control type="image">
                             <visible>!control.hasfocus(8000)</visible>
                             <posx>0</posx>
-                            <posy>2</posy>
+                            <posy></posy>
                             <width>4-col</width>
-                            <height>55</height>
+                            <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
                             <colordiffuse>77FFFFFF</colordiffuse>
@@ -82,16 +79,18 @@
                         <control type="image">
                             <visible>control.hasfocus(8000)</visible>
                             <posx>0</posx>
-                            <posy>2</posy>
+                            <posy>0</posy>
                             <width>4-col</width>
-                            <height>55</height>
+                            <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
                         </control>
                         <control type="label">
-                            <posx>12</posx>
-                            <posy>2</posy>
+                            <posx>24</posx>
+                            <posy>0</posy>
                             <width>4-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
                             <font>menuTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
@@ -115,25 +114,27 @@
                 </control>
             </control>
             <!--options-->
+            <control type="image">
+                <posx>4-col</posx>
+                <posy>2-row</posy>
+                <width>16-col</width>
+                <height>20-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <control type="grouplist" id="200">
                 <posx>4-col</posx>
-                <posy>120</posy>
+                <posy>2-row</posy>
                 <width>16-col</width>
-                <itemgap>3</itemgap>
-                <height>14-row</height>
+                <height>20-row</height>
                 <onleft>8000</onleft>
+                <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="button" id="1">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Override global background image</description>
-                    <height>54</height>
-                    <width>15-col</width>
-                    <align>left</align>
-                    <textoffsetx>12</textoffsetx>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
+                    <width>15-col-textbox</width>
                     <label>31084</label>
                     <label2>$INFO[Skin.String(globalBackground)]</label2>
                     <onclick>Skin.SetFile(globalBackground,.png|.jpg|.gif,special://skin/extras/backgrounds/)</onclick>
@@ -143,14 +144,8 @@
                 <control type="button" id="2">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Set video fanart</description>
-                    <height>54</height>
-                    <width>15-col</width>
+                    <width>15-col-textbox</width>
                     <align>left</align>
-                    <textoffsetx>12</textoffsetx>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
                     <label>31026</label>
                     <label2>$INFO[Skin.String(videoFanartLocation)]</label2>
                     <onclick>Skin.SetPath(videoFanartLocation)</onclick>
@@ -160,14 +155,7 @@
                 <control type="button" id="3">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Set music fanart</description>
-                    <height>54</height>
-                    <width>15-col</width>
-                    <align>left</align>
-                    <textoffsetx>12</textoffsetx>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
+                    <width>15-col-textbox</width>
                     <label>31030</label>
                     <label2>$INFO[Skin.String(musicFanartLocation)]</label2>
                     <onclick>Skin.SetPath(musicFanartLocation)</onclick>
@@ -177,14 +165,7 @@
                 <control type="button" id="4">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Set game fanart</description>
-                    <height>54</height>
-                    <width>15-col</width>
-                    <align>left</align>
-                    <textoffsetx>12</textoffsetx>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
+                    <width>15-col-textbox</width>
                     <label>31028</label>
                     <label2>$INFO[Skin.String(gameFanartLocation)]</label2>
                     <onclick>Skin.SetPath(gameFanartLocation)</onclick>
@@ -318,11 +299,9 @@
                 <posx>19-col</posx>
                 <control type="button" id="501">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>120</posy>
-                    <height>54</height>
-                    <width>60</width>
-                    <align>left</align>
-                    <textoffsetx>18</textoffsetx>
+                    <posy>2-row</posy>
+                    <height>2-row</height>
+                    <width>1-col</width>
                     <font>symbol</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
@@ -334,11 +313,9 @@
                 </control>
                 <control type="button" id="502">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>177</posy>
-                    <height>54</height>
-                    <width>60</width>
-                    <align>left</align>
-                    <textoffsetx>18</textoffsetx>
+                    <posy>4-row</posy>
+                    <height>2-row</height>
+                    <width>1-col</width>
                     <font>symbol</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
@@ -351,11 +328,9 @@
                 </control>
                 <control type="button" id="503">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>234</posy>
-                    <height>54</height>
-                    <width>60</width>
-                    <align>left</align>
-                    <textoffsetx>18</textoffsetx>
+                    <posy>6-row</posy>
+                    <height>2-row</height>
+                    <width>1-col</width>
                     <font>symbol</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
@@ -368,11 +343,9 @@
                 </control>
                 <control type="button" id="504">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>291</posy>
-                    <height>54</height>
-                    <width>60</width>
-                    <align>left</align>
-                    <textoffsetx>18</textoffsetx>
+                    <posy>8-row</posy>
+                    <height>2-row</height>
+                    <width>1-col</width>
                     <font>symbol</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
