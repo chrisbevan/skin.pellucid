@@ -81,7 +81,7 @@
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
                         <shadowcolor>-</shadowcolor>
-                        <textcolor>accented</textcolor>
+                        <textcolor>textAccented</textcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout height="1-row" width="12-col-gutter">
@@ -162,7 +162,7 @@
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
                         <shadowcolor>-</shadowcolor>
-                        <textcolor>accented</textcolor>
+                        <textcolor>textAccented</textcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout height="1-row" width="12-col-gutter">

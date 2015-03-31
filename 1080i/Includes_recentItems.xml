@@ -2,10 +2,20 @@
 <includes>
     <!--movies-->
     <include name="movieRecentItems">
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>5-row</posy>
+            <width>24-col</width>
+            <height>4-row</height>
+            <align></align>
+            <font>veryLarge</font>
+            <textcolor>textActive</textcolor>
+            <label>Recent Movies</label>
+        </control>
         <control type="panel" id="9998">
             <visible>!stringcompare(Window(Home).Property(Movies.UnWatched),0)</visible>
             <posx>col-1-begin</posx>
-            <posy>row-5-begin</posy>
+            <posy>row-9-begin</posy>
             <width>24-col</width>
             <height>11-row</height>
             <onleft>9000</onleft>
@@ -44,38 +54,29 @@
                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
+                    <include>spinFocusPoster</include>
                 </control>
                 <control type="group">
+                    <include>fadeIn</include>
                     <posx>0</posx>
                     <posy>0</posy>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>1-col</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>44FFFFFF</colordiffuse>
+                        <texture border="0">colors/white.png</texture>
                     </control>
                     <control type="label">
-                        <posx>24</posx>
-                        <posy>4-row</posy>
-                        <width>3-col</width>
-                        <align>center</align>
+                        <posx>34</posx>
+                        <posy>10-row</posy>
+                        <width>9-row</width>
+                        <align>left</align>
+                        <angle>90</angle>
                         <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>black</textcolor>
                         <label>$INFO[ListItem.title]</label>
-                    </control>
-                    <control type="label">
-                        <posx>24</posx>
-                        <posy>5-row</posy>
-                        <width>3-col</width>
-                        <align>center</align>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[listitem.year]</label>
                     </control>
                 </control>
             </focusedlayout>
@@ -83,10 +84,20 @@
     </include>
     <!--tvshows-->
     <include name="tvRecentItems">
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>23-row</posy>
+            <width>24-col</width>
+            <height>4-row</height>
+            <align></align>
+            <font>veryLarge</font>
+            <textcolor>textActive</textcolor>
+            <label>Recent Tvshows</label>
+        </control>
         <control type="panel" id="9997">
             <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
             <posx>col-1-begin</posx>
-            <posy>row-17-begin</posy>
+            <posy>row-27-begin</posy>
             <width>24-col</width>
             <onleft>9000</onleft>
             <ondown>control.setfocus(9998,$INFO[Container(9997).Position])</ondown>
@@ -124,49 +135,29 @@
                     <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                     <colordiffuse>ffffffff</colordiffuse>
+                    <include>spinFocusPoster</include>
                 </control>
                 <control type="group">
+                    <include>fadeIn</include>
                     <posx>0</posx>
                     <posy>0</posy>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>1-col</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>44FFFFFF</colordiffuse>
+                        <texture border="0">colors/white.png</texture>
                     </control>
                     <control type="label">
-                        <posx>24</posx>
-                        <posy>4-row</posy>
-                        <width>3-col</width>
-                        <align>center</align>
+                        <posx>34</posx>
+                        <posy>10-row</posy>
+                        <width>9-row</width>
+                        <align>left</align>
+                        <angle>90</angle>
                         <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.TVshowTitle]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
-                        <posx>24</posx>
-                        <posy>5-row</posy>
-                        <width>3-col</width>
-                        <align>center</align>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[listitem.property(episodecount),, $LOCALIZE[16101]]</label>
-                    </control>
-                    <control type="label">
-                        <visible>SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
-                        <posx>24</posx>
-                        <posy>5-row</posy>
-                        <width>3-col</width>
-                        <align>center</align>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
+                        <textcolor>black</textcolor>
+                        <label>$INFO[ListItem.TVshowTitle] $INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
                     </control>
                 </control>
             </focusedlayout>

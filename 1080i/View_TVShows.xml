@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="tvshows">
-        <visible>!isEmpty(container.foldername)</visible>
+        <visible>window.isactive(Videos,videodb://tvshows/titles/)</visible>
 
         <control type="group">
 
-            <!--this is a list - it needs to be moved elsewhere-->
+            <!--fanart-->
+            <control type="group">
+                <visible>container.content(tvshows)</visible>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                    <fadetime>1500</fadetime>
+                </control>
+                <control type="image">
+                    <texture>vignette.png</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+            </control>
+
+            <!--this is a copy of file list-->
             <control type="panel" id="50">
-                <visible>!container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>!StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>12-col</width>

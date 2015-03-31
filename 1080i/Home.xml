@@ -206,18 +206,16 @@
                 <width>8-col</width>
                 <height>4-row</height>
                 <align>right</align>
-                <aligny>center</aligny>
                 <font>Large</font>
                 <textcolor>selected</textcolor>
                 <label>$INFO[System.Date(DDD)] [COLOR 500][B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)][/COLOR]</label>
             </control>
             <control type="label">
                 <posx>8-col</posx>
-                <posy>5-row</posy>
-                <width>8-col</width>
+                <posy>182</posy>
+                <width>12-col</width>
                 <height>3-row</height>
                 <align>right</align>
-                <aligny>center</aligny>
                 <font>regular</font>
                 <textcolor>selected</textcolor>
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>

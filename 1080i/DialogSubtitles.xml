@@ -58,7 +58,7 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <font>itemTitle</font>
-                <textcolor>accented</textcolor>
+                <textcolor>textAccented</textcolor>
                 <wrapmultiline>true</wrapmultiline>
             </control>
             <!-- ** Required ** Do not change <id>or<type>-->

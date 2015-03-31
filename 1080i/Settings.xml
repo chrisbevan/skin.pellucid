@@ -99,7 +99,7 @@
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
-                        <include>spinFocus</include>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>0</posx>

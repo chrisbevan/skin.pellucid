@@ -86,7 +86,7 @@
                     <posy>0</posy>
                     <width>6-col</width>
                     <font>itemSubTitle</font>
-                    <textcolor>accented</textcolor>
+                    <textcolor>textAccented</textcolor>
                 </control>
                 <control type="panel" id="12">
                     <posx>0</posx>
@@ -152,7 +152,7 @@
                     <posy>0</posy>
                     <width>6-col</width>
                     <font>itemSubTitle</font>
-                    <textcolor>accented</textcolor>
+                    <textcolor>textAccented</textcolor>
                 </control>
                 <control type="panel" id="11">
                     <posx>0</posx>

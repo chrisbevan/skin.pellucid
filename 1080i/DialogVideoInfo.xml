@@ -136,7 +136,7 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <font>itemSubTitle</font>
-                        <textcolor>accented</textcolor>
+                        <textcolor>textAccented</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -221,7 +221,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <colordiffuse>500</colordiffuse>
-                        <include>spinFocus</include>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>

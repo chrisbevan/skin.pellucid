@@ -5,24 +5,49 @@
             <visible>container.content(seasons) + !container.content(episodes)</visible>
 
             <!--fanart-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>fullscreenWidth</width>
-                <height>fullscreenHeight</height>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                <fadetime>500</fadetime>
-                <include>kenBurnsey</include>
+            <control type="group">
+                <posy>-512</posy>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                    <bordertexture border="6" colordiffuse="500">colors/white.png</bordertexture>
+                    <bordersize>0,0,0,6</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
+            </control>
+
+            <!--title-->
+            <control type="group">
+                <posx>col-1-begin</posx>
+                <posy>row-1-begin</posy>
+                <control type="image">
+                    <posx>-96</posx>
+                    <posy>10-row</posy>
+                    <width>fullscreenWidth</width>
+                    <height>148</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture border="0">colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>10-row</posy>
+                    <width>24-col</width>
+                    <height>4-row</height>
+                    <font>veryLarge</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[container.foldername]</label>
+                </control>
             </control>
 
             <!--content-->
             <control type="panel" id="58">
-                <visible>!container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>!StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
-                <width>21-col</width>
-                <height>744</height>
+                <posy>row-17-begin</posy>
+                <width>24-col</width>
+                <height>11-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>50</ondown>
@@ -53,38 +78,29 @@
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
+                        <include>spinFocusPoster</include>
                     </control>
                     <control type="group">
+                        <include>fadeIn</include>
                         <posx>0</posx>
                         <posy>0</posy>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>4-col-gutter</width>
+                            <width>1-col</width>
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/black.png</texture>
-                            <bordertexture border="3" colordiffuse="99111111">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>44FFFFFF</colordiffuse>
+                            <texture border="0">colors/white.png</texture>
                         </control>
                         <control type="label">
-                            <posx>24</posx>
-                            <posy>4-row</posy>
-                            <width>3-col</width>
-                            <align>center</align>
+                            <posx>34</posx>
+                            <posy>10-row</posy>
+                            <width>10-row</width>
+                            <align>left</align>
+                            <angle>90</angle>
                             <font>itemTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.title]</label>
-                        </control>
-                        <control type="label">
-                            <posx>24</posx>
-                            <posy>5-row</posy>
-                            <width>3-col</width>
-                            <align>center</align>
-                            <font>itemSubTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$VAR[itemDetail]</label>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[ListItem.season,$LOCALIZE[31011] , • ]$VAR[itemDetail]</label>
                         </control>
                     </control>
                 </focusedlayout>

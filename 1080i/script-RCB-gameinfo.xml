@@ -86,7 +86,7 @@
                             <width>6-col-gutter</width>
                             <font>itemSubTitle</font>
                             <textcolor>textActive</textcolor>
-                            <label>[COLOR accented]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
+                            <label>[COLOR textAccented]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </itemlayout>
@@ -97,7 +97,7 @@
                             <width>6-col-gutter</width>
                             <font>itemSubTitle</font>
                             <textcolor>textActive</textcolor>
-                            <label>[COLOR accented]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
+                            <label>[COLOR textAccented]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </focusedlayout>

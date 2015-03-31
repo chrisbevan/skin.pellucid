@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="episodes">
+
+        <!--fanart-->
+        <control type="group">
+            <visible>container.content(episodes)</visible>
+            <posy>-692</posy>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                <bordertexture border="0" colordiffuse="500">colors/white.png</bordertexture>
+                <bordersize>0,0,0,6</bordersize>
+                <colordiffuse>ffffffff</colordiffuse>
+            </control>
+        </control>
+
+        <!--title-->
+        <control type="group">
+            <posx>col-1-begin</posx>
+            <posy>row-1-begin</posy>
+            <visible>container.content(episodes)</visible>
+            <control type="image">
+                <posx>-96</posx>
+                <posy>5-row</posy>
+                <width>fullscreenWidth</width>
+                <height>148</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>5-row</posy>
+                <width>24-col</width>
+                <height>4-row</height>
+                <align></align>
+                <font>veryLarge</font>
+                <textcolor>ccf1f1f1</textcolor>
+                <label>$INFO[ListItem.TVShowTitle] $INFO[container.foldername]</label>
+            </control>
+        </control>
+
         <!--episode synopsis & thumb-->
         <control type="group">
             <visible>[container.content(episodes) | Substring(Container.folderpath,plugin)]</visible>
-
             <control type="image">
                 <visible>!Substring(Container.folderpath,plugin)</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
+                <posy>row-12-begin</posy>
                 <width>12-col-gutter</width>
                 <height>473</height>
                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                 <texture border="0">$INFO[listitem.thumb]</texture>
-                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
+                <bordertexture border="3" colordiffuse="500">colors/white.png</bordertexture>
+                <bordersize>6</bordersize>
                 <fadetime>200</fadetime>
             </control>
             <control type="image">
@@ -34,7 +74,7 @@
             <control type="panel" id="52">
                 <visible>container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
                 <posx>col-13-begin</posx>
-                <posy>row-5-begin</posy>
+                <posy>row-12-begin</posy>
                 <width>12-col</width>
                 <height>12-row</height>
                 <onleft>9000</onleft>
@@ -87,21 +127,13 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.duration)</visible>
-                        <posx>8-col</posx>
-                        <posy>0</posy>
-                        <width>3-col</width>
-                        <font>smallStrong</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.duration] mins</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
                         <visible>!isempty(ListItem.playcount)</visible>
-                        <posx>36r</posx>
-                        <posy>1</posy>
-                        <width>40</width>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
                         <font>symbol</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -118,6 +150,7 @@
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>500</colordiffuse>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -155,21 +188,13 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.duration)</visible>
-                        <posx>8-col</posx>
-                        <posy>0</posy>
-                        <width>3-col</width>
-                        <font>smallStrong</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.duration] mins</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
                         <visible>!isempty(ListItem.playcount)</visible>
-                        <posx>36r</posx>
-                        <posy>1</posy>
-                        <width>40</width>
+                        <posx>11-col</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
                         <font>symbol</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>

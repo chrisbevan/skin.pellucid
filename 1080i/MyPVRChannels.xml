@@ -46,7 +46,7 @@
                     <posy>0</posy>
                     <width>14-col</width>
                     <font>pageTitle</font>
-                    <label>$LOCALIZE[31006] [COLOR accented]$LOCALIZE[31078][/COLOR]</label>
+                    <label>$LOCALIZE[31006] [COLOR textAccented]$LOCALIZE[31078][/COLOR]</label>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="label">
@@ -55,7 +55,7 @@
                     <posy>0</posy>
                     <width>14-col</width>
                     <font>pageTitle</font>
-                    <label>$LOCALIZE[31164] [COLOR accented]$LOCALIZE[31078][/COLOR]</label>
+                    <label>$LOCALIZE[31164] [COLOR textAccented]$LOCALIZE[31078][/COLOR]</label>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="label">

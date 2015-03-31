@@ -4,7 +4,7 @@
     <color name="selected">fff0f0f0</color>
     <color name="unselected">ff919191</color>
     <color name="disabled">ff515151</color>
-    <color name="accented">ffa1a1a1</color>
+    <color name="textAccented">ffa1a1a1</color>
 
     <!--new scheme-->
     <color name="background">ff424242</color>
@@ -13,6 +13,7 @@
     <color name="textDisabled">ff757575</color>
     <color name="menuDisabled">ffEF9A9A</color>
     <color name="textboxInactive">99FFFFFF</color>
+    <color name="textAccented">FFF44336</color>
 
     <color name="500">FFF44336</color>
 

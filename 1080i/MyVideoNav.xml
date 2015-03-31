@@ -36,6 +36,7 @@
                     <include>seasons</include>
                     <include>episodes</include>
                     <include>addons</include>
+                    <include>files</include>
                 </control>
             </control>
 

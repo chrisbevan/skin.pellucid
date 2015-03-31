@@ -144,7 +144,7 @@
                             <height>2-row</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                             <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            <include>spinFocus</include>
+                            <include>spinFocusIcon</include>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
