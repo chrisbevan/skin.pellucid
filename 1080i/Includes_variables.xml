@@ -42,15 +42,17 @@
         <value>$LOCALIZE[14022]</value>
     </variable>
     <variable name="listSubTitle">
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true) + SubString(skin.string(videoHomeItemsMoviesSource),recentmovies) + SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)">$LOCALIZE[31176]</value>
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true) + SubString(skin.string(videoHomeItemsMoviesSource),recentmovies) + SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)">$LOCALIZE[31177]</value>
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true) + SubString(skin.string(videoHomeItemsMoviesSource),randommovies) + SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)">$LOCALIZE[31178]</value>
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true) + SubString(skin.string(videoHomeItemsMoviesSource),randommovies) + SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)">$LOCALIZE[31179]</value>
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
-        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),recentalbums)">$LOCALIZE[31013]</value>
-        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),randomalbums)">$LOCALIZE[31015]</value>
+        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
     </variable>
+
+    <!--***TO DELETE***-->
+    <variable name="recentItemsTitle">
+        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),recentalbums)">$LOCALIZE[31013]</value>
+        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),randomalbums)">$LOCALIZE[31013]</value>
+    </variable>
+
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>

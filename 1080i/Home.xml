@@ -10,35 +10,18 @@
         <include>globalBackground</include>
 
         <!--fanart test-->
-        <control type="multiimage">
-            <posx>0</posx>
-            <posy>0</posy>
+        <control type="image">
             <include>dimensionsFullscreen</include>
-            <imagepath>$INFO[Skin.String(videoFanartLocation)]</imagepath>
-            <timeperimage>25000</timeperimage>
-            <fadetime>1000</fadetime>
-            <pauseatend>10000</pauseatend>
-            <randomize>true</randomize>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>11ffffff</colordiffuse>
-            <include>kenBurnsey</include>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture border="0">$INFO[skin.string(globalBackground)]</texture>
+            <bordersize>0</bordersize>
+            <colordiffuse>ffffffff</colordiffuse>
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>
             <texture>backgrounds/vignette.png</texture>
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
-        </control>
-
-        <!--system info indicator-->
-        <control type="label">
-            <posx>col-1-begin</posx>
-            <posy>row-27-begin</posy>
-            <width>24-col</width>
-            <align>left</align>
-            <font>smallMedium</font>
-            <textcolor>textActive</textcolor>
-            <label>[B]↑[/B] $LOCALIZE[10511]      [B]↓[/B] $LOCALIZE[24027]</label>
         </control>
         <!--browse controls-->
         <control type="group">
@@ -208,7 +191,7 @@
                 <align>right</align>
                 <font>Large</font>
                 <textcolor>selected</textcolor>
-                <label>$INFO[System.Date(DDD)] [COLOR 500][B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)][/COLOR]</label>
+                <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
                 <posx>8-col</posx>

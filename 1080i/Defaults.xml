@@ -73,7 +73,7 @@
         <label>-</label>
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
-        <font>itemTitle</font>
+        <font>buttonTitle</font>
         <textcolor>unselected</textcolor>
         <focusedcolor>selected</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
@@ -89,7 +89,7 @@
         <aligny>center</aligny>
         <textoffsetx>24</textoffsetx>
         <textoffsety>0</textoffsety>
-        <font>menuButton</font>
+        <font>buttonTitle</font>
         <label>-</label>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -113,7 +113,7 @@
         <align>left</align>
         <aligny>center</aligny>
         <textoffsetx>24</textoffsetx>
-        <font>menuButton</font>
+        <font>buttonTitle</font>
         <label>-</label>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -136,7 +136,7 @@
         <align>left</align>
         <aligny>center</aligny>
         <textoffsetx>24</textoffsetx>
-        <font>menuButton</font>
+        <font>buttonTitle</font>
         <label>-</label>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
@@ -157,7 +157,7 @@
         <posy>0</posy>
         <width>-</width>
         <height>2-row</height>
-        <font>menuButton</font>
+        <font>buttonTitle</font>
         <textoffsetx>24</textoffsetx>
         <textoffsety>0</textoffsety>
         <textcolor>textActive</textcolor>

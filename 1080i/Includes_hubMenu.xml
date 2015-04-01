@@ -20,18 +20,9 @@
                 <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>col-7-begin</width>
-                <height>row-5-begin</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="list" id="9001">
                 <posx>0</posx>
-                <posy>row-5-begin</posy>
+                <posy>row-4-begin</posy>
                 <width>8-col</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
@@ -96,19 +87,10 @@
                 <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>col-7-begin</width>
-                <height>row-5-begin</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <!--menu items-->
             <control type="grouplist" id="9002">
                 <posx>0</posx>
-                <posy>row-5-begin</posy>
+                <posy>row-4-begin</posy>
                 <width>col-7-begin</width>
                 <height>27-row</height>
                 <itemgap>0</itemgap>

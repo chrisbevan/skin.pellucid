@@ -46,6 +46,12 @@
             <linespacing>0.9</linespacing>
         </font>
         <font>
+            <name>mediumLight</name>
+            <filename>roboto/light.ttf</filename>
+            <size>48</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
             <name>regular</name>
             <filename>roboto/regular.ttf</filename>
             <size>36</size>
@@ -110,7 +116,7 @@
         <font>
             <name>pageSubTitle</name>
             <filename>roboto/medium.ttf</filename>
-            <size>36</size>
+            <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>
@@ -156,7 +162,7 @@
         <font>
             <name>buttonTitle</name>
             <filename>roboto/regular.ttf</filename>
-            <size>30</size>
+            <size>28</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>

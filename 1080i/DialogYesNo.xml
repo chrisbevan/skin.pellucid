@@ -7,27 +7,27 @@
         <include>modalDialog</include>
         <control type="group">
             <posx>0</posx>
-            <posy>368</posy>
+            <posy>row-10-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
             <!--text-->
             <control type="group">
                 <posx>col-9-begin</posx>
-                <posy>24</posy>
+                <posy>0</posy>
                 <control type="label" id="1">
                     <description>heading</description>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>9-col</width>
-                    <font>pageTitle</font>
+                    <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>1-row</posy>
+                    <posy>68</posy>
                     <width>8-col</width>
-                    <height>128</height>
-                    <font>regular</font>
+                    <height>2-row</height>
+                    <font>textbox</font>
                     <textcolor>textActive</textcolor>
                     <label>$INFO[control.getlabel(2)] $INFO[control.getlabel(3)] $INFO[control.getlabel(4)]</label>
                 </control>
@@ -37,7 +37,7 @@
                 <posx>col-9-begin</posx>
                 <posy>4-row</posy>
                 <width>8-col</width>
-                <height>1-row</height>
+                <height>2-row</height>
                 <itemgap>0</itemgap>
                 <onleft>50</onleft>
                 <onright>50</onright>
@@ -47,25 +47,15 @@
                 <!--selection buttons-->
                 <control type="button" id="10">
                     <description>No</description>
+                    <texturefocus colordiffuse="500">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>106</label>
-                    <font>menuTitle</font>
-                    <align>left</align>
-                    <textoffsetx>24</textoffsetx>
-                    <focusedcolor>black</focusedcolor>
-                    <textcolor>textActive</textcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus>colors/black.png</texturenofocus>
                 </control>
                 <control type="button" id="11">
                     <description>Yes</description>
+                    <texturefocus colordiffuse="500">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>107</label>
-                    <font>menuTitle</font>
-                    <align>left</align>
-                    <textoffsetx>24</textoffsetx>
-                    <focusedcolor>black</focusedcolor>
-                    <textcolor>textActive</textcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus>colors/black.png</texturenofocus>
                 </control>
             </control>
         </control>

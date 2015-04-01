@@ -7,36 +7,48 @@
     <controls>
         <include>modalDialog</include>
         <control type="group">
-            <posx>col-1-begin</posx>
+            <posx>col-10-begin</posx>
             <posy>7-row</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="list" id="8000">
-                <posx>-15</posx>
+                <posx>0</posx>
                 <posy>0</posy>
                 <width>6-col</width>
-                <height>6-row</height>
+                <height>8-row</height>
                 <itemgap>0</itemgap>
-                <itemlayout width="6-col" height="1-row">
+                <itemlayout width="6-col" height="2-row">
                     <control type="label">
-                        <posx>15</posx>
+                        <posx>12</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
-                        <align>left</align>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>unselected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="1-row">
-                    <control type="label">
-                        <posx>-1</posx>
+                <focusedlayout width="6-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col</width>
-                        <align>left</align>
+                        <height>2-row</height>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>[ $INFO[ListItem.label] ]</label>
+                        <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
                 <content>

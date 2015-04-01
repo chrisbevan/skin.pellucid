@@ -74,7 +74,7 @@ msgid "Season"
 msgstr ""
 
 msgctxt "#31012"
-msgid "Movies and TVShows"
+msgid "Video Library"
 msgstr ""
 
 msgctxt "#31013"
@@ -646,17 +646,17 @@ msgid "Set Latest Content"
 msgstr ""
 
 msgctxt "#31176"
-msgid "Recent Movies / Recent TVshows"
+msgid "Recent Movies"
 msgstr ""
 
 msgctxt "#31177"
-msgid "Recent Movies / Random TVshows"
+msgid "Random Movies"
 msgstr ""
 
 msgctxt "#31178"
-msgid "Random Movies / Recent TVshows"
+msgid "Recent TV Shows"
 msgstr ""
 
 msgctxt "#31179"
-msgid "Random Movies / Random TVshows"
+msgid "Random TV Shows"
 msgstr ""

@@ -34,7 +34,6 @@
     </include>
     <include name="spinFocusPoster">
         <animation type="focus" loop="false" reversible="false">
-            <effect type="fade" time="600"/>
             <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
             <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
         </animation>
@@ -63,7 +62,8 @@
     </include>
     <include name="modalDialogContentShift">
         <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus">
-            <effect type="zoom" end="95" time="200" center="auto" tween="sine" easing="in"/>
+            <effect type="zoom" end="205" time="200" center="auto" tween="linear" easing="out"/>
+            <effect type="fade" start="100" end="30" time="200"/>
         </animation>
     </include>
 </includes>

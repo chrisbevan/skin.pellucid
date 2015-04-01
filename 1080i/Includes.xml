@@ -29,7 +29,7 @@
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>backgrounds/vignette.png</texture>
+            <texture>vignette.png</texture>
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
@@ -42,13 +42,18 @@
             <colordiffuse>background</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>vignette.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
     </include>
     <!--date and time-->
     <include name="dateTime">
         <control type="group">
             <posx>col-24-begin</posx>
             <posy>row-1-begin</posy>
-            <!--source title-->
             <control type="label">
                 <posx>1-col</posx>
                 <posy>0</posy>
@@ -60,7 +65,7 @@
             </control>
             <control type="label">
                 <posx>1-col</posx>
-                <posy>48</posy>
+                <posy>40</posy>
                 <width>12-col</width>
                 <align>right</align>
                 <font>pageSubTitle</font>

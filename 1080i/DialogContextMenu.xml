@@ -12,12 +12,9 @@
         </control>
         <control type="button" id="1000">
             <description>Buttons</description>
-            <width>5-col</width>
-            <textcolor>unselected</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <font>itemTitle</font>
-            <textoffsetx>12</textoffsetx>
-            <texturefocus>UIControls/textButtonFO.png</texturefocus>
+            <texturefocus colordiffuse="500">colors/white.png</texturefocus>
+            <focusedcolor>textActive</focusedcolor>
+            <width>6-col</width>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
