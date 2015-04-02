@@ -3,44 +3,6 @@
     <include name="seasons">
         <control type="group">
             <visible>container.content(seasons) + !container.content(episodes)</visible>
-
-            <!--fanart-->
-            <control type="group">
-                <posy>-516</posy>
-                <control type="image">
-                    <include>dimensionsFullscreen</include>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                    <bordertexture border="6" colordiffuse="500">colors/white.png</bordertexture>
-                    <bordersize>0,0,0,6</bordersize>
-                    <colordiffuse>ffffffff</colordiffuse>
-                </control>
-            </control>
-
-            <!--title-->
-            <control type="group">
-                <posx>col-1-begin</posx>
-                <posy>row-2-begin</posy>
-                <control type="image">
-                    <posx>-96</posx>
-                    <posy>11-row</posy>
-                    <width>fullscreenWidth</width>
-                    <height>2-row</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture border="0">colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>11-row</posy>
-                    <width>24-col</width>
-                    <height>2-row</height>
-                    <font>medium</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[container.foldername]</label>
-                </control>
-            </control>
-
             <!--content-->
             <control type="panel" id="58">
                 <visible>!StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
@@ -106,6 +68,46 @@
                         </control>
                     </control>
                 </focusedlayout>
+            </control>
+
+            <!--fanart-->
+            <control type="group">
+                <animation type="conditional" condition="true">
+                    <effect type="slide" start="0,0" end="0,-516" tween="cubic" easing="out" delay="0" time="400"/>
+                </animation>
+                <posy>0</posy>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                    <bordertexture border="6" colordiffuse="500">colors/white.png</bordertexture>
+                    <bordersize>0,0,0,6</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
+            </control>
+
+            <!--title-->
+            <control type="group">
+                <posx>col-1-begin</posx>
+                <posy>row-2-begin</posy>
+                <control type="image">
+                    <posx>-96</posx>
+                    <posy>11-row</posy>
+                    <width>fullscreenWidth</width>
+                    <height>2-row</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture border="0">colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>11-row</posy>
+                    <width>24-col</width>
+                    <height>2-row</height>
+                    <font>medium</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[container.foldername]</label>
+                </control>
             </control>
         </control>
     </include>
