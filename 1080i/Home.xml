@@ -8,12 +8,11 @@
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
     <controls>
         <include>globalBackground</include>
-
-        <!--fanart test-->
+        <!--home background-->
         <control type="image">
             <include>dimensionsFullscreen</include>
             <aspectratio scalediffuse="false">scale</aspectratio>
-            <texture border="0">$INFO[skin.string(globalBackground)]</texture>
+            <texture border="0">$INFO[skin.string(homeBackground)]</texture>
             <bordersize>0</bordersize>
             <colordiffuse>ffffffff</colordiffuse>
         </control>
@@ -62,27 +61,33 @@
                     </control>
                 </itemlayout>
                 <focusedlayout width="2-col" height="2-col">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>2-col-textbox</width>
-                        <height>2-col-textbox</height>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture border="0">colors/white.png</texture>
-                        <bordersize>0</bordersize>
-                        <colordiffuse>500</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>2-col-textbox</width>
-                        <height>2-col-textbox</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolVeryLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.label2]</label>
+                    <control type="group">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>2-col-textbox</width>
+                            <height>2-col-textbox</height>
+                            <aspectratio scalediffuse="false">scale</aspectratio>
+                            <texture border="0">colors/white.png</texture>
+                            <bordersize>0</bordersize>
+                            <colordiffuse>500</colordiffuse>
+                            <animation type="focus" loop="false" reversible="false">
+                                <effect type="rotatey" start="0" end="-15" center="70" tween="back" easing="out" time="300"/>
+                                <effect type="rotatey" start="0" end="15" center="70" tween="back" easing="out" delay="300" time="300"/>
+                            </animation>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>2-col-textbox</width>
+                            <height>2-col-textbox</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>symbolVeryLarge</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.label2]</label>
+                        </control>
                     </control>
                     <control type="label">
                         <posx>col-2-begin</posx>

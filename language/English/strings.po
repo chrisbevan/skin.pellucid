@@ -660,3 +660,15 @@ msgstr ""
 msgctxt "#31179"
 msgid "Random TV Shows"
 msgstr ""
+
+msgctxt "#31180"
+msgid "Recent Albums"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Random Album Selection"
+msgstr ""
+
+msgctxt "#31182"
+msgid "Tracks"
+msgstr ""

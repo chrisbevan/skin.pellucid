@@ -16,7 +16,8 @@
             <texture>colors/black.png</texture>
             <aspectratio>stretch</aspectratio>
             <colordiffuse>99ffffff</colordiffuse>
-        </control>
+        </control
+        >
         <!--configuration options-->
         <control type="group">
             <posx>col-3-begin</posx>
@@ -25,64 +26,58 @@
             <include>modalDialogInOutVertical</include>
             <!--content provider title / info-->
             <control type="image">
-                <posx>-240</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>20-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+
+
             <control type="label">
-                <posx>12</posx>
-                <posy>44</posy>
+                <posx>24</posx>
+                <posy>0</posy>
                 <width>16-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[5]              $INFO[ListItem.Property(Addon.Name)]</label>
-                <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>textActive</textcolor>
             </control>
+
             <!--subnav-->
             <control type="grouplist" id="9">
                 <posx>0</posx>
-                <posy>120</posy>
-                <width>-</width>
-                <itemgap>3</itemgap>
+                <posy>2-row</posy>
+                <width>4-col</width>
                 <height>11-row</height>
                 <onleft>9000</onleft>
                 <onright>2</onright>
                 <orientation>vertical</orientation>
             </control>
+
             <!--options area-->
             <control type="grouplist" id="2">
                 <posx>4-col</posx>
-                <posy>120</posy>
-                <width>12-col-gutter</width>
+                <posy>2-row</posy>
+                <width>12-col</width>
                 <height>11-row</height>
                 <onleft>9</onleft>
                 <onright>9001</onright>
                 <orientation>vertical</orientation>
-                <itemgap>3</itemgap>
             </control>
+
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>16-col</posx>
-                <posy>120</posy>
+                <posy>2-row</posy>
                 <width>4-col</width>
-                <height>5-row</height>
-                <itemgap>3</itemgap>
+                <height>6-row</height>
                 <orientation>vertical</orientation>
                 <onleft>2</onleft>
-                <itemlayout width="6-col" height="1-row">
+                <itemlayout width="6-col" height="2-row">
                     <control type="label">
                         <posx>24</posx>
                         <posy>0</posy>
@@ -102,7 +97,7 @@
                         <shadowcolor>-</shadowcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="1-row">
+                <focusedlayout width="6-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>2</posy>
@@ -156,25 +151,9 @@
             </control>
             <control type="button" id="13">
                 <description>Default Category Button</description>
-                <align>left</align>
-                <aligny>top</aligny>
-                <height>54</height>
-                <font>menuTitle</font>
-                <textcolor>textActive</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>colors/white.png</texturefocus>
-                <textoffsetx>12</textoffsetx>
-                <textoffsety>8</textoffsety>
             </control>
             <control type="button" id="3">
                 <description>Default Button</description>
-                <align>left</align>
-                <height>54</height>
-                <font>itemTitle</font>
-                <textcolor>textActive</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>colors/white.png</texturefocus>
-                <textoffsetx>12</textoffsetx>
             </control>
             <control type="radiobutton" id="4">
                 <description>Default RadioButton</description>

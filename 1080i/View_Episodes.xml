@@ -64,7 +64,7 @@
                 <posx>col-13-begin</posx>
                 <posy>row-12-begin</posy>
                 <width>12-col</width>
-                <height>12-row</height>
+                <height>18-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <pagecontrol>60</pagecontrol>

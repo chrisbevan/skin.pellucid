@@ -192,11 +192,13 @@
         <height>2-row</height>
         <font>mediumStrong</font>
         <textcolor>textActive</textcolor>
+        <disabledcolor>textActive</disabledcolor>
+        <invalidcolor>textActive</invalidcolor>
+        <focusedcolor>textActive</focusedcolor>
         <textoffsetx>12</textoffsetx>
         <textoffsety>0</textoffsety>
         <align>center</align>
         <aligny>center</aligny>
-        <focusedcolor>selected</focusedcolor>
         <shadowcolor>-</shadowcolor>
         <texturefocus>colors/keyselected.png</texturefocus>
         <texturenofocus>colors/offblack.png</texturenofocus>

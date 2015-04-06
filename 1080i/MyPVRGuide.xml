@@ -50,7 +50,7 @@
                 </control>
                 <!--Main content listing-->
                 <control type="group" id="9999">
-                    <posx>col-4-begin</posx>
+                    <posx>col-1-begin</posx>
                     <posy>270</posy>
                     <!--animations-->
                     <animation type="windowopen">
@@ -58,8 +58,8 @@
                     </animation>
                     <control type="epggrid" id="10">
                         <description>EPG Grid</description>
-                        <posx>-12</posx>
-                        <posy>-56</posy>
+                        <posx>0</posx>
+                        <posy>0</posy>
                         <width>1758</width>
                         <height>600</height>
                         <pagecontrol>10</pagecontrol>

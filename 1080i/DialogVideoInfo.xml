@@ -69,64 +69,23 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>10-col</width>
-                <height>row-6-begin</height>
+                <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>500</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <posx>0</posx>
-                <posy>row-6-begin</posy>
+                <posy>row-5-begin</posy>
                 <width>10-col</width>
                 <height>1-row</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--content-->
-            <control type="group">
-                <posx>12</posx>
-                <posy>row-1-begin</posy>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>10-col-gutter</width>
-                    <align>left</align>
-                    <height>4-row</height>
-                    <aligny>center</aligny>
-                    <font>pageTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[listitem.title]</label>
-                    <wrapmultiline>true</wrapmultiline>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>5-row</posy>
-                    <width>10-col-gutter</width>
-                    <align>left</align>
-                    <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[ListItem.duration,, $LOCALIZE[31018]. ]$INFO[listitem.MPAA,,.]</label>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <!--synopsis-->
-                <control type="textbox">
-                    <posx>0</posx>
-                    <posy>7-row</posy>
-                    <font>textbox</font>
-                    <width>10-col-gutter</width>
-                    <align>left</align>
-                    <textcolor>textActive</textcolor>
-                    <height>9-row</height>
-                    <label>$INFO[ListItem.plot]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"/>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-            </control>
             <!--meta-->
             <control type="panel">
                 <posx>0</posx>
-                <posy>18-row</posy>
+                <posy>7-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
@@ -179,6 +138,47 @@
                     </item>
                 </content>
             </control>
+            <!--content-->
+            <control type="group">
+                <posx>12</posx>
+                <posy>row-1-begin</posy>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>10-col-gutter</width>
+                    <align>left</align>
+                    <height>3-row</height>
+                    <aligny>center</aligny>
+                    <font>pageTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[listitem.title]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>4-row</posy>
+                    <width>10-col-gutter</width>
+                    <align>left</align>
+                    <font>itemSubTitle</font>
+                    <textcolor>black</textcolor>
+                    <label>$INFO[ListItem.duration,, $LOCALIZE[31018]. ]$INFO[listitem.MPAA,,.]</label>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+                <!--synopsis-->
+                <control type="textbox">
+                    <posx>0</posx>
+                    <posy>10-row</posy>
+                    <font>textbox</font>
+                    <width>10-col-gutter</width>
+                    <align>left</align>
+                    <textcolor>textActive</textcolor>
+                    <height>350</height>
+                    <label>$INFO[ListItem.plot]</label>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+            </control>
             <!--dialog controls-->
             <control type="panel" id="8000">
                 <posx>0</posx>
@@ -188,6 +188,15 @@
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
                 <itemlayout width="5-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -199,6 +208,15 @@
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -297,18 +315,8 @@
                     </item>
                 </content>
             </control>
-            <!--empty image if no artwork downloader installed-->
-            <control type="image">
-                <visible>!System.HasAddon(script.artwork.downloader)</visible>
-                <posx>372</posx>
-                <posy>952</posy>
-                <width>285</width>
-                <height>55</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>colors/black.png</texture>
-                <colordiffuse>cc000000</colordiffuse>
-            </control>
         </control>
+
         <!--content is tvshow episode or content is from a plugin-->
         <control type="group">
             <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
@@ -320,7 +328,7 @@
                 <posy>row-1-begin</posy>
                 <control type="image">
                     <posx>0</posx>
-                    <posy>12</posy>
+                    <posy>0</posy>
                     <width>12-col</width>
                     <height>486</height>
                     <aspectratio scalediffuse="false" aligny="bottom">scale</aspectratio>
@@ -332,101 +340,142 @@
             <!--content-->
             <control type="group">
                 <posx>col-7-begin</posx>
-                <posy>row-10-begin</posy>
+                <posy>row-15-begin</posy>
                 <!--titles-->
-                <control type="label">
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
-                    <align>left</align>
-                    <font>itemSubTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>$INFO[listitem.genre,,  |  ]$INFO[listitem.duration,, $LOCALIZE[31018]  |  ]$INFO[ListItem.Premiered,$LOCALIZE[20416] ,,]$INFO[listitem.mpaa,  |  $LOCALIZE[31174] ,]</label>
+                    <height>3-row</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>500</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
                     <description>Episode title</description>
-                    <posx>0</posx>
-                    <posy>1-row</posy>
-                    <width>12-col</width>
+                    <posx>12</posx>
+                    <posy>0</posy>
+                    <width>12-col-gutter</width>
+                    <height>3-row</height>
                     <align>left</align>
-                    <font>mediumStrong</font>
+                    <aligny>center</aligny>
+                    <font>regularStrong</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>3-row</posy>
+                    <width>12-col</width>
+                    <height>1-row</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>12</posx>
+                    <posy>3-row</posy>
+                    <width>12-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemSubTitle</font>
+                    <textcolor>black</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$INFO[listitem.duration,, $LOCALIZE[31018]  |  ]$INFO[ListItem.Premiered,$LOCALIZE[20416] ,,]$INFO[listitem.mpaa,  |  $LOCALIZE[31174] ,]</label>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>120</posy>
-                    <font>textboxExtraLeading</font>
+                    <posy>5-row</posy>
+                    <font>textbox</font>
                     <width>12-col</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <height>228</height>
-                    <label>[B]$INFO[ListItem.plot][/B]</label>
+                    <height>200</height>
+                    <label>$INFO[ListItem.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
                 </control>
                 <!--dialog controls-->
                 <control type="list" id="8000">
                     <posx>0</posx>
-                    <posy>426</posy>
+                    <posy>11-row</posy>
                     <width>12-col</width>
-                    <height>1-row</height>
-                    <itemgap>3</itemgap>
+                    <height>2-row</height>
                     <orientation>horizontal</orientation>
-                    <itemlayout width="6-col" height="1-row">
+                    <itemlayout width="6-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
-                            <posy>2</posy>
+                            <posy>0</posy>
                             <width>6-col</width>
-                            <height>53</height>
+                            <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
                         </control>
                         <control type="label">
-                            <posx>24</posx>
+                            <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>center</align>
                             <font>symbol</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                         <control type="label">
-                            <posx>1-col</posx>
-                            <posy>2</posy>
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
                             <width>6-col</width>
-                            <font>menuTitle</font>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="6-col" height="1-row">
+                    <focusedlayout width="6-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
-                            <posy>2</posy>
-                            <width>6-col</width>
-                            <height>53</height>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/white.png</texture>
+                            <colordiffuse>500</colordiffuse>
+                            <include>spinFocusIcon</include>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>5-col</width>
+                            <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
                         </control>
                         <control type="label">
-                            <posx>24</posx>
+                            <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>center</align>
                             <font>symbol</font>
-                            <textcolor>black</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                         <control type="label">
-                            <posx>1-col</posx>
-                            <posy>2</posy>
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
                             <width>6-col</width>
-                            <font>menuTitle</font>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>

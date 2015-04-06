@@ -43,7 +43,7 @@
             <name>mediumStrong</name>
             <filename>roboto/bold.ttf</filename>
             <size>48</size>
-            <linespacing>0.9</linespacing>
+            <linespacing>1</linespacing>
         </font>
         <font>
             <name>mediumLight</name>
@@ -161,7 +161,7 @@
         </font>
         <font>
             <name>buttonTitle</name>
-            <filename>roboto/regular.ttf</filename>
+            <filename>roboto/medium.ttf</filename>
             <size>28</size>
             <linespacing>1.0</linespacing>
         </font>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="musicRecentItems">
+         <control type="group" id="9300">
+                <animation type="Conditional" condition="controlgroup(9301).hasfocus">
+                    <effect type="zoom" end="205" time="200" center="auto" tween="linear" easing="out"/>
+                    <effect type="fade" start="100" end="30" time="200"/>
+                    <effect type="slide" start="0,0" end="0,0" time="200"/>
+                </animation>
+            <control type="label">
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31180]</label>
+            </control>
+            <control type="panel" id="9998">
+                <posx>col-1-begin</posx>
+                <posy>row-7-begin</posy>
+                <width>24-col</width>
+                <height>20-row</height>
+                <onleft>9000</onleft>
+                <ondown>9997</ondown>
+                <content>plugin://script.maximinimalism.functions?type=recentalbums</content>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="4-col">
+                    <control type="group">
+                        <include>spinFocusPoster</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>ffFFFFFF</colordiffuse>
+                        </control>
+                        <control type="group">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>3-row</width>
+                                <height>4-col-gutter</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/white.png</texture>
+                                <colordiffuse>500</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>12</posx>
+                                <posy>248</posy>
+                                <width>7-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <aligny>top</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>[B]$INFO[ListItem.title][/B]</label>
+                            </control>
+                            <control type="label">
+                                <posx>54</posx>
+                                <posy>248</posy>
+                                <width>7-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <aligny>top</aligny>
+                                <font>itemSubTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>$INFO[ListItem.artist]</label>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+
+        <control type="group" id="9301">
+            <animation type="Conditional" condition="controlgroup(9301).hasfocus">
+                <effect type="slide" start="0,0" end="0,-688" time="200"/>
+            </animation>
+            <control type="label">
+                <posx>col-1-begin</posx>
+                <posy>row-24-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31181]</label>
+            </control>
+            <control type="panel" id="9997">
+                <posx>col-1-begin</posx>
+                <posy>row-26-begin</posy>
+                <width>24-col</width>
+                <height>20-row</height>
+                <onleft>9000</onleft>
+                <onup>9998</onup>
+                <content>plugin://script.maximinimalism.functions?type=randomalbums</content>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="4-col">
+                    <control type="group">
+                        <include>spinFocusPoster</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>ffFFFFFF</colordiffuse>
+                        </control>
+                        <control type="group">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>3-row</width>
+                                <height>4-col-gutter</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/white.png</texture>
+                                <colordiffuse>500</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>12</posx>
+                                <posy>248</posy>
+                                <width>7-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <aligny>top</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>[B]$INFO[ListItem.title][/B]</label>
+                            </control>
+                            <control type="label">
+                                <posx>54</posx>
+                                <posy>248</posy>
+                                <width>7-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <aligny>top</aligny>
+                                <font>itemSubTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>$INFO[ListItem.artist]</label>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

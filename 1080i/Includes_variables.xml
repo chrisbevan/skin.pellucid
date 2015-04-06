@@ -37,7 +37,7 @@
         <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">$LOCALIZE[20343] [COLOR textAccented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(addons)">$LOCALIZE[31010]</value>
         <value condition="Container.Content(albums)">$LOCALIZE[31037] [COLOR textAccented]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
-        <value condition="Container.Content(songs)">$INFO[listitem.album] [COLOR textAccented]$INFO[listitem.artist][/COLOR]</value>
+        <value condition="Container.Content(songs)">$LOCALIZE[31182]</value>
         <value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value>$LOCALIZE[14022]</value>
     </variable>

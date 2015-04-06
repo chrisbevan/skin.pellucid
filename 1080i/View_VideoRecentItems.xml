@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="videoRecentItems">
+        <control type="group" id="9300">
+            <animation type="Conditional" condition="controlgroup(9301).hasfocus">
+                <effect type="zoom" end="205" time="200" center="auto" tween="linear" easing="out"/>
+                <effect type="fade" start="100" end="30" time="200"/>
+            </animation>
+            <control type="label">
+                <visible>SubString(skin.string(videoHomeItemsMoviesSource),recentmovies)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31176]</label>
+            </control>
+            <control type="label">
+                <visible>SubString(skin.string(videoHomeItemsMoviesSource),randommovies)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-5-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31177]</label>
+            </control>
+            <control type="panel" id="9998">
+                <visible>!stringcompare(Window(Home).Property(Movies.UnWatched),0)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-7-begin</posy>
+                <width>24-col</width>
+                <height>11-row</height>
+                <onleft>9000</onleft>
+                <onup>control.setfocus(9997,$INFO[Container(9998).Position])</onup>
+                <ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
+                <onback>activateWindow(home)</onback>
+                <orientation>horizontal</orientation>
+                <animation type="windowopen">
+                    <include>listSlideIn</include>
+                </animation>
+                <animation type="windowclose">
+                    <effect type="fade" start="100" end="0" time="300"/>
+                </animation>
+                <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsMoviesSource)]</content>
+                <itemlayout width="4-col" height="396">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="396">
+                    <control type="group">
+                        <include>spinFocusPoster</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>396</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>ffFFFFFF</colordiffuse>
+                        </control>
+                        <control type="group">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>1-col</width>
+                                <height>396</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/white.png</texture>
+                                <colordiffuse>500</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>34</posx>
+                                <posy>10-row</posy>
+                                <width>9-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <font>itemTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>$INFO[ListItem.title]</label>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+
+        <control type="group" id="9301">
+            <animation type="Conditional" condition="controlgroup(9301).hasfocus">
+                <effect type="slide" start="0,0" end="0,-504" time="200"/>
+            </animation>
+            <control type="label">
+                <visible>SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-19-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31178]</label>
+            </control>
+            <control type="label">
+                <visible>SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-19-begin</posy>
+                <width>24-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>pageTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$LOCALIZE[31179]</label>
+            </control>
+            <control type="panel" id="9997">
+                <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-21-begin</posy>
+                <width>24-col</width>
+                <height>12-row</height>
+                <onleft>9000</onleft>
+                <ondown>control.setfocus(9998,$INFO[Container(9997).Position])</ondown>
+                <onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
+                <onback>activateWindow(home)</onback>
+                <orientation>horizontal</orientation>
+                <animation type="windowopen">
+                    <include>listSlideIn</include>
+                </animation>
+                <animation type="windowclose">
+                    <effect type="fade" start="100" end="0" time="300"/>
+                </animation>
+                <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsEpisodesSource)]</content>
+                <itemlayout width="4-col" height="396">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.property(season_poster)]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="396">
+                    <control type="group">
+                        <include>spinFocusPoster</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>396</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture fallback="colors/black.png" border="0">$INFO[ListItem.property(season_poster)]</texture>
+                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                        <control type="group">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>1-col</width>
+                                <height>396</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="0">colors/white.png</texture>
+                                <colordiffuse>500</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>34</posx>
+                                <posy>10-row</posy>
+                                <width>9-row</width>
+                                <align>left</align>
+                                <angle>90</angle>
+                                <font>itemTitle</font>
+                                <textcolor>white</textcolor>
+                                <label>$INFO[ListItem.TVshowTitle] $INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
+                            </control>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

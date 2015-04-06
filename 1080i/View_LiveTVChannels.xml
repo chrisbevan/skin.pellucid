@@ -2,7 +2,6 @@
 <includes>
     <include name="liveTVChannels">
         <control type="group">
-
             <control type="panel" id="50">
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>

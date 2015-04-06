@@ -7,8 +7,9 @@
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubMenuItems.xml"/>
     <include file="Includes_hubMenuSubItems.xml"/>
-    <include file="Includes_recentItems.xml"/>
     <include file="View_LiveTVChannels.xml"/>
+    <include file="View_VideoRecentItems.xml"/>
+    <include file="View_MusicRecentItems.xml"/>
     <include file="View_Seasons.xml"/>
     <include file="View_Episodes.xml"/>
     <include file="View_Movies.xml"/>
@@ -16,6 +17,10 @@
     <include file="View_Addons.xml"/>
     <include file="View_Files.xml"/>
     <include file="View_Photos.xml"/>
+    <include file="View_Artists.xml"/>
+    <include file="View_Albums.xml"/>
+    <include file="View_Songs.xml"/>
+    <include file="View_MusicFiles.xml"/>
 
     <include file="ViewsMusic.xml"/>
 
@@ -101,7 +106,7 @@
             </control>
             <control type="image">
                 <posx>13-col</posx>
-                <posy>row-15-begin</posy>
+                <posy>row-14-begin</posy>
                 <width>50</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>

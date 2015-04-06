@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!--default text list 1 row-->
+    <include name="musicfiles">
+        <control type="group">
+            <posx>col-1-begin</posx>
+            <posy>row-5-begin</posy>
+            <control type="panel" id="51">
+                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>12-col</width>
+                <height>22-row</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <ondown>51</ondown>
+                <onup>51</onup>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="12-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>11-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="12-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                        <texture fallback="colors/white.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <include>spinFocusIcon</include>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>11-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>500</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>11-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </include>
+</includes>

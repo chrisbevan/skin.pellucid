@@ -133,11 +133,11 @@
                 <orientation>vertical</orientation>
                 <control type="button" id="1">
                     <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Override global background image</description>
+                    <description>Home background image</description>
                     <width>15-col-textbox</width>
                     <label>31084</label>
-                    <label2>$INFO[Skin.String(globalBackground)]</label2>
-                    <onclick>Skin.SetFile(globalBackground,.png|.jpg|.gif,special://skin/extras/backgrounds/)</onclick>
+                    <label2>$INFO[Skin.String(homeBackground)]</label2>
+                    <onclick>Skin.SetFile(homeBackground,.png|.jpg|.gif,special://skin/extras/backgrounds/)</onclick>
                     <textwidth>8-col</textwidth>
                     <onright>501</onright>
                 </control>

@@ -25,61 +25,7 @@
                     <visible>SubString(skin.string(showRecentVideoItems),true) | isEmpty(container.foldername)</visible>
                     <onleft>9000</onleft>
                     <!--content-->
-                    <control type="label">
-                        <visible>SubString(skin.string(videoHomeItemsMoviesSource),recentmovies)</visible>
-                        <posx>col-1-begin</posx>
-                        <posy>row-5-begin</posy>
-                        <width>24-col</width>
-                        <height>1-row</height>
-                        <align></align>
-                        <font>pageTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31176]</label>
-                    </control>
-                    <control type="label">
-                        <visible>SubString(skin.string(videoHomeItemsMoviesSource),randommovies)</visible>
-                        <posx>col-1-begin</posx>
-                        <posy>row-5-begin</posy>
-                        <width>24-col</width>
-                        <height>1-row</height>
-                        <align></align>
-                        <font>pageTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31177]</label>
-                    </control>
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>row-7-begin</posy>
-                        <include>movieRecentItems</include>
-                    </control>
-                    <control type="label">
-                        <visible>SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)</visible>
-                        <posx>col-1-begin</posx>
-                        <posy>row-19-begin</posy>
-                        <width>24-col</width>
-                        <height>1-row</height>
-                        <align></align>
-                        <font>pageTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31178]</label>
-                    </control>
-                    <control type="label">
-                        <visible>SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
-                        <posx>col-1-begin</posx>
-                        <posy>row-19-begin</posy>
-                        <width>24-col</width>
-                        <height>1-row</height>
-                        <align></align>
-                        <font>pageTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31179]</label>
-                    </control>
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>row-21-begin</posy>
-                        <include>tvRecentItems</include>
-                    </control>
-
+                    <include>videoRecentItems</include>
                 </control>
                 <!--source content-->
                 <control type="group" id="9500">

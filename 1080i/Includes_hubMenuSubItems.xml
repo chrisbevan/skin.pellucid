@@ -194,14 +194,15 @@
         <control type="button" id="501">
             <description>current music playlist (if available)</description>
             <visible>MusicPlayer.Offset(0).Exists</visible>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>31123</label>
             <onclick>right</onclick>
             <onclick>activateWindow(musicplaylist)</onclick>
@@ -209,14 +210,15 @@
         <control type="button" id="502">
             <description>Search (music)</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>137</label>
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
             <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
@@ -224,98 +226,100 @@
         </control>
         <control type="button" id="3">
             <description>Sort by</description>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>103</label>
         </control>
         <control type="togglebutton" id="4">
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <align>left</align>
-            <height>54</height>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <width>4-col</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <alttexturefocus>colors/black.png</alttexturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
         </control>
         <control type="button" id="503">
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>31041</label>
             <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
             <onclick>ActivateWindow(5000)</onclick>
         </control>
         <control type="button" id="505">
             <description>Set recent content</description>
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>31175</label>
             <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
             <onclick>ActivateWindow(5900)</onclick>
         </control>
         <control type="button" id="504">
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
             <onclick>right</onclick>
         </control>
         <control type="radiobutton" id="20">
             <description>Shuffle</description>
-            <visible/>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>191</label>
         </control>
         <control type="radiobutton" id="16">
             <description>Party Mode!!</description>
-            <visible/>
-            <label>589</label>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
+            <textcolor>50</textcolor>
+            <focusedcolor>500</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+            <label>589</label>
         </control>
     </include>
 

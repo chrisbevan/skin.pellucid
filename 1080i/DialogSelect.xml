@@ -45,35 +45,16 @@
                         <posx>0</posx>
                         <posy>2-row</posy>
                         <width>12-col</width>
-                        <height>11-row</height>
+                        <height>21-row</height>
                         <onright>9999</onright>
-                        <itemlayout height="1-row" width="6-col">
+                        <itemlayout height="2-row" width="12-col">
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>2</posy>
-                                <width>6-col-gutter</width>
-                                <height>53</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="24,0,24,0">UIControls/listitemNF.png</texture>
-                                <bordersize>0</bordersize>
-                                <colordiffuse>99FFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>4</posx>
-                                <posy>4</posy>
-                                <width>48</width>
-                                <height>48</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
-                            <control type="label">
-                                <posx>1-col</posx>
                                 <posy>0</posy>
-                                <width>312</width>
-                                <font>itemTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
                             </control>
                             <control type="label">
                                 <visible>ListItem.IsSelected</visible>
@@ -84,36 +65,38 @@
                                 <textcolor>textActive</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label></label>
+                            </control>
+                            <control type="label">
+                                <posx>1-col-indent</posx>
+                                <posy>0</posy>
+                                <width>11-col-gutter</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="1-row" width="6-col">
+                        <focusedlayout height="2-row" width="12-col">
                             <control type="image">
-                                <posx>0</posx>
-                                <posy>2</posy>
-                                <width>6-col-gutter</width>
-                                <height>53</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="24,0,24,0">UIControls/listitemFO.png</texture>
-                                <bordersize>0</bordersize>
-                                <colordiffuse>FFFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>4</posx>
-                                <posy>4</posy>
-                                <width>48</width>
-                                <height>48</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
-                            <control type="label">
                                 <posx>1-col</posx>
                                 <posy>0</posy>
-                                <width>312</width>
-                                <font>itemTitle</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>black</selectedcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.Label]</label>
+                                <width>11-col</width>
+                                <height>2-row</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture>colors/white.png</texture>
+                                <bordersize>0</bordersize>
+                                <colordiffuse>ffffffff</colordiffuse>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aspectratio scalediffuse="false">scale</aspectratio>
+                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+                                <include>spinFocusIcon</include>
                             </control>
                             <control type="label">
                                 <visible>ListItem.IsSelected</visible>
@@ -124,6 +107,17 @@
                                 <textcolor>textActive</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label></label>
+                            </control>
+                            <control type="label">
+                                <posx>1-col-indent</posx>
+                                <posy>0</posy>
+                                <width>11-col-gutter</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>itemTitle</font>
+                                <textcolor>black</textcolor>
+                                <shadowcolor>-</shadowcolor>
+                                <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
                     </control>
