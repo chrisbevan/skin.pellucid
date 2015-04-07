@@ -12,9 +12,9 @@
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="2-row" width="24-col">
                     <control type="image">
-                        <posx>0</posx>
+                        <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>6-col-textbox</width>
+                        <width>5-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
@@ -26,7 +26,7 @@
                         <width>2-row</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -42,19 +42,19 @@
                     <control type="image">
                         <posx>6-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
+                        <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>6-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <align>center</align>
+                        <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -70,7 +70,7 @@
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>8-col-indent</posx>
+                        <posx>8-col</posx>
                         <posy>0</posy>
                         <width>7-col-gutter</width>
                         <height>2-row</height>
@@ -83,18 +83,18 @@
                     <control type="image">
                         <posx>15-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
+                        <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>15-col</posx>
+                        <posx>15-col-gutter</posx>
                         <posy>0</posy>
                         <width>2-col-textbox</width>
                         <height>2-row</height>
-                        <align>center</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -111,7 +111,7 @@
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>17-col-indent</posx>
+                        <posx>17-col</posx>
                         <posy>0</posy>
                         <width>7-col-gutter</width>
                         <height>2-row</height>
@@ -124,9 +124,9 @@
                 </itemlayout>
                 <focusedlayout height="2-row" width="20-col">
                     <control type="image">
-                        <posx>0</posx>
+                        <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>6-col-textbox</width>
+                        <width>5-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
@@ -138,7 +138,8 @@
                         <width>2-row</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -154,7 +155,7 @@
                     <control type="image">
                         <posx>6-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
@@ -163,10 +164,10 @@
                     <control type="label">
                         <posx>6-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <align>center</align>
+                        <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -182,7 +183,7 @@
                         <colordiffuse>500</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>8-col-indent</posx>
+                        <posx>8-col</posx>
                         <posy>0</posy>
                         <width>7-col-gutter</width>
                         <height>2-row</height>
@@ -195,18 +196,18 @@
                     <control type="image">
                         <posx>15-col</posx>
                         <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>2-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>500</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>15-col</posx>
+                        <posx>15-col-gutter</posx>
                         <posy>0</posy>
                         <width>2-col-textbox</width>
                         <height>2-row</height>
-                        <align>center</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -223,7 +224,7 @@
                         <colordiffuse>500</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>17-col-indent</posx>
+                        <posx>17-col</posx>
                         <posy>0</posy>
                         <width>7-col-gutter</width>
                         <height>2-row</height>

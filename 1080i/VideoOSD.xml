@@ -4,7 +4,7 @@
     <include>fadeInOut</include>
     <controls>
         <control type="group">
-            <posx>col-1-begin</posx>
+            <posx>col-13-begin</posx>
             <posy>row-3-begin</posy>
             <!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
@@ -43,10 +43,9 @@
                 <posy>11-row</posy>
                 <width>12-col-gutter</width>
                 <height>2-row</height>
-                <aligny>center</aligny>
                 <font>largeTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>[UPPERCASE]$INFO[videoplayer.Title][/UPPERCASE]</label>
+                <label>$INFO[videoplayer.Title]</label>
                 <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
                 <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
             </control>
@@ -56,14 +55,14 @@
                 <width>12-col</width>
                 <height>6-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
+                <colordiffuse>textboxInactive</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="textbox">
                 <posx>12</posx>
-                <posy>14-row</posy>
+                <posy>516</posy>
                 <width>12-col-gutter</width>
-                <height>6-row</height>
+                <height>5-row</height>
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
                 <label fallback="31009">$INFO[Videoplayer.plot]</label>
@@ -73,11 +72,12 @@
             </control>
             <control type="label">
                 <posx>12</posx>
-                <posy>13-row</posy>
+                <posy>462</posy>
                 <width>8-col</width>
-                <font>smallStrong</font>
+                <height>1-row</height>
+                <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>$LOCALIZE[180] $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
                 <scroll>false</scroll>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -90,13 +90,12 @@
                 <height>2-row</height>
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
-                <onright>control.setfocus(8000,0)</onright>
-                <onleft>control.setfocus(8000,6)</onleft>
+                <ondown>control.setfocus(8000,0)</ondown>
                 <itemlayout width="3-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>3-col-textbox</width>
+                        <width>3-col</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
@@ -106,11 +105,11 @@
                     <control type="label">
                         <posx>12</posx>
                         <posy>0</posy>
-                        <width>3-col-textbox</width>
+                        <width>3-col</width>
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>menuTitle</font>
+                        <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
@@ -121,7 +120,7 @@
                         <visible>control.hasfocus(8001)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>3-col-textbox</width>
+                        <width>3-col</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
@@ -132,7 +131,7 @@
                         <visible>!control.hasfocus(8001)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>3-col-textbox</width>
+                        <width>3-col</width>
                         <height>2-row</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
@@ -147,7 +146,7 @@
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>menuTitle</font>
+                        <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
@@ -203,8 +202,7 @@
                 <height>1-col</height>
                 <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
-                <onright>control.setfocus(8001,0)</onright>
-                <onleft>control.setfocus(8001,4)</onleft>
+                <onup>control.setfocus(8001,0)</onup>
                 <itemlayout width="1-col" height="1-col">
                     <control type="image">
                         <posx>0</posx>

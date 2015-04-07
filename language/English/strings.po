@@ -672,3 +672,11 @@ msgstr ""
 msgctxt "#31182"
 msgid "Tracks"
 msgstr ""
+
+msgctxt "#31183"
+msgid "Play"
+msgstr ""
+
+msgctxt "#31184"
+msgid "Info"
+msgstr ""

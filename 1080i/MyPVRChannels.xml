@@ -28,9 +28,9 @@
                 <visible>Control.IsVisible(60) + !control.isvisible(10)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(9400).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>108r</posx>
-                    <posy>276</posy>
-                    <height>672</height>
+                    <posx>98r</posx>
+                    <posy>row-5-begin</posy>
+                    <height>22-row</height>
                     <onleft>9999</onleft>
                 </control>
             </control>
