@@ -47,12 +47,6 @@
             <colordiffuse>background</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
     </include>
     <!--date and time-->
     <include name="dateTime">
@@ -119,10 +113,6 @@
      <!--conditional positioning for progress dialogs (avoid overlaps)-->
     <include name="progressPosition1"><posy>row-2-begin</posy></include>
     <include name="progressPosition2"><posy>row-6-begin</posy></include>
-    <!--scroll suppression for low power mode-->
-    <!--text scrolling suppression for low power mode-->
-    <include name="scrollSuppressionActive"><scroll>False</scroll></include>
-    <include name="scrollSuppressionInactive"><scroll>True</scroll></include>
    <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>

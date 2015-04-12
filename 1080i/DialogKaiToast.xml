@@ -23,7 +23,7 @@
                     <width>24</width>
                     <height>3-row</height>
                     <texture>colors/white.png</texture>
-                    <colordiffuse>500</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="image">
                     <posx>0</posx>

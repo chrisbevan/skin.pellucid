@@ -62,7 +62,7 @@
                 <font>regularStrong</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>[COLOR textAccented]$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)][/COLOR]</label>
+                <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
             </control>
         </control>
 
@@ -174,7 +174,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture>colors/white.png</texture>
                     <bordersize>0</bordersize>
-                    <colordiffuse>500</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                     <include>spinFocusIcon</include>
                 </control>
                 <control type="label">
@@ -197,7 +197,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture>colors/white.png</texture>
                     <bordersize>0</bordersize>
-                    <colordiffuse>500</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>

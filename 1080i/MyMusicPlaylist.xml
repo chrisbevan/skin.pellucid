@@ -47,7 +47,7 @@
                             <width>auto</width>
                             <font>pageTitle</font>
                             <label> ($LOCALIZE[31133])</label>
-                            <textcolor>textAccented</textcolor>
+                            <textcolor>highlight</textcolor>
                         </control>
                     </control>
                     <!--source subtitle-->

@@ -27,7 +27,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -73,7 +73,7 @@
                     <textcolor>textActive</textcolor>
                     <focusedcolor>black</focusedcolor>
                     <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus colordiffuse="500">colors/white.png</texturenofocus>
+                    <texturenofocus colordiffuse="highlight">colors/white.png</texturenofocus>
                     <textoffsetx>12</textoffsetx>
                     <textoffsety>0</textoffsety>
                     <onclick>SettingsLevelChange</onclick>

@@ -32,7 +32,7 @@
                         <height>1-row</height>
                         <font>itemTitle</font>
                         <align>center</align>
-                        <textcolor>textAccented</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

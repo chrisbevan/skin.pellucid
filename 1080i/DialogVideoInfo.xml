@@ -71,7 +71,7 @@
                 <width>10-col</width>
                 <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -95,7 +95,7 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <font>itemSubTitle</font>
-                        <textcolor>textAccented</textcolor>
+                        <textcolor>highlight</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -238,7 +238,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>500</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -342,48 +342,30 @@
                 <posx>col-7-begin</posx>
                 <posy>row-15-begin</posy>
                 <!--titles-->
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>12-col</width>
-                    <height>3-row</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>500</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label">
                     <description>Episode title</description>
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col-gutter</width>
                     <height>3-row</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>regularStrong</font>
-                    <textcolor>textActive</textcolor>
+                    <font>mediumStrong</font>
+                    <textcolor>highlight</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>3-row</posy>
-                    <width>12-col</width>
-                    <height>1-row</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>ffffffff</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label">
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>3-row</posy>
                     <width>12-col-gutter</width>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>$INFO[listitem.duration,, $LOCALIZE[31018]  |  ]$INFO[ListItem.Premiered,$LOCALIZE[20416] ,,]$INFO[listitem.mpaa,  |  $LOCALIZE[31174] ,]</label>
+                    <label>$INFO[listitem.duration,, $LOCALIZE[31018]]</label>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
@@ -446,7 +428,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>500</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">

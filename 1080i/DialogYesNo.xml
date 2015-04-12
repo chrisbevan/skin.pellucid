@@ -14,6 +14,17 @@
             <control type="group">
                 <posx>col-9-begin</posx>
                 <posy>0</posy>
+                 <control type="image">
+                    <posx>-36</posx>
+                    <posy>-36</posy>
+                    <width>9-col</width>
+                    <height>8-row</height>
+                    <texture>colors/black.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
+                </control>
                 <control type="label" id="1">
                     <description>heading</description>
                     <posx>0</posx>
@@ -47,14 +58,18 @@
                 <!--selection buttons-->
                 <control type="button" id="10">
                     <description>No</description>
-                    <texturefocus colordiffuse="500">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
+                    <align>center</align>
                     <label>106</label>
                 </control>
                 <control type="button" id="11">
                     <description>Yes</description>
-                    <texturefocus colordiffuse="500">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
+                    <align>center</align>
                     <label>107</label>
                 </control>
             </control>

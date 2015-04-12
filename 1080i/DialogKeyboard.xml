@@ -61,7 +61,7 @@
                         <onup>312</onup>
                         <ondown>302</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -79,7 +79,7 @@
                         <onup>312</onup>
                         <ondown>302</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -96,7 +96,7 @@
                         <onup>312</onup>
                         <ondown>120</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -111,7 +111,7 @@
                         <onup>312</onup>
                         <ondown>121</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -126,7 +126,7 @@
                         <onup>312</onup>
                         <ondown>122</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -141,7 +141,7 @@
                         <onup>312</onup>
                         <ondown>123</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -156,7 +156,7 @@
                         <onup>312</onup>
                         <ondown>124</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -171,7 +171,7 @@
                         <onup>312</onup>
                         <ondown>125</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -186,7 +186,7 @@
                         <onup>312</onup>
                         <ondown>126</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -201,7 +201,7 @@
                         <onup>312</onup>
                         <ondown>127</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -216,7 +216,7 @@
                         <onup>312</onup>
                         <ondown>128</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -231,7 +231,7 @@
                         <onup>312</onup>
                         <ondown>129</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -246,7 +246,7 @@
                         <onup>312</onup>
                         <ondown>130</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -261,7 +261,7 @@
                         <onup>312</onup>
                         <ondown>131</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -282,7 +282,7 @@
                         <onup>300</onup>
                         <ondown>303</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textureradioonfocus>-</textureradioonfocus>
                         <textureradioonnofocus>-</textureradioonnofocus>
                         <textureradioofffocus>-</textureradioofffocus>
@@ -306,7 +306,7 @@
                         <onup>100</onup>
                         <ondown>140</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -322,7 +322,7 @@
                         <onup>101</onup>
                         <ondown>141</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -338,7 +338,7 @@
                         <onup>102</onup>
                         <ondown>142</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -354,7 +354,7 @@
                         <onup>103</onup>
                         <ondown>143</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -370,7 +370,7 @@
                         <onup>104</onup>
                         <ondown>144</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -386,7 +386,7 @@
                         <onup>105</onup>
                         <ondown>145</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -402,7 +402,7 @@
                         <onup>106</onup>
                         <ondown>146</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -418,7 +418,7 @@
                         <onup>107</onup>
                         <ondown>147</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -434,7 +434,7 @@
                         <onup>108</onup>
                         <ondown>148</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -450,7 +450,7 @@
                         <onup>109</onup>
                         <ondown>149</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -466,7 +466,7 @@
                         <onup>110</onup>
                         <ondown>150</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -482,7 +482,7 @@
                         <onup>111</onup>
                         <ondown>151</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -504,7 +504,7 @@
                         <onup>302</onup>
                         <ondown>304</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textureradioonfocus>-</textureradioonfocus>
                         <textureradioonnofocus>-</textureradioonnofocus>
                         <textureradioofffocus>-</textureradioofffocus>
@@ -529,7 +529,7 @@
                         <onup>120</onup>
                         <ondown>160</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -545,7 +545,7 @@
                         <onup>121</onup>
                         <ondown>161</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -561,7 +561,7 @@
                         <onup>122</onup>
                         <ondown>162</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -577,7 +577,7 @@
                         <onup>123</onup>
                         <ondown>163</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -593,7 +593,7 @@
                         <onup>124</onup>
                         <ondown>164</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -609,7 +609,7 @@
                         <onup>125</onup>
                         <ondown>165</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -625,7 +625,7 @@
                         <onup>126</onup>
                         <ondown>166</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -641,7 +641,7 @@
                         <onup>127</onup>
                         <ondown>167</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -657,7 +657,7 @@
                         <onup>128</onup>
                         <ondown>168</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -673,7 +673,7 @@
                         <onup>129</onup>
                         <ondown>169</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -689,7 +689,7 @@
                         <onup>130</onup>
                         <ondown>170</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -705,7 +705,7 @@
                         <onup>131</onup>
                         <ondown>171</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -727,7 +727,7 @@
                         <onup>303</onup>
                         <ondown>309</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textureradioonfocus>-</textureradioonfocus>
                         <textureradioonnofocus>-</textureradioonnofocus>
                         <textureradioofffocus>-</textureradioofffocus>
@@ -749,7 +749,7 @@
                         <width>2-col</width>
                         <height>1-col</height>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <label>IP</label>
                         <textoffsetx>0</textoffsetx>
                         <onleft>304</onleft>
@@ -771,7 +771,7 @@
                         <onup>140</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -787,7 +787,7 @@
                         <onup>141</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -803,7 +803,7 @@
                         <onup>142</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -819,7 +819,7 @@
                         <onup>143</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -835,7 +835,7 @@
                         <onup>144</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -851,7 +851,7 @@
                         <onup>145</onup>
                         <ondown>32</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -867,7 +867,7 @@
                         <onup>146</onup>
                         <ondown>305</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -883,7 +883,7 @@
                         <onup>147</onup>
                         <ondown>306</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -899,7 +899,7 @@
                         <onup>148</onup>
                         <ondown>8</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -915,7 +915,7 @@
                         <onup>149</onup>
                         <ondown>8</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -931,7 +931,7 @@
                         <onup>150</onup>
                         <ondown>8</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -947,7 +947,7 @@
                         <onup>151</onup>
                         <ondown>111</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -969,7 +969,7 @@
                         <onup>304</onup>
                         <ondown>312</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
                         <align>center</align>
@@ -983,7 +983,7 @@
                         <height>1-col</height>
                         <label>20182</label>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1006,7 +1006,7 @@
                         <onup>171</onup>
                         <ondown>312</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1021,7 +1021,7 @@
                         <height>1-col</height>
                         <label>&lt;</label>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>
@@ -1039,7 +1039,7 @@
                         <height>1-col</height>
                         <label>&gt;</label>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                        <texturefocus colordiffuse="keyboardActive">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>selected</focusedcolor>
                         <textcolor>textActive</textcolor>

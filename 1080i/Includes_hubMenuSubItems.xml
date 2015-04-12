@@ -8,10 +8,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-7-begin</textoffsetx>
             <label>31123</label>
@@ -24,10 +24,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>137</label>
@@ -42,10 +42,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>137</label>
@@ -57,10 +57,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>103</label>
@@ -73,10 +73,10 @@
             <width>col-7-begin</width>
             <width>4-col</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
@@ -85,10 +85,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31119</label>
@@ -101,10 +101,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31041</label>
@@ -116,10 +116,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31175</label>
@@ -131,10 +131,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>653</label>
@@ -147,10 +147,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
@@ -162,10 +162,10 @@
             <width>col-7-begin</width>
             <font>menuTitle</font>
             <textoffsetx>col-1-begin</textoffsetx>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onclick>right</onclick>
             <onclick>Filter</onclick>
@@ -177,10 +177,10 @@
             <width>col-7-begin</width>
             <font>menuTitle</font>
             <textoffsetx>col-1-begin</textoffsetx>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onclick>right</onclick>
             <onclick>xbmc.mastermode</onclick>
@@ -197,10 +197,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31123</label>
@@ -213,10 +213,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>137</label>
@@ -229,10 +229,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>103</label>
@@ -245,10 +245,10 @@
             <width>col-7-begin</width>
             <width>4-col</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
@@ -256,10 +256,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31041</label>
@@ -271,10 +271,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31175</label>
@@ -285,10 +285,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>653</label>
@@ -300,10 +300,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>191</label>
@@ -313,10 +313,10 @@
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>50</textcolor>
-            <focusedcolor>500</focusedcolor>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>589</label>

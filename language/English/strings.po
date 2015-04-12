@@ -680,3 +680,7 @@ msgstr ""
 msgctxt "#31184"
 msgid "Info"
 msgstr ""
+
+msgctxt "#31185"
+msgid "Open"
+msgstr ""

@@ -23,7 +23,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--titles-->
@@ -44,9 +44,9 @@
                     <height>2-row</height>
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
-                    <textcolor>50</textcolor>
-                    <focusedcolor>500</focusedcolor>
-                    <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>highlight</focusedcolor>
+                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
                     <label>31085</label>
@@ -63,9 +63,9 @@
                     <height>2-row</height>
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
-                    <textcolor>50</textcolor>
-                    <focusedcolor>500</focusedcolor>
-                    <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>highlight</focusedcolor>
+                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
                     <label>31086</label>
@@ -82,9 +82,9 @@
                     <height>2-row</height>
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
-                    <textcolor>50</textcolor>
-                    <focusedcolor>500</focusedcolor>
-                    <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>highlight</focusedcolor>
+                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
                     <label>31091</label>
@@ -102,9 +102,9 @@
                     <height>2-row</height>
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
-                    <textcolor>50</textcolor>
-                    <focusedcolor>500</focusedcolor>
-                    <texturefocus colordiffuse="50">colors/white.png</texturefocus>
+                    <textcolor>textActive</textcolor>
+                    <focusedcolor>highlight</focusedcolor>
+                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
                     <label>31092</label>
@@ -134,7 +134,7 @@
                         <aligny>center</aligny>
                         <font>symbol</font>
                         <label></label>
-                        <textcolor>50</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
@@ -144,7 +144,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>50</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -156,7 +156,7 @@
                         <width>col-7-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>50</colordiffuse>
+                        <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -167,7 +167,7 @@
                         <aligny>center</aligny>
                         <font>symbol</font>
                         <label></label>
-                        <textcolor>500</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
@@ -177,7 +177,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>500</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

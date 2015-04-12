@@ -18,7 +18,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--titles-->
@@ -41,7 +41,7 @@
                         <aligny>center</aligny>
                         <font>symbol</font>
                         <label></label>
-                        <textcolor>50</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
@@ -51,7 +51,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>50</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -63,7 +63,7 @@
                         <width>col-7-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>50</colordiffuse>
+                        <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -75,7 +75,7 @@
                         <aligny>center</aligny>
                         <font>symbol</font>
                         <label></label>
-                        <textcolor>500</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
@@ -85,7 +85,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>500</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

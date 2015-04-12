@@ -50,7 +50,7 @@
                 <align>left</align>
                 <font>itemTitle</font>
                 <label>$LOCALIZE[31107]: $INFO[System.ProfileName]</label>
-                <textcolor>textAccented</textcolor>
+                <textcolor>highlight</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
             <!--dialog controls-->

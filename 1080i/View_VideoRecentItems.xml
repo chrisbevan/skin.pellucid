@@ -3,8 +3,8 @@
     <include name="videoRecentItems">
         <control type="group" id="9300">
             <animation type="Conditional" condition="controlgroup(9301).hasfocus">
-                <effect type="zoom" end="205" time="200" center="auto" tween="linear" easing="out"/>
-                <effect type="fade" start="100" end="30" time="200"/>
+                <effect type="fade" start="100" end="5" time="200"/>
+                <effect type="slide" start="0,0" end="0,-100" time="200"/>
             </animation>
             <control type="label">
                 <visible>SubString(skin.string(videoHomeItemsMoviesSource),recentmovies)</visible>
@@ -149,7 +149,7 @@
 
         <control type="group" id="9301">
             <animation type="Conditional" condition="controlgroup(9301).hasfocus">
-                <effect type="slide" start="0,0" end="0,-504" time="200"/>
+                <effect type="slide" start="0,0" end="0,-360" time="200"/>
             </animation>
             <control type="label">
                 <visible>SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)</visible>

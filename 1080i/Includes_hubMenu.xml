@@ -17,7 +17,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="list" id="9001">
@@ -37,7 +37,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>50</textcolor>
+                        <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -49,7 +49,7 @@
                         <width>col-7-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>50</colordiffuse>
+                        <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -59,7 +59,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>500</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -84,7 +84,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--menu items-->

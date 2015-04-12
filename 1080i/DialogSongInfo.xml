@@ -32,7 +32,7 @@
                 <posy>1-row</posy>
                 <width>6-col</width>
                 <font>itemTitle</font>
-                <label>[COLOR textAccented]$INFO[ListItem.artist,, ][/COLOR]$INFO[ListItem.Album]</label>
+                <label>[COLOR highlight]$INFO[ListItem.artist,, ][/COLOR]$INFO[ListItem.Album]</label>
                 <textcolor>textActive</textcolor>
             </control>
             <!--song ratings-->

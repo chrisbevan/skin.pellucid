@@ -74,7 +74,7 @@
                         <posy>0</posy>
                         <width>14-col</width>
                         <font>pageTitle</font>
-                        <label>$LOCALIZE[31156] [COLOR textAccented]$INFO[ListItem.Property(console)][/COLOR]</label>
+                        <label>$LOCALIZE[31156] [COLOR highlight]$INFO[ListItem.Property(console)][/COLOR]</label>
                         <textcolor>textActive</textcolor>
                     </control>
                     <!--source subtitle-->

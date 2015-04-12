@@ -17,7 +17,7 @@
                 <width>20-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>500</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -59,7 +59,7 @@
                             <width>4-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
-                            <font>menuTitle</font>
+                            <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
@@ -91,7 +91,7 @@
                             <width>4-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
-                            <font>menuTitle</font>
+                            <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>

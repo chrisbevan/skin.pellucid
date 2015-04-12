@@ -96,7 +96,7 @@
         <!--element specific-->
         <font>
             <name>textbox</name>
-            <filename>roboto/regular.ttf</filename>
+            <filename>roboto/medium.ttf</filename>
             <size>30</size>
             <linespacing>1.1</linespacing>
         </font>

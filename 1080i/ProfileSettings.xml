@@ -42,7 +42,7 @@
                 <width>12-col</width>
                 <align>center</align>
                 <font>itemSubTitle</font>
-                <textcolor>textAccented</textcolor>
+                <textcolor>highlight</textcolor>
             </control>
             <control type="button" id="6000">
                 <description>Profile switch</description>

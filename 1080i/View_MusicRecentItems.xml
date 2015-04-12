@@ -3,9 +3,8 @@
     <include name="musicRecentItems">
          <control type="group" id="9300">
                 <animation type="Conditional" condition="controlgroup(9301).hasfocus">
-                    <effect type="zoom" end="205" time="200" center="auto" tween="linear" easing="out"/>
-                    <effect type="fade" start="100" end="30" time="200"/>
-                    <effect type="slide" start="0,0" end="0,0" time="200"/>
+                    <effect type="fade" start="100" end="5" time="200"/>
+                    <effect type="slide" start="0,0" end="0,-100" time="200"/>
                 </animation>
             <control type="label">
                 <posx>col-1-begin</posx>
@@ -52,39 +51,73 @@
                             <bordersize>3</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
-                        <control type="group">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>3-row</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/white.png</texture>
-                                <colordiffuse>500</colordiffuse>
+                        <control type="image">
+                            <posx>3</posx>
+                            <posy>3</posy>
+                            <width>258</width>
+                            <height>258</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/black.png</texture>
+                            <colordiffuse>ccFFFFFF</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Artist]</label>
+                        </control>
+                        <control type="grouplist">
+                            <posx>42</posx>
+                            <posy>5-row</posy>
+                            <width>4-col-gutter</width>
+                            <orientation>horizontal</orientation>
+                            <control type="label">
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>248</posy>
-                                <width>7-row</width>
-                                <align>left</align>
-                                <angle>90</angle>
-                                <aligny>top</aligny>
-                                <font>itemTitle</font>
-                                <textcolor>white</textcolor>
-                                <label>[B]$INFO[ListItem.title][/B]</label>
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31183]</label>
                             </control>
                             <control type="label">
-                                <posx>54</posx>
-                                <posy>248</posy>
-                                <width>7-row</width>
-                                <align>left</align>
-                                <angle>90</angle>
-                                <aligny>top</aligny>
-                                <font>itemSubTitle</font>
-                                <textcolor>white</textcolor>
-                                <label>$INFO[ListItem.artist]</label>
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
+                            </control>
+                            <control type="label">
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31184]</label>
                             </control>
                         </control>
                     </control>
@@ -94,7 +127,7 @@
 
         <control type="group" id="9301">
             <animation type="Conditional" condition="controlgroup(9301).hasfocus">
-                <effect type="slide" start="0,0" end="0,-688" time="200"/>
+                <effect type="slide" start="0,0" end="0,-580" time="200"/>
             </animation>
             <control type="label">
                 <posx>col-1-begin</posx>
@@ -141,39 +174,73 @@
                             <bordersize>3</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
-                        <control type="group">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>3-row</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/white.png</texture>
-                                <colordiffuse>500</colordiffuse>
+                        <control type="image">
+                            <posx>3</posx>
+                            <posy>3</posy>
+                            <width>258</width>
+                            <height>258</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/black.png</texture>
+                            <colordiffuse>ccFFFFFF</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Artist]</label>
+                        </control>
+                        <control type="grouplist">
+                            <posx>42</posx>
+                            <posy>5-row</posy>
+                            <width>4-col-gutter</width>
+                            <orientation>horizontal</orientation>
+                            <control type="label">
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>248</posy>
-                                <width>7-row</width>
-                                <align>left</align>
-                                <angle>90</angle>
-                                <aligny>top</aligny>
-                                <font>itemTitle</font>
-                                <textcolor>white</textcolor>
-                                <label>[B]$INFO[ListItem.title][/B]</label>
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31183]</label>
                             </control>
                             <control type="label">
-                                <posx>54</posx>
-                                <posy>248</posy>
-                                <width>7-row</width>
-                                <align>left</align>
-                                <angle>90</angle>
-                                <aligny>top</aligny>
-                                <font>itemSubTitle</font>
-                                <textcolor>white</textcolor>
-                                <label>$INFO[ListItem.artist]</label>
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
+                            </control>
+                            <control type="label">
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31184]</label>
                             </control>
                         </control>
                     </control>

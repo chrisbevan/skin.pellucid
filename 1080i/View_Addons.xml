@@ -43,28 +43,73 @@
                             <bordersize>3</bordersize>
                             <colordiffuse>ffFFFFFF</colordiffuse>
                         </control>
-                        <control type="group">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1-col</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/white.png</texture>
-                                <colordiffuse>500</colordiffuse>
+                        <control type="image">
+                            <posx>3</posx>
+                            <posy>3</posy>
+                            <width>258</width>
+                            <height>258</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/black.png</texture>
+                            <colordiffuse>ccFFFFFF</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Property(Addon.Summary)]</label>
+                        </control>
+                        <control type="grouplist">
+                            <posx>42</posx>
+                            <posy>5-row</posy>
+                            <width>4-col-gutter</width>
+                            <orientation>horizontal</orientation>
+                            <control type="label">
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
                             </control>
                             <control type="label">
-                                <posx>12</posx>
-                                <posy>248</posy>
-                                <width>7-row</width>
-                                <align>left</align>
-                                <angle>90</angle>
-                                <aligny>top</aligny>
-                                <font>itemTitle</font>
-                                <textcolor>white</textcolor>
-                                <label>$INFO[ListItem.label]</label>
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31185]</label>
+                            </control>
+                            <control type="label">
+                                <width>24</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>symbol</font>
+                                <textcolor>textActive</textcolor>
+                                <label></label>
+                            </control>
+                            <control type="label">
+                                <width>1-col</width>
+                                <height>2-row</height>
+                                <aligny>center</aligny>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$LOCALIZE[31184]</label>
                             </control>
                         </control>
                     </control>
