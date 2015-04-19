@@ -35,13 +35,13 @@
                 </control>
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>68</posy>
+                    <posy>44</posy>
                     <width>8-col</width>
                     <height>2-row</height>
                     <font>textbox</font>
                     <textcolor>textActive</textcolor>
                     <label>$INFO[control.getlabel(2)] $INFO[control.getlabel(3)] $INFO[control.getlabel(4)]</label>
-                </control>
+               </control>
             </control>
             <!--Yes / No-->
             <control type="grouplist" id="9001">

@@ -21,74 +21,64 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
-                <posx>-528</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>12-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
                 <visible>Window.IsVisible(123)</visible>
-                <posx>12</posx>
-                <posy>44</posy>
-                <width>12-col</width>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>16-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
                 <label>$LOCALIZE[3] $LOCALIZE[5]</label>
+                <textcolor>textActive</textcolor>
             </control>
             <control type="label">
                 <visible>Window.IsVisible(124)</visible>
-                <posx>12</posx>
-                <posy>44</posy>
-                <width>12-col</width>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>16-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[292] $LOCALIZE[5]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>12-col</width>
+                <height>21-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
                 <posx>0</posx>
-                <posy>120</posy>
+                <posy>2-row</posy>
                 <width>12-col</width>
-                <height>644</height>
+                <height>21-row</height>
                 <orientation>vertical</orientation>
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
-                <align>left</align>
-                <font>itemTitle</font>
-                <height>54</height>
-                <font>itemTitle</font>
-                <textcolor>textActive</textcolor>
-                <focusedcolor>black</focusedcolor>
-                <texturefocus>colors/white.png</texturefocus>
-                <textoffsetx>12</textoffsetx>
             </control>
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
-                <align>left</align>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default spincontrolex</description>
-                <align>left</align>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
-                <align>left</align>
-                <height>54</height>
             </control>
         </control>
         <!--debugging-->

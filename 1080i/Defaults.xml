@@ -94,8 +94,8 @@
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
-        <radiowidth>64</radiowidth>
-        <radioheight>64</radioheight>
+        <radiowidth>88</radiowidth>
+        <radioheight>58</radioheight>
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
         <texturefocus>colors/white.png</texturefocus>
@@ -157,13 +157,14 @@
         <posy>0</posy>
         <width>-</width>
         <height>2-row</height>
+        <aligny>center</aligny>
         <font>buttonTitle</font>
         <textoffsetx>24</textoffsetx>
         <textoffsety>0</textoffsety>
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturenofocus>-</texturenofocus>
         <texturefocus>colors/white.png</texturefocus>
         <sliderwidth>0</sliderwidth>
         <sliderheight>0</sliderheight>
@@ -182,8 +183,8 @@
     <default type="scrollbar">
         <width>12</width>
         <texturesliderbar>colors/inactive.png</texturesliderbar>
-        <texturesliderbackground>colors/black.png</texturesliderbackground>
-        <texturesliderbarfocus>colors/white.png</texturesliderbarfocus>
+        <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
+        <texturesliderbarfocus colordiffuse="highlight">colors/white.png</texturesliderbarfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
     </default>

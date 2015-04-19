@@ -15,22 +15,12 @@
             <pagecontrol>60</pagecontrol>
             <itemlayout width="8-col" height="2-row">
                 <control type="image">
-                    <visible>false</visible>
-                    <posx>1-col</posx>
-                    <posy>0</posy>
-                    <width>7-col-gutter</width>
-                    <height>2-row</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>77ffffff</colordiffuse>
-                </control>
-                <control type="image">
                     <posx>0</posx>
-                    <posy>0</posy>
-                    <width>2-row</width>
-                    <height>2-row</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="masks/circle.png">$INFO[Listitem.thumb]</texture>
+                    <posy>3</posy>
+                    <width>66</width>
+                    <height>66</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>
@@ -56,12 +46,15 @@
                 </control>
                 <control type="image">
                     <posx>0</posx>
-                    <posy>0</posy>
-                    <width>2-row</width>
-                    <height>2-row</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="masks/circle.png">$INFO[Listitem.thumb]</texture>
-                    <include>spinFocusIcon</include>
+                    <posy>3</posy>
+                    <width>66</width>
+                    <height>66</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <animation type="focus" loop="false" reversible="false">
+                        <effect type="fade" time="500"/>
+                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                    </animation>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>

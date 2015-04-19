@@ -19,6 +19,7 @@
                     <colordiffuse>ffffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                <include>kenBurnsey</include>
             </control>
 
             <control type="panel" id="50">

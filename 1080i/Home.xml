@@ -8,21 +8,6 @@
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
     <controls>
         <include>globalBackground</include>
-        <!--home background-->
-        <control type="image">
-            <visible>false</visible>
-            <include>dimensionsFullscreen</include>
-            <aspectratio scalediffuse="false">scale</aspectratio>
-            <texture border="0">$INFO[skin.string(homeBackground)]</texture>
-            <bordersize>0</bordersize>
-            <colordiffuse>ffffffff</colordiffuse>
-        </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>backgrounds/vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
         <!--browse controls-->
         <control type="group">
             <posx>24</posx>
@@ -177,7 +162,7 @@
         </control>
         <!--Date / time and weather-->
         <control type="group">
-            <posx>col-17-begin</posx>
+            <posx>18-col</posx>
             <posy>row-21-begin</posy>
             <control type="label">
                 <posx>8-col</posx>

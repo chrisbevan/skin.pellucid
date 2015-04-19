@@ -29,7 +29,7 @@
                 </control>
                 <!--source content-->
                 <control type="group" id="9500">
-                    <visible>SubString(skin.string(showRecentVideoItems),false) | !skin.string(showRecentVideoItems)</visible>
+                    <visible>[SubString(skin.string(showRecentVideoItems),false) | !skin.string(showRecentVideoItems)]</visible>
                     <include>movies</include>
                     <include>tvshows</include>
                     <include>seasons</include>
@@ -45,8 +45,8 @@
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
                     <posx>84r</posx>
-                    <posy>276</posy>
-                    <height>672</height>
+                    <posy>row-5-begin</posy>
+                    <height>789</height>
                     <onleft>9999</onleft>
                 </control>
             </control>

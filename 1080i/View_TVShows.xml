@@ -20,9 +20,9 @@
                     <colordiffuse>ffffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                <include>kenBurnsey</include>
             </control>
 
-            <!--this is a copy of file list-->
             <control type="panel" id="50">
                 <visible>!StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>

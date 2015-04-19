@@ -149,7 +149,7 @@
 
         <control type="group" id="9301">
             <animation type="Conditional" condition="controlgroup(9301).hasfocus">
-                <effect type="slide" start="0,0" end="0,-360" time="200"/>
+                <effect type="slide" start="0,0" end="0,-400" time="200"/>
             </animation>
             <control type="label">
                 <visible>SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)</visible>

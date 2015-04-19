@@ -60,21 +60,25 @@
             <control type="group">
                 <!--track info-->
                 <control type="group">
+                    <!--
                     <animation type="windowOpen">
                         <effect type="fade" start="0" end="100" time="500" delay="1000"/>
                     </animation>
+                    -->
                     <animation type="windowClose">
                         <effect type="fade" start="100" end="0" time="300"/>
                     </animation>
                     <!--Screen burn protection-->
+                    <!--
                     <animation type="conditional" condition="true" pulse="true">
                         <effect type="fade" start="100" end="0" time="2500" delay="20000"/>
                     </animation>
-                    <posx>0</posx>
+                    -->
+                    <posx>col-1-begin</posx>
                     <posy>row-14-begin</posy>
                     <control type="image">
-                        <posx>72</posx>
-                        <posy>0</posy>
+                        <posx>-24</posx>
+                        <posy>-16</posy>
                         <width>3-col</width>
                         <height>3-col</height>
                         <aspectratio>scale</aspectratio>
@@ -82,81 +86,80 @@
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
+                        <animation effect="rotateY" end="-7" center="auto,auto" time="0">windowopen</animation>
                     </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
-                        <posx>88</posx>
-                        <posy>-62</posy>
+                        <posx>0</posx>
+                        <posy>-82</posy>
                         <width>4-col</width>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$VAR[starRating]</label>
                         <shadowcolor>00000000</shadowcolor>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
                     <control type="label">
-                        <posx>col-4-begin</posx>
-                        <posy>-4</posy>
+                        <posx>3-col-indent</posx>
+                        <posy>-8</posy>
                         <width>20-col</width>
                         <font>largeBlack</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
-                        <label>$INFO[MusicPlayer.Title]</label>
+                        <label>[COLOR highlight]$INFO[MusicPlayer.artist,, ][/COLOR]$INFO[MusicPlayer.Title]</label>
                         <shadowcolor>00000000</shadowcolor>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
-                    </control>
+                   </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
-                        <posx>col-4-begin</posx>
-                        <posy>1-row</posy>
-                        <width>20-col</width>
-                        <font>medium</font>
-                        <textcolor>textActive</textcolor>
-                        <scroll>false</scroll>
-                        <label>$INFO[MusicPlayer.artist]</label>
-                        <shadowcolor>00000000</shadowcolor>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
-                    </control>
-                    <control type="label">
-                        <visible>Pvr.IsPlayingRadio</visible>
-                        <posx>col-4-begin</posx>
-                        <posy>1-row</posy>
-                        <width>20-col</width>
-                        <font>medium</font>
-                        <textcolor>textActive</textcolor>
-                        <scroll>false</scroll>
-                        <label>$INFO[VideoPlayer.Plot]</label>
-                        <shadowcolor>00000000</shadowcolor>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
-                    </control>
-                    <control type="label">
-                        <posx>col-4-begin</posx>
-                        <posy>118</posy>
+                        <posx>3-col-indent</posx>
+                        <posy>48</posy>
                         <width>20-col</width>
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
                         <shadowcolor>00000000</shadowcolor>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
                     </control>
                     <control type="label">
-                        <posx>col-4-begin</posx>
-                        <posy>164</posy>
+                        <visible>Pvr.IsPlayingRadio</visible>
+                        <posx>3-col-indent</posx>
+                        <posy>48</posy>
+                        <width>20-col</width>
+                        <font>regularStrong</font>
+                        <textcolor>textActive</textcolor>
+                        <scroll>false</scroll>
+                        <label>$INFO[VideoPlayer.Plot]</label>
+                        <shadowcolor>00000000</shadowcolor>
+                    </control>
+                    <control type="image">
+                        <posx>3-col-indent</posx>
+                        <posy>96</posy>
+                        <width>3-col</width>
+                        <height>3</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>ffffffff</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>3-col-indent</posx>
+                        <posy>3-row</posy>
                         <width>12-col</width>
-                        <font>itemSubTitle</font>
+                        <font>regularStrong</font>
                         <align>left</align>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
                         <shadowcolor>00000000</shadowcolor>
-                        <label>[B]$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration][/B]     $INFO[MusicPlayer.offset(1).Artist,[B]$LOCALIZE[19031][/B]: , - ]$INFO[MusicPlayer.offset(1).Title]</label>
-                        <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                        <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
+                        <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
+                    </control>
+                    <control type="label">
+                        <posx>3-col-indent</posx>
+                        <posy>156</posy>
+                        <width>12-col</width>
+                        <font>itemTitle</font>
+                        <align>left</align>
+                        <textcolor>textActive</textcolor>
+                        <scroll>false</scroll>
+                        <shadowcolor>00000000</shadowcolor>
+                        <label>$INFO[MusicPlayer.offset(1).Artist,[COLOR highlight]$LOCALIZE[19031]:[/COLOR] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
                     </control>
                 </control>
                 <!--dialog controls-->

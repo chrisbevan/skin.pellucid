@@ -21,7 +21,20 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--titles-->
+            <!--logo-->
+            <control type="image">
+                <posx>col-1-begin</posx>
+                <posy>row-1-begin</posy>
+                <width>1-col</width>
+                <height>1-col</height>
+                <texture>kodilogo.png</texture>
+                <colordiffuse>textActive</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <animation type="Conditional" condition="controlgroup(9000).hasfocus">
+                    <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" delay="600" time="300"/>
+                    <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="900" time="300"/>
+                </animation>
+            </control>
             <!--set recent items type-->
             <control type="panel" id="6000">
                 <posx>0</posx>

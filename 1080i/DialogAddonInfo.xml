@@ -93,7 +93,8 @@
                     <posx>12</posx>
                     <posy>2-row</posy>
                     <width>10-col-gutter</width>
-                    <font>smallStrong</font>
+                    <font>itemSubTitle</font>
+                    <textcolor>highlight</textcolor>
                     <label>$INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)]</label>
                 </control>
                 <control type="textbox" id="400">
@@ -115,7 +116,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>6-col</width>
-                    <height>8-row</height>
+                    <height>10-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
                     <itemlayout width="6-col" height="2-row">

@@ -3,6 +3,62 @@
     <include name="seasons">
         <control type="group">
             <visible>container.content(seasons) + !container.content(episodes)</visible>
+
+            <!--fanart-->
+            <control type="group">
+                <visible>!Substring(Container.folderpath,plugin)</visible>
+                <posy>-100</posy>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+                    <animation type="conditional" condition="!controlgroup(9000).hasfocus" loop="true" reversible="false">
+                        <effect type="fade" start="0" end="100" time="2000"/>
+                        <effect type="zoom" center="auto" start="130" end="100" time="15000"/>
+                        <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
+                    </animation>
+                </control>
+            </control>
+
+            <!--title-->
+            <control type="group">
+                <visible>!Substring(Container.folderpath,plugin)</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-2-begin</posy>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>11-row</posy>
+                    <width>24-col</width>
+                    <height>2-row</height>
+                    <font>largeStrong</font>
+                    <textcolor>textActive</textcolor>
+                    <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
+                </control>
+            </control>
+
+            <!--overlay-->
+            <control type="image">
+                <visible>!Substring(Container.folderpath,plugin)</visible>
+                <posx>0</posx>
+                <posy>row-15-begin</posy>
+                <width>fullscreenWidth</width>
+                <height>15-row</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/white.png</texture>
+                <colordiffuse>background</colordiffuse>
+            </control>
+            <control type="image">
+                <visible>!Substring(Container.folderpath,plugin)</visible>
+                <posx>0</posx>
+                <posy>row-15-begin</posy>
+                <width>fullscreenWidth</width>
+                <height>6</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
+
             <!--content-->
             <control type="panel" id="58">
                 <visible>!StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
@@ -114,37 +170,6 @@
                         </control>
                     </control>
                 </focusedlayout>
-            </control>
-
-            <!--fanart-->
-            <control type="group">
-                <animation type="conditional" condition="true">
-                    <effect type="slide" start="0,0" end="0,-516" tween="cubic" easing="out" delay="0" time="400"/>
-                </animation>
-                <posy>0</posy>
-                <control type="image">
-                    <include>dimensionsFullscreen</include>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                    <bordertexture border="6" colordiffuse="highlight">colors/white.png</bordertexture>
-                    <bordersize>0,0,0,6</bordersize>
-                    <colordiffuse>ffffffff</colordiffuse>
-                </control>
-            </control>
-
-            <!--title-->
-            <control type="group">
-                <posx>col-1-begin</posx>
-                <posy>row-2-begin</posy>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>11-row</posy>
-                    <width>24-col</width>
-                    <height>2-row</height>
-                    <font>largeStrong</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[container.foldername]</label>
-                </control>
             </control>
         </control>
     </include>
