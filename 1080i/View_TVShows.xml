@@ -56,7 +56,7 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>11-col-gutter</width>
+                        <width>8-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -77,29 +77,15 @@
                     </control>
                     <control type="label">
                         <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                        <posx>11-col</posx>
+                        <right>12</right>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>4-col</width>
                         <height>2-row</height>
-                        <align>center</align>
+                        <align>right</align>
                         <aligny>center</aligny>
-                        <font>symbol</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
-                    </control>
-                    <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
-                        <posx>11-col</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbol</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>$INFO[ListItem.Property(UnWatchedEpisodes)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout width="12-col" height="3-row">
@@ -123,7 +109,7 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>11-col-gutter</width>
+                        <width>8-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -144,29 +130,15 @@
                     </control>
                     <control type="label">
                         <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                        <posx>11-col</posx>
+                        <right>12</right>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>4-col</width>
                         <height>2-row</height>
-                        <align>center</align>
+                        <align>right</align>
                         <aligny>center</aligny>
-                        <font>symbol</font>
+                        <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
-                    </control>
-                    <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
-                        <posx>11-col</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbol</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
+                        <label>$INFO[ListItem.Property(UnWatchedEpisodes)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
                     </control>
                 </focusedlayout>
             </control>

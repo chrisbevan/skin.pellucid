@@ -684,3 +684,23 @@ msgstr ""
 msgctxt "#31185"
 msgid "Open"
 msgstr ""
+
+msgctxt "#31186"
+msgid "View"
+msgstr ""
+
+msgctxt "#31187"
+msgid "Most Played Albums"
+msgstr ""
+
+msgctxt "#31188"
+msgid "seasons"
+msgstr ""
+
+msgctxt "#31189"
+msgid "episodes"
+msgstr ""
+
+msgctxt "#31190"
+msgid "All Episodes"
+msgstr ""

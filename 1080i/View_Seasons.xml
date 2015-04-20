@@ -19,6 +19,12 @@
                         <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
                     </animation>
                 </control>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <texture>vignette.png</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
             </control>
 
             <!--title-->
@@ -117,7 +123,7 @@
                             <aligny>center</aligny>
                             <font>regularStrong</font>
                             <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.season,$LOCALIZE[31011]]</label>
+                            <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011]]</label>
                         </control>
                         <control type="label">
                             <posx>12</posx>
@@ -149,7 +155,7 @@
                                 <aligny>center</aligny>
                                 <font>smallStrong</font>
                                 <textcolor>textActive</textcolor>
-                                <label>$LOCALIZE[31183]</label>
+                                <label>$LOCALIZE[31185]</label>
                             </control>
                             <control type="label">
                                 <width>24</width>

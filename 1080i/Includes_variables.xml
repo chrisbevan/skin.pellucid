@@ -13,18 +13,6 @@
         <value condition="Player.Rewinding16x">RW 16x</value>
         <value condition="Player.Rewinding32x">RW 32x</value>
     </variable>
-    <!--fanart selection-->
-    <variable name="fanartType">
-        <value condition="Window.IsActive(videolibrary)">$INFO[Skin.String(videoFanartLocation)]</value>
-        <value condition="Window.IsActive(musiclibrary)">$INFO[Skin.String(musicFanartLocation)]</value>
-        <value condition="Window.IsActive(musicfiles)">$INFO[Skin.String(musicFanartLocation)]</value>
-        <value condition="Window.IsActive(pvr) + control.isvisible(12)">$INFO[Skin.String(musicFanartLocation)]</value>
-        <value condition="Window.IsActive(pvr)">$INFO[Skin.String(videoFanartLocation)]</value>
-        <value condition="Window.IsActive(programs)">$INFO[Skin.String(videoFanartLocation)]</value>
-        <value condition="Substring(Window.Property(xmlfile),script-Rom_Collection_Browser-main)">$INFO[Skin.String(gameFanartLocation)]</value>
-        <!--default to video fanart-->
-        <value>$INFO[Skin.String(videoFanartLocation)]</value>
-    </variable>
     <!--folder titles-->
     <variable name="listTitle">
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31012]</value>
@@ -36,7 +24,7 @@
         <value condition="Container.Content(movies)">$LOCALIZE[20342] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">$LOCALIZE[20343] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(addons)">$LOCALIZE[31010]</value>
-        <value condition="Container.Content(albums)">$LOCALIZE[31037] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
+        <value condition="Container.Content(albums) + !SubString(container.foldername,Albums)">$LOCALIZE[31037] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
         <value condition="Container.Content(songs)">$LOCALIZE[31182]</value>
         <value condition="!isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value>$LOCALIZE[14022]</value>
@@ -44,19 +32,14 @@
     <variable name="listSubTitle">
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
+        <value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">$INFO[Window(Home).Property(Music.AlbumsCount)] $LOCALIZE[31037]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
-    </variable>
-
-    <!--***TO DELETE***-->
-    <variable name="recentItemsTitle">
-        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),recentalbums)">$LOCALIZE[31013]</value>
-        <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + SubString(skin.string(showRecentMusicItems),true) + SubString(skin.string(musicHomeItemsSource),randomalbums)">$LOCALIZE[31013]</value>
     </variable>
 
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
-        <value condition="Container.Content(tvshows)">$INFO[ListItem.Property(UnWatchedEpisodes)] $LOCALIZE[16101]</value>
+        <value condition="Container.Content(tvshows)">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
         <value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
         <value/>

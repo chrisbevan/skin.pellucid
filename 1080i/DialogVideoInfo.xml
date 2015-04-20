@@ -38,7 +38,7 @@
             </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>
-                <texture>backgrounds/vignette.png</texture>
+                <texture>vignette.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -181,7 +181,7 @@
             <!--dialog controls-->
             <control type="panel" id="8000">
                 <posx>0</posx>
-                <posy>23-row</posy>
+                <posy>24-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <itemgap>3</itemgap>

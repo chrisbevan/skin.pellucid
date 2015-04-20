@@ -8,7 +8,7 @@
         <include>modalDialog</include>
         <control type="group">
             <posx>col-10-begin</posx>
-            <posy>7-row</posy>
+            <posy>9-row</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="list" id="8000">

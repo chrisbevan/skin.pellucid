@@ -34,7 +34,7 @@
                     <height>24-row</height>
                     <pagecontrol>10</pagecontrol>
                     <timeblocks>30</timeblocks>
-                    <!--<progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>-->
+                    <progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
                     <rulerunit>6</rulerunit>
                     <onback>8000</onback>
                     <rulerlayout height="2-row" width="216">
@@ -49,7 +49,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </rulerlayout>
-                    <channellayout height="2-row" width="216">
+                    <channellayout height="2-row" width="288">
                         <control type="image">
                             <posx>0</posx>
                             <posy>3</posy>
@@ -60,7 +60,7 @@
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
-                            <width>3-col-gutter</width>
+                            <width>4-col-gutter</width>
                             <height>2-row</height>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
@@ -69,7 +69,7 @@
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                     </channellayout>
-                    <focusedchannellayout height="2-row" width="216">
+                    <focusedchannellayout height="2-row" width="288">
                         <control type="image">
                             <posx>1-col</posx>
                             <width>216</width>
@@ -91,7 +91,7 @@
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
-                            <width>3-col-gutter</width>
+                            <width>4-col-gutter</width>
                             <height>2-row</height>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
@@ -105,8 +105,9 @@
                             <width>213</width>
                             <height>69</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="2">colors/black.png</texture>
-                            <colordiffuse>overlay</colordiffuse>
+                            <texture border="0">colors/black.png</texture>
+                            <bordertexture colordiffuse="highlight">colors/white.png</bordertexture>
+                            <bordersize>3,0,0,0</bordersize>
                         </control>
                         <control type="label" id="1">
                             <width>204</width>
@@ -123,7 +124,7 @@
                         <control type="image" id="14">
                             <width>213</width>
                             <height>2-row</height>
-                            <texture border="2">colors/white.png</texture>
+                            <texture border="0">colors/white.png</texture>
                             <colordiffuse>highlight</colordiffuse>
                         </control>
                         <control type="label" id="1">

@@ -19,20 +19,14 @@
                     <effect type="slide" start="1000,0" end="0,0" time="400" tween="sine"/>
                 </animation>
                 <control type="image">
-                    <posx>-24</posx>
-                    <posy>0</posy>
-                    <width>24</width>
-                    <height>3-row</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                </control>
-                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>3-row</height>
                     <texture>colors/white.png</texture>
-                    <colordiffuse>eeFFFFFF</colordiffuse>
+                    <colordiffuse>FFFFFFFF</colordiffuse>
+                    <bordertexture colordiffuse="highlight">colors/white.png</bordertexture>
+                    <bordersize>6,0,0,0</bordersize>
                 </control>
             </control>
             <control type="label">
@@ -76,10 +70,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <label>31098</label>
-                <include condition="Skin.HasSetting(lowPowerMode)">scrollSuppressionActive</include>
-                <include condition="!Skin.HasSetting(lowPowerMode)">scrollSuppressionInactive</include>
-                <shadowcolor>-</shadowcolor>
-                <!--animations-->
+               <!--animations-->
                 <animation type="Windowopen">
                     <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
                 </animation>

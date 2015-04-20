@@ -14,10 +14,10 @@
             <posx>col-9-begin</posx>
             <posy>row-24-begin</posy>
             <control type="image">
-                <posx>-36</posx>
-                <posy>-36</posy>
-                <width>9-col</width>
-                <height>6-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>highlight</colordiffuse>
@@ -26,9 +26,12 @@
                 <visible>Player.Playing | player.seeking</visible>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>16-col-gutter</width>
+                <width>8-col-gutter</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <align>center</align>
                 <font>pageTitle</font>
-                <textcolor>highlight</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>31120</label>
             </control>
             <control type="label">
@@ -36,6 +39,9 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>8-col-gutter</width>
+                <height>2-row</height>
+                <align>center</align>
+                <aligny>center</aligny>
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>112</label>
@@ -45,8 +51,11 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>8-col-gutter</width>
+                <height>2-row</height>
+                <align>center</align>
+                <aligny>center</aligny>
                 <font>pageTitle</font>
-                <textcolor>highlight</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
                 <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
             </control>

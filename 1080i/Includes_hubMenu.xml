@@ -80,6 +80,7 @@
                 </focusedlayout>
                 <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoMenu</include>
                 <include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicMenu</include>
+                <include condition="Window.isactive(pictures)">picturesMenu</include>
             </control>
         </control>
         <--hub options-->

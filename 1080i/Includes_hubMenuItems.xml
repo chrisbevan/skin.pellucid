@@ -234,14 +234,6 @@
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
             </item>
             <item>
-                <visible>Library.HasContent(Music)</visible>
-                <label>271</label>
-                <label2/>
-                <onclick>replaceWindow(MusicLibrary,musicdb://top100/songs)</onclick>
-                <onclick>Control.SetFocus(51)</onclick>
-                <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-            </item>
-            <item>
                 <visible>Library.HasContent(MusicVideos)</visible>
                 <label>20389</label>
                 <label2/>
@@ -361,5 +353,9 @@
                 <onclick>Control.SetFocus(51)</onclick>
             </item>
         </content>
+    </include>
+    <!--pictures menu-->
+    <include name="picturesMenu">
+        <content target="pictures">sources://pictures/</content>
     </include>
 </includes>

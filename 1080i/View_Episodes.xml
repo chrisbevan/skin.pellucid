@@ -18,6 +18,12 @@
                     <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
                 </animation>
             </control>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
         </control>
 
         <!--overlay-->

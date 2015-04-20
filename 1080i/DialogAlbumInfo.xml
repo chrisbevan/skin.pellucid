@@ -241,7 +241,7 @@
                 <width>10-col</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>cc111111</colordiffuse>
+                <colordiffuse>textboxInactive</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -304,7 +304,7 @@
             <!--dialog controls-->
             <control type="panel" id="8000">
                 <posx>0</posx>
-                <posy>row-24-begin</posy>
+                <posy>row-25-begin</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <orientation>vertical</orientation>

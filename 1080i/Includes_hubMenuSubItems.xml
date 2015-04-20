@@ -77,6 +77,7 @@
             <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="textActive">colors/white.png</alttexturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
@@ -250,6 +251,7 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
+            <alttexturefocus colordiffuse="textActive">colors/white.png</alttexturefocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
         <control type="button" id="503">
@@ -328,41 +330,44 @@
         <!--sorting-->
         <control type="button" id="3">
             <description>Sort by</description>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>103</label>
         </control>
         <control type="togglebutton" id="4">
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
-            <align>left</align>
-            <height>54</height>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <width>4-col</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <alttexturefocus>colors/black.png</alttexturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <alttexturefocus colordiffuse="textActive">colors/white.png</alttexturefocus>
+            <textoffsetx>col-1-begin</textoffsetx>
         </control>
         <control type="button" id="500">
             <description>Files (pictures)</description>
-            <height>54</height>
-            <width>4-col</width>
+            <height>2-row</height>
+            <width>col-7-begin</width>
             <font>menuTitle</font>
-            <textcolor>black</textcolor>
-            <focusedcolor>selected</focusedcolor>
-            <texturefocus>colors/black.png</texturefocus>
-            <texturenofocus>colors/unselected.png</texturenofocus>
-            <textoffsetx>12</textoffsetx>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>1214</label>
             <onclick>right</onclick>
             <onclick>ActivateWindow(pictures,root)</onclick>
