@@ -6,12 +6,7 @@
     <onload>AlarmClock(controlDialog,setfocus(9876),00:05,silent)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <controls>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <colordiffuse>ffFFFFFF</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+        <include>globalBackground</include>
         <control type="group">
             <include>fadeInOut</include>
             <control type="group">
@@ -25,7 +20,8 @@
                     <fadetime>200</fadetime>
                     <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
                     <aspectratio align="left" aligny="top">stretch</aspectratio>
-                    <include condition="!Skin.HasSetting(lowPowerMode)">kenBurnsey</include>
+                    <include>kenBurnsey</include>
+                    <colordiffuse>44ffffff</colordiffuse>
                 </control>
                 <control type="multiimage">
                     <visible>!isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -37,7 +33,8 @@
                     <timeperimage>10000</timeperimage>
                     <fadetime>1000</fadetime>
                     <randomize>true</randomize>
-                    <include condition="!Skin.HasSetting(lowPowerMode)">kenBurnsey</include>
+                    <include>kenBurnsey</include>
+                    <colordiffuse>44ffffff</colordiffuse>
                 </control>
                 <!--visualisation-->
                 <control type="visualisation" id="2">
@@ -75,10 +72,10 @@
                     </animation>
                     -->
                     <posx>col-1-begin</posx>
-                    <posy>row-14-begin</posy>
+                    <posy>row-22-begin</posy>
                     <control type="image">
-                        <posx>-24</posx>
-                        <posy>-16</posy>
+                        <posx>-18</posx>
+                        <posy>-20</posy>
                         <width>3-col</width>
                         <height>3-col</height>
                         <aspectratio>scale</aspectratio>
@@ -86,7 +83,6 @@
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
-                        <animation effect="rotateY" end="-7" center="auto,auto" time="0">windowopen</animation>
                     </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
@@ -130,20 +126,11 @@
                         <label>$INFO[VideoPlayer.Plot]</label>
                         <shadowcolor>00000000</shadowcolor>
                     </control>
-                    <control type="image">
-                        <posx>3-col-indent</posx>
-                        <posy>96</posy>
-                        <width>3-col</width>
-                        <height>3</height>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>ffffffff</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
                     <control type="label">
                         <posx>3-col-indent</posx>
-                        <posy>3-row</posy>
+                        <posy>104</posy>
                         <width>12-col</width>
-                        <font>regularStrong</font>
+                        <font>pageTitle</font>
                         <align>left</align>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
@@ -451,8 +438,8 @@
         </control>
         <!--hidden button to handle dialog autohide-->
         <control type="button" id="9876">
-            <posx>0</posx>
-            <posy>0</posy>
+            <posx>-100</posx>
+            <posy>-100</posy>
             <height>1-col</height>
             <width>1-col</width>
             <onup>8000</onup>
