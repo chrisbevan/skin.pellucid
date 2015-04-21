@@ -29,6 +29,7 @@
                 <!--source content-->
                 <control type="group" id="9500">
                     <include>musicfiles</include>
+                    <include>addons</include>
                 </control>
             </control>
 

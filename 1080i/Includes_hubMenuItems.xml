@@ -337,7 +337,7 @@
                 <label>31010</label>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>ReplaceWindow(MusicFiles,Addons,return)</onclick>
-                <onclick>setfocus(55)</onclick>
+                <onclick>setfocus(59)</onclick>
             </item>
             <item>
                 <visible/>

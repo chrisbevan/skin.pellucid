@@ -15,7 +15,7 @@
 
              <!--top albums-->
              <control type="group" id="9300">
-                <animation type="Conditional" condition="!controlgroup(9300).hasfocus">
+                <animation type="Conditional" condition="!controlgroup(9300).hasfocus + !controlgroup(9000).hasfocus">
                     <effect type="fade" start="100" end="5" time="200"/>
                 </animation>
                 <control type="label">
@@ -35,7 +35,7 @@
                     <height>10-row</height>
                     <onleft>9000</onleft>
                     <ondown>9997</ondown>
-                    <content>musicdb://top100/albums/</content>
+                    <content>plugin://script.maximinimalism.functions?type=favouritealbums</content>
                     <orientation>horizontal</orientation>
                     <itemlayout width="4-col" height="4-col">
                         <control type="image">
