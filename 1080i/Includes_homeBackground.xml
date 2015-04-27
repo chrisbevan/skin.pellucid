@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="homeBackground">
+        <control type="group">
+            <animation type="windowopen">
+                <effect type="zoom" end="115" time="0"/>
+            </animation>
+            <!--movies-->
+            <control type="wraplist" id="9450">
+                <posx>0</posx>
+                <posy>00</posy>
+                <width>2100</width>
+                <height>fullscreenHeight</height>
+                <orientation>horizontal</orientation>
+                <scrolltime tween="linear" easing="in">10000</scrolltime>
+                <animation type="windowopen">
+                    <effect type="fade" start="0" end="10" time="0"/>
+                    <effect type="zoom" end="115" time="0"/>
+                </animation>
+                <animation type="windowclose">
+                    <effect type="fade" end="0" time="0"/>
+                </animation>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>-144</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <animation type="conditional" condition="true" loop="true">
+                            <effect type="rotatey" start="0" end="10" center="132" delay="0" time="1500"/>
+                            <effect type="rotatey" start="0" end="-10" center="132" delay="1500" time="1500"/>
+                        </animation>
+                    </control>
+                </itemlayout>
+                <focusedlayout/>
+                <content>videodb://movies/titles/</content>
+            </control>
+            <!--albums-->
+            <control type="wraplist" id="9451">
+                <posx>0</posx>
+                <posy>9-row</posy>
+                <width>fullscreenWidth</width>
+                <height>fullscreenHeight</height>
+                <orientation>horizontal</orientation>
+                <scrolltime tween="linear" easing="in">10000</scrolltime>
+                <animation type="windowopen">
+                    <effect type="fade" start="0" end="10" time="0"/>
+                    <effect type="zoom" end="115" time="0"/>
+                </animation>
+                <animation type="windowclose">
+                    <effect type="fade" end="0" time="0"/>
+                </animation>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <animation type="conditional" condition="true" loop="true">
+                            <effect type="rotatey" start="0" end="-10" center="132" delay="0" time="1500"/>
+                            <effect type="rotatey" start="0" end="10" center="132" delay="1500" time="1500"/>
+                        </animation>
+                    </control>
+                </itemlayout>
+                <focusedlayout/>
+                <content>musicdb://albums/</content>
+            </control>
+            <!--albums-->
+            <control type="wraplist" id="9452">
+                <posx>-72</posx>
+                <posy>18-row</posy>
+                <width>2000</width>
+                <height>fullscreenHeight</height>
+                <orientation>horizontal</orientation>
+                <scrolltime tween="linear" easing="in">10000</scrolltime>
+                <animation type="windowopen">
+                    <effect type="fade" start="0" end="10" time="0"/>
+                    <effect type="zoom" end="115" time="0"/>
+                </animation>
+                <animation type="windowclose">
+                    <effect type="fade" end="0" time="0"/>
+                </animation>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <animation type="conditional" condition="true" loop="true">
+                            <effect type="rotatey" start="0" end="10" center="132" delay="0" time="1500"/>
+                            <effect type="rotatey" start="0" end="-10" center="132" delay="1500" time="1500"/>
+                        </animation>
+                    </control>
+                </itemlayout>
+                <focusedlayout/>
+                <content>videodb://tvshows/titles/</content>
+            </control>
+        </control>
+    </include>
+</includes>

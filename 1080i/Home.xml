@@ -6,8 +6,15 @@
     <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
+
+    <onload>alarmClock(bg1,Control.Move(9450,1),00:10,silent,loop)</onload>
+    <onload>alarmClock(bg2,Control.Move(9451,-1),00:10,silent,loop)</onload>
+    <onload>alarmClock(bg3,Control.Move(9452,1),00:10,silent,loop)</onload>
+
     <controls>
         <include>globalBackground</include>
+        <include>homeBackground</include>
+
         <!--browse controls-->
         <control type="group">
             <posx>24</posx>

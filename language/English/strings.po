@@ -704,3 +704,19 @@ msgstr ""
 msgctxt "#31190"
 msgid "All Episodes"
 msgstr ""
+
+msgctxt "#31191"
+msgid "Channel"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Recorded"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Duration"
+msgstr ""
+
+msgctxt "#31194"
+msgid "Subtitles"
+msgstr ""

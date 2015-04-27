@@ -4,6 +4,7 @@
     <include file="Includes_grid.xml"/>
     <include file="Includes_variables.xml"/>
     <include file="Includes_animations.xml"/>
+    <include file="Includes_homeBackground.xml"/>
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubMenuItems.xml"/>
     <include file="Includes_hubMenuSubItems.xml"/>
