@@ -32,8 +32,8 @@
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                         <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="10" center="132" delay="0" time="1500"/>
-                            <effect type="rotatey" start="0" end="-10" center="132" delay="1500" time="1500"/>
+                            <effect type="rotatey" start="0" end="5" center="0" delay="0" time="1500" tween="sine" easing="in"/>
+                            <effect type="rotatey" start="0" end="-5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
                         </animation>
                     </control>
                 </itemlayout>
@@ -67,8 +67,8 @@
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                         <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="-10" center="132" delay="0" time="1500"/>
-                            <effect type="rotatey" start="0" end="10" center="132" delay="1500" time="1500"/>
+                            <effect type="rotatey" start="0" end="-5" center="0" delay="0" time="1500" tween="sine" easing="in"/>
+                            <effect type="rotatey" start="0" end="5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
                         </animation>
                     </control>
                 </itemlayout>
@@ -102,8 +102,8 @@
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                         <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="10" center="132" delay="0" time="1500"/>
-                            <effect type="rotatey" start="0" end="-10" center="132" delay="1500" time="1500"/>
+                            <effect type="rotatey" start="0" end="5" center="0" delay="0" time="1500" tween="sine" easing="in" />
+                            <effect type="rotatey" start="0" end="-5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
                         </animation>
                     </control>
                 </itemlayout>

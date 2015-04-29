@@ -23,7 +23,7 @@
             </control>
 
             <control type="panel" id="50">
-                <visible>!StringCompare(container.foldername,files) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>!isempty(container.foldername) + !StringCompare(container.foldername,files) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>

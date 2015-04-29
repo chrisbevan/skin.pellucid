@@ -48,77 +48,79 @@
                 </control>
               </itemlayout>
             <focusedlayout width="6-col" height="294">
-                <animation type="focus" loop="false" reversible="false">
-                    <effect type="rotatey" start="0" end="-15" center="204" tween="back" easing="out" time="300"/>
-                    <effect type="rotatey" start="0" end="15" center="204" tween="back" easing="out" delay="300" time="300"/>
-                </animation>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col-gutter</width>
-                    <height>272</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
-                    <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                    <bordersize>3</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
-                </control>
-                <control type="image">
-                    <posx>3</posx>
-                    <posy>3</posy>
-                    <width>402</width>
-                    <height>266</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture border="0">colors/black.png</texture>
-                    <colordiffuse>ccFFFFFF</colordiffuse>
-                </control>
-                <control type="label">
-                    <posx>12</posx>
-                    <posy>3-row</posy>
-                    <width>384</width>
-                    <height>row-1-begin</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="grouplist">
-                    <posx>114</posx>
-                    <posy>row-5-begin</posy>
-                    <width>6-col</width>
-                    <orientation>horizontal</orientation>
-                    <control type="label">
-                        <width>24</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>symbol</font>
-                        <textcolor>textActive</textcolor>
-                        <label></label>
+                <control type="group">
+                    <animation type="focus" loop="false" reversible="false">
+                        <effect type="rotatey" start="0" end="-15" center="204" tween="back" easing="out" time="300"/>
+                        <effect type="rotatey" start="0" end="15" center="204" tween="back" easing="out" delay="300" time="300"/>
+                    </animation>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>272</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
+                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>3</posx>
+                        <posy>3</posy>
+                        <width>402</width>
+                        <height>266</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>ccFFFFFF</colordiffuse>
                     </control>
                     <control type="label">
-                        <width>1-col</width>
-                        <height>2-row</height>
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>384</width>
+                        <height>row-1-begin</height>
+                        <align>center</align>
                         <aligny>center</aligny>
-                        <font>smallStrong</font>
+                        <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31186]</label>
+                        <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label">
-                        <width>24</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>symbol</font>
-                        <textcolor>textActive</textcolor>
-                        <label></label>
-                    </control>
-                    <control type="label">
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>smallStrong</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[31184]</label>
+                    <control type="grouplist">
+                        <posx>114</posx>
+                        <posy>row-5-begin</posy>
+                        <width>6-col</width>
+                        <orientation>horizontal</orientation>
+                        <control type="label">
+                            <width>24</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>symbol</font>
+                            <textcolor>textActive</textcolor>
+                            <label></label>
+                        </control>
+                        <control type="label">
+                            <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>smallStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$LOCALIZE[31186]</label>
+                        </control>
+                        <control type="label">
+                            <width>24</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>symbol</font>
+                            <textcolor>textActive</textcolor>
+                            <label></label>
+                        </control>
+                        <control type="label">
+                            <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>smallStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$LOCALIZE[31184]</label>
+                        </control>
                     </control>
                 </control>
             </focusedlayout>

@@ -21,6 +21,17 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
+                <posx>-36</posx>
+                <posy>-36</posy>
+                <width>13-col</width>
+                <height>25-row</height>
+                <texture>colors/black.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+                <colordiffuse>ffffffff</colordiffuse>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>12-col</width>
@@ -50,15 +61,6 @@
                 <font>dialogTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[292] $LOCALIZE[5]</label>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>12-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>

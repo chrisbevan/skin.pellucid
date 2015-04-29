@@ -1,7 +1,7 @@
-skin.untitled
+Pellucid
 ===================
 
-An as yet untitled Skin for Kodi by theDeadMan
+Pellucid is a skin for Kodi by theDeadMan
 
 Built in support for:
 - PVR

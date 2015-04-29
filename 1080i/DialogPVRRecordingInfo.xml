@@ -31,7 +31,7 @@
                     <font>mediumStrong</font>
                     <textcolor>highlight</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>[COLOR textActive]$INFO[listitem.channelname][/COLOR] $INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
 
@@ -44,24 +44,12 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$LOCALIZE[31191][/COLOR] $INFO[listitem.channelname]</label>
-                </control>
-
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>5-row</posy>
-                    <width>12-col-gutter</width>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31192][/COLOR] $INFO[ListItem.startdate]</label>
                 </control>
 
                 <control type="label">
                     <posx>0</posx>
-                    <posy>6-row</posy>
+                    <posy>5-row</posy>
                     <width>6-col-gutter</width>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -74,7 +62,7 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>8-row</posy>
+                    <posy>7-row</posy>
                     <font>textbox</font>
                     <width>12-col</width>
                     <align>left</align>

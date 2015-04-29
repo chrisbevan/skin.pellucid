@@ -12,66 +12,150 @@
             </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-            <!--content provider-->
-            <control type="group" id="200">
+
+            <!-- Console menu-->
+            <control type="list" id="500">
                 <posx>0</posx>
-                <posy>0</posy>
-                <!--main menu-->
-                <control type="group">
+                <posy>row-8-begin</posy>
+                <width>3-col</width>
+                <height>12-row</height>
+                <orientation>vertical</orientation>
+                <preloaditems>2</preloaditems>
+                <onleft>62</onleft>
+                <onright>9999</onright>
+                <itemlayout width="4-col" height="43">
+                    <control type="label">
+                        <posx>14</posx>
+                        <posy>0</posy>
+                        <width>3-col-gutter</width>
+                        <font>menuTitle</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>unselected</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="43">
+                    <control type="label">
+                        <visible>Control.HasFocus(500)</visible>
+                        <posx>1</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <font>menuTitle</font>
+                        <label>[ $INFO[ListItem.Label] ]</label>
+                        <textcolor>textActive</textcolor>
+                    </control>
+                    <control type="label">
+                        <visible>!Control.HasFocus(500)</visible>
+                        <posx>14</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <font>menuTitle</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>unselected</textcolor>
+                    </control>
+                </focusedlayout>
+            </control>
+
+            <!--Main content listing-->
+            <control type="group" id="9999">
+                <control type="panel" id="50">
+                    <animation type="windowclose">
+                        <effect type="fade" start="100" end="0" time="200"/>
+                    </animation>
                     <posx>col-1-begin</posx>
-                    <posy>row-2-begin</posy>
-                    <include>dateTime</include>
-                    <include>hubMenu</include>
-                    <!-- Console menu-->
-                    <control type="list" id="500">
-                        <posx>-14</posx>
-                        <posy>180</posy>
-                        <width>3-col</width>
-                        <height>12-row</height>
-                        <orientation>vertical</orientation>
-                        <preloaditems>2</preloaditems>
-                        <onleft>62</onleft>
-                        <onright>9999</onright>
-                        <itemlayout width="4-col" height="43">
-                            <control type="label">
-                                <posx>14</posx>
-                                <posy>0</posy>
-                                <width>3-col-gutter</width>
-                                <font>menuTitle</font>
-                                <label>$INFO[ListItem.Label]</label>
-                                <textcolor>unselected</textcolor>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="4-col" height="43">
-                            <control type="label">
-                                <visible>Control.HasFocus(500)</visible>
-                                <posx>1</posx>
-                                <posy>0</posy>
-                                <width>4-col</width>
-                                <font>menuTitle</font>
-                                <label>[ $INFO[ListItem.Label] ]</label>
-                                <textcolor>textActive</textcolor>
-                            </control>
-                            <control type="label">
-                                <visible>!Control.HasFocus(500)</visible>
-                                <posx>14</posx>
-                                <posy>0</posy>
-                                <width>4-col</width>
-                                <font>menuTitle</font>
-                                <label>$INFO[ListItem.Label]</label>
-                                <textcolor>unselected</textcolor>
-                            </control>
-                        </focusedlayout>
+                    <posy>row-5-begin</posy>
+                    <width>16-col</width>
+                    <height>12-row</height>
+                    <onleft>500</onleft>
+                    <onright>60</onright>
+                    <ondown>50</ondown>
+                    <onup>50</onup>
+                    <pagecontrol>60</pagecontrol>
+                    <itemlayout width="24-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>3</posy>
+                            <width>66</width>
+                            <height>66</height>
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>23-col</width>
+                            <height>69</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/black.png</texture>
+                            <colordiffuse>textboxInactive</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>23-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="24-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>3</posy>
+                            <width>66</width>
+                            <height>66</height>
+                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                            <animation type="focus" loop="false" reversible="false">
+                                <effect type="fade" time="500"/>
+                                <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                            </animation>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>23-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0">colors/white.png</texture>
+                            <colordiffuse>highlight</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>23-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+
+                <!--page scrollbar-->
+                <control type="group" id="8000">
+                    <visible>Control.IsVisible(60)</visible>
+                    <animation effect="fade" start="100" end="70" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+                    <control type="scrollbar" id="60">
+                        <posx>84r</posx>
+                        <posy>0</posy>
+                        <height>672</height>
+                        <onleft>50</onleft>
                     </control>
                 </control>
+
                 <!--Folder titles-->
                 <control type="group">
-                    <posx>col-4-begin</posx>
-                    <posy>row-2-begin</posy>
+                    <posx>0</posx>
+                    <posy>0</posy>
                     <!--source title-->
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <posx>col-1-begin</posx>
+                        <posy>row-1-begin</posy>
                         <width>14-col</width>
                         <font>pageTitle</font>
                         <label>$LOCALIZE[31156] [COLOR highlight]$INFO[ListItem.Property(console)][/COLOR]</label>
@@ -79,158 +163,21 @@
                     </control>
                     <!--source subtitle-->
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>45</posy>
+                        <posx>col-1-begin</posx>
+                        <posy>96</posy>
                         <width>auto</width>
                         <font>regular</font>
                         <label>$INFO[container.Numitems,, $LOCALIZE[31014]]</label>
                         <textcolor>textActive</textcolor>
                     </control>
                 </control>
-                <!--Main content listing-->
-                <control type="group" id="9999">
-                    <posx>col-4-begin</posx>
-                    <posy>row-5-begin</posy>
-                    <!--focussed item detail-->
-                    <control type="group">
-                        <posx>14-col</posx>
-                        <posy>12</posy>
-                        <!--content is movies / tvshows / seasons: show larger thumbnail-->
-                        <control type="group">
-                            <animation type="windowopen">
-                                <effect type="fade" start="0" end="100" time="300" delay="700"/>
-                                <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
-                            </animation>
-                            <animation type="windowclose">
-                                <effect type="fade" start="100" end="0" time="300" delay="300"/>
-                                <effect type="slide" start="0" end="3-col" tween="cubic" easing="out" time="400" delay="300"/>
-                            </animation>
-                            <animation type="visible">
-                                <include>listSlideIn</include>
-                            </animation>
-                            <control type="group">
-                                <control type="image">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>6-col</width>
-                                    <height>-</height>
-                                    <aspectratio scalediffuse="false" aligny="top">keep</aspectratio>
-                                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[ListItem.thumb]</texture>
-                                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                                    <bordersize>3</bordersize>
-                                    <fadetime>200</fadetime>
-                                </control>
-                            </control>
-                        </control>
-                    </control>
-                    <control type="panel" id="50">
-                        <animation type="windowclose">
-                            <effect type="fade" start="100" end="0" time="200"/>
-                        </animation>
-                        <posx>0</posx>
-                        <posy>4</posy>
-                        <width>13-col</width>
-                        <height>12-row</height>
-                        <onleft>500</onleft>
-                        <onright>60</onright>
-                        <ondown>50</ondown>
-                        <onup>50</onup>
-                        <pagecontrol>60</pagecontrol>
-                        <scrolltime tween="sine" easing="inout">300</scrolltime>
-                        <itemlayout width="13-col" height="1-row">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>2</posy>
-                                <width>13-col</width>
-                                <height>53</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="24,0,24,0">UIControls/listitemNF.png</texture>
-                                <bordersize>0</bordersize>
-                                <colordiffuse>99FFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>4</posx>
-                                <posy>4</posy>
-                                <width>48</width>
-                                <height>48</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                            </control>
-                            <control type="label">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>12-col-gutter</width>
-                                <font>itemTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <visible>!IsEmpty(ListItem.Property(isfavorite))</visible>
-                                <posx>36r</posx>
-                                <posy>-2</posy>
-                                <width>40</width>
-                                <font>symbol</font>
-                                <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>&#xF2E0;</label>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="13-col" height="1-row">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>2</posy>
-                                <width>13-col</width>
-                                <height>53</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="24,0,24,0">UIControls/listitemFO.png</texture>
-                                <bordersize>0</bordersize>
-                                <colordiffuse>FFFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>4</posx>
-                                <posy>4</posy>
-                                <width>48</width>
-                                <height>48</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                            </control>
-                            <control type="label">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>12-col-gutter</width>
-                                <font>itemTitle</font>
-                                <textcolor>black</textcolor>
-                                <selectedcolor>black</selectedcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <visible>!IsEmpty(ListItem.Property(isfavorite))</visible>
-                                <posx>36r</posx>
-                                <posy>-2</posy>
-                                <width>40</width>
-                                <font>symbol</font>
-                                <textcolor>black</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>&#xF2E0;</label>
-                            </control>
-                        </focusedlayout>
-                    </control>
-                    <!--page scrollbar-->
-                    <control type="group" id="8000">
-                        <visible>Control.IsVisible(60)</visible>
-                        <animation effect="fade" start="100" end="70" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
-                        <control type="scrollbar" id="60">
-                            <posx>84r</posx>
-                            <posy>0</posy>
-                            <height>672</height>
-                            <onleft>50</onleft>
-                        </control>
-                    </control>
-                </control>
+                <!--dateTime-->
+                <include>dateTime</include>
             </control>
+        <!--end of page container group-->
         </control>
+
+
         <!--sorting and misc controls-->
         <control type="group" id="61">
             <!--animations-->
