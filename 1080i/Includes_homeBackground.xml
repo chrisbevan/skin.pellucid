@@ -2,114 +2,52 @@
 <includes>
     <include name="homeBackground">
         <control type="group">
-            <animation type="windowopen">
-                <effect type="zoom" end="115" time="0"/>
+            <animation type="conditional" condition="true" loop="true">
+                <effect type="fade" start="0" end="100" time="5000"/>
+                <effect type="zoom" start="80" end="130" time="10000" tween="sine" easing="out"/>
+
+                <effect type="slide" start="0,0" end="-450,0" center="0" delay="0" time="20000" tween="sine" easing="in"/>
+                <effect type="zoom" start="130" end="100" delay="12000" time="8000" tween="sine" easing="in"/>
+                <effect type="fade" start="100" end="0" time="3000" delay="16000"/>
             </animation>
-            <!--movies-->
-            <control type="wraplist" id="9450">
-                <posx>0</posx>
-                <posy>00</posy>
-                <width>2100</width>
-                <height>fullscreenHeight</height>
-                <orientation>horizontal</orientation>
-                <scrolltime tween="linear" easing="in">10000</scrolltime>
-                <animation type="windowopen">
-                    <effect type="fade" start="0" end="10" time="0"/>
-                    <effect type="zoom" end="115" time="0"/>
-                </animation>
-                <animation type="windowclose">
-                    <effect type="fade" end="0" time="0"/>
-                </animation>
-                <itemlayout width="4-col" height="4-col">
-                    <control type="image">
-                        <posx>-144</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                        <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="5" center="0" delay="0" time="1500" tween="sine" easing="in"/>
-                            <effect type="rotatey" start="0" end="-5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
-                        </animation>
-                    </control>
-                </itemlayout>
-                <focusedlayout/>
-                <content>videodb://movies/titles/</content>
-            </control>
             <!--albums-->
-            <control type="wraplist" id="9451">
+            <control type="panel" id="9451">
                 <posx>0</posx>
-                <posy>9-row</posy>
+                <posy>0</posy>
                 <width>fullscreenWidth</width>
                 <height>fullscreenHeight</height>
                 <orientation>horizontal</orientation>
                 <scrolltime tween="linear" easing="in">10000</scrolltime>
                 <animation type="windowopen">
-                    <effect type="fade" start="0" end="10" time="0"/>
-                    <effect type="zoom" end="115" time="0"/>
+                    <effect type="fade" end="100" time="1000" delay="1000"/>
                 </animation>
                 <animation type="windowclose">
                     <effect type="fade" end="0" time="0"/>
                 </animation>
-                <itemlayout width="4-col" height="4-col">
+                <itemlayout width="3-col" height="3-col">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
+                        <width>3-col-textbox</width>
+                        <height>3-col-textbox</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                        <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="-5" center="0" delay="0" time="1500" tween="sine" easing="in"/>
-                            <effect type="rotatey" start="0" end="5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
-                        </animation>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                 </itemlayout>
                 <focusedlayout/>
-                <content>musicdb://albums/</content>
+                <content>$VAR[homescreenCollage]</content>
             </control>
-            <!--albums-->
-            <control type="wraplist" id="9452">
-                <posx>-72</posx>
-                <posy>18-row</posy>
-                <width>2000</width>
-                <height>fullscreenHeight</height>
-                <orientation>horizontal</orientation>
-                <scrolltime tween="linear" easing="in">10000</scrolltime>
-                <animation type="windowopen">
-                    <effect type="fade" start="0" end="10" time="0"/>
-                    <effect type="zoom" end="115" time="0"/>
-                </animation>
-                <animation type="windowclose">
-                    <effect type="fade" end="0" time="0"/>
-                </animation>
-                <itemlayout width="4-col" height="4-col">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                        <animation type="conditional" condition="true" loop="true">
-                            <effect type="rotatey" start="0" end="5" center="0" delay="0" time="1500" tween="sine" easing="in" />
-                            <effect type="rotatey" start="0" end="-5" center="0" delay="1500" time="1500" tween="sine" easing="in"/>
-                        </animation>
-                    </control>
-                </itemlayout>
-                <focusedlayout/>
-                <content>videodb://tvshows/titles/</content>
-            </control>
+        </control>
+        <!--overlay-->
+        <control type="image">
+            <animation type="windowopen">
+                <effect type="fade" end="100" time="1000" delay="0"/>
+            </animation>
+            <include>dimensionsFullscreen</include>
+            <texture>logoOverlay.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
         </control>
     </include>
 </includes>

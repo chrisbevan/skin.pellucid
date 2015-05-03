@@ -127,8 +127,9 @@
             <onclick>right</onclick>
         </control>
         <control type="radiobutton" id="14">
-            <description>Watched Toggle</description>
-            <label>20367</label>
+            <description>Watched Toggle off</description>
+            <visible>!System.Setting(hidewatched)</visible>
+            <label>31195</label>
             <height>2-row</height>
             <width>col-7-begin</width>
             <font>menuTitle</font>
@@ -136,7 +137,23 @@
             <focusedcolor>highlight</focusedcolor>
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <textureradiooffnofocus>colors/white.png</textureradiooffnofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
+            <textoffsetx>col-1-begin</textoffsetx>
+        </control>
+        <control type="radiobutton" id="14">
+            <description>Watched Toggle on</description>
+            <visible>System.Setting(hidewatched)</visible>
+            <label>31196</label>
+            <height>2-row</height>
+            <width>col-7-begin</width>
+            <font>menuTitle</font>
+            <textcolor>textActive</textcolor>
+            <focusedcolor>highlight</focusedcolor>
+            <disabledcolor>menuDisabled</disabledcolor>
+            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
             <textoffsetx>col-1-begin</textoffsetx>
         </control>
         <control type="radiobutton" id="508">
@@ -152,6 +169,8 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
             <onclick>right</onclick>
             <onclick>Filter</onclick>
         </control>
@@ -167,6 +186,8 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
             <onclick>right</onclick>
             <onclick>xbmc.mastermode</onclick>
             <selected>system.ismaster</selected>
@@ -291,6 +312,8 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>191</label>
         </control>
@@ -304,6 +327,8 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
             <textoffsetx>col-1-begin</textoffsetx>
             <label>589</label>
         </control>

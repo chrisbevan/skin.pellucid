@@ -203,8 +203,8 @@
         <align>center</align>
         <aligny>center</aligny>
         <shadowcolor>-</shadowcolor>
-        <texturefocus>colors/keyselected.png</texturefocus>
-        <texturenofocus>colors/offblack.png</texturenofocus>
+        <texturefocus colordiffuse="textboxInactive">colors/black.png</texturefocus>
+        <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
 </includes>

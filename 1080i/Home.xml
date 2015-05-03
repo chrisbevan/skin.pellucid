@@ -6,11 +6,6 @@
     <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
-
-    <onload>alarmClock(bg1,Control.Move(9450,1),00:10,silent,loop)</onload>
-    <onload>alarmClock(bg2,Control.Move(9451,-1),00:10,silent,loop)</onload>
-    <onload>alarmClock(bg3,Control.Move(9452,1),00:10,silent,loop)</onload>
-
     <controls>
         <include>globalBackground</include>
         <include>homeBackground</include>
@@ -95,7 +90,7 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item>
+                    <item id="1">
                         <visible>!Skin.HasSetting(hideVideo)</visible>
                         <label>31000</label>
                         <label2></label2>
@@ -105,7 +100,7 @@
                         <onclick condition="Library.HasContent(Video)">ActivateWindow(Videos,videodb://)</onclick>
                         <onclick condition="Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,true)</onclick>
                     </item>
-                    <item>
+                    <item id="2">
                         <visible>!Skin.HasSetting(hideMusic)</visible>
                         <label>31001</label>
                         <label2></label2>
@@ -115,28 +110,28 @@
                         <onclick condition="Library.HasContent(Music)">ActivateWindow(musiclibrary)</onclick>
                         <onclick condition="Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,true)</onclick>
                     </item>
-                    <item>
+                    <item id="3">
                         <visible>!Skin.HasSetting(hidePictures)</visible>
                         <label>31002</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(pictures)</onclick>
                     </item>
-                    <item>
+                    <item id="4">
                         <visible>!Skin.HasSetting(hideGames) + System.HasAddon(script.games.rom.collection.browser)</visible>
                         <label>31156</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
                     </item>
-                    <item>
+                    <item id="5">
                         <visible>!Skin.HasSetting(hidePrograms)</visible>
                         <label>0</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(programs,addons,return)</onclick>
                     </item>
-                    <item>
+                    <item id="6">
                         <visible>!Skin.HasSetting(hideSearch)</visible>
                         <label>137</label>
                         <label2></label2>
@@ -145,20 +140,20 @@
                         <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                     </item>
-                    <item>
+                    <item id="7">
                         <visible>!Skin.HasSetting(hideFavourites)</visible>
                         <label>1036</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ReplaceWindow(favourites)</onclick>
                     </item>
-                    <item>
+                    <item id="8">
                         <label>5</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(settings)</onclick>
                     </item>
-                    <item>
+                    <item id="9">
                         <label>31004</label>
                         <label2></label2>
                         <thumb>-</thumb>
