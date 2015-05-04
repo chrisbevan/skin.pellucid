@@ -10,7 +10,7 @@
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                <texture background="true" fallback="colors/black.png" border="0">$INFO[container.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <animation type="conditional" condition="!controlgroup(9000).hasfocus" loop="true" reversible="false">
                     <effect type="fade" start="0" end="100" time="2000"/>

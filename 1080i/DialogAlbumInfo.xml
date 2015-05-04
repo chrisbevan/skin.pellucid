@@ -17,7 +17,7 @@
                 <include>dimensionsFullscreen</include>
                 <aspectratio align="center" aligny="top">stretch</aspectratio>
                 <texture fallback="colors/black.png">$INFO[Listitem.art(fanart)]</texture>
-                <include condition="!Skin.HasSetting(lowPowerMode)">kenBurnsey</include>
+                <include>kenBurnsey</include>
             </control>
             <!--coverart-->
             <control type="image">

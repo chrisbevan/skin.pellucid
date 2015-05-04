@@ -10,7 +10,6 @@
         <control type="group">
             <include>fadeInOut</include>
             <control type="group">
-                <visible>!Skin.HasSetting(disableFullscreenMusicBackground)</visible>
                 <!--fanart-->
                 <control type="image">
                     <visible>isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -92,19 +91,9 @@
                         <label>[COLOR highlight]$INFO[MusicPlayer.artist,, ][/COLOR]$INFO[MusicPlayer.Title]</label>
                         <shadowcolor>00000000</shadowcolor>
                    </control>
-                   <control type="label">
-                       <visible>!Pvr.IsPlayingRadio</visible>
-                       <posx>3-col-indent</posx>
-                       <posy>48</posy>
-                       <width>4-col</width>
-                       <font>symbolLarge</font>
-                       <textcolor>textActive</textcolor>
-                       <label>$VAR[starRating]</label>
-                       <shadowcolor>00000000</shadowcolor>
-                   </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
-                        <posx>6-col</posx>
+                        <posx>3-col-indent</posx>
                         <posy>52</posy>
                         <width>20-col</width>
                         <font>regularStrong</font>
@@ -136,6 +125,16 @@
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
                     <control type="label">
+                           <visible>!Pvr.IsPlayingRadio</visible>
+                           <posx>7-col</posx>
+                           <posy>104</posy>
+                           <width>4-col</width>
+                           <font>symbolLarge</font>
+                           <textcolor>textActive</textcolor>
+                           <label>$VAR[starRating]</label>
+                           <shadowcolor>00000000</shadowcolor>
+                       </control>
+                    <control type="label">
                         <posx>3-col-indent</posx>
                         <posy>156</posy>
                         <width>12-col</width>
@@ -149,7 +148,7 @@
                 </control>
                 <!--dialog controls-->
                 <control type="group" id="8765">
-                    <posx>col-5-begin</posx>
+                    <posx>col-3-begin</posx>
                     <posy>0</posy>
                     <animation type="conditional" condition="!Controlgroup(8765).HasFocus">
                         <effect type="slide" start="0,0" end="0,-50" tween="cubic" easing="out" delay="500" time="300"/>
@@ -281,10 +280,9 @@
                                 <onclick>activateWindow(musicOSD)</onclick>
                             </item>
                             <item>
-                                <visible>Visualisation.Enabled</visible>
                                 <description>Visualisation Settings</description>
                                 <label>$LOCALIZE[21417]</label>
-                                <label2></label2>
+                                <label2></label2>
                                 <thumb>-</thumb>
                                 <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                             </item>

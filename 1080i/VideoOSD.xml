@@ -33,7 +33,7 @@
                 <height>2-row</height>
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>[UPPERCASE]$INFO[videoplayer.Title][/UPPERCASE]</label>
+                <label>$INFO[System.Time]   [UPPERCASE]$INFO[videoplayer.Title][/UPPERCASE]</label>
             </control>
             <control type="label">
                 <right>96</right>
@@ -188,8 +188,6 @@
                     </item>
                 </content>
             </control>
-
-
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

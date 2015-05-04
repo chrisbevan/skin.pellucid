@@ -19,11 +19,11 @@
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <posy>3</posy>
+                        <width>66</width>
+                        <height>66</height>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>
@@ -49,12 +49,15 @@
                 <focusedlayout width="12-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
-                        <texture fallback="colors/white.png" border="0">$INFO[Listitem.thumb]</texture>
-                        <include>spinFocusIcon</include>
+                        <posy>3</posy>
+                        <width>66</width>
+                        <height>66</height>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="fade" time="500"/>
+                            <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                        </animation>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>

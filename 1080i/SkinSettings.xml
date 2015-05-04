@@ -131,55 +131,6 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <control type="button" id="1">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Home background image</description>
-                    <width>15-col-textbox</width>
-                    <label>31084</label>
-                    <label2>$INFO[Skin.String(homeBackground)]</label2>
-                    <onclick>Skin.SetFile(homeBackground,.png|.jpg|.gif,special://skin/extras/backgrounds/)</onclick>
-                    <textwidth>8-col</textwidth>
-                    <onright>501</onright>
-                </control>
-                <control type="button" id="2">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Set video fanart</description>
-                    <width>15-col-textbox</width>
-                    <align>left</align>
-                    <label>31026</label>
-                    <label2>$INFO[Skin.String(videoFanartLocation)]</label2>
-                    <onclick>Skin.SetPath(videoFanartLocation)</onclick>
-                    <textwidth>8-col</textwidth>
-                    <onright>502</onright>
-                </control>
-                <control type="button" id="3">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Set music fanart</description>
-                    <width>15-col-textbox</width>
-                    <label>31030</label>
-                    <label2>$INFO[Skin.String(musicFanartLocation)]</label2>
-                    <onclick>Skin.SetPath(musicFanartLocation)</onclick>
-                    <textwidth>8-col</textwidth>
-                    <onright>503</onright>
-                </control>
-                <control type="button" id="4">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Set game fanart</description>
-                    <width>15-col-textbox</width>
-                    <label>31028</label>
-                    <label2>$INFO[Skin.String(gameFanartLocation)]</label2>
-                    <onclick>Skin.SetPath(gameFanartLocation)</onclick>
-                    <textwidth>8-col</textwidth>
-                    <onright>504</onright>
-                </control>
-                <control type="radiobutton" id="5">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Override global background with fanart slides</description>
-                    <width>16-col</width>
-                    <label>31087</label>
-                    <onclick>Skin.ToggleSetting(useGlobalFanartBackground)</onclick>
-                    <selected>Skin.HasSetting(useGlobalFanartBackground)</selected>
-                </control>
                 <control type="radiobutton" id="6">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Stop video on return to menu</description>
@@ -244,14 +195,6 @@
                     <onclick>Skin.ToggleSetting(hidePrograms)</onclick>
                     <selected>Skin.HasSetting(hidePrograms)</selected>
                 </control>
-                <control type="radiobutton" id="14">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Favourites</description>
-                    <width>16-col</width>
-                    <label>31160</label>
-                    <onclick>Skin.ToggleSetting(hideFavourites)</onclick>
-                    <selected>Skin.HasSetting(hideFavourites)</selected>
-                </control>
                 <control type="radiobutton" id="15">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Enable Debug Grid</description>
@@ -268,23 +211,6 @@
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
                 </control>
-                <control type="radiobutton" id="17">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Disable Fanart animations and scrolling (low power mode)</description>
-                    <width>16-col</width>
-                    <label>31163</label>
-                    <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
-                    <onclick>ReloadSkin()</onclick>
-                    <selected>Skin.HasSetting(lowPowerMode)</selected>
-                </control>
-                <control type="radiobutton" id="18">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Disable backgrounds on fullscreen music view</description>
-                    <width>16-col</width>
-                    <label>31169</label>
-                    <onclick>Skin.ToggleSetting(disableFullscreenMusicBackground)</onclick>
-                    <selected>Skin.HasSetting(disableFullscreenMusicBackground)</selected>
-                </control>
                 <control type="radiobutton" id="19">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Autostart music visualisation on playback</description>
@@ -292,69 +218,6 @@
                     <label>31171</label>
                     <onclick>Skin.ToggleSetting(startVisualiserOnPlayback)</onclick>
                     <selected>Skin.HasSetting(startVisualiserOnPlayback)</selected>
-                </control>
-            </control>
-            <!--reset buttons-->
-            <control type="group">
-                <posx>19-col</posx>
-                <control type="button" id="501">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>2-row</posy>
-                    <height>2-row</height>
-                    <width>1-col</width>
-                    <font>symbol</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <label></label>
-                    <onleft>1</onleft>
-                    <ondown>502</ondown>
-                    <onclick>Skin.Reset(globalBackground)</onclick>
-                </control>
-                <control type="button" id="502">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>4-row</posy>
-                    <height>2-row</height>
-                    <width>1-col</width>
-                    <font>symbol</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <label></label>
-                    <onleft>2</onleft>
-                    <ondown>503</ondown>
-                    <onup>501</onup>
-                    <onclick>Skin.Reset(videoFanartLocation)</onclick>
-                </control>
-                <control type="button" id="503">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>6-row</posy>
-                    <height>2-row</height>
-                    <width>1-col</width>
-                    <font>symbol</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <label></label>
-                    <onleft>3</onleft>
-                    <ondown>504</ondown>
-                    <onup>502</onup>
-                    <onclick>Skin.Reset(musicFanartLocation)</onclick>
-                </control>
-                <control type="button" id="504">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <posy>8-row</posy>
-                    <height>2-row</height>
-                    <width>1-col</width>
-                    <font>symbol</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <label></label>
-                    <onleft>4</onleft>
-                    <onup>503</onup>
-                    <ondown>5</ondown>
-                    <onclick>Skin.Reset(gameFanartLocation)</onclick>
                 </control>
             </control>
         </control>

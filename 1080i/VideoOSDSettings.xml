@@ -27,8 +27,6 @@
                 <height>25-row</height>
                 <texture>colors/black.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
                 <colordiffuse>ffffffff</colordiffuse>
             </control>
             <control type="image">

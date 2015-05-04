@@ -20,6 +20,9 @@
 
             <!--Main content listing-->
             <control type="group" id="9999">
+                <animation type="windowopen">
+                    <effect type="fade" start="0" end="100" time="500"/>
+                </animation>
                 <!--recent items-->
                 <control type="group">
                     <visible>SubString(skin.string(showRecentVideoItems),true) | isEmpty(container.foldername)</visible>

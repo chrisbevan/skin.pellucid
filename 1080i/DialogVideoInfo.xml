@@ -34,7 +34,7 @@
                 <texture>$INFO[listitem.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <include condition="!Skin.HasSetting(lowPowerMode)">kenBurnsey</include>
+                <include>kenBurnsey</include>
             </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>

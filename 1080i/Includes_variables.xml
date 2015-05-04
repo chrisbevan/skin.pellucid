@@ -70,6 +70,7 @@
     <variable name="homescreenCollage">
         <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/randomVideos.xsp</value>
         <value condition="Container(9000).HasFocus(2)">special://skin/extras/playlists/randomAlbums.xsp</value>
+        <value condition="Container(9000).HasFocus(5)">addons://sources/executable/</value>
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
