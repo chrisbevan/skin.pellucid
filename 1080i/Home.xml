@@ -12,7 +12,7 @@
 
         <!--browse controls-->
         <control type="group">
-            <posx>24</posx>
+            <posx>0</posx>
             <posy>row-1-begin</posy>
             <control type="list" id="9000">
                 <posx>0</posx>
@@ -31,7 +31,7 @@
                         <width>1-col-textbox</width>
                         <height>1-col-textbox</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="masks/circle.png" border="0">colors/black.png</texture>
+                        <texture border="0">colors/black.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
@@ -50,19 +50,19 @@
                 </itemlayout>
                 <focusedlayout width="2-col" height="2-col">
                     <control type="group">
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="rotatey" start="0" end="-15" center="70" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="70" tween="back" easing="out" delay="300" time="300"/>
+                        </animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>2-col-textbox</width>
                             <height>2-col-textbox</height>
                             <aspectratio scalediffuse="false">scale</aspectratio>
-                            <texture diffuse="masks/circle.png" border="0">colors/white.png</texture>
+                            <texture border="0">colors/white.png</texture>
                             <bordersize>0</bordersize>
                             <colordiffuse>highlight</colordiffuse>
-                            <animation type="focus" loop="false" reversible="false">
-                                <effect type="rotatey" start="0" end="-15" center="70" tween="back" easing="out" time="300"/>
-                                <effect type="rotatey" start="0" end="15" center="70" tween="back" easing="out" delay="300" time="300"/>
-                            </animation>
                         </control>
                         <control type="label">
                             <posx>0</posx>

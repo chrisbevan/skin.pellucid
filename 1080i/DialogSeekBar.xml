@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">901</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <visible>!Window.IsActive(5901) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+    <visible>!window.isactive(videoosd) + !window.isactive(123) + !window.isactive(124) + !Window.IsActive(5901) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
         <control type="image">
             <include>dimensionsFullscreen</include>

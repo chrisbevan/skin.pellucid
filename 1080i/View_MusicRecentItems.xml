@@ -6,10 +6,10 @@
              <posy>row-5-begin</posy>
 
              <!--animations-->
-             <animation type="Conditional" condition="controlgroup(9301).hasfocus | controlgroup(9302).hasfocus">
+             <animation type="Conditional" condition="controlgroup(9301).hasfocus | controlgroup(9302).hasfocus" reversible="false">
                  <effect type="slide" start="0" end="0,-398" tween="cubic" easing="out" time="400"/>
              </animation>
-             <animation type="Conditional" condition="controlgroup(9302).hasfocus">
+             <animation type="Conditional" condition="controlgroup(9302).hasfocus" reversible="false">
                   <effect type="slide" start="0" end="0,-686" tween="cubic" easing="out" time="400"/>
               </animation>
 
