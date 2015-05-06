@@ -6,7 +6,7 @@
         <import addon="script.artistslideshow" version="1.5.0"/>
         <import addon="script.maximinimalism.functions" version="1.0.0"/>
     </requires>
-    <extension point="xbmc.gui.skin" defaultthemename="textures.xbt" debugging="false">
+    <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">

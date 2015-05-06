@@ -13,7 +13,7 @@
             <disabledcolor>menuDisabled</disabledcolor>
             <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
             <texturenofocus>-</texturenofocus>
-            <textoffsetx>col-7-begin</textoffsetx>
+            <textoffsetx>col-1-begin</textoffsetx>
             <label>31123</label>
             <onclick>right</onclick>
             <onclick>ActivateWindow(videoplaylist)</onclick>

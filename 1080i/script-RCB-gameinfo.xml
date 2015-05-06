@@ -2,11 +2,7 @@
 <window>
     <onload>control.setfocus(3000)</onload>
     <allowoverlay>no</allowoverlay>
-    <coordinates>
-        <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
-    </coordinates>
+    <include>fadeInOut</include>
     <controls>
         <control type="group">
             <!--background / fanart-->
@@ -20,11 +16,12 @@
             </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>
-                <texture>backgrounds/vignette.png</texture>
+                <texture>vignette.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
         </control>
+
         <control type="group">
             <!--animations-->
             <include>modalDialogInOut</include>
@@ -43,40 +40,27 @@
                     <bordersize>3</bordersize>
                 </control>
             </control>
+
             <!--content-->
             <control type="group">
                 <posx>col-7-begin</posx>
-                <posy>row-11-begin</posy>
+                <posy>row-17-begin</posy>
                 <!--titles-->
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>12-col</width>
-                    <align>left</align>
-                    <font>itemSubTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    
-                
-                    <label>$INFO[ListItem.Property(console)]</label>
-                </control>
                 <control type="label">
                     <description>Title</description>
                     <posx>0</posx>
-                    <posy>1-row</posy>
+                    <posy>0</posy>
                     <width>12-col</width>
-                    <align>left</align>
                     <font>mediumStrong</font>
-                    
-                
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>$INFO[ListItem.Label]</label>
+                    <label>[COLOR highlight]$INFO[ListItem.Property(console)][/COLOR] $INFO[ListItem.Label]</label>
                 </control>
+
                 <!--details-->
                 <control type="panel">
                     <posx>0</posx>
-                    <posy>120</posy>
+                    <posy>2-row</posy>
                     <width>12-col</width>
                     <height>6-row</height>
                     <itemlayout width="6-col" height="45">
@@ -84,7 +68,7 @@
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>6-col-gutter</width>
-                            <font>itemSubTitle</font>
+                            <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>[COLOR highlight]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
@@ -95,7 +79,7 @@
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>6-col-gutter</width>
-                            <font>itemSubTitle</font>
+                            <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>[COLOR highlight]$INFO[ListItem.label][/COLOR] $INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
@@ -195,6 +179,7 @@
                     <description>Messages</description>
                 </control>
                 <control type="button" id="3001">
+                    <visible>false</visible>
                     <description>autoplay video</description>
                     <onfocus>XBMC.PlayMedia($ESCINFO[ListItem.Property(gameplayinfo)],1)</onfocus>
                 </control>
