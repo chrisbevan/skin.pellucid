@@ -7,7 +7,7 @@
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
                 <colordiffuse>44ffffff</colordiffuse>
                 <fadetime>1500</fadetime>
             </control>

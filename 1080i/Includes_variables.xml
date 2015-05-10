@@ -39,7 +39,7 @@
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
-        <value condition="Container.Content(tvshows)">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
+        <value condition="Container.Content(tvshows) + !isempty(listitem.property(totalseasons))">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
         <value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
         <value/>

@@ -5,15 +5,7 @@
     <include>fadeInOut</include>
     <controls>
         <control type="group">
-            <!--background / fanart-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <include>dimensionsFullscreen</include>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ddffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <include>globalBackground</include>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>vignette.png</texture>
@@ -34,7 +26,7 @@
                     <posy>12</posy>
                     <width>12-col</width>
                     <height>486</height>
-                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <aspectratio scalediffuse="false" align="left">keep</aspectratio>
                     <texture background="true" fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>

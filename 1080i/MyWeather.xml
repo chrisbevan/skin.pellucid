@@ -5,74 +5,36 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
+
         <control type="group">
             <posx>col-1-begin</posx>
-            <posy>row-4-begin</posy>
+            <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-            <!--general info-->
-            <control type="image">
-                <posx>-384</posx>
-                <posy>44</posy>
-                <width>2500</width>
-                <height>1-row</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <!--location selector-->
-            <control type="spincontrolex" id="3">
-                <description>Location Select</description>
-                <posx>12</posx>
-                <posy>47</posy>
-                <label>-</label>
-                <label2>-</label2>
-                <font>dialogTitle</font>
-                <textcolor>textActive</textcolor>
-                <width>1-col</width>
-                <align>right</align>
-                <onup>activateWindow(home)</onup>
-            </control>
+
             <!--location title-->
             <control type="label">
                 <visible>true</visible>
-                <posx>84</posx>
-                <posy>44</posy>
-                <width>18-col</width>
-                <font>dialogTitle</font>
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>24-col</width>
+                <align>center</align>
+                <font>veryLarge</font>
                 <label>$INFO[Window.Property(Location)]</label>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-            <!--overlay-->
-            <control type="image">
-                <posx>-96</posx>
-                <posy>2-row</posy>
-                <width>fullscreenWidth</width>
-                <height>8-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>88ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+
             <!--content begins-->
             <control type="panel" id="9000">
-                <posx>0</posx>
-                <posy>130</posy>
+                <posx>-24</posx>
+                <posy>7-row</posy>
                 <width>24-col</width>
                 <height>18-row</height>
                 <itemlayout width="5-col-gutter" height="6-col">
                     <control type="label">
                         <posx>46</posx>
-                        <posy>72</posy>
+                        <posy>56</posy>
                         <width>5-col-gutter</width>
                         <font>symbolWeather</font>
                         <textcolor>textActive</textcolor>
@@ -80,18 +42,18 @@
                     </control>
                     <control type="label">
                         <posx>0</posx>
-                        <posy>4-row</posy>
+                        <posy>6-row</posy>
                         <width>6-col-gutter</width>
                         <align>center</align>
                         <font>largeStrong</font>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>highlight</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="textbox">
                         <posx>36</posx>
-                        <posy>5-row</posy>
+                        <posy>8-row</posy>
                         <width>5-col-gutter</width>
-                        <height>1-row</height>
+                        <height>2-row</height>
                         <align>center</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
@@ -100,7 +62,7 @@
                     </control>
                     <control type="textbox">
                         <posx>36</posx>
-                        <posy>6-row</posy>
+                        <posy>11-row</posy>
                         <width>5-col-gutter</width>
                         <height>1-row</height>
                         <align>center</align>
@@ -109,45 +71,7 @@
                         <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="6-col">
-                    <control type="label">
-                        <posx>46</posx>
-                        <posy>72</posy>
-                        <width>5-col-gutter</width>
-                        <font>symbolWeather</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$VAR[weatherIcon]</label>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>4-row</posy>
-                        <width>6-col-gutter</width>
-                        <align>center</align>
-                        <font>largeStrong</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="textbox">
-                        <posx>36</posx>
-                        <posy>5-row</posy>
-                        <width>5-col-gutter</width>
-                        <height>1-row</height>
-                        <align>center</align>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Property(Outlook)]</label>
-                    </control>
-                    <control type="textbox">
-                        <posx>36</posx>
-                        <posy>6-row</posy>
-                        <width>5-col-gutter</width>
-                        <height>1-row</height>
-                        <align>center</align>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
-                    </control>
-                </focusedlayout>
+                <focusedlayout/>
                 <content>
                     <item id="1">
                         <description>Day 0</description>

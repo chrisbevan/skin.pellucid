@@ -21,14 +21,14 @@
                     </animation>
                     <posx>col-1-begin</posx>
                     <posy>row-5-begin</posy>
-                    <width>16-col</width>
-                    <height>12-row</height>
+                    <width>12-col</width>
+                    <height>22-row</height>
                     <onleft>500</onleft>
                     <onright>60</onright>
                     <ondown>50</ondown>
                     <onup>50</onup>
                     <pagecontrol>60</pagecontrol>
-                    <itemlayout width="24-col" height="2-row">
+                    <itemlayout width="12-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
                             <posy>3</posy>
@@ -40,7 +40,7 @@
                         <control type="image">
                             <posx>1-col</posx>
                             <posy>0</posy>
-                            <width>23-col</width>
+                            <width>11-col</width>
                             <height>69</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/black.png</texture>
@@ -49,7 +49,7 @@
                         <control type="label">
                             <posx>1-col-indent</posx>
                             <posy>0</posy>
-                            <width>23-col-gutter</width>
+                            <width>11-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <font>itemTitle</font>
@@ -58,7 +58,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="24-col" height="2-row">
+                    <focusedlayout width="12-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
                             <posy>3</posy>
@@ -74,7 +74,7 @@
                         <control type="image">
                             <posx>1-col</posx>
                             <posy>0</posy>
-                            <width>23-col</width>
+                            <width>11-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/white.png</texture>
@@ -83,7 +83,7 @@
                         <control type="label">
                             <posx>1-col-indent</posx>
                             <posy>0</posy>
-                            <width>23-col-gutter</width>
+                            <width>11-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <font>itemTitle</font>
@@ -94,14 +94,26 @@
                     </focusedlayout>
                 </control>
 
+                <!--coverart-->
+                <control type="image">
+                    <posx>col-14-begin</posx>
+                    <posy>row-5-begin</posy>
+                    <width>11-col</width>
+                    <height>486</height>
+                    <aspectratio scalediffuse="false" align="left">scale</aspectratio>
+                    <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                </control>
+
                 <!--page scrollbar-->
                 <control type="group" id="8000">
                     <visible>Control.IsVisible(60)</visible>
                     <animation effect="fade" start="100" end="70" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                     <control type="scrollbar" id="60">
                         <posx>84r</posx>
-                        <posy>0</posy>
-                        <height>672</height>
+                        <posy>row-5-begin</posy>
+                        <height>789</height>
                         <onleft>50</onleft>
                     </control>
                 </control>

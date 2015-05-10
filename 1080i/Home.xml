@@ -124,10 +124,16 @@
                         <thumb>-</thumb>
                         <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
                     </item>
+                    <item id="9">
+                        <label>31197</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(weather)</onclick>
+                    </item>
                     <item id="5">
                         <visible>!Skin.HasSetting(hidePrograms)</visible>
                         <label>0</label>
-                        <label2></label2>
+                        <label2></label2>
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(programs,addons,return)</onclick>
                     </item>

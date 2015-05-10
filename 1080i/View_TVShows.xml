@@ -96,6 +96,10 @@
                         <height>3-row</height>
                         <aspectratio scalediffuse="false" align="right">scale</aspectratio>
                         <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="rotatey" start="0" end="-15" center="36" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="36" tween="back" easing="out" delay="300" time="300"/>
+                        </animation>
                     </control>
                     <control type="image">
                         <posx>1-col</posx>

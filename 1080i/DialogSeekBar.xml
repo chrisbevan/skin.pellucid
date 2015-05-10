@@ -64,7 +64,7 @@
                 <align>center</align>
                 <font>small</font>
                 <textcolor>textActive</textcolor>
-                <label>$INFO[Player.title]</label>
+                <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="label">

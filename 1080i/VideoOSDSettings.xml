@@ -22,7 +22,7 @@
                 <height>25-row</height>
                 <texture>colors/black.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <colordiffuse>aaFFFFFF</colordiffuse>
+                <colordiffuse>ccFFFFFF</colordiffuse>
             </control>
             <control type="image">
                 <posx>0</posx>

@@ -20,7 +20,7 @@
 
             <!--initial animation-->
             <animation type="Windowopen">
-                <effect type="zoom" start="120" time="100" center="auto" tween="linear" easing="out"/>
+                <effect type="zoom" start="150" time="100" center="auto" tween="linear" easing="out"/>
                 <effect type="fade" start="30" end="100" time="100"/>
             </animation>
 

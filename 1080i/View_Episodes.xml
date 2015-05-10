@@ -191,7 +191,6 @@
                     </control>
                 </focusedlayout>
             </control>
-
             <!--Plugin-sourced Episode list-->
             <control type="panel" id="52">
                 <visible>Substring(Container.folderpath,plugin)</visible>

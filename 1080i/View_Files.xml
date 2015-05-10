@@ -5,14 +5,14 @@
             <visible>StringCompare(container.foldername,files) | StringCompare(container.foldername,Video Playlists)</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
-            <width>12-col</width>
+            <width>24-col</width>
             <height>25-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>50</ondown>
             <onup>50</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout width="12-col" height="2-row">
+            <itemlayout width="24-col" height="2-row">
                 <control type="image">
                     <posx>0</posx>
                     <posy>3</posy>
@@ -24,8 +24,8 @@
                 <control type="image">
                     <posx>1-col</posx>
                     <posy>0</posy>
-                    <width>11-col</width>
-                    <height>2-row</height>
+                    <width>23-col</width>
+                    <height>69</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">colors/black.png</texture>
                     <colordiffuse>textboxInactive</colordiffuse>
@@ -33,7 +33,7 @@
                 <control type="label">
                     <posx>1-col-indent</posx>
                     <posy>0</posy>
-                    <width>11-col-gutter</width>
+                    <width>23-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemTitle</font>
@@ -42,7 +42,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </itemlayout>
-            <focusedlayout width="12-col" height="2-row">
+            <focusedlayout width="24-col" height="2-row">
                 <control type="image">
                     <posx>0</posx>
                     <posy>3</posy>
@@ -58,7 +58,7 @@
                 <control type="image">
                     <posx>1-col</posx>
                     <posy>0</posy>
-                    <width>11-col</width>
+                    <width>23-col</width>
                     <height>2-row</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">colors/white.png</texture>
@@ -67,7 +67,7 @@
                 <control type="label">
                     <posx>1-col-indent</posx>
                     <posy>0</posy>
-                    <width>11-col-gutter</width>
+                    <width>23-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemTitle</font>

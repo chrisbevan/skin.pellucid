@@ -63,11 +63,9 @@
                         <effect type="fade" start="100" end="0" time="300"/>
                     </animation>
                     <!--Screen burn protection-->
-                    <!--
                     <animation type="conditional" condition="true" pulse="true">
                         <effect type="fade" start="100" end="0" time="2500" delay="20000"/>
                     </animation>
-                    -->
                     <posx>col-1-begin</posx>
                     <posy>row-22-begin</posy>
                     <control type="image">
@@ -148,7 +146,7 @@
                 </control>
                 <!--dialog controls-->
                 <control type="group" id="8765">
-                    <posx>col-3-begin</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
                     <animation type="conditional" condition="!Controlgroup(8765).HasFocus">
                         <effect type="slide" start="0,0" end="0,-50" tween="cubic" easing="out" delay="500" time="300"/>
@@ -157,9 +155,18 @@
                     <animation type="windowClose">
                         <effect type="fade" start="100" end="0" time="300"/>
                     </animation>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>fullscreenWidth</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
                     <!--shuffle and repeat / vis options-->
                     <control type="list" id="8002">
-                        <posx>0</posx>
+                        <posx>col-1-begin</posx>
                         <posy>0</posy>
                         <width>24-col</width>
                         <height>2-row</height>
@@ -168,22 +175,6 @@
                         <onup>9876</onup>
                         <ondown>9876</ondown>
                         <itemlayout width="4-col" height="2-row">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1-col-textbox</width>
-                                <height>2-row</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>3-col-textbox</width>
-                                <height>2-row</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture>colors/black.png</texture>
-                            </control>
                             <control type="label">
                                 <posx>0</posx>
                                 <posy>0</posy>
