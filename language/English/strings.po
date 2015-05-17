@@ -736,3 +736,7 @@ msgstr ""
 msgctxt "#31198"
 msgid "Adding Directory:"
 msgstr ""
+
+msgctxt "#31199"
+msgid "Details"
+msgstr ""

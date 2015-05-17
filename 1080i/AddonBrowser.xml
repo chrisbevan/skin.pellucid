@@ -113,7 +113,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>regularStrong</font>
+                            <font>buttonTitle</font>
                             <textcolor>disabled</textcolor>
                             <label>$INFO[ListItem.label]</label>
                         </control>
@@ -152,16 +152,7 @@
                                 <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
                                 <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                                 <bordersize>3</bordersize>
-                                <colordiffuse>ffFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>3</posx>
-                                <posy>3</posy>
-                                <width>258</width>
-                                <height>258</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/black.png</texture>
-                                <colordiffuse>ccFFFFFF</colordiffuse>
+                                <colordiffuse>ff444444</colordiffuse>
                             </control>
                             <control type="label">
                                 <posx>12</posx>
@@ -170,9 +161,9 @@
                                 <height>2-row</height>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <font>regularStrong</font>
+                                <font>buttonTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.label]</label>
+                                <label>[B]$INFO[ListItem.label][/B]</label>
                             </control>
                             <control type="label">
                                 <posx>12</posx>

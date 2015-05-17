@@ -114,29 +114,32 @@
 
                     <!--What is this one?? NOT skin selection-->
                     <control type="panel" id="3">
-                        <posx>0</posx>
-                        <posy>10-row</posy>
+                        <posx>6-col</posx>
+                        <posy>12-row</posy>
                         <width>12-col</width>
                         <height>11-row</height>
                         <onleft>9999</onleft>
                         <itemlayout height="2-row" width="12-col">
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1-col</width>
-                                <height>2-row</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <aspectratio scalediffuse="false">stretch</aspectratio>
+                                <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
                             </control>
                             <control type="label">
                                 <visible>ListItem.IsSelected</visible>
-                                <posx>11</posx>
-                                <posy>-1</posy>
-                                <width>38</width>
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
                                 <font>symbolLarge</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label></label>
+                                <selectedcolor>textActive</selectedcolor>
+                                <label>✓</label>
                             </control>
                             <control type="label">
                                 <posx>1-col-indent</posx>
@@ -152,6 +155,18 @@
                         </itemlayout>
                         <focusedlayout height="2-row" width="12-col">
                             <control type="image">
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <aspectratio scalediffuse="false">stretch</aspectratio>
+                                <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.icon]</texture>
+                                <animation type="focus" loop="false" reversible="false">
+                                    <effect type="fade" time="500"/>
+                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                                </animation>
+                            </control>
+                            <control type="image">
                                 <posx>1-col</posx>
                                 <posy>0</posy>
                                 <width>11-col</width>
@@ -161,24 +176,19 @@
                                 <bordersize>0</bordersize>
                                 <colordiffuse>ffffffff</colordiffuse>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>1-col</width>
-                                <height>2-row</height>
-                                <aspectratio scalediffuse="false">scale</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                                <include>spinFocusIcon</include>
-                            </control>
                             <control type="label">
                                 <visible>ListItem.IsSelected</visible>
-                                <posx>11</posx>
-                                <posy>-1</posy>
-                                <width>38</width>
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
                                 <font>symbolLarge</font>
-                                <textcolor>textActive</textcolor>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
                                 <shadowcolor>-</shadowcolor>
-                                <label></label>
+                                <label>✓</label>
                             </control>
                             <control type="label">
                                 <posx>1-col-indent</posx>
@@ -188,7 +198,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>black</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <selectedcolor>black</selectedcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
