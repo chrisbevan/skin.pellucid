@@ -188,7 +188,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbol</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -378,7 +378,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbol</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>

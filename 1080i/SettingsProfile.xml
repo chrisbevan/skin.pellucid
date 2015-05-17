@@ -5,35 +5,12 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
         <control type="group">
             <posx>col-7-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-            <control type="image">
-                <posx>-528</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+
             <control type="label">
                 <posx>12</posx>
                 <posy>44</posy>

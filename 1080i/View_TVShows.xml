@@ -84,7 +84,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>itemSubTitle</font>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.Property(UnWatchedEpisodes)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
                     </control>
                 </itemlayout>

@@ -344,9 +344,9 @@
                 <control type="label">
                     <description>Episode title</description>
                     <posx>0</posx>
-                    <posy>0</posy>
+                    <posy>2-row</posy>
                     <width>12-col-gutter</width>
-                    <height>3-row</height>
+                    <height>2-row</height>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>mediumStrong</font>
@@ -355,17 +355,29 @@
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
-                <control type="label">
+                <control type="grouplist">
                     <posx>0</posx>
-                    <posy>3-row</posy>
-                    <width>12-col-gutter</width>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>$INFO[listitem.duration,, $LOCALIZE[31018]]</label>
+                    <posy>-18</posy>
+                    <width>12-col</width>
+                    <orientation>horizontal</orientation>
+                    <control type="label">
+                        <width>1-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label></label>
+                    </control>
+                    <control type="label">
+                        <width>3-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="31159">$INFO[listitem.duration,, $LOCALIZE[31018]]</label>
+                    </control>
                 </control>
+
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>

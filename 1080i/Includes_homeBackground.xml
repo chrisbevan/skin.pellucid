@@ -5,12 +5,11 @@
             <animation type="conditional" condition="true" loop="true">
                 <effect type="fade" start="0" end="100" time="5000"/>
                 <effect type="zoom" start="80" end="130" time="10000" tween="sine" easing="out"/>
-
                 <effect type="slide" start="0,0" end="-450,0" center="0" delay="0" time="20000" tween="sine" easing="in"/>
                 <effect type="zoom" start="130" end="100" delay="12000" time="8000" tween="sine" easing="in"/>
                 <effect type="fade" start="100" end="0" time="3000" delay="16000"/>
             </animation>
-            <!--albums-->
+            <!--library based thumbs-->
             <control type="panel" id="9451">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -37,6 +36,54 @@
                 </itemlayout>
                 <focusedlayout/>
                 <content>$VAR[homescreenCollage]</content>
+            </control>
+            <!--photos-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(9)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/weather.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--games-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(4)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/games.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--photos-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(3)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/photos.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--search-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(6)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/search.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--settings-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(7)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/settings.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--power-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(8)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/power.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
         </control>
         <!--overlay-->

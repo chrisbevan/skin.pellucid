@@ -20,21 +20,71 @@
             <control type="label">
                 <description>Programme title</description>
                 <posx>0</posx>
-                <posy>0</posy>
+                <posy>-56</posy>
                 <width>12-col</width>
+                <height>2-row</height>
                 <align>left</align>
+                <aligny>center</aligny>
                 <font>mediumStrong</font>
                 <textcolor>highlight</textcolor>
                 <label>$INFO[ListItem.Title]</label>
+                <wrapmultiline>true</wrapmultiline>
             </control>
-            <control type="label">
-                <description>Channel name</description>
+            <control type="grouplist">
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>54</posy>
                 <width>12-col</width>
-                <font>itemTitle</font>
-                <label>$INFO[ListItem.starttime] - $INFO[ListItem.endtime]</label>
+                <orientation>horizontal</orientation>
+                <control type="label">
+                    <width>1-col-gutter</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>symbolLarge</font>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <width>2-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>regularStrong</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[ListItem.starttime]</label>
+                </control>
+                <control type="label">
+                    <width>1-col-gutter</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>symbolLarge</font>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <width>2-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>regularStrong</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[ListItem.endtime]</label>
+                </control>
+                <control type="label">
+                    <width>1-col-gutter</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>symbolLarge</font>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="label">
+                    <width>auto</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>regularStrong</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[ListItem.duration]</label>
+                </control>
             </control>
+
             <!--synopsis-->
             <control type="textbox">
                 <posx>0</posx>

@@ -300,44 +300,6 @@
                         <onup>34</onup>
                         <ondown>32</ondown>
                     </control>
-                    <control type="button" id="32">
-                        <description>Delete channel Button</description>
-                        <posx>0</posx>
-                        <posy>9-row</posy>
-                        <width>8-col-gutter</width>
-                        <height>54</height>
-                        <align>left</align>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <focusedcolor>black</focusedcolor>
-                        <texturefocus>colors/white.png</texturefocus>
-                        <texturenofocus>-</texturenofocus>
-                        <textoffsetx>12</textoffsetx>
-                        <label>19211</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>31</onup>
-                        <ondown>33</ondown>
-                    </control>
-                    <control type="button" id="33">
-                        <description>New channel Button</description>
-                        <posx>0</posx>
-                        <posy>10-row</posy>
-                        <width>8-col-gutter</width>
-                        <height>54</height>
-                        <align>left</align>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <focusedcolor>black</focusedcolor>
-                        <texturefocus>colors/white.png</texturefocus>
-                        <texturenofocus>-</texturenofocus>
-                        <textoffsetx>12</textoffsetx>
-                        <label>19204</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>32</onup>
-                        <ondown>9000</ondown>
-                    </control>
                 </control>
                 <!--OK / Cancel / apply-->
                 <control type="panel" id="9000">

@@ -25,16 +25,16 @@
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>18-col</width>
-                    <height>14-row</height>
+                    <height>21-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
+                    <posx>6-col</posx>
+                    <posy>12-row</posy>
                     <width>12-col</width>
-                    <height>14-row</height>
+                    <height>11-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -50,12 +50,75 @@
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="group" id="9000">
-                    <control type="panel" id="3">
+
+                    <!--Info panel-->
+                    <control type="group">
                         <posx>0</posx>
                         <posy>2-row</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>18-col</width>
+                            <height>10-row</height>
+                            <aspectratio aligny="center">scale</aspectratio>
+                            <texture>$INFO[container(6).ListItem.art(fanart)]</texture>
+                            <colordiffuse>22ffffff</colordiffuse>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>18-col</width>
+                            <height>10-row</height>
+                            <aspectratio aligny="center">scale</aspectratio>
+                            <texture>vignette.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>1-row</posy>
+                            <width>4-col</width>
+                            <height>4-col</height>
+                            <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
+                            <texture border="0">$INFO[container(6).Listitem.icon]</texture>
+                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <fadetime>200</fadetime>
+                        </control>
+                        <control type="label">
+                            <description>Addon Title</description>
+                            <posx>6-col-indent</posx>
+                            <posy>1-row</posy>
+                            <width>12-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>mediumStrong</font>
+                            <label>$INFO[container(6).ListItem.label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>6-col-indent</posx>
+                            <posy>104</posy>
+                            <width>12-col-gutter</width>
+                            <font>itemSubTitle</font>
+                            <textcolor>highlight</textcolor>
+                            <label>$INFO[container(6).ListItem.Property(Addon.Creator)]</label>
+                        </control>
+                        <control type="textbox" id="400">
+                            <posx>6-col-indent</posx>
+                            <posy>4-row</posy>
+                            <font>textbox</font>
+                            <width>12-col-gutter</width>
+                            <height>160</height>
+                            <label>$INFO[container(6).ListItem.Property(Addon.Description)]</label>
+                            <autoscroll delay="5000" time="1000" repeat="10000"/>
+                        </control>
+                    </control>
+
+                    <!--What is this one?? NOT skin selection-->
+                    <control type="panel" id="3">
+                        <posx>0</posx>
+                        <posy>10-row</posy>
                         <width>12-col</width>
-                        <height>21-row</height>
-                        <onright>9999</onright>
+                        <height>11-row</height>
+                        <onleft>9999</onleft>
                         <itemlayout height="2-row" width="12-col">
                             <control type="image">
                                 <posx>0</posx>
@@ -130,14 +193,15 @@
                             </control>
                         </focusedlayout>
                     </control>
-                    <!--addon selection etc-->
+
+                    <!--skin selection etc-->
                     <control type="panel" id="6">
-                        <posx>12</posx>
-                        <posy>2-row</posy>
-                        <width>12-col-gutter</width>
-                        <height>14-row</height>
-                        <onright>9999</onright>
-                        <itemlayout height="2-row" width="12-col">
+                        <posx>6-col-indent</posx>
+                        <posy>12-row</posy>
+                        <width>12-col</width>
+                        <height>11-row</height>
+                        <onleft>9999</onleft>
+                        <itemlayout height="2-row" width="6-col">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>3</posy>
@@ -149,7 +213,7 @@
                             <control type="label">
                                 <posx>1-col-indent</posx>
                                 <posy>0</posy>
-                                <width>11-col-gutter</width>
+                                <width>5-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -158,7 +222,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="2-row" width="12-col">
+                        <focusedlayout height="2-row" width="6-col">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>3</posy>
@@ -174,7 +238,7 @@
                             <control type="image">
                                 <posx>1-col</posx>
                                 <posy>0</posy>
-                                <width>11-col</width>
+                                <width>348</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
@@ -184,7 +248,7 @@
                             <control type="label">
                                 <posx>1-col-indent</posx>
                                 <posy>0</posy>
-                                <width>11-col-gutter</width>
+                                <width>5-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -197,36 +261,15 @@
                     </control>
                 </control>
 
-                <!--larger thumbnail-->
-                <control type="image">
-                    <posx>13-col</posx>
-                    <posy>3-row</posy>
-                    <width>4-col</width>
-                    <height>4-col</height>
-                    <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
-                    <texture border="0">$INFO[container(6).Listitem.icon]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                    <bordersize>3</bordersize>
-                    <fadetime>200</fadetime>
-                </control>
                 <control type="panel" id="9999">
                     <visible>control.isvisible(3) | control.isvisible(5)</visible>
-                    <posx>867</posx>
+                    <posx>0</posx>
                     <posy>12-row</posy>
                     <width>429</width>
                     <height>6-row</height>
                     <orientation>vertical</orientation>
-                    <onleft>9000</onleft>
+                    <onright>9000</onright>
                     <itemlayout width="6-col" height="2-row">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col-textbox</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <colordiffuse>overlay</colordiffuse>
-                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -238,15 +281,6 @@
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
-                        </control>
-                        <control type="image">
-                            <posx>1-col</posx>
-                            <posy>0</posy>
-                            <width>5-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>

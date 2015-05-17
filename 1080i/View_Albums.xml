@@ -79,7 +79,11 @@
             </itemlayout>
             <focusedlayout width="4-col" height="4-col">
                 <control type="group">
-                    <include>spinFocusPoster</include>
+                    <animation type="focus" loop="false" reversible="false">
+                        <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
+                        <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+                        <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
+                    </animation>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -99,6 +103,17 @@
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
                         <colordiffuse>ccFFFFFF</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ff666666</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>12</posx>

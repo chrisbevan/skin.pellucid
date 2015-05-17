@@ -10,194 +10,188 @@
             <posx>col-1-begin</posx>
             <posy>row-1-begin</posy>
             <control type="image">
-                <posx>-96</posx>
-                <posy>44</posy>
-                <width>fullscreenWidth</width>
-                <height>1-row</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>24-col</width>
+                <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-3</posx>
-                <posy>44</posy>
-                <width>3</width>
-                <height>1-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <!--title-->
             <control type="label">
-                <posx>12</posx>
-                <posy>44</posy>
-                <width>16-col</width>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>24-col</width>
+                <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>10003</label>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>24-col</width>
+                <height>25-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
         </control>
+
         <!--left panel-->
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-4-begin</posy>
             <control type="label" id="101">
                 <description>Header Label</description>
-                <posx>12</posx>
-                <posy>-36</posy>
+                <posx>24</posx>
+                <posy>0</posy>
                 <width>12-col</width>
                 <label>-</label>
-                <font>regularStrong</font>
+                <font>medium</font>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>1-row</posy>
+                <posx>12</posx>
+                <posy>2-row</posy>
                 <width>12-col-gutter</width>
-                <height>12-row</height>
+                <height>780</height>
                 <texture>colors/black.png</texture>
                 <bordersize>0</bordersize>
-                <colordiffuse>99FFFFFF</colordiffuse>
+                <colordiffuse>overlay</colordiffuse>
             </control>
             <!--left file list-->
             <control type="list" id="20">
-                <posx>0</posx>
-                <posy>1-row</posy>
-                <width>12-col-gutter</width>
-                <height>12-row</height>
+                <posx>12</posx>
+                <posy>2-row</posy>
+                <width>12-col</width>
+                <height>21-row</height>
                 <onright>21</onright>
-                <itemlayout height="1-row" width="12-col-gutter">
+                <itemlayout height="2-row" width="12-col">
                     <control type="label">
                         <posx>12</posx>
-                        <width>11-col</width>
+                        <width>12-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <info>ListItem.Label</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12r</posx>
                         <width>3-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                         <textcolor>highlight</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="1-row" width="12-col-gutter">
+                <focusedlayout height="2-row" width="12-col">
                     <control type="image">
                         <width>12-col-gutter</width>
-                        <height>1-row</height>
+                        <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <width>11-col</width>
+                        <width>12-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <info>ListItem.Label</info>
                         <font>itemTitle</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12r</posx>
                         <width>3-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                         <textcolor>black</textcolor>
                     </control>
                 </focusedlayout>
-            </control>
-            <!--footer label-->
-            <control type="label" id="12">
-                <posx>12</posx>
-                <posy>13-row</posy>
-                <width>12-col-gutter</width>
-                <label>-</label>
-                <font>smallStrong</font>
             </control>
         </control>
         <!--right panel-->
         <control type="group">
-            <posx>984</posx>
+            <posx>972</posx>
             <posy>row-4-begin</posy>
             <control type="label" id="102">
                 <description>Header Label</description>
                 <posx>12</posx>
-                <posy>-36</posy>
+                <posy>0</posy>
                 <width>12-col</width>
                 <label>-</label>
-                <font>regularStrong</font>
-                <shadowcolor>-</shadowcolor>
+                <font>medium</font>
             </control>
             <control type="image">
                 <posx>0</posx>
-                <posy>1-row</posy>
+                <posy>2-row</posy>
                 <width>12-col-gutter</width>
-                <height>12-row</height>
+                <height>780</height>
                 <texture>colors/black.png</texture>
                 <bordersize>0</bordersize>
-                <colordiffuse>99FFFFFF</colordiffuse>
+                <colordiffuse>overlay</colordiffuse>
             </control>
             <control type="list" id="21">
                 <posx>0</posx>
-                <posy>1-row</posy>
+                <posy>2-row</posy>
                 <width>12-col-gutter</width>
-                <height>12-row</height>
+                <height>21-row</height>
                 <onleft>20</onleft>
-                <itemlayout height="1-row" width="12-col-gutter">
+                <itemlayout height="2-row" width="12-col">
                     <control type="label">
                         <posx>12</posx>
-                        <width>11-col</width>
+                        <width>12-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <info>ListItem.Label</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12r</posx>
                         <width>3-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                         <textcolor>highlight</textcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout height="1-row" width="12-col-gutter">
+                <focusedlayout height="2-row" width="12-col">
                     <control type="image">
                         <width>12-col-gutter</width>
-                        <height>1-row</height>
+                        <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(21)">Conditional</animation>
+                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <width>11-col</width>
+                        <width>12-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <info>ListItem.Label</info>
                         <font>itemTitle</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12r</posx>
                         <width>3-col</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <shadowcolor>-</shadowcolor>
                         <textcolor>black</textcolor>
                     </control>
                 </focusedlayout>
-            </control>
-            <!--footer label-->
-            <control type="label" id="13">
-                <posx>12</posx>
-                <posy>13-row</posy>
-                <width>12-col-gutter</width>
-                <label>-</label>
-                <font>smallStrong</font>
             </control>
         </control>
         <!--debugging-->

@@ -130,13 +130,6 @@
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(weather)</onclick>
                     </item>
-                    <item id="5">
-                        <visible>!Skin.HasSetting(hidePrograms)</visible>
-                        <label>0</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(programs,addons,return)</onclick>
-                    </item>
                     <item id="6">
                         <visible>!Skin.HasSetting(hideSearch)</visible>
                         <label>137</label>

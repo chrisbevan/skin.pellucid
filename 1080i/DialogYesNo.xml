@@ -35,7 +35,7 @@
             <control type="image">
                 <posx>col-9-begin</posx>
                 <posy>5-row</posy>
-                <width>1-col-textbox</width>
+                <width>1-col</width>
                 <height>2-row</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/black.png</texture>
@@ -44,7 +44,7 @@
                 <visible>control.hasfocus(10)</visible>
                 <posx>col-9-begin</posx>
                 <posy>5-row</posy>
-                <width>1-col-textbox</width>
+                <width>1-col</width>
                 <height>2-row</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/white.png</texture>
@@ -64,7 +64,7 @@
             <control type="image">
                 <posx>col-13-begin</posx>
                 <posy>5-row</posy>
-                <width>1-col-textbox</width>
+                <width>1-col</width>
                 <height>2-row</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/black.png</texture>
@@ -73,7 +73,7 @@
                 <visible>control.hasfocus(11)</visible>
                 <posx>col-13-begin</posx>
                 <posy>5-row</posy>
-                <width>1-col-textbox</width>
+                <width>1-col</width>
                 <height>2-row</height>
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/white.png</texture>

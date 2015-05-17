@@ -10,7 +10,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
-                <height>22-row</height>
+                <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>59</ondown>
@@ -64,7 +64,11 @@
                 </itemlayout>
                 <focusedlayout width="4-col" height="4-col">
                     <control type="group">
-                        <include>spinFocusPoster</include>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+                            <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
+                        </animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -72,18 +76,9 @@
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <bordertexture border="3" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>3</posx>
-                            <posy>3</posy>
-                            <width>258</width>
-                            <height>258</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/black.png</texture>
-                            <colordiffuse>ccFFFFFF</colordiffuse>
+                            <colordiffuse>ff666666</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>12</posx>

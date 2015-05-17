@@ -48,7 +48,11 @@
                 </itemlayout>
                 <focusedlayout width="4-col" height="418">
                     <control type="group">
-                        <include>spinFocusPoster</include>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+                            <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
+                        </animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -58,20 +62,11 @@
                             <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
+                            <colordiffuse>ff666666</colordiffuse>
                         </control>
                         <control type="group">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <control type="image">
-                                <posx>3</posx>
-                                <posy>3</posy>
-                                <width>258</width>
-                                <height>390</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/black.png</texture>
-                                <colordiffuse>ccFFFFFF</colordiffuse>
-                            </control>
                             <control type="label">
                                 <posx>12</posx>
                                 <posy>4-row</posy>
