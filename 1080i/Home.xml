@@ -9,7 +9,6 @@
     <controls>
         <include>globalBackground</include>
         <include>homeBackground</include>
-
         <!--browse controls-->
         <control type="group">
             <posx>0</posx>

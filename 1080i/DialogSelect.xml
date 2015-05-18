@@ -11,7 +11,7 @@
             <include>modalDialogInOutVertical</include>
             <control type="group">
                 <posx>col-4-begin</posx>
-                <posy>row-3-begin</posy>
+                <posy>row-2-begin</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -25,7 +25,7 @@
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>18-col</width>
-                    <height>21-row</height>
+                    <height>22-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -34,7 +34,7 @@
                     <posx>6-col</posx>
                     <posy>12-row</posy>
                     <width>12-col</width>
-                    <height>11-row</height>
+                    <height>12-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -50,20 +50,10 @@
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <control type="group" id="9000">
-
                     <!--Info panel-->
                     <control type="group">
                         <posx>0</posx>
                         <posy>2-row</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>18-col</width>
-                            <height>10-row</height>
-                            <aspectratio aligny="center">scale</aspectratio>
-                            <texture>$INFO[container(6).ListItem.art(fanart)]</texture>
-                            <colordiffuse>22ffffff</colordiffuse>
-                        </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -115,7 +105,7 @@
                     <!--What is this one?? NOT skin selection-->
                     <control type="panel" id="3">
                         <posx>6-col</posx>
-                        <posy>12-row</posy>
+                        <posy>450</posy>
                         <width>12-col</width>
                         <height>11-row</height>
                         <onleft>9999</onleft>
@@ -207,7 +197,7 @@
                     <!--skin selection etc-->
                     <control type="panel" id="6">
                         <posx>6-col-indent</posx>
-                        <posy>12-row</posy>
+                        <posy>450</posy>
                         <width>12-col</width>
                         <height>11-row</height>
                         <onleft>9999</onleft>

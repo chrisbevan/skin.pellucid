@@ -5,76 +5,96 @@
     <controls>
         <include>globalBackground</include>
         <control type="group">
-            <posx>col-5-begin</posx>
-            <posy>row-10-begin</posy>
+            <posx>col-10-begin</posx>
+            <posy>row-8-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-            <control type="list" id="52">
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>16-col</width>
-                <height>11-row</height>
-                <orientation>horizontal</orientation>
-                <itemlayout width="4-col" height="4-col">
+                <width>6-col</width>
+                <height>6-row</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>colors/white.png</texture>
+                <bordersize>0</bordersize>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>142</posx>
+                <posy>36</posy>
+                <width>4-row</width>
+                <height>4-row</height>
+                <texture>kodilogo.png</texture>
+                <colordiffuse>textActive</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="list" id="52">
+                <posx>0</posx>
+                <posy>6-row</posy>
+                <width>6-col</width>
+                <height>8-row</height>
+                <itemlayout width="6-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
+                        <width>69</width>
+                        <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">colors/black.png</texture>
-                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>textboxInactive</colordiffuse>
+                        <texture fallback="colors/black" border="0">$INFO[Listitem.thumb]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>5-col</width>
+                        <height>69</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>12</posx>
-                        <posy>2-row</posy>
-                        <width>240</width>
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
                         <height>2-row</height>
-                        <align>center</align>
                         <aligny>center</aligny>
-                        <font>regularStrong</font>
-                        <textcolor>disabled</textcolor>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
-                    <control type="image">
+                </itemlayout>
+                <focusedlayout width="6-col" height="2-row">
+                      <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
+                        <width>69</width>
+                        <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="" border="0">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <texture fallback="colors/black" border="0">$INFO[Listitem.thumb]</texture>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="fade" time="500"/>
+                            <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                        </animation>
                     </control>
-                </itemlayout>
-                <focusedlayout width="4-col" height="4-col">
-                    <control type="group">
-                        <include>spinFocusPoster</include>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                            <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>ff444444</colordiffuse>
-                        </control>
-                        <control type="label">
-                            <posx>12</posx>
-                            <posy>2-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
-                        </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>5-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/white.png</texture>
+                        <bordersize>0</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>itemTitle</font>
+                        <textcolor>black</textcolor>
+                        <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
             </control>

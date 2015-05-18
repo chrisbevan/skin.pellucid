@@ -15,7 +15,7 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>6-col</width>
-                <height>8-row</height>
+                <height>12-row</height>
                 <itemgap>0</itemgap>
                 <itemlayout width="6-col" height="2-row">
                     <control type="label">
@@ -87,8 +87,8 @@
                         <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
                         <visible>System.Loggedon</visible>
                         <thumb>-</thumb>
+                        <onclick>dialog.close(all,true)</onclick>
                         <onclick>System.LogOff</onclick>
-                        <onclick>Dialog.Close(all,true)</onclick>
                     </item>
                     <item id="7">
                         <description>Exit to desktop</description>
