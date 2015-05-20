@@ -4,9 +4,18 @@
     <allowoverlay>yes</allowoverlay>
     <controls>
         <include>globalBackground</include>
+        <control type="image">
+            <animation type="windowopen">
+                <effect type="fade" start="0" end="100" time="500" delay="500" tween="linear"/>
+            </animation>
+            <include>dimensionsFullscreen</include>
+            <texture>logoOverlay.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
         <control type="group">
-            <posx>col-10-begin</posx>
-            <posy>row-8-begin</posy>
+            <posx>0</posx>
+            <posy>0</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">

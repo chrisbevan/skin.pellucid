@@ -34,12 +34,6 @@
             <aspectratio>keep</aspectratio>
             <fadetime>400</fadetime>
         </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
-        </control>
 
         <!--file list-->
         <control type="group">
@@ -56,15 +50,6 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>16-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="label" id="411">
                 <posx>24</posx>
                 <posy>0</posy>
@@ -79,26 +64,35 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>12-col</width>
-                <height>21-row</height>
+                <width>16-col</width>
+                <height>732</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>12-col</posx>
+                <posy>2-row</posy>
+                <width>4-col</width>
+                <height>732</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="panel" id="450">
-                <posx>0</posx>
-                <posy>2-row</posy>
+                <posx>6</posx>
+                <posy>78</posy>
                 <width>12-col</width>
-                <height>21-row</height>
+                <height>20-row</height>
                 <onright>9000</onright>
-                <itemlayout height="2-row" width="12-col">
+                <itemlayout height="75" width="12-col">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>3</posy>
-                        <width>66</width>
-                        <height>66</height>
+                        <posy>0</posy>
+                        <width>69</width>
+                        <height>69</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -112,12 +106,12 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="2-row" width="12-col">
+                <focusedlayout height="75" width="12-col">
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>11-col</width>
-                        <height>2-row</height>
+                        <width>780</width>
+                        <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
@@ -125,11 +119,11 @@
                     </control>
                     <control type="image">
                         <posx>0</posx>
-                        <posy>3</posy>
-                        <width>66</width>
-                        <height>66</height>
+                        <posy>0</posy>
+                        <width>69</width>
+                        <height>69</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture fallback="colors/white.png" border="0">$INFO[Listitem.thumb]</texture>
                         <animation type="focus" loop="false" reversible="false">
                             <effect type="fade" time="500"/>
                             <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -168,15 +162,6 @@
                 <orientation>vertical</orientation>
                 <onleft>450</onleft>
                 <itemlayout width="4-col" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col-textbox</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -188,15 +173,6 @@
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
-                    </control>
-                    <control type="image">
-                        <posx>1-col</posx>
-                        <posy>0</posy>
-                        <width>5-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>

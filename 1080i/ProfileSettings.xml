@@ -6,11 +6,14 @@
         <!--background-->
         <control type="group">
             <posx>col-9-begin</posx>
-            <posy>row-1-begin</posy>
+            <posy>row-2-begin</posy>
             <!--animations-->
             <animation type="windowopen">
-                <effect type="fade" start="0" end="100" delay="400" time="300"/>
-                <effect type="slide" start="0,-300" end="0,0" tween="cubic" easing="out" delay="400" time="400"/>
+                <effect type="rotatey" start="-90" end="0" center="960" tween="cubic" easing="out" delay="400" time="500"/>
+            </animation>
+            <animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="300"/>
+                <effect type="rotatey" start="0" end="-90" center="960" tween="cubic" easing="out" time="500"/>
             </animation>
             <control type="image">
                 <posx>0</posx>
@@ -23,13 +26,11 @@
             </control>
             <!--title-->
             <control type="label" id="102">
-                <posx>0</posx>
+                <posx>24</posx>
                 <posy>0</posy>
                 <width>8-col</width>
                 <height>2-row</height>
-                <align>center</align>
                 <font>dialogTitle</font>
-                <label>31103</label>
                 <textcolor>textActive</textcolor>
             </control>
             <control type="image">
@@ -53,26 +54,6 @@
                 <posx>0</posx>
                 <posy>10-row</posy>
                 <width>8-col</width>
-                <height>2-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>textboxInactive</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label" id="103">
-                <description>Profile Directory</description>
-                <posx>0</posx>
-                <posy>10-row</posy>
-                <width>8-col</width>
-                <height>2-row</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>itemSubTitle</font>
-                <textcolor>highlight</textcolor>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>12-row</posy>
-                <width>8-col</width>
                 <height>15-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
@@ -80,20 +61,20 @@
             </control>
             <control type="button" id="6000">
                 <description>Profile switch</description>
-                <visible>!StringCompare(System.ProfileName,control.getlabel(1000))</visible>
+                <visible>!StringCompare(System.ProfileName,control.getlabel(102))</visible>
                 <posx>0</posx>
-                <posy>12-row</posy>
+                <posy>10-row</posy>
                 <width>8-col</width>
                 <font>buttonTitle</font>
                 <textoffsetx>24</textoffsetx>
                 <label>31131</label>
-                <onclick>LoadProfile($INFO[control.getlabel(1000)])</onclick>
+                <onclick>LoadProfile($INFO[control.getlabel(102)])</onclick>
                 <ondown>5</ondown>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
                 <posx>0</posx>
-                <posy>14-row</posy>
+                <posy>12-row</posy>
                 <width>8-col</width>
                 <height>13-row</height>
                 <itemgap>3</itemgap>

@@ -2,22 +2,6 @@
 <includes>
     <!--video submenu items-->
     <include name="videoSideMenu">
-        <control type="button" id="501">
-            <description>Video Playlist</description>
-            <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist)] + IntegerGreaterThan(Playlist.Length(video),0)</visible>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>31123</label>
-            <onclick>right</onclick>
-            <onclick>ActivateWindow(videoplaylist)</onclick>
-        </control>
         <control type="button" id="502">
             <description>Search (videos)</description>
             <visible>[window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(pvr)] + System.HasAddon(script.globalsearch)</visible>
@@ -64,21 +48,6 @@
             <alttexturefocus colordiffuse="textActive">colors/white.png</alttexturefocus>
             <texturenofocus>-</texturenofocus>
             <textoffsetx>col-1-begin</textoffsetx>
-        </control>
-        <control type="button" id="504">
-            <description>Timers / scheduler</description>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>31119</label>
-            <onclick>ActivateWindow(tvtimers)</onclick>
-            <onclick>Control.SetFocus(50)</onclick>
         </control>
         <control type="button" id="505">
             <description>Menu shortcuts (video)</description>

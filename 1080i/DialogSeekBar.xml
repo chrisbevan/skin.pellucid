@@ -58,6 +58,18 @@
                 <info>Player.Progress</info>
             </control>
             <control type="label">
+                <visible>stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
+                <posx>0</posx>
+                <posy>1-row</posy>
+                <width>18-col</width>
+                <align>center</align>
+                <font>small</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.title]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <control type="label">
+                <visible>!stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>

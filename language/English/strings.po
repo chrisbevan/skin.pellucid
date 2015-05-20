@@ -386,7 +386,7 @@ msgid "Users"
 msgstr ""
 
 msgctxt "#31107"
-msgid "Active profile"
+msgid "Current profile"
 msgstr ""
 
 msgctxt "#31108"
@@ -739,4 +739,20 @@ msgstr ""
 
 msgctxt "#31199"
 msgid "Details"
+msgstr ""
+
+msgctxt "#31200"
+msgid "Available Profiles"
+msgstr ""
+
+msgctxt "#31201"
+msgid "Record Show"
+msgstr ""
+
+msgctxt "#31202"
+msgid "Adjust Subtitle Offset"
+msgstr ""
+
+msgctxt "#31203"
+msgid "Smart Playlist"
 msgstr ""

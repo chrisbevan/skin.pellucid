@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>

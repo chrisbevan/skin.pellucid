@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="false">9999</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
         <include>globalBackground</include>

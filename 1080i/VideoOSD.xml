@@ -150,6 +150,13 @@
                 </focusedlayout>
                 <content>
                     <item>
+                        <enable>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enable>
+                        <label>31201</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>PlayerControl(record)</onclick>
+                    </item>
+                    <item>
                         <description>Subtitles</description>
                         <label>24012</label>
                         <label2></label2>

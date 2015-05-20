@@ -6,7 +6,7 @@
     <controls>
         <include>modalDialog</include>
         <control type="group">
-            <posx>col-8-begin</posx>
+            <posx>col-9-begin</posx>
             <posy>row-9-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
@@ -15,14 +15,14 @@
                 <description>heading</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>10-col</width>
+                <width>8-col</width>
                 <font>pageTitle</font>
                 <textcolor>highlight</textcolor>
             </control>
             <control type="textbox" id="9">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>10-col</width>
+                <width>8-col</width>
                 <height>4-row</height>
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
@@ -31,7 +31,7 @@
             <control type="panel" id="9001">
                 <posx>0</posx>
                 <posy>7-row</posy>
-                <width>5-col</width>
+                <width>4-col</width>
                 <height>5-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>

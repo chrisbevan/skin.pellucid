@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
+    <include>fadeInOut</include>
     <controls>
         <control type="image">
             <include>dimensionsFullscreen</include>

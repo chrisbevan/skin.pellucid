@@ -5,16 +5,15 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-
         <control type="group">
-            <posx>col-3-begin</posx>
-            <posy>row-4-begin</posy>
+            <posx>col-4-begin</posx>
+            <posy>row-5-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>20-col</width>
+                <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
@@ -24,7 +23,7 @@
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
-                <width>20-col-gutter</width>
+                <width>18-col-gutter</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
@@ -34,8 +33,8 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>20-col</width>
-                <height>20-row</height>
+                <width>18-col</width>
+                <height>18-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -49,7 +48,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>4-col</width>
-                    <height>19-row</height>
+                    <height>18-row</height>
                     <onright>200</onright>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="2-row" width="4-col">
@@ -117,8 +116,8 @@
             <control type="image">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <width>16-col</width>
-                <height>20-row</height>
+                <width>14-col</width>
+                <height>18-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -126,23 +125,15 @@
             <control type="grouplist" id="200">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <width>16-col</width>
+                <width>14-col</width>
                 <height>20-row</height>
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="6">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Stop video on return to menu</description>
-                    <width>16-col</width>
-                    <label>31143</label>
-                    <onclick>Skin.ToggleSetting(stopVideoOnMenu)</onclick>
-                    <selected>Skin.HasSetting(stopVideoOnMenu)</selected>
-                </control>
                 <control type="radiobutton" id="7">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Reverse power down options</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31142</label>
                     <onclick>Skin.ToggleSetting(exitFirst)</onclick>
                     <selected>Skin.HasSetting(exitFirst)</selected>
@@ -150,7 +141,7 @@
                 <control type="radiobutton" id="8">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Hide Video</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31147</label>
                     <onclick>Skin.ToggleSetting(hideVideo)</onclick>
                     <selected>Skin.HasSetting(hideVideo)</selected>
@@ -158,7 +149,7 @@
                 <control type="radiobutton" id="9">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Hide Music</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31148</label>
                     <onclick>Skin.ToggleSetting(hideMusic)</onclick>
                     <selected>Skin.HasSetting(hideMusic)</selected>
@@ -166,7 +157,7 @@
                 <control type="radiobutton" id="10">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Hide Pictures</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31149</label>
                     <onclick>Skin.ToggleSetting(hidePictures)</onclick>
                     <selected>Skin.HasSetting(hidePictures)</selected>
@@ -174,7 +165,7 @@
                 <control type="radiobutton" id="11">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Hide Games</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31157</label>
                     <onclick>Skin.ToggleSetting(hideGames)</onclick>
                     <selected>Skin.HasSetting(hideGames)</selected>
@@ -182,7 +173,7 @@
                 <control type="radiobutton" id="12">
                     <visible>Container(8000).Hasfocus(2)</visible>
                     <description>Hide Search</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31150</label>
                     <onclick>Skin.ToggleSetting(hideSearch)</onclick>
                     <selected>Skin.HasSetting(hideSearch)</selected>
@@ -190,7 +181,7 @@
                 <control type="radiobutton" id="15">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Enable Debug Grid</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31034</label>
                     <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
                     <selected>Skin.HasSetting(DebugGrid)</selected>
@@ -198,7 +189,7 @@
                 <control type="radiobutton" id="16">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Disable Debug Info</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31035</label>
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
@@ -206,7 +197,7 @@
                 <control type="radiobutton" id="19">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Autostart music visualisation on playback</description>
-                    <width>16-col</width>
+                    <width>14-col</width>
                     <label>31171</label>
                     <onclick>Skin.ToggleSetting(startVisualiserOnPlayback)</onclick>
                     <selected>Skin.HasSetting(startVisualiserOnPlayback)</selected>
