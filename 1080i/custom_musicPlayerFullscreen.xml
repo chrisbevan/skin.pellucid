@@ -260,8 +260,8 @@
                                 <label>31097</label>
                                 <label2></label2>
                                 <thumb>-</thumb>
+                                <onclick>activateWindow(500)</onclick>
                                 <onclick>dialog.close(5001)</onclick>
-                                <onclick>activateWindow(musicplaylist)</onclick>
                             </item>
                             <item>
                                 <description>Visualisation</description>
@@ -271,6 +271,7 @@
                                 <onclick>activateWindow(musicOSD)</onclick>
                             </item>
                             <item>
+                                <visible>visualisation.enabled</visible>
                                 <description>Visualisation Settings</description>
                                 <label>$LOCALIZE[21417]</label>
                                 <label2></label2>

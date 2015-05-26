@@ -8,7 +8,7 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="group">
-                <posx>col-4-begin</posx>
+                <posx>col-7-begin</posx>
                 <posy>row-3-begin</posy>
                 <control type="image">
                     <posx>0</posx>
@@ -19,19 +19,9 @@
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <!--
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>18-col</width>
-                    <height>12-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-            -->
+
                 <control type="label">
-                    <posx>12</posx>
+                    <posx>24</posx>
                     <posy>0</posy>
                     <width>8-col</width>
                     <height>2-row</height>
@@ -150,12 +140,12 @@
                     </control>
                     <control type="panel" id="10">
                         <description>Rules List Control</description>
-                        <posx>12</posx>
+                        <posx>1-col-indent</posx>
                         <posy>12</posy>
-                        <width>12-col-gutter</width>
+                        <width>11-col-gutter</width>
                         <height>4-row</height>
                         <onup>18</onup>
-                        <onright>9001</onright>
+                        <onleft>9001</onleft>
                         <ondown>16</ondown>
                         <itemlayout width="12-col" height="2-row">
                             <control type="image">
@@ -208,29 +198,46 @@
                     </control>
 
                     <!--items must match...-->
-                    <control type="spincontrolex" id="16">
+                    <control type="image">
                         <posx>0</posx>
-                        <posy>8-row</posy>
+                        <posy>300</posy>
                         <width>12-col</width>
+                        <height>96</height>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+
+                    <control type="spincontrolex" id="16">
+                        <posx>12</posx>
+                        <posy>312</posy>
+                        <width>12-col-gutter</width>
                         <label>21424</label>
                         <onright>9002</onright>
                         <onup>10</onup>
-                        <ondown>17</ondown>
+                        <ondown>9002</ondown>
                     </control>
                 </control>
 
                 <!--add / edit / delete rules-->
                 <control type="panel" id="9001">
-                    <posx>14-col</posx>
-                    <posy>6-row</posy>
+                    <posx>12</posx>
+                    <posy>382</posy>
                     <width>12-col-gutter</width>
                     <height>8-row</height>
-                    <itemgap>3</itemgap>
                     <onright>10</onright>
-                    <onup>12</onup>
-                    <ondown>16</ondown>
+                    <onup>18</onup>
                     <orientation>horizontal</orientation>
                     <itemlayout width="3-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/black.png</texture>
+                            <colordiffuse>overlay</colordiffuse>
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -238,19 +245,9 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>-1</posy>
-                            <width>3-col-gutter</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="3-col" height="2-row">
@@ -264,14 +261,6 @@
                             <colordiffuse>highlight</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
-                        <control type="image">
-                            <posx>1-col</posx>
-                            <posy>0</posy>
-                            <width>2-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -279,20 +268,9 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>-1</posy>
-                            <width>5-col-gutter</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>black</textcolor>
-                            <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </focusedlayout>
@@ -304,28 +282,27 @@
                             <thumb>-</thumb>
                             <onclick>SendClick(129,13)</onclick>
                         </item>
-                        <item id="2">
-                            <description>Remove Rule</description>
-                            <label>1210</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(129,14)</onclick>
-                        </item>
                     </content>
                 </control>
 
-
                 <!--OK / Cancel-->
                 <control type="panel" id="9002">
-                    <visible>false</visible>
-                    <posx>14-col</posx>
-                    <posy>2-row</posy>
-                    <width>4-col</width>
-                    <height>5-row</height>
-                    <itemgap>3</itemgap>
-                    <orientation>vertical</orientation>
-                    <onleft>22</onleft>
+                    <posx>0</posx>
+                    <posy>780</posy>
+                    <width>8-col</width>
+                    <height>2-row</height>
+                    <orientation>horizontal</orientation>
+                    <onup>16</onup>
                     <itemlayout width="4-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>276</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/black.png</texture>
+                            <colordiffuse>overlay</colordiffuse>
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -362,7 +339,7 @@
                         <control type="image">
                             <posx>1-col</posx>
                             <posy>0</posy>
-                            <width>5-col</width>
+                            <width>204</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>

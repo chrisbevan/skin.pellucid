@@ -32,12 +32,6 @@
                     <include>artist</include>
                     <include>album</include>
                     <include>song</include>
-                    <!--
-                    <include>viewMusicList</include>
-                    <include>viewArtistList</include>
-                    <include>viewSongList</include>
-                    <include>viewMusicGrid</include>
-                -->
                 </control>
             </control>
 

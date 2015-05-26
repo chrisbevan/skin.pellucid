@@ -203,6 +203,7 @@
                             <thumb>-</thumb>
                             <onclick>dialog.close(137,true)</onclick>
                             <onclick>Control.Message(14,click,136)</onclick>
+                            <onclick>Control.setfocus(10)</onclick>
                         </item>
                     </content>
                 </control>

@@ -79,20 +79,6 @@
             <onup>56</onup>
             <pagecontrol>60</pagecontrol>
             <itemlayout width="15-col" height="2-row">
-                <control type="label">
-                    <visible>ListItem.IsPlaying</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>1-col-textbox</width>
-                    <height>2-row</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>symbol</font>
-                    <textcolor>textActive</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -103,7 +89,16 @@
                     <bordersize>0</bordersize>
                     <colordiffuse>textboxInactive</colordiffuse>
                 </control>
+                <control type="image">
+                    <visible>ListItem.IsPlaying</visible>
+                    <posx>12</posx>
+                    <posy>0</posy>
+                    <width>1-col-gutter</width>
+                    <height>1-col-gutter</height>
+                    <texture>equaliser.gif</texture>
+                </control>
                 <control type="label">
+                    <visible>!ListItem.IsPlaying</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1-col-textbox</width>
@@ -171,7 +166,16 @@
                     <colordiffuse>highlight</colordiffuse>
                     <include>spinFocusIcon</include>
                 </control>
+                <control type="image">
+                    <visible>ListItem.IsPlaying</visible>
+                    <posx>12</posx>
+                    <posy>0</posy>
+                    <width>1-col-gutter</width>
+                    <height>1-col-gutter</height>
+                    <texture>equaliser.gif</texture>
+                </control>
                 <control type="label">
+                    <visible>!ListItem.IsPlaying</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1-col-textbox</width>

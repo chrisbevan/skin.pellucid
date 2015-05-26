@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    <allowoverlay>yes</allowoverlay>
     <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
@@ -16,6 +16,12 @@
 
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
+
+            <!--initial animation-->
+            <animation type="Windowopen">
+                <effect type="zoom" start="150" time="200" center="auto" tween="linear" easing="out"/>
+                <effect type="fade" start="30" end="100" time="100"/>
+            </animation>
 
             <!--Main content listing-->
             <control type="group" id="9999">
