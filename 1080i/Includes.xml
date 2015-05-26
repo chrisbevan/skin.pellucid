@@ -22,8 +22,7 @@
     <include file="View_Albums.xml"/>
     <include file="View_Songs.xml"/>
     <include file="View_MusicFiles.xml"/>
-
-    <include file="ViewsMusic.xml"/>
+    <include file="View_MusicPlaylist.xml"/>
 
     <!--modal dialogs-->
     <include name="modalDialog">

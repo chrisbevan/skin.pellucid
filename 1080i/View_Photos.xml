@@ -62,16 +62,7 @@
                         <texture fallback="colors/offblack.png">$INFO[Listitem.icon]</texture>
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>3</posx>
-                        <posy>3</posy>
-                        <width>402</width>
-                        <height>266</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <colordiffuse>ccFFFFFF</colordiffuse>
+                        <colordiffuse>ff666666</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>12</posx>

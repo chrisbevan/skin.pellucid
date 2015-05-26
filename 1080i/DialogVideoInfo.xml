@@ -173,7 +173,7 @@
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>350</height>
-                    <label>$INFO[ListItem.plot]</label>
+                    <label fallback="31205">$INFO[ListItem.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
                     <shadowcolor>-</shadowcolor>
                 </control>
@@ -388,7 +388,7 @@
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <height>200</height>
-                    <label>$INFO[ListItem.plot]</label>
+                    <label fallback="31205">$INFO[ListItem.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
                 </control>
                 <!--dialog controls-->

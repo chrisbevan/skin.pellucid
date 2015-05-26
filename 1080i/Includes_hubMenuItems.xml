@@ -179,6 +179,12 @@
                 <label2/>
                 <onclick>activateWindow(5001)</onclick>
             </item>
+            <item>
+                <visible>MusicPlayer.Offset(0).Exists</visible>
+                <label>31123</label>
+                <label2/>
+                <onclick>activateWindow(musicplaylist)</onclick>
+            </item>
             <!--CD / DVD handling-->
             <item>
                 <visible>System.HasMediaDVD</visible>

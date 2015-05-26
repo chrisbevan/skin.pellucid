@@ -50,7 +50,7 @@
                 <posy>0</posy>
                 <width>12-col</width>
                 <label>-</label>
-                <font>medium</font>
+                <font>mediumStrong</font>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="image">
@@ -128,7 +128,7 @@
                 <posy>0</posy>
                 <width>12-col</width>
                 <label>-</label>
-                <font>medium</font>
+                <font>mediumStrong</font>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -170,7 +170,7 @@
                         <width>12-col-gutter</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
+                        <animation effect="fade" start="100" end="50" condition="Control.HasFocus(20)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>

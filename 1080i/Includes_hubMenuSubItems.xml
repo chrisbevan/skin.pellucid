@@ -166,22 +166,6 @@
 
     <!--music submenu items-->
     <include name="musicSideMenu">
-        <control type="button" id="501">
-            <description>current music playlist (if available)</description>
-            <visible>MusicPlayer.Offset(0).Exists</visible>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>31123</label>
-            <onclick>right</onclick>
-            <onclick>activateWindow(musicplaylist)</onclick>
-        </control>
         <control type="button" id="502">
             <description>Search (music)</description>
             <visible>System.HasAddon(script.globalsearch)</visible>

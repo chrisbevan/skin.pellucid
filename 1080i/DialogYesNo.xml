@@ -49,6 +49,10 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
+                <animation type="conditional" condition="control.hasfocus(10)" loop="false" reversible="false">
+                    <effect type="fade" time="500"/>
+                    <effect type="rotatey" end="180" center="708" tween="back" easing="out" time="1000"/>
+                </animation>
             </control>
             <control type="label">
                 <posx>col-9-begin</posx>
@@ -78,7 +82,10 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
-                <include>spinFocusIcon</include>
+                <animation type="conditional" condition="control.hasfocus(11)" loop="false" reversible="false">
+                    <effect type="fade" time="500"/>
+                    <effect type="rotatey" end="180" center="996" tween="back" easing="out" time="1000"/>
+                </animation>
             </control>
             <control type="label">
                 <posx>col-13-begin</posx>
