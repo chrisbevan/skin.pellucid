@@ -65,21 +65,6 @@
             <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
             <onclick>ActivateWindow(5000)</onclick>
         </control>
-        <control type="button" id="506">
-            <description>Set recent content</description>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>31175</label>
-            <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
-            <onclick>ActivateWindow(5900)</onclick>
-        </control>
         <control type="button" id="507">
             <visible/>
             <height>2-row</height>
@@ -124,24 +109,6 @@
             <textureradiofocus>-</textureradiofocus>
             <textureradionofocus>-</textureradionofocus>
             <textoffsetx>col-1-begin</textoffsetx>
-        </control>
-        <control type="radiobutton" id="508">
-            <description>Filter</description>
-            <visible>Container.CanFilterAdvanced</visible>
-            <label>587</label>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
-            <onclick>right</onclick>
-            <onclick>Filter</onclick>
         </control>
         <control type="radiobutton" id="11">
             <description>Unlock Shares</description>

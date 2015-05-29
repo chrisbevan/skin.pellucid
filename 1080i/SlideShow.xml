@@ -4,7 +4,7 @@
         <!--vignette-->
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>backgrounds/vignette.png</texture>
+            <texture>vignette.png</texture>
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>

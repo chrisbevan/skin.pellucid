@@ -48,7 +48,7 @@
                 <animation type="windowclose">
                     <effect type="fade" start="100" end="0" time="300"/>
                 </animation>
-                <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsMoviesSource)]</content>
+                <content>plugin://script.thedeadman.functions?type=recentmovies</content>
                 <itemlayout width="4-col" height="396">
                     <control type="image">
                         <posx>0</posx>
@@ -188,7 +188,7 @@
                 <animation type="windowclose">
                     <effect type="fade" start="100" end="0" time="300"/>
                 </animation>
-                <content>plugin://script.maximinimalism.functions?type=$INFO[skin.string(videoHomeItemsEpisodesSource)]</content>
+                <content>plugin://script.thedeadman.functions?type=recentepisodes</content>
                 <itemlayout width="4-col" height="396">
                     <control type="image">
                         <posx>0</posx>

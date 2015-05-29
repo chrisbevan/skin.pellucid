@@ -5,10 +5,9 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-
         <control type="group">
             <posx>col-5-begin</posx>
-            <posy>row-2-begin</posy>
+            <posy>row-5-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
@@ -24,7 +23,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>16-col</width>
-                <height>22-row</height>
+                <height>14-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -33,7 +32,7 @@
                 <posx>12-col</posx>
                 <posy>2-row</posy>
                 <width>4-col</width>
-                <height>22-row</height>
+                <height>14-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -54,132 +53,150 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <ondown>21</ondown>
+                <ondown>6500</ondown>
                 <onright>9001</onright>
-            </control>
-            <control type="label">
-                <visible>!control.hasfocus(20)</visible>
-                <description>Content type label unfocussed</description>
-                <posx>12</posx>
-                <posy>2-row</posy>
-                <width>12-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
                 <label>31031</label>
-                <font>itemTitle</font>
-                <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
             </control>
-            <control type="label">
-                <visible>control.hasfocus(20)</visible>
-                <description>Content type label focussed</description>
-                <posx>12</posx>
-                <posy>2-row</posy>
-                <width>12-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
-                <label>31031</label>
-                <font>itemTitle</font>
-                <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
-            </control>
+
             <!--scraper selection-->
-            <control type="label">
-                <posx>12</posx>
-                <posy>5-row</posy>
-                <width>6-col</width>
-                <label>31137</label>
-                <font>itemSubTitle</font>
-                <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
-            </control>
-            <control type="panel" id="21">
-                <posx>12</posx>
-                <posy>6-row</posy>
-                <width>12-col</width>
-                <height>4-col</height>
-                <onup>20</onup>
-                <ondown>22</ondown>
-                <onright>9001</onright>
-                <itemlayout width="3-col" height="3-col">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <height>3-col-gutter</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="3">colors/black.png</texture>
-                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>textboxInactive</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>1-row</posy>
-                        <width>162</width>
-                        <height>3-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <wrapmultiline>true</wrapmultiline>
-                        <textcolor>disabled</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <height>3-col-gutter</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="0">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="3-col" height="3-col">
-                    <control type="group">
-                        <include>spinFocusPoster</include>
-                        <control type="image">
+            <control type="group">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>4-row</posy>
+                    <width>12-col</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <visible>Control.HasFocus(6501) | Control.HasFocus(6500)</visible>
+                </control>
+                <control type="label">
+                    <visible>!Control.HasFocus(6501) + !Control.HasFocus(6500)</visible>
+                    <posx>24</posx>
+                    <posy>4-row</posy>
+                    <width>6-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <label>31137</label>
+                    <font>buttonTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+                <control type="label">
+                    <visible>Control.HasFocus(6501) | Control.HasFocus(6500)</visible>
+                    <posx>24</posx>
+                    <posy>4-row</posy>
+                    <width>6-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <label>31137</label>
+                    <font>buttonTitle</font>
+                    <textcolor>black</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+                <control type="panel" id="21">
+                    <enable>false</enable>
+                    <posx>174</posx>
+                    <posy>4-row</posy>
+                    <width>8-col</width>
+                    <height>2-row</height>
+                    <onup>20</onup>
+                    <ondown>22</ondown>
+                    <onright>9001</onright>
+                    <orientation>horizontal</orientation>
+                    <scrolltime>0</scrolltime>
+                    <itemlayout width="8-col" height="2-row">
+                        <control type="label">
+                            <visible>!Control.HasFocus(6501) + !Control.HasFocus(6500)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>3-col-gutter</width>
-                            <height>3-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/offblack.png</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>3</posx>
-                            <posy>3</posy>
-                            <width>186</width>
-                            <height>186</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/black.png</texture>
-                            <colordiffuse>ccFFFFFF</colordiffuse>
+                            <width>8-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>right</align>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>12</posx>
-                            <posy>1-row</posy>
-                            <width>162</width>
-                            <height>3-row</height>
-                            <align>center</align>
+                            <visible>Control.HasFocus(6501) | Control.HasFocus(6500)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>8-col</width>
+                            <height>2-row</height>
                             <aligny>center</aligny>
-                            <font>itemSubTitle</font>
-                            <wrapmultiline>true</wrapmultiline>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
+                            <align>right</align>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>black</selectedcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
-                    </control>
-                </focusedlayout>
+                    </itemlayout>
+                    <focusedlayout width="8-col" height="2-row">
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>8-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>right</align>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <selectedcolor>textActive</selectedcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <visible>Control.HasFocus(6501) | Control.HasFocus(6500)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>8-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>right</align>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <selectedcolor>black</selectedcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="button" id="6500">
+                    <description>Menu Item Next Button</description>
+                    <posx>780</posx>
+                    <posy>166</posy>
+                    <width>30</width>
+                    <height>30</height>
+                    <texturenofocus>UIControls/arrow-down-nf.png</texturenofocus>
+                    <texturefocus>UIControls/arrow-down-fo.png</texturefocus>
+                    <onclick>Control.Move(21,1)</onclick>
+                    <onleft>6501</onleft>
+                    <onright>6501</onright>
+                    <onup>20</onup>
+                    <ondown>22</ondown>
+                </control>
+                <control type="button" id="6501">
+                    <description>Menu Item Prev Button</description>
+                    <posx>810</posx>
+                    <posy>166</posy>
+                    <width>30</width>
+                    <height>30</height>
+                    <texturenofocus>UIControls/arrow-up-nf.png</texturenofocus>
+                    <texturefocus>UIControls/arrow-up-fo.png</texturefocus>
+                    <onclick>Control.Move(21,-1)</onclick>
+                    <onleft>6500</onleft>
+                    <onright>9001</onright>
+                    <onup>20</onup>
+                    <ondown>22</ondown>
+                </control>
             </control>
+
             <!--specific media type settings-->
             <control type="button" id="22">
                 <description>Specific media type settings</description>
                 <posx>0</posx>
-                <posy>14-row</posy>
+                <posy>6-row</posy>
                 <label>31042</label>
                 <width>12-col</width>
                 <onup>21</onup>
@@ -190,7 +207,7 @@
             <control type="grouplist" id="5">
                 <description>Control Area</description>
                 <posx>0</posx>
-                <posy>16-row</posy>
+                <posy>8-row</posy>
                 <width>12-col</width>
                 <height>8-row</height>
                 <itemgap>0</itemgap>

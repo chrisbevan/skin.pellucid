@@ -134,7 +134,7 @@ msgid "Music Fanart location: "
 msgstr ""
 
 msgctxt "#31031"
-msgid "Content Type"
+msgid "Content:"
 msgstr ""
 
 msgctxt "#31032"
@@ -502,7 +502,7 @@ msgid "Now Playing"
 msgstr ""
 
 msgctxt "#31137"
-msgid "Available Content Scrapers:"
+msgid "Content Scraper:"
 msgstr ""
 
 msgctxt "#31138"
@@ -763,4 +763,24 @@ msgstr ""
 
 msgctxt "#31205"
 msgid "No further details available."
+msgstr ""
+
+msgctxt "#31206"
+msgid "Kodi System Information"
+msgstr ""
+
+msgctxt "#31207"
+msgid "Total uptime:"
+msgstr ""
+
+msgctxt "#31208"
+msgid "Path"
+msgstr ""
+
+msgctxt "#31209"
+msgid "<Source name>"
+msgstr ""
+
+msgctxt "#31210"
+msgid "Name"
 msgstr ""

@@ -35,7 +35,7 @@
                     <height>10-row</height>
                     <onleft>9000</onleft>
                     <ondown>9997</ondown>
-                    <content>plugin://script.maximinimalism.functions?type=favouritealbums</content>
+                    <content>plugin://script.thedeadman.functions?type=favouritealbums</content>
                     <orientation>horizontal</orientation>
                     <itemlayout width="4-col" height="4-col">
                         <control type="image">
@@ -208,7 +208,7 @@
                     <onleft>9000</onleft>
                     <onup>9998</onup>
                     <ondown>9996</ondown>
-                    <content>plugin://script.maximinimalism.functions?type=recentalbums</content>
+                    <content>plugin://script.thedeadman.functions?type=recentalbums</content>
                     <itemlayout width="4-col" height="4-col">
                         <control type="image">
                             <posx>0</posx>
@@ -376,7 +376,7 @@
                     <height>20-row</height>
                     <onleft>9000</onleft>
                     <onup>9997</onup>
-                    <content>plugin://script.maximinimalism.functions?type=randomalbums</content>
+                    <content>plugin://script.thedeadman.functions?type=randomalbums</content>
                     <itemlayout width="4-col" height="4-col">
                         <control type="image">
                             <posx>0</posx>
