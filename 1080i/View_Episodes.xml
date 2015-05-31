@@ -65,7 +65,7 @@
                 <posx>col-13-begin</posx>
                 <posy>row-8-begin</posy>
                 <width>12-col</width>
-                <height>20-row</height>
+                <height>19-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <pagecontrol>60</pagecontrol>
@@ -197,7 +197,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
-                <height>22-row</height>
+                <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>52</ondown>

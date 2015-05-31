@@ -7,7 +7,7 @@
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <width>24-col</width>
-            <height>22-row</height>
+            <height>23-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>53</ondown>
@@ -20,7 +20,7 @@
                     <width>66</width>
                     <height>66</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="colors/offblack.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>

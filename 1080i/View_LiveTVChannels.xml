@@ -6,7 +6,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
-                <height>22-row</height>
+                <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <pagecontrol>60</pagecontrol>

@@ -29,9 +29,9 @@
                 <control type="epggrid" id="10">
                     <description>EPG Grid</description>
                     <posx>col-1-begin</posx>
-                    <posy>row-4-begin</posy>
+                    <posy>row-5-begin</posy>
                     <width>24-col</width>
-                    <height>24-row</height>
+                    <height>23-row</height>
                     <pagecontrol>10</pagecontrol>
                     <timeblocks>30</timeblocks>
                     <progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>

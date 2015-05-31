@@ -10,7 +10,7 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>24-col</width>
-                <height>22-row</height>
+                <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>51</ondown>
