@@ -20,7 +20,7 @@
         <value condition="Window.IsActive(musicfiles) + SubString(container.foldername,add-ons)">$LOCALIZE[31058]</value>
         <value condition="Window.IsActive(musicfiles) + SubString(container.foldername,playlists)">$LOCALIZE[20011]</value>
         <value condition="Window.IsActive(musicfiles) + !Substring(Container.folderpath,plugin)">$LOCALIZE[31077]</value>
-        <value condition="Substring(Container.folderpath,plugin)">$INFO[container.foldername]</value>
+        <value condition="Substring(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011],]</value>
         <value condition="Container.Content(movies)">$LOCALIZE[20342] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)">$LOCALIZE[20343] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Container.Content(addons)">$LOCALIZE[31010]</value>
