@@ -23,7 +23,7 @@
             </control>
 
             <control type="panel" id="50">
-                <visible>!isempty(container.foldername) + !StringCompare(container.foldername,files) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>!container.content(files) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
@@ -40,7 +40,40 @@
                         <width>4-col-gutter</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                        <texture border="3">colors/black.png</texture>
+                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>5-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.year]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[ListItem.Art(poster)]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>

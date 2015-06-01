@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <allowoverlay>yes</allowoverlay>
     <onload condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | Window.isactive(pvr) window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist)">SetFocus(9000,0)</onload>
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
+            <posy>row-4-begin</posy>
             <include condition="!window.isactive(progressdialog)">progressPosition1</include>
             <include condition="window.isactive(progressdialog)">progressPosition2</include>
             <!--<visible>!Window.IsActive(fullscreenvideo)</visible>-->

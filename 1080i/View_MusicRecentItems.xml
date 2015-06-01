@@ -24,7 +24,7 @@
                     <width>24-col</width>
                     <height>1-row</height>
                     <align></align>
-                    <font>pageTitle</font>
+                    <font>regularStrong</font>
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31187]</label>
                 </control>
@@ -196,7 +196,7 @@
                     <width>24-col</width>
                     <height>1-row</height>
                     <align></align>
-                    <font>pageTitle</font>
+                    <font>regularStrong</font>
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31180]</label>
                 </control>
@@ -365,7 +365,7 @@
                     <width>24-col</width>
                     <height>1-row</height>
                     <align></align>
-                    <font>pageTitle</font>
+                    <font>regularStrong</font>
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31181]</label>
                 </control>

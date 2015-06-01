@@ -784,3 +784,7 @@ msgstr ""
 msgctxt "#31210"
 msgid "Name"
 msgstr ""
+
+msgctxt "#31211"
+msgid "<Smart playlist name>"
+msgstr ""

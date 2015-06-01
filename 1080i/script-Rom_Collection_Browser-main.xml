@@ -4,6 +4,20 @@
     <defaultcontrol always="true">500</defaultcontrol>
     <controls>
         <include>globalBackground</include>
+        <control type="image">
+            <include>fullscreenDimensions</include>
+            <aspectratio scalediffuse="false" align="left">scale</aspectratio>
+            <texture border="0">$INFO[Listitem.thumb]</texture>
+            <colordiffuse>22ffffff</colordiffuse>
+            <fadetime>500</fadetime>
+            <include>kenBurnsey</include>
+        </control>
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>backgrounds/vignette.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
         <!--page container group-->
         <control type="group">
             <!--window fader-->
@@ -12,7 +26,6 @@
             </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
             <!--Main content listing-->
             <control type="group" id="9999">
                 <control type="panel" id="50">
@@ -101,7 +114,7 @@
                     <width>11-col</width>
                     <height>486</height>
                     <aspectratio scalediffuse="false" align="left">scale</aspectratio>
-                    <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                    <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.Property(gameinfobig)]</texture>
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                 </control>

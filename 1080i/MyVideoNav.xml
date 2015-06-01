@@ -99,7 +99,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyVideoNav.xml </label>
+            <label>MyVideoNav.xml</label>
         </control>
     </controls>
 </window>

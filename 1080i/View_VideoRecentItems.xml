@@ -10,26 +10,14 @@
                 <effect type="slide" start="0,0" end="0,-100" time="200"/>
             </animation>
             <control type="label">
-                <visible>SubString(skin.string(videoHomeItemsMoviesSource),recentmovies)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
                 <height>1-row</height>
                 <align></align>
-                <font>pageTitle</font>
+                <font>regularStrong</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31176]</label>
-            </control>
-            <control type="label">
-                <visible>SubString(skin.string(videoHomeItemsMoviesSource),randommovies)</visible>
-                <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
-                <width>24-col</width>
-                <height>1-row</height>
-                <align></align>
-                <font>pageTitle</font>
-                <textcolor>textActive</textcolor>
-                <label>$LOCALIZE[31177]</label>
             </control>
             <control type="panel" id="9998">
                 <visible>!stringcompare(Window(Home).Property(Movies.UnWatched),0)</visible>
@@ -56,7 +44,40 @@
                         <width>4-col-gutter</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.Art(poster)]</texture>
+                        <texture border="3">colors/black.png</texture>
+                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>5-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.year]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[ListItem.Art(poster)]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
@@ -150,26 +171,14 @@
                 <effect type="slide" start="0,0" end="0,-400" time="200"/>
             </animation>
             <control type="label">
-                <visible>SubString(skin.string(videoHomeItemsEpisodesSource),recentepisodes)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-19-begin</posy>
                 <width>24-col</width>
                 <height>1-row</height>
                 <align></align>
-                <font>pageTitle</font>
+                <font>regularStrong</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31178]</label>
-            </control>
-            <control type="label">
-                <visible>SubString(skin.string(videoHomeItemsEpisodesSource),randomepisodes)</visible>
-                <posx>col-1-begin</posx>
-                <posy>row-19-begin</posy>
-                <width>24-col</width>
-                <height>1-row</height>
-                <align></align>
-                <font>pageTitle</font>
-                <textcolor>textActive</textcolor>
-                <label>$LOCALIZE[31179]</label>
             </control>
             <control type="panel" id="9997">
                 <visible>!stringcompare(Window(Home).Property(Episodes.UnWatched),0)</visible>
@@ -196,7 +205,40 @@
                         <width>4-col-gutter</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.property(season_poster)]</texture>
+                        <texture border="3">colors/black.png</texture>
+                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.TVshowTitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>5-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[ListItem.property(season_poster)]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>

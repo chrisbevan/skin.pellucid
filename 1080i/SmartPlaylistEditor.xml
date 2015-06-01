@@ -52,7 +52,7 @@
                         <texturenofocus colordiffuse="99ffffff">colors/offblack.png</texturenofocus>
                         <texturefocus>colors/offblack.png</texturefocus>
                         <textoffsetx>24</textoffsetx>
-                        <hinttext>21433</hinttext>
+                        <hinttext>31211</hinttext>
                         <align>left</align>
                         <label>-</label>
                         <onright>9002</onright>
