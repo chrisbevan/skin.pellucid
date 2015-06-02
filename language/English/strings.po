@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: marhanmichal@gmail.com\n"
+"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: chrisbevan\n"
@@ -53,18 +53,6 @@ msgctxt "#31006"
 msgid "Live TV"
 msgstr ""
 
-msgctxt "#31007"
-msgid "Library Empty"
-msgstr ""
-
-msgctxt "#31008"
-msgid "Recording"
-msgstr ""
-
-msgctxt "#31009"
-msgid "No plot info available"
-msgstr ""
-
 msgctxt "#31010"
 msgid "Add-ons"
 msgstr ""
@@ -77,20 +65,8 @@ msgctxt "#31012"
 msgid "Video Library"
 msgstr ""
 
-msgctxt "#31013"
-msgid "Latest content"
-msgstr ""
-
 msgctxt "#31014"
 msgid "title(s)"
-msgstr ""
-
-msgctxt "#31015"
-msgid "Random Selection"
-msgstr ""
-
-msgctxt "#31016"
-msgid "Recommended Items"
 msgstr ""
 
 msgctxt "#31017"
@@ -117,20 +93,8 @@ msgctxt "#31022"
 msgid "Select Items"
 msgstr ""
 
-msgctxt "#31026"
-msgid "Video Fanart location: "
-msgstr ""
-
-msgctxt "#31028"
-msgid "Game Fanart location: "
-msgstr ""
-
 msgctxt "#31029"
 msgid "Current playlist"
-msgstr ""
-
-msgctxt "#31030"
-msgid "Music Fanart location: "
 msgstr ""
 
 msgctxt "#31031"
@@ -157,18 +121,6 @@ msgctxt "#31037"
 msgid "Albums"
 msgstr ""
 
-msgctxt "#31038"
-msgid "Page"
-msgstr ""
-
-msgctxt "#31039"
-msgid "Shortcuts"
-msgstr ""
-
-msgctxt "#31040"
-msgid "Episode"
-msgstr ""
-
 msgctxt "#31041"
 msgid "Menu Shortcuts"
 msgstr ""
@@ -177,20 +129,8 @@ msgctxt "#31042"
 msgid "Specific Content type settings"
 msgstr ""
 
-msgctxt "#31044"
-msgid "Sort Order"
-msgstr ""
-
-msgctxt "#31045"
-msgid "Source name:"
-msgstr ""
-
 msgctxt "#31046"
 msgid "Field:"
-msgstr ""
-
-msgctxt "#31047"
-msgid "Operator:"
 msgstr ""
 
 msgctxt "#31048"
@@ -273,10 +213,6 @@ msgctxt "#31072"
 msgid "Play now"
 msgstr ""
 
-msgctxt "#31073"
-msgid "Channel Group"
-msgstr ""
-
 msgctxt "#31074"
 msgid "Cast and Crew"
 msgstr ""
@@ -297,10 +233,6 @@ msgctxt "#31078"
 msgid "Now and Next"
 msgstr ""
 
-msgctxt "#31079"
-msgid "Kodi"
-msgstr ""
-
 msgctxt "#31080"
 msgid "Programme Guide"
 msgstr ""
@@ -309,20 +241,12 @@ msgctxt "#31082"
 msgid "Version"
 msgstr ""
 
-msgctxt "#31084"
-msgid "Global background image: "
-msgstr ""
-
 msgctxt "#31085"
 msgid "Add Video Addon"
 msgstr ""
 
 msgctxt "#31086"
 msgid "Add Music Addon"
-msgstr ""
-
-msgctxt "#31087"
-msgid "Enable global fanart background: "
 msgstr ""
 
 msgctxt "#31089"
@@ -335,10 +259,6 @@ msgstr ""
 
 msgctxt "#31092"
 msgid "Add Music Playlist"
-msgstr ""
-
-msgctxt "#31093"
-msgid "Favourite"
 msgstr ""
 
 msgctxt "#31095"
@@ -373,10 +293,6 @@ msgctxt "#31103"
 msgid "Profile Settings"
 msgstr ""
 
-msgctxt "#31104"
-msgid "Available Profiles"
-msgstr ""
-
 msgctxt "#31105"
 msgid "Login options"
 msgstr ""
@@ -387,10 +303,6 @@ msgstr ""
 
 msgctxt "#31107"
 msgid "Current profile"
-msgstr ""
-
-msgctxt "#31108"
-msgid "Log out"
 msgstr ""
 
 msgctxt "#31109"
@@ -409,44 +321,12 @@ msgctxt "#31112"
 msgid "TV Guide"
 msgstr ""
 
-msgctxt "#31113"
-msgid "Unknown season"
-msgstr ""
-
-msgctxt "#31114"
-msgid "Unknown genre"
-msgstr ""
-
-msgctxt "#31115"
-msgid "Unknown year"
-msgstr ""
-
-msgctxt "#31116"
-msgid "Aspect"
-msgstr ""
-
 msgctxt "#31117"
 msgid "Launch addon"
 msgstr ""
 
-msgctxt "#31118"
-msgid "Unwatched titles only"
-msgstr ""
-
-msgctxt "#31119"
-msgid "PVR Scheduler"
-msgstr ""
-
 msgctxt "#31120"
 msgid "Playing"
-msgstr ""
-
-msgctxt "#31121"
-msgid "CC"
-msgstr ""
-
-msgctxt "#31122"
-msgid "Sync"
 msgstr ""
 
 msgctxt "#31123"
@@ -457,32 +337,12 @@ msgctxt "#31124"
 msgid "Search Library"
 msgstr ""
 
-msgctxt "#31125"
-msgid "Aspect Ratio"
-msgstr ""
-
 msgctxt "#31126"
 msgid "Settings level"
 msgstr ""
 
-msgctxt "#31127"
-msgid "HD"
-msgstr ""
-
-msgctxt "#31128"
-msgid "SD"
-msgstr ""
-
-msgctxt "#31129"
-msgid "3D"
-msgstr ""
-
 msgctxt "#31131"
 msgid "Switch to this profile now"
-msgstr ""
-
-msgctxt "#31132"
-msgid "Music Player"
 msgstr ""
 
 msgctxt "#31133"
@@ -505,28 +365,8 @@ msgctxt "#31137"
 msgid "Content Scraper:"
 msgstr ""
 
-msgctxt "#31138"
-msgid "Item Info"
-msgstr ""
-
-msgctxt "#31139"
-msgid "Item Options"
-msgstr ""
-
-msgctxt "#31140"
-msgid "DVD Menu"
-msgstr ""
-
-msgctxt "#31141"
-msgid "Chapter"
-msgstr ""
-
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr ""
-
-msgctxt "#31143"
-msgid "Stop video on return to menu"
 msgstr ""
 
 msgctxt "#31144"
@@ -557,10 +397,6 @@ msgctxt "#31150"
 msgid "Home: Hide Search"
 msgstr ""
 
-msgctxt "#31151"
-msgid "Home: Hide Programs"
-msgstr ""
-
 msgctxt "#31152"
 msgid "Press OK to cancel"
 msgstr ""
@@ -571,10 +407,6 @@ msgstr ""
 
 msgctxt "#31154"
 msgid "Search for Subtitles"
-msgstr ""
-
-msgctxt "#31155"
-msgid "Adjust Subtitle Offset"
 msgstr ""
 
 msgctxt "#31156"
@@ -589,20 +421,8 @@ msgctxt "#31159"
 msgid "Unknown"
 msgstr ""
 
-msgctxt "#31160"
-msgid "Home: Hide Favourites"
-msgstr ""
-
-msgctxt "#31161"
-msgid "Hide Info"
-msgstr ""
-
 msgctxt "#31162"
 msgid "Home menu items"
-msgstr ""
-
-msgctxt "#31163"
-msgid "Low CPU power mode"
 msgstr ""
 
 msgctxt "#31164"
@@ -613,32 +433,8 @@ msgctxt "#31165"
 msgid "Recordings"
 msgstr ""
 
-msgctxt "#31168"
-msgid "Subtitle Language:"
-msgstr ""
-
-msgctxt "#31169"
-msgid "Disable all background imagery in fullscreen music view"
-msgstr ""
-
-msgctxt "#31170"
-msgid "No recent items found"
-msgstr ""
-
 msgctxt "#31171"
 msgid "Start music visualisation immediately upon playback"
-msgstr ""
-
-msgctxt "#31172"
-msgid "Content Guide"
-msgstr ""
-
-msgctxt "#31173"
-msgid "No content guide available"
-msgstr ""
-
-msgctxt "#31174"
-msgid "Rated"
 msgstr ""
 
 msgctxt "#31175"
@@ -649,16 +445,8 @@ msgctxt "#31176"
 msgid "Recent Movies"
 msgstr ""
 
-msgctxt "#31177"
-msgid "Random Movies"
-msgstr ""
-
 msgctxt "#31178"
 msgid "Recent TV Shows"
-msgstr ""
-
-msgctxt "#31179"
-msgid "Random TV Shows"
 msgstr ""
 
 msgctxt "#31180"
@@ -705,20 +493,12 @@ msgctxt "#31190"
 msgid "All Episodes"
 msgstr ""
 
-msgctxt "#31191"
-msgid "Channel"
-msgstr ""
-
 msgctxt "#31192"
 msgid "Recorded"
 msgstr ""
 
 msgctxt "#31193"
 msgid "Duration"
-msgstr ""
-
-msgctxt "#31194"
-msgid "Subtitles"
 msgstr ""
 
 msgctxt "#31195"
@@ -733,18 +513,6 @@ msgctxt "#31197"
 msgid "Weather Forecasts"
 msgstr ""
 
-msgctxt "#31198"
-msgid "Adding Directory:"
-msgstr ""
-
-msgctxt "#31199"
-msgid "Details"
-msgstr ""
-
-msgctxt "#31200"
-msgid "Available Profiles"
-msgstr ""
-
 msgctxt "#31201"
 msgid "Record Show"
 msgstr ""
@@ -755,10 +523,6 @@ msgstr ""
 
 msgctxt "#31203"
 msgid "Smart Playlist"
-msgstr ""
-
-msgctxt "#31204"
-msgid "Playlist Rules"
 msgstr ""
 
 msgctxt "#31205"

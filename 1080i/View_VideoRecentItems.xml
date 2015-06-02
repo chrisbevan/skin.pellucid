@@ -11,7 +11,7 @@
             </animation>
             <control type="label">
                 <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
+                <posy>210</posy>
                 <width>24-col</width>
                 <height>1-row</height>
                 <align></align>
@@ -26,8 +26,8 @@
                 <width>24-col</width>
                 <height>11-row</height>
                 <onleft>9000</onleft>
-                <onup>control.setfocus(9997,$INFO[Container(9998).Position])</onup>
-                <ondown>control.setfocus(9997,$INFO[Container(9998).Position])</ondown>
+                <onup>9997</onup>
+                <ondown>9997</ondown>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
                 <animation type="windowopen">
@@ -172,7 +172,7 @@
             </animation>
             <control type="label">
                 <posx>col-1-begin</posx>
-                <posy>row-19-begin</posy>
+                <posy>714</posy>
                 <width>24-col</width>
                 <height>1-row</height>
                 <align></align>
@@ -187,8 +187,8 @@
                 <width>24-col</width>
                 <height>12-row</height>
                 <onleft>9000</onleft>
-                <ondown>control.setfocus(9998,$INFO[Container(9997).Position])</ondown>
-                <onup>control.setfocus(9998,$INFO[Container(9997).Position])</onup>
+                <ondown>9998</ondown>
+                <onup>9998</onup>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
                 <animation type="windowopen">
