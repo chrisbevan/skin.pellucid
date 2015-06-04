@@ -552,3 +552,7 @@ msgstr ""
 msgctxt "#31211"
 msgid "<Smart playlist name>"
 msgstr ""
+
+msgctxt "#31212"
+msgid "5 Day Forecast for"
+msgstr ""

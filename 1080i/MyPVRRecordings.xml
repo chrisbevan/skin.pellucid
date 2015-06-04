@@ -79,13 +79,14 @@
                         <control type="label">
                             <right>12</right>
                             <posy>0</posy>
-                            <width>6-col-gutter</width>
+                            <width>12-col</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
+                            <align>right</align>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date]$INFO[ListItem.Duration, • ,]</label>
+                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="24-col" height="2-row">
@@ -138,13 +139,14 @@
                         <control type="label">
                             <right>12</right>
                             <posy>0</posy>
-                            <width>6-col-gutter</width>
+                            <width>12-col</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
+                            <align>right</align>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date]$INFO[ListItem.Duration, • ,]</label>
+                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </focusedlayout>
                 </control>
