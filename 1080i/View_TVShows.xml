@@ -7,7 +7,7 @@
 
             <!--fanart-->
             <control type="group">
-                <visible>container.content(tvshows)</visible>
+                <visible>container.content(tvshows) | Substring(Container.folderpath,plugin)</visible>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
                     <aspectratio scalediffuse="false">stretch</aspectratio>

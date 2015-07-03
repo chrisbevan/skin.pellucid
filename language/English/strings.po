@@ -46,7 +46,7 @@ msgid "Power Off"
 msgstr ""
 
 msgctxt "#31005"
-msgid "Latest"
+msgid "What's New"
 msgstr ""
 
 msgctxt "#31006"
@@ -513,6 +513,10 @@ msgctxt "#31197"
 msgid "Weather Forecasts"
 msgstr ""
 
+msgctxt "#31198"
+msgid "unwatched"
+msgstr ""
+
 msgctxt "#31201"
 msgid "Record Show"
 msgstr ""
@@ -523,6 +527,10 @@ msgstr ""
 
 msgctxt "#31203"
 msgid "Smart Playlist"
+msgstr ""
+
+msgctxt "#31204"
+msgid "Episode"
 msgstr ""
 
 msgctxt "#31205"

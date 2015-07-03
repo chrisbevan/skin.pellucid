@@ -3,13 +3,6 @@
     <!--main hub video menu items-->
     <include name="videoMenu">
         <content>
-            <!--Now Playing-->
-            <item>
-                <visible>Player.HasVideo</visible>
-                <label>31136</label>
-                <label2/>
-                <onclick>action(fullscreen)</onclick>
-            </item>
             <!--CD / DVD handling-->
             <item>
                 <visible>System.HasMediaDVD</visible>
@@ -23,6 +16,16 @@
                 <label2/>
                 <onclick>EjectTray()</onclick>
             </item>
+            <!--search-->
+            <item>
+                <visible>System.HasAddon(script.globalsearch)</visible>
+                <label>137</label>
+                <label2/>
+                <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                <onclick>activateWindow(videos,movietitles)</onclick>
+                <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
+                <onclick>right</onclick>
+            </item>
             <!--latest items-->
             <item>
                 <label>31005</label>
@@ -30,7 +33,7 @@
                 <onclick>reloadskin()</onclick>
                 <onclick>activateWindow(VideoLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
-                <onclick>Control.SetFocus(9000)</onclick>
+                <onclick>Control.SetFocus(9998)</onclick>
             </item>
             <item>
                 <visible>System.GetBool(pvrmanager.enabled)</visible>
@@ -69,14 +72,6 @@
                 <label>20343</label>
                 <label2/>
                 <onclick>activateWindow(Videos,videodb://tvshows/titles,return)</onclick>
-                <onclick>control.setfocus(50)</onclick>
-                <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-            </item>
-            <item>
-                <visible/>
-                <label>136</label>
-                <label2/>
-                <onclick>activateWindow(Videos,playlists,return)</onclick>
                 <onclick>control.setfocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
@@ -197,6 +192,15 @@
                 <label>31135</label>
                 <label2/>
                 <onclick>EjectTray()</onclick>
+            </item>
+            <!--search-->
+            <item>
+                <visible>System.HasAddon(script.globalsearch)</visible>
+                <label>137</label>
+                <label2/>
+                <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
+                <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+                <onclick>right</onclick>
             </item>
             <!--latest items-->
             <item>

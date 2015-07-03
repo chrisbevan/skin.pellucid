@@ -46,6 +46,7 @@
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>4-row</posy>
                         <width>240</width>
@@ -57,6 +58,7 @@
                         <label>$INFO[ListItem.title]</label>
                     </control>
                     <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>5-row</posy>
                         <width>240</width>

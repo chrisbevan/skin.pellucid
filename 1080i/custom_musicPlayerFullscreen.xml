@@ -256,14 +256,6 @@
                                 <onclick>PlayerControl(Random)</onclick>
                             </item>
                             <item>
-                                <description>Playlist</description>
-                                <label>31097</label>
-                                <label2></label2>
-                                <thumb>-</thumb>
-                                <onclick>activateWindow(500)</onclick>
-                                <onclick>dialog.close(5001)</onclick>
-                            </item>
-                            <item>
                                 <description>Visualisation</description>
                                 <label>31032</label>
                                 <label2></label2>

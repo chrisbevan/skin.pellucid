@@ -72,7 +72,7 @@
             <posx>col-10-begin</posx>
             <posy>row-9-begin</posy>
             <width>15-col</width>
-            <height>18-row</height>
+            <height>19-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>56</ondown>

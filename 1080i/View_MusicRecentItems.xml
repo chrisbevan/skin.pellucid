@@ -50,6 +50,7 @@
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>2-row</posy>
                             <width>240</width>
@@ -61,6 +62,7 @@
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>3-row</posy>
                             <width>240</width>
@@ -222,6 +224,7 @@
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>2-row</posy>
                             <width>240</width>
@@ -233,6 +236,7 @@
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>3-row</posy>
                             <width>240</width>
@@ -390,6 +394,7 @@
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>2-row</posy>
                             <width>240</width>
@@ -401,6 +406,7 @@
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>3-row</posy>
                             <width>240</width>

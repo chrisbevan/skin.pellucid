@@ -34,11 +34,11 @@
                 <control type="group" id="9500">
                     <visible>[SubString(skin.string(showRecentVideoItems),false) | !skin.string(showRecentVideoItems)]</visible>
                     <include>movies</include>
-                    <include>files</include>
                     <include>tvshows</include>
                     <include>seasons</include>
                     <include>episodes</include>
                     <include>addons</include>
+                    <include>files</include>
                 </control>
             </control>
 
