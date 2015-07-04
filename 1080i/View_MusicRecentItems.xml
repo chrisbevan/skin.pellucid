@@ -1,387 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="musicRecentItems">
-         <control type="group">
-             <posx>col-1-begin</posx>
-             <posy>row-5-begin</posy>
+        <control type="group">
+            <include>fadeInOut</include>
 
-             <!--animations-->
-             <animation type="Conditional" condition="controlgroup(9301).hasfocus | controlgroup(9302).hasfocus" reversible="false">
-                 <effect type="slide" start="0" end="0,-398" tween="cubic" easing="out" time="400"/>
-             </animation>
-             <animation type="Conditional" condition="controlgroup(9302).hasfocus" reversible="false">
-                  <effect type="slide" start="0" end="0,-686" tween="cubic" easing="out" time="400"/>
-              </animation>
-
-             <!--top albums-->
-             <control type="group" id="9300">
-                <animation type="Conditional" condition="!controlgroup(9300).hasfocus + !controlgroup(9000).hasfocus">
-                    <effect type="fade" start="100" end="5" time="200"/>
-                </animation>
-                <control type="label">
+            <!--fanart-->
+            <control type="group">
+                <control type="image">
                     <posx>0</posx>
-                    <posy>12</posy>
-                    <width>24-col</width>
-                    <height>1-row</height>
-                    <align></align>
-                    <font>regularStrong</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$LOCALIZE[31187]</label>
+                    <posy>0</posy>
+                    <width>fullscreenWidth</width>
+                    <height>fullscreenHeight</height>
+                    <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
+                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
+                    <fadetime>500</fadetime>
+                    <colordiffuse>66ffffff</colordiffuse>
+                    <include>kenBurnsey</include>
                 </control>
-                <control type="panel" id="9998">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>24-col</width>
-                    <height>10-row</height>
-                    <onleft>9000</onleft>
-                    <ondown>9997</ondown>
-                    <content>plugin://script.thedeadman.functions?type=favouritealbums</content>
-                    <orientation>horizontal</orientation>
-                    <itemlayout width="4-col" height="4-col">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="3">colors/black.png</texture>
-                            <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>textboxInactive</colordiffuse>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
-                            <posx>12</posx>
-                            <posy>2-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.Title]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
-                            <posx>12</posx>
-                            <posy>3-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.artist]</label>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="4-col" height="4-col">
-                        <control type="group">
-                            <animation type="focus" loop="false" reversible="false">
-                                <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-                                <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
-                                <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
-                            </animation>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/offblack.png</texture>
-                                <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ffFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>3</posx>
-                                <posy>3</posy>
-                                <width>258</width>
-                                <height>258</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/black.png</texture>
-                                <colordiffuse>ccFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">$INFO[Listitem.thumb]</texture>
-                                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ff666666</colordiffuse>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>2-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.title]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>3-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.Artist]</label>
-                            </control>
-                            <control type="grouplist">
-                                <posx>42</posx>
-                                <posy>5-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31183]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
-                            </control>
-                        </control>
-                    </focusedlayout>
+                <control type="image">
+                    <include>dimensionsFullscreen</include>
+                    <texture>vignette.png</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-            <!--recently added albums-->
-            <control type="group" id="9301">
-                <animation type="Conditional" condition="controlgroup(9302).hasfocus">
-                    <effect type="fade" start="100" end="5" time="200"/>
+
+            <control type="image">
+                <posx>0</posx>
+                <posy>row-20-begin</posy>
+                <width>fullscreenWidth</width>
+                <height>15-row</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/black.png</texture>
+                <colordiffuse>ccffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>row-20-begin</posy>
+                <width>fullscreenWidth</width>
+                <height>6</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
+
+            <!--titles-->
+            <control type="group">
+                <animation type="conditional" condition="!control.hasfocus(9998)">
+                    <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
+                <animation type="conditional" condition="control.hasfocus(9998)">
+                    <effect type="slide" start="800" end="0" tween="cubic" easing="out" delay="600" time="400"/>
+                    <effect type="fade" start="0" end="100" delay="600" time="200"/>
+                </animation>
+
+                <visible>!controlgroup(9000).hasfocus</visible>
+                <posx>col-17-begin</posx>
+                <posy>row-4-begin</posy>
+
                 <control type="label">
                     <posx>0</posx>
-                    <posy>408</posy>
-                    <width>24-col</width>
-                    <height>1-row</height>
-                    <align></align>
-                    <font>regularStrong</font>
+                    <posy>0</posy>
+                    <width>8-col</width>
+                    <height>4-row</height>
+                    <font>largeStrong</font>
                     <textcolor>textActive</textcolor>
-                    <label>$LOCALIZE[31180]</label>
+                    <shadowcolor>-</shadowcolor>
+                    <wrapmultiline>true</wrapmultiline>
+                    <label>$INFO[container(9998).listitem.title]</label>
                 </control>
-                <control type="panel" id="9997">
+                <control type="label">
                     <posx>0</posx>
-                    <posy>13-row</posy>
-                    <width>24-col</width>
-                    <height>20-row</height>
-                    <onleft>9000</onleft>
-                    <onup>9998</onup>
-                    <ondown>9996</ondown>
-                    <content>plugin://script.thedeadman.functions?type=recentalbums</content>
-                    <itemlayout width="4-col" height="4-col">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="3">colors/black.png</texture>
-                            <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>textboxInactive</colordiffuse>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
-                            <posx>12</posx>
-                            <posy>2-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.Title]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
-                            <posx>12</posx>
-                            <posy>3-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.artist]</label>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="4-col" height="4-col">
-                        <control type="group">
-                            <animation type="focus" loop="false" reversible="false">
-                                <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-                                <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
-                                <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
-                            </animation>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/offblack.png</texture>
-                                <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ffFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>3</posx>
-                                <posy>3</posy>
-                                <width>258</width>
-                                <height>258</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/black.png</texture>
-                                <colordiffuse>ccFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">$INFO[Listitem.thumb]</texture>
-                                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ff666666</colordiffuse>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>2-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.title]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>3-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.Artist]</label>
-                            </control>
-                            <control type="grouplist">
-                                <posx>42</posx>
-                                <posy>5-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31183]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
-                            </control>
-                        </control>
-                    </focusedlayout>
+                    <posy>4-row</posy>
+                    <width>8-col</width>
+                    <height>1-row</height>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$INFO[container(9998).listitem.artist] $INFO[container(9998).listitem.year,(,) ][/COLOR]</label>
+                </control>
+                <control type="textbox">
+                    <posx>0</posx>
+                    <posy>5-row</posy>
+                    <font>textbox</font>
+                    <width>8-col-gutter</width>
+                    <align>left</align>
+                    <textcolor>textActive</textcolor>
+                    <height>268</height>
+                    <label fallback="31205">$INFO[container(9998).ListItem.property(album_description)]</label>
+                    <autoscroll delay="5000" time="1500" repeat="10000"/>
                 </control>
             </control>
-            <!--random albums-->
-            <control type="group" id="9302">
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>1092</posy>
-                    <width>24-col</width>
-                    <height>1-row</height>
-                    <align></align>
-                    <font>regularStrong</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$LOCALIZE[31181]</label>
-                </control>
-                <control type="panel" id="9996">
-                    <posx>0</posx>
-                    <posy>1152</posy>
-                    <width>24-col</width>
-                    <height>20-row</height>
-                    <onleft>9000</onleft>
-                    <onup>9997</onup>
-                    <content>plugin://script.thedeadman.functions?type=randomalbums</content>
-                    <itemlayout width="4-col" height="4-col">
+
+            <!--content selector-->
+            <control type="list" id="9123">
+                <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
+                    <effect type="fade" start="100" end="0" time="200"/>
+                </animation>
+                <posx>col-1-begin</posx>
+                <posy>row-18-begin</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <onleft>9000</onleft>
+                <ondown>9998</ondown>
+                <orientation>horizontal</orientation>
+                <itemlayout width="6-col" height="2-row">
+                    <control type="image">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col</width>
+                        <height>2-row</height>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>ccffffff</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <font>buttonTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.property(textTitle)]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="6-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col</width>
+                        <height>2-row</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <font>buttonTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.property(textTitle)]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>recentalbums</label>
+                        <property name="textTitle">31180</property>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item id="2">
+                        <label>randomalbums</label>
+                        <property name="textTitle">31181</property>
+                        <onclick>noop</onclick>
+                    </item>
+                </content>
+            </control>
+
+            <!--content listing-->
+            <control type="panel" id="9998">
+                <posx>col-1-begin</posx>
+                <posy>row-21-begin</posy>
+                <width>1740</width>
+                <height>9-row</height>
+                <onup>9123</onup>
+                <onleft>9000</onleft>
+                <onback>activateWindow(home)</onback>
+                <orientation>horizontal</orientation>
+                <content>plugin://script.thedeadman.functions?type=$INFO[control.getlabel(9123)]</content>
+                <itemlayout width="4-col" height="4-col">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="3">colors/black.png</texture>
+                        <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>2-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.artist]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="4-col">
+                    <control type="group">
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+                            <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
+                        </animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -389,7 +236,7 @@
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="3">colors/black.png</texture>
-                            <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
@@ -402,8 +249,8 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.Title]</label>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus</visible>
@@ -414,7 +261,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.artist]</label>
                         </control>
                         <control type="image">
@@ -423,113 +270,13 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[Listitem.thumb]</texture>
-                            <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                            <texture border="0">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
-                            <colordiffuse>ffFFFFFF</colordiffuse>
+                            <colordiffuse>ffffffff</colordiffuse>
                         </control>
-                    </itemlayout>
-                    <focusedlayout width="4-col" height="4-col">
-                        <control type="group">
-                            <animation type="focus" loop="false" reversible="false">
-                                <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-                                <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
-                                <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
-                            </animation>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/offblack.png</texture>
-                                <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ffFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>3</posx>
-                                <posy>3</posy>
-                                <width>258</width>
-                                <height>258</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/black.png</texture>
-                                <colordiffuse>ccFFFFFF</colordiffuse>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>4-col-gutter</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture border="0">$INFO[Listitem.thumb]</texture>
-                                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>ff666666</colordiffuse>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>2-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.title]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>3-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.Artist]</label>
-                            </control>
-                            <control type="grouplist">
-                                <posx>42</posx>
-                                <posy>5-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31183]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
-                            </control>
-                        </control>
-                    </focusedlayout>
-                </control>
+                    </control>
+                </focusedlayout>
             </control>
         </control>
     </include>

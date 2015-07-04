@@ -289,6 +289,10 @@ msgctxt "#31101"
 msgid "Delete Group"
 msgstr ""
 
+msgctxt "#31102"
+msgid "Disable fanart animation effect"
+msgstr ""
+
 msgctxt "#31103"
 msgid "Profile Settings"
 msgstr ""
@@ -454,7 +458,7 @@ msgid "Recent Albums"
 msgstr ""
 
 msgctxt "#31181"
-msgid "Random Album Selection"
+msgid "Random Selection"
 msgstr ""
 
 msgctxt "#31182"

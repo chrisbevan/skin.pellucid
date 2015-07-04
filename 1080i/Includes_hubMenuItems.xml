@@ -209,6 +209,7 @@
                 <onclick>reloadskin()</onclick>
                 <onclick>ActivateWindow(MusicLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
+                <onclick>Control.SetFocus(9998)</onclick>
             </item>
             <!--music-->
             <item>
@@ -366,6 +367,7 @@
             <item>
                 <visible/>
                 <label>1214</label>
+                <onclick>replaceWindow(musiclibrary,musicdb://albums)</onclick>
                 <onclick>ActivateWindow(MusicFiles,root)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Control.SetFocus(51)</onclick>

@@ -19,7 +19,7 @@
     </include>
     <!--ken burnsey style effect for fanart images-->
     <include name="kenBurnsey">
-        <animation type="conditional" condition="true" loop="true">
+        <animation type="conditional" condition="!Skin.HasSetting(lowPowerMode)" loop="true">
             <effect type="fade" start="0" end="100" time="2000"/>
             <effect type="zoom" center="auto" start="130" end="100" time="15000"/>
             <effect type="fade" start="100" end="0" time="1000" delay="14000"/>

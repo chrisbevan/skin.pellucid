@@ -64,7 +64,7 @@
                     </animation>
                     <!--Screen burn protection-->
                     <animation type="conditional" condition="true" pulse="true">
-                        <effect type="fade" start="100" end="0" time="2500" delay="20000"/>
+                        <effect type="fade" start="100" end="0" time="2500" delay="60000"/>
                     </animation>
                     <posx>col-1-begin</posx>
                     <posy>row-22-begin</posy>

@@ -202,6 +202,15 @@
                     <onclick>Skin.ToggleSetting(startVisualiserOnPlayback)</onclick>
                     <selected>Skin.HasSetting(startVisualiserOnPlayback)</selected>
                 </control>
+                <control type="radiobutton" id="20">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Disable fanart animation effect</description>
+                    <width>14-col</width>
+                    <label>31102</label>
+                    <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <selected>Skin.HasSetting(lowPowerMode)</selected>
+                </control>
             </control>
         </control>
         <!--debugging-->
