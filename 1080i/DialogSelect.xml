@@ -213,7 +213,7 @@
                             <control type="label">
                                 <posx>1-col-indent</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>324</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -248,7 +248,7 @@
                             <control type="label">
                                 <posx>1-col-indent</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>324</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>

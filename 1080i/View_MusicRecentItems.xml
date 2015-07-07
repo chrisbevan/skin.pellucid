@@ -55,7 +55,7 @@
                 </animation>
 
                 <visible>!controlgroup(9000).hasfocus</visible>
-                <posx>col-17-begin</posx>
+                <posx>col-16-begin</posx>
                 <posy>row-4-begin</posy>
 
                 <control type="label">
@@ -67,17 +67,7 @@
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <wrapmultiline>true</wrapmultiline>
-                    <label>$INFO[container(9998).listitem.title]</label>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>4-row</posy>
-                    <width>8-col</width>
-                    <height>1-row</height>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$INFO[container(9998).listitem.artist] $INFO[container(9998).listitem.year,(,) ][/COLOR]</label>
+                    <label>$INFO[container(9998).listitem.artist] [COLOR highlight]$INFO[container(9998).listitem.title]$INFO[container(9998).listitem.year, (,) ][/COLOR]</label>
                 </control>
                 <control type="textbox">
                     <posx>0</posx>
@@ -100,7 +90,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-18-begin</posy>
                 <width>24-col</width>
-                <height>2-row</height>
+                <height>78</height>
                 <onleft>9000</onleft>
                 <ondown>9998</ondown>
                 <orientation>horizontal</orientation>
@@ -127,15 +117,18 @@
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="2-row">
+                <focusedlayout width="6-col" height="78">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col</width>
-                        <height>2-row</height>
+                        <height>84</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="slide" start="0,0" end="0,-6" center="auto" tween="back" easing="out" time="300"/>
+                        </animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -151,12 +144,17 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <label>recentalbums</label>
+                        <label>plugin://script.thedeadman.functions?type=recentalbums</label>
                         <property name="textTitle">31180</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
-                        <label>randomalbums</label>
+                        <label>plugin://script.thedeadman.functions?type=favouritealbums</label>
+                        <property name="textTitle">31187</property>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item id="3">
+                        <label>plugin://script.thedeadman.functions?type=randomalbums</label>
                         <property name="textTitle">31181</property>
                         <onclick>noop</onclick>
                     </item>
@@ -165,15 +163,15 @@
 
             <!--content listing-->
             <control type="panel" id="9998">
-                <posx>col-1-begin</posx>
+                <posx>72</posx>
                 <posy>row-21-begin</posy>
-                <width>1740</width>
+                <width>1776</width>
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
-                <content>plugin://script.thedeadman.functions?type=$INFO[control.getlabel(9123)]</content>
+                <content>$INFO[control.getlabel(9123)]</content>
                 <itemlayout width="4-col" height="4-col">
                     <control type="image">
                         <posx>0</posx>

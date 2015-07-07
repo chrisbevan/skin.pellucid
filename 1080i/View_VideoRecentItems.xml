@@ -128,7 +128,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-18-begin</posy>
                 <width>24-col</width>
-                <height>2-row</height>
+                <height>84</height>
                 <onleft>9000</onleft>
                 <ondown>9998</ondown>
                 <orientation>horizontal</orientation>
@@ -155,15 +155,18 @@
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="2-row">
+                <focusedlayout width="6-col" height="78">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col</width>
-                        <height>2-row</height>
+                        <height>78</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="slide" start="0,0" end="0,-6" center="auto" tween="back" easing="out" time="300"/>
+                        </animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -193,9 +196,9 @@
 
             <!--content listing-->
             <control type="panel" id="9998">
-                <posx>col-1-begin</posx>
+                <posx>72</posx>
                 <posy>row-21-begin</posy>
-                <width>24-col</width>
+                <width>1776</width>
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>

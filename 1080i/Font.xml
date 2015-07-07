@@ -192,7 +192,7 @@
         <font>
             <name>symbolWeather</name>
             <filename>weather.ttf</filename>
-            <size>180</size>
+            <size>60</size>
         </font>
         <!-- Required for system -->
         <font>

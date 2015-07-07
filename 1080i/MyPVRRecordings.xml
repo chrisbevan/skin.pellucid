@@ -155,8 +155,18 @@
                 <control type="group">
                     <posx>0</posx>
                     <posy>22-row</posy>
+                    <control type="progress">
+                        <description>Disk usage bar</description>
+                        <left>0</left>
+                        <top>1</top>
+                        <width>4-col-gutter</width>
+                        <height>1-row</height>
+                        <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
+                        <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                        <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
+                    </control>
                     <control type="label">
-                        <posx>0</posx>
+                        <posx>4-col</posx>
                         <posy>0</posy>
                         <width>12-col-gutter</width>
                         <font>itemTitle</font>

@@ -5,6 +5,7 @@
     <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
     <onunload condition="skin.string(showcast,true)">action(info)</onunload>
+    <zorder>0</zorder>
     <controls>
         <control type="group">
             <!--background / fanart-->
