@@ -87,7 +87,7 @@
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
-                <posx>col-1-begin</posx>
+                <posx>72</posx>
                 <posy>row-18-begin</posy>
                 <width>24-col</width>
                 <height>78</height>

@@ -179,19 +179,19 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--logo-->
-            <control type="image">
-                <posx>col-1-begin</posx>
-                <posy>row-1-begin</posy>
-                <width>1-col</width>
-                <height>1-col</height>
-                <texture>kodilogo.png</texture>
-                <colordiffuse>textActive</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="Conditional" condition="controlgroup(9000).hasfocus">
-                    <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" delay="600" time="300"/>
-                    <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="900" time="300"/>
-                </animation>
+            <!--section logo-->
+            <control type="group">
+                <control type="label">
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbolVeryLarge</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
             </control>
             <control type="list" id="500">
                 <posx>0</posx>

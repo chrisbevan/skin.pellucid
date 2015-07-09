@@ -26,15 +26,15 @@ msgid ""
 msgstr ""
 
 msgctxt "#31000"
-msgid "Watch Videos"
+msgid "Videos"
 msgstr ""
 
 msgctxt "#31001"
-msgid "Listen to Music"
+msgid "Music"
 msgstr ""
 
 msgctxt "#31002"
-msgid "View Photos"
+msgid "Photos"
 msgstr ""
 
 msgctxt "#31003"
@@ -42,7 +42,7 @@ msgid "Program Addons"
 msgstr ""
 
 msgctxt "#31004"
-msgid "Power Off"
+msgid "Power"
 msgstr ""
 
 msgctxt "#31005"
@@ -51,6 +51,10 @@ msgstr ""
 
 msgctxt "#31006"
 msgid "Live TV"
+msgstr ""
+
+msgctxt "#31007"
+msgid "System Info"
 msgstr ""
 
 msgctxt "#31010"
@@ -414,7 +418,7 @@ msgid "Search for Subtitles"
 msgstr ""
 
 msgctxt "#31156"
-msgid "Play Games"
+msgid "Games"
 msgstr ""
 
 msgctxt "#31157"
@@ -514,7 +518,7 @@ msgid "Hide watched items"
 msgstr ""
 
 msgctxt "#31197"
-msgid "Weather Forecasts"
+msgid "Weather"
 msgstr ""
 
 msgctxt "#31198"

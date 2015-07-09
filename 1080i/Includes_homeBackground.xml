@@ -126,15 +126,5 @@
                 </animation>
             </control>
         </control>
-        <!--overlay-->
-        <control type="image">
-            <animation type="windowopen">
-                <effect type="fade" start="0" end="100" time="200" delay="500" tween="linear"/>
-            </animation>
-            <include>dimensionsFullscreen</include>
-            <texture>logoOverlay.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
     </include>
 </includes>
