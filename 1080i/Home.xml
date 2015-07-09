@@ -31,6 +31,15 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="image">
+                <posx>col-5-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <!--logo-->
             <control type="image">
                 <posx>col-1-begin</posx>

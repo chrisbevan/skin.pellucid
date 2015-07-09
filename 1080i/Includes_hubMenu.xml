@@ -24,6 +24,15 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="image">
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
 
             <!--section logo-->
             <control type="group">
@@ -38,7 +47,7 @@
                     <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label></label>
+                    <label></label>
                 </control>
                 <!--music-->
                 <control type="label">
@@ -136,19 +145,56 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--logo-->
             <control type="image">
-                <posx>col-1-begin</posx>
-                <posy>row-1-begin</posy>
-                <width>1-col</width>
-                <height>1-col</height>
-                <texture>kodilogo.png</texture>
-                <colordiffuse>textActive</colordiffuse>
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <animation type="Conditional" condition="controlgroup(9000).hasfocus">
-                    <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" delay="600" time="300"/>
-                    <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="900" time="300"/>
-                </animation>
+            </control>
+            <!--section logo-->
+            <control type="group">
+                <!--videos-->
+                <control type="label">
+                    <visible>Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)</visible>
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbolVeryLarge</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
+                <!--music-->
+                <control type="label">
+                    <visible>window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbolVeryLarge</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
+                <!--pictures-->
+                <control type="label">
+                    <visible>window.isactive(pictures)</visible>
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbolVeryLarge</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
             </control>
             <!--menu items-->
             <control type="grouplist" id="9002">

@@ -179,6 +179,15 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+            <control type="image">
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <!--section logo-->
             <control type="group">
                 <control type="label">
@@ -257,6 +266,15 @@
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
@@ -397,6 +415,15 @@
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
