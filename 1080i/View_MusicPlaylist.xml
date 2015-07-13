@@ -18,7 +18,16 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>23-col</width>
+                        <width>21-col-indent</width>
+                        <height>69</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <posx>1599</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
@@ -26,15 +35,14 @@
                     </control>
                     <control type="image">
                         <visible>ListItem.IsPlaying</visible>
-                        <posx>1-col</posx>
+                        <posx>12</posx>
                         <posy>0</posy>
-                        <width>23-col</width>
-                        <height>69</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>66ffffff</colordiffuse>
+                        <width>1-col-gutter</width>
+                        <height>1-col-gutter</height>
+                        <texture>equaliser.gif</texture>
                     </control>
                     <control type="image">
+                        <visible>!ListItem.IsPlaying</visible>
                         <posx>0</posx>
                         <posy>3</posy>
                         <width>66</width>
@@ -51,7 +59,7 @@
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
+                        <label>[COLOR highlight]$INFO[ListItem.Artist][/COLOR]  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
                         <right>24</right>
@@ -82,13 +90,35 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>23-col</width>
-                        <height>2-row</height>
+                        <width>21-col-indent</width>
+                        <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="image">
+                        <posx>1599</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <height>69</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <visible>ListItem.IsPlaying</visible>
+                        <posx>12</posx>
+                        <posy>0</posy>
+                        <width>1-col-gutter</width>
+                        <height>1-col-gutter</height>
+                        <texture>equaliser.gif</texture>
+                        <animation type="focus" loop="false" reversible="false">
+                            <effect type="fade" time="500"/>
+                            <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                        </animation>
+                    </control>
+                    <control type="image">
+                        <visible>!ListItem.IsPlaying</visible>
                         <posx>0</posx>
                         <posy>3</posy>
                         <width>66</width>
@@ -109,7 +139,7 @@
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Artist] - $INFO[ListItem.Title]</label>
+                        <label>$INFO[ListItem.Artist]  $INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
                         <right>24</right>

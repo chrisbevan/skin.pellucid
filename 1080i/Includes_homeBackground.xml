@@ -11,6 +11,7 @@
             </animation>
             <!--library based thumbs-->
             <control type="panel" id="9451">
+                <enable>false</enable>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>fullscreenWidth</width>

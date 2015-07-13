@@ -62,7 +62,7 @@
                 <width>24-col</width>
                 <textcolor>textActive</textcolor>
                 <height>3-row</height>
-                <label>$INFO[videoplayer.plot]</label>
+                <label fallback="31205">$INFO[videoplayer.plot]</label>
                 <autoscroll delay="10000" time="1000" repeat="10000"/>
             </control>
             <!--subtitles etc-->
@@ -150,7 +150,7 @@
                 </focusedlayout>
                 <content>
                     <item>
-                        <enable>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enable>
+                        <visible>System.GetBool(pvrmanager.enabled) + Player.CanRecord</visible>
                         <label>31201</label>
                         <label2></label2>
                         <thumb>-</thumb>

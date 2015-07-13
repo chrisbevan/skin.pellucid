@@ -52,37 +52,40 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-            <!--info-->
+            <!--Track info-->
             <control type="group">
-                <!--track info-->
+                <!--cover-->
                 <control type="group">
-                    <animation type="windowOpen">
-                        <effect type="fade" start="0" end="100" time="500" delay="1000"/>
-                    </animation>
-                    <animation type="windowClose">
-                        <effect type="fade" start="100" end="0" time="300"/>
-                    </animation>
-                    <!--Screen burn protection-->
-                    <animation type="conditional" condition="true" pulse="true">
-                        <effect type="fade" start="100" end="0" time="2500" delay="60000"/>
-                    </animation>
                     <posx>col-1-begin</posx>
-                    <posy>row-22-begin</posy>
+                    <posy>row-16-begin</posy>
+                    <animation type="visible">
+                        <include>listSlideIn</include>
+                    </animation>
+                    <animation type="hidden">
+                        <effect type="fade" start="100" end="0" time="200"/>
+                    </animation>
+                    <!--album thumb and info-->
                     <control type="image">
-                        <posx>-18</posx>
-                        <posy>-20</posy>
-                        <width>3-col</width>
-                        <height>3-col</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[musicplayer.cover]</texture>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col</width>
+                        <height>6-col</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[musicplayer.cover]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <fadetime>500</fadetime>
+                        <animation effect="rotateY" end="-7" center="auto,auto" time="0">windowopen</animation>
                     </control>
+                </control>
+                <!--track info-->
+                <control type="group">
+                    <posx>col-5-begin</posx>
+                    <posy>row-19-begin</posy>
                     <control type="label">
                         <posx>3-col-indent</posx>
                         <posy>-8</posy>
-                        <width>20-col</width>
+                        <width>15-col</width>
                         <font>largeBlack</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
@@ -93,7 +96,7 @@
                         <visible>!Pvr.IsPlayingRadio</visible>
                         <posx>3-col-indent</posx>
                         <posy>52</posy>
-                        <width>20-col</width>
+                        <width>15-col</width>
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
@@ -104,7 +107,7 @@
                         <visible>Pvr.IsPlayingRadio</visible>
                         <posx>3-col-indent</posx>
                         <posy>48</posy>
-                        <width>20-col</width>
+                        <width>15-col</width>
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>

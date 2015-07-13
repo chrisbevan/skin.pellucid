@@ -153,7 +153,7 @@
 
                 <!--Additional info-->
                 <control type="group">
-                    <posx>0</posx>
+                    <posx>72</posx>
                     <posy>22-row</posy>
                     <control type="progress">
                         <description>Disk usage bar</description>

@@ -6,7 +6,7 @@
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <control type="panel" id="51">
-                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(songs) + !container.content(addons)</visible>
+                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(addons)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>24-col</width>

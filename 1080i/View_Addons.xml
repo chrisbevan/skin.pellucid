@@ -4,7 +4,6 @@
 
         <control type="group">
             <visible>container.content(addons)</visible>
-
             <control type="panel" id="59">
                 <visible>!StringCompare(container.foldername,files) + !container.content(movies) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin)</visible>
                 <posx>col-1-begin</posx>

@@ -218,7 +218,7 @@
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                         <posx>12</posx>
                         <posy>2-row</posy>
                         <width>168</width>
@@ -230,7 +230,19 @@
                         <label>$INFO[ListItem.title]</label>
                     </control>
                     <control type="label">
-                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                        <posx>12</posx>
+                        <posy>2-row</posy>
+                        <width>168</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.tvshowtitle]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                         <posx>12</posx>
                         <posy>3-row</posy>
                         <width>168</width>
@@ -240,6 +252,18 @@
                         <font>buttonTitle</font>
                         <textcolor>disabled</textcolor>
                         <label>$INFO[ListItem.year]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>168</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -283,7 +307,7 @@
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                             <posx>12</posx>
                             <posy>2-row</posy>
                             <width>168</width>
@@ -295,7 +319,19 @@
                             <label>$INFO[ListItem.title]</label>
                         </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>168</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.tvshowtitle]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                             <posx>12</posx>
                             <posy>3-row</posy>
                             <width>168</width>
@@ -305,6 +341,18 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.year]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>168</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
