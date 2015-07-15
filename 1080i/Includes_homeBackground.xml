@@ -31,7 +31,7 @@
                         <width>3-col-textbox</width>
                         <height>3-col-textbox</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
                         <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                 </itemlayout>

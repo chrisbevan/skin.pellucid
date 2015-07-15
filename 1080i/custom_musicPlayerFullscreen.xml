@@ -81,7 +81,7 @@
                 <!--track info-->
                 <control type="group">
                     <posx>col-5-begin</posx>
-                    <posy>row-19-begin</posy>
+                    <posy>row-22-begin</posy>
                     <control type="label">
                         <posx>3-col-indent</posx>
                         <posy>-8</posy>
@@ -89,7 +89,7 @@
                         <font>largeBlack</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
-                        <label>[COLOR highlight]$INFO[MusicPlayer.artist,, ][/COLOR]$INFO[MusicPlayer.Title]</label>
+                        <label>$INFO[MusicPlayer.Title]</label>
                         <shadowcolor>00000000</shadowcolor>
                    </control>
                     <control type="label">
@@ -100,7 +100,7 @@
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
-                        <label>$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
+                        <label>[COLOR highlight]$INFO[MusicPlayer.artist,, ][/COLOR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
                         <shadowcolor>00000000</shadowcolor>
                     </control>
                     <control type="label">
