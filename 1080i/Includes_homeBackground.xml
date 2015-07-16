@@ -26,12 +26,23 @@
                 </animation>
                 <itemlayout width="3-col" height="3-col">
                     <control type="image">
+                        <visible>Container(9000).HasFocus(10)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>3-col-textbox</width>
                         <height>3-col-textbox</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(thumb)]</texture>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(poster)]</texture>
+                        <colordiffuse>44FFFFFF</colordiffuse>
+                    </control>
+                    <control type="image">
+                        <visible>!Container(9000).HasFocus(10)</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>3-col-textbox</width>
+                        <height>3-col-textbox</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                         <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                 </itemlayout>
