@@ -67,7 +67,7 @@
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <wrapmultiline>true</wrapmultiline>
-                    <label>$INFO[container(9998).listitem.artist] [COLOR highlight]$INFO[container(9998).listitem.title]$INFO[container(9998).listitem.year, (,) ][/COLOR]</label>
+                    <label>$INFO[container(9998).listitem.title] [COLOR highlight]$INFO[container(9998).listitem.artist]$INFO[container(9998).listitem.year, (,) ][/COLOR]</label>
                 </control>
                 <control type="textbox">
                     <posx>0</posx>
