@@ -182,11 +182,13 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
+                        <visible>Library.HasContent(movies)</visible>
                         <label>recentmovies</label>
                         <property name="textTitle">31176</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
+                        <visible>Library.HasContent(tvshows)</visible>
                         <label>recentepisodes</label>
                         <property name="textTitle">31178</property>
                         <onclick>noop</onclick>

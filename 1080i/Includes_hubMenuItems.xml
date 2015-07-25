@@ -28,9 +28,9 @@
             </item>
             <!--latest items-->
             <item>
+                <visible>Library.HasContent(Video)</visible>
                 <label>31005</label>
                 <label2/>
-                <onclick>reloadskin()</onclick>
                 <onclick>activateWindow(VideoLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
                 <onclick>Control.SetFocus(9998)</onclick>
@@ -204,12 +204,12 @@
             </item>
             <!--latest items-->
             <item>
+                <visible>Library.HasContent(music)</visible>
                 <label>31005</label>
                 <label2/>
-                <onclick>reloadskin()</onclick>
                 <onclick>ActivateWindow(MusicLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
-                <onclick>Control.SetFocus(9998)</onclick>
+                <onclick>Control.SetFocus(9123)</onclick>
             </item>
             <!--music-->
             <item>

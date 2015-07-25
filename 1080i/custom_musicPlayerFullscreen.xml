@@ -5,6 +5,8 @@
     <onload>RunScript(script.artistslideshow)</onload>
     <onload>AlarmClock(controlDialog,setfocus(9876),00:05,silent)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
+    <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
+    <onunload>control.setfocus(9000)</onunload>
     <controls>
         <include>globalBackground</include>
         <control type="group">
