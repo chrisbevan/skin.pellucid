@@ -8,7 +8,7 @@
         <include>globalBackground</include>
         <control type="group" id="9001">
             <posx>col-2-begin</posx>
-            <posy>row-3-begin</posy>
+            <posy>row-1-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
@@ -35,16 +35,16 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>22-col</width>
-                <height>22-row</height>
+                <height>25-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>0</posx>
+                <posx>6-col</posx>
                 <posy>2-row</posy>
-                <width>6-col</width>
-                <height>22-row</height>
+                <width>16-col</width>
+                <height>25-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -94,7 +94,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>16-col</width>
-                    <height>9-row</height>
+                    <height>11-row</height>
                     <aspectratio aligny="center">scale</aspectratio>
                     <texture>$INFO[ListItem.art(fanart)]</texture>
                     <colordiffuse>22ffffff</colordiffuse>
@@ -103,13 +103,13 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>16-col</width>
-                    <height>9-row</height>
+                    <height>11-row</height>
                     <aspectratio aligny="center">scale</aspectratio>
                     <texture>vignette.png</texture>
                 </control>
                 <control type="image">
                     <posx>1-col</posx>
-                    <posy>18</posy>
+                    <posy>1-row</posy>
                     <width>4-col</width>
                     <height>4-col</height>
                     <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
@@ -143,12 +143,12 @@
             <!--content listing-->
             <control type="group" id="9999">
                 <posx>6-col</posx>
-                <posy>11-row</posy>
+                <posy>13-row</posy>
                 <control type="panel" id="50">
                     <posx>6</posx>
                     <posy>6</posy>
                     <width>16-col</width>
-                    <height>457</height>
+                    <height>492</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <ondown>50</ondown>
@@ -219,8 +219,8 @@
                 <animation effect="fade" start="100" end="70" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
                     <right>2-col</right>
-                    <posy>11-row</posy>
-                    <height>13-row</height>
+                    <posy>13-row</posy>
+                    <height>14-row</height>
                     <onleft>9999</onleft>
                 </control>
             </control>

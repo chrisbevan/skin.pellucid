@@ -51,6 +51,16 @@
             </control>
             <!--video (no Library)-->
             <control type="image">
+                <visible>Container(9000).HasFocus(10) + !Library.HasContent(TVShows)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <animation type="windowopen">
+                    <effect type="fade" end="100" time="1000" delay="800"/>
+                </animation>
+            </control>
+            <control type="image">
                 <visible>Container(9000).HasFocus(1) + !Library.HasContent(Movies)</visible>
                 <include>dimensionsFullscreen</include>
                 <texture>special://skin/extras/backgrounds/videos.jpg</texture>

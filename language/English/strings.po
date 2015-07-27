@@ -490,11 +490,11 @@ msgid "Most Played Albums"
 msgstr ""
 
 msgctxt "#31188"
-msgid "seasons"
+msgid "season(s)"
 msgstr ""
 
 msgctxt "#31189"
-msgid "episodes"
+msgid "episode(s)"
 msgstr ""
 
 msgctxt "#31190"
