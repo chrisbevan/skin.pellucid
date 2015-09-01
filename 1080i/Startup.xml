@@ -4,9 +4,6 @@
     <allowoverlay>yes</allowoverlay>
     <onload>Skin.Reset(DebugInfo)</onload>
     <onload>Skin.Reset(DebugGrid)</onload>
-    <onload condition="!Skin.String(videoHomeItemsMoviesSource)">Skin.SetString(videoHomeItemsMoviesSource,recentmovies)</onload>
-    <onload condition="!Skin.String(videoHomeItemsEpisodesSource)">Skin.SetString(videoHomeItemsEpisodesSource,recentepisodes)</onload>
-    <onload condition="!Skin.String(musicHomeItemsSource)">Skin.SetString(musicHomeItemsSource,recentalbums)</onload>
     <onload condition="!Skin.String(homeBackground)">Skin.SetString(homeBackground,special://skin/extras/backgrounds/background001.jpg)</onload>
     <coordinates>
         <posx>15</posx>

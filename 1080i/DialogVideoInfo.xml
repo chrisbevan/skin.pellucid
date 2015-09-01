@@ -43,6 +43,7 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+
         </control>
         <!--content is movie or tvshow (from XBMC Library)-->
         <control type="group">

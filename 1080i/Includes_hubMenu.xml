@@ -47,7 +47,7 @@
                     <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label></label>
+                    <label></label>
                 </control>
                 <!--music-->
                 <control type="label">
@@ -167,7 +167,7 @@
                     <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label></label>
+                    <label></label>
                 </control>
                 <!--music-->
                 <control type="label">

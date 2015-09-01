@@ -98,6 +98,7 @@
                             <selectedcolor>selected</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.ChannelName]</label>
+                            <scroll>true</scroll>
                         </control>
                     </focusedchannellayout>
                     <itemlayout height="2-row" width="216">

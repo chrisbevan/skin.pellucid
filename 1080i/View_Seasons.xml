@@ -84,11 +84,46 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <height>396</height>
-                        <aspectratio aligny="top">scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[ListItem.thumb]</texture>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="3">colors/black.png</texture>
+                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>disabled</textcolor>
+                        <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011]]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>5-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>disabled</textcolor>
+                        <label>$VAR[itemDetail]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>396</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="0">$INFO[ListItem.thumb]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <colordiffuse>ffffffff</colordiffuse>
                     </control>
                 </itemlayout>
                 <focusedlayout width="4-col" height="391">

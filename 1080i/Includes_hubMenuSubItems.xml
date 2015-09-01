@@ -172,36 +172,6 @@
             <onclick>UpdateLibrary(music)</onclick>
             <onclick>right</onclick>
         </control>
-        <control type="radiobutton" id="20">
-            <description>Shuffle</description>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>191</label>
-        </control>
-        <control type="radiobutton" id="16">
-            <description>Party Mode!!</description>
-            <height>2-row</height>
-            <width>col-7-begin</width>
-            <font>menuTitle</font>
-            <textcolor>textActive</textcolor>
-            <focusedcolor>highlight</focusedcolor>
-            <disabledcolor>menuDisabled</disabledcolor>
-            <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
-            <textoffsetx>col-1-begin</textoffsetx>
-            <label>589</label>
-        </control>
     </include>
 
     <!--pictures submenu items-->

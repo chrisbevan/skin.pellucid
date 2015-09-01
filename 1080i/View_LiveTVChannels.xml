@@ -117,6 +117,7 @@
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
+                        <scroll>true</scroll>
                     </control>
                     <control type="label">
                         <posx>4-col-gutter</posx>

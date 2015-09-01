@@ -26,7 +26,7 @@
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>8-col</width>
-                    <height>2-row</height>
+                    <height>78</height>
                     <font>textbox</font>
                     <textcolor>textActive</textcolor>
                </control>

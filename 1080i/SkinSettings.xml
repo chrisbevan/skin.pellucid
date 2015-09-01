@@ -194,14 +194,6 @@
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
                 </control>
-                <control type="radiobutton" id="19">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Autostart music visualisation on playback</description>
-                    <width>14-col</width>
-                    <label>31171</label>
-                    <onclick>Skin.ToggleSetting(startVisualiserOnPlayback)</onclick>
-                    <selected>Skin.HasSetting(startVisualiserOnPlayback)</selected>
-                </control>
                 <control type="radiobutton" id="20">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Disable fanart animation effect</description>
@@ -210,6 +202,14 @@
                     <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
+                </control>
+                <control type="radiobutton" id="21">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Enable Artist Slideshow</description>
+                    <width>14-col</width>
+                    <label>31008</label>
+                    <onclick>Skin.ToggleSetting(artistSlideshowActive)</onclick>
+                    <selected>Skin.HasSetting(artistSlideshowActive)</selected>
                 </control>
             </control>
         </control>

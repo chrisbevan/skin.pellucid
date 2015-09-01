@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="5001">
-    <defaultcontrol always="true">8002</defaultcontrol>
+    <defaultcontrol always="true">9876</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.artistslideshow)</onload>
-    <onload>AlarmClock(controlDialog,setfocus(9876),00:05,silent)</onload>
+    <onload condition="Skin.HasSetting(artistSlideshowActive)">RunScript(script.artistslideshow)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
     <onunload>control.setfocus(9000)</onunload>
@@ -14,7 +13,7 @@
             <control type="group">
                 <!--fanart-->
                 <control type="image">
-                    <visible>isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+                    <visible>!Skin.HasSetting(artistSlideshowActive)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
@@ -149,121 +148,115 @@
                         <label>$INFO[MusicPlayer.offset(1).Artist,[COLOR highlight]$LOCALIZE[19031][/COLOR] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
                     </control>
                 </control>
-                <!--dialog controls-->
+                <!-- side menu-->
                 <control type="group" id="8765">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <animation type="conditional" condition="!Controlgroup(8765).HasFocus">
-                        <effect type="slide" start="0,0" end="0,-50" tween="cubic" easing="out" delay="500" time="300"/>
-                        <effect type="fade" start="100" end="0" time="500" delay="500"/>
+                    <animation type="Conditional" condition="controlgroup(8765).hasfocus">
+                        <effect type="fade" start="0" end="100" time="300"/>
+                        <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400"/>
                     </animation>
-                    <animation type="windowClose">
+                    <animation type="Conditional" condition="!controlgroup(8765).hasfocus">
                         <effect type="fade" start="100" end="0" time="300"/>
+                        <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
                     </animation>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>fullscreenWidth</width>
-                        <height>2-row</height>
+                        <width>col-7-begin</width>
+                        <height>fullscreenHeight</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>textboxInactive</colordiffuse>
                     </control>
-                    <!--shuffle and repeat / vis options-->
-                    <control type="list" id="8002">
-                        <posx>col-1-begin</posx>
+                    <control type="image">
+                        <posx>col-7-begin</posx>
                         <posy>0</posy>
-                        <width>24-col</width>
-                        <height>2-row</height>
-                        <itemgap>0</itemgap>
-                        <orientation>horizontal</orientation>
-                        <onup>9876</onup>
-                        <ondown>9876</ondown>
-                        <itemlayout width="4-col" height="2-row">
+                        <width>3</width>
+                        <height>fullscreenHeight</height>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>33ffffff</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+                    <!--section logo-->
+                    <control type="group">
+                        <control type="label">
+                            <posx>col-1-begin</posx>
+                            <posy>row-1-begin</posy>
+                            <width>1-col</width>
+                            <height>1-col</height>
+                            <font>symbolVeryLarge</font>
+                            <aligny>center</aligny>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor>-</shadowcolor>
+                            <label></label>
+                        </control>
+                    </control>
+                    <control type="list" id="8002">
+                        <posx>0</posx>
+                        <posy>row-4-begin</posy>
+                        <width>8-col</width>
+                        <height>24-row</height>
+                        <orientation>vertical</orientation>
+                        <onleft>9002</onleft>
+                        <onright>9876</onright>
+                        <onback>activateWindow(home)</onback>
+                        <itemlayout width="col-7-begin" height="2-row">
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>col-1-begin</posx>
                                 <posy>0</posy>
-                                <width>1-col</width>
+                                <width>7-col</width>
                                 <height>2-row</height>
-                                <align>center</align>
+                                <font>menuTitle</font>
                                 <aligny>center</aligny>
-                                <font>symbol</font>
                                 <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.label2]</label>
-                            </control>
-                            <control type="label">
-                                <posx>1-col-indent</posx>
-                                <posy>-1</posy>
-                                <width>3-col-gutter</width>
-                                <height>2-row</height>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
+                                <shadowcolor>-</shadowcolor>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="4-col" height="2-row">
+                        <focusedlayout width="col-7-begin" height="2-row">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>1-col-textbox</width>
+                                <width>col-7-begin</width>
                                 <height>2-row</height>
-                                <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
-                                <colordiffuse>highlight</colordiffuse>
-                                <include>spinFocusIcon</include>
-                            </control>
-                            <control type="image">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>3-col-textbox</width>
-                                <height>2-row</height>
+                                <colordiffuse>textActive</colordiffuse>
                                 <aspectratio>stretch</aspectratio>
-                                <texture>colors/white.png</texture>
                             </control>
                             <control type="label">
-                                <posx>0</posx>
+                                <posx>col-1-begin</posx>
                                 <posy>0</posy>
-                                <width>1-col</width>
+                                <width>8-col</width>
                                 <height>2-row</height>
-                                <align>center</align>
+                                <font>menuTitle</font>
                                 <aligny>center</aligny>
-                                <font>symbol</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.label2]</label>
+                                <textcolor>highlight</textcolor>
                                 <shadowcolor>-</shadowcolor>
-                            </control>
-                            <control type="label">
-                                <posx>1-col-indent</posx>
-                                <posy>-1</posy>
-                                <width>5-col-gutter</width>
-                                <height>2-row</height>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>black</textcolor>
                                 <label>$INFO[ListItem.label]</label>
-                                <shadowcolor>-</shadowcolor>
                             </control>
                         </focusedlayout>
                         <content>
                             <item>
+                                <description>Playlist</description>
+                                <label>31123</label>
+                                <thumb>-</thumb>
+                                <onclick>Dialog.Close(all,true)</onclick>
+                                <onclick>activateWindow(musicplaylist)</onclick>
+                            </item>
+                            <item>
                                 <description>Repeat</description>
                                 <label>$VAR[repeatState]</label>
-                                <label2></label2>
                                 <thumb>-</thumb>
                                 <onclick>PlayerControl(Repeat)</onclick>
                             </item>
                             <item>
                                 <description>Shuffle</description>
                                 <label>$VAR[shuffleState]</label>
-                                <label2></label2>
                                 <thumb>-</thumb>
                                 <onclick>PlayerControl(Random)</onclick>
                             </item>
                             <item>
                                 <description>Visualisation</description>
                                 <label>31032</label>
-                                <label2></label2>
                                 <thumb>-</thumb>
                                 <onclick>activateWindow(musicOSD)</onclick>
                             </item>
@@ -271,7 +264,6 @@
                                 <visible>visualisation.enabled</visible>
                                 <description>Visualisation Settings</description>
                                 <label>$LOCALIZE[21417]</label>
-                                <label2></label2>
                                 <thumb>-</thumb>
                                 <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                             </item>
@@ -286,11 +278,9 @@
             <posy>-100</posy>
             <height>1-col</height>
             <width>1-col</width>
-            <onup>8002</onup>
-            <ondown>8002</ondown>
-            <onleft>decreaseRating</onleft>
-            <onright>increaseRating</onright>
-            <onclick>control.setfocus(8002)</onclick>
+            <onup>increaseRating</onup>
+            <ondown>decreaseRating</ondown>
+            <onleft>8765</onleft>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

@@ -30,12 +30,11 @@
         <value>$LOCALIZE[14022]</value>
     </variable>
     <variable name="listSubTitle">
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
-        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
+        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
+        <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
         <value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">$INFO[Window(Home).Property(Music.AlbumsCount)] $LOCALIZE[31037]</value>
         <value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)]">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
     </variable>
-
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
@@ -54,6 +53,10 @@
         <value condition="Playlist.IsRepeat">$LOCALIZE[597]</value>
         <value condition="Playlist.IsRepeatOne">$LOCALIZE[596]</value>
         <value condition="!Playlist.IsRepeat + !Playlist.IsRepeatOne">$LOCALIZE[595]</value>
+    </variable>
+    <!--unwatched only filter active-->
+    <variable name="unwatchedOnly">
+        <value condition="System.Setting(hidewatched)">$LOCALIZE[31213]</value>
     </variable>
     <!--fullscreeninfo titles-->
     <variable name="nowPlayingTitle">

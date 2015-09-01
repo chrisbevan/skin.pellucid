@@ -187,7 +187,7 @@
             <control type="label">
                 <posx>8-col</posx>
                 <posy>3-row</posy>
-                <width>8-col</width>
+                <width>12-col</width>
                 <height>4-row</height>
                 <align>right</align>
                 <font>Large</font>

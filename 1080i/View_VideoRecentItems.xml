@@ -34,15 +34,6 @@
                 <texture border="0">colors/black.png</texture>
                 <colordiffuse>ccffffff</colordiffuse>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>row-20-begin</posy>
-                <width>fullscreenWidth</width>
-                <height>6</height>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture border="0">colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-            </control>
 
             <!--titles-->
             <control type="group">
@@ -55,68 +46,35 @@
                 </animation>
 
                 <visible>!controlgroup(9000).hasfocus</visible>
-                <posx>col-17-begin</posx>
-                <posy>row-5-begin</posy>
+                <posx>col-1-begin</posx>
+                <posy>row-12-begin</posy>
 
                 <control type="label">
                     <visible>Container(9123).HasFocus(1)</visible>
-                    <posx>0</posx>
+                    <posx>24-col</posx>
                     <posy>0</posy>
-                    <width>8-col</width>
-                    <height>2-row</height>
-                    <font>largeStrong</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>$INFO[container(9998).listitem.title]</label>
-                </control>
-                <control type="label">
-                    <visible>Container(9123).HasFocus(2)</visible>
-                    <posx>8-col</posx>
-                    <posy>4-row</posy>
-                    <width>8-col</width>
-                    <height>2-row</height>
+                    <width>24-col</width>
+                    <height>8-row</height>
                     <align>right</align>
-                    <font>largeStrong</font>
-                    <textcolor>textActive</textcolor>
+                    <font>veryLargeLight</font>
+                    <textcolor>66ffffff</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>$INFO[container(9998).listitem.tvshowtitle]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                    <label>[B]$INFO[container(9998).listitem.title][/B][CR]$INFO[container(9998).listitem.genre] $INFO[container(9998).listitem.year,,]</label>
                 </control>
 
                 <control type="label">
-                    <visible>Container(9123).HasFocus(1)</visible>
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>8-col</width>
-                    <height>1-row</height>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$INFO[container(9998).listitem.year] $INFO[container(9998).listitem.genre,• , ][/COLOR]</label>
-                </control>
-                <control type="label">
                     <visible>Container(9123).HasFocus(2)</visible>
-                    <posx>8-col</posx>
-                    <posy>6-row</posy>
-                    <width>8-col</width>
-                    <height>1-row</height>
+                    <posx>24-col</posx>
+                    <posy>0</posy>
+                    <width>24-col</width>
+                    <height>8-row</height>
                     <align>right</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
+                    <font>veryLargeLight</font>
+                    <textcolor>66ffffff</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$INFO[container(9998).listitem.season,$LOCALIZE[31011] , ] $INFO[container(9998).listitem.property(episodecount),(, $LOCALIZE[31198])][/COLOR]</label>
-                </control>
-
-                <control type="textbox">
-                    <visible>Container(9123).HasFocus(1)</visible>
-                    <posx>0</posx>
-                    <posy>3-row</posy>
-                    <font>textbox</font>
-                    <width>8-col-gutter</width>
-                    <align>left</align>
-                    <textcolor>textActive</textcolor>
-                    <height>268</height>
-                    <label fallback="31205">$INFO[container(9998).ListItem.plot]</label>
-                    <autoscroll delay="5000" time="1500" repeat="10000"/>
+                    <wrapmultiline>true</wrapmultiline>
+                    <label>[B]$INFO[container(9998).listitem.tvshowtitle][/B][CR]$INFO[container(9998).listitem.season,$LOCALIZE[31011] ,,]</label>
                 </control>
             </control>
 
@@ -126,58 +84,46 @@
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
                 <posx>72</posx>
-                <posy>row-18-begin</posy>
+                <posy>672</posy>
                 <width>24-col</width>
                 <height>84</height>
                 <onleft>9000</onleft>
                 <ondown>9998</ondown>
                 <orientation>horizontal</orientation>
-                <itemlayout width="6-col" height="2-row">
-                    <control type="image">
-                        <visible>!controlgroup(9000).hasfocus</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <height>2-row</height>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>ccffffff</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
+                <itemlayout width="4-col" height="2-row">
                     <control type="label">
                         <posx>12</posx>
                         <posy>0</posy>
-                        <width>6-col-gutter</width>
+                        <width>4-col</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.property(textTitle)]</label>
+                        <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="6-col" height="78">
+                <focusedlayout width="4-col" height="78">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <height>78</height>
+                        <posy>56</posy>
+                        <width>4-col-textbox</width>
+                        <height>9</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
-                        <animation type="focus" loop="false" reversible="false">
-                            <effect type="slide" start="0,0" end="0,-6" center="auto" tween="back" easing="out" time="300"/>
-                        </animation>
+                        <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>12</posx>
                         <posy>0</posy>
-                        <width>6-col-gutter</width>
+                        <width>4-col</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.property(textTitle)]</label>
+                        <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
                     </control>
                 </focusedlayout>
                 <content>

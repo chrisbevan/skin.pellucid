@@ -57,6 +57,10 @@ msgctxt "#31007"
 msgid "System Info"
 msgstr ""
 
+msgctxt "#31008"
+msgid "Enable Artist Slideshow"
+msgstr ""
+
 msgctxt "#31010"
 msgid "Add-ons"
 msgstr ""
@@ -126,7 +130,7 @@ msgid "Albums"
 msgstr ""
 
 msgctxt "#31041"
-msgid "Menu Shortcuts"
+msgid "Edit Menu Shortcuts"
 msgstr ""
 
 msgctxt "#31042"
@@ -441,10 +445,6 @@ msgctxt "#31165"
 msgid "Recordings"
 msgstr ""
 
-msgctxt "#31171"
-msgid "Start music visualisation immediately upon playback"
-msgstr ""
-
 msgctxt "#31175"
 msgid "Set Latest Content"
 msgstr ""
@@ -486,7 +486,7 @@ msgid "View"
 msgstr ""
 
 msgctxt "#31187"
-msgid "Most Played Albums"
+msgid "Most Played"
 msgstr ""
 
 msgctxt "#31188"
@@ -510,11 +510,11 @@ msgid "Duration"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Show watched items"
+msgid "Hide watched items"
 msgstr ""
 
 msgctxt "#31196"
-msgid "Hide watched items"
+msgid "Show watched items"
 msgstr ""
 
 msgctxt "#31197"
@@ -571,4 +571,8 @@ msgstr ""
 
 msgctxt "#31212"
 msgid "5 Day Forecast for"
+msgstr ""
+
+msgctxt "#31213"
+msgid "(Showing unwatched items only)"
 msgstr ""
