@@ -25,36 +25,84 @@
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>ccFFFFFF</colordiffuse>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+
+            <!--audio / video options selection-->
+            <control type="panel" id="9123">
+                <posx>24</posx>
+                <posy>-24</posy>
                 <width>12-col</width>
                 <height>2-row</height>
+                <ondown>5</ondown>
+                <orientation>horizontal</orientation>
+                <itemlayout width="4-col" height="2-row">
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <height>2-row</height>
+                        <font>buttonTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>[B]$INFO[ListItem.label][/B]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="4-col" height="78">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>62</posy>
+                        <width>4-col-gutter</width>
+                        <height>9</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
+                        <aspectratio>stretch</aspectratio>
+                        <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <height>2-row</height>
+                        <font>buttonTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>[B]$INFO[ListItem.label][/B]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>$LOCALIZE[292] $LOCALIZE[5]</label>
+                        <onclick>Dialog.close(all,True)</onclick>
+                        <onclick>ActivateWindow(124)</onclick>
+                    </item>
+                    <item id="2">
+                        <label>$LOCALIZE[3] $LOCALIZE[5]</label>
+                        <onclick>Dialog.close(all,True)</onclick>
+                        <onclick>ActivateWindow(123)</onclick>
+                    </item>
+                </content>
+            </control>
+            <!--current page marker-->
+            <control type="image">
+                <visible>window.isactive(124) + !control.hasfocus(9123)</visible>
+                <posx>24</posx>
+                <posy>38</posy>
+                <width>4-col-gutter</width>
+                <height>9</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label">
-                <visible>Window.IsVisible(123)</visible>
-                <posx>24</posx>
-                <posy>0</posy>
-                <width>16-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
-                <font>dialogTitle</font>
-                <label>$LOCALIZE[3] $LOCALIZE[5]</label>
-                <textcolor>textActive</textcolor>
-            </control>
-            <control type="label">
-                <visible>Window.IsVisible(124)</visible>
-                <posx>24</posx>
-                <posy>0</posy>
-                <width>16-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
-                <font>dialogTitle</font>
-                <textcolor>textActive</textcolor>
-                <label>$LOCALIZE[292] $LOCALIZE[5]</label>
+            <control type="image">
+                <visible>window.isactive(123) + !control.hasfocus(9123)</visible>
+                <posx>312</posx>
+                <posy>38</posy>
+                <width>4-col-gutter</width>
+                <height>9</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>
@@ -64,6 +112,7 @@
                 <height>21-row</height>
                 <orientation>vertical</orientation>
                 <itemgap>3</itemgap>
+                <onup>9123</onup>
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
