@@ -167,6 +167,14 @@
                         <thumb>-</thumb>
                         <onclick>SendClick(50)</onclick>
                     </item>
+                    <control type="label" id="14">
+                        <description>Default Label</description>
+                        <label>-</label>
+                        <align>center</align>
+                        <font>buttonTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
                 </content>
             </control>
         </control>

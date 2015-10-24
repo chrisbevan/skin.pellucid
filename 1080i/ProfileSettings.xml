@@ -60,8 +60,7 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="button" id="6000">
-                <description>Profile switch</description>
-                <visible>!StringCompare(System.ProfileName,control.getlabel(102))</visible>
+                <description>Profile switch</description>               <visible>!StringCompare(System.ProfileName,control.getlabel(102))</visible>
                 <posx>0</posx>
                 <posy>10-row</posy>
                 <width>8-col</width>
@@ -90,6 +89,14 @@
             </control>
             <control type="spincontrolex" id="9">
                 <description>spin_controlex</description>
+            </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
             </control>
         </control>
         <!--control buttons-->

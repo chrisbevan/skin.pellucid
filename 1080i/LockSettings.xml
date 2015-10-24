@@ -69,6 +69,14 @@
                 <visible>false</visible>
                 <description>slider</description>
             </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>14-col</posx>

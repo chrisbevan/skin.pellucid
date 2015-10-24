@@ -155,7 +155,7 @@
                         <thumb>-</thumb>
                         <onclick>ActivateWindow(settings)</onclick>
                     </item>
-                    <item id="9">
+                    <item id="11">
                         <label>31007</label>
                         <label2></label2>
                         <thumb>-</thumb>

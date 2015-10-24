@@ -118,6 +118,14 @@
                 <description>Default Button</description>
                 <texturenofocus>-</texturenofocus>
             </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
             <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
                 <texturenofocus>-</texturenofocus>

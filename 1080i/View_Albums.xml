@@ -22,16 +22,16 @@
 
         <control type="panel" id="55">
             <visible>container.content(albums) | container.content(addons)</visible>
-            <posx>col-1-begin</posx>
+            <posx>78</posx>
             <posy>row-5-begin</posy>
-            <width>24-col</width>
+            <width>1800</width>
             <height>23-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>55</ondown>
             <onup>55</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout width="4-col" height="4-col">
+            <itemlayout width="300" height="300">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>

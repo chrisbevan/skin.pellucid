@@ -130,6 +130,14 @@
                 <description>Default Slider</description>
                 <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
             </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

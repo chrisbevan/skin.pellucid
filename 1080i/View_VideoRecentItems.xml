@@ -146,14 +146,14 @@
             <control type="panel" id="9998">
                 <posx>72</posx>
                 <posy>row-21-begin</posy>
-                <width>1776</width>
+                <width>1800</width>
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
                 <content>plugin://script.thedeadman.functions?type=$INFO[control.getlabel(9123)]</content>
-                <itemlayout width="3-col" height="312">
+                <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
