@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9999</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
-    <defaultcontrol always="true">2</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+<window type="dialog" id="3333">
+    <visible>player.hasaudio</visible>
     <controls>
         <control type="group">
             <posx>col-14-begin</posx>
@@ -62,9 +61,8 @@
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
-            <posy>0</posy>
             <include>DialogID</include>
-            <label>MusicOverlay.xml</label>
+            <label>custom_musicOverlay.xml</label>
         </control>
     </controls>
 </window>

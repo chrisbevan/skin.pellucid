@@ -3,7 +3,7 @@
     <!--Song browser-->
     <include name="song">
         <control type="group">
-            <visible>container.content(songs)</visible>
+            <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -19,14 +19,14 @@
         </control>
 
         <control type="group">
-            <visible>container.content(songs)</visible>
+            <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <animation type="visible">
                 <include>listSlideIn</include>
             </animation>
             <animation type="hidden">
-                <effect type="fade" start="100" end="0" time="200"/>
+                <effect type="fade" start="100" end="0" time="0"/>
             </animation>
             <!--album thumb and info-->
             <control type="image">
@@ -44,7 +44,7 @@
         </control>
 
         <control type="group">
-            <visible>container.content(songs)</visible>
+            <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <control type="label">
                 <posx>col-10-begin</posx>
                 <posy>row-5-begin</posy>
@@ -67,16 +67,16 @@
             </control>
         </control>
 
-        <control type="panel" id="56">
-            <visible>container.content(songs)</visible>
+        <control type="panel" id="50">
+            <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <posx>col-10-begin</posx>
             <posy>row-9-begin</posy>
             <width>15-col</width>
             <height>19-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
-            <ondown>56</ondown>
-            <onup>56</onup>
+            <ondown>50</ondown>
+            <onup>50</onup>
             <pagecontrol>60</pagecontrol>
             <itemlayout width="15-col" height="2-row">
                 <control type="image">
@@ -167,7 +167,7 @@
                     <label>$INFO[ListItem.duration]</label>
                 </control>
             </itemlayout>
-            <focusedlayout width="15-col" height="1-row">
+            <focusedlayout width="15-col" height="2-row">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>

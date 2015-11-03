@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
     <previouswindow>home</previouswindow>
@@ -25,7 +25,7 @@
                 </animation>
                 <!--recent items-->
                 <control type="group">
-                    <visible>SubString(skin.string(showRecentVideoItems),true) | isEmpty(container.foldername)</visible>
+                    <visible>Library.HasContent(Video) + [SubString(skin.string(showRecentVideoItems),true) | isEmpty(container.foldername)]</visible>
                     <onleft>9000</onleft>
                     <!--content-->
                     <include>videoRecentItems</include>
@@ -37,8 +37,8 @@
                     <include>tvshows</include>
                     <include>seasons</include>
                     <include>episodes</include>
-                    <include>addons</include>
-                    <include>files</include>
+                    <include>videoaddons</include>
+                    <include>videofiles</include>
                 </control>
             </control>
 

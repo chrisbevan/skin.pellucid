@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="5000">
     <defaultcontrol always="true">6000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    
     <onload>Skin.Reset(menuItemType)</onload>
     <onload>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onload>
     <onload condition="stringcompare(skin.string(menuItemTypeFilter),video)">Skin.SetString(menuItemType,videoAddon)</onload>

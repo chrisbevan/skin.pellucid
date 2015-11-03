@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+
     <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
     <onunload condition="skin.string(showcast,true)">action(info)</onunload>
@@ -116,7 +116,7 @@
                 <content>
                     <item>
                         <label>$LOCALIZE[562]</label>
-                        <label2>$INFO[ListItem.year]</label2>
+                        <label2>$INFO[ListItem.year] $INFO[ListItem.dbid]</label2>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
                     </item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+     
     <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>

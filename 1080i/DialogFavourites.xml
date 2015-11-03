@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
     <defaultcontrol always="true">450</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    
     <include>fadeInOut</include>
     <controls>
         <!--background-->

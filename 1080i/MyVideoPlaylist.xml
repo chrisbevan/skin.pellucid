@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    
     <previouswindow>videolibrary</previouswindow>
     <controls>
         <include>globalBackground</include>

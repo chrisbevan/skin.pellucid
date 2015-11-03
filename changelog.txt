@@ -1,3 +1,20 @@
-[B]0.1.0[/B]
+[B]0.9.0[/B]
 
+***Working towards Kodi Jarvis***
+
+- [REMOVED DEPENDENCY] script.thedeadman.functions (Nice one team Kodi!)
+- [REMOVED] DialogPeripheralManager.xml
+- [REMOVED] DialogKaraokeSongSelector.xml
+- [REMOVED] DialogKaraokeSongSelectorLarge.xml
+- [REMOVED] MusicKaraokeLyrics.xml
+- [REMOVED] References to "allowoverlay" tag
+- [REMOVED] mymusicsongs.xml
+- [REMOVED] videooverlay.xml
+- [REMOVED] musicoverlay.xml
+- [NEW] custom_musicOverlay.xml
+
+
+[B]0.1.0[/B]
 - Initial Commit
+
+

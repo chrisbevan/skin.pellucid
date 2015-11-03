@@ -152,6 +152,7 @@
                 <onleft>9000</onleft>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
+                <!--<oninfo>activatewindow(movieinformation,videodb://movies/titles/12)</oninfo>-->
                 <content>plugin://script.thedeadman.functions?type=$INFO[control.getlabel(9123)]</content>
                 <itemlayout width="228" height="312">
                     <control type="image">

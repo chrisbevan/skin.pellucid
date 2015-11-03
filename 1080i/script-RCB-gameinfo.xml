@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <window>
     <onload>control.setfocus(3000)</onload>
-    <allowoverlay>no</allowoverlay>
+    
     <include>fadeInOut</include>
     <controls>
         <control type="group">

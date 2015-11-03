@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+
     <onload condition="window.previous(0)">setfocus(9000)</onload>
     <previouswindow>home</previouswindow>
     <controls>
@@ -22,16 +22,19 @@
             <control type="group" id="9999">
                 <!--recent items-->
                 <control type="group">
-                    <visible>SubString(skin.string(showRecentMusicItems),true) | isEmpty(container.foldername)</visible>
+                    <visible>Library.HasContent(Music) + SubString(skin.string(showRecentMusicItems),true)</visible>
                     <onleft>9000</onleft>
                     <include>musicRecentItems</include>
                 </control>
                 <!--source content-->
                 <control type="group" id="9500">
-                    <visible>SubString(skin.string(showRecentMusicItems),false) | !skin.string(showRecentMusicItems)</visible>
+                    <visible>skin.string(showRecentMusicItems) + SubString(skin.string(showRecentMusicItems),false)</visible>
                     <include>artist</include>
                     <include>album</include>
                     <include>song</include>
+                    <include>musicgenre</include>
+                    <include>musicfiles</include>
+                    <include>musicaddons</include>
                 </control>
             </control>
 

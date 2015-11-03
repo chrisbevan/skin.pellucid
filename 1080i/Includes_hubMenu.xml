@@ -51,7 +51,7 @@
                 </control>
                 <!--music-->
                 <control type="label">
-                    <visible>window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
+                    <visible>window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-1-begin</posy>
                     <width>1-col</width>
@@ -122,7 +122,7 @@
                     </control>
                 </focusedlayout>
                 <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoMenu</include>
-                <include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicMenu</include>
+                <include condition="window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicMenu</include>
                 <include condition="Window.isactive(pictures)">picturesMenu</include>
             </control>
         </control>
@@ -171,7 +171,7 @@
                 </control>
                 <!--music-->
                 <control type="label">
-                    <visible>window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
+                    <visible>window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-1-begin</posy>
                     <width>1-col</width>
@@ -207,7 +207,7 @@
                 <onup>9002</onup>
                 <ondown>9002</ondown>
                 <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
-                <include condition="window.isactive(musiclibrary) | window.isactive(musicfiles) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
+                <include condition="window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
                 <include condition="window.isactive(pictures)">picturesSideMenu</include>
             </control>
         </control>

@@ -105,17 +105,17 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <label>plugin://script.thedeadman.functions?type=recentalbums</label>
+                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
-                        <label>plugin://script.thedeadman.functions?type=favouritealbums</label>
+                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31187</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
-                        <label>plugin://script.thedeadman.functions?type=randomalbums</label>
+                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31181</property>
                         <onclick>noop</onclick>
                     </item>
@@ -132,6 +132,9 @@
                 <onleft>9000</onleft>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
+                <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
+                <onclick>activatewindow(Musiclibrary,musicdb://albums/$INFO[listitem.DBID])</onclick>
+                <onclick>Control.SetFocus(50)</onclick>
                 <content>$INFO[control.getlabel(9123)]</content>
                 <itemlayout width="300" height="4-col">
                     <control type="image">

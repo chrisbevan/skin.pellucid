@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="5001">
     <defaultcontrol always="true">9876</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    
     <onload condition="Skin.HasSetting(artistSlideshowActive)">RunScript(script.artistslideshow)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>

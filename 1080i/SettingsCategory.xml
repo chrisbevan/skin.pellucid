@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">3</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+     
     <controls>
         <!--background-->
         <include>globalBackground</include>

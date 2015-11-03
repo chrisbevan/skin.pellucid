@@ -61,6 +61,10 @@ msgctxt "#31008"
 msgid "Enable Artist Slideshow"
 msgstr ""
 
+msgctxt "#31009"
+msgid "Genres"
+msgstr ""
+
 msgctxt "#31010"
 msgid "Add-ons"
 msgstr ""
@@ -126,7 +130,7 @@ msgid "Enable Debug Info"
 msgstr ""
 
 msgctxt "#31037"
-msgid "Albums"
+msgid "Albums by"
 msgstr ""
 
 msgctxt "#31041"
@@ -523,6 +527,10 @@ msgstr ""
 
 msgctxt "#31198"
 msgid "unwatched"
+msgstr ""
+
+msgctxt "#31199"
+msgid "Artists in"
 msgstr ""
 
 msgctxt "#31201"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
+
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
@@ -115,9 +115,8 @@
                         <label>31001</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
+                        <onclick>ActivateWindow(musiclibrary)</onclick>
                         <onclick condition="!Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,false)</onclick>
-                        <onclick condition="Library.HasContent(Music)">ActivateWindow(musiclibrary)</onclick>
                         <onclick condition="Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,true)</onclick>
                     </item>
                     <item id="3">

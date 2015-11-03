@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <include name="addons">
+    <include name="videoaddons">
 
         <control type="group">
             <visible>container.content(addons)</visible>

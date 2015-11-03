@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <window>
-    <allowoverlay>no</allowoverlay>
+    
     <defaultcontrol always="true">500</defaultcontrol>
     <controls>
         <include>globalBackground</include>

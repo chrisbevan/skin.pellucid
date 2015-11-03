@@ -5,16 +5,16 @@
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
-            <control type="panel" id="51">
-                <visible>!control.isvisible(9998) + !container.content(artists) + !container.content(genres) + !container.content(albums) + !container.content(addons)</visible>
+            <control type="panel" id="50">
+                <visible>!Substring(Container.folderpath,addons://sources/audio) + !isempty(container.folderpath)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>24-col</width>
                 <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <ondown>51</ondown>
-                <onup>51</onup>
+                <ondown>50</ondown>
+                <onup>50</onup>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="24-col" height="2-row">
                     <control type="image">
