@@ -12,6 +12,13 @@
 - [REMOVED] videooverlay.xml
 - [REMOVED] musicoverlay.xml
 - [NEW] custom_musicOverlay.xml
+- [REMOVED] References to "zorder" tag
+
+[DONE] - DialogAddonInfo.xml - remove button id="11"
+[DONE] - DialogKaiToast.xml - removed ID's 403-405
+[DONE] - DialogVideoInfo.xml - add button ID 7, replace user rating value
+[DONE] - MyMusicNav.xml - remove files node button
+
 
 
 [B]0.1.0[/B]

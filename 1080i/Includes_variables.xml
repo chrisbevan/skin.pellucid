@@ -32,9 +32,7 @@
         <value condition="Window.IsActive(musiclibrary) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.IsActive(musiclibrary) + isEmpty(container.foldername)">$LOCALIZE[31012]</value>
 
-
         <!--
-
         <value condition="Window.IsActive(musiclibrary) + SubString(container.foldername,playlists)">$LOCALIZE[20011]</value>
 -->
 
@@ -81,9 +79,9 @@
     </variable>
     <!--homescreen background image content-->
     <variable name="homescreenCollage">
-        <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/randomVideos.xsp</value>
-        <value condition="Container(9000).HasFocus(2)">special://skin/extras/playlists/randomAlbums.xsp</value>
-        <value condition="Container(9000).HasFocus(10)">special://skin/extras/playlists/randomTVShows.xsp</value>
+        <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/collage_randomMovies.xsp</value>
+        <value condition="Container(9000).HasFocus(2)">special://skin/extras/playlists/collage_RandomAlbums.xsp</value>
+        <value condition="Container(9000).HasFocus(10)">special://skin/extras/playlists/collage_RandomTVShows.xsp</value>
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">

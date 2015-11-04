@@ -25,6 +25,7 @@
     <include file="View_Songs.xml"/>
     <include file="View_MusicFiles.xml"/>
     <include file="View_MusicPlaylist.xml"/>
+    <include file="View_ArtistAlbums.xml"/>
 
     <!--modal dialogs-->
     <include name="modalDialog">

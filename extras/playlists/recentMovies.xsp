@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
-    <name>randomMovies</name>
+    <name>recentMovies</name>
     <match>all</match>
-    <limit>50</limit>
-    <order direction="ascending">random</order>
+    <limit>10</limit>
+    <order direction="descending">dateadded</order>
 </smartplaylist>

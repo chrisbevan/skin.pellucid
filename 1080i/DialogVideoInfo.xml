@@ -5,7 +5,6 @@
     <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
     <onunload condition="skin.string(showcast,true)">action(info)</onunload>
-    <zorder>0</zorder>
     <controls>
         <control type="group">
             <!--background / fanart-->
@@ -134,7 +133,7 @@
                     </item>
                     <item>
                         <label>$LOCALIZE[563]</label>
-                        <label2>$INFO[ListItem.Rating,,/10]</label2>
+                        <label2>$INFO[ListItem.UserRating,,/10]</label2>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
                     </item>
@@ -307,12 +306,10 @@
                         <onclick>SendClick(2003,10)</onclick>
                     </item>
                     <item>
-                        <description>Get Artwork</description>
-                        <label2></label2>
-                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <label>$INFO[System.AddonTitle(script.artwork.downloader)]</label>
-                        <visible>System.HasAddon(script.artwork.downloader)</visible>
+                        <label>38023</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>SendClick(2003,7)</onclick>
                     </item>
                 </content>
             </control>
@@ -643,6 +640,9 @@
             </control>
             <control type="button" id="6">
                 <description>Refresh</description>
+            </control>
+            <control type="button" id="7">
+                <description>Ratings</description>
             </control>
             <control type="button" id="10">
                 <description>Choose Art</description>

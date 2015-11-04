@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    
+
     <controls>
         <include>globalBackground</include>
         <!--About this addon-->
@@ -205,13 +205,6 @@
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,8)</onclick>
-                        </item>
-                        <item id="4">
-                            <visible>Control.IsEnabled(11)</visible>
-                            <label>$INFO[Control.GetLabel(11)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,11)</onclick>
                         </item>
                         <item id="5">
                             <visible>Control.IsEnabled(7)</visible>

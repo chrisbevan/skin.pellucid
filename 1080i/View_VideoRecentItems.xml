@@ -129,13 +129,13 @@
                 <content>
                     <item id="1">
                         <visible>Library.HasContent(movies)</visible>
-                        <label>recentmovies</label>
+                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
                         <property name="textTitle">31176</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
                         <visible>Library.HasContent(tvshows)</visible>
-                        <label>recentepisodes</label>
+                        <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
                         <property name="textTitle">31178</property>
                         <onclick>noop</onclick>
                     </item>
@@ -152,8 +152,10 @@
                 <onleft>9000</onleft>
                 <onback>activateWindow(home)</onback>
                 <orientation>horizontal</orientation>
-                <!--<oninfo>activatewindow(movieinformation,videodb://movies/titles/12)</oninfo>-->
-                <content>plugin://script.thedeadman.functions?type=$INFO[control.getlabel(9123)]</content>
+                <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                <onclick>activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
+                <onclick>Control.SetFocus(50)</onclick>
+                <content>$INFO[control.getlabel(9123)]</content>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
