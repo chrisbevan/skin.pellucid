@@ -1,6 +1,6 @@
 [B]0.9.0[/B]
 
-***Working towards Kodi Jarvis***
+***Working towards Kodi Jarvis release***
 
 - [REMOVED DEPENDENCY] script.thedeadman.functions (Nice one team Kodi!)
 - [REMOVED] DialogPeripheralManager.xml
@@ -13,11 +13,22 @@
 - [REMOVED] musicoverlay.xml
 - [NEW] custom_musicOverlay.xml
 - [REMOVED] References to "zorder" tag
+- [NEW] DialogPVRInfo.xml
+- [REMOVED] DialogPVRGuideInfo.xml
+- [REMOVED] DialogPVRRecordingInfo.xml
+- [REMOVED] VisualisationPresetList.xml
 
-[DONE] - DialogAddonInfo.xml - remove button id="11"
-[DONE] - DialogKaiToast.xml - removed ID's 403-405
-[DONE] - DialogVideoInfo.xml - add button ID 7, replace user rating value
-[DONE] - MyMusicNav.xml - remove files node button
+
+- [MODIFIED] DialogAddonInfo.xml - remove button id="11"
+- [MODIFIED] DialogKaiToast.xml - remove ID's 403-405
+- [MODIFIED] DialogVideoInfo.xml - add button ID 7, replace user rating value
+- [MODIFIED] MyMusicNav.xml - remove files node button
+
+***To do***
+DialogPVRinfo - button and layout update
+Touchscreen controls
+revise the TVShow view
+Fix clearart in TVShow views
 
 
 

@@ -10,7 +10,7 @@
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/black.png" border="0">$INFO[container.art(fanart)]</texture>
+                <texture background="true" fallback="colors/black.png" border="0">$INFO[lisitem.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <animation type="conditional" condition="!controlgroup(9000).hasfocus" loop="true" reversible="false">
                     <effect type="fade" start="0" end="100" time="2000"/>
@@ -18,6 +18,19 @@
                     <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
                 </animation>
             </control>
+
+            <!--display clearart if available-->
+            <control type="image">
+                <posx>966</posx>
+                <posy>row-6-begin</posy>
+                <width>4-col</width>
+                <height>4-col</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>$INFO[listitem.art(clearart)]</texture>
+                <bordersize>0</bordersize>
+            </control>
+
+
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>vignette.png</texture>

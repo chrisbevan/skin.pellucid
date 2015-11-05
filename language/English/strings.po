@@ -506,7 +506,7 @@ msgid "All Episodes"
 msgstr ""
 
 msgctxt "#31192"
-msgid "Recorded"
+msgid "Date"
 msgstr ""
 
 msgctxt "#31193"
@@ -583,4 +583,8 @@ msgstr ""
 
 msgctxt "#31213"
 msgid "(Showing unwatched items only)"
+msgstr ""
+
+msgctxt "#31214"
+msgid "Channel"
 msgstr ""

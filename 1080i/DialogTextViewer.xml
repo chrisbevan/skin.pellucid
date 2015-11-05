@@ -30,7 +30,7 @@
             <control type="label" id="1">
                 <posx>12</posx>
                 <posy>0</posy>
-                <width>8-col</width>
+                <width>16-col-gutter</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>

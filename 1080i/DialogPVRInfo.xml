@@ -29,9 +29,9 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>mediumStrong</font>
-                    <textcolor>highlight</textcolor>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR textActive]$INFO[listitem.channelname][/COLOR] $INFO[ListItem.Label]</label>
+                    <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
 
@@ -44,13 +44,25 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$LOCALIZE[31192][/COLOR] $INFO[ListItem.startdate]</label>
+                    <label>[COLOR highlight]$LOCALIZE[31214][/COLOR] $INFO[ListItem.channelname]</label>
                 </control>
 
                 <control type="label">
                     <posx>0</posx>
                     <posy>5-row</posy>
-                    <width>6-col-gutter</width>
+                    <width>12-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31192][/COLOR] $INFO[ListItem.startdate]</label>
+                </control>
+
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>6-row</posy>
+                    <width>12-col-gutter</width>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>itemTitle</font>
@@ -62,7 +74,7 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>7-row</posy>
+                    <posy>8-row</posy>
                     <font>textbox</font>
                     <width>12-col</width>
                     <align>left</align>
@@ -76,7 +88,7 @@
                 <!--dialog controls-->
                 <control type="list" id="8000">
                     <posx>0</posx>
-                    <posy>15-row</posy>
+                    <posy>16-row</posy>
                     <width>12-col</width>
                     <height>2-row</height>
                     <orientation>horizontal</orientation>
@@ -163,6 +175,13 @@
                             <thumb>-</thumb>
                             <onclick>sendclick(2003,10)</onclick>
                         </item>
+
+                        <item id="2">
+                            <label>264</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(2003,6)</onclick>
+                        </item>
                     </content>
                 </control>
             </control>
@@ -170,6 +189,25 @@
         <!--buttons-->
         <control type="group">
             <visible>false</visible>
+            <control type="button" id="4">
+                <description>Find similar</description>
+                <label>19003</label>
+            </control>
+
+            <control type="button" id="5">
+                <description>Switch to Channel</description>
+                <label>19165</label>
+            </control>
+
+            <control type="button" id="6">
+                <description>Record</description>
+            </control>
+
+            <control type="button" id="8">
+                <description>Play recording</description>
+                <label>19687</label>
+            </control>
+
             <control type="button" id="10">
                 <description>Play</description>
             </control>
@@ -178,7 +216,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>DialogPVRRecordingInfo.xml</label>
+            <label>DialogPVRInfo.xml</label>
         </control>
     </controls>
 </window>

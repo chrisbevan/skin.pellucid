@@ -43,6 +43,16 @@
                 <aspectratio>stretch</aspectratio>
             </control>
 
+            <!--studio logos etc-->
+            <control type="image">
+                <posx>1-col</posx>
+                <posy>row-27-begin</posy>
+                <width>2-col</width>
+                <height>1-col</height>
+                <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+
         </control>
         <!--content is movie or tvshow (from XBMC Library)-->
         <control type="group">
@@ -115,7 +125,7 @@
                 <content>
                     <item>
                         <label>$LOCALIZE[562]</label>
-                        <label2>$INFO[ListItem.year] $INFO[ListItem.dbid]</label2>
+                        <label2>$INFO[ListItem.year]</label2>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
                     </item>

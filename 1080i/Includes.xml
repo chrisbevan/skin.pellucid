@@ -71,7 +71,7 @@
                 <width>12-col</width>
                 <align>right</align>
                 <font>pageSubTitle</font>
-                <label>$INFO[System.Date(mmm d)]</label>
+                <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
                 <textcolor>textActive</textcolor>
             </control>
         </control>

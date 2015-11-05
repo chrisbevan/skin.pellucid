@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">3</defaultcontrol>
-     
+
     <controls>
         <include>fadeInOut</include>
         <!--background-->
@@ -67,9 +67,10 @@
                 <height>24-row</height>
                 <itemlayout width="8-col" height="4-row">
                     <control type="label">
-                        <posx>32</posx>
-                        <posy>6</posy>
+                        <posx>4</posx>
+                        <posy>-28</posy>
                         <width>2-col-gutter</width>
+                        <height>4-row</height>
                         <font>symbolWeather</font>
                         <textcolor>textActive</textcolor>
                         <label>$VAR[weatherIcon]</label>
