@@ -37,22 +37,19 @@
                 <include>kenBurnsey</include>
             </control>
             <control type="image">
+                <posx>1-col</posx>
+                <posy>row-25-begin</posy>
+                <width>4-col</width>
+                <height>2-col</height>
+                <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                <aspectratio align="left">keep</aspectratio>
+            </control>
+            <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>vignette.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-
-            <!--studio logos etc-->
-            <control type="image">
-                <posx>1-col</posx>
-                <posy>row-27-begin</posy>
-                <width>2-col</width>
-                <height>1-col</height>
-                <texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-                <aspectratio>scale</aspectratio>
-            </control>
-
         </control>
         <!--content is movie or tvshow (from XBMC Library)-->
         <control type="group">
@@ -310,10 +307,19 @@
                         <onclick>SendClick(2003,6)</onclick>
                     </item>
                     <item>
+                        <visible>!System.HasAddon(script.artwork.downloader)</visible>
                         <label>13511</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(2003,10)</onclick>
+                    </item>
+                    <item>
+                        <description>Artwork Downloader (overrides get artwork if available)</description>
+                        <label2></label2>
+                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <label>$INFO[System.AddonTitle(script.artwork.downloader)]</label>
+                        <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </item>
                     <item>
                         <label>38023</label>

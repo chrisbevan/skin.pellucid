@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="5001">
     <defaultcontrol always="true">9876</defaultcontrol>
-    
+
     <onload condition="Skin.HasSetting(artistSlideshowActive)">RunScript(script.artistslideshow)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
@@ -72,7 +72,7 @@
                         <width>6-col</width>
                         <height>6-col</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[musicplayer.cover]</texture>
+                        <texture fallback="defaultAlbumCover.png" border="0">$INFO[musicplayer.cover]</texture>
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <fadetime>500</fadetime>

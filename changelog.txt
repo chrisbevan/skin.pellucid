@@ -25,10 +25,20 @@
 - [MODIFIED] MyMusicNav.xml - remove files node button
 
 ***To do***
-DialogPVRinfo - button and layout update
+
+Reinstate artwork downloader into videoinfo (replace existing artwork button? No - but need to integrate both somehow!)
+
+DialogPVRinfo - button update
+
+
 Touchscreen controls
-revise the TVShow view
-Fix clearart in TVShow views
+revise the TVShow view (looks kinda clunky)
+
+CREATE A BETTER LOGO!
+Addons manager - clean up a bit.
+
+DefaultAlbum redesign
+implement Default posters and thumbs for video section
 
 
 

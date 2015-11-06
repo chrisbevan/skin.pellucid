@@ -5,7 +5,7 @@
 
         <!--fanart-->
         <control type="group">
-            <visible>container.content(albums) + !container.content(songs) + SubString(container.folderpath,musicdb://artists)</visible>
+            <visible>container.content(albums) + !container.content(songs) + [SubString(container.folderpath,musicdb://artists) | SubString(container.folderpath,musicdb://genres)]</visible>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -75,7 +75,7 @@
                 </control>
 
                 <control type="panel" id="50">
-                    <visible>container.content(albums) + !container.content(songs) + SubString(container.folderpath,musicdb://artists)</visible>
+                    <visible>container.content(albums) + !container.content(songs) + [SubString(container.folderpath,musicdb://artists) | SubString(container.folderpath,musicdb://genres)]</visible>
                     <posx>72</posx>
                     <posy>row-21-begin</posy>
                     <width>1800</width>
@@ -92,7 +92,7 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3">colors/black.png</texture>
+                            <texture border="3">defaultAlbumCover.png</texture>
                             <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>
@@ -119,7 +119,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>disabled</textcolor>
-                            <label>$INFO[ListItem.artist]</label>
+                            <label>$INFO[ListItem.year,(,)]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -146,7 +146,7 @@
                                 <width>4-col-gutter</width>
                                 <height>4-col-gutter</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture border="0">colors/offblack.png</texture>
+                                <texture border="0">defaultAlbumCover.png</texture>
                                 <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                                 <bordersize>3</bordersize>
                                 <colordiffuse>ffFFFFFF</colordiffuse>
@@ -159,6 +159,28 @@
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="0">colors/black.png</texture>
                                 <colordiffuse>ccFFFFFF</colordiffuse>
+                            </control>
+                            <control type="label">
+                                <posx>12</posx>
+                                <posy>2-row</posy>
+                                <width>240</width>
+                                <height>2-row</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>regularStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$INFO[ListItem.Title]</label>
+                            </control>
+                            <control type="label">
+                                <posx>12</posx>
+                                <posy>3-row</posy>
+                                <width>240</width>
+                                <height>2-row</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>buttonTitle</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$INFO[ListItem.year,(,)]</label>
                             </control>
                             <control type="image">
                                 <posx>0</posx>

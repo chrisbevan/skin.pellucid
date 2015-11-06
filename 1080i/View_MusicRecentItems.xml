@@ -150,7 +150,7 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">colors/black.png</texture>
+                        <texture border="3">defaultAlbumCover.png</texture>
                         <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
@@ -204,7 +204,7 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3">colors/black.png</texture>
+                            <texture border="3">defaultAlbumCover.png</texture>
                             <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>

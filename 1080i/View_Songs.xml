@@ -35,7 +35,7 @@
                 <width>8-col</width>
                 <height>8-col</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.art(thumb)]</texture>
+                <texture fallback="defaultAlbumCover.png" border="0">$INFO[ListItem.art(thumb)]</texture>
                 <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
                 <fadetime>500</fadetime>
