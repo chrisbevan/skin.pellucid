@@ -307,7 +307,6 @@
                         <onclick>SendClick(2003,6)</onclick>
                     </item>
                     <item>
-                        <visible>!System.HasAddon(script.artwork.downloader)</visible>
                         <label>13511</label>
                         <label2></label2>
                         <thumb>-</thumb>
@@ -319,7 +318,7 @@
                         <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                         <label>$INFO[System.AddonTitle(script.artwork.downloader)]</label>
-                        <visible>System.HasAddon(script.artwork.downloader)</visible>
+                        <visible>false</visible>
                     </item>
                     <item>
                         <label>38023</label>

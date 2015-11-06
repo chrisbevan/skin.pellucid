@@ -171,7 +171,7 @@
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="3">colors/black.png</texture>
-                        <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
+                        <bordertexture colordiffuse="ffFFFFFF">defaultPoster.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
@@ -260,7 +260,7 @@
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="3">colors/black.png</texture>
-                            <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
+                            <bordertexture colordiffuse="ffFFFFFF">defaultPoster.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>

@@ -27,7 +27,7 @@
                 <visible>!isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
-                <width>12-col</width>
+                <width>1800</width>
                 <height>25-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
@@ -35,114 +35,70 @@
                 <onup>50</onup>
                 <onback>activateWindow(home)</onback>
                 <pagecontrol>60</pagecontrol>
-                <itemlayout width="12-col" height="3-row">
+                <itemlayout width="444" height="300">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
-                        <height>3-row</height>
-                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <width>6-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
                     </control>
                     <control type="image">
-                        <posx>1-col</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
-                        <width>11-col</width>
-                        <height>3-row</height>
+                        <width>6-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <texture>vignette.png</texture>
+                        <colordiffuse>ffffffff</colordiffuse>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <colordiffuse>textboxInactive</colordiffuse>
                     </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>0</posy>
-                        <width>8-col-gutter</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>1-row</posy>
-                        <width>11-col-gutter</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$VAR[itemDetail]</label>
-                    </control>
-                    <control type="label">
-                        <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                        <right>12</right>
-                        <posy>0</posy>
-                        <width>4-col</width>
-                        <height>2-row</height>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Property(UnWatchedEpisodes)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>row-3-begin</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-col-gutter</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout width="12-col" height="3-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>3-row</height>
-                        <aspectratio scalediffuse="false" align="right">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                <focusedlayout width="444" height="300">
+                    <control type="group">
                         <animation type="focus" loop="false" reversible="false">
-                            <effect type="rotatey" start="0" end="-15" center="36" tween="back" easing="out" time="300"/>
-                            <effect type="rotatey" start="0" end="15" center="36" tween="back" easing="out" delay="300" time="300"/>
+                            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
+                            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+                            <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
                         </animation>
-                    </control>
-                    <control type="image">
-                        <posx>1-col</posx>
-                        <posy>0</posy>
-                        <width>11-col</width>
-                        <height>3-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>0</posy>
-                        <width>8-col-gutter</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>1-row</posy>
-                        <width>11-col-gutter</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$VAR[itemDetail]</label>
-                    </control>
-                    <control type="label">
-                        <visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                        <right>12</right>
-                        <posy>0</posy>
-                        <width>4-col</width>
-                        <height>2-row</height>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Property(UnWatchedEpisodes)] [LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>6-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio scalediffuse="false" align="right">scale</aspectratio>
+                            <texture fallback="defaultPoster.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>3</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                        <control type="image">
+                            <posx>3</posx>
+                            <posy>3</posy>
+                            <width>402</width>
+                            <height>258</height>
+                            <texture>vignette.png</texture>
+                            <colordiffuse>ffffffff</colordiffuse>
+                            <aspectratio>stretch</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>row-3-begin</posy>
+                            <width>6-col-gutter</width>
+                            <height>2-col-gutter</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>
