@@ -22,7 +22,7 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">colors/black.png</texture>
+                        <texture border="3">defaultAlbumCover.png</texture>
                         <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
@@ -76,7 +76,7 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
+                            <texture fallback="defaultAlbumCover.png" border="0">$INFO[Listitem.thumb]</texture>
                             <bordertexture border="3" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>ff666666</colordiffuse>

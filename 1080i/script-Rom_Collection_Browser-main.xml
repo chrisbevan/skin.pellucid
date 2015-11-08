@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <window>
-    
+
     <defaultcontrol always="true">500</defaultcontrol>
     <controls>
         <include>globalBackground</include>
@@ -379,6 +379,10 @@
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
+                    <textureradiofocus>-</textureradiofocus>
+                    <textureradionofocus>-</textureradionofocus>
+                    <radiowidth/>
+                    <radioheight/>
                     <textoffsetx>col-1-begin</textoffsetx>
                     <label>$ADDON[script.games.rom.collection.browser 32404]:</label>
                 </control>

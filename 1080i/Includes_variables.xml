@@ -17,9 +17,9 @@
     <variable name="listTitle">
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31012]</value>
         <value condition="Window.IsActive(videolibrary) + Substring(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011] ,]</value>
-        <value condition="Window.IsActive(videolibrary) + Container.Content(movies)">$LOCALIZE[20342] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
+        <value condition="Window.IsActive(videolibrary) + Container.Content(movies)">$LOCALIZE[20342] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR]</value>
         <value condition="Window.IsActive(videolibrary) + [Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)]">$LOCALIZE[20343] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
-
+        <value condition="Window.IsActive(videolibrary) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
 
         <value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">$LOCALIZE[31053]</value>
         <value condition="Window.IsActive(musiclibrary) + SubString(container.folderpath,addons://)">$LOCALIZE[31058]</value>

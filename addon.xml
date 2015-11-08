@@ -4,7 +4,6 @@
         <import addon="xbmc.gui" version="5.10.0"/>
         <import addon="script.globalsearch" version="1.1.1"/>
         <import addon="script.artistslideshow" version="1.5.0"/>
-        <import addon="resource.images.studios.white" version="0.0.1"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

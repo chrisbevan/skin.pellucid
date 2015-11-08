@@ -42,7 +42,7 @@
                         <width>6-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
+                        <texture fallback="defaultPoster.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                     </control>
@@ -62,6 +62,18 @@
                         <height>2-col-gutter</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                    </control>
+                    <control type="label">
+                        <visible>isempty(ListItem.Art(clearlogo))</visible>
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.title]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout width="444" height="300">
@@ -98,6 +110,18 @@
                             <height>2-col-gutter</height>
                             <aspectratio>keep</aspectratio>
                             <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                        </control>
+                        <control type="label">
+                            <visible>isempty(ListItem.Art(clearlogo))</visible>
+                            <posx>12</posx>
+                            <posy>4-row</posy>
+                            <width>6-col-gutter</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
                         </control>
                     </control>
                 </focusedlayout>

@@ -514,11 +514,7 @@ msgid "Duration"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Hide watched items"
-msgstr ""
-
-msgctxt "#31196"
-msgid "Show watched items"
+msgid "Hide watched items:"
 msgstr ""
 
 msgctxt "#31197"
@@ -582,7 +578,7 @@ msgid "5 Day Forecast for"
 msgstr ""
 
 msgctxt "#31213"
-msgid "(Showing unwatched items only)"
+msgid "Unwatched items only"
 msgstr ""
 
 msgctxt "#31214"

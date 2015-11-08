@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window type="dialog" id="5824">
     <defaultcontrol always="true">8000</defaultcontrol>
-
     <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
-    <onunload condition="skin.string(showcast,true)">action(info)</onunload>
     <controls>
         <control type="group">
+            <visible>false</visible>
             <!--background / fanart-->
             <control type="image">
                 <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
@@ -31,25 +30,24 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <include>dimensionsFullscreen</include>
-                <texture>$INFO[listitem.art(fanart)]</texture>
+                <texture>$INFO[container(9998).listitem.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
                 <include>kenBurnsey</include>
             </control>
-
+            <control type="image">
+                <posx>1-col</posx>
+                <posy>row-25-begin</posy>
+                <width>4-col</width>
+                <height>2-col</height>
+                <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                <aspectratio align="left">keep</aspectratio>
+            </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>vignette.png</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>1-col</posx>
-                <posy>row-22-begin</posy>
-                <width>6-col</width>
-                <height>4-col</height>
-                <texture>$INFO[ListItem.Art(clearlogo)]</texture>
-                <aspectratio align="left">keep</aspectratio>
             </control>
         </control>
         <!--content is movie or tvshow (from XBMC Library)-->

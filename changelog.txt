@@ -26,19 +26,23 @@
 
 ***To do***
 
+Create / duplicate custom movie / music info dialog (for ONINFO)
+
 DialogPVRinfo - button update
 
+Use 'has parent' to manage back button (open side menu on no parent item)
 
-Touchscreen controls
-revise the TVShow view (looks kinda clunky)
+Radio RDS test
 
-Add Artwork downloader link to 2nd level side menu
+Touchscreen controls - get Android tablet for testing
+
+Finish the TVShow view - No logo infolabel
 
 CREATE A BETTER SKIN LOGO!
+
 Addons manager - clean up a bit.
 
-
-Design Fallbacks for posters and album covers
+Remove dependencies (ask for install - see forum)
 
 
 

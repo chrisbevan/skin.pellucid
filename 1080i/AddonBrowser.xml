@@ -58,18 +58,30 @@
                 <control type="radiobutton" id="6">
                     <width>6-col</width>
                     <texturenofocus>-</texturenofocus>
+                    <radiowidth/>
+                    <radioheight/>
+                    <textureradiofocus>-</textureradiofocus>
+                    <textureradionofocus>-</textureradionofocus>
                     <label>25000</label>
                     <onright>9999</onright>
                 </control>
                 <control type="radiobutton" id="7">
                     <width>6-col</width>
                     <texturenofocus>-</texturenofocus>
+                    <textureradiofocus>-</textureradiofocus>
+                    <textureradionofocus>-</textureradionofocus>
+                    <radiowidth/>
+                    <radioheight/>
                     <label>25001</label>
                     <onright>9999</onright>
                 </control>
                 <control type="radiobutton" id="8">
                     <width>6-col</width>
                     <texturenofocus>-</texturenofocus>
+                    <textureradiofocus>-</textureradiofocus>
+                    <textureradionofocus>-</textureradionofocus>
+                    <radiowidth/>
+                    <radioheight/>
                     <label>24999</label>
                     <onright>9999</onright>
                 </control>
