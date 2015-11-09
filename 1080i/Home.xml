@@ -115,8 +115,9 @@
                         <label>31001</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(musiclibrary)</onclick>
+                        <onclick condition="!Library.HasContent(Music)">ActivateWindow(Music,files)</onclick>
                         <onclick condition="!Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,false)</onclick>
+                        <onclick condition="Library.HasContent(Music)">ActivateWindow(Music,musicdb://)</onclick>
                         <onclick condition="Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,true)</onclick>
                     </item>
                     <item id="3">
@@ -144,7 +145,10 @@
                         <label>137</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>RunScript(script.globalsearch)</onclick>
+
+                        <onclick condition="!System.HasAddon(script.globalsearch)">RunPlugin(plugin://script.globalsearch)</onclick>
+
+                        <!--<onclick>RunScript(script.globalsearch)</onclick>-->
                         <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                     </item>
@@ -176,7 +180,7 @@
             <control type="label">
                 <posx>8-col</posx>
                 <posy>12</posy>
-                <width>8-col</width>
+                <width>24-col</width>
                 <height>4-row</height>
                 <align>right</align>
                 <font>veryLarge</font>
@@ -186,7 +190,7 @@
             <control type="label">
                 <posx>8-col</posx>
                 <posy>3-row</posy>
-                <width>12-col</width>
+                <width>24-col</width>
                 <height>4-row</height>
                 <align>right</align>
                 <font>Large</font>
@@ -196,7 +200,7 @@
             <control type="label">
                 <posx>8-col</posx>
                 <posy>182</posy>
-                <width>12-col</width>
+                <width>24-col</width>
                 <height>3-row</height>
                 <align>right</align>
                 <font>regular</font>

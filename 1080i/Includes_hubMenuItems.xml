@@ -172,7 +172,7 @@
                 <visible>Player.HasAudio</visible>
                 <label>31136</label>
                 <label2/>
-                <onclick>activateWindow(5001)</onclick>
+                <onclick>activateWindow(1103)</onclick>
             </item>
             <item>
                 <visible>MusicPlayer.Offset(0).Exists</visible>
@@ -209,7 +209,7 @@
                 <label2/>
                 <onclick>ActivateWindow(MusicLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
-                <onclick>Control.SetFocus(9123)</onclick>
+                <onclick>Control.SetFocus(9998)</onclick>
             </item>
             <!--music-->
             <item>

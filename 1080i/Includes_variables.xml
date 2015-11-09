@@ -40,7 +40,7 @@
     <variable name="listSubTitle">
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
         <value condition="Window.IsActive(videolibrary) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">$INFO[Window(Home).Property(Music.AlbumsCount)] $LOCALIZE[31037]</value>
+        <value condition="Window.IsActive(musiclibrary) + SubString(skin.string(showRecentMusicItems),true)">$INFO[Window(Home).Property(Music.AlbumsCount)] $LOCALIZE[31038]</value>
         <value condition="Window.IsActive(musiclibrary)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
     </variable>
     <!--list view item detail / subheader-->

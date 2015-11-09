@@ -133,6 +133,10 @@ msgctxt "#31037"
 msgid "Albums by"
 msgstr ""
 
+msgctxt "#31038"
+msgid "Albums"
+msgstr ""
+
 msgctxt "#31041"
 msgid "Edit Menu Shortcuts"
 msgstr ""

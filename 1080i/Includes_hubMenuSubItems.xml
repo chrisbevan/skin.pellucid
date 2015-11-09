@@ -45,7 +45,7 @@
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31041</label>
             <onclick>Skin.SetString(menuItemTypeFilter,video)</onclick>
-            <onclick>ActivateWindow(5000)</onclick>
+            <onclick>ActivateWindow(1100)</onclick>
         </control>
         <control type="button" id="507">
             <visible/>
@@ -142,7 +142,7 @@
             <textoffsetx>col-1-begin</textoffsetx>
             <label>31041</label>
             <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
-            <onclick>ActivateWindow(5000)</onclick>
+            <onclick>ActivateWindow(1100)</onclick>
         </control>
         <control type="button" id="504">
             <height>2-row</height>

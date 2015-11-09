@@ -3,6 +3,8 @@
 ***Working towards Kodi Jarvis release***
 
 - [REMOVED DEPENDENCY] script.thedeadman.functions (Nice one team Kodi!)
+- [REMOVED DEPENDENCY] script.globalsearch
+- [REMOVED DEPENDENCY] script.artistslideshow
 - [REMOVED] DialogPeripheralManager.xml
 - [REMOVED] DialogKaraokeSongSelector.xml
 - [REMOVED] DialogKaraokeSongSelectorLarge.xml
@@ -32,6 +34,8 @@ DialogPVRinfo - button update
 
 Use 'has parent' to manage back button (open side menu on no parent item)
 
+Complete RecentItems oninfo
+
 Radio RDS test
 
 Touchscreen controls - get Android tablet for testing
@@ -42,7 +46,7 @@ CREATE A BETTER SKIN LOGO!
 
 Addons manager - clean up a bit.
 
-Remove dependencies (ask for install - see forum)
+[DONE] Remove dependencies (ask for install - see forum)
 
 
 

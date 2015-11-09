@@ -132,7 +132,7 @@
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>Close</onclick>
-                        <onclick>activateWindow(5901)</onclick>
+                        <onclick>activateWindow(1104)</onclick>
                     </item>
                     <item>
                         <description>Audio Settings</description>

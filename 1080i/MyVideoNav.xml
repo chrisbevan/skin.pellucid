@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
     <previouswindow>home</previouswindow>
@@ -35,10 +34,10 @@
                     <visible>[SubString(skin.string(showRecentVideoItems),false) | !skin.string(showRecentVideoItems)]</visible>
                     <include>movies</include>
                     <include>tvshows</include>
+                    <include>videofiles</include>
                     <include>seasons</include>
                     <include>episodes</include>
                     <include>videoaddons</include>
-                    <include>videofiles</include>
                 </control>
             </control>
 
@@ -75,7 +74,7 @@
                     <posy>row-1-begin</posy>
                     <width>14-col</width>
                     <font>pageTitle</font>
-                    <label>$VAR[listTitle] $INFO[container.foldername]</label>
+                    <label>$VAR[listTitle]</label>
                     <textcolor>textActive</textcolor>
                 </control>
                 <!--source subtitle-->

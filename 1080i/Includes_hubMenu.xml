@@ -33,7 +33,6 @@
                 <colordiffuse>33ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-
             <!--section logo-->
             <control type="group">
                 <!--videos-->
@@ -76,7 +75,6 @@
                     <label></label>
                 </control>
             </control>
-
             <control type="list" id="9001">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
@@ -84,7 +82,8 @@
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
-                <onright>9999</onright>
+                <onright condition="SubString(skin.string(showRecentVideoItems),false) | SubString(skin.string(showRecentMusicItems),false)">9999</onright>
+                <onright condition="SubString(skin.string(showRecentVideoItems),true) | SubString(skin.string(showRecentMusicItems),true)">9998</onright>
                 <onback>activateWindow(home)</onback>
                 <itemlayout width="col-7-begin" height="2-row">
                     <control type="label">
