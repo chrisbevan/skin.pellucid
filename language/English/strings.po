@@ -521,6 +521,10 @@ msgctxt "#31195"
 msgid "Hide watched items:"
 msgstr ""
 
+msgctxt "#31196"
+msgid "Dir"
+msgstr ""
+
 msgctxt "#31197"
 msgid "Weather"
 msgstr ""

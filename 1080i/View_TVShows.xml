@@ -46,6 +46,19 @@
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                     </control>
+                    <control type="label">
+                        <visible>isempty(ListItem.Title)</visible>
+                        <posx>12</posx>
+                        <posy>4-row</posy>
+                        <width>384</width>
+                        <height>3-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>mediumStrong</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                        <shadowcolor>ff333333</shadowcolor>
+                    </control>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -67,13 +80,14 @@
                         <visible>isempty(ListItem.Art(clearlogo))</visible>
                         <posx>12</posx>
                         <posy>4-row</posy>
-                        <width>6-col-gutter</width>
-                        <height>2-row</height>
+                        <width>384</width>
+                        <height>3-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>regularStrong</font>
+                        <font>mediumStrong</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.title]</label>
+                        <shadowcolor>ff333333</shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="444" height="300">
@@ -93,6 +107,19 @@
                             <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>3</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <visible>isempty(ListItem.Title)</visible>
+                            <posx>12</posx>
+                            <posy>4-row</posy>
+                            <width>384</width>
+                            <height>3-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>mediumStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                            <shadowcolor>ff333333</shadowcolor>
                         </control>
                         <control type="image">
                             <posx>3</posx>
@@ -115,13 +142,14 @@
                             <visible>isempty(ListItem.Art(clearlogo))</visible>
                             <posx>12</posx>
                             <posy>4-row</posy>
-                            <width>6-col-gutter</width>
-                            <height>2-row</height>
+                            <width>384</width>
+                            <height>3-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>regularStrong</font>
+                            <font>mediumStrong</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.title]</label>
+                            <shadowcolor>ff333333</shadowcolor>
                         </control>
                     </control>
                 </focusedlayout>

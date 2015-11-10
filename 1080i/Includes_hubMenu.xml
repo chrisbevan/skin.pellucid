@@ -82,8 +82,7 @@
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
-                <onright condition="SubString(skin.string(showRecentVideoItems),false) | SubString(skin.string(showRecentMusicItems),false)">9999</onright>
-                <onright condition="SubString(skin.string(showRecentVideoItems),true) | SubString(skin.string(showRecentMusicItems),true)">9998</onright>
+                <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
                 <itemlayout width="col-7-begin" height="2-row">
                     <control type="label">

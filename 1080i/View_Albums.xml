@@ -44,6 +44,18 @@
                     <colordiffuse>textboxInactive</colordiffuse>
                 </control>
                 <control type="label">
+                    <visible>isempty(listitem.title)</visible>
+                    <posx>12</posx>
+                    <posy>2-row</posy>
+                    <width>240</width>
+                    <height>2-row</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>regularStrong</font>
+                    <textcolor>disabled</textcolor>
+                    <label>$INFO[ListItem.label]</label>
+                </control>
+                <control type="label">
                     <visible>!controlgroup(9000).hasfocus</visible>
                     <posx>12</posx>
                     <posy>2-row</posy>
@@ -95,16 +107,7 @@
                         <texture border="0">defaultAlbumCover.png</texture>
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>3</posx>
-                        <posy>3</posy>
-                        <width>258</width>
-                        <height>258</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <colordiffuse>ccFFFFFF</colordiffuse>
+                        <colordiffuse>ff666666</colordiffuse>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -116,6 +119,18 @@
                         <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ff666666</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <visible>isempty(listitem.title)</visible>
+                        <posx>12</posx>
+                        <posy>2-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -140,6 +155,7 @@
                         <label>$INFO[ListItem.Artist]</label>
                     </control>
                     <control type="grouplist">
+                        <visible>!isempty(listitem.title)</visible>
                         <posx>42</posx>
                         <posy>5-row</posy>
                         <width>4-col-gutter</width>

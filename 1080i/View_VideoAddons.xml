@@ -104,6 +104,7 @@
                             <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                         </control>
                         <control type="grouplist">
+                            <visible>!isempty(ListItem.Property(Addon.Name))</visible>
                             <posx>42</posx>
                             <posy>5-row</posy>
                             <width>4-col-gutter</width>

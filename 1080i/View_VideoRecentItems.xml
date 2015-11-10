@@ -59,11 +59,11 @@
                         <width>24-col</width>
                         <height>8-row</height>
                         <align>right</align>
-                        <font>veryLargeLight</font>
+                        <font>LargeLight</font>
                         <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
-                        <label>[B]$INFO[container(9998).listitem.title][/B][CR]$INFO[container(9998).listitem.genre] $INFO[container(9998).listitem.year,,]</label>
+                        <label>[B]$INFO[container(9998).listitem.title][/B][CR]$INFO[container(9998).listitem.director,$LOCALIZE[31196]. ,.] $INFO[container(9998).listitem.year,,]</label>
                     </control>
 
                     <control type="label">
@@ -82,70 +82,6 @@
                 </control>
             </control>
 
-            <!--content selector-->
-            <control type="list" id="9123">
-                <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
-                    <effect type="fade" start="100" end="0" time="200"/>
-                </animation>
-                <posx>72</posx>
-                <posy>672</posy>
-                <width>24-col</width>
-                <height>84</height>
-                <onleft>9000</onleft>
-                <ondown>9998</ondown>
-                <orientation>horizontal</orientation>
-                <itemlayout width="4-col" height="2-row">
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>0</posy>
-                        <width>4-col</width>
-                        <height>2-row</height>
-                        <font>buttonTitle</font>
-                        <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="4-col" height="78">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>56</posy>
-                        <width>4-col-textbox</width>
-                        <height>9</height>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                        <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>0</posy>
-                        <width>4-col</width>
-                        <height>2-row</height>
-                        <font>buttonTitle</font>
-                        <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item id="1">
-                        <visible>Library.HasContent(movies)</visible>
-                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
-                        <property name="textTitle">31176</property>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="2">
-                        <visible>Library.HasContent(tvshows)</visible>
-                        <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
-                        <property name="textTitle">31178</property>
-                        <onclick>noop</onclick>
-                    </item>
-                </content>
-            </control>
-
             <!--content listing-->
             <control type="panel" id="9998">
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
@@ -157,14 +93,12 @@
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
-                <onback condition="skin.string(moreinfo,false)">activateWindow(home)</onback>
-                <onback condition="skin.string(moreinfo,true)">skin.setstring(moreinfo,false)</onback>
                 <orientation>horizontal</orientation>
                 <onclick condition="container(9123).hasfocus(2)">Skin.SetString(showRecentVideoItems,false)</onclick>
                 <onclick condition="container(9123).hasfocus(2)">activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
                 <onclick condition="container(9123).hasfocus(2)">Control.SetFocus(50)</onclick>
                 <content>$INFO[control.getlabel(9123)]</content>
-                <oninfo>Skin.SetString(moreinfo,true)</oninfo>
+                <oninfo></oninfo>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
@@ -341,60 +275,68 @@
             </control>
         </control>
 
-        <!--More video info (duplicates dialogVideoInfo)-->
-        <control type="group">
-            <visible>skin.string(moreinfo,true)</visible>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>fullscreenWidth</width>
-                <height>fullscreenHeight</height>
-                <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-                <texture border="0">colors/black.png</texture>
-                <fadetime>500</fadetime>
-                <colordiffuse>CCffffff</colordiffuse>
-            </control>
-            <!--summary content-->
-            <control type="group">
-                <posx>col-1-begin</posx>
-                <posy>row-6-begin</posy>
+        <!--content selector-->
+        <control type="list" id="9123">
+            <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
+                <effect type="fade" start="100" end="0" time="200"/>
+            </animation>
+            <posx>72</posx>
+            <posy>672</posy>
+            <width>24-col</width>
+            <height>84</height>
+            <onleft>9000</onleft>
+            <ondown>9998</ondown>
+            <orientation>horizontal</orientation>
+            <itemlayout width="4-col" height="2-row">
                 <control type="label">
-                    <visible>container(9123).hasfocus(1)</visible>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>0</posy>
-                    <width>24-col</width>
+                    <width>4-col</width>
                     <height>2-row</height>
-                    <align>center</align>
+                    <font>buttonTitle</font>
                     <aligny>center</aligny>
-                    <font>large</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[container(9998).listitem.title]</label>
-                </control>
-                <control type="label">
-                    <visible>container(9123).hasfocus(2)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>24-col</width>
-                    <height>2-row</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>large</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[container(9998).listitem.tvshowtitle]</label>
-                </control>
-                <control type="textbox">
-                    <posx>3-col</posx>
-                    <posy>3-row</posy>
-                    <font>textbox</font>
-                    <width>18-col</width>
-                    <align>left</align>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <height>12-row</height>
-                    <label fallback="31205">$INFO[container(9998).ListItem.plot]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"/>
+                    <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
                 </control>
-            </control>
+            </itemlayout>
+            <focusedlayout width="4-col" height="78">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>56</posy>
+                    <width>4-col-textbox</width>
+                    <height>9</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                    <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
+                </control>
+                <control type="label">
+                    <posx>12</posx>
+                    <posy>0</posy>
+                    <width>4-col</width>
+                    <height>2-row</height>
+                    <font>buttonTitle</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>
+                </control>
+            </focusedlayout>
+            <content>
+                <item id="1">
+                    <visible>Library.HasContent(movies)</visible>
+                    <label>special://skin/extras/playlists/recentMovies.xsp</label>
+                    <property name="textTitle">31176</property>
+                    <onclick>noop</onclick>
+                </item>
+                <item id="2">
+                    <visible>Library.HasContent(tvshows)</visible>
+                    <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
+                    <property name="textTitle">31178</property>
+                    <onclick>noop</onclick>
+                </item>
+            </content>
         </control>
     </include>
 </includes>

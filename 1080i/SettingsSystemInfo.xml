@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">95</defaultcontrol>
-    
+
     <include>fadeInOut</include>
     <controls>
         <!--background-->
@@ -208,6 +208,7 @@
                         <onclick>noop</onclick>
                     </item>
                     <item id="8">
+                        <visible>System.GetBool(pvrmanager.enabled)</visible>
                         <description>PVR</description>
                         <label>24019</label>
                         <label2>$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
