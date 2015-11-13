@@ -517,6 +517,10 @@ msgctxt "#31193"
 msgid "Duration"
 msgstr ""
 
+msgctxt "#31194"
+msgid "Group"
+msgstr ""
+
 msgctxt "#31195"
 msgid "Hide watched items:"
 msgstr ""

@@ -135,6 +135,7 @@
                         <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
                     </item>
                     <item id="9">
+                        <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
                         <label>31197</label>
                         <label2></label2>
                         <thumb>-</thumb>
@@ -145,10 +146,8 @@
                         <label>137</label>
                         <label2></label2>
                         <thumb>-</thumb>
-
                         <onclick condition="!System.HasAddon(script.globalsearch)">RunPlugin(plugin://script.globalsearch)</onclick>
-
-                        <!--<onclick>RunScript(script.globalsearch)</onclick>-->
+                        <onclick condition="System.HasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
                         <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                     </item>
@@ -198,6 +197,7 @@
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
+                <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
                 <posx>8-col</posx>
                 <posy>182</posy>
                 <width>24-col</width>

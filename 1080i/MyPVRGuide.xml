@@ -2,7 +2,7 @@
 <window>
     <views>10</views>
     <defaultcontrol always="false">9999</defaultcontrol>
-    
+
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
@@ -36,7 +36,7 @@
                     <timeblocks>30</timeblocks>
                     <progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
                     <rulerunit>6</rulerunit>
-                    <onback>8000</onback>
+                    <onback>9000</onback>
                     <rulerlayout height="2-row" width="216">
                         <control type="label" id="2">
                             <visible>SubString(ListItem.Label,:)</visible>

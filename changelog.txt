@@ -28,17 +28,24 @@
 
 ***To do***
 
+on startup: add check for parent folder items: system.getbool(showparentdiritems)
+
+PVR channel manager
+PVR Group manager
+
 Pictures section update
 
 DialogPVRinfo - button update
 
-Use 'has parent' to manage back button (open side menu on no parent item)
+Add filename to subtitles listings
 
 Radio RDS test
 
 Touchscreen controls - get Android tablet for testing
 
 Addons manager - clean up a bit.
+
+Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
 
 
 [B]0.1.0[/B]

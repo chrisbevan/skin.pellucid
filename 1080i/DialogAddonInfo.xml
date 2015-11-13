@@ -92,10 +92,10 @@
                 <control type="label">
                     <posx>12</posx>
                     <posy>2-row</posy>
-                    <width>10-col-gutter</width>
-                    <font>itemSubTitle</font>
+                    <width>12-col-gutter</width>
+                    <font>small</font>
                     <textcolor>highlight</textcolor>
-                    <label>$INFO[ListItem.Property(Addon.Creator)] • $LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)]</label>
+                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)][/B] $INFO[ListItem.Property(Addon.Creator)] </label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
