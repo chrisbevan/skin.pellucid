@@ -11,8 +11,6 @@
             <control type="group">
                 <posx>col-2-begin</posx>
                 <posy>row-3-begin</posy>
-                <!--animations-->
-                <include>modalDialogInOutVertical</include>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -34,7 +32,7 @@
                 <control type="image">
                     <posx>8-col</posx>
                     <posy>2-row</posy>
-                    <width>14-col</width>
+                    <width>8-col</width>
                     <height>21-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
@@ -66,11 +64,32 @@
                 </control>
 
                 <!--channel list-->
-                <control type="list" id="20">
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>2-row</posy>
+                    <width>8-col-textbox</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <colordiffuse>44FFFFFF</colordiffuse>
+                </control>
+                <control type="label">
+                    <description>name label</description>
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>8-col</width>
-                    <height>21-row</height>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <font>itemSubTitle</font>
+                    <textcolor>black</textcolor>
+                    <label>$LOCALIZE[31214]</label>
+                </control>
+                <control type="list" id="20">
+                    <posx>0</posx>
+                    <posy>4-row</posy>
+                    <width>8-col-textbox</width>
+                    <height>19-row</height>
                     <onright>7</onright>
                     <itemlayout height="2-row" width="8-col">
                         <control type="image">
@@ -132,9 +151,30 @@
                 </control>
 
                 <!--channel management options-->
-                <control type="group">
+                <control type="image">
                     <posx>8-col</posx>
                     <posy>2-row</posy>
+                    <width>8-col-textbox</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <colordiffuse>44FFFFFF</colordiffuse>
+                </control>
+                <control type="label">
+                    <description>name label</description>
+                    <posx>8-col</posx>
+                    <posy>2-row</posy>
+                    <width>8-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <font>itemSubTitle</font>
+                    <textcolor>black</textcolor>
+                    <label>$LOCALIZE[31179]</label>
+                </control>
+                <control type="group">
+                    <posx>8-col</posx>
+                    <posy>4-row</posy>
                     <control type="radiobutton" id="7">
                         <description>Channel activated</description>
                         <posx>0</posx>
@@ -263,9 +303,30 @@
                 </control>
 
                 <!--OK / Cancel / apply-->
-                <control type="panel" id="9000">
+                <control type="image">
                     <posx>16-col</posx>
                     <posy>2-row</posy>
+                    <width>6-col</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                    <colordiffuse>44FFFFFF</colordiffuse>
+                </control>
+                <control type="label">
+                    <description>name label</description>
+                    <posx>16-col</posx>
+                    <posy>2-row</posy>
+                    <width>6-col</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <align>center</align>
+                    <font>itemSubTitle</font>
+                    <textcolor>black</textcolor>
+                    <label>$LOCALIZE[31179]</label>
+                </control>
+                <control type="panel" id="9000">
+                    <posx>16-col</posx>
+                    <posy>4-row</posy>
                     <width>8-col</width>
                     <height>6-row</height>
                     <itemgap>3</itemgap>

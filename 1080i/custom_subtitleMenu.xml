@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1104">
     <defaultcontrol always="true">5000</defaultcontrol>
-     
+
     <controls>
         <include>fadeInOut</include>
         <control type="group">
@@ -33,21 +33,16 @@
                     <width>6-col</width>
                     <height>11-row</height>
                     <itemgap>0</itemgap>
-                    <control type="button" id="4">
-                        <description>Download Subtitle</description>
-                        <width>8-col</width>
-                        <label>31154</label>
-                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <focusedcolor>textActive</focusedcolor>
-                        <onclick>Dialog.Close(VideoOSD)</onclick>
-                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
-                    </control>
                     <control type="radiobutton" id="1">
                         <description>Enable subtitles</description>
                         <enable>VideoPlayer.HasSubtitles</enable>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>textActive</focusedcolor>
-                        <label>449</label>
+                        <label>31151</label>
+                        <textureradiofocus>-</textureradiofocus>
+                        <textureradionofocus>-</textureradionofocus>
+                        <radiowidth/>
+                        <radioheight/>
                         <onclick>ShowSubtitles</onclick>
                         <selected>VideoPlayer.SubtitlesEnabled</selected>
                     </control>
@@ -60,7 +55,15 @@
                         <focusedcolor>textActive</focusedcolor>
                         <onclick>SubtitleDelay</onclick>
                     </control>
-
+                    <control type="button" id="4">
+                        <description>Download Subtitle</description>
+                        <width>8-col</width>
+                        <label>31154</label>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                        <focusedcolor>textActive</focusedcolor>
+                        <onclick>Dialog.Close(VideoOSD)</onclick>
+                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    </control>
                 </control>
             </control>
         </control>

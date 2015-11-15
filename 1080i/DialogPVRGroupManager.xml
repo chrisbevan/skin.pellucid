@@ -6,7 +6,7 @@
         <include>globalBackground</include>
         <control type="group">
             <posx>col-3-begin</posx>
-            <posy>row-2-begin</posy>
+            <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <!--content provider title / info-->
@@ -83,7 +83,7 @@
                 <width>6-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <font>itemTitle</font>
+                <font>itemSubTitle</font>
                 <textcolor>black</textcolor>
                 <label>$LOCALIZE[31194]</label>
             </control>
@@ -166,7 +166,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <align>center</align>
-                    <font>itemTitle</font>
+                    <font>itemSubTitle</font>
                     <textcolor>black</textcolor>
                 </control>
                 <control type="panel" id="12">
@@ -257,7 +257,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <align>center</align>
-                    <font>itemTitle</font>
+                    <font>itemSubTitle</font>
                     <textcolor>black</textcolor>
                 </control>
                 <control type="panel" id="11">
@@ -335,6 +335,17 @@
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>44FFFFFF</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>16-col</posx>
+                <posy>2-row</posy>
+                <width>4-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <align>center</align>
+                <font>itemSubTitle</font>
+                <textcolor>black</textcolor>
+                <label>$LOCALIZE[31179]</label>
             </control>
             <control type="panel" id="9001">
                 <posx>16-col</posx>

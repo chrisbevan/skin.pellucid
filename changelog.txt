@@ -30,14 +30,9 @@
 
 on startup: add check for parent folder items: system.getbool(showparentdiritems)
 
-PVR channel manager
-PVR Group manager
-
 Pictures section update
 
 DialogPVRinfo - button update
-
-Add filename to subtitles listings
 
 Radio RDS test
 
@@ -46,6 +41,8 @@ Touchscreen controls - get Android tablet for testing
 Addons manager - clean up a bit.
 
 Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
+
+Android file view is not working properly.
 
 
 [B]0.1.0[/B]

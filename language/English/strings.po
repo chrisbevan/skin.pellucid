@@ -389,6 +389,10 @@ msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
 msgstr ""
 
+msgctxt "#31143"
+msgid "Remaining"
+msgstr ""
+
 msgctxt "#31144"
 msgid "FPS"
 msgstr ""
@@ -415,6 +419,10 @@ msgstr ""
 
 msgctxt "#31150"
 msgid "Home: Hide Search"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Subtitles"
 msgstr ""
 
 msgctxt "#31152"
@@ -463,6 +471,10 @@ msgstr ""
 
 msgctxt "#31178"
 msgid "Recent TV Shows"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Options"
 msgstr ""
 
 msgctxt "#31180"
