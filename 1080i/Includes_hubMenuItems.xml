@@ -151,13 +151,13 @@
             <item>
                 <visible/>
                 <label>1036</label>
-                <onclick>ActivateWindow(favourites,return)</onclick>
+                <onclick>ActivateWindow(favourites)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
             <item>
                 <visible/>
                 <label>1214</label>
-                <onclick>ActivateWindow(Videos,files,return)</onclick>
+                <onclick>ActivateWindow(Videos,sources://video/)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>

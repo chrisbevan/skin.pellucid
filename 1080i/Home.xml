@@ -105,9 +105,9 @@
                         <label>31000</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick condition="!Library.HasContent(Video)">ActivateWindow(Videos,files)</onclick>
+                        <onclick condition="!Library.HasContent(Video)">ActivateWindow(Videos,sources://video/)</onclick>
                         <onclick condition="!Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,false)</onclick>
-                        <onclick condition="Library.HasContent(Video)">ActivateWindow(Videos,videodb://)</onclick>
+                        <onclick condition="Library.HasContent(Video)">ActivateWindow(Videos,library://video/)</onclick>
                         <onclick condition="Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,true)</onclick>
                     </item>
                     <item id="2">
