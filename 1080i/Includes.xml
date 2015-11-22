@@ -79,7 +79,7 @@
     <!--busy indicator-->
     <include name="loadingIndicator">
         <control type="group">
-            <visible>!IntegerGreaterThan(container.numitems,0) | window.isactive(busydialog)</visible>
+            <visible>!isempty(container.foldername) + !IntegerGreaterThan(container.numitems,0) | window.isactive(busydialog)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <!--animations-->

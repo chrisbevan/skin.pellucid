@@ -2,7 +2,7 @@
 <includes>
     <include name="seasons">
         <control type="group">
-            <visible>container.content(seasons) + !container.content(episodes)</visible>
+            <visible>!isempty(container.folderpath) + container.content(seasons) + !container.content(episodes)</visible>
 
             <!--fanart-->
             <control type="group">
@@ -43,6 +43,7 @@
                         <height>2-row</height>
                         <font>largeStrong</font>
                         <textcolor>textActive</textcolor>
+                        <shadowcolor>background</shadowcolor>
                         <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
                     </control>
                 </control>
@@ -71,7 +72,7 @@
 
                 <!--content-->
                 <control type="panel" id="58">
-                    <visible>!StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                    <visible>!isempty(container.folderpath) + !StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-17-begin</posy>
                     <width>24-col</width>

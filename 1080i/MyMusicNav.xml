@@ -83,7 +83,7 @@
         <!--hub menu-->
         <include>hubMenu</include>
         <!--loading indicator-->
-        <!--<include>loadingIndicator</include>-->
+        <include>loadingIndicator</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

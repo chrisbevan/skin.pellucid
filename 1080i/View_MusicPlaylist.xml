@@ -49,7 +49,7 @@
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label></label>
@@ -138,7 +138,7 @@
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label></label>

@@ -20,15 +20,28 @@
 - [REMOVED] DialogPVRRecordingInfo.xml
 - [REMOVED] VisualisationPresetList.xml
 
+- [NEW] DialogAudioDSPManager.xml
+- [NEW] DialogAudioDSPSettings.xml
 
 - [MODIFIED] DialogAddonInfo.xml - remove button id="11"
 - [MODIFIED] DialogKaiToast.xml - remove ID's 403-405
 - [MODIFIED] DialogVideoInfo.xml - add button ID 7, replace user rating value
 - [MODIFIED] MyMusicNav.xml - remove files node button
 
+
+
 ***To do***
 
-on startup: add check for parent folder items: system.getbool(showparentdiritems)
+Better video / audio settings handling (use a button instead)
+Info screen rework for the OSD (match movie info style instead)
+
+Check extra button to dialogAddonInfo.xml (auto update)
+
+Music smartplaylists
+
+Touch support for file seeking etc
+
+on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
 
 Pictures section update
 
@@ -36,13 +49,9 @@ DialogPVRinfo - button update
 
 Radio RDS test
 
-Touchscreen controls - get Android tablet for testing
-
-Addons manager - clean up a bit.
+Touchscreen controls on Android tablets
 
 Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
-
-Android file view is not working properly.
 
 
 [B]0.1.0[/B]

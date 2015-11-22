@@ -77,8 +77,20 @@ msgctxt "#31012"
 msgid "Video Library"
 msgstr ""
 
+msgctxt "#31013"
+msgid "Auto Update"
+msgstr ""
+
 msgctxt "#31014"
 msgid "title(s)"
+msgstr ""
+
+msgctxt "#31015"
+msgid "On"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Off"
 msgstr ""
 
 msgctxt "#31017"
@@ -103,6 +115,10 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Select Items"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Notification"
 msgstr ""
 
 msgctxt "#31029"

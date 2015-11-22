@@ -16,86 +16,91 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--content title-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>23-row</posy>
-                <width>fullscreenWidth</width>
-                <height>2-row</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-                <posx>col-1-begin</posx>
-                <posy>23-row</posy>
-                <width>18-col</width>
-                <height>2-row</height>
-                <font>pageTitle</font>
-                <textcolor>textActive</textcolor>
-                <label>$INFO[System.Time]   [UPPERCASE]$INFO[videoplayer.Title][/UPPERCASE]</label>
-            </control>
-            <control type="label">
-                <right>96</right>
-                <posy>23-row</posy>
-                <width>8-col</width>
-                <height>2-row</height>
-                <font>pageTitle</font>
-                <align>right</align>
-                <textcolor>textActive</textcolor>
-                <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
-                <scroll>false</scroll>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>25-row</posy>
-                <width>fullscreenWidth</width>
-                <height>5-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>textboxInactive</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="textbox">
-                <posx>col-1-begin</posx>
-                <posy>910</posy>
-                <font>textbox</font>
-                <width>24-col</width>
-                <textcolor>textActive</textcolor>
-                <height>114</height>
-                <label fallback="31205">$INFO[videoplayer.plot]</label>
-                <autoscroll delay="10000" time="1000" repeat="10000"/>
-            </control>
-            <!--options-->
+
             <control type="group">
                 <posx>col-17-begin</posx>
                 <posy>0</posy>
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" time="300" delay="300"/>
+                    <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
+                </animation>
+                <!--overlay-->
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>5-col-textbox</width>
-                    <height>2-row</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>ffffffff</colordiffuse>
+                    <width>8-col</width>
+                    <height>fullscreenHeight</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>cc111111</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="label">
-                    <posx>24</posx>
+                <control type="image">
+                    <posx>0</posx>
                     <posy>0</posy>
-                    <width>324</width>
-                    <height>2-row</height>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>black</textcolor>
-                    <label>$LOCALIZE[31143]: $INFO[VideoPlayer.TimeRemaining]</label>
+                    <width>8-col</width>
+                    <height>row-5-begin</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="list" id="8001">
-                    <posx>5-col</posx>
-                    <posy>0</posy>
-                    <width>12-col</width>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>row-5-begin</posy>
+                    <width>8-col</width>
                     <height>2-row</height>
-                    <itemgap>0</itemgap>
-                    <orientation>horizontal</orientation>
-                    <itemlayout width="1-col" height="2-row">
+                    <texture>colors/white.png</texture>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <!--content-->
+                    <control type="group">
+                        <posx>24</posx>
+                        <posy>row-1-begin</posy>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>528</width>
+                            <align>left</align>
+                            <height>3-row</height>
+                            <aligny>center</aligny>
+                            <font>pageTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[videoplayer.Title]</label>
+                            <wrapmultiline>true</wrapmultiline>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>4-row</posy>
+                            <width>528</width>
+                            <height>2-row</height>
+                            <align>left</align>
+                            <font>regularStrong</font>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                        <!--synopsis-->
+                        <control type="textbox">
+                            <posx>0</posx>
+                            <posy>7-row</posy>
+                            <font>textbox</font>
+                            <width>528</width>
+                            <align>left</align>
+                            <textcolor>textActive</textcolor>
+                            <height>15-row</height>
+                            <label fallback="31205">$INFO[videoplayer.plot]</label>
+                            <autoscroll delay="10000" time="1000" repeat="10000"/>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                    </control>
+                <!--dialog controls-->
+                <control type="panel" id="8001">
+                    <posx>0</posx>
+                    <posy>24-row</posy>
+                    <width>8-col</width>
+                    <height>6-row</height>
+                    <itemgap>3</itemgap>
+                    <orientation>vertical</orientation>
+                    <itemlayout width="8-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -103,7 +108,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
-                            <colordiffuse>textboxInactive</colordiffuse>
+                            <colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -115,17 +120,47 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>7-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/black.png</texture>
+                            <colordiffuse>overlay</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                            <shadowcolor>-</shadowcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="1-col" height="2-row">
+                    <focusedlayout width="8-col" height="2-row">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>1-col-textbox</width>
+                            <width>1-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
                             <colordiffuse>highlight</colordiffuse>
+                            <include>spinFocusIcon</include>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>7-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -137,6 +172,17 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[ListItem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                     </focusedlayout>

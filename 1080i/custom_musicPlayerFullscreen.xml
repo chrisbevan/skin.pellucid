@@ -72,7 +72,9 @@
                         <width>4-col</width>
                         <height>4-col</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="defaultAlbumCover.png" diffuse="masks/circle.png" border="0">$INFO[musicplayer.cover]</texture>
+                        <texture fallback="defaultAlbumCover.png" diffuse="masks/discSurface.png" border="0">$INFO[Player.art(thumb)]</texture>
+                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <fadetime>500</fadetime>
                     </control>
                 </control>

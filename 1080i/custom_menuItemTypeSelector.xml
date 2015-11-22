@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1100">
     <defaultcontrol always="true">6000</defaultcontrol>
-    
+
     <onload>Skin.Reset(menuItemType)</onload>
     <onload>Skin.SetString(currentAddonSourceSlot,$VAR[customAddonSourceSlot])</onload>
     <onload condition="stringcompare(skin.string(menuItemTypeFilter),video)">Skin.SetString(menuItemType,videoAddon)</onload>
@@ -140,12 +140,12 @@
                 <onright>dialog.close(1100)</onright>
                 <itemlayout width="col-7-begin" height="2-row">
                     <control type="label">
-                        <posx>60</posx>
+                        <posx>52</posx>
                         <posy>0</posy>
                         <width>1-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <label></label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -173,12 +173,12 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>60</posx>
+                        <posx>52</posx>
                         <posy>0</posy>
                         <width>1-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <label></label>
                         <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>

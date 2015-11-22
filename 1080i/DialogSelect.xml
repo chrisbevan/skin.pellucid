@@ -277,7 +277,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
@@ -320,7 +320,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>

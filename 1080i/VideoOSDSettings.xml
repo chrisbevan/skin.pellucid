@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
-     
+    <onload condition="window.isactive(124)">Control.SetFocus(9123,1)</onload>
+    <onload condition="window.isactive(123)">Control.SetFocus(9123,2)</onload>
     <include>fadeInOut</include>
     <controls>
         <control type="image">
@@ -28,17 +29,26 @@
 
             <!--audio / video options selection-->
             <control type="panel" id="9123">
-                <posx>24</posx>
-                <posy>-24</posy>
+                <posx>0</posx>
+                <posy>-16</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <ondown>5</ondown>
                 <orientation>horizontal</orientation>
                 <itemlayout width="4-col" height="2-row">
-                    <control type="label">
+                    <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col</width>
+                        <width>4-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
                         <aligny>center</aligny>
@@ -50,18 +60,18 @@
                 <focusedlayout width="4-col" height="78">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>62</posy>
-                        <width>4-col-gutter</width>
-                        <height>9</height>
+                        <posy>0</posy>
+                        <width>4-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <colordiffuse>highlight</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
                         <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
+                        <posx>24</posx>
                         <posy>0</posy>
-                        <width>4-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
                         <aligny>center</aligny>
@@ -82,27 +92,6 @@
                         <onclick>ActivateWindow(123)</onclick>
                     </item>
                 </content>
-            </control>
-            <!--current page marker-->
-            <control type="image">
-                <visible>window.isactive(124) + !control.hasfocus(9123)</visible>
-                <posx>24</posx>
-                <posy>38</posy>
-                <width>4-col-gutter</width>
-                <height>9</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <visible>window.isactive(123) + !control.hasfocus(9123)</visible>
-                <posx>312</posx>
-                <posy>38</posy>
-                <width>4-col-gutter</width>
-                <height>9</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="5">
                 <description>Control Area</description>

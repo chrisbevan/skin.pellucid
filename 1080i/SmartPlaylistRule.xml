@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">15</defaultcontrol>
-     
+
     <include>fadeInOut</include>
     <controls>
          <control type="image">
@@ -123,7 +123,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
@@ -164,7 +164,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>

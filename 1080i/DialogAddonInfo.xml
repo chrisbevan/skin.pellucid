@@ -7,7 +7,7 @@
         <!--About this addon-->
         <control type="group">
             <posx>col-4-begin</posx>
-            <posy>row-3-begin</posy>
+            <posy>row-1-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
@@ -35,7 +35,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>21-row</height>
+                <height>24-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -74,7 +74,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
-                    <height>11-row</height>
+                    <height>14-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -102,7 +102,7 @@
                     <posy>4-row</posy>
                     <font>textbox</font>
                     <width>12-col-gutter</width>
-                    <height>6-row</height>
+                    <height>9-row</height>
                     <label>$INFO[ListItem.Property(Addon.Description)]</label>
                     <autoscroll delay="5000" time="1000" repeat="10000"/>
                 </control>
@@ -116,7 +116,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>6-col</width>
-                    <height>10-row</height>
+                    <height>14-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
                     <itemlayout width="6-col" height="2-row">
@@ -127,7 +127,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
@@ -168,7 +168,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>symbol</font>
+                            <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                             <shadowcolor>-</shadowcolor>
@@ -186,41 +186,54 @@
                         </control>
                     </focusedlayout>
                     <content>
-                        <item id="1">
-                            <visible>!substring(ListItem.Property(Addon.path),http,Left)</visible>
+                        <item>
                             <label>31117</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>sendclick(146,12)</onclick>
                         </item>
-                        <item id="2">
-                            <label>$INFO[Control.GetLabel(6)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,6)</onclick>
-                        </item>
-                        <item id="3">
-                            <visible>Control.IsEnabled(8)</visible>
-                            <label>$INFO[Control.GetLabel(8)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,8)</onclick>
-                        </item>
-                        <item id="5">
-                            <visible>Control.IsEnabled(7)</visible>
-                            <label>$INFO[Control.GetLabel(7)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,7)</onclick>
-                        </item>
-                        <item id="6">
+                        <item>
                             <visible>Control.IsEnabled(9)</visible>
                             <label>$INFO[Control.GetLabel(9)]</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,9)</onclick>
                         </item>
-                        <item id="7">
+                        <item>
+                            <visible>SubString(Control.GetLabel(13),*)</visible>
+                            <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,13)</onclick>
+                        </item>
+                        <item>
+                            <visible>!SubString(Control.GetLabel(13),*)</visible>
+                            <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,13)</onclick>
+                        </item>
+                        <item>
+                            <visible>Control.IsEnabled(8)</visible>
+                            <label>$INFO[Control.GetLabel(8)]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,8)</onclick>
+                        </item>
+                        <item>
+                            <visible>Control.IsEnabled(7)</visible>
+                            <label>$INFO[Control.GetLabel(7)]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,7)</onclick>
+                        </item>
+                        <item>
+                            <label>$INFO[Control.GetLabel(6)]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,6)</onclick>
+                        </item>
+                        <item>
                             <visible>Control.IsEnabled(10)</visible>
                             <label>$INFO[Control.GetLabel(10)]</label>
                             <label2></label2>
@@ -253,12 +266,11 @@
                 <description>Changelog button</description>
                 <label>24036</label>
             </control>
-            <control type="button" id="11">
-                <description>Rollback button</description>
-                <label>24048</label>
-            </control>
             <control type="button" id="12">
                 <description>Launch addon</description>
+            </control>
+            <control type="radiobutton" id="13">
+                <description>Enable / disable auto update</description>
             </control>
         </control>
         <!--debugging-->

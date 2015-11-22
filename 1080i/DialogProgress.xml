@@ -39,7 +39,7 @@
                 <width>468</width>
                 <height>60</height>
                 <aligny>center</aligny>
-                <label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%] ($LOCALIZE[31152])</label>
+                <label>$INFO[container.foldername]</label>
                 <textcolor>black</textcolor>
                <!--animations-->
                 <animation type="Windowopen">

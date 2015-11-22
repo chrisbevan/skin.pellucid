@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>5</defaultcontrol>
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="group">
+            <posx>col-4-begin</posx>
+            <posy>row-5-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>18-col</width>
+                <height>2-row</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--title-->
+            <control type="label" id="2">
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>18-col-gutter</width>
+                <height>2-row</height>
+                <font>dialogTitle</font>
+                <label>$LOCALIZE[20077]</label>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
+
+            <control type="grouplist" id="5">
+                <description>control area</description>
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>24-col</width>
+                <height>10-row</height>
+                <pagecontrol>60</pagecontrol>
+                <onright>60</onright>
+                <onup>5</onup>
+                <ondown>5</ondown>
+            </control>
+
+            <control type="scrollbar" id="60">
+                 <posx>48r</posx>
+                 <posy>row-5-begin</posy>
+                 <height>23-row</height>
+                 <onleft>5</onleft>
+            </control>
+
+            <control type="button" id="7">
+                <description>Default Button</description>
+                <texturenofocus>-</texturenofocus>
+            </control>
+
+            <control type="radiobutton" id="8">
+                <description>Default RadioButton</description>
+                <texturenofocus>-</texturenofocus>
+            </control>
+
+            <control type="spincontrolex" id="9">
+                <description>Default SpinControlex</description>
+                <texturenofocus>-</texturenofocus>
+            </control>
+
+            <control type="edit" id="12">
+                <description>Default Edit</description>
+            </control>
+
+            <control type="sliderex" id="13">
+                <description>Default Slider</description>
+                <texturenofocus>-</texturenofocus>
+            </control>
+
+            <control type="label" id="14">
+                 <description>Default Label</description>
+                 <label>-</label>
+                 <align>center</align>
+                 <font>buttonTitle</font>
+                 <textcolor>textActive</textcolor>
+                 <shadowcolor>-</shadowcolor>
+            </control>
+
+            <!--add further controls here-->
+
+
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>DialogAudioDSPSettings.xml</label>
+        </control>
+
+
+
+        <!--TO BE MOVED-->
+        <control type="group">
+
+            <control type="label">
+                <description>info label</description>
+                <left>40</left>
+                <top>540</top>
+                <width>720</width>
+                <font>regular</font>
+                <label>$INFO[ADSP.MasterInfo]</label>
+                <textcolor>textActive</textcolor>
+            </control>
+
+            <control type="image">
+                <description>Audio DSP Image</description>
+                <left>555</left>
+                <top>540</top>
+                <width>85</width>
+                <height>35</height>
+                <aspectratio align="center">keep</aspectratio>
+                <visible>!IsEmpty(ADSP.MasterOwnIcon)</visible>
+                <texture>$INFO[ADSP.MasterOwnIcon]</texture>
+            </control>
+
+            <control type="image">
+                <description>Audio Codec Image</description>
+                <left>640</left>
+                <top>540</top>
+                <width>85</width>
+                <height>35</height>
+                <aspectratio align="center">keep</aspectratio>
+                <texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+                <visible>IsEmpty(ADSP.MasterOverrideIcon) + Player.HasVideo</visible>
+            </control>
+
+            <control type="image">
+                <description>Audio Codec Image</description>
+                <left>640</left>
+                <top>540</top>
+                <width>85</width>
+                <height>35</height>
+                <aspectratio align="center">keep</aspectratio>
+                <texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+                <visible>IsEmpty(ADSP.MasterOverrideIcon) + Player.HasAudio</visible>
+            </control>
+
+            <control type="image">
+                <description>Audio Codec Override Image</description>
+                <left>640</left>
+                <top>540</top>
+                <width>85</width>
+                <height>35</height>
+                <aspectratio align="center">keep</aspectratio>
+                <visible>!IsEmpty(ADSP.MasterOverrideIcon)</visible>
+                <texture>$INFO[ADSP.MasterOverrideIcon]</texture>
+            </control>
+
+            <control type="image">
+                <description>Audio Channels Image</description>
+                <left>730</left>
+                <top>540</top>
+                <width>50</width>
+                <height>35</height>
+                <aspectratio align="center">keep</aspectratio>
+                <texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+            </control>
+
+            <control type="label">
+                <description>type label</description>
+                <left>590</left>
+                <top>65</top>
+                <width>720</width>
+                <font>regular</font>
+                <label>15042</label>
+                <textcolor>textActive</textcolor>
+            </control>
+
+            <control type="label">
+                <description>type label</description>
+                <left>590</left>
+                <top>100</top>
+                <width>230</width>
+                <font>regular</font>
+                <label>$INFO[ADSP.DetectedStreamType]</label>
+                <textcolor>textActive</textcolor>
+            </control>
+        </control>
+
+
+
+    </controls>
+</window>

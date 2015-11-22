@@ -566,7 +566,7 @@
                         <posx>24</posx>
                         <posy>0</posy>
                         <width>1-col</width>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
@@ -594,7 +594,7 @@
                         <posx>24</posx>
                         <posy>0</posy>
                         <width>1-col</width>
-                        <font>symbol</font>
+                        <font>symbolLarge</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
