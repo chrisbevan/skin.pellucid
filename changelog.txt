@@ -32,9 +32,7 @@
 
 ***To do***
 
-Better video / audio settings handling (use a button instead)
-Info screen rework for the OSD (match movie info style instead)
-
+Finish Info screen rework for the OSD (match movie info style instead)
 Check extra button to dialogAddonInfo.xml (auto update)
 
 Music smartplaylists
