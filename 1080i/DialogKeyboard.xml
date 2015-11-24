@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">300</defaultcontrol>
-     
+
     <controls>
         <control type="group">
             <visible>!Window.IsVisible(numericinput)</visible>
@@ -18,6 +18,31 @@
                 <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>ddffffff</colordiffuse>
+            </control>
+            <!--additional label controls for Chinese text input (Kodi Jarvis)-->
+            <control type="grouplist">
+                <posx>col-4-begin</posx>
+                <posy>-184</posy>
+                <width>18-col</width>
+                <height>5-row</height>
+                <control type="label" id="313">
+                    <description>text input</description>
+                    <width>18-col</width>
+                    <height>2-row</height>
+                    <align>center</align>
+                    <aligny>top</aligny>
+                    <font>largeStrong</font>
+                    <textcolor>77FFFFFF</textcolor>
+                </control>
+                <control type="label" id="314">
+                    <description>list of options</description>
+                    <width>18-col</width>
+                    <height>2-row</height>
+                    <align>center</align>
+                    <aligny>top</aligny>
+                    <font>mediumStrong</font>
+                    <textcolor>99FFFFFF</textcolor>
+                </control>
             </control>
             <!--headers-->
             <control type="group">

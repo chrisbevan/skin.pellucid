@@ -86,22 +86,20 @@
                         <posx>3-col</posx>
                         <posy>-8</posy>
                         <width>15-col</width>
-                        <font>largeBlack</font>
-                        <textcolor>textActive</textcolor>
+                        <font>large</font>
+                        <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Title]</label>
-                        <shadowcolor>00000000</shadowcolor>
                    </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
                         <posx>3-col</posx>
                         <posy>52</posy>
                         <width>15-col</width>
-                        <font>regularStrong</font>
-                        <textcolor>textActive</textcolor>
+                        <font>regularLight</font>
+                        <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <label>[COLOR highlight]$INFO[MusicPlayer.artist,, ][/COLOR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
-                        <shadowcolor>00000000</shadowcolor>
+                        <label>[B]$INFO[MusicPlayer.artist,, | ][/B]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
                     </control>
                     <control type="label">
                         <visible>Pvr.IsPlayingRadio</visible>
@@ -109,10 +107,9 @@
                         <posy>48</posy>
                         <width>15-col</width>
                         <font>regularStrong</font>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.Plot]</label>
-                        <shadowcolor>00000000</shadowcolor>
                     </control>
                     <control type="label">
                         <posx>3-col</posx>
@@ -120,9 +117,8 @@
                         <width>12-col</width>
                         <font>pageTitle</font>
                         <align>left</align>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <shadowcolor>00000000</shadowcolor>
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
                     <control type="label">
@@ -131,20 +127,18 @@
                            <posy>104</posy>
                            <width>4-col</width>
                            <font>symbolLarge</font>
-                           <textcolor>textActive</textcolor>
+                           <textcolor>66FFFFFF</textcolor>
                            <label>$VAR[starRating]</label>
-                           <shadowcolor>00000000</shadowcolor>
                        </control>
                     <control type="label">
                         <posx>3-col</posx>
                         <posy>156</posy>
                         <width>12-col</width>
-                        <font>itemTitle</font>
+                        <font>itemSubTitle</font>
                         <align>left</align>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <shadowcolor>00000000</shadowcolor>
-                        <label>$INFO[MusicPlayer.offset(1).Artist,[COLOR highlight]$LOCALIZE[19031][/COLOR] , - ]$INFO[MusicPlayer.offset(1).Title]</label>
+                        <label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,$LOCALIZE[19031]: , - ]$INFO[MusicPlayer.offset(1).Title][/UPPERCASE]</label>
                     </control>
                 </control>
                 <!-- side menu-->

@@ -19,6 +19,8 @@
 - [REMOVED] DialogPVRGuideInfo.xml
 - [REMOVED] DialogPVRRecordingInfo.xml
 - [REMOVED] VisualisationPresetList.xml
+- [NEW] EventLog.xml
+- [MODIFIED] dialogKeyboard.xml - additional labels for BaiduPy input added
 
 - [NEW] DialogAudioDSPManager.xml
 - [NEW] DialogAudioDSPSettings.xml

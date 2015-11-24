@@ -74,8 +74,8 @@
                             <height>2-row</height>
                             <align>left</align>
                             <font>dialogTitle</font>
-                            <textcolor>black</textcolor>
-                            <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                            <textcolor>dd000000</textcolor>
+                            <label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>
                         <!--synopsis-->
