@@ -38,12 +38,10 @@
                     <texture border="0">colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                 </control>
-
                 <!--titles-->
                 <control type="group">
                     <posx>col-1-begin</posx>
                     <posy>row-6-begin</posy>
-
                     <control type="label">
                         <posx>24-col</posx>
                         <posy>0</posy>
@@ -236,12 +234,12 @@
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
-                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
+                        <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
-                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
+                        <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
                         <onclick>noop</onclick>
                     </item>

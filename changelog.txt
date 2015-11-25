@@ -34,10 +34,8 @@
 
 ***To do***
 
-Finish Info screen rework for the OSD (match movie info style instead)
+Finish Info screen rework for the OSD (match movie info style instead - use a fillbar for duration)
 Check extra button to dialogAddonInfo.xml (auto update)
-
-Music smartplaylists
 
 Touch support for file seeking etc
 

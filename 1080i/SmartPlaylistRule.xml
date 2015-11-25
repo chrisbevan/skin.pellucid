@@ -192,7 +192,7 @@
                         <item id="2">
                             <description>Cancel</description>
                             <label>222</label>
-                            <label2></label2>
+                            <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(129,19)</onclick>
                         </item>
