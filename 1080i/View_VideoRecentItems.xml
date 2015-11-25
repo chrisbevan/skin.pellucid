@@ -120,7 +120,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>regularStrong</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.title]</label>
                     </control>
                     <control type="label">
@@ -132,7 +132,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>regularStrong</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.tvshowtitle]</label>
                     </control>
                     <control type="label">
@@ -144,7 +144,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.year]</label>
                     </control>
                     <control type="label">
@@ -156,7 +156,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.season,$LOCALIZE[31011] ,]</label>
                     </control>
                     <control type="image">

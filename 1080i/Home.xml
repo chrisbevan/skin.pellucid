@@ -183,7 +183,7 @@
                 <height>4-row</height>
                 <align>right</align>
                 <font>veryLarge</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
@@ -193,7 +193,7 @@
                 <height>4-row</height>
                 <align>right</align>
                 <font>Large</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
@@ -204,7 +204,7 @@
                 <height>3-row</height>
                 <align>right</align>
                 <font>regular</font>
-                <textcolor>selected</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
         </control>

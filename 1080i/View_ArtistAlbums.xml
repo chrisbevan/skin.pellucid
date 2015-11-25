@@ -107,7 +107,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <label>$INFO[ListItem.label]</label>
                         </control>
                         <control type="label">
@@ -119,7 +119,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <label>$INFO[ListItem.Title]</label>
                         </control>
                         <control type="label">
@@ -131,7 +131,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <label>$INFO[ListItem.year,(,)]</label>
                         </control>
                         <control type="image">

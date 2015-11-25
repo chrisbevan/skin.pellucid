@@ -245,12 +245,16 @@ msgctxt "#31072"
 msgid "Play now"
 msgstr ""
 
+msgctxt "#31073"
+msgid "Channel Guide"
+msgstr ""
+
 msgctxt "#31074"
 msgid "Cast and Crew"
 msgstr ""
 
 msgctxt "#31075"
-msgid "Play Title"
+msgid "Play"
 msgstr ""
 
 msgctxt "#31076"

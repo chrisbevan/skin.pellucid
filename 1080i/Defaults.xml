@@ -10,8 +10,8 @@
         <textoffsetx>0</textoffsetx>
         <font>regular</font>
         <textcolor>textActive</textcolor>
-        <focusedcolor>selected</focusedcolor>
-        <selectedcolor>selected</selectedcolor>
+        <focusedcolor>textActive</focusedcolor>
+        <selectedcolor>textActive</selectedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <shadowcolor>-</shadowcolor>
     </default>
@@ -30,7 +30,7 @@
         <font>regular</font>
         <textcolor>textActive</textcolor>
         <textoffsetx>0</textoffsetx>
-        <focusedcolor>selected</focusedcolor>
+        <focusedcolor>textActive</focusedcolor>
         <selectedcolor>textActive</selectedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <scrollout>false</scrollout>
@@ -59,7 +59,7 @@
         <texturenofocus>-</texturenofocus>
         <textoffsetx>24</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
-        <invalidcolor>disabled</invalidcolor>
+        <invalidcolor>textDisabled</invalidcolor>
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
@@ -76,8 +76,8 @@
         <alttexturefocus>-</alttexturefocus>
         <alttexturenofocus>-</alttexturenofocus>
         <font>buttonTitle</font>
-        <textcolor>unselected</textcolor>
-        <focusedcolor>selected</focusedcolor>
+        <textcolor>menuUnselected</textcolor>
+        <focusedcolor>textActive</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>ffFFFFFF</colordiffuse>

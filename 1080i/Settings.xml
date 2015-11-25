@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
-     
+
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -66,7 +66,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>unselected</textcolor>
+                        <textcolor>menuUnselected</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
@@ -76,7 +76,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>unselected</textcolor>
+                        <textcolor>menuUnselected</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
@@ -86,7 +86,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemSubTitle</font>
-                        <textcolor>unselected</textcolor>
+                        <textcolor>menuUnselected</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
                 </itemlayout>

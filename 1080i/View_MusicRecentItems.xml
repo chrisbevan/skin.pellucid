@@ -95,7 +95,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>regularStrong</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.title]</label>
                     </control>
                     <control type="label">
@@ -107,7 +107,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
-                        <textcolor>disabled</textcolor>
+                        <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.artist]</label>
                     </control>
                     <control type="image">

@@ -145,7 +145,7 @@
                             <aligny>center</aligny>
                             <font>mediumStrong</font>
                             <textcolor>textActive</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$LOCALIZE[31208]: $INFO[listitem.label]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>

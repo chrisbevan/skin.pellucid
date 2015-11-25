@@ -33,7 +33,7 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>itemTitle</font>
-                    <textcolor>disabled</textcolor>
+                    <textcolor>textDisabled</textcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="image">

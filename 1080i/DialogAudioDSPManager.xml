@@ -212,7 +212,7 @@
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                         </control>
                     </itemlayout>
@@ -248,7 +248,7 @@
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                         </control>
 
@@ -263,7 +263,7 @@
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Description)]</label>
                             <visible>!Control.HasFocus(20)</visible>
                         </control>
@@ -280,7 +280,7 @@
                             <textcolor>grey2</textcolor>
                             <scroll>true</scroll>
                             <scrollsuffix>&gt;   &lt;</scrollsuffix>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Description)]</label>
                             <visible>Control.HasFocus(20)</visible>
                         </control>
@@ -373,7 +373,7 @@
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                         </control>
                     </itemlayout>
@@ -415,7 +415,7 @@
                             <aligny>center</aligny>
                             <textcolor>white</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
                             <visible>true</visible>
                         </control>
@@ -430,7 +430,7 @@
                             <aligny>center</aligny>
                             <textcolor>grey2</textcolor>
                             <scroll>false</scroll>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Description)]</label>
                             <visible>!Control.HasFocus(21)</visible>
                         </control>
@@ -446,7 +446,7 @@
                             <textcolor>grey2</textcolor>
                             <scroll>true</scroll>
                             <scrollsuffix>&gt;   &lt;</scrollsuffix>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <label>$INFO[ListItem.Property(Description)]</label>
                             <visible>Control.HasFocus(21)</visible>
                         </control>

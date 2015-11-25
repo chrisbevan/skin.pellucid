@@ -104,7 +104,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>regularStrong</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011]]</label>
                         </control>
                         <control type="label">
@@ -116,7 +116,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
-                            <textcolor>disabled</textcolor>
+                            <textcolor>textDisabled</textcolor>
                             <label>$VAR[itemDetail]</label>
                         </control>
                         <control type="image">

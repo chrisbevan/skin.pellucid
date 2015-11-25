@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-     
+
     <include>fadeInOut</include>
     <controls>
         <!--page container group-->
@@ -47,7 +47,7 @@
                                 <align>center</align>
                                 <aligny>center</aligny>
                                 <font>regularStrong</font>
-                                <textcolor>disabled</textcolor>
+                                <textcolor>textDisabled</textcolor>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                             <control type="label">

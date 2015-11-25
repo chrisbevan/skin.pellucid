@@ -171,7 +171,7 @@
                         <width>12-col-gutter</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <selectedcolor>selected</selectedcolor>
+                        <selectedcolor>textActive</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[Pvr.BackendDiskSpace]</label>
                     </control>

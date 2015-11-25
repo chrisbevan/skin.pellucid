@@ -51,6 +51,20 @@
                     <texture>colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                <control type="progress">
+                      <description>Duration</description>
+                      <posx>0</posx>
+                      <posy>196</posy>
+                      <width>8-col</width>
+                      <height>2-row</height>
+                      <reveal>false</reveal>
+                      <texturebg>-</texturebg>
+                      <lefttexture>-</lefttexture>
+                      <midtexture border="36" colordiffuse="33FFFFFF">colors/black.png</midtexture>
+                      <righttexture>-</righttexture>
+                      <overlaytexture>-</overlaytexture>
+                      <info>Player.Progress</info>
+                </control>
                 <!--content-->
                     <control type="group">
                         <posx>24</posx>
@@ -73,7 +87,7 @@
                             <width>528</width>
                             <height>2-row</height>
                             <align>left</align>
-                            <font>dialogTitle</font>
+                            <font>regularStrong</font>
                             <textcolor>dd000000</textcolor>
                             <label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
                             <shadowcolor>-</shadowcolor>
@@ -86,7 +100,7 @@
                             <width>528</width>
                             <align>left</align>
                             <textcolor>textActive</textcolor>
-                            <height>14-row</height>
+                            <height>444</height>
                             <label fallback="31205">$INFO[videoplayer.plot]</label>
                             <autoscroll delay="10000" time="1000" repeat="10000"/>
                             <shadowcolor>-</shadowcolor>
@@ -95,9 +109,9 @@
                 <!--dialog controls-->
                 <control type="panel" id="8001">
                     <posx>0</posx>
-                    <posy>24-row</posy>
+                    <posy>22-row</posy>
                     <width>8-col</width>
-                    <height>6-row</height>
+                    <height>8-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
                     <itemlayout width="8-col" height="2-row">

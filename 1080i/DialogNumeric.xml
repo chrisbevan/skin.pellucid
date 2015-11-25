@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">4</defaultcontrol>
-     
+    <defaultcontrol always="true">11</defaultcontrol>
     <controls>
         <control type="group">
         <posx>0</posx>
@@ -56,7 +55,7 @@
                     <ondown>14</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="12">
@@ -73,7 +72,7 @@
                     <ondown>15</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="13">
@@ -90,7 +89,7 @@
                     <ondown>16</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="23">
@@ -108,7 +107,7 @@
                     <ondown>21</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
                 </control>
@@ -127,7 +126,7 @@
                     <ondown>17</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="15">
@@ -144,7 +143,7 @@
                     <ondown>18</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="16">
@@ -161,7 +160,7 @@
                     <ondown>19</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="21">
@@ -179,7 +178,7 @@
                     <ondown>23</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
                 </control>
@@ -198,7 +197,7 @@
                     <ondown>20</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="18">
@@ -215,7 +214,7 @@
                     <ondown>10</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="19">
@@ -232,7 +231,7 @@
                     <ondown>22</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <!--row 4-->
@@ -250,7 +249,7 @@
                     <ondown>11</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="10">
@@ -267,7 +266,7 @@
                     <ondown>12</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="button" id="22">
@@ -284,7 +283,7 @@
                     <ondown>13</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                     <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                    <focusedcolor>selected</focusedcolor>
+                    <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
             </control>

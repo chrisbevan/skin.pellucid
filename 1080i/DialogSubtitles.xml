@@ -89,7 +89,7 @@
                             <aligny>center</aligny>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label2</info>
                         </control>
@@ -102,7 +102,7 @@
                             <aligny>center</aligny>
                             <font>itemSubTitle</font>
                             <textcolor>textActive</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Label] - $INFO[ListItem.ActualIcon]*</label>
                         </control>
@@ -186,7 +186,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>!ListItem.property(man)</visible>
@@ -199,7 +199,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <selectedcolor>selected</selectedcolor>
+                            <selectedcolor>textActive</selectedcolor>
                             <shadowcolor>-</shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>ListItem.property(man)</visible>

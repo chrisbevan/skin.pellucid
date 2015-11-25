@@ -34,20 +34,19 @@
 
 ***To do***
 
-Finish Info screen rework for the OSD (match movie info style instead - use a fillbar for duration)
-Check extra button to dialogAddonInfo.xml (auto update)
+Color Schemes - check menu disabled color
 
-Touch support for file seeking etc
+PVR Recording indicators
+
+Check extra button to dialogAddonInfo.xml (auto update)
 
 on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
 
 Pictures section update
 
-DialogPVRinfo - button update
-
 Radio RDS test
 
-Touchscreen controls on Android tablets
+Touchscreen controls on Android tablets (file seeking etc)
 
 Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
 
