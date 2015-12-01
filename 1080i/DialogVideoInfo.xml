@@ -36,7 +36,6 @@
                 <aspectratio>stretch</aspectratio>
                 <include>kenBurnsey</include>
             </control>
-
             <control type="image">
                 <include>dimensionsFullscreen</include>
                 <texture>vignette.png</texture>

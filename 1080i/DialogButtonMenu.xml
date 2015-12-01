@@ -2,7 +2,6 @@
 <!--power menu-->
 <window type="buttonMenu">
     <defaultcontrol always="true">8000</defaultcontrol>
-     
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>

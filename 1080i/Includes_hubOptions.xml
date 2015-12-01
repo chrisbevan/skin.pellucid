@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!--Hub options menu (sort order etc)-->
+    <include name="hubOptions">
+        <--hub options-->
+        <control type="group">
+            <animation type="Conditional" condition="!controlgroup(9002).hasfocus | window.isactive(1100)">
+                <effect type="fade" start="100" end="0" time="300"/>
+            </animation>
+            <animation type="Conditional" condition="controlgroup(9002).hasfocus">
+                <effect type="fade" start="0" end="100" time="300"/>
+            </animation>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ccFFFFFF</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--menu items-->
+            <control type="grouplist" id="9002">
+                <posx>col-10-begin</posx>
+                <posy>6-row</posy>
+                <itemgap>0</itemgap>
+                <width>6-col</width>
+                <height>18-row</height>
+                <itemgap>0</itemgap>
+                <onleft>control.setfocus(9999)</onleft>
+                <onright>control.setfocus(9999)</onright>
+                <onup>9002</onup>
+                <ondown>9002</ondown>
+                <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+                <include condition="window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
+                <include condition="window.isactive(pictures)">picturesSideMenu</include>
+            </control>
+        </control>
+    </include>
+</includes>

@@ -80,7 +80,7 @@
 
         <!--hub menu-->
         <include>hubMenu</include>
-
+        <include>hubOptions</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -95,7 +95,7 @@
                     <width>12-col-gutter</width>
                     <font>small</font>
                     <textcolor>highlight</textcolor>
-                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)][/B] $INFO[ListItem.Property(Addon.Creator)] </label>
+                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)], $INFO[ListItem.Property(Addon.Creator)][/B]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
@@ -187,10 +187,17 @@
                     </focusedlayout>
                     <content>
                         <item>
+                            <visible>Control.IsEnabled(12)</visible>
                             <label>31117</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>sendclick(146,12)</onclick>
+                        </item>
+                        <item>
+                            <label>$INFO[Control.GetLabel(6)]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,6)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(9)</visible>
@@ -200,20 +207,6 @@
                             <onclick>SendClick(146,9)</onclick>
                         </item>
                         <item>
-                            <visible>SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
-                        </item>
-                        <item>
-                            <visible>!SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
-                        </item>
-                        <item>
                             <visible>Control.IsEnabled(8)</visible>
                             <label>$INFO[Control.GetLabel(8)]</label>
                             <label2></label2>
@@ -221,17 +214,25 @@
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
+                            <visible>Control.IsEnabled(12) + SubString(Control.GetLabel(13),*)</visible>
+                            <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,13)</onclick>
+                        </item>
+                        <item>
+                            <visible>Control.IsEnabled(12) + !SubString(Control.GetLabel(13),*)</visible>
+                            <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(146,13)</onclick>
+                        </item>
+                        <item>
                             <visible>Control.IsEnabled(7)</visible>
                             <label>$INFO[Control.GetLabel(7)]</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>
-                        </item>
-                        <item>
-                            <label>$INFO[Control.GetLabel(6)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,6)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(10)</visible>

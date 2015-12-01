@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">3</defaultcontrol>
-
+    <include>fadeInOut</include>
     <controls>
-        <include>fadeInOut</include>
         <!--background-->
         <include>globalBackground</include>
-
         <!--fanart-->
         <control type="group">
             <control type="image">
@@ -23,10 +21,13 @@
             </control>
             <include>kenBurnsey</include>
         </control>
-
         <control type="group">
             <posx>col-17-begin</posx>
             <posy>0</posy>
+            <animation type="Windowopen">
+                <effect type="fade" start="0" end="100" time="300" delay="500"/>
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="500"/>
+            </animation>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -45,7 +46,6 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-
             <!--location title-->
             <control type="textbox">
                 <visible>true</visible>
@@ -58,7 +58,6 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-
             <!--content begins-->
             <control type="panel" id="9000">
                 <posx>24</posx>
@@ -105,7 +104,46 @@
                         <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout/>
+                <focusedlayout>
+                    <control type="label">
+                        <posx>4</posx>
+                        <posy>-28</posy>
+                        <width>2-col-gutter</width>
+                        <height>4-row</height>
+                        <font>symbolWeather</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$VAR[weatherIcon]</label>
+                    </control>
+                    <control type="label">
+                        <posx>col-2-begin</posx>
+                        <posy>-24</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <font>dialogTitle</font>
+                        <label>[COLOR highlight]$INFO[ListItem.Label][/COLOR]</label>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                    <control type="textbox">
+                        <posx>col-2-begin</posx>
+                        <posy>34</posy>
+                        <width>6-col-gutter</width>
+                        <height>2-row</height>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <autoscroll delay="3000" time="1000" repeat="3000"/>
+                        <label>$INFO[ListItem.Property(Outlook)]</label>
+                    </control>
+                    <control type="textbox">
+                        <posx>col-2-begin</posx>
+                        <posy>76</posy>
+                        <width>6-col-gutter</width>
+                        <height>1-row</height>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$LOCALIZE[13508] [B]$INFO[ListItem.Property(HighTemp)] $INFO[ListItem.Property(TempUnits)][/B]  $LOCALIZE[418] [B]$INFO[ListItem.Property(LowTemp)] $INFO[ListItem.Property(TempUnits)][/B]</label>
+                    </control>
+                </focusedlayout>
                 <content>
                     <item id="1">
                         <description>Day 0</description>

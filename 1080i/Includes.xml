@@ -7,7 +7,8 @@
     <include file="Includes_homeBackground.xml"/>
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubMenuItems.xml"/>
-    <include file="Includes_hubMenuSubItems.xml"/>
+    <include file="Includes_hubOptions.xml"/>
+    <include file="Includes_hubOptionsItems.xml"/>
     <include file="View_LiveTVChannels.xml"/>
     <include file="View_VideoRecentItems.xml"/>
     <include file="View_MusicRecentItems.xml"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">1000</defaultcontrol>
-     
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>

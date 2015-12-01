@@ -34,15 +34,18 @@
 
 ***To do***
 
-Color Schemes - check menu disabled color
+MyVideoPlaylist.xml
+
+Finish Pictures section update (info screen esp.)
+
+Openelec settings link (more important than Rom collection browser stuff)
 
 PVR Recording indicators
+PVR Recording scheduler (integrate with recordings)
 
 Check extra button to dialogAddonInfo.xml (auto update)
 
 on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
-
-Pictures section update
 
 Radio RDS test
 

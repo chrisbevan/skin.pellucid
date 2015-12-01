@@ -66,18 +66,18 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>2-col</width>
-        <height>54</height>
+        <height>2-row</height>
         <align>left</align>
         <aligny>center</aligny>
-        <textoffsetx>0</textoffsetx>
+        <textoffsetx>24</textoffsetx>
         <label>-</label>
-        <texturefocus>-</texturefocus>
+        <texturefocus>colors/white.png</texturefocus>
         <texturenofocus>-</texturenofocus>
-        <alttexturefocus>-</alttexturefocus>
+        <alttexturefocus>colors/white.png</alttexturefocus>
         <alttexturenofocus>-</alttexturenofocus>
         <font>buttonTitle</font>
-        <textcolor>menuUnselected</textcolor>
-        <focusedcolor>textActive</focusedcolor>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>ffFFFFFF</colordiffuse>
