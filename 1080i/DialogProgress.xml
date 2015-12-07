@@ -39,7 +39,7 @@
                 <width>468</width>
                 <height>60</height>
                 <aligny>center</aligny>
-                <label>$INFO[container.foldername]</label>
+                <label fallback="31023">$INFO[container.foldername]</label>
                 <textcolor>black</textcolor>
                <!--animations-->
                 <animation type="Windowopen">

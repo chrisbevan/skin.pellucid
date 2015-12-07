@@ -2,6 +2,7 @@
 <addon id="skin.pellucid" version="0.9.0" name="Pellucid" provider-name="theDeadman">
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>
+        <import addon="script.skin.helper.service" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

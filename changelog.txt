@@ -34,7 +34,13 @@
 
 ***To do***
 
+Hide album cover on fullscreenmusic if no cover (e.g. radio)
+
+scripted video info screen TEST PLAYMEDIA WORKS
+
 MyVideoPlaylist.xml
+
+Use Appropriate weather backgrounds based on todays weather conditions
 
 Finish Pictures section update (info screen esp.)
 
@@ -43,15 +49,16 @@ Openelec settings link (more important than Rom collection browser stuff)
 PVR Recording indicators
 PVR Recording scheduler (integrate with recordings)
 
-Check extra button to dialogAddonInfo.xml (auto update)
+Check extra button to dialogAddonInfo.xml actually works (auto update)
 
-on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
+(use skin helper?) on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
 
 Radio RDS test
 
 Touchscreen controls on Android tablets (file seeking etc)
 
 Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
+
 
 
 [B]0.1.0[/B]

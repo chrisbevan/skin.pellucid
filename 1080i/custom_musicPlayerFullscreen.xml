@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
-
     <onload condition="Skin.HasSetting(artistSlideshowActive)">RunScript(script.artistslideshow)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
@@ -130,15 +129,31 @@
                            <textcolor>66FFFFFF</textcolor>
                            <label>$VAR[starRating]</label>
                        </control>
+                       <control type="button">
+                           <description>Fake button - decorative only</description>
+                           <visible>MusicPlayer.HasNext</visible>
+                           <posx>3-col</posx>
+                           <posy>168</posy>
+                           <width>2-col-gutter</width>
+                           <height>1-row</height>
+                           <font>smallStrong</font>
+                           <align>center</align>
+                           <focusedcolor>black</focusedcolor>
+                           <textcolor>black</textcolor>
+                           <texturenofocus colordiffuse="66FFFFFF">colors/white.png</texturenofocus>
+                           <texturefocus colordiffuse="66FFFFFF">colors/white.png</texturefocus>
+                           <label>[UPPERCASE]$LOCALIZE[19031][/UPPERCASE]</label>
+                           <onclick>noop</onclick>
+                       </control>
                     <control type="label">
-                        <posx>3-col</posx>
-                        <posy>156</posy>
+                        <posx>348</posx>
+                        <posy>168</posy>
                         <width>12-col</width>
                         <font>itemSubTitle</font>
                         <align>left</align>
                         <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
-                        <label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,$LOCALIZE[19031]: , - ]$INFO[MusicPlayer.offset(1).Title][/UPPERCASE]</label>
+                        <label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title][/UPPERCASE]</label>
                     </control>
                 </control>
                 <!-- side menu-->

@@ -214,14 +214,14 @@
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(12) + SubString(Control.GetLabel(13),*)</visible>
+                            <visible>Control.IsEnabled(8) + SubString(Control.GetLabel(13),*)</visible>
                             <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,13)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(12) + !SubString(Control.GetLabel(13),*)</visible>
+                            <visible>Control.IsEnabled(8) + !SubString(Control.GetLabel(13),*)</visible>
                             <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
                             <label2></label2>
                             <thumb>-</thumb>

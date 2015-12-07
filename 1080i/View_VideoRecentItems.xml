@@ -3,7 +3,6 @@
     <include name="videoRecentItems">
         <control type="group">
             <include>fadeInOut</include>
-
             <!--fanart-->
             <control type="group">
                 <control type="image">
@@ -24,7 +23,6 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-
             <control type="group">
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
                     <effect type="fade" start="100" end="0" time="200"/>
@@ -38,7 +36,6 @@
                     <texture border="0">colors/black.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                 </control>
-
                 <!--titles-->
                 <control type="group">
                     <animation type="conditional" condition="!control.hasfocus(9998)">
@@ -48,10 +45,8 @@
                         <effect type="slide" start="800" end="0" tween="cubic" easing="out" delay="600" time="400"/>
                         <effect type="fade" start="0" end="100" delay="600" time="200"/>
                     </animation>
-
                     <posx>col-1-begin</posx>
                     <posy>row-12-begin</posy>
-
                     <control type="label">
                         <visible>Container(9123).HasFocus(1)</visible>
                         <posx>24-col</posx>
@@ -65,7 +60,6 @@
                         <wrapmultiline>true</wrapmultiline>
                         <label>[B]$INFO[container(9998).listitem.title][/B][CR]$INFO[container(9998).listitem.director,$LOCALIZE[31196]. ,.] $INFO[container(9998).listitem.year,,]</label>
                     </control>
-
                     <control type="label">
                         <visible>Container(9123).HasFocus(2)</visible>
                         <posx>24-col</posx>
@@ -81,7 +75,6 @@
                     </control>
                 </control>
             </control>
-
             <!--content listing-->
             <control type="panel" id="9998">
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
@@ -98,7 +91,8 @@
                 <onclick condition="container(9123).hasfocus(2)">activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
                 <onclick condition="container(9123).hasfocus(2)">Control.SetFocus(50)</onclick>
                 <content>$INFO[control.getlabel(9123)]</content>
-                <oninfo></oninfo>
+                <oninfo condition="container(9123).hasfocus(1)">RunScript(script.skin.helper.service,action=showinfo,movieid=$INFO[container(9998).listitem.dbid])</oninfo>
+                <oninfo condition="container(9123).hasfocus(2)">RunScript(script.skin.helper.service,action=showinfo,tvshowid=$INFO[container(9998).listitem.dbid])</oninfo>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
