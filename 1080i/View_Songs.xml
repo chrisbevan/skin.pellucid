@@ -176,7 +176,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture>colors/white.png</texture>
                     <bordersize>0</bordersize>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     <include>spinFocusIcon</include>
                 </control>
                 <control type="image">
@@ -221,7 +221,7 @@
                     <aspectratio>stretch</aspectratio>
                     <texture>colors/white.png</texture>
                     <bordersize>0</bordersize>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>

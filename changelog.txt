@@ -33,18 +33,17 @@
 
 
 ***To do***
+Complete submenu / filtering
 
-Hide album cover on fullscreenmusic if no cover (e.g. radio)
+Colour scheme selection window (use an image of the homescreen??)
 
-scripted video info screen TEST PLAYMEDIA WORKS
+scripted video info screen TEST PLAYMEDIA WORKS + close dialog when playing trailer
 
 MyVideoPlaylist.xml
 
 Use Appropriate weather backgrounds based on todays weather conditions
 
 Finish Pictures section update (info screen esp.)
-
-Openelec settings link (more important than Rom collection browser stuff)
 
 PVR Recording indicators
 PVR Recording scheduler (integrate with recordings)
@@ -57,7 +56,6 @@ Radio RDS test
 
 Touchscreen controls on Android tablets (file seeking etc)
 
-Expand menu system to add options for sub menu etc (see xbox NXE for inspiration)
 
 
 

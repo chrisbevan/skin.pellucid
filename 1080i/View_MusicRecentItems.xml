@@ -14,7 +14,7 @@
                     <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
                     <texture background="true" fallback="colors/offblack.png" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
                     <fadetime>500</fadetime>
-                    <colordiffuse>66ffffff</colordiffuse>
+                    <colordiffuse>77FFFFFF</colordiffuse>
                     <include>kenBurnsey</include>
                 </control>
                 <control type="image">
@@ -211,7 +211,7 @@
                         <width>4-col-textbox</width>
                         <height>9</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                         <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>

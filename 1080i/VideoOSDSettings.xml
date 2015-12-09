@@ -62,7 +62,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>24</posx>
@@ -97,7 +97,7 @@
                 <width>4-col-gutter</width>
                 <height>9</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -107,7 +107,7 @@
                 <width>4-col-gutter</width>
                 <height>9</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="5">

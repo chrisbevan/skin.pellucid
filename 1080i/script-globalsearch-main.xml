@@ -101,7 +101,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -201,7 +201,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -301,7 +301,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -400,7 +400,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -499,7 +499,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -599,7 +599,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -699,7 +699,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -799,7 +799,7 @@
                         <width>6-col</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">

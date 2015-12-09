@@ -54,7 +54,7 @@
                 <width>18-col</width>
                 <height>12</height>
                 <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
-                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                <midtexture colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
             <control type="label">

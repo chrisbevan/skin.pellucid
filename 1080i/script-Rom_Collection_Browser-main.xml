@@ -91,7 +91,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -106,7 +106,6 @@
                         </control>
                     </focusedlayout>
                 </control>
-
                 <!--coverart-->
                 <control type="image">
                     <posx>col-14-begin</posx>
@@ -118,7 +117,6 @@
                     <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                 </control>
-
                 <!--page scrollbar-->
                 <control type="group" id="8000">
                     <visible>Control.IsVisible(60)</visible>
@@ -130,7 +128,6 @@
                         <onleft>50</onleft>
                     </control>
                 </control>
-
                 <!--Folder titles-->
                 <control type="group">
                     <posx>0</posx>
@@ -159,7 +156,6 @@
             </control>
         <!--end of page container group-->
         </control>
-
         <!-- Console menu-->
         <control type="group" id="9000">
             <animation type="Conditional" condition="controlgroup(9000).hasfocus">
@@ -176,16 +172,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>col-7-begin</posx>
-                <posy>0</posy>
-                <width>3</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>33ffffff</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--section logo-->
@@ -241,14 +228,13 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
             </control>
         </control>
-
         <!--sorting and misc controls-->
         <control type="group" id="61">
             <animation type="Conditional" condition="!controlgroup(9002).hasfocus | window.isactive(1100)">
@@ -265,16 +251,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>col-7-begin</posx>
-                <posy>0</posy>
-                <width>3</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>33ffffff</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
@@ -307,7 +284,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -320,7 +297,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -334,7 +311,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -348,7 +325,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -362,7 +339,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -375,7 +352,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -392,7 +369,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
+                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
@@ -401,7 +378,6 @@
                 </control>
             </control>
         </control>
-
         <!-- filter controls -->
         <control type="group" id="100">
             <animation type="Conditional" condition="!controlgroup(100).hasfocus">
@@ -418,16 +394,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>col-7-begin</posx>
-                <posy>0</posy>
-                <width>3</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>33ffffff</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
@@ -485,7 +452,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -532,7 +499,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -579,7 +546,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -626,14 +593,13 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
             </control>
         </control>
-
         <!-- Busy indicator -->
         <control type="group">
             <visible>!isempty(control.getlabel(4000))</visible>

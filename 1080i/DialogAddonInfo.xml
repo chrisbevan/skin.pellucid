@@ -16,7 +16,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -94,7 +94,7 @@
                     <posy>2-row</posy>
                     <width>12-col-gutter</width>
                     <font>small</font>
-                    <textcolor>highlight</textcolor>
+                    <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                     <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)], $INFO[ListItem.Property(Addon.Creator)][/B]</label>
                 </control>
                 <control type="textbox" id="400">
@@ -150,7 +150,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">

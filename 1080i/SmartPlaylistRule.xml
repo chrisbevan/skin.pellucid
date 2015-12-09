@@ -29,7 +29,7 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -98,7 +98,7 @@
                     <aligny>center</aligny>
                     <textoffsetx>0</textoffsetx>
                     <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus colordiffuse="highlight">colors/white.png</texturenofocus>
+                    <texturenofocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturenofocus>
                     <label></label>
                     <font>symbolLarge</font>
                     <textcolor>textActive</textcolor>
@@ -146,7 +146,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">

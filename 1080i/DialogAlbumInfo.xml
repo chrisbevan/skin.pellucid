@@ -65,7 +65,7 @@
                 <width>8-col</width>
                 <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -169,7 +169,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -250,7 +250,7 @@
                 <width>8-col</width>
                 <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -284,7 +284,7 @@
                     <align>left</align>
                     <font>itemSubTitle</font>
                     <textcolor>black</textcolor>
-                    <label>$INFO[listitem.artist] $INFO[Listitem.year,(,)]</label>
+                    <label>$INFO[listitem.artist] | $INFO[Listitem.year]</label>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <!--synopsis-->
@@ -316,7 +316,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
-                        <colordiffuse>textboxInactive</colordiffuse>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -337,7 +337,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
-                        <colordiffuse>textboxInactive</colordiffuse>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -359,7 +359,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">

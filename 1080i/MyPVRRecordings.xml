@@ -97,7 +97,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         </control>
                         <control type="group">
                             <animation type="focus" loop="false" reversible="false">
@@ -162,7 +162,7 @@
                         <width>4-col-gutter</width>
                         <height>1-row</height>
                         <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
-                        <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                        <midtexture colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</midtexture>
                         <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">

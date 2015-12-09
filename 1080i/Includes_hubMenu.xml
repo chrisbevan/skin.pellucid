@@ -21,16 +21,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>col-7-begin</posx>
-                <posy>0</posy>
-                <width>3</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>33ffffff</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--section logo-->
@@ -114,7 +105,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

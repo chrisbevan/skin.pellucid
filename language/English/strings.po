@@ -121,6 +121,10 @@ msgctxt "#31023"
 msgid "Notification"
 msgstr ""
 
+msgctxt "#31024"
+msgid "Set skin highlight colour"
+msgstr ""
+
 msgctxt "#31029"
 msgid "Current playlist"
 msgstr ""

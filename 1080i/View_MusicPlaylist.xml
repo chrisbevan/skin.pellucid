@@ -107,7 +107,7 @@
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     </control>
                     <control type="image">
                         <posx>1599</posx>
@@ -116,7 +116,7 @@
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     </control>
                     <control type="image">
                         <visible>ListItem.IsPlaying + !player.paused</visible>

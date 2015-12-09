@@ -43,7 +43,7 @@
                 <width>8-col</width>
                 <height>row-6-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--location title-->
@@ -67,8 +67,8 @@
                 <itemlayout width="8-col" height="4-row">
                     <control type="label">
                         <posx>4</posx>
-                        <posy>-28</posy>
-                        <width>2-col-gutter</width>
+                        <posy>-40</posy>
+                        <width>2-col</width>
                         <height>4-row</height>
                         <font>symbolWeather</font>
                         <textcolor>textActive</textcolor>
@@ -107,8 +107,8 @@
                 <focusedlayout>
                     <control type="label">
                         <posx>4</posx>
-                        <posy>-28</posy>
-                        <width>2-col-gutter</width>
+                        <posy>-40</posy>
+                        <width>2-col</width>
                         <height>4-row</height>
                         <font>symbolWeather</font>
                         <textcolor>textActive</textcolor>

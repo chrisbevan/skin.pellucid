@@ -40,7 +40,7 @@
                     <width>8-col</width>
                     <height>row-5-begin</height>
                     <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="image">
@@ -165,7 +165,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">

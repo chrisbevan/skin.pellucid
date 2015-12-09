@@ -67,7 +67,7 @@
                     <height>6</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture border="0">colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 </control>
 
                 <!--content-->

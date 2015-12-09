@@ -37,7 +37,7 @@
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <texture border="0">colors/white.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>12</posx>

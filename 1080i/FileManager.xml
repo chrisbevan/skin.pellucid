@@ -15,7 +15,7 @@
                 <width>24-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -86,7 +86,7 @@
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout height="2-row" width="12-col">
@@ -162,7 +162,7 @@
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>itemTitle</font>
-                        <textcolor>highlight</textcolor>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout height="2-row" width="12-col">

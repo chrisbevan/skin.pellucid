@@ -16,7 +16,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -50,7 +50,6 @@
                     <width>4-col</width>
                     <height>18-row</height>
                     <onright>200</onright>
-                    <pagecontrol>-</pagecontrol>
                     <itemlayout height="2-row" width="4-col">
                         <control type="label">
                             <posx>24</posx>
@@ -210,6 +209,14 @@
                     <label>31008</label>
                     <onclick condition="System.HasAddon(script.artistslideshow)">Skin.ToggleSetting(artistSlideshowActive)</onclick>
                     <onclick condition="!System.HasAddon(script.artistslideshow)">RunPlugin(plugin://script.artistslideshow)</onclick>
+                    <selected>Skin.HasSetting(artistSlideshowActive)</selected>
+                </control>
+                <control type="button" id="22">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Colour picker</description>
+                    <width>14-col</width>
+                    <label>$LOCALIZE[31024]</label>
+                    <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=highlightColor)</onclick>
                     <selected>Skin.HasSetting(artistSlideshowActive)</selected>
                 </control>
             </control>

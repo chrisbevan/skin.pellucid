@@ -25,7 +25,7 @@
                     <height>3-row</height>
                     <texture>colors/white.png</texture>
                     <colordiffuse>FFFFFFFF</colordiffuse>
-                    <bordertexture colordiffuse="highlight">colors/white.png</bordertexture>
+                    <bordertexture colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</bordertexture>
                     <bordersize>6,0,0,0</bordersize>
                 </control>
             </control>

@@ -115,7 +115,7 @@
                                     <align>center</align>
                                     <aligny>center</aligny>
                                     <font>buttonTitle</font>
-                                    <textcolor>highlight</textcolor>
+                                    <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                                     <label>$INFO[ListItem.label2]</label>
                                 </control>
                                 <control type="grouplist">

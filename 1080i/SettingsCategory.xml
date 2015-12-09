@@ -27,7 +27,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -52,13 +52,13 @@
             </control>
             <!--settings level button-->
             <control type="grouplist">
-                <posx>13-col</posx>
+                <posx>9-col</posx>
                 <posy>0</posy>
                 <orientation>horizontal</orientation>
                 <control type="label">
                     <width>auto</width>
                     <height>2-row</height>
-                    <font>small</font>
+                    <font>smallStrong</font>
                     <aligny>center</aligny>
                     <label>$LOCALIZE[31126]:</label>
                     <textcolor>textActive</textcolor>
@@ -68,12 +68,12 @@
                     <align>left</align>
                     <height>2-row</height>
                     <width>2-col</width>
-                    <font>small</font>
+                    <font>smallStrong</font>
                     <label>$LOCALIZE[10037]</label>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>black</focusedcolor>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus colordiffuse="highlight">colors/white.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
+                    <texturefocus colordiffuse="22FFFFFF">colors/black.png</texturefocus>
+                    <texturenofocus>-</texturenofocus>
                     <textoffsetx>12</textoffsetx>
                     <textoffsety>0</textoffsety>
                     <onclick>SettingsLevelChange</onclick>

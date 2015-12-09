@@ -16,7 +16,7 @@
                 <width>8-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
             </control>
             <control type="image">
                 <visible>!player.paused</visible>

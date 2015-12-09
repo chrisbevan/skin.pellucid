@@ -13,7 +13,7 @@
                     <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
                     <texture background="true" fallback="colors/offblack.png" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
                     <fadetime>500</fadetime>
-                    <colordiffuse>66ffffff</colordiffuse>
+                    <colordiffuse>77FFFFFF</colordiffuse>
                     <include>kenBurnsey</include>
                 </control>
                 <control type="image">
@@ -29,7 +29,7 @@
                 </animation>
                 <control type="image">
                     <posx>0</posx>
-                    <posy>row-20-begin</posy>
+                    <posy>row-19-begin</posy>
                     <width>fullscreenWidth</width>
                     <height>15-row</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -46,7 +46,7 @@
                         <effect type="fade" start="0" end="100" delay="600" time="200"/>
                     </animation>
                     <posx>col-1-begin</posx>
-                    <posy>row-12-begin</posy>
+                    <posy>row-11-begin</posy>
                     <control type="label">
                         <visible>Container(9123).HasFocus(1)</visible>
                         <posx>24-col</posx>
@@ -81,12 +81,13 @@
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
                 <posx>72</posx>
-                <posy>row-21-begin</posy>
+                <posy>row-20-begin</posy>
                 <width>1800</width>
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
                 <orientation>horizontal</orientation>
+                <onback>control.setfocus(9000)</onback>
                 <onclick condition="container(9123).hasfocus(2)">Skin.SetString(showRecentVideoItems,false)</onclick>
                 <onclick condition="container(9123).hasfocus(2)">activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
                 <onclick condition="container(9123).hasfocus(2)">Control.SetFocus(50)</onclick>
@@ -275,7 +276,7 @@
                 <effect type="fade" start="100" end="0" time="200"/>
             </animation>
             <posx>72</posx>
-            <posy>672</posy>
+            <posy>636</posy>
             <width>24-col</width>
             <height>84</height>
             <onleft>9000</onleft>
@@ -301,7 +302,7 @@
                     <width>4-col-textbox</width>
                     <height>9</height>
                     <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
+                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                     <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                 </control>

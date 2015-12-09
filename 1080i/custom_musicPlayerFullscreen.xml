@@ -42,6 +42,16 @@
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
                 </control>
+                <!--artist logo (if available)-->
+                <control type="image">
+                    <posx>col-22-begin</posx>
+                    <posy>0</posy>
+                    <width>3-col</width>
+                    <height>3-col</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
+                    <colordiffuse>99ffffff</colordiffuse>
+                </control>
                 <!--vignettes-->
                 <control type="image">
                     <posx>0</posx>
@@ -58,16 +68,10 @@
                 <control type="group">
                     <posx>col-1-begin</posx>
                     <posy>row-20-begin</posy>
-                    <animation type="visible">
-                        <include>listSlideIn</include>
-                    </animation>
-                    <animation type="hidden">
-                        <effect type="fade" start="100" end="0" time="200"/>
-                    </animation>
                     <!--album thumb and info-->
                     <control type="image">
                         <posx>24</posx>
-                        <posy>-24</posy>
+                        <posy>-12</posy>
                         <width>4-col</width>
                         <height>4-col</height>
                         <aspectratio>stretch</aspectratio>
@@ -84,7 +88,7 @@
                     <control type="label">
                         <posx>3-col</posx>
                         <posy>-8</posy>
-                        <width>15-col</width>
+                        <width>19-col</width>
                         <font>large</font>
                         <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
@@ -94,7 +98,7 @@
                         <visible>!Pvr.IsPlayingRadio</visible>
                         <posx>3-col</posx>
                         <posy>52</posy>
-                        <width>15-col</width>
+                        <width>19-col</width>
                         <font>regularLight</font>
                         <textcolor>66FFFFFF</textcolor>
                         <scroll>false</scroll>
@@ -172,7 +176,7 @@
                         <width>col-7-begin</width>
                         <height>fullscreenHeight</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="image">
@@ -237,7 +241,7 @@
                                 <height>2-row</height>
                                 <font>menuTitle</font>
                                 <aligny>center</aligny>
-                                <textcolor>highlight</textcolor>
+                                <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                                 <shadowcolor>-</shadowcolor>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
