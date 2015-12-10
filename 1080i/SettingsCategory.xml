@@ -50,37 +50,17 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-            <!--settings level button-->
-            <control type="grouplist">
-                <posx>9-col</posx>
-                <posy>0</posy>
-                <orientation>horizontal</orientation>
-                <control type="label">
-                    <width>auto</width>
-                    <height>2-row</height>
-                    <font>smallStrong</font>
-                    <aligny>center</aligny>
-                    <label>$LOCALIZE[31126]:</label>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <control type="button" id="20">
-                    <align>left</align>
-                    <height>2-row</height>
-                    <width>2-col</width>
-                    <font>smallStrong</font>
-                    <label>$LOCALIZE[10037]</label>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>textActive</focusedcolor>
-                    <texturefocus colordiffuse="22FFFFFF">colors/black.png</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textoffsetx>12</textoffsetx>
-                    <textoffsety>0</textoffsety>
-                    <onclick>SettingsLevelChange</onclick>
-                    <ondown>5</ondown>
-                </control>
-            </control>
             <!--Category submenu-->
+            <control type="button" id="1234">
+                <posx>0</posx>
+                <posy>18-row</posy>
+                <font>smallStrong</font>
+                <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
+                <label>[B][COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31025]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
+                <onclick>SettingsLevelChange</onclick>
+                <onup>3</onup>
+                <onright>5</onright>
+            </control>
             <control type="grouplist" id="3">
                 <posx>0</posx>
                 <posy>2-row</posy>
@@ -89,7 +69,8 @@
                 <height>18-row</height>
                 <onleft>9000</onleft>
                 <onright>5</onright>
-                <onup>20</onup>
+                <onup>1234</onup>
+                <ondown>1234</ondown>
                 <orientation>vertical</orientation>
             </control>
             <!--options-->
@@ -143,6 +124,10 @@
                 <description>Default Category Button</description>
                 <font>buttonTitle</font>
                 <texturenofocus>-</texturenofocus>
+            </control>
+            <control type="button" id="20">
+                <visible>false</visible>
+                <description>Change settings level</description>
             </control>
         </control>
         <!--debugging-->

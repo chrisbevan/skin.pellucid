@@ -33,9 +33,8 @@
 
 
 ***To do***
-Complete submenu / filtering
 
-Colour scheme selection window (use an image of the homescreen??)
+Finalize colour scheme selection window
 
 scripted video info screen TEST PLAYMEDIA WORKS + close dialog when playing trailer
 

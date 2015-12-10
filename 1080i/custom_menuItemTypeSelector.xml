@@ -49,7 +49,7 @@
                 <height>24-row</height>
                 <itemgap>0</itemgap>
                 <ondown>5000</ondown>
-                <onright>dialog.close(1100)</onright>
+                <onright>dialog.close(all,true)</onright>
                 <!--select a video addon-->
                 <control type="button" id="6001">
                     <visible>stringcompare(skin.string(menuItemTypeFilter),video)</visible>
