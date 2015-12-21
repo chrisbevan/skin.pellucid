@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-
+    <onload condition="!Skin.String(highlightColor) | stringcompare(Skin.String(highlightColor),None)">Skin.SetString(highlightColor,ffee3343)</onload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -201,15 +201,6 @@
                     <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
-                </control>
-                <control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Enable Artist Slideshow</description>
-                    <width>14-col</width>
-                    <label>31008</label>
-                    <onclick condition="System.HasAddon(script.artistslideshow)">Skin.ToggleSetting(artistSlideshowActive)</onclick>
-                    <onclick condition="!System.HasAddon(script.artistslideshow)">RunPlugin(plugin://script.artistslideshow)</onclick>
-                    <selected>Skin.HasSetting(artistSlideshowActive)</selected>
                 </control>
                 <control type="button" id="22">
                     <visible>Container(8000).Hasfocus(1)</visible>

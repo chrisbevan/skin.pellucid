@@ -99,6 +99,92 @@
                 <shadowcolor>-</shadowcolor>
             </control>
         </control>
+        <!--player controls-->
+        <control type="group">
+            <posx>10-col</posx>
+            <posy>row-12-begin</posy>
+            <control type="label">
+                <posx>3-col</posx>
+                <posy>0</posy>
+                <width>3-col</width>
+                <height>1-col</height>
+                <font>smallStrong</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <control type="button" id="500">
+                <posx>3-col</posx>
+                <posy>1-col</posy>
+                <height>1-col</height>
+                <width>1-col</width>
+                <font>symbol</font>
+                <label></label>
+                <textoffsetx>25</textoffsetx>
+                <texturenofocus colordiffuse="overlay" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+            </control>
+            <control type="label">
+                <posx>2-col-gutter</posx>
+                <posy>2-col</posy>
+                <width>3-col</width>
+                <height>1-col</height>
+                <align>right</align>
+                <font>smallStrong</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+             <control type="button" id="501">
+                <posx>2-col</posx>
+                <posy>2-col</posy>
+                <height>1-col</height>
+                <width>1-col</width>
+                <font>symbol</font>
+                <label></label>
+                <textoffsetx>25</textoffsetx>
+                <texturenofocus colordiffuse="overlay" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+            </control>
+            <control type="label">
+                <posx>372</posx>
+                <posy>2-col</posy>
+                <width>3-col</width>
+                <height>1-col</height>
+                <font>smallStrong</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <control type="button" id="502">
+                <posx>4-col</posx>
+                <posy>2-col</posy>
+                <height>1-col</height>
+                <width>1-col</width>
+                <font>symbol</font>
+                <label></label>
+                <textoffsetx>25</textoffsetx>
+                <texturenofocus colordiffuse="overlay" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+            </control>
+            <control type="label">
+                <posx>3-col</posx>
+                <posy>4-col</posy>
+                <width>3-col</width>
+                <height>1-col</height>
+                <font>smallStrong</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <control type="button" id="503">
+                <posx>3-col</posx>
+                <posy>3-col</posy>
+                <height>1-col</height>
+                <width>1-col</width>
+                <font>symbol</font>
+                <label></label>
+                <textoffsetx>25</textoffsetx>
+                <texturenofocus colordiffuse="overlay" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+            </control>
+        </control>
         <!--ff / rw speed indicators-->
         <control type="group">
             <posx>col-1-begin</posx>

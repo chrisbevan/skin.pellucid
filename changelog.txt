@@ -34,7 +34,13 @@
 
 ***To do***
 
-Finalize colour scheme selection window
+Revise fullscreenmusic. Use album art as default background.
+
+DialogProgress Player controls (include details of UDLR skip levels - check skip heading from paused)
+
+Fullscreen music view - add star rating selector
+
+Add No animation mode??
 
 scripted video info screen TEST PLAYMEDIA WORKS + close dialog when playing trailer
 

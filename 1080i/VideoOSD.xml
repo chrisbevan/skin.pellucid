@@ -60,7 +60,7 @@
                       <reveal>false</reveal>
                       <texturebg>-</texturebg>
                       <lefttexture>-</lefttexture>
-                      <midtexture border="36" colordiffuse="33FFFFFF">colors/black.png</midtexture>
+                      <midtexture border="36" colordiffuse="22FFFFFF">colors/black.png</midtexture>
                       <righttexture>-</righttexture>
                       <overlaytexture>-</overlaytexture>
                       <info>Player.Progress</info>
@@ -88,7 +88,7 @@
                             <height>2-row</height>
                             <align>left</align>
                             <font>regularStrong</font>
-                            <textcolor>dd000000</textcolor>
+                            <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
                             <label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
                             <shadowcolor>-</shadowcolor>
                         </control>

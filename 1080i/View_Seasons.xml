@@ -44,7 +44,7 @@
                         <font>largeStrong</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>background</shadowcolor>
-                        <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
+                        <label>[B]$INFO[container.foldername][/B] [COLOR $INFO[skin.string(highlightColor)]]$INFO[listitem.genre][/COLOR]</label>
                     </control>
                 </control>
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
-    <onload condition="Skin.HasSetting(artistSlideshowActive)">RunScript(script.artistslideshow)</onload>
     <onunload>activateWindow(MusicLibrary)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
     <onunload>control.setfocus(9000)</onunload>
@@ -11,23 +10,11 @@
             <include>fadeInOut</include>
             <control type="group">
                 <!--fanart-->
-                <control type="image">
-                    <visible>!Skin.HasSetting(artistSlideshowActive)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <include>dimensionsFullscreen</include>
-                    <fadetime>200</fadetime>
-                    <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-                    <aspectratio align="left" aligny="top">stretch</aspectratio>
-                    <include>kenBurnsey</include>
-                    <colordiffuse>44ffffff</colordiffuse>
-                </control>
                 <control type="multiimage">
-                    <visible>!isempty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
-                    <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+                    <imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Music.ExtraFanArt)]</imagepath>
                     <aspectratio>keep</aspectratio>
                     <timeperimage>10000</timeperimage>
                     <fadetime>1000</fadetime>
@@ -42,16 +29,6 @@
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
                 </control>
-                <!--artist logo (if available)-->
-                <control type="image">
-                    <posx>col-22-begin</posx>
-                    <posy>0</posy>
-                    <width>3-col</width>
-                    <height>3-col</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
-                    <colordiffuse>99ffffff</colordiffuse>
-                </control>
                 <!--vignettes-->
                 <control type="image">
                     <posx>0</posx>
@@ -64,234 +41,232 @@
             </control>
             <!--Track info-->
             <control type="group">
-                <!--cover-->
-                <control type="group">
-                    <posx>col-1-begin</posx>
-                    <posy>row-20-begin</posy>
-                    <!--album thumb and info-->
-                    <control type="image">
-                        <posx>24</posx>
-                        <posy>-12</posy>
-                        <width>4-col</width>
-                        <height>4-col</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture fallback="defaultAlbumCover.png" diffuse="masks/discSurface.png" border="0">$INFO[Player.art(thumb)]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <fadetime>500</fadetime>
-                    </control>
+                <posx>36</posx>
+                <posy>row-23-begin</posy>
+                <animation type="Conditional" condition="control.hasfocus(6789)">
+                    <effect type="fade" start="100" end="0" time="300"/>
+                    <effect type="slide" start="0,0" end="0,300" tween="quadratic" easing="out" time="400"/>
+                </animation>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>1-row</posy>
+                    <width>10-col</width>
+                    <height>3-row</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>aaFFFFFF</colordiffuse>
                 </control>
                 <!--track info-->
                 <control type="group">
-                    <posx>col-3-begin</posx>
-                    <posy>row-21-begin</posy>
+                    <posx>12</posx>
+                    <posy>0</posy>
                     <control type="label">
-                        <posx>3-col</posx>
-                        <posy>-8</posy>
-                        <width>19-col</width>
-                        <font>large</font>
-                        <textcolor>66FFFFFF</textcolor>
+                        <posx>0</posx>
+                        <posy>48</posy>
+                        <width>684</width>
+                        <font>pageTitle</font>
+                        <textcolor>cc000000</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Title]</label>
                    </control>
                     <control type="label">
                         <visible>!Pvr.IsPlayingRadio</visible>
-                        <posx>3-col</posx>
-                        <posy>52</posy>
-                        <width>19-col</width>
-                        <font>regularLight</font>
-                        <textcolor>66FFFFFF</textcolor>
+                        <posx>0</posx>
+                        <posy>96</posy>
+                        <width>684</width>
+                        <font>itemTitle</font>
+                        <textcolor>cc000000</textcolor>
                         <scroll>false</scroll>
-                        <label>[B]$INFO[MusicPlayer.artist,, | ][/B]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
+                        <label>$INFO[MusicPlayer.artist,, | ]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
                     </control>
                     <control type="label">
                         <visible>Pvr.IsPlayingRadio</visible>
-                        <posx>3-col</posx>
-                        <posy>48</posy>
-                        <width>15-col</width>
-                        <font>regularStrong</font>
-                        <textcolor>66FFFFFF</textcolor>
+                        <posx>0</posx>
+                        <posy>96</posy>
+                        <width>684</width>
+                        <font>itemTitle</font>
+                        <textcolor>cc000000</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.Plot]</label>
                     </control>
                     <control type="label">
-                        <posx>3-col</posx>
-                        <posy>104</posy>
+                        <posx>0</posx>
+                        <posy>4-row</posy>
                         <width>12-col</width>
+                        <height>2-row</height>
                         <font>pageTitle</font>
                         <align>left</align>
-                        <textcolor>66FFFFFF</textcolor>
+                        <textcolor>aaFFFFFF</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
+                    <control type="button">
+                       <description>Fake button - decorative only</description>
+                       <visible>MusicPlayer.HasNext</visible>
+                       <posx>4-col</posx>
+                       <posy>164</posy>
+                       <width>2-col-gutter</width>
+                       <height>1-row</height>
+                       <font>smallStrong</font>
+                       <align>center</align>
+                       <focusedcolor>black</focusedcolor>
+                       <textcolor>black</textcolor>
+                       <texturenofocus colordiffuse="aaFFFFFF">colors/white.png</texturenofocus>
+                       <texturefocus colordiffuse="aaFFFFFF">colors/white.png</texturefocus>
+                       <label>[UPPERCASE]$LOCALIZE[19031][/UPPERCASE]</label>
+                       <onclick>noop</onclick>
+                   </control>
                     <control type="label">
-                           <visible>!Pvr.IsPlayingRadio</visible>
-                           <posx>7-col</posx>
-                           <posy>104</posy>
-                           <width>4-col</width>
-                           <font>symbolLarge</font>
-                           <textcolor>66FFFFFF</textcolor>
-                           <label>$VAR[starRating]</label>
-                       </control>
-                       <control type="button">
-                           <description>Fake button - decorative only</description>
-                           <visible>MusicPlayer.HasNext</visible>
-                           <posx>3-col</posx>
-                           <posy>168</posy>
-                           <width>2-col-gutter</width>
-                           <height>1-row</height>
-                           <font>smallStrong</font>
-                           <align>center</align>
-                           <focusedcolor>black</focusedcolor>
-                           <textcolor>black</textcolor>
-                           <texturenofocus colordiffuse="66FFFFFF">colors/white.png</texturenofocus>
-                           <texturefocus colordiffuse="66FFFFFF">colors/white.png</texturefocus>
-                           <label>[UPPERCASE]$LOCALIZE[19031][/UPPERCASE]</label>
-                           <onclick>noop</onclick>
-                       </control>
-                    <control type="label">
-                        <posx>348</posx>
-                        <posy>168</posy>
-                        <width>12-col</width>
+                        <posx>424</posx>
+                        <posy>165</posy>
+                        <width>4-col-gutter</width>
                         <font>itemSubTitle</font>
                         <align>left</align>
-                        <textcolor>66FFFFFF</textcolor>
+                        <textcolor>aaFFFFFF</textcolor>
                         <scroll>false</scroll>
                         <label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title][/UPPERCASE]</label>
                     </control>
                 </control>
-                <!-- side menu-->
-                <control type="group" id="8765">
-                    <animation type="Conditional" condition="controlgroup(8765).hasfocus">
-                        <effect type="fade" start="0" end="100" time="300"/>
-                        <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400"/>
-                    </animation>
-                    <animation type="Conditional" condition="!controlgroup(8765).hasfocus">
-                        <effect type="fade" start="100" end="0" time="300"/>
-                        <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
-                    </animation>
+            </control>
+        </control>
+        <!-- side menu-->
+        <control type="group" id="8765">
+            <animation type="Conditional" condition="controlgroup(8765).hasfocus">
+                <effect type="fade" start="0" end="100" time="300"/>
+                <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400"/>
+            </animation>
+            <animation type="Conditional" condition="!controlgroup(8765).hasfocus">
+                <effect type="fade" start="100" end="0" time="300"/>
+                <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
+            </animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>col-7-begin</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>col-7-begin</posx>
+                <posy>0</posy>
+                <width>3</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>33ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--section logo-->
+            <control type="group">
+                <control type="label">
+                    <posx>col-1-begin</posx>
+                    <posy>row-1-begin</posy>
+                    <width>1-col</width>
+                    <height>1-col</height>
+                    <font>symbolVeryLarge</font>
+                    <aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label></label>
+                </control>
+            </control>
+            <control type="list" id="8002">
+                <posx>0</posx>
+                <posy>row-4-begin</posy>
+                <width>8-col</width>
+                <height>24-row</height>
+                <orientation>vertical</orientation>
+                <onleft>9002</onleft>
+                <onright>9876</onright>
+                <onback>activateWindow(home)</onback>
+                <itemlayout width="col-7-begin" height="2-row">
+                    <control type="label">
+                        <posx>col-1-begin</posx>
+                        <posy>0</posy>
+                        <width>7-col</width>
+                        <height>2-row</height>
+                        <font>menuTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="col-7-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>col-7-begin</width>
-                        <height>fullscreenHeight</height>
+                        <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>textActive</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
-                    <control type="image">
-                        <posx>col-7-begin</posx>
+                    <control type="label">
+                        <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>3</width>
-                        <height>fullscreenHeight</height>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>33ffffff</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <!--section logo-->
-                    <control type="group">
-                        <control type="label">
-                            <posx>col-1-begin</posx>
-                            <posy>row-1-begin</posy>
-                            <width>1-col</width>
-                            <height>1-col</height>
-                            <font>symbolVeryLarge</font>
-                            <aligny>center</aligny>
-                            <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label></label>
-                        </control>
-                    </control>
-                    <control type="list" id="8002">
-                        <posx>0</posx>
-                        <posy>row-4-begin</posy>
                         <width>8-col</width>
-                        <height>24-row</height>
-                        <orientation>vertical</orientation>
-                        <onleft>9002</onleft>
-                        <onright>9876</onright>
-                        <onback>activateWindow(home)</onback>
-                        <itemlayout width="col-7-begin" height="2-row">
-                            <control type="label">
-                                <posx>col-1-begin</posx>
-                                <posy>0</posy>
-                                <width>7-col</width>
-                                <height>2-row</height>
-                                <font>menuTitle</font>
-                                <aligny>center</aligny>
-                                <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.label]</label>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="col-7-begin" height="2-row">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>col-7-begin</width>
-                                <height>2-row</height>
-                                <texture>colors/white.png</texture>
-                                <colordiffuse>textActive</colordiffuse>
-                                <aspectratio>stretch</aspectratio>
-                            </control>
-                            <control type="label">
-                                <posx>col-1-begin</posx>
-                                <posy>0</posy>
-                                <width>8-col</width>
-                                <height>2-row</height>
-                                <font>menuTitle</font>
-                                <aligny>center</aligny>
-                                <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
-                                <shadowcolor>-</shadowcolor>
-                                <label>$INFO[ListItem.label]</label>
-                            </control>
-                        </focusedlayout>
-                        <content>
-                            <item>
-                                <description>Playlist</description>
-                                <label>31123</label>
-                                <thumb>-</thumb>
-                                <onclick>Dialog.Close(all,true)</onclick>
-                                <onclick>activateWindow(musicplaylist)</onclick>
-                            </item>
-                            <item>
-                                <description>Repeat</description>
-                                <label>$VAR[repeatState]</label>
-                                <thumb>-</thumb>
-                                <onclick>PlayerControl(Repeat)</onclick>
-                            </item>
-                            <item>
-                                <description>Shuffle</description>
-                                <label>$VAR[shuffleState]</label>
-                                <thumb>-</thumb>
-                                <onclick>PlayerControl(Random)</onclick>
-                            </item>
-                            <item>
-                                <description>Visualisation</description>
-                                <label>31032</label>
-                                <thumb>-</thumb>
-                                <onclick>activateWindow(musicOSD)</onclick>
-                            </item>
-                            <item>
-                                <visible>visualisation.enabled</visible>
-                                <description>Visualisation Settings</description>
-                                <label>$LOCALIZE[21417]</label>
-                                <thumb>-</thumb>
-                                <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-                            </item>
-                        </content>
+                        <height>2-row</height>
+                        <font>menuTitle</font>
+                        <aligny>center</aligny>
+                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
                     </control>
-                </control>
+                </focusedlayout>
+                <content>
+                    <item>
+                        <description>Playlist</description>
+                        <label>31123</label>
+                        <thumb>-</thumb>
+                        <onclick>Dialog.Close(all,true)</onclick>
+                        <onclick>activateWindow(musicplaylist)</onclick>
+                    </item>
+                    <item>
+                        <description>Repeat</description>
+                        <label>$VAR[repeatState]</label>
+                        <thumb>-</thumb>
+                        <onclick>PlayerControl(Repeat)</onclick>
+                    </item>
+                    <item>
+                        <description>Shuffle</description>
+                        <label>$VAR[shuffleState]</label>
+                        <thumb>-</thumb>
+                        <onclick>PlayerControl(Random)</onclick>
+                    </item>
+                    <item>
+                        <description>Visualisation</description>
+                        <label>31032</label>
+                        <thumb>-</thumb>
+                        <onclick>activateWindow(musicOSD)</onclick>
+                    </item>
+                    <item>
+                        <visible>visualisation.enabled</visible>
+                        <description>Visualisation Settings</description>
+                        <label>$LOCALIZE[21417]</label>
+                        <thumb>-</thumb>
+                        <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+                    </item>
+                </content>
             </control>
         </control>
-        <!--hidden button to handle dialog autohide-->
+        <!--hidden buttons to handle dialog autohide-->
         <control type="button" id="9876">
             <posx>-100</posx>
             <posy>-100</posy>
             <height>1-col</height>
             <width>1-col</width>
-            <onup>increaseRating</onup>
-            <ondown>decreaseRating</ondown>
+            <onup>noop</onup>
+            <ondown>6789</ondown>
+            <onleft>8765</onleft>
+        </control>
+        <control type="button" id="6789">
+            <posx>-100</posx>
+            <posy>-100</posy>
+            <height>1-col</height>
+            <width>1-col</width>
+            <onup>9876</onup>
+            <ondown>noop</ondown>
             <onleft>8765</onleft>
         </control>
         <!--debugging-->

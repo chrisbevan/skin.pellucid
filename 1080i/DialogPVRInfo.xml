@@ -42,7 +42,7 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$LOCALIZE[31214][/COLOR] $INFO[ListItem.channelname]</label>
+                    <label>[COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31214][/COLOR] $INFO[ListItem.channelname]</label>
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -53,7 +53,7 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$LOCALIZE[31192][/COLOR] $INFO[ListItem.startdate]</label>
+                    <label>[COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31192][/COLOR] $INFO[ListItem.startdate]</label>
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -64,7 +64,7 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label>[COLOR highlight]$LOCALIZE[31193][/COLOR] $INFO[ListItem.duration]</label>
+                    <label>[COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31193][/COLOR] $INFO[ListItem.duration]</label>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">

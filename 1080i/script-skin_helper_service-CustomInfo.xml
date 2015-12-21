@@ -80,14 +80,14 @@
                 <posx>0</posx>
                 <posy>row-5-begin</posy>
                 <width>10-col</width>
-                <height>1-row</height>
+                <height>24</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--meta-->
             <control type="panel">
                 <posx>12</posx>
-                <posy>7-row</posy>
+                <posy>324</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
@@ -133,8 +133,8 @@
                         <onclick>noop</onclick>
                     </item>
                     <item>
-                        <label>$LOCALIZE[563]</label>
-                        <label2>$INFO[Container(999).ListItem.UserRating,,/10]</label2>
+                        <label>$LOCALIZE[31193]</label>
+                        <label2>$INFO[Container(999).ListItem.duration,, $LOCALIZE[31018]]</label2>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
                     </item>
@@ -158,23 +158,37 @@
                 </control>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>4-row</posy>
+                    <posy>5-row</posy>
+                    <height>2-row</height>
                     <width>672</width>
                     <align>left</align>
-                    <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
-                    <label>$INFO[Container(999).ListItem.duration,, $LOCALIZE[31018]. ]$INFO[Container(999).listitem.MPAA,,.]</label>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <label fallback="31205">$INFO[Container(999).listitem.Tagline,,.]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                    <shadowcolor>-</shadowcolor>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>5-row</posy>
+                    <height>2-row</height>
+                    <width>672</width>
+                    <align>left</align>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[Container(999).ListItem.Property(TotalEpisodes),, $LOCALIZE[31189]]</label>
+                    <wrapmultiline>true</wrapmultiline>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>10-row</posy>
+                    <posy>12-row</posy>
                     <font>textbox</font>
                     <width>672</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
-                    <height>516</height>
+                    <height>350</height>
                     <label fallback="31205">$INFO[Container(999).ListItem.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
                     <shadowcolor>-</shadowcolor>

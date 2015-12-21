@@ -80,7 +80,7 @@
                         <width>6-col-gutter</width>
                         <height>2-row</height>
                         <font>dialogTitle</font>
-                        <label>[COLOR highlight]$INFO[ListItem.Label][/COLOR]</label>
+                        <label>[COLOR $INFO[skin.string(highlightColor)]]$INFO[ListItem.Label][/COLOR]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -120,7 +120,7 @@
                         <width>6-col-gutter</width>
                         <height>2-row</height>
                         <font>dialogTitle</font>
-                        <label>[COLOR highlight]$INFO[ListItem.Label][/COLOR]</label>
+                        <label>[COLOR $INFO[skin.string(highlightColor)]]$INFO[ListItem.Label][/COLOR]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
