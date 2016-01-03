@@ -17,7 +17,6 @@
                 <aspectratio>stretch</aspectratio>
             </control>
         </control>
-
         <control type="group">
             <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <posx>col-1-begin</posx>
@@ -42,7 +41,6 @@
                 <animation effect="rotateY" end="-7" center="auto,auto" time="0">windowopen</animation>
             </control>
         </control>
-
         <control type="group">
             <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <control type="label">
@@ -66,7 +64,6 @@
                 <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
             </control>
         </control>
-
         <control type="panel" id="50">
             <visible>container.content(songs) + !Substring(Container.folderpath,addons://sources/audio) + !Substring(Container.folderpath,plugin://) + Substring(Container.folderpath,musicdb://)</visible>
             <posx>col-10-begin</posx>

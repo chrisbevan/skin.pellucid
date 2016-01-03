@@ -34,9 +34,13 @@
 
 ***To do***
 
+Revise initial zoom
+
+Global search results needs a reboot
+
 Revise fullscreenmusic. Use album art as default background.
 
-DialogProgress Player controls (include details of UDLR skip levels - check skip heading from paused)
+DialogProgress Player controls (fix pause indicator to show seek level etc)
 
 Fullscreen music view - add star rating selector
 

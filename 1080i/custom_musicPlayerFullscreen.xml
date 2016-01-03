@@ -41,89 +41,97 @@
             </control>
             <!--Track info-->
             <control type="group">
-                <posx>36</posx>
+                <posx>col-1-begin</posx>
                 <posy>row-23-begin</posy>
                 <animation type="Conditional" condition="control.hasfocus(6789)">
-                    <effect type="fade" start="100" end="0" time="300"/>
-                    <effect type="slide" start="0,0" end="0,300" tween="quadratic" easing="out" time="400"/>
+                    <effect type="slide" start="0,0" end="0,700" tween="sine" time="400"/>
                 </animation>
+                 <animation type="conditional" condition="!StringCompare(MusicPlayer.Time,00:00)">
+                    <effect type="slide" start="0,700" end="0,0" tween="sine" time="400"/>
+                </animation>
+                <!--coverart (or channel art if radio)-->
                 <control type="image">
                     <posx>0</posx>
-                    <posy>1-row</posy>
-                    <width>10-col</width>
-                    <height>3-row</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>aaFFFFFF</colordiffuse>
+                    <posy>-412</posy>
+                    <width>6-col</width>
+                    <height>6-col</height>
+                    <aspectratio>keep</aspectratio>
+                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[ListItem.art(thumb)]</texture>
+                    <fadetime>500</fadetime>
                 </control>
                 <!--track info-->
                 <control type="group">
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
-                    <control type="label">
+                    <control type="image">
                         <posx>0</posx>
-                        <posy>48</posy>
-                        <width>684</width>
-                        <font>pageTitle</font>
-                        <textcolor>cc000000</textcolor>
+                        <posy>0</posy>
+                        <width>6-col</width>
+                        <height>71</height>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>0</posy>
+                        <width>396</width>
+                        <height>2-row</height>
+                        <font>regularStrong</font>
+                        <textcolor>textActive</textcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.Title]</label>
                    </control>
-                    <control type="label">
-                        <visible>!Pvr.IsPlayingRadio</visible>
-                        <posx>0</posx>
-                        <posy>96</posy>
-                        <width>684</width>
-                        <font>itemTitle</font>
-                        <textcolor>cc000000</textcolor>
-                        <scroll>false</scroll>
-                        <label>$INFO[MusicPlayer.artist,, | ]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
-                    </control>
-                    <control type="label">
-                        <visible>Pvr.IsPlayingRadio</visible>
-                        <posx>0</posx>
-                        <posy>96</posy>
-                        <width>684</width>
-                        <font>itemTitle</font>
-                        <textcolor>cc000000</textcolor>
-                        <scroll>false</scroll>
-                        <label>$INFO[VideoPlayer.Plot]</label>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>4-row</posy>
-                        <width>12-col</width>
-                        <height>2-row</height>
-                        <font>pageTitle</font>
-                        <align>left</align>
-                        <textcolor>aaFFFFFF</textcolor>
-                        <scroll>false</scroll>
-                        <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
-                    </control>
-                    <control type="button">
-                       <description>Fake button - decorative only</description>
-                       <visible>MusicPlayer.HasNext</visible>
-                       <posx>4-col</posx>
-                       <posy>164</posy>
-                       <width>2-col-gutter</width>
+                   <control type="image">
+                       <posx>0</posx>
+                       <posy>2-row</posy>
+                       <width>6-col</width>
                        <height>1-row</height>
-                       <font>smallStrong</font>
-                       <align>center</align>
-                       <focusedcolor>black</focusedcolor>
-                       <textcolor>black</textcolor>
-                       <texturenofocus colordiffuse="aaFFFFFF">colors/white.png</texturenofocus>
-                       <texturefocus colordiffuse="aaFFFFFF">colors/white.png</texturefocus>
-                       <label>[UPPERCASE]$LOCALIZE[19031][/UPPERCASE]</label>
-                       <onclick>noop</onclick>
+                       <texture>colors/white.png</texture>
+                       <colordiffuse>FFFFFFFF</colordiffuse>
                    </control>
                     <control type="label">
-                        <posx>424</posx>
-                        <posy>165</posy>
-                        <width>4-col-gutter</width>
-                        <font>itemSubTitle</font>
-                        <align>left</align>
-                        <textcolor>aaFFFFFF</textcolor>
+                        <posx>24</posx>
+                        <posy>2-row</posy>
+                        <width>396</width>
+                        <height>1-row</height>
+                        <font>smallStrong</font>
+                        <textcolor>black</textcolor>
                         <scroll>false</scroll>
-                        <label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title][/UPPERCASE]</label>
+                        <label>[UPPERCASE][B]$INFO[MusicPlayer.artist,, ][/B]$INFO[MusicPlayer.Album, | , ]$INFO[MusicPlayer.year,(,)][/UPPERCASE]</label>
+                    </control>
+                    <control type="image">
+                       <posx>0</posx>
+                       <posy>3-row</posy>
+                       <width>6-col</width>
+                       <height>2-row</height>
+                       <texture>colors/black.png</texture>
+                       <colordiffuse>overlay</colordiffuse>
+                   </control>
+                   <control type="progress">
+                         <description>Duration</description>
+                         <posx>0</posx>
+                         <posy>3-row</posy>
+                         <width>6-col</width>
+                         <height>2-row</height>
+                         <reveal>false</reveal>
+                         <texturebg>-</texturebg>
+                         <lefttexture>-</lefttexture>
+                         <midtexture border="36" colordiffuse="22FFFFFF">colors/white.png</midtexture>
+                         <righttexture>-</righttexture>
+                         <overlaytexture>-</overlaytexture>
+                         <info>Player.Progress</info>
+                   </control>
+                    <control type="label">
+                        <posx>24</posx>
+                        <posy>3-row</posy>
+                        <width>10-col</width>
+                        <height>2-row</height>
+                        <font>regularStrong</font>
+                        <align>left</align>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>99000000</shadowcolor>
+                        <scroll>false</scroll>
+                        <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
                 </control>
             </control>
