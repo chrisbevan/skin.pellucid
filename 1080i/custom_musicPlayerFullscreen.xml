@@ -29,44 +29,35 @@
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
                 </control>
-                <!--vignettes-->
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <include>dimensionsFullscreen</include>
-                    <texture>vignette.png</texture>
-                    <colordiffuse>ffffffff</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
             </control>
             <!--Track info-->
             <control type="group">
                 <posx>col-1-begin</posx>
                 <posy>row-23-begin</posy>
                 <animation type="Conditional" condition="control.hasfocus(6789)">
-                    <effect type="slide" start="0,0" end="0,700" tween="sine" time="400"/>
+                    <effect type="slide" start="0,0" end="0,500" tween="sine" time="400"/>
                 </animation>
                  <animation type="conditional" condition="!StringCompare(MusicPlayer.Time,00:00)">
-                    <effect type="slide" start="0,700" end="0,0" tween="sine" time="400"/>
+                    <effect type="slide" start="0,500" end="0,0" tween="sine" time="400"/>
                 </animation>
                 <!--coverart (or channel art if radio)-->
                 <control type="image">
                     <posx>0</posx>
-                    <posy>-412</posy>
-                    <width>6-col</width>
-                    <height>6-col</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[ListItem.art(thumb)]</texture>
+                    <posy>0</posy>
+                    <width>5-row</width>
+                    <height>182</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[player.art(thumb)]</texture>
                     <fadetime>500</fadetime>
                 </control>
                 <!--track info-->
                 <control type="group">
-                    <posx>0</posx>
+                    <posx>182</posx>
                     <posy>0</posy>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
+                        <width>9-col</width>
                         <height>71</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
@@ -74,17 +65,17 @@
                     <control type="label">
                         <posx>24</posx>
                         <posy>0</posy>
-                        <width>396</width>
+                        <width>612</width>
                         <height>2-row</height>
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
-                        <scroll>false</scroll>
+                        <scroll>true</scroll>
                         <label>$INFO[MusicPlayer.Title]</label>
                    </control>
                    <control type="image">
                        <posx>0</posx>
                        <posy>2-row</posy>
-                       <width>6-col</width>
+                       <width>9-col</width>
                        <height>1-row</height>
                        <texture>colors/white.png</texture>
                        <colordiffuse>FFFFFFFF</colordiffuse>
@@ -92,7 +83,7 @@
                     <control type="label">
                         <posx>24</posx>
                         <posy>2-row</posy>
-                        <width>396</width>
+                        <width>612</width>
                         <height>1-row</height>
                         <font>smallStrong</font>
                         <textcolor>black</textcolor>
@@ -102,7 +93,7 @@
                     <control type="image">
                        <posx>0</posx>
                        <posy>3-row</posy>
-                       <width>6-col</width>
+                       <width>9-col</width>
                        <height>2-row</height>
                        <texture>colors/black.png</texture>
                        <colordiffuse>overlay</colordiffuse>
@@ -111,7 +102,7 @@
                          <description>Duration</description>
                          <posx>0</posx>
                          <posy>3-row</posy>
-                         <width>6-col</width>
+                         <width>9-col</width>
                          <height>2-row</height>
                          <reveal>false</reveal>
                          <texturebg>-</texturebg>
@@ -124,7 +115,7 @@
                     <control type="label">
                         <posx>24</posx>
                         <posy>3-row</posy>
-                        <width>10-col</width>
+                        <width>612</width>
                         <height>2-row</height>
                         <font>regularStrong</font>
                         <align>left</align>
@@ -135,6 +126,15 @@
                     </control>
                 </control>
             </control>
+        </control>
+        <!--vignette-->
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <include>dimensionsFullscreen</include>
+            <texture>vignette.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
         </control>
         <!-- side menu-->
         <control type="group" id="8765">

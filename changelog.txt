@@ -32,23 +32,19 @@
 
 
 
-***To do***
+***To do (Skinners Notes)***
 
-Revise initial zoom
+Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
-Global search results needs a reboot
+Global search results needs a review
 
-Revise fullscreenmusic. Use album art as default background.
+Fullscreen music view - add star rating selector + Radio art / RDS support
 
-DialogProgress Player controls (fix pause indicator to show seek level etc)
+Extend No animation mode??
 
-Fullscreen music view - add star rating selector
+scripted video info screen TEST THAT PLAYMEDIA WORKS
 
-Add No animation mode??
-
-scripted video info screen TEST PLAYMEDIA WORKS + close dialog when playing trailer
-
-MyVideoPlaylist.xml
+Add MyVideoPlaylist.xml
 
 Use Appropriate weather backgrounds based on todays weather conditions
 
@@ -61,14 +57,4 @@ Check extra button to dialogAddonInfo.xml actually works (auto update)
 
 (use skin helper?) on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
 
-Radio RDS test
-
-Touchscreen controls on Android tablets (file seeking etc)
-
-
-
-
-[B]0.1.0[/B]
-- Initial Commit
-
-
+Explore Touchscreen controls for tablets (file seeking etc)

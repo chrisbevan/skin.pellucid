@@ -42,7 +42,7 @@
                 <width>4-col-gutter</width>
                 <height>4-col-gutter</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+                <texture fallback="colors/offblack.png">$INFO[System.AddonIcon(ListItem.Property(Addon.id))]</texture>
                 <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>

@@ -7,7 +7,7 @@
 
             <!--fanart-->
             <control type="group">
-                <visible>container.content(tvshows) | Substring(Container.folderpath,plugin)</visible>
+                <visible>Substring(Container.folderpath,plugin)</visible>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -22,9 +22,8 @@
                 </control>
                 <include>kenBurnsey</include>
             </control>
-
             <control type="panel" id="50">
-                <visible>Library.HasContent(tvshows) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>Library.HasContent(tvshows) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons) + !container.content(files)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>

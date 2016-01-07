@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-    
+
     <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
         <include>dateTime</include>
-
         <!--main group id-->
         <control type="group" id="100">
             <posx>col-1-begin</posx>
@@ -18,7 +17,6 @@
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
             </control>
-
             <control type="grouplist">
                 <posx>0</posx>
                 <posy>40</posy>
@@ -63,7 +61,6 @@
                     <textcolor>textActive</textcolor>
                 </control>
             </control>
-
             <!--'No results found'-->
             <control type="button" id="198">
                 <visible>false</visible>
@@ -120,7 +117,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[342]: $INFO[control.getlabel(110)]</label>
+                        <label>$LOCALIZE[342]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -135,18 +132,10 @@
                         <onleft>181</onleft>
                         <onright>121</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -157,29 +146,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -190,7 +167,6 @@
                         </focusedlayout>
                     </control>
                 </control>
-
                 <!--tv shows-->
                 <control type="group" id="129">
                     <width>6-col-textbox</width>
@@ -220,7 +196,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[20343]: $INFO[control.getlabel(120)]</label>
+                        <label>$LOCALIZE[20343]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -236,18 +212,10 @@
                         <onleft>111</onleft>
                         <onright>131</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -258,29 +226,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -320,7 +276,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[33054]: $INFO[control.getlabel(130)]</label>
+                        <label>$LOCALIZE[33054]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -336,18 +292,10 @@
                         <onleft>121</onleft>
                         <onright>141</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -358,29 +306,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -419,7 +355,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[20360]: $INFO[control.getlabel(140)]</label>
+                        <label>$LOCALIZE[20360]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -435,18 +371,10 @@
                         <onleft>131</onleft>
                         <onright>151</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
+                             <control type="label">
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
-                            <control type="label">
-                                <posx>1-col-indent</posx>
-                                <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -457,29 +385,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -518,7 +434,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[20389]: $INFO[control.getlabel(150)]</label>
+                        <label>$LOCALIZE[20389]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -534,18 +450,10 @@
                         <onleft>141</onleft>
                         <onright>161</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -556,29 +464,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
+                              <control type="label">
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
-                            <control type="label">
-                                <posx>1-col-indent</posx>
-                                <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -618,7 +514,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[133]: $INFO[control.getlabel(160)]</label>
+                        <label>$LOCALIZE[133]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -634,18 +530,10 @@
                         <onleft>151</onleft>
                         <onright>171</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -656,29 +544,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -718,7 +594,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[132]: $INFO[control.getlabel(170)]</label>
+                        <label>$LOCALIZE[132]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -734,18 +610,10 @@
                         <onleft>161</onleft>
                         <onright>181</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -756,29 +624,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -818,7 +674,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>dialogTitle</font>
-                        <label>$LOCALIZE[134]: $INFO[control.getlabel(180)]</label>
+                        <label>$LOCALIZE[134]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -834,18 +690,10 @@
                         <onleft>171</onleft>
                         <onright>111</onright>
                         <itemlayout width="6-col" height="75">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
@@ -856,29 +704,17 @@
                         </itemlayout>
                         <focusedlayout width="6-col" height="75">
                             <control type="image">
-                                <posx>1-col</posx>
+                                <posx>0</posx>
                                 <posy>0</posy>
-                                <width>5-col</width>
+                                <width>6-col</width>
                                 <height>2-row</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
                             </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>12</posx>
                                 <posy>0</posy>
-                                <width>5-col-gutter</width>
+                                <width>6-col-gutter</width>
                                 <height>2-row</height>
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
