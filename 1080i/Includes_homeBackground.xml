@@ -51,7 +51,7 @@
             </control>
             <!--video (no Library)-->
             <control type="image">
-                <visible>Container(9000).HasFocus(10) + !Library.HasContent(TVShows)</visible>
+                <visible>Container(9000).HasFocus(10)</visible>
                 <include>dimensionsFullscreen</include>
                 <texture>special://skin/extras/backgrounds/videos.jpg</texture>
                 <colordiffuse>44ffffff</colordiffuse>

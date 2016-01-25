@@ -626,7 +626,7 @@ msgid "<Smart playlist name>"
 msgstr ""
 
 msgctxt "#31212"
-msgid "5 Day Forecast for"
+msgid "5 Day Forecast"
 msgstr ""
 
 msgctxt "#31213"

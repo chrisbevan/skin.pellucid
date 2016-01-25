@@ -35,7 +35,7 @@
                                 <height>4-col-gutter</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture border="3">colors/black.png</texture>
-                                <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                                <bordertexture colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                                 <bordersize>3</bordersize>
                                 <colordiffuse>textboxInactive</colordiffuse>
                             </control>

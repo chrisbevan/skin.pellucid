@@ -101,10 +101,10 @@
                         <width>3-col-gutter</width>
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">colors/black.png</texture>
-                        <bordertexture colordiffuse="ffFFFFFF">defaultPoster.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>textboxInactive</colordiffuse>
+                        <texture border="6">defaultPoster.png</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
@@ -160,9 +160,9 @@
                         <width>3-col-gutter</width>
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">$INFO[ListItem.Art(poster)]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture border="6">$INFO[ListItem.Art(poster)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
                     <control type="image">
@@ -171,9 +171,9 @@
                         <width>3-col-gutter</width>
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">$INFO[ListItem.property(season_poster)]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture border="6">$INFO[ListItem.property(season_poster)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
                 </itemlayout>
@@ -190,11 +190,12 @@
                             <width>3-col-gutter</width>
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3">colors/black.png</texture>
-                            <bordertexture colordiffuse="ffFFFFFF">defaultPoster.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>textboxInactive</colordiffuse>
+                            <texture border="6">defaultPoster.png</texture>
+                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>overlay</colordiffuse>
                         </control>
+
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                             <posx>12</posx>
@@ -249,9 +250,9 @@
                             <width>3-col-gutter</width>
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <texture border="6">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
                         <control type="image">
@@ -260,9 +261,9 @@
                             <width>3-col-gutter</width>
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[ListItem.property(season_poster)]</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <texture border="6">$INFO[ListItem.property(season_poster)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
                     </control>

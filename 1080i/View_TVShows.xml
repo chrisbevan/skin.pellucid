@@ -32,6 +32,7 @@
                 <onright>60</onright>
                 <ondown>50</ondown>
                 <onup>50</onup>
+                <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <onback>activateWindow(home)</onback>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout width="444" height="300">
@@ -41,9 +42,9 @@
                         <width>6-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="defaultPoster.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                        <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture fallback="defaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                     </control>
                     <control type="label">
                         <visible>isempty(ListItem.Title)</visible>
@@ -53,7 +54,7 @@
                         <height>3-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>mediumStrong</font>
+                        <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>ff333333</shadowcolor>
@@ -83,7 +84,7 @@
                         <height>3-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>mediumStrong</font>
+                        <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.title]</label>
                         <shadowcolor>ff333333</shadowcolor>
@@ -101,10 +102,10 @@
                             <posy>0</posy>
                             <width>6-col-gutter</width>
                             <height>4-col-gutter</height>
-                            <aspectratio scalediffuse="false" align="right">scale</aspectratio>
-                            <texture fallback="defaultPoster.png" border="0">$INFO[Listitem.art(fanart)]</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <aspectratio>scale</aspectratio>
+                            <texture fallback="defaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
                         <control type="label">
@@ -115,19 +116,10 @@
                             <height>3-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>mediumStrong</font>
+                            <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>ff333333</shadowcolor>
-                        </control>
-                        <control type="image">
-                            <posx>3</posx>
-                            <posy>3</posy>
-                            <width>402</width>
-                            <height>258</height>
-                            <texture>vignette.png</texture>
-                            <colordiffuse>ffffffff</colordiffuse>
-                            <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -145,7 +137,7 @@
                             <height>3-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>mediumStrong</font>
+                            <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.title]</label>
                             <shadowcolor>ff333333</shadowcolor>

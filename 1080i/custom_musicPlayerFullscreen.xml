@@ -120,9 +120,33 @@
                         <font>regularStrong</font>
                         <align>left</align>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>99000000</shadowcolor>
+                        <shadowcolor>-</shadowcolor>
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
+                    </control>
+                    <control type="label">
+                        <visible>Playlist.IsRepeat | Playlist.IsRepeatOne</visible>
+                        <posx>8-col-gutter</posx>
+                        <posy>3-row</posy>
+                        <width>612</width>
+                        <height>2-row</height>
+                        <font>symbolLarge</font>
+                        <align>right</align>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
+                    </control>
+                    <control type="label">
+                        <visible>Playlist.IsRandom</visible>
+                        <posx>9-col-gutter</posx>
+                        <posy>3-row</posy>
+                        <width>612</width>
+                        <height>2-row</height>
+                        <font>symbolLarge</font>
+                        <align>right</align>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label></label>
                     </control>
                 </control>
             </control>

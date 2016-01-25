@@ -34,6 +34,8 @@
 
 ***To do (Skinners Notes)***
 
+Advanced launcher home link
+
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
 Global search results needs a review
@@ -45,8 +47,6 @@ Extend No animation mode??
 scripted video info screen TEST THAT PLAYMEDIA WORKS
 
 Add MyVideoPlaylist.xml
-
-Use Appropriate weather backgrounds based on todays weather conditions
 
 Finish Pictures section update (info screen esp.)
 

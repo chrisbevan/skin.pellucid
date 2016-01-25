@@ -157,7 +157,7 @@
                         <height>230</height>
                         <aspectratio>scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.icon]</texture>
-                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordertexture colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>

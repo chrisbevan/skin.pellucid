@@ -48,9 +48,9 @@
             <control type="progress">
                 <description>Progress Bar</description>
                 <posx>0</posx>
-                <posy>row-2-begin</posy>
+                <posy>80</posy>
                 <width>18-col</width>
-                <height>12</height>
+                <height>24</height>
                 <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
                 <midtexture colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</midtexture>
                 <info>Player.Progress</info>

@@ -135,7 +135,7 @@
                     <height>4-col</height>
                     <aspectratio scalediffuse="false" align="center" aligny="center">keep</aspectratio>
                     <texture border="0">$INFO[Listitem.icon]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                    <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                     <bordersize>3</bordersize>
                     <fadetime>200</fadetime>
                 </control>

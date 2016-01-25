@@ -81,9 +81,9 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">defaultAlbumCover.png</texture>
-                        <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture border="6">defaultAlbumCover.png</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
@@ -116,9 +116,9 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
                 </itemlayout>
@@ -135,10 +135,9 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="3">defaultAlbumCover.png</texture>
-                            <bordertexture colordiffuse="ffFFFFFF">colors/offblack.png</bordertexture>
-                            <bordersize>3</bordersize>
-                            <colordiffuse>textboxInactive</colordiffuse>
+                            <texture border="6">defaultAlbumCover.png</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus</visible>
@@ -170,9 +169,9 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
                     </control>

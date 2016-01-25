@@ -33,6 +33,7 @@
                 <ondown>50</ondown>
                 <onup>50</onup>
                 <pagecontrol>60</pagecontrol>
+                <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <itemlayout width="300" height="430">
                     <control type="image">
                         <posx>0</posx>
@@ -40,10 +41,10 @@
                         <width>4-col-gutter</width>
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="3">defaultPoster.png</texture>
-                        <bordertexture colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>textboxInactive</colordiffuse>
+                        <texture border="6">defaultPoster.png</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>isempty(listitem.title)</visible>
@@ -88,7 +89,7 @@
                         <height>396</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">$INFO[ListItem.Art(poster)]</texture>
-                        <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
+                        <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
@@ -107,8 +108,8 @@
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
                             <texture fallback="defaultPoster.png" border="0">$INFO[ListItem.Art(poster)]</texture>
-                            <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>3</bordersize>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
                             <colordiffuse>ff666666</colordiffuse>
                         </control>
                         <control type="group">

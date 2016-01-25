@@ -124,13 +124,6 @@
                         <thumb>-</thumb>
                         <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
                     </item>
-                    <item id="9">
-                        <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
-                        <label>31197</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(weather)</onclick>
-                    </item>
                     <item id="6">
                         <visible>!Skin.HasSetting(hideSearch)</visible>
                         <label>137</label>
