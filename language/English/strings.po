@@ -129,8 +129,24 @@ msgctxt "#31025"
 msgid "Settings"
 msgstr ""
 
+msgctxt "#31026"
+msgid "Outlook"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Currently"
+msgstr ""
+
+msgctxt "#31028"
+msgid "feels like"
+msgstr ""
+
 msgctxt "#31029"
 msgid "Current playlist"
+msgstr ""
+
+msgctxt "#31030"
+msgid "Humidity"
 msgstr ""
 
 msgctxt "#31031"
@@ -581,6 +597,10 @@ msgctxt "#31199"
 msgid "Artists in"
 msgstr ""
 
+msgctxt "#31200"
+msgid "Today"
+msgstr ""
+
 msgctxt "#31201"
 msgid "Record Show"
 msgstr ""
@@ -626,7 +646,7 @@ msgid "<Smart playlist name>"
 msgstr ""
 
 msgctxt "#31212"
-msgid "5 Day Forecast"
+msgid "From"
 msgstr ""
 
 msgctxt "#31213"

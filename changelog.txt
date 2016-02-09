@@ -38,7 +38,7 @@ Advanced launcher home link
 
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
-Global search results needs a review
+Global search results simplify
 
 Fullscreen music view - add star rating selector + Radio art / RDS support
 
@@ -56,5 +56,3 @@ PVR Recording scheduler (integrate with recordings)
 Check extra button to dialogAddonInfo.xml actually works (auto update)
 
 (use skin helper?) on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
-
-Explore Touchscreen controls for tablets (file seeking etc)

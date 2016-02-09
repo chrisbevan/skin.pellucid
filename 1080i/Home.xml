@@ -134,6 +134,13 @@
                         <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                         <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                     </item>
+                    <item id="9">
+                        <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
+                        <label>31197</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>ActivateWindow(weather)</onclick>
+                    </item>
                     <item id="7">
                         <label>5</label>
                         <label2></label2>
