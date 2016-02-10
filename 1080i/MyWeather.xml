@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">100</defaultcontrol>
     <include>fadeInOut</include>
     <controls>
         <!--background-->
@@ -222,13 +222,14 @@
         </control>
 
         <!--location control-->
-        <control type="spincontrolex" id="3">
+        <control type="button" id="100">
             <description>change location button</description>
             <left>-100</left>
             <top>-100</top>
             <width>6-col</width>
-            <onright>action(select)</onright>
-            <onleft>action(select)</onleft>
+            <onclick>noop</onclick>
+            <onright>Weather.LocationNext</onright>
+            <onleft>Weather.LocationPrevious</onleft>
         </control>
 
         <!--debugging-->

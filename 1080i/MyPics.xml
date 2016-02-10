@@ -28,6 +28,7 @@
                     <posy>row-5-begin</posy>
                     <height>826</height>
                     <onleft>9999</onleft>
+                    <onright>9002</onright>
                 </control>
             </control>
             <!--Folder titles-->
