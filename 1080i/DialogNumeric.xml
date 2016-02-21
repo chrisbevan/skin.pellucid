@@ -54,7 +54,7 @@
                     <onup>20</onup>
                     <ondown>14</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -71,7 +71,7 @@
                     <onup>10</onup>
                     <ondown>15</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -88,7 +88,7 @@
                     <onup>22</onup>
                     <ondown>16</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -106,7 +106,7 @@
                     <onup>21</onup>
                     <ondown>21</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
@@ -125,7 +125,7 @@
                     <onup>11</onup>
                     <ondown>17</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -142,7 +142,7 @@
                     <onup>12</onup>
                     <ondown>18</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -159,7 +159,7 @@
                     <onup>13</onup>
                     <ondown>19</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -177,7 +177,7 @@
                     <onup>23</onup>
                     <ondown>23</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                     <font>buttonTitle</font>
@@ -196,7 +196,7 @@
                     <onup>14</onup>
                     <ondown>20</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -213,7 +213,7 @@
                     <onup>15</onup>
                     <ondown>10</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -230,7 +230,7 @@
                     <onup>16</onup>
                     <ondown>22</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -248,7 +248,7 @@
                     <onup>17</onup>
                     <ondown>11</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -265,7 +265,7 @@
                     <onup>18</onup>
                     <ondown>12</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -282,7 +282,7 @@
                     <onup>19</onup>
                     <ondown>13</ondown>
                     <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                     <focusedcolor>textActive</focusedcolor>
                     <textcolor>textActive</textcolor>
                 </control>

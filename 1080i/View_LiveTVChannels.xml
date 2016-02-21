@@ -93,7 +93,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="image">
                         <posx>0</posx>

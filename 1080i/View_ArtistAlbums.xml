@@ -44,7 +44,7 @@
                     <height>6</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture border="0">colors/white.png</texture>
-                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
 
                 <!--titles-->
@@ -53,7 +53,7 @@
                     <posy>row-6-begin</posy>
                     <control type="label">
                         <posx>24-col</posx>
-                        <posy>0</posy>
+                        <posy>5-row</posy>
                         <width>24-col</width>
                         <height>8-row</height>
                         <align>right</align>
@@ -61,7 +61,7 @@
                         <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
-                        <label>$INFO[listitem.year][CR][B]$INFO[listitem.title][/B]</label>
+                        <label>[B]$INFO[listitem.title][/B][CR]$INFO[listitem.year]</label>
                     </control>
                     <control type="label">
                         <posx>0</posx>

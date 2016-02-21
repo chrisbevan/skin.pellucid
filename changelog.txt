@@ -34,11 +34,11 @@
 
 ***To do (Skinners Notes)***
 
-Advanced launcher home link
+Player controls (music)
+
+Advanced launcher home image
 
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
-
-Global search results simplify
 
 Fullscreen music view - add star rating selector + Radio art / RDS support
 

@@ -25,7 +25,7 @@
             <posx>78</posx>
             <posy>row-5-begin</posy>
             <width>1800</width>
-            <height>23-row</height>
+            <height>24-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
             <ondown>50</ondown>

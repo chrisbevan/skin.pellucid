@@ -23,7 +23,7 @@
                 <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
@@ -58,7 +58,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
@@ -77,7 +77,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
@@ -96,7 +96,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
@@ -116,7 +116,7 @@
                     <width>col-7-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
-                    <focusedcolor>$INFO[skin.string(highlightColor)]</focusedcolor>
+                    <focusedcolor>highlight</focusedcolor>
                     <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <textoffsetx>col-1-begin</textoffsetx>
@@ -180,7 +180,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <label></label>
-                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>
                     <control type="label">
@@ -190,7 +190,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

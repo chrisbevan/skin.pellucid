@@ -79,7 +79,7 @@
                         <width>auto</width>
                         <font>pageTitle</font>
                         <label> ($LOCALIZE[31133])</label>
-                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <textcolor>highlight</textcolor>
                     </control>
                 </control>
                 <!--source subtitle-->

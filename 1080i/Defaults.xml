@@ -186,7 +186,7 @@
         <width>12</width>
         <texturesliderbar>colors/inactive.png</texturesliderbar>
         <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
-        <texturesliderbarfocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturesliderbarfocus>
+        <texturesliderbarfocus colordiffuse="highlight">colors/white.png</texturesliderbarfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
     </default>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="!Skin.String(highlightColor) | stringcompare(Skin.String(highlightColor),None)">Skin.SetString(highlightColor,ffee3343)</onload>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
@@ -24,10 +23,10 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>col-5-begin</width>
+                <width>col-7-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
@@ -43,7 +42,7 @@
             <control type="list" id="9000">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>col-5-begin</width>
+                <width>col-7-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <itemlayout width="col-7-begin" height="2-row">
@@ -76,7 +75,7 @@
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -123,6 +122,12 @@
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
+                    </item>
+                    <item id="12">
+                        <visible>System.HasAddon(plugin.program.advanced.launcher)</visible>
+                        <label>31036</label>
+                        <thumb>-</thumb>
+                        <onclick>RunAddon(plugin.program.advanced.launcher,)</onclick>
                     </item>
                     <item id="6">
                         <visible>!Skin.HasSetting(hideSearch)</visible>

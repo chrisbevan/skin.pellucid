@@ -36,7 +36,7 @@
                     <control type="radiobutton" id="1">
                         <description>Enable subtitles</description>
                         <enable>VideoPlayer.HasSubtitles</enable>
-                        <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>textActive</focusedcolor>
                         <label>31151</label>
                         <textureradiofocus>-</textureradiofocus>
@@ -51,7 +51,7 @@
                         <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
                         <label>31202</label>
                         <width>8-col</width>
-                        <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>textActive</focusedcolor>
                         <onclick>SubtitleDelay</onclick>
                     </control>
@@ -59,7 +59,7 @@
                         <description>Download Subtitle</description>
                         <width>8-col</width>
                         <label>31154</label>
-                        <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
                         <focusedcolor>textActive</focusedcolor>
                         <onclick>Dialog.Close(VideoOSD)</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>

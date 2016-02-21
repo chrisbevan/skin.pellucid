@@ -96,7 +96,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="0">colors/white.png</texture>
-                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
                         </control>
                         <control type="group">
                             <animation type="focus" loop="false" reversible="false">
@@ -161,7 +161,7 @@
                         <width>4-col-gutter</width>
                         <height>1-row</height>
                         <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
-                        <midtexture colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</midtexture>
+                        <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                         <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">
@@ -200,7 +200,7 @@
                     <posy>0</posy>
                     <width>14-col</width>
                     <font>pageTitle</font>
-                    <label>$LOCALIZE[31006] [COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31165][/COLOR]</label>
+                    <label>$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31165][/COLOR]</label>
                     <textcolor>textActive</textcolor>
                 </control>
                 <control type="label">

@@ -45,7 +45,7 @@
             <height>fullscreenHeight</height>
             <aspectratio scalediffuse="false">stretch</aspectratio>
             <texture border="0">colors/white.png</texture>
-            <bordertexture border="3" colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</bordertexture>
+            <bordertexture border="3" colordiffuse="highlight">colors/white.png</bordertexture>
             <bordersize>6,0,0,0</bordersize>
             <colordiffuse>background</colordiffuse>
         </control>
@@ -148,7 +148,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
@@ -172,7 +172,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -276,7 +276,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>

@@ -60,7 +60,7 @@
                         <width>6-col-gutter</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -112,7 +112,7 @@
                         <width>6-col-gutter</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">

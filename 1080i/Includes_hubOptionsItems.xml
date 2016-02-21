@@ -4,15 +4,15 @@
     <include name="videoSideMenu">
         <control type="button" id="3">
             <description>Sort by</description>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>103</label>
         </control>
         <control type="togglebutton" id="4">
             <description>Sort direction</description>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
             <focusedcolor>textActive</focusedcolor>
             <label>31109</label>
             <altlabel>31110</altlabel>
@@ -20,7 +20,7 @@
         </control>
         <control type="button" id="505">
             <description>Menu shortcuts (video)</description>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>31041</label>
@@ -28,7 +28,7 @@
             <onclick>ActivateWindow(1100)</onclick>
         </control>
         <control type="button" id="507">
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>653</label>
@@ -39,7 +39,7 @@
             <description>Watched Toggle</description>
             <label>31195</label>
             <width>6-col</width>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <textureradiofocus>-</textureradiofocus>
             <textureradionofocus>-</textureradionofocus>
@@ -50,7 +50,7 @@
             <description>Unlock Shares</description>
             <label>20336</label>
             <width>6-col</width>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <texturenofocus>-</texturenofocus>
             <textureradiofocus>-</textureradiofocus>
@@ -67,7 +67,7 @@
             <description>Sort by</description>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>103</label>
         </control>
         <control type="togglebutton" id="4">
@@ -76,13 +76,13 @@
             <altlabel>31110</altlabel>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
         </control>
         <control type="button" id="503">
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>31041</label>
             <onclick>Skin.SetString(menuItemTypeFilter,audio)</onclick>
             <onclick>ActivateWindow(1100)</onclick>
@@ -90,7 +90,7 @@
         <control type="button" id="504">
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
             <onclick>right</onclick>
@@ -103,7 +103,7 @@
             <description>Sort by</description>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>103</label>
         </control>
         <control type="togglebutton" id="4">
@@ -112,8 +112,8 @@
             <altlabel>31110</altlabel>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</alttexturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
         </control>
     </include>
 </includes>

@@ -20,7 +20,7 @@
                 <width>8-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -77,7 +77,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>itemSubTitle</font>
-                <label>$LOCALIZE[31107]: [COLOR $INFO[skin.string(highlightColor)]]$INFO[System.ProfileName][/COLOR]</label>
+                <label>$LOCALIZE[31107]: [COLOR highlight]$INFO[System.ProfileName][/COLOR]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>

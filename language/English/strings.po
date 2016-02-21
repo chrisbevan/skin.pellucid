@@ -169,6 +169,10 @@ msgctxt "#31035"
 msgid "Enable Debug Info"
 msgstr ""
 
+msgctxt "#31036"
+msgid "Advanced Launcher"
+msgstr ""
+
 msgctxt "#31037"
 msgid "Albums by"
 msgstr ""

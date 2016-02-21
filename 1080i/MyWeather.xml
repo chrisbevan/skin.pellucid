@@ -59,7 +59,7 @@
                     <width>24-col</width>
                     <height>2-row</height>
                     <font>veryLarge</font>
-                    <label>[COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31200][/COLOR] $INFO[Window.Property(Location)]</label>
+                    <label>[COLOR highlight]$LOCALIZE[31200][/COLOR] $INFO[Window.Property(Location)]</label>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <animation type="Conditional" condition="isempty(Window.Property(location))" loop="false" reversible="true">

@@ -44,7 +44,7 @@
                         <font>large</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>background</shadowcolor>
-                        <label>[B]$INFO[container.foldername][/B] [COLOR $INFO[skin.string(highlightColor)]]$INFO[listitem.genre][/COLOR]</label>
+                        <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
                     </control>
                 </control>
 
@@ -67,7 +67,7 @@
                     <height>6</height>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture border="0">colors/white.png</texture>
-                    <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
 
                 <!--content-->

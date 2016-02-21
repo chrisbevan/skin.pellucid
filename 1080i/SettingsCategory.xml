@@ -27,7 +27,7 @@
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -56,7 +56,7 @@
                 <posy>18-row</posy>
                 <font>smallStrong</font>
                 <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
-                <label>[B][COLOR $INFO[skin.string(highlightColor)]]$LOCALIZE[31025]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
+                <label>[B][COLOR highlight]$LOCALIZE[31025]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
                 <onright>5</onright>

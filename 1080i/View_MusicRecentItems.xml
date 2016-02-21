@@ -41,12 +41,12 @@
                 <!--titles-->
                 <control type="group">
                     <posx>col-1-begin</posx>
-                    <posy>row-6-begin</posy>
+                    <posy>row-12-begin</posy>
                     <control type="label">
                         <posx>24-col</posx>
                         <posy>0</posy>
                         <width>24-col</width>
-                        <height>8-row</height>
+                        <height>6-row</height>
                         <align>right</align>
                         <font>veryLargeLight</font>
                         <textcolor>66ffffff</textcolor>
@@ -210,7 +210,7 @@
                         <width>4-col-textbox</width>
                         <height>9</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                         <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>

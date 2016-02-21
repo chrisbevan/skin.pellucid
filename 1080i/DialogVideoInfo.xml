@@ -79,7 +79,7 @@
                 <width>10-col</width>
                 <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -103,7 +103,7 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <font>itemSubTitle</font>
-                        <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                        <textcolor>highlight</textcolor>
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -259,7 +259,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">
@@ -378,7 +378,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>mediumStrong</font>
-                    <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                    <textcolor>highlight</textcolor>
                     <shadowcolor>-</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
@@ -467,7 +467,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
                             <include>spinFocusIcon</include>
                         </control>
                         <control type="image">
@@ -544,7 +544,7 @@
                 <width>10-col</width>
                 <height>row-5-begin</height>
                 <texture>colors/white.png</texture>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">

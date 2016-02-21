@@ -18,7 +18,7 @@
                 <height>3-row</height>
                 <wrapmultiline>true</wrapmultiline>
                 <font>pageTitle</font>
-                <textcolor>$INFO[skin.string(highlightColor)]</textcolor>
+                <textcolor>highlight</textcolor>
             </control>
             <control type="textbox" id="9">
                 <posx>0</posx>
@@ -84,7 +84,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="image">

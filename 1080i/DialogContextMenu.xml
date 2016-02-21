@@ -11,7 +11,7 @@
         </control>
         <control type="button" id="1000">
             <description>Buttons</description>
-            <texturefocus colordiffuse="$INFO[skin.string(highlightColor)]">colors/white.png</texturefocus>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
         </control>

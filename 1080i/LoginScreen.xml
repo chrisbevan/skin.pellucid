@@ -26,7 +26,7 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>colors/white.png</texture>
                 <bordersize>0</bordersize>
-                <colordiffuse>$INFO[skin.string(highlightColor)]</colordiffuse>
+                <colordiffuse>highlight</colordiffuse>
             </control>
             <control type="image">
                 <posx>142</posx>
