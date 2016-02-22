@@ -34,9 +34,7 @@
 
 ***To do (Skinners Notes)***
 
-Player controls (music)
-
-Advanced launcher home image
+Rework Player controls (video + music) Transparent over screen centre.
 
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
@@ -47,8 +45,6 @@ Extend No animation mode??
 scripted video info screen TEST THAT PLAYMEDIA WORKS
 
 Add MyVideoPlaylist.xml
-
-Finish Pictures section update (info screen esp.)
 
 PVR Recording indicators
 PVR Recording scheduler (integrate with recordings)

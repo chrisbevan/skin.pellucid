@@ -147,6 +147,17 @@
                     <effect type="fade" end="100" time="1000" delay="800"/>
                 </animation>
             </control>
+            <!--advanced launcher-->
+            <control type="image">
+                <visible>Container(9000).HasFocus(12)</visible>
+                <include>dimensionsFullscreen</include>
+                <texture>special://skin/extras/backgrounds/advancedLauncher.jpg</texture>
+                <colordiffuse>44ffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <animation type="windowopen">
+                    <effect type="fade" end="100" time="1000" delay="800"/>
+                </animation>
+            </control>
         </control>
     </include>
 </includes>

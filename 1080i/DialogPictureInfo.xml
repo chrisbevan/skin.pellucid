@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
-     
-	<include>fadeInOut</include>
+
+    <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
         <control type="group">
-            <posx>col-4-begin</posx>
-            <posy>row-5-begin</posy>
-			<!--animations-->
+            <posx>col-8-begin</posx>
+            <posy>row-3-begin</posy>
+            <!--animations-->
             <include>modalDialogInOut</include>
             <control type="image">
                 <posx>0</posx>
-                <posy>-12</posy>
+                <posy>0</posy>
                 <width>8-col</width>
                 <height>-</height>
                 <aspectratio align="left" aligny="top">keep</aspectratio>
-				<bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
                 <texture>$INFO[listitem.thumb]</texture>
             </control>
             <control type="panel" id="5">
-                <posx>9-col</posx>
-                <posy>-30</posy>
-                <width>9-col</width>
+                <posx>0</posx>
+                <posy>11-row</posy>
+                <width>12-col</width>
                 <height>12-row</height>
                 <itemlayout width="8-col" height="36">
                     <control type="label">
                         <posx>0</posx>
                         <width>4-col-gutter</width>
-                        <info>ListItem.Label</info>
+                        <label>$INFO[ListItem.Label]</label>
                         <font>smallStrong</font>
                     </control>
                     <control type="label">
-                        <posx>4-col</posx>
-                        <width>8-col-gutter</width>
+                        <posx>3-col</posx>
+                        <width>9-col-gutter</width>
                         <align>left</align>
-                        <info>ListItem.Label2</info>
-                        <font>smallMedium</font>
+                        <label>[B]$INFO[ListItem.Label2][/B]</label>
+                        <font>smallStrong</font>
                     </control>
                 </itemlayout>
                 <focusedlayout width="8-col" height="36">
@@ -48,8 +46,8 @@
                         <font>smallStrong</font>
                     </control>
                     <control type="label">
-                        <posx>4-col</posx>
-                        <width>8-col-gutter</width>
+                        <posx>3-col</posx>
+                        <width>9-col-gutter</width>
                         <align>left</align>
                         <info>ListItem.Label2</info>
                         <font>smallMedium</font>

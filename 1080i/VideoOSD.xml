@@ -66,21 +66,15 @@
                 <label fallback="31205">$INFO[videoplayer.plot]</label>
                 <autoscroll delay="10000" time="1000" repeat="10000"/>
             </control>
-            <!--options-->
+            <!--player controls-->
             <control type="group">
-                <posx>596</posx>
-                <posy>6</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>726</width>
-                    <height>79</height>
-                    <texture border="6">colors/black.png</texture>
-                    <colordiffuse>11111111</colordiffuse>
-                    <bordertexture border="6" colordiffuse="overlay">colors/white.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <animation type="windowOpen">
+                    <effect type="fade" start="0" end="100" time="500" tween="sine" easing="in"/>
+                    <effect type="zoom" end="130" time="0"/>
+                </animation>
+                <posx>486</posx>
+                <posy>row-18-begin</posy>
+
                 <control type="list" id="8001">
                     <posx>6</posx>
                     <posy>3</posy>
@@ -95,8 +89,8 @@
                             <width>1-col-textbox</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <colordiffuse>textboxInactive</colordiffuse>
+                            <texture>colors/white.png</texture>
+                            <colordiffuse>22ffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>0</posx>
@@ -106,7 +100,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
+                            <textcolor>99ffffff</textcolor>
                             <label>$INFO[ListItem.label2]</label>
                         </control>
                     </itemlayout>
@@ -118,7 +112,7 @@
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>99ffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <posx>0</posx>

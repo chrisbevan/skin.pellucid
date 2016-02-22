@@ -187,6 +187,7 @@
                     <height>21-row</height>
                     <onleft>9999</onleft>
                     <onright>9002</onright>
+                    <onback>9999</onback>
                 </control>
             </control>
 

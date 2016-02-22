@@ -51,6 +51,7 @@
                     <posy>row-5-begin</posy>
                     <height>23-row</height>
                     <onleft>9999</onleft>
+                    <onback>9999</onback>
                 </control>
                 <control type="scrollbar" id="60">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
@@ -59,6 +60,7 @@
                     <height>23-row</height>
                     <onleft>9999</onleft>
                     <onright>9002</onright>
+                    <onback>9999</onback>
                 </control>
             </control>
 

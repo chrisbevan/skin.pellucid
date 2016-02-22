@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    
+
     <previouswindow>videolibrary</previouswindow>
     <controls>
         <include>globalBackground</include>
@@ -72,6 +72,7 @@
                         <posy>276</posy>
                         <height>672</height>
                         <onleft>9999</onleft>
+                        <onback>9999</onback>
                     </control>
                 </control>
             </control>
