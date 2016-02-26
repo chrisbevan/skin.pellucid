@@ -68,7 +68,7 @@
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
-                <onback>activateWindow(home)</onback>
+                <onback>9000</onback>
                 <orientation>horizontal</orientation>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>activatewindow(Musiclibrary,musicdb://albums/$INFO[listitem.DBID])</onclick>
@@ -189,6 +189,7 @@
                 <height>78</height>
                 <onleft>9000</onleft>
                 <ondown>9998</ondown>
+                <onback>9000</onback>
                 <orientation>horizontal</orientation>
                 <itemlayout width="4-col" height="2-row">
                     <control type="label">

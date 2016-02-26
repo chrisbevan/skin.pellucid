@@ -36,6 +36,11 @@
 
 Rework Player controls (video + music) Transparent over screen centre.
 
+Music "love" toggle
+
+PVR Recording indicators
+PVR Recording scheduler (integrate with recordings)
+
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
 Fullscreen music view - add star rating selector + Radio art / RDS support
@@ -45,9 +50,6 @@ Extend No animation mode??
 scripted video info screen TEST THAT PLAYMEDIA WORKS
 
 Add MyVideoPlaylist.xml
-
-PVR Recording indicators
-PVR Recording scheduler (integrate with recordings)
 
 Check extra button to dialogAddonInfo.xml actually works (auto update)
 

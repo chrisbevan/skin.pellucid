@@ -192,17 +192,17 @@
             <control type="list" id="500">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>8-col</width>
+                <width>col-5-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
-                <itemlayout width="col-7-begin" height="2-row">
+                <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>7-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -211,11 +211,11 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="col-7-begin" height="2-row">
+                <focusedlayout width="col-5-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-7-begin</width>
+                        <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
@@ -224,7 +224,7 @@
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>8-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -248,7 +248,7 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>col-7-begin</width>
+                <width>col-5-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
@@ -271,7 +271,7 @@
             <control type="grouplist" id="9002">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>col-7-begin</width>
+                <width>col-5-begin</width>
                 <height>27-row</height>
                 <itemgap>0</itemgap>
                 <onright>9000</onright>
@@ -281,7 +281,7 @@
                     <description>Search</description>
                     <label>31124</label>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -294,7 +294,7 @@
                     <description>Genre</description>
                     <label>$ADDON[script.games.rom.collection.browser 32401]: $INFO[control.getlabel(600)] </label>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -308,7 +308,7 @@
                     <description>Year</description>
                     <label>$ADDON[script.games.rom.collection.browser 32400]: $INFO[control.getlabel(700)] </label>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -322,7 +322,7 @@
                     <description>Publisher</description>
                     <label>$ADDON[script.games.rom.collection.browser 32402]: $INFO[control.getlabel(800)] </label>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -336,7 +336,7 @@
                     <description>Character</description>
                     <label>$ADDON[script.games.rom.collection.browser 32407]: $INFO[control.getlabel(900)] </label>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -349,7 +349,7 @@
                 <control type="radiobutton" id="1000">
                     <description>Favourites filter</description>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -366,7 +366,7 @@
                 <control type="button" id="4001">
                     <description>Missing info filter</description>
                     <height>2-row</height>
-                    <width>col-7-begin</width>
+                    <width>col-5-begin</width>
                     <font>menuTitle</font>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
@@ -391,7 +391,7 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>col-7-begin</width>
+                <width>col-5-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
@@ -416,17 +416,17 @@
                 <visible allowhiddenfocus="true">Control.HasFocus(600)</visible>
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>8-col</width>
+                <width>col-5-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
-                <itemlayout width="col-7-begin" height="2-row">
+                <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>7-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -435,11 +435,11 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="col-7-begin" height="2-row">
+                <focusedlayout width="col-5-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-7-begin</width>
+                        <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
@@ -448,7 +448,7 @@
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>8-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -463,17 +463,17 @@
                 <visible allowhiddenfocus="true">Control.HasFocus(700)</visible>
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>8-col</width>
+                <width>col-5-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
-                <itemlayout width="col-7-begin" height="2-row">
+                <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>7-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -482,11 +482,11 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="col-7-begin" height="2-row">
+                <focusedlayout width="col-5-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-7-begin</width>
+                        <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
@@ -495,7 +495,7 @@
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>8-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -510,17 +510,17 @@
                 <visible allowhiddenfocus="true">Control.HasFocus(800)</visible>
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>8-col</width>
+                <width>col-5-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
-                <itemlayout width="col-7-begin" height="2-row">
+                <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>7-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -529,11 +529,11 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="col-7-begin" height="2-row">
+                <focusedlayout width="col-5-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-7-begin</width>
+                        <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
@@ -542,7 +542,7 @@
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>8-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -557,17 +557,17 @@
                 <visible allowhiddenfocus="true">Control.HasFocus(900)</visible>
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
-                <width>8-col</width>
+                <width>col-5-begin</width>
                 <height>24-row</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
                 <onback>activateWindow(home)</onback>
-                <itemlayout width="col-7-begin" height="2-row">
+                <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>7-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -576,11 +576,11 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="col-7-begin" height="2-row">
+                <focusedlayout width="col-5-begin" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>col-7-begin</width>
+                        <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
                         <colordiffuse>textActive</colordiffuse>
@@ -589,7 +589,7 @@
                     <control type="label">
                         <posx>col-1-begin</posx>
                         <posy>0</posy>
-                        <width>8-col</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>

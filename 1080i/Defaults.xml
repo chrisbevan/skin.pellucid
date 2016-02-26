@@ -96,16 +96,16 @@
         <textcolor>textActive</textcolor>
         <focusedcolor>black</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
-        <radiowidth>88</radiowidth>
-        <radioheight>58</radioheight>
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
         <texturefocus>colors/white.png</texturefocus>
         <texturenofocus>-</texturenofocus>
-        <textureradiofocus>UIControls/radio-button-fo.png</textureradiofocus>
-        <textureradionofocus>UIControls/radio-button-nf.png</textureradionofocus>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>FFFFFFFF</colordiffuse>
+        <textureradiofocus>-</textureradiofocus>
+        <textureradionofocus>-</textureradionofocus>
+        <radiowidth/>
+        <radioheight/>
     </default>
     <default type="spincontrolex">
         <posx>0</posx>

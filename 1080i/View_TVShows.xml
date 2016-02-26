@@ -32,6 +32,7 @@
                 <onright>60</onright>
                 <ondown>50</ondown>
                 <onup>50</onup>
+                <onback>9000</onback>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <onback>activateWindow(home)</onback>
                 <pagecontrol>60</pagecontrol>

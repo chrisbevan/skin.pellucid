@@ -43,7 +43,7 @@
                         <height>2-row</height>
                         <font>large</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>background</shadowcolor>
+                        <shadowcolor>-</shadowcolor>
                         <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
                     </control>
                 </control>

@@ -86,6 +86,7 @@
                 <height>9-row</height>
                 <onup>9123</onup>
                 <onleft>9000</onleft>
+                <onback>9000</onback>
                 <orientation>horizontal</orientation>
                 <onback>control.setfocus(9000)</onback>
                 <onclick condition="container(9123).hasfocus(2)">Skin.SetString(showRecentVideoItems,false)</onclick>
@@ -282,6 +283,7 @@
             <height>84</height>
             <onleft>9000</onleft>
             <ondown>9998</ondown>
+            <onback>9000</onback>
             <orientation>horizontal</orientation>
             <itemlayout width="4-col" height="2-row">
                 <control type="label">

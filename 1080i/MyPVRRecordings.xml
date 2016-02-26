@@ -34,6 +34,7 @@
                     <height>21-row</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
+                    <onback>9000</onback>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="24-col" height="2-row">
                         <control type="image">

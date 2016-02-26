@@ -14,6 +14,7 @@
                 <onright>60</onright>
                 <ondown>59</ondown>
                 <onup>59</onup>
+                <onback>9000</onback>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <itemlayout width="300" height="300">
