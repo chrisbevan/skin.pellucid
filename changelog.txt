@@ -34,8 +34,6 @@
 
 ***To do (Skinners Notes)***
 
-Rework Player controls (video + music) Transparent over screen centre.
-
 Music "love" toggle
 
 PVR Recording indicators

@@ -606,7 +606,7 @@ msgid "Today"
 msgstr ""
 
 msgctxt "#31201"
-msgid "Record Show"
+msgid "Record"
 msgstr ""
 
 msgctxt "#31202"
