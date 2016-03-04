@@ -181,6 +181,14 @@ msgctxt "#31038"
 msgid "Albums"
 msgstr ""
 
+msgctxt "#31039"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Video"
+msgstr ""
+
 msgctxt "#31041"
 msgid "Edit Menu Shortcuts"
 msgstr ""

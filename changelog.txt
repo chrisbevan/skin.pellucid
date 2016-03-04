@@ -43,8 +43,6 @@ Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
 
 Fullscreen music view - add star rating selector + Radio art / RDS support
 
-Extend No animation mode??
-
 scripted video info screen TEST THAT PLAYMEDIA WORKS
 
 Add MyVideoPlaylist.xml

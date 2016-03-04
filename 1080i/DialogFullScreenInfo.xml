@@ -1,6 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <onload>action(back)</onload>
-    <onload>activatewindow(videoosd)</onload>
-    <controls/>
+    <controls>
+        <control type="group">
+            <include>fadeInOut</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <!--fade out if audio / video menu active-->
+            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
+                <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in"/>
+            </animation>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <include>dateTime</include>
+            <control type="group">
+                <posx>0</posx>
+                <posy>row-23-begin</posy>
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" time="300"/>
+                    <effect type="slide" start="0,300" end="0,0" tween="cubic" easing="out" time="400"/>
+                </animation>
+                <animation type="Windowclose">
+                    <effect type="fade" start="100" end="0" time="300"/>
+                    <effect type="slide" end="0,300" tween="cubic" easing="out" time="400"/>
+                </animation>
+                <!--content title-->
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>fullscreenWidth</width>
+                    <height>2-row</height>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>col-1-begin</posx>
+                    <posy>0</posy>
+                    <width>16-col</width>
+                    <height>2-row</height>
+                    <font>pageTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[VideoPlayer.ChannelName,, • ]$INFO[videoplayer.Title]</label>
+                </control>
+                <control type="label">
+                    <right>96</right>
+                    <posy>0</posy>
+                    <width>8-col</width>
+                    <height>2-row</height>
+                    <font>pageTitle</font>
+                    <align>right</align>
+                    <textcolor>textActive</textcolor>
+                    <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                    <scroll>false</scroll>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>2-row</posy>
+                    <width>fullscreenWidth</width>
+                    <height>6-row</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>textboxInactive</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="textbox">
+                    <posx>col-1-begin</posx>
+                    <posy>90</posy>
+                    <font>textbox</font>
+                    <width>24-col</width>
+                    <textcolor>textActive</textcolor>
+                    <height>114</height>
+                    <label fallback="31205">$INFO[videoplayer.plot]</label>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
+                </control>
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>DialogFullScreenInfo.xml</label>
+        </control>
+    </controls>
 </window>
