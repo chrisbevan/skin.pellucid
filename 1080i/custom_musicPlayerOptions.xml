@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window>
+<window type="dialog" id="1105">
     <defaultcontrol always="true">8001</defaultcontrol>
-    <onload>Control.SetFocus(8001,3)</onload>
-    <include>fadeInOut</include>
     <controls>
+        <!-- options menu-->
         <control type="group">
-            <!--fade out if audio / video menu active-->
-            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
-                <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in"/>
-            </animation>
             <posx>col-10-begin</posx>
-            <posy>row-8-begin</posy>
+            <posy>row-6-begin</posy>
+            <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
                 <posx>-36</posx>
                 <posy>-36</posy>
                 <width>7-col</width>
-                <height>14-row</height>
+                <height>16-row</height>
                 <texture>colors/black.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <colordiffuse>textboxInactive</colordiffuse>
+                <colordiffuse>overlay</colordiffuse>
             </control>
             <!--player controls-->
             <control type="panel" id="8001">
@@ -28,8 +24,8 @@
                 <width>6-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
-                <ondown>Control.SetFocus(8002,0)</ondown>
-                <onup>Control.SetFocus(8002,3)</onup>
+                <ondown>8002</ondown>
+                <onup>Control.SetFocus(8003,4)</onup>
                 <orientation>horizontal</orientation>
                 <itemlayout width="1-col" height="2-row">
                     <control type="image">
@@ -123,16 +119,64 @@
                     </item>
                 </content>
             </control>
-            <!--menu items-->
-            <control type="panel" id="8002">
+            <!--Star rating-->
+            <control type="group">
                 <posx>0</posx>
                 <posy>2-row</posy>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>6-col</width>
+                    <height>69</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                </control>
+                <control type="image">
+                    <visible>control.hasfocus(8002)</visible>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1-col</width>
+                    <height>69</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1-col</width>
+                    <height>69</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>symbolLarge</font>
+                    <textcolor>textActive</textcolor>
+                    <label></label>
+                </control>
+                <control type="button" id="8002">
+                    <posx>1-col</posx>
+                    <posy>0</posy>
+                    <height>69</height>
+                    <width>5-col</width>
+                    <font>symbolLarge</font>
+                    <textoffsetx>12</textoffsetx>
+                    <label>$VAR[starRating]</label>
+                    <onup>8001</onup>
+                    <ondown>control.setfocus(8003,0)</ondown>
+                    <onleft>decreaserating</onleft>
+                    <onright>increaserating</onright>
+                    <onclick>noop</onclick>
+                </control>
+            </control>
+            <!--final options-->
+            <control type="panel" id="8003">
+                <posx>0</posx>
+                <posy>4-row</posy>
                 <width>6-col</width>
-                <height>12-row</height>
-                <itemgap>0</itemgap>
-                <onup>8001</onup>
-                <ondown>8001</ondown>
+                <height>10-row</height>
                 <orientation>vertical</orientation>
+                <onup>8002</onup>
+                <ondown>Control.SetFocus(8001,3)</ondown>
                 <itemlayout width="6-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
@@ -209,40 +253,40 @@
                 </focusedlayout>
                 <content>
                     <item>
-                        <enabled>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enabled>
-                        <label>31201</label>
-                        <label2></label2>
+                        <description>Playlist</description>
+                        <label>31123</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>PlayerControl(record)</onclick>
+                        <onclick>Dialog.Close(all,true)</onclick>
+                        <onclick>activateWindow(musicplaylist)</onclick>
                     </item>
                     <item>
-                        <description>Subtitles</description>
-                        <label>24012</label>
-                        <label2></label2>
+                        <description>Repeat</description>
+                        <label>$VAR[repeatState]</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>Close</onclick>
-                        <onclick>activateWindow(1104)</onclick>
+                        <onclick>PlayerControl(Repeat)</onclick>
                     </item>
                     <item>
-                        <description>Video Settings</description>
-                        <label>13395</label>
-                        <label2></label2>
+                        <description>Shuffle</description>
+                        <label>$VAR[shuffleState]</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(123)</onclick>
+                        <onclick>PlayerControl(Random)</onclick>
                     </item>
                     <item>
-                        <description>Audio Settings</description>
-                        <label>13396</label>
-                        <label2></label2>
+                        <description>Visualisation</description>
+                        <label>31032</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(124)</onclick>
+                        <onclick>activateWindow(musicOSD)</onclick>
                     </item>
                     <item>
-                        <description>Bookmarks</description>
-                        <label>298</label>
-                        <label2></label2>
+                        <description>Visualisation Settings</description>
+                        <label>$LOCALIZE[21417]</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(125)</onclick>
+                        <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                     </item>
                 </content>
             </control>
@@ -251,7 +295,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>VideoOSD.xml</label>
+            <label>custom_musicPlayerOptions.xml</label>
         </control>
     </controls>
 </window>

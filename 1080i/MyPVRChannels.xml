@@ -77,6 +77,8 @@
 
             <!--dateTime-->
             <include>dateTime</include>
+
+            xc
         </control>
 
         <!--hub menu-->

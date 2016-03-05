@@ -72,17 +72,12 @@
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
-        <value condition="SubString(MusicPlayer.Rating,1)"></value>
-        <value condition="SubString(MusicPlayer.Rating,2)"></value>
-        <value condition="SubString(MusicPlayer.Rating,3)"></value>
-        <value condition="SubString(MusicPlayer.Rating,4)"></value>
-        <value condition="SubString(MusicPlayer.Rating,5)"></value>
-        <value condition="SubString(MusicPlayer.Rating,6)"></value>
-        <value condition="SubString(MusicPlayer.Rating,7)"></value>
-        <value condition="SubString(MusicPlayer.Rating,8)"></value>
-        <value condition="SubString(MusicPlayer.Rating,9)"></value>
-        <value condition="SubString(MusicPlayer.Rating,10)"></value>
-        <value></value>
+        <value condition="SubString(MusicPlayer.Rating,1)"></value>
+        <value condition="SubString(MusicPlayer.Rating,2)"></value>
+        <value condition="SubString(MusicPlayer.Rating,3)"></value>
+        <value condition="SubString(MusicPlayer.Rating,4)"></value>
+        <value condition="SubString(MusicPlayer.Rating,5)"></value>
+        <value></value>
     </variable>
     <!--custom addon handling-->
     <!--video-->

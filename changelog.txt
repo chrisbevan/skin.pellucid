@@ -34,8 +34,6 @@
 
 ***To do (Skinners Notes)***
 
-Music "love" toggle
-
 PVR Recording indicators
 PVR Recording scheduler (integrate with recordings)
 
