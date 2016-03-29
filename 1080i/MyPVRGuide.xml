@@ -119,6 +119,17 @@
                             <shadowcolor>-</shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
+                        <control type="image">
+                            <visible>ListItem.HasTimer</visible>
+                            <posx>12</posx>
+                            <posy>6</posy>
+                            <width>12</width>
+                            <height>12</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="0" diffuse="masks/circle.png">colors/white.png</texture>
+                            <colordiffuse>highlight</colordiffuse>
+                            <animation effect="fade" start="30" end="100" time="1000" condition="true" pulse="true">conditional</animation>
+                        </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="216">
                         <control type="image" id="14">

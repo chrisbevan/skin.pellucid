@@ -58,10 +58,10 @@
                 <posy>row-7-begin</posy>
                 <width>15-col</width>
                 <height>1-row</height>
-                <font>regularStrong</font>
+                <font>small</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
+                <label>[B]$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)][/B]</label>
             </control>
         </control>
         <control type="panel" id="50">
@@ -123,7 +123,17 @@
                 <control type="image">
                     <posx>1-col</posx>
                     <posy>0</posy>
-                    <width>14-col</width>
+                    <width>12-col-textbox</width>
+                    <height>69</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>colors/black.png</texture>
+                    <bordersize>0</bordersize>
+                    <colordiffuse>textboxInactive</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>13-col</posx>
+                    <posy>0</posy>
+                    <width>2-col-textbox</width>
                     <height>69</height>
                     <aspectratio>stretch</aspectratio>
                     <texture>colors/black.png</texture>
@@ -147,6 +157,7 @@
                     <width>1-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
+                    <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -158,6 +169,7 @@
                     <width>2-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
+                    <align>center</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -237,6 +249,7 @@
                     <width>1-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
+                    <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
@@ -248,6 +261,7 @@
                     <width>2-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
+                    <align>center</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>

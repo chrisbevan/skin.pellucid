@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9999</defaultcontrol>
-
     <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
         <include>globalBackground</include>
-
         <!--page container group-->
         <control type="group">
-
             <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--shift page for certain modal dialogs-->
-
             <include>modalDialogContentShift</include>
-
             <!--initial animation-->
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300"/>
             </animation>
-
             <!--Main content listing-->
             <control type="group" id="9999">
                 <posx>col-1-begin</posx>
@@ -150,34 +144,33 @@
                         </control>
                     </focusedlayout>
                 </control>
-
                 <!--Additional info-->
                 <control type="group">
-                    <posx>72</posx>
+                    <posx>0</posx>
                     <posy>22-row</posy>
                     <control type="progress">
                         <description>Disk usage bar</description>
                         <left>0</left>
                         <top>1</top>
-                        <width>4-col-gutter</width>
+                        <width>24-col</width>
                         <height>1-row</height>
-                        <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
+                        <texturebg colordiffuse="overlay">colors/black.png</texturebg>
                         <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                         <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">
-                        <posx>4-col</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
-                        <width>12-col-gutter</width>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
+                        <width>24-col</width>
+                        <font>itemSubTitle</font>
+                        <align>center</align>
+                        <textcolor>background</textcolor>
                         <selectedcolor>textActive</selectedcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[Pvr.BackendDiskSpace]</label>
                     </control>
                 </control>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="9400">
                 <visible>Control.IsVisible(60)</visible>
@@ -191,7 +184,6 @@
                     <onback>9999</onback>
                 </control>
             </control>
-
             <!--Folder titles-->
             <control type="group">
                 <posx>col-1-begin</posx>

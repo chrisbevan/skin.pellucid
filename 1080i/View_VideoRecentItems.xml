@@ -196,7 +196,6 @@
                             <bordersize>6</bordersize>
                             <colordiffuse>overlay</colordiffuse>
                         </control>
-
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
                             <posx>12</posx>
@@ -271,7 +270,6 @@
                 </focusedlayout>
             </control>
         </control>
-
         <!--content selector-->
         <control type="list" id="9123">
             <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">

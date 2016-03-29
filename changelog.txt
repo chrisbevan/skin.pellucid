@@ -34,12 +34,15 @@
 
 ***To do (Skinners Notes)***
 
-PVR Recording indicators
-PVR Recording scheduler (integrate with recordings)
+Optimise settings: use skin helper: on startup: Ask whether to change:
+show parent folder items: system.getbool(showparentdiritems)
+start PVR minimised: false
+
+PVR Recording schedule (integrate with recordings)
+
+Fullscreen music view: Radio art and RDS support
 
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
-
-Fullscreen music view - add star rating selector + Radio art / RDS support
 
 scripted video info screen TEST THAT PLAYMEDIA WORKS
 
@@ -47,4 +50,4 @@ Add MyVideoPlaylist.xml
 
 Check extra button to dialogAddonInfo.xml actually works (auto update)
 
-(use skin helper?) on startup: add check for parent folder items and warn user to turn off: system.getbool(showparentdiritems)
+
