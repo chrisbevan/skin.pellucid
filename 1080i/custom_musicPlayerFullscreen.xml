@@ -80,7 +80,7 @@
                        <font>regularStrong</font>
                        <textcolor>textActive</textcolor>
                        <scroll>true</scroll>
-                       <label>[B]$INFO[MusicPlayer.rating]*[/B]</label>
+                       <label>[B]$INFO[MusicPlayer.rating,,*][/B]</label>
                   </control>
                    <control type="image">
                        <posx>0</posx>

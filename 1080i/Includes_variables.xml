@@ -67,7 +67,7 @@
     </variable>
     <!--homescreen background image content-->
     <variable name="homescreenCollage">
-        <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/collage_randomMovies.xsp</value>
+        <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/collage_RandomMovies.xsp</value>
         <value condition="Container(9000).HasFocus(2)">special://skin/extras/playlists/collage_RandomAlbums.xsp</value>
     </variable>
     <!--Star rating for music tracks-->
