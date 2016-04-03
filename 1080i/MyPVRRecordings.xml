@@ -201,7 +201,7 @@
                     <posx>0</posx>
                     <posy>45</posy>
                     <width>14-col</width>
-                    <font>regular</font>
+                    <font>pageSubTitle</font>
                     <label>$INFO[container.numitems] $LOCALIZE[31165]</label>
                     <textcolor>textActive</textcolor>
                 </control>

@@ -7,7 +7,7 @@
         <include>globalBackground</include>
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>resource://resource.images.weatherfanart.single/$INFO[Window.Property(Current.FanartCode),,.jpg]</texture>
+            <texture>resource://resource.images.weatherfanart.single/$INFO[Window(weather).Property(Current.fanartCode),,.jpg]</texture>
             <colordiffuse>33ffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
             <include>kenBurnsey</include>
@@ -78,7 +78,7 @@
                         <width>3-col</width>
                         <height>3-col</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="0">resource://resource.images.weathericons.outline/$INFO[Window.Property(current.FanartCode),,.png]</texture>
+                        <texture border="0">resource://resource.images.weathericons.outline/$INFO[Window(weather).Property(current.fanartCode),,.png]</texture>
                     </control>
                     <control type="label">
                         <posx>3-col</posx>

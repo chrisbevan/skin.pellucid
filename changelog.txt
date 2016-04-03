@@ -34,20 +34,24 @@
 
 ***To do (Skinners Notes)***
 
+Photos section not looking good: Fallback thumbs not working
+
+Fullscreen music view: Radio art and RDS support
+
+
+
+
+
 Optimise settings: use skin helper: on startup: Ask whether to change:
 show parent folder items: system.getbool(showparentdiritems)
 start PVR minimised: false
 
 PVR Recording schedule (integrate with recordings)
 
-Fullscreen music view: Radio art and RDS support
-
 Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
-
-scripted video info screen TEST THAT PLAYMEDIA WORKS
 
 Add MyVideoPlaylist.xml
 
-Check extra button to dialogAddonInfo.xml actually works (auto update)
+
 
 

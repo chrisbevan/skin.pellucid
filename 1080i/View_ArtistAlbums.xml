@@ -148,11 +148,7 @@
                     </itemlayout>
                     <focusedlayout width="4-col" height="4-col">
                         <control type="group">
-                            <animation type="focus" loop="false" reversible="false">
-                                <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-                                <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
-                                <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
-                            </animation>
+                            <include>focusThumb</include>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>

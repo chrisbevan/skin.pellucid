@@ -181,7 +181,7 @@
                         <bordertexture border="3" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>3</bordersize>
                         <colordiffuse>ffFFFFFF</colordiffuse>
-                         <include>spinFocusPoster</include>
+                         <include>focusThumb</include>
                     </control>
                     <control type="label">
                         <posx>12</posx>

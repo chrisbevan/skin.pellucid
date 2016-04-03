@@ -32,13 +32,13 @@
             <effect type="rotatey" end="180" center="36" tween="back" easing="out" time="1000"/>
         </animation>
     </include>
-    <include name="spinFocusPoster">
+    <include name="focusThumb">
         <animation type="focus" loop="false" reversible="false">
-            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
+            <effect type="rotatey" start="0" end="-10" center="132" tween="back" easing="out" time="300"/>
+            <effect type="rotatey" start="0" end="10" center="132" tween="back" easing="out" delay="300" time="300"/>
+            <effect type="zoom" start="95" end="110" center="auto" tween="sine" easing="out" time="200"/>
         </animation>
     </include>
-
     <!--modal dialog handling-->
     <include name="modalDialogInOut">
         <animation type="Windowopen">

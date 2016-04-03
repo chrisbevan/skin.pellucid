@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-
-    <include condition="skin.string(showcast,false)">fadeInOut</include>
     <onunload>Skin.Reset(showcast)</onunload>
     <onunload condition="skin.string(showcast,true)">action(info)</onunload>
+    <animation type="windowClose">
+        <effect type="fade" start="100" end="0" time="400" delay="200"/>
+    </animation>
     <controls>
         <control type="group">
             <!--background / fanart-->
@@ -63,6 +64,10 @@
             <animation type="conditional" condition="skin.string(showcast,true)">
                 <effect type="slide" start="0" end="0,-1080" tween="cubic" easing="out" time="400" delay="0"/>
             </animation>
+            <animation type="windowClose">
+                <effect type="fade" start="100" end="0" time="350"/>
+                <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
+            </animation>
             <!--overlay-->
             <control type="image">
                 <posx>0</posx>
@@ -93,7 +98,7 @@
             <!--meta-->
             <control type="panel">
                 <posx>12</posx>
-                <posy>324</posy>
+                <posy>7-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
@@ -170,18 +175,6 @@
                     <align>left</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[listitem.Tagline,,.]</label>
-                    <wrapmultiline>true</wrapmultiline>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>5-row</posy>
-                    <height>2-row</height>
-                    <width>672</width>
-                    <align>left</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
                     <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[31189]]</label>
                     <wrapmultiline>true</wrapmultiline>
                     <shadowcolor>-</shadowcolor>
@@ -189,12 +182,12 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>12-row</posy>
+                    <posy>10-row</posy>
                     <font>textbox</font>
                     <width>672</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
-                    <height>350</height>
+                    <height>384</height>
                     <label fallback="31205">$INFO[ListItem.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
                     <shadowcolor>-</shadowcolor>

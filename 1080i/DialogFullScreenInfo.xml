@@ -44,7 +44,7 @@
                     <height>2-row</height>
                     <font>pageTitle</font>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[VideoPlayer.ChannelName,, • ]$INFO[videoplayer.Title]</label>
+                    <label>[B]$INFO[VideoPlayer.ChannelName,, ][/B]$INFO[videoplayer.Title]</label>
                 </control>
                 <control type="label">
                     <right>96</right>

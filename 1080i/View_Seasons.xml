@@ -133,7 +133,7 @@
                     </itemlayout>
                     <focusedlayout width="4-col" height="391">
                         <control type="group">
-                            <include>spinFocusPoster</include>
+                            <include>focusThumb</include>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>

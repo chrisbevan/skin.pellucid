@@ -77,6 +77,7 @@
             </control>
             <!--content listing-->
             <control type="panel" id="9998">
+                <visible>container(9123).hasfocus(1)</visible>
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
@@ -89,12 +90,8 @@
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
                 <onback>control.setfocus(9000)</onback>
-                <onclick condition="container(9123).hasfocus(2)">Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="container(9123).hasfocus(2)">activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
-                <onclick condition="container(9123).hasfocus(2)">Control.SetFocus(50)</onclick>
                 <content>$INFO[control.getlabel(9123)]</content>
-                <oninfo condition="container(9123).hasfocus(1)">RunScript(script.skin.helper.service,action=showinfo,movieid=$INFO[container(9998).listitem.dbid])</oninfo>
-                <oninfo condition="container(9123).hasfocus(2)">RunScript(script.skin.helper.service,action=showinfo,tvshowid=$INFO[container(9998).listitem.dbid])</oninfo>
+                <oninfo>RunScript(script.skin.helper.service,action=showinfo,movieid=$INFO[container(9998).listitem.dbid])</oninfo>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
@@ -108,7 +105,7 @@
                         <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>2-row</posy>
                         <width>168</width>
@@ -120,7 +117,114 @@
                         <label>$INFO[ListItem.title]</label>
                     </control>
                     <control type="label">
-                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>168</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.year]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>3-col-gutter</width>
+                        <height>288</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="6">$INFO[ListItem.Art(poster)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="3-col" height="312">
+                    <control type="group">
+                        <include>focusThumb</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>3-col-gutter</width>
+                            <height>288</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="6">defaultPoster.png</texture>
+                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>overlay</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>168</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>168</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.year]</label>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>3-col-gutter</width>
+                            <height>288</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="6">$INFO[ListItem.Art(poster)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="panel" id="9998">
+                <visible>container(9123).hasfocus(2)</visible>
+                <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
+                    <effect type="fade" start="100" end="0" time="200"/>
+                </animation>
+                <posx>72</posx>
+                <posy>row-20-begin</posy>
+                <width>1800</width>
+                <height>9-row</height>
+                <onup>9123</onup>
+                <onleft>9000</onleft>
+                <onback>9000</onback>
+                <orientation>horizontal</orientation>
+                <onback>control.setfocus(9000)</onback>
+                <content>$INFO[control.getlabel(9123)]</content>
+                <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
+                <onclick>activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid]/$INFO[listitem.season])</onclick>
+                <onclick>Control.SetFocus(50)</onclick>
+                <oninfo>RunScript(script.skin.helper.service,action=showinfo,tvshowid=$INFO[container(9998).listitem.dbid])</oninfo>
+                <itemlayout width="228" height="312">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>3-col-gutter</width>
+                        <height>288</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="6">defaultPoster.png</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>2-row</posy>
                         <width>168</width>
@@ -132,19 +236,7 @@
                         <label>$INFO[ListItem.tvshowtitle]</label>
                     </control>
                     <control type="label">
-                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
-                        <posx>12</posx>
-                        <posy>3-row</posy>
-                        <width>168</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>buttonTitle</font>
-                        <textcolor>textDisabled</textcolor>
-                        <label>$INFO[ListItem.year]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>3-row</posy>
                         <width>168</width>
@@ -166,25 +258,10 @@
                         <bordersize>6</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>3-col-gutter</width>
-                        <height>288</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="6">$INFO[ListItem.property(season_poster)]</texture>
-                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <colordiffuse>ffffffff</colordiffuse>
-                    </control>
                 </itemlayout>
                 <focusedlayout width="3-col" height="312">
                     <control type="group">
-                        <animation type="focus" loop="false" reversible="false">
-                            <effect type="rotatey" start="0" end="-15" center="132" tween="back" easing="out" time="300"/>
-                            <effect type="rotatey" start="0" end="15" center="132" tween="back" easing="out" delay="300" time="300"/>
-                            <effect type="zoom" start="95" end="110" center="auto" tween="back" easing="out" time="300"/>
-                        </animation>
+                        <include>focusThumb</include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -197,19 +274,7 @@
                             <colordiffuse>overlay</colordiffuse>
                         </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
-                            <posx>12</posx>
-                            <posy>2-row</posy>
-                            <width>168</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.title]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>2-row</posy>
                             <width>168</width>
@@ -221,19 +286,7 @@
                             <label>$INFO[ListItem.tvshowtitle]</label>
                         </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(1)</visible>
-                            <posx>12</posx>
-                            <posy>3-row</posy>
-                            <width>168</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.year]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus + container(9123).hasfocus(2)</visible>
+                            <visible>!controlgroup(9000).hasfocus</visible>
                             <posx>12</posx>
                             <posy>3-row</posy>
                             <width>168</width>
@@ -255,21 +308,11 @@
                             <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>3-col-gutter</width>
-                            <height>288</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="6">$INFO[ListItem.property(season_poster)]</texture>
-                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>6</bordersize>
-                            <colordiffuse>ffffffff</colordiffuse>
-                        </control>
                     </control>
                 </focusedlayout>
             </control>
         </control>
+
         <!--content selector-->
         <control type="list" id="9123">
             <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
