@@ -197,6 +197,14 @@ msgctxt "#31042"
 msgid "Specific Content type settings"
 msgstr ""
 
+msgctxt "#31043"
+msgid "Reload Skin"
+msgstr ""
+
+msgctxt "#31044"
+msgid "Debugging"
+msgstr ""
+
 msgctxt "#31046"
 msgid "Field:"
 msgstr ""

@@ -104,7 +104,7 @@
                             <onclick>noop</onclick>
                         </item>
                         <item id="3">
-                            <label>$LOCALIZE[14092]</label>
+                            <label>$LOCALIZE[31044]</label>
                             <onclick>noop</onclick>
                         </item>
                     </content>
@@ -191,6 +191,14 @@
                     <label>31035</label>
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
+                </control>
+                <control type="button" id="17">
+                    <visible>Container(8000).Hasfocus(3)</visible>
+                    <description>Reload skin</description>
+                    <width>14-col</width>
+                    <label>31043</label>
+                    <onclick>ReloadSkin()</onclick>
+                    <onclick>activateWindow(home)</onclick>
                 </control>
                 <control type="radiobutton" id="20">
                     <visible>Container(8000).Hasfocus(1)</visible>

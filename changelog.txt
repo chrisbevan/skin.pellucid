@@ -34,14 +34,6 @@
 
 ***To do (Skinners Notes)***
 
-Photos section not looking good: [CHECK] Fallback thumbs not working
-
-Fullscreen music view: Radio art and RDS support
-
-
-
-
-
 Optimise settings: use skin helper: on startup: Ask whether to change:
 show parent folder items: system.getbool(showparentdiritems)
 start PVR minimised: false

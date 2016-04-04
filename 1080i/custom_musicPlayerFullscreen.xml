@@ -47,8 +47,17 @@
                     <width>5-row</width>
                     <height>182</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture fallback="DefaultAlbumCover.png" border="0">$INFO[player.art(thumb)]</texture>
-                    <fadetime>500</fadetime>
+                    <texture border="0">DefaultAlbumCover.png</texture>
+                    <colordiffuse>textboxInactive</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>5-row</width>
+                    <height>182</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture border="0">$INFO[player.art(thumb)]</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
                 </control>
                 <!--track info-->
                 <control type="group">

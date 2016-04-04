@@ -258,6 +258,7 @@
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>Dialog.Close(all,true)</onclick>
+                        <onclick>action(back)</onclick>
                         <onclick>activateWindow(musicplaylist)</onclick>
                     </item>
                     <item>
