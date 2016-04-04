@@ -167,18 +167,6 @@
                     <label>$INFO[listitem.title]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>5-row</posy>
-                    <height>2-row</height>
-                    <width>672</width>
-                    <align>left</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[31189]]</label>
-                    <wrapmultiline>true</wrapmultiline>
-                    <shadowcolor>-</shadowcolor>
-                </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>

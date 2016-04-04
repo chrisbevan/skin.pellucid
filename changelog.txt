@@ -34,7 +34,7 @@
 
 ***To do (Skinners Notes)***
 
-Photos section not looking good: Fallback thumbs not working
+Photos section not looking good: [CHECK] Fallback thumbs not working
 
 Fullscreen music view: Radio art and RDS support
 

@@ -43,7 +43,7 @@
                         <width>6-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="defaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                        <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
                         <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                     </control>
@@ -100,7 +100,7 @@
                             <width>6-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>scale</aspectratio>
-                            <texture fallback="defaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                            <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
                             <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>

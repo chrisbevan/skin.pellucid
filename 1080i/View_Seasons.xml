@@ -90,7 +90,7 @@
                             <width>4-col-gutter</width>
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">defaultPoster.png</texture>
+                            <texture border="6">DefaultPoster.png</texture>
                             <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>
@@ -140,7 +140,7 @@
                                 <width>4-col-gutter</width>
                                 <height>396</height>
                                 <aspectratio aligny="top">scale</aspectratio>
-                                <texture fallback="defaultPoster.png" border="6">$INFO[ListItem.thumb]</texture>
+                                <texture fallback="DefaultPoster.png" border="6">$INFO[ListItem.thumb]</texture>
                                 <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                                 <bordersize>6</bordersize>
                                 <colordiffuse>ff666666</colordiffuse>

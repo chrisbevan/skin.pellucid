@@ -81,7 +81,7 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">defaultAlbumCover.png</texture>
+                        <texture border="6">DefaultAlbumCover.png</texture>
                         <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
@@ -131,7 +131,7 @@
                             <width>4-col-gutter</width>
                             <height>4-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">defaultAlbumCover.png</texture>
+                            <texture border="6">DefaultAlbumCover.png</texture>
                             <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
                         </control>

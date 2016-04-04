@@ -99,7 +99,7 @@
                         <width>3-col-gutter</width>
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">defaultPoster.png</texture>
+                        <texture border="6">DefaultPoster.png</texture>
                         <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
@@ -149,10 +149,10 @@
                             <width>3-col-gutter</width>
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">defaultPoster.png</texture>
-                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <texture border="6">DefaultPoster.png</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>overlay</colordiffuse>
+                            <colordiffuse>ffffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus</visible>
@@ -218,7 +218,7 @@
                         <width>3-col-gutter</width>
                         <height>288</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">defaultPoster.png</texture>
+                        <texture border="6">DefaultPoster.png</texture>
                         <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
@@ -268,10 +268,10 @@
                             <width>3-col-gutter</width>
                             <height>288</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">defaultPoster.png</texture>
-                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <texture border="6">DefaultPoster.png</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>overlay</colordiffuse>
+                            <colordiffuse>ffffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus</visible>

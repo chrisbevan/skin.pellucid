@@ -37,14 +37,35 @@
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="label">
+                <!--channel logo-->
+                <control type="image">
                     <posx>col-1-begin</posx>
+                    <posy>0</posy>
+                    <width>2-row</width>
+                    <height>2-row</height>
+                    <texture>colors/black.png</texture>
+                    <bordertexture border="0">colors/black.png</bordertexture>
+                    <bordersize>2,0,2,0</bordersize>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>col-1-begin</posx>
+                    <posy>0</posy>
+                    <width>2-row</width>
+                    <height>2-row</height>
+                    <texture>$INFO[Player.Art(thumb)]</texture>
+                    <bordertexture border="0">colors/black.png</bordertexture>
+                    <bordersize>2,0,2,0</bordersize>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>192</posx>
                     <posy>0</posy>
                     <width>16-col</width>
                     <height>2-row</height>
                     <font>pageTitle</font>
                     <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[VideoPlayer.ChannelName,, ][/B]$INFO[videoplayer.Title]</label>
+                    <label>$INFO[videoplayer.Title]</label>
                 </control>
                 <control type="label">
                     <right>96</right>

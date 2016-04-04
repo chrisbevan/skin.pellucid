@@ -47,7 +47,7 @@
                     <width>5-row</width>
                     <height>182</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture fallback="defaultAlbumCover.png" border="0">$INFO[player.art(thumb)]</texture>
+                    <texture fallback="DefaultAlbumCover.png" border="0">$INFO[player.art(thumb)]</texture>
                     <fadetime>500</fadetime>
                 </control>
                 <!--track info-->
