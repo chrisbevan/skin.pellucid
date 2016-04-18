@@ -134,7 +134,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>DialogOk.xml</label>
+            <label>DialogOK.xml</label>
         </control>
     </controls>
 </window>

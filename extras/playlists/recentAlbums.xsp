@@ -3,5 +3,5 @@
     <name>recentAlbums</name>
     <match>all</match>
     <limit>10</limit>
-    <order direction="ascending">random</order>
+    <order direction="descending">dateadded</order>
 </smartplaylist>

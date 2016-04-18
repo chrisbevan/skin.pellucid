@@ -34,6 +34,15 @@
 
 ***To do (Skinners Notes)***
 
+Improve handling of new users (bring through images from homescreen etc)
+
+Improve Notification scrolling
+Fix back on dialog keyboard
+
+
+
+Minor mod to fullscreen music view - add border to album art.
+
 Optimise settings: use skin helper: on startup: Ask whether to change:
 show parent folder items: system.getbool(showparentdiritems)
 start PVR minimised: false
