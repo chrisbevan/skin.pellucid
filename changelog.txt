@@ -1,3 +1,13 @@
+[B]0.9.1[/B]
+
+***Bug squashing***
+
+- [FIX] Numeric keyboard entry
+- [FIX] Typo in recent albums playlist (thanks PaulVT)
+- [FIX] Filename casing error (thanks PaulVT)
+- [FIX] Notifications now autoscroll
+
+
 [B]0.9.0[/B]
 
 ***Working towards Kodi Jarvis release***
@@ -36,12 +46,9 @@
 
 Improve handling of new users (bring through images from homescreen etc)
 
-Improve Notification scrolling
-Fix back on dialog keyboard
+Check back on dialog keyboard (ok on laptop: not on openelec??)
 
-
-
-Minor mod to fullscreen music view - add border to album art.
+Photos section needs work
 
 Optimise settings: use skin helper: on startup: Ask whether to change:
 show parent folder items: system.getbool(showparentdiritems)

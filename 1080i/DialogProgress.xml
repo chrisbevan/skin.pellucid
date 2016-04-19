@@ -56,6 +56,8 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%] ($LOCALIZE[31152])</label>
+                <scroll>true</scroll>
+                <scrollspeed>100</scrollspeed>
                 <!--animations-->
                 <animation type="Windowopen">
                     <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>

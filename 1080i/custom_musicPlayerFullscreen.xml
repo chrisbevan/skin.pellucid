@@ -56,8 +56,10 @@
                     <width>5-row</width>
                     <height>182</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture border="0">$INFO[player.art(thumb)]</texture>
+                    <texture border="6">$INFO[player.art(thumb)]</texture>
                     <colordiffuse>ffffffff</colordiffuse>
+                    <bordertexture border="6">colors/white.png</bordertexture>
+                    <bordersize>6</bordersize>
                 </control>
                 <!--track info-->
                 <control type="group">
