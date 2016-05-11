@@ -44,6 +44,12 @@
 
 ***To do (Skinners Notes)***
 
+DialogOK / yes no refresh still needs work
+
+PVR item info rework
+
+PVR Channel selection as part of dialogfullscreeninfo
+
 Improve handling of new users (bring through images from homescreen etc)
 
 Check back on dialog keyboard (ok on laptop: not on openelec??)

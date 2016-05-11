@@ -3,7 +3,6 @@
     <include name="movies">
         <visible>window.isactive(Videos,videodb://movies/titles/)</visible>
         <control type="group">
-
             <!--fanart-->
             <control type="group">
                 <visible>container.content(movies)</visible>
@@ -21,13 +20,12 @@
                 </control>
                 <include>kenBurnsey</include>
             </control>
-
             <control type="panel" id="50">
                 <visible>Library.HasContent(movies) + !container.content(files) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                 <posx>78</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>
-                <height>27-row</height>
+                <height>25-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>50</ondown>
@@ -35,7 +33,7 @@
                 <onback>9000</onback>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
-                <itemlayout width="300" height="430">
+                <itemlayout width="300" height="468">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -62,26 +60,14 @@
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
-                        <posy>4-row</posy>
+                        <posy>11-row</posy>
                         <width>240</width>
-                        <height>2-row</height>
+                        <height>1-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>regularStrong</font>
+                        <font>thumbTitle</font>
                         <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.title]</label>
-                    </control>
-                    <control type="label">
-                        <visible>!controlgroup(9000).hasfocus</visible>
-                        <posx>12</posx>
-                        <posy>5-row</posy>
-                        <width>240</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>buttonTitle</font>
-                        <textcolor>textDisabled</textcolor>
-                        <label>$INFO[ListItem.year]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -95,7 +81,7 @@
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
                 </itemlayout>
-                <focusedlayout width="4-col" height="418">
+                <focusedlayout width="4-col" height="468">
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">
@@ -107,7 +93,6 @@
                             <texture fallback="DefaultPoster.png" border="0">$INFO[ListItem.Art(poster)]</texture>
                             <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>ff666666</colordiffuse>
                         </control>
                         <control type="group">
                             <posx>0</posx>
@@ -115,75 +100,25 @@
                             <control type="label">
                                 <visible>isempty(listitem.title)</visible>
                                 <posx>12</posx>
-                                <posy>4-row</posy>
+                                <posy>11-row</posy>
                                 <width>240</width>
-                                <height>2-row</height>
+                                <height>1-row</height>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <font>regularStrong</font>
+                                <font>thumbTitle</font>
                                 <textcolor>textActive</textcolor>
                                 <label>$INFO[ListItem.label]</label>
                             </control>
                             <control type="label">
                                 <posx>12</posx>
-                                <posy>4-row</posy>
+                                <posy>11-row</posy>
                                 <width>240</width>
-                                <height>2-row</height>
+                                <height>1-row</height>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <font>regularStrong</font>
+                                <font>thumbTitle</font>
                                 <textcolor>textActive</textcolor>
                                 <label>$INFO[ListItem.title]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>5-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.year]</label>
-                            </control>
-                            <control type="grouplist">
-                                <visible>!isempty(listitem.title)</visible>
-                                <posx>42</posx>
-                                <posy>9-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31183]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
                             </control>
                         </control>
                     </control>

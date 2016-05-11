@@ -33,7 +33,7 @@
                 <visible>Control.IsVisible(60) + !control.isvisible(10)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(9400).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>51r</posx>
+                    <posx>62r</posx>
                     <posy>row-5-begin</posy>
                     <height>22-row</height>
                     <onleft>9999</onleft>

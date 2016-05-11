@@ -2,7 +2,6 @@
 <includes>
     <!--Album browser-->
     <include name="album">
-
         <!--fanart-->
         <control type="group">
             <visible>container.content(albums) + !container.content(songs) + !SubString(container.folderpath,musicdb://artists) + !SubString(container.folderpath,musicdb://genres)</visible>
@@ -19,7 +18,6 @@
                 <aspectratio>stretch</aspectratio>
             </control>
         </control>
-
         <control type="panel" id="50">
             <visible>container.content(albums) + !container.content(songs) + !SubString(container.folderpath,musicdb://artists) + !SubString(container.folderpath,musicdb://genres)</visible>
             <posx>78</posx>
@@ -33,7 +31,7 @@
             <onback>9000</onback>
             <pagecontrol>60</pagecontrol>
             <scrolltime tween="cubic" easing="out">600</scrolltime>
-            <itemlayout width="300" height="300">
+            <itemlayout width="300" height="348">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -60,24 +58,24 @@
                 <control type="label">
                     <visible>!controlgroup(9000).hasfocus</visible>
                     <posx>12</posx>
-                    <posy>2-row</posy>
+                    <posy>264</posy>
                     <width>240</width>
-                    <height>2-row</height>
+                    <height>1-row</height>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <font>regularStrong</font>
+                    <font>thumbtitle</font>
                     <textcolor>textDisabled</textcolor>
-                    <label>$INFO[ListItem.Title]</label>
+                    <label>[B]$INFO[ListItem.Title][/B]</label>
                 </control>
                 <control type="label">
                     <visible>!controlgroup(9000).hasfocus</visible>
                     <posx>12</posx>
-                    <posy>3-row</posy>
+                    <posy>292</posy>
                     <width>240</width>
-                    <height>2-row</height>
+                    <height>1-row</height>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <font>buttonTitle</font>
+                    <font>thumbTitle</font>
                     <textcolor>textDisabled</textcolor>
                     <label>$INFO[ListItem.artist]</label>
                 </control>
@@ -93,7 +91,7 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
             </itemlayout>
-            <focusedlayout width="4-col" height="4-col">
+            <focusedlayout width="4-col" height="348">
                 <control type="group">
                     <include>focusThumb</include>
                     <control type="image">
@@ -116,7 +114,6 @@
                         <texture border="6">$INFO[Listitem.thumb]</texture>
                         <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ff666666</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>isempty(listitem.title)</visible>
@@ -132,64 +129,25 @@
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>2-row</posy>
+                        <posy>264</posy>
                         <width>240</width>
-                        <height>2-row</height>
+                        <height>1-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>regularStrong</font>
+                        <font>thumbtitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.title]</label>
+                        <label>[B]$INFO[ListItem.Title][/B]</label>
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>3-row</posy>
+                        <posy>292</posy>
                         <width>240</width>
-                        <height>2-row</height>
+                        <height>1-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>buttonTitle</font>
+                        <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Artist]</label>
-                    </control>
-                    <control type="grouplist">
-                        <visible>!isempty(listitem.title)</visible>
-                        <posx>42</posx>
-                        <posy>5-row</posy>
-                        <width>4-col-gutter</width>
-                        <orientation>horizontal</orientation>
-                        <control type="label">
-                            <width>24</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>symbol</font>
-                            <textcolor>textActive</textcolor>
-                            <label></label>
-                        </control>
-                        <control type="label">
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>smallStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$LOCALIZE[31183]</label>
-                        </control>
-                        <control type="label">
-                            <width>24</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>symbol</font>
-                            <textcolor>textActive</textcolor>
-                            <label></label>
-                        </control>
-                        <control type="label">
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>smallStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$LOCALIZE[31184]</label>
-                        </control>
+                        <label>$INFO[ListItem.artist]</label>
                     </control>
                 </control>
             </focusedlayout>

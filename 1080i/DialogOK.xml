@@ -9,21 +9,39 @@
             <posy>row-9-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
+            <control type="image">
+                <posx>col-9-begin</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>8-row</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ccffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>col-9-begin</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>2-row</height>
+                <aspectratio>stretch</aspectratio>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
             <!--text-->
             <control type="label" id="1">
                 <description>heading</description>
-                <posx>0</posx>
-                <posy>-48</posy>
-                <width>8-col</width>
-                <height>3-row</height>
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>540</width>
+                <height>2-row</height>
                 <wrapmultiline>true</wrapmultiline>
-                <font>pageTitle</font>
-                <textcolor>highlight</textcolor>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
             </control>
             <control type="textbox" id="9">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>8-col</width>
+                <posx>24</posx>
+                <posy>3-row</posy>
+                <width>540</width>
                 <height>4-row</height>
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
@@ -32,11 +50,10 @@
             <control type="panel" id="9001">
                 <posx>0</posx>
                 <posy>7-row</posy>
-                <width>4-col</width>
-                <height>5-row</height>
-                <itemgap>3</itemgap>
+                <width>8-col</width>
+                <height>2-row</height>
+                <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <onleft>2</onleft>
                 <itemlayout width="5-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>

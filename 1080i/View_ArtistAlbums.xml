@@ -64,6 +64,7 @@
                         <label>[B]$INFO[listitem.title][/B][CR]$INFO[listitem.year]</label>
                     </control>
                     <control type="label">
+                        <visible>false</visible>
                         <posx>0</posx>
                         <posy>12-row</posy>
                         <width>24-col</width>
@@ -71,7 +72,7 @@
                         <font>large</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>background</shadowcolor>
-                        <label>[B]$INFO[container.foldername][/B]</label>
+                        <label>$INFO[container.foldername]</label>
                     </control>
                 </control>
 
@@ -204,45 +205,6 @@
                                 <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                                 <bordersize>6</bordersize>
                                 <colordiffuse>ffffffff</colordiffuse>
-                            </control>
-                            <control type="grouplist">
-                                <visible>!isempty(listitem.title)</visible>
-                                <posx>42</posx>
-                                <posy>5-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31183]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
                             </control>
                         </control>
                     </focusedlayout>

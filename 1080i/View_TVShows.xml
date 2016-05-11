@@ -2,9 +2,7 @@
 <includes>
     <include name="tvshows">
         <visible>window.isactive(Videos,videodb://tvshows/titles/)</visible>
-
         <control type="group">
-
             <!--fanart-->
             <control type="group">
                 <visible>Substring(Container.folderpath,plugin)</visible>
@@ -27,7 +25,7 @@
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>
-                <height>24-row</height>
+                <height>25-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>50</ondown>
@@ -36,16 +34,17 @@
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <onback>9000</onback>
                 <pagecontrol>60</pagecontrol>
-                <itemlayout width="444" height="300">
+                <itemlayout width="444" height="336">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                        <texture border="6">DefaultPoster.png</texture>
                         <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>isempty(ListItem.Title)</visible>
@@ -60,38 +59,31 @@
                         <label>$INFO[ListItem.label]</label>
                         <shadowcolor>ff333333</shadowcolor>
                     </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>268</posy>
+                        <width>384</width>
+                        <height>1-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>thumbTitle</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                        <shadowcolor>ff333333</shadowcolor>
+                    </control>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>6-col-gutter</width>
                         <height>4-col-gutter</height>
-                        <texture>vignette.png</texture>
+                        <aspectratio>scale</aspectratio>
+                        <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.art(fanart)]</texture>
+                        <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>row-3-begin</posy>
-                        <width>6-col-gutter</width>
-                        <height>2-col-gutter</height>
-                        <aspectratio>keep</aspectratio>
-                        <texture>$INFO[ListItem.Art(clearlogo)]</texture>
-                    </control>
-                    <control type="label">
-                        <visible>isempty(ListItem.Art(clearlogo))</visible>
-                        <posx>12</posx>
-                        <posy>4-row</posy>
-                        <width>384</width>
-                        <height>3-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.title]</label>
-                        <shadowcolor>ff333333</shadowcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout width="444" height="300">
+                <focusedlayout width="444" height="336">
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">
@@ -118,25 +110,16 @@
                             <label>$INFO[ListItem.label]</label>
                             <shadowcolor>ff333333</shadowcolor>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>row-3-begin</posy>
-                            <width>6-col-gutter</width>
-                            <height>2-col-gutter</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture>$INFO[ListItem.Art(clearlogo)]</texture>
-                        </control>
                         <control type="label">
-                            <visible>isempty(ListItem.Art(clearlogo))</visible>
                             <posx>12</posx>
-                            <posy>4-row</posy>
+                            <posy>268</posy>
                             <width>384</width>
-                            <height>3-row</height>
+                            <height>1-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>itemTitle</font>
+                            <font>thumbTitle</font>
                             <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.title]</label>
+                            <label>$INFO[ListItem.label]</label>
                             <shadowcolor>ff333333</shadowcolor>
                         </control>
                     </control>
