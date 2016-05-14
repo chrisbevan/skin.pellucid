@@ -44,7 +44,7 @@
 
 ***To do (Skinners Notes)***
 
-DialogOK / yes no refresh still needs work
+Extend sort menus to include music / games etc shortcuts
 
 PVR item info rework
 

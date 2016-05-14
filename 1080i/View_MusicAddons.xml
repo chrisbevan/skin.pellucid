@@ -14,7 +14,7 @@
             <onback>9000</onback>
             <pagecontrol>60</pagecontrol>
             <scrolltime tween="cubic" easing="out">600</scrolltime>
-            <itemlayout width="300" height="348">
+            <itemlayout width="300" height="336">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -38,18 +38,6 @@
                     <textcolor>textDisabled</textcolor>
                     <label>[B]$INFO[ListItem.label][/B]</label>
                 </control>
-                <control type="label">
-                    <visible>!controlgroup(9000).hasfocus</visible>
-                    <posx>12</posx>
-                    <posy>292</posy>
-                    <width>240</width>
-                    <height>1-row</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>thumbTitle</font>
-                    <textcolor>textDisabled</textcolor>
-                    <label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -62,7 +50,7 @@
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
             </itemlayout>
-            <focusedlayout width="4-col" height="348">
+            <focusedlayout width="4-col" height="336">
                 <control type="group">
                     <include>focusThumb</include>
                     <control type="image">
@@ -74,7 +62,6 @@
                         <texture fallback="DefaultAlbumCover.png" border="6">$INFO[Listitem.thumb]</texture>
                         <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ff666666</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -86,17 +73,6 @@
                         <font>thumbtitle</font>
                         <textcolor>textActive</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>292</posy>
-                        <width>240</width>
-                        <height>1-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>thumbTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
                     </control>
                 </control>
             </focusedlayout>
