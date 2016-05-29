@@ -179,7 +179,7 @@
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
                     <effect type="fade" start="100" end="0" time="200"/>
                 </animation>
-                <posx>72</posx>
+                <posx>60</posx>
                 <posy>672</posy>
                 <width>24-col</width>
                 <height>78</height>
@@ -189,11 +189,12 @@
                 <orientation>horizontal</orientation>
                 <itemlayout width="4-col" height="2-row">
                     <control type="label">
-                        <posx>12</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
                         <width>4-col</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
+                        <align>center</align>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -212,12 +213,13 @@
                         <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>12</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
                         <width>4-col</width>
                         <height>2-row</height>
                         <font>buttonTitle</font>
                         <aligny>center</aligny>
+                        <align>center</align>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>[B]$INFO[ListItem.property(textTitle)][/B]</label>

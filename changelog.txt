@@ -44,7 +44,9 @@
 
 ***To do (Skinners Notes)***
 
-Extend sort menus to include music / games etc shortcuts
+Update music library not working
+
+Photo section needs revision (incl. Onback)
 
 PVR item info rework
 

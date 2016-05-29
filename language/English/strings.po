@@ -213,6 +213,10 @@ msgctxt "#31046"
 msgid "Field:"
 msgstr ""
 
+msgctxt "#31047"
+msgid "Starting in"
+msgstr ""
+
 msgctxt "#31048"
 msgid "Create Folder"
 msgstr ""

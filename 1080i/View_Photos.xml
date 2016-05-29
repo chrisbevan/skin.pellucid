@@ -5,148 +5,64 @@
         <control type="panel" id="52">
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
-            <width>24-col</width>
-            <height>24-row</height>
+            <width>1800</width>
+            <height>25-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
-            <ondown>52</ondown>
-            <onup>52</onup>
-            <onback>9000</onback>
-            <pagecontrol>60</pagecontrol>
+            <ondown>50</ondown>
+            <onup>50</onup>
             <scrolltime tween="cubic" easing="out">600</scrolltime>
-            <itemlayout width="6-col" height="294">
+            <pagecontrol>60</pagecontrol>
+            <itemlayout width="444" height="336">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>396</width>
-                    <height>264</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture border="6">DefaultAlbumCover.png</texture>
-                    <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <colordiffuse>textboxInactive</colordiffuse>
+                    <width>6-col-gutter</width>
+                    <height>4-col-gutter</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.thumb]</texture>
+                    <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                    <bordersize>3</bordersize>
+                    <colordiffuse>ffffffff</colordiffuse>
                 </control>
                 <control type="label">
-                    <visible>!controlgroup(9000).hasfocus</visible>
                     <posx>12</posx>
-                    <posy>2-row</posy>
-                    <width>372</width>
-                    <height>2-row</height>
+                    <posy>268</posy>
+                    <width>384</width>
+                    <height>1-row</height>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <font>regularStrong</font>
+                    <font>thumbTitle</font>
                     <textcolor>textDisabled</textcolor>
                     <label>$INFO[ListItem.label]</label>
+                    <shadowcolor>ff333333</shadowcolor>
                 </control>
-                <control type="label">
-                    <visible>!controlgroup(9000).hasfocus</visible>
-                    <posx>12</posx>
-                    <posy>3-row</posy>
-                    <width>372</width>
-                    <height>2-row</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>buttonTitle</font>
-                    <textcolor>textDisabled</textcolor>
-                    <label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>396</width>
-                    <height>264</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture border="6">$INFO[Listitem.thumb]</texture>
-                    <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <colordiffuse>ffFFFFFF</colordiffuse>
-                </control>
-              </itemlayout>
-            <focusedlayout width="6-col" height="294">
+            </itemlayout>
+            <focusedlayout width="444" height="336">
                 <control type="group">
                     <include>focusThumb</include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>396</width>
-                        <height>264</height>
+                        <width>6-col-gutter</width>
+                        <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
-                        <texture border="6">DefaultAlbumCover.png</texture>
+                        <texture fallback="DefaultPoster.png" border="6">$INFO[Listitem.thumb]</texture>
                         <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ff666666</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>396</width>
-                        <height>264</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture border="6">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <colordiffuse>ff666666</colordiffuse>
+                        <colordiffuse>ffffffff</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>12</posx>
-                        <posy>2-row</posy>
-                        <width>372</width>
-                        <height>2-row</height>
+                        <posy>268</posy>
+                        <width>384</width>
+                        <height>1-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <font>regularStrong</font>
+                        <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                    </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>3-row</posy>
-                        <width>372</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>buttonTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                    </control>
-                    <control type="grouplist">
-                        <posx>114</posx>
-                        <posy>row-5-begin</posy>
-                        <width>6-col</width>
-                        <orientation>horizontal</orientation>
-                        <visible>!isempty(ListItem.PicturePath)</visible>
-                        <control type="label">
-                            <width>24</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>symbol</font>
-                            <textcolor>textActive</textcolor>
-                            <label></label>
-                        </control>
-                        <control type="label">
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>smallStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$LOCALIZE[31186]</label>
-                        </control>
-                        <control type="label">
-                            <width>24</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>symbol</font>
-                            <textcolor>textActive</textcolor>
-                            <label></label>
-                        </control>
-                        <control type="label">
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>smallStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$LOCALIZE[31184]</label>
-                        </control>
+                        <shadowcolor>ff333333</shadowcolor>
                     </control>
                 </control>
             </focusedlayout>

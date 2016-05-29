@@ -117,7 +117,7 @@
                        <width>9-col</width>
                        <height>2-row</height>
                        <texture>colors/black.png</texture>
-                       <colordiffuse>overlay</colordiffuse>
+                       <colordiffuse>99000000</colordiffuse>
                    </control>
                    <control type="progress">
                          <description>Duration</description>

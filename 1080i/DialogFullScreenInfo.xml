@@ -72,9 +72,24 @@
                     <font>textbox</font>
                     <width>24-col</width>
                     <textcolor>textActive</textcolor>
-                    <height>114</height>
+                    <height>84</height>
                     <label fallback="31205">$INFO[videoplayer.plot]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
+                </control>
+                <control type="group">
+                    <visible>Pvr.IsPlayingTv | Pvr.IsPlayingRadio</visible>
+                    <posx>0</posx>
+                    <posy>5-row</posy>
+                    <control type="label">
+                        <posx>96r</posx>
+                        <posy>6</posy>
+                        <font>buttonTitle</font>
+                        <align>right</align>
+                        <width>fullscreenWidth</width>
+                        <textcolor>textActive</textcolor>
+                        <height>1-row</height>
+                        <label>[B][COLOR highlight]$LOCALIZE[31047] $INFO[VideoPlayer.TimeRemaining][/COLOR] - $INFO[VideoPlayer.NextTitle][/B]</label>
+                    </control>
                 </control>
             </control>
         </control>
