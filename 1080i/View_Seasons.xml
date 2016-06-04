@@ -167,44 +167,6 @@
                                 <textcolor>textActive</textcolor>
                                 <label>$VAR[itemDetail]</label>
                             </control>
-                            <control type="grouplist">
-                                <posx>42</posx>
-                                <posy>9-row</posy>
-                                <width>4-col-gutter</width>
-                                <orientation>horizontal</orientation>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31185]</label>
-                                </control>
-                                <control type="label">
-                                    <width>24</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>symbol</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label></label>
-                                </control>
-                                <control type="label">
-                                    <width>1-col</width>
-                                    <height>2-row</height>
-                                    <aligny>center</aligny>
-                                    <font>smallStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$LOCALIZE[31184]</label>
-                                </control>
-                            </control>
                         </control>
                     </focusedlayout>
                 </control>

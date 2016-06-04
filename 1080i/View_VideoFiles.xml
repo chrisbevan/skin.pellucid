@@ -2,7 +2,7 @@
 <includes>
     <include name="videofiles">
         <control type="panel" id="50">
-            <visible>container.content(files) | StringCompare(container.foldername,files) | Substring(container.folderpath,special://videoplaylists)</visible>
+            <visible>!isempty(container.folderpath) + !Substring(container.folderpath,videodb://) | container.content(files) | StringCompare(container.foldername,files) | Substring(container.folderpath,special://videoplaylists)</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <width>24-col</width>

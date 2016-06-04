@@ -46,28 +46,13 @@
 
 Update music library not working
 
-Photo section needs revision (incl. Onback)
-
-PVR item info rework
-
-PVR Channel selection as part of dialogfullscreeninfo
+Photo section needs revision
 
 Improve handling of new users (bring through images from homescreen etc)
 
-Check back on dialog keyboard (ok on laptop: not on openelec??)
-
-Photos section needs work
-
-Optimise settings: use skin helper: on startup: Ask whether to change:
-show parent folder items: system.getbool(showparentdiritems)
-start PVR minimised: false
-
 PVR Recording schedule (integrate with recordings)
 
-Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xml
-
-Add MyVideoPlaylist.xml
-
+Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xmls
 
 
 

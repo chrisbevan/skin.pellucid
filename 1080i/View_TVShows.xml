@@ -21,7 +21,7 @@
                 <include>kenBurnsey</include>
             </control>
             <control type="panel" id="50">
-                <visible>Library.HasContent(tvshows) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons) + !container.content(files)</visible>
+                <visible>Substring(container.folderpath,videodb://) + Library.HasContent(tvshows) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons) + !container.content(files)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>
@@ -63,11 +63,22 @@
                         <posy>268</posy>
                         <width>384</width>
                         <height>1-row</height>
-                        <align>center</align>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
                         <textcolor>textDisabled</textcolor>
                         <label>$INFO[ListItem.label]</label>
+                        <shadowcolor>ff333333</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>268</posy>
+                        <width>384</width>
+                        <height>1-row</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>thumbTitle</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[31189]</label>
                         <shadowcolor>ff333333</shadowcolor>
                     </control>
                     <control type="image">
@@ -114,11 +125,22 @@
                             <posy>268</posy>
                             <width>384</width>
                             <height>1-row</height>
-                            <align>center</align>
                             <aligny>center</aligny>
                             <font>thumbTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
+                            <shadowcolor>ff333333</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>268</posy>
+                            <width>384</width>
+                            <height>1-row</height>
+                            <align>right</align>
+                            <aligny>center</aligny>
+                            <font>thumbTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[31189]</label>
                             <shadowcolor>ff333333</shadowcolor>
                         </control>
                     </control>

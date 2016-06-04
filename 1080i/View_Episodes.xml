@@ -4,7 +4,7 @@
 
         <!--fanart-->
         <control type="group">
-            <visible>!isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
             <posy>0</posy>
             <posx>-966</posx>
             <control type="image">
@@ -38,7 +38,7 @@
 
         <!--overlay-->
         <control type="image">
-            <visible>!isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
             <posx>949</posx>
             <posy>0</posy>
             <width>972</width>
@@ -54,7 +54,7 @@
         <control type="group">
             <posx>col-13-begin</posx>
             <posy>row-5-begin</posy>
-            <visible>!isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
@@ -71,7 +71,7 @@
         <control type="group">
             <!--tvhsow library-sourced episode list-->
             <control type="panel" id="52">
-                <visible>!isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+                <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
                 <posx>col-13-begin</posx>
                 <posy>row-8-begin</posy>
                 <width>12-col</width>

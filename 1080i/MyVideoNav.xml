@@ -102,7 +102,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyVideoNav.xml</label>
+            <label>MyVideoNav.xml $INFO[container.folderpath]</label>
         </control>
     </controls>
 </window>
