@@ -24,7 +24,7 @@
                 <posx>12</posx>
                 <posy>3-row</posy>
                 <width>540</width>
-                <height>4-row</height>
+                <height>3-row</height>
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
             </control>

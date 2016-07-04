@@ -37,7 +37,6 @@
                     <include>videofiles</include>
                     <include>seasons</include>
                     <include>episodes</include>
-                    <include>videoaddons</include>
                 </control>
             </control>
 

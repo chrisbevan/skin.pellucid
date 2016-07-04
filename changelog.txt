@@ -44,7 +44,13 @@
 
 ***To do (Skinners Notes)***
 
-Update music library not working
+PVR Info screen: delete button
+
+Add default background for 'what's new' items without fanart
+
+Check CD and DVD handling
+
+Check Youtube addon login issue
 
 Photo section needs revision
 

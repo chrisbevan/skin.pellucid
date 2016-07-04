@@ -48,20 +48,20 @@
                 <posy>row-5-begin</posy>
                 <width>15-col</width>
                 <height>2-row</height>
-                <font>mediumStrong</font>
+                <font>largeLight</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>$INFO[ListItem.Album]</label>
+                <label>[B]$INFO[ListItem.Album][/B]</label>
             </control>
             <control type="label">
                 <posx>col-10-begin</posx>
                 <posy>row-7-begin</posy>
                 <width>15-col</width>
                 <height>1-row</height>
-                <font>small</font>
+                <font>regular</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>[B]$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)][/B]</label>
+                <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
             </control>
         </control>
         <control type="panel" id="50">

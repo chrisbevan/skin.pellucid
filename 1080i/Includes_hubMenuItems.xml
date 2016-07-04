@@ -146,7 +146,7 @@
                 <label>31010</label>
                 <onclick>ActivateWindow(Videos,addons://sources/video/)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick>Control.SetFocus(59)</onclick>
+                <onclick>Control.SetFocus(50)</onclick>
             </item>
             <item>
                 <visible/>
