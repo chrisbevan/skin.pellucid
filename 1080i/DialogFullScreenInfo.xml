@@ -12,7 +12,7 @@
             <include>dateTime</include>
             <control type="group">
                 <posx>0</posx>
-                <posy>row-23-begin</posy>
+                <posy>row-22-begin</posy>
                 <animation type="Windowopen">
                     <effect type="fade" start="0" end="100" time="300"/>
                     <effect type="slide" start="0,300" end="0,0" tween="cubic" easing="out" time="400"/>
@@ -21,54 +21,73 @@
                     <effect type="fade" start="100" end="0" time="300"/>
                     <effect type="slide" end="0,300" tween="cubic" easing="out" time="400"/>
                 </animation>
-                <!--content title-->
                 <control type="image">
-                    <posx>0</posx>
+                    <posx>col-1-begin</posx>
                     <posy>0</posy>
-                    <width>fullscreenWidth</width>
-                    <height>6</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
+                    <width>24-col</width>
+                    <height>6-row</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>textboxInactive</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>6</posy>
-                    <width>fullscreenWidth</width>
-                    <height>7-row</height>
-                    <texture>colors/black.png</texture>
+				<control type="image">
+                    <posx>col-4-begin</posx>
+                    <posy>0</posy>
+                    <width>21-col</width>
+                    <height>2-row</height>
+                    <texture colordiffuse="highlight">colors/white.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="label">
+				<!--thumbnail-->
+				<control type="image">
                     <posx>col-1-begin</posx>
-                    <posy>12</posy>
+	                <posy>0</posy>
+	                <width>3-col-textbox</width>
+	                <height>3-col-textbox</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>DefaultAlbumCover.png</texture>
+                    <colordiffuse></colordiffuse>
+                </control>
+				<control type="image">
+	                <posx>col-1-begin</posx>
+	                <posy>0</posy>
+	                <width>3-col-textbox</width>
+	                <height>3-col-textbox</height>
+	                <aspectratio scalediffuse="false">scale</aspectratio>
+	                <texture fallback="colors/black.png" border="0">$INFO[player.art(thumb)]</texture>
+	            </control>
+                <control type="label">
+                    <posx>324</posx>
+                    <posy>0</posy>
                     <width>16-col</width>
                     <height>2-row</height>
-                    <font>mediumStrong</font>
+                    <font>pageSubTitle</font>
+					<aligny>center</aligny>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[videoplayer.Title]</label>
+                    <label>[B]$INFO[videoplayer.Title][/B]</label>
                 </control>
                 <control type="label">
-                    <right>96</right>
-                    <posy>16</posy>
+                    <right>2-col-gutter</right>
+                    <posy>0</posy>
                     <width>8-col</width>
                     <height>2-row</height>
-                    <font>regularStrong</font>
+                    <font>pageSubTitle</font>
                     <align>right</align>
+					<aligny>center</aligny>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                    <label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
                     <scroll>false</scroll>
                 </control>
                 <control type="textbox">
-                <posx>col-1-begin</posx>
-                    <posy>96</posy>
+                	<posx>324</posx>
+                    <posy>84</posy>
                     <font>textbox</font>
-                    <width>24-col</width>
+                    <width>1476</width>
                     <textcolor>textActive</textcolor>
-                    <height>84</height>
+                    <height>116</height>
                     <label fallback="31205">$INFO[videoplayer.plot]</label>
-                    <autoscroll delay="10000" time="1000" repeat="10000"/>
+                    <autoscroll delay="10000" time="5000" repeat="10000"/>
                 </control>
             </control>
         </control>

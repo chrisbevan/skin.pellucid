@@ -83,10 +83,10 @@
                     <width>1800</width>
                     <height>9-row</height>
                     <onleft>9000</onleft>
-                    <onright>60</onright>
                     <ondown>50</ondown>
                     <onup>50</onup>
                     <pagecontrol>60</pagecontrol>
+					<orientation>horizontal</orientation>
                     <itemlayout width="300" height="300">
                         <control type="image">
                             <posx>0</posx>

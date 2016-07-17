@@ -11,7 +11,7 @@
                     <width>fullscreenWidth</width>
                     <height>fullscreenHeight</height>
                     <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-                    <texture background="true" fallback="colors/offblack.png" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
+                    <texture background="true" fallback="special://skin/extras/backgrounds/videos.jpg" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
                     <fadetime>500</fadetime>
                     <colordiffuse>77FFFFFF</colordiffuse>
                     <include>kenBurnsey</include>

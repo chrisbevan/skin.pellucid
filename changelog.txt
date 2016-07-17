@@ -44,10 +44,6 @@
 
 ***To do (Skinners Notes)***
 
-PVR Info screen: delete button
-
-Add default background for 'what's new' items without fanart
-
 Check CD and DVD handling
 
 Check Youtube addon login issue
