@@ -209,6 +209,13 @@
                 </focusedlayout>
                 <content>
                     <item>
+                        <enabled>VideoPlayer.HasMenu</enabled>
+                        <label>31051</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>PlayerControl(ShowVideoMenu)</onclick>
+                    </item>
+					<item>
                         <enabled>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enabled>
                         <label>31201</label>
                         <label2></label2>

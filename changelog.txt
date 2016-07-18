@@ -44,7 +44,7 @@
 
 ***To do (Skinners Notes)***
 
-Check CD and DVD handling
+Add mini screen / view during menu option
 
 Check Youtube addon login issue
 

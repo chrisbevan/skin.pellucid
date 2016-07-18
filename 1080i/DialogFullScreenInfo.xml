@@ -55,7 +55,7 @@
 	                <width>3-col-textbox</width>
 	                <height>3-col-textbox</height>
 	                <aspectratio scalediffuse="false">scale</aspectratio>
-	                <texture fallback="colors/black.png" border="0">$INFO[player.art(thumb)]</texture>
+	                <texture border="0">$INFO[player.art(thumb)]</texture>
 	            </control>
                 <control type="label">
                     <posx>324</posx>
@@ -66,6 +66,17 @@
 					<aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <label>[B]$INFO[videoplayer.Title][/B]</label>
+                </control>
+				<control type="label">
+					<visible>VideoPlayer.HasMenu</visible>
+                    <posx>col-17-begin</posx>
+                    <posy>0</posy>
+                    <width>4-col</width>
+                    <height>2-row</height>
+                    <font>pageSubTitle</font>
+					<aligny>center</aligny>
+                    <textcolor>textActive</textcolor>
+                    <label>$LOCALIZE[31049] [B]$INFO[player.Chapter] / $INFO[player.Chaptercount][/B]</label>
                 </control>
                 <control type="label">
                     <right>2-col-gutter</right>

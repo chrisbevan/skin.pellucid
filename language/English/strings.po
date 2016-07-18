@@ -221,8 +221,16 @@ msgctxt "#31048"
 msgid "Create Folder"
 msgstr ""
 
+msgctxt "#31049"
+msgid "Chapter"
+msgstr ""
+
 msgctxt "#31050"
 msgid "shot(s)"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Disc Menu"
 msgstr ""
 
 msgctxt "#31053"

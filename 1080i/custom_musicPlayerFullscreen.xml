@@ -145,6 +145,18 @@
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
+					<control type="label">
+                        <posx>9-col-gutter</posx>
+                        <posy>3-row</posy>
+                        <width>612</width>
+                        <height>2-row</height>
+                        <font>regularStrong</font>
+                        <align>right</align>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <scroll>false</scroll>
+                        <label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554] ]$INFO[musicplayer.Playlistlength, / ]</label>
+                    </control>
                     <control type="label">
                         <visible>Playlist.IsRepeat | Playlist.IsRepeatOne</visible>
                         <posx>8-col-gutter</posx>
