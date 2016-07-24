@@ -80,7 +80,7 @@
                     <visible>container.content(albums) + !container.content(songs) + [SubString(container.folderpath,musicdb://artists) | SubString(container.folderpath,musicdb://genres)]</visible>
                     <posx>72</posx>
                     <posy>row-21-begin</posy>
-                    <width>1800</width>
+                    <width>1848</width>
                     <height>9-row</height>
                     <onleft>9000</onleft>
                     <ondown>50</ondown>

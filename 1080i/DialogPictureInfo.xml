@@ -6,8 +6,8 @@
     <controls>
         <include>modalDialog</include>
         <control type="group">
-            <posx>col-8-begin</posx>
-            <posy>row-3-begin</posy>
+            <posx>col-9-begin</posx>
+            <posy>row-2-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
             <control type="image">
@@ -20,7 +20,7 @@
             </control>
             <control type="panel" id="5">
                 <posx>0</posx>
-                <posy>11-row</posy>
+                <posy>13-row</posy>
                 <width>12-col</width>
                 <height>12-row</height>
                 <itemlayout width="8-col" height="36">

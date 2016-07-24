@@ -75,14 +75,11 @@
                     <visible>!isempty(container.folderpath) + !StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-17-begin</posy>
-                    <width>24-col</width>
+                    <width>1836</width>
                     <height>11-row</height>
                     <onleft>9000</onleft>
-                    <onright>60</onright>
-                    <ondown>50</ondown>
-                    <onup>50</onup>
-                    <pagecontrol>60</pagecontrol>
-                    <preloaditems>2</preloaditems>
+                    <onright>58</onright>
+                    <orientation>horizontal</orientation>
                     <itemlayout width="4-col" height="391">
                         <control type="image">
                             <posx>0</posx>

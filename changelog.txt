@@ -46,15 +46,8 @@
 
 Add mini screen / view during menu option
 
-Check Youtube addon login issue
-
-Photo section needs revision
-
 Improve handling of new users (bring through images from homescreen etc)
 
 PVR Recording schedule (integrate with recordings)
-
-Complete DialogAudioDSPManager.xml and DialogAudioDSPSettings.xmls
-
 
 
