@@ -1,3 +1,8 @@
+[B]1.0.0[/B]
+
+- Kodi Jarvis Release
+
+
 [B]0.9.1[/B]
 
 ***Bug squashing***
@@ -40,14 +45,5 @@
 - [MODIFIED] DialogVideoInfo.xml - add button ID 7, replace user rating value
 - [MODIFIED] MyMusicNav.xml - remove files node button
 
-
-
-***To do (Skinners Notes)***
-
-Add mini screen / view during menu option
-
-Improve handling of new users (bring through images from homescreen etc)
-
-PVR Recording schedule (integrate with recordings)
 
 
