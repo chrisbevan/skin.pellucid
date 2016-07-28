@@ -1,3 +1,25 @@
+[B]1.1.0[/B]
+
+***Preparing for Krypton***
+
+- [MODIFIED] addon.xml: Updated GUI to 5.12.0
+- [RENAMED] dialogKaiToast -> dialogNotification.xml
+- [NEW] DialogConfirm.xml
+- [REMOVED] DialogOK.xml
+- [REMOVED] DialogProgress.xml
+- [REMOVED] DialogYesNo.xml
+- [NEW] DialogSettings.xml
+- [REMOVED] DialogAudioDSPSettings.xml
+- [REMOVED] DialogContentSettings.xml
+- [REMOVED] DialogMediaFilter.xml
+- [REMOVED] DialogNetworkSetup.xml
+- [REMOVED] DialogPeripheralSettings.xml
+- [REMOVED] DialogPVRTimerSettings.xml
+- [REMOVED] LockSettings.xml
+- [REMOVED] ProfileSettings.xml
+- [REMOVED] VideoOSDSettings.xml
+- [REMOVED] DialogMuteBug.xml
+
 [B]1.0.0[/B]
 
 - Kodi Jarvis Release
@@ -36,10 +58,8 @@
 - [REMOVED] VisualisationPresetList.xml
 - [NEW] EventLog.xml
 - [MODIFIED] dialogKeyboard.xml - additional labels for BaiduPy input added
-
 - [NEW] DialogAudioDSPManager.xml
 - [NEW] DialogAudioDSPSettings.xml
-
 - [MODIFIED] DialogAddonInfo.xml - remove button id="11"
 - [MODIFIED] DialogKaiToast.xml - remove ID's 403-405
 - [MODIFIED] DialogVideoInfo.xml - add button ID 7, replace user rating value
