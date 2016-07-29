@@ -127,7 +127,7 @@
             </control>
             <!--settings-->
             <control type="image">
-                <visible>Container(9000).HasFocus(7) | Container(9000).HasFocus(11)</visible>
+                <visible>Container(9000).HasFocus(7)</visible>
                 <include>dimensionsFullscreen</include>
                 <texture>special://skin/extras/backgrounds/settings.jpg</texture>
                 <colordiffuse>44ffffff</colordiffuse>
