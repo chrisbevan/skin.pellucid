@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">-</defaultcontrol>
-     
+    <defaultcontrol always="true">10</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <left>0</left>
+        <top>0</top>
+    </coordinates>
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
             <include condition="!window.isactive(infodialog)">progressPosition1</include>
             <include condition="window.isactive(infodialog)">progressPosition2</include>
-            <visible>!player.passthrough</visible>
+            <!--animations-->
             <animation type="Windowclose">
                 <effect type="fade" start="100" end="0" time="400" tween="sine"/>
             </animation>
             <control type="group">
+                <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="slide" start="1000,0" end="0,0" time="400" tween="sine"/>
+                </animation>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -31,11 +39,14 @@
                 <width>468</width>
                 <height>60</height>
                 <aligny>center</aligny>
-                <label>13376</label>
+                <label fallback="31023">$INFO[container.foldername]</label>
                 <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
+               <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" delay="400" time="400" tween="sine"/>
+                </animation>
             </control>
-            <control type="label">
+            <control type="label" id="9">
                 <description>message</description>
                 <posx>24</posx>
                 <posy>1-row</posy>
@@ -44,14 +55,31 @@
                 <width>468</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <label>$INFO[player.volume]</label>
+                <label>$INFO[Control.GetLabel(1)] $INFO[System.Progressbar,- ,%] ($LOCALIZE[31152])</label>
+                <scroll>true</scroll>
+                <scrollspeed>100</scrollspeed>
+                <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
+                </animation>
+            </control>
+        </control>
+        <!--hidden labels-->
+        <control type="group">
+            <visible>false</visible>
+            <control type="label" id="1">
+                <description>fake heading label</description>
+            </control>
+            <control type="button" id="10">
+                <description>Cancel button</description>
             </control>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
+            <posy>0</posy>
             <include>DialogID</include>
-            <label>DialogVolumeBar.xml</label>
+            <label>DialogProgress.xml</label>
         </control>
     </controls>
 </window>

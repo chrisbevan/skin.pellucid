@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">-</defaultcontrol>
+    <defaultcontrol always="true">901</defaultcontrol>
      
+    <coordinates>
+        <origin x="0" y="0"/>
+    </coordinates>
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
-            <include condition="!window.isactive(infodialog)">progressPosition1</include>
-            <include condition="window.isactive(infodialog)">progressPosition2</include>
-            <visible>!player.passthrough</visible>
+            <posy>row-17-begin</posy>
+            <!--animations-->
             <animation type="Windowclose">
                 <effect type="fade" start="100" end="0" time="400" tween="sine"/>
             </animation>
             <control type="group">
+                <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="slide" start="1000,0" end="0,0" time="400" tween="sine"/>
+                </animation>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -31,27 +37,52 @@
                 <width>468</width>
                 <height>60</height>
                 <aligny>center</aligny>
-                <label>13376</label>
+                <label>772</label>
                 <textcolor>black</textcolor>
                 <shadowcolor>-</shadowcolor>
+                <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" delay="400" time="400" tween="sine"/>
+                </animation>
+            </control>
+            <control type="label">
+                <posx>24</posx>
+                <posy>1-row</posy>
+                <width>1-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <font>symbolLarge</font>
+                <textcolor>black</textcolor>
+                <label></label>
+                <shadowcolor>-</shadowcolor>
+                <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
+                </animation>
             </control>
             <control type="label">
                 <description>message</description>
-                <posx>24</posx>
+                <posx>1-col</posx>
                 <posy>1-row</posy>
                 <font>dialogTitle</font>
                 <textcolor>black</textcolor>
                 <width>468</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <label>$INFO[player.volume]</label>
+                <label>31098</label>
+               <!--animations-->
+                <animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" delay="600" time="400" tween="sine"/>
+                </animation>
             </control>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
+            <posx>0</posx>
+            <posy>0</posy>
             <include>DialogID</include>
-            <label>DialogVolumeBar.xml</label>
+            <label>DialogMuteBug.xml</label>
         </control>
     </controls>
 </window>

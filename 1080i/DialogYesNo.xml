@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+    <defaultcontrol always="true">9001</defaultcontrol>
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
@@ -21,14 +22,6 @@
                     <wrapmultiline>true</wrapmultiline>
                     <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
-                </control>
-                <control type="progress" id="20">
-                <description>Progressbar</description>
-                    <posx>12</posx>
-                    <posy>2-row</posy>
-                    <width>540</width>
-                    <height>24</height>
-                    <info>System.Progressbar</info>
                 </control>
                 <control type="textbox" id="9">
                     <posx>12</posx>
@@ -106,7 +99,7 @@
                 <textcolor>textActive</textcolor>
                 <label>✓</label>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>col-10-begin</posx>
                 <posy>6-row</posy>
                 <width>8-col</width>
@@ -119,7 +112,7 @@
                 <orientation>horizontal</orientation>
                 <!--selection buttons-->
                 <control type="button" id="10">
-                    <description>OK</description>
+                    <description>No</description>
                     <texturefocus>colors/white.png</texturefocus>
                     <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                     <focusedcolor>black</focusedcolor>
@@ -127,15 +120,7 @@
                     <label>106</label>
                 </control>
                 <control type="button" id="11">
-                    <description>Cancel</description>
-                    <texturefocus>colors/white.png</texturefocus>
-                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
-                    <focusedcolor>black</focusedcolor>
-                    <width>3-col</width>
-                    <label>107</label>
-                </control>
-                <control type="button" id="12">
-                    <description>Custom Button</description>
+                    <description>Yes</description>
                     <texturefocus>colors/white.png</texturefocus>
                     <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                     <focusedcolor>black</focusedcolor>

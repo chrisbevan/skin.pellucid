@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">5</defaultcontrol>
+
+    <controls>
+        <!--background-->
+        <include>globalBackground</include>
+        <control type="group">
+            <posx>col-4-begin</posx>
+            <posy>row-5-begin</posy>
+            <!--animations-->
+            <include>modalDialogInOutVertical</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>18-col</width>
+                <height>2-row</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>14-col</width>
+                <height>18-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>18-col</width>
+                <height>18-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label" id="2">
+                <posx>12</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <!--control area-->
+            <control type="grouplist" id="5">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>14-col</width>
+                <height>18-row</height>
+                <onright>9001</onright>
+                <orientation>vertical</orientation>
+            </control>
+            <control type="button" id="7">
+                <description>button</description>
+            </control>
+            <control type="radiobutton" id="8">
+                <description>radio_button</description>
+            </control>
+            <control type="spincontrolex" id="9">
+                <description>spin_controlex</description>
+            </control>
+            <control type="sliderex" id="10">
+                <visible>false</visible>
+                <description>slider</description>
+            </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
+            <!--OK / Cancel-->
+            <control type="panel" id="9001">
+                <posx>14-col</posx>
+                <posy>2-row</posy>
+                <width>4-col</width>
+                <height>5-row</height>
+                <orientation>vertical</orientation>
+                <onleft>5</onleft>
+                <itemlayout width="6-col" height="2-row">
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>-1</posy>
+                        <width>3-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="6-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
+                        <include>spinFocusIcon</include>
+                    </control>
+                    <control type="image">
+                        <posx>1-col</posx>
+                        <posy>0</posy>
+                        <width>3-col-textbox</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/white.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>symbolLarge</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.label2]</label>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>1-col-indent</posx>
+                        <posy>-1</posy>
+                        <width>5-col-gutter</width>
+                        <height>2-row</height>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>black</textcolor>
+                        <label>$INFO[ListItem.label]</label>
+                        <shadowcolor>-</shadowcolor>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <description>OK Button</description>
+                        <label>186</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>SendClick(131,28)</onclick>
+                    </item>
+                    <item id="2">
+                        <description>Cancel Button</description>
+                        <label>222</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>SendClick(131,29)</onclick>
+                    </item>
+                </content>
+            </control>
+        </control>
+        <!--hidden dialog buttons-->
+        <control type="group">
+            <visible>false</visible>
+            <control type="button" id="28">
+                <description>Ok</description>
+            </control>
+            <control type="button" id="29">
+                <description>Cancel</description>
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>LockSettings.xml</label>
+        </control>
+    </controls>
+</window>

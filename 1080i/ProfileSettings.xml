@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">6000</defaultcontrol>
+     
+    <controls>
+        <!--background-->
+        <control type="group">
+            <posx>col-9-begin</posx>
+            <posy>row-2-begin</posy>
+            <!--animations-->
+            <animation type="windowopen">
+                <effect type="rotatey" start="-90" end="0" center="960" tween="cubic" easing="out" delay="400" time="500"/>
+            </animation>
+            <animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="300"/>
+                <effect type="rotatey" start="0" end="-90" center="960" tween="cubic" easing="out" time="500"/>
+            </animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>2-row</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--title-->
+            <control type="label" id="102">
+                <posx>24</posx>
+                <posy>0</posy>
+                <width>8-col</width>
+                <height>2-row</height>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>8-col</width>
+                <height>4-col</height>
+                <aspectratio aligny="center">scale</aspectratio>
+                <texture>vignette.png</texture>
+            </control>
+            <control type="image" id="101">
+                <description>profile image</description>
+                <posx>156</posx>
+                <posy>84</posy>
+                <width>4-col-gutter</width>
+                <height>4-col-gutter</height>
+                <texture fallback="colors/offblack.png" border="0">colors/offblack.png</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>10-row</posy>
+                <width>8-col</width>
+                <height>15-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="button" id="6000">
+                <description>Profile switch</description>               <visible>!StringCompare(System.ProfileName,control.getlabel(102))</visible>
+                <posx>0</posx>
+                <posy>10-row</posy>
+                <width>8-col</width>
+                <font>buttonTitle</font>
+                <textoffsetx>24</textoffsetx>
+                <label>31131</label>
+                <onclick>LoadProfile($INFO[control.getlabel(102)])</onclick>
+                <ondown>5</ondown>
+            </control>
+            <control type="grouplist" id="5">
+                <description>Control Area</description>
+                <posx>0</posx>
+                <posy>12-row</posy>
+                <width>8-col</width>
+                <height>13-row</height>
+                <itemgap>3</itemgap>
+                <orientation>vertical</orientation>
+                <ondown>9001</ondown>
+                <onup>6000</onup>
+            </control>
+            <control type="button" id="7">
+                <description>button</description>
+            </control>
+            <control type="radiobutton" id="8">
+                <description>radio_button</description>
+            </control>
+            <control type="spincontrolex" id="9">
+                <description>spin_controlex</description>
+            </control>
+            <control type="label" id="14">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>center</align>
+                <font>buttonTitle</font>
+                <textcolor>textActive</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
+        </control>
+        <!--control buttons-->
+        <control type="group">
+            <visible>false</visible>
+            <control type="button" id="28">
+                <description>Ok</description>
+            </control>
+            <control type="button" id="29">
+                <description>Cancel</description>
+            </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>ProfileSettings.xml</label>
+        </control>
+    </controls>
+</window>
