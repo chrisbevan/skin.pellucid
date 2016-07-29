@@ -20,8 +20,6 @@
 - [REMOVED] VideoOSDSettings.xml
 - [REMOVED] DialogMuteBug.xml
 
-- [MODIFIED] Settings.xml: Updated to reflect changes to Kodi settings structure
-
 [B]1.0.0[/B]
 
 - Kodi Jarvis Release
