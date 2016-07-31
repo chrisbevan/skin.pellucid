@@ -1,3 +1,10 @@
+[B]1.0.1[/B]
+
+***RPI Bugfixes***
+- [FIX] equaliser animated gif removed for RPI's only
+- fix the minimum animation mode
+
+
 [B]1.0.0[/B]
 
 - Kodi Jarvis Release
