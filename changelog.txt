@@ -2,7 +2,8 @@
 
 ***RPI Bugfixes***
 - [FIX] equaliser animated gif removed for RPI's only
-- fix the minimum animation mode
+- [FIX] Expanded the minimum animation mode to include the homescreen
+- [FIX] add minimised screen for PVR
 
 
 [B]1.0.0[/B]
