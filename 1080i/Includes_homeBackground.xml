@@ -2,12 +2,15 @@
 <includes>
     <include name="homeBackground">
         <control type="group">
-            <animation type="conditional" condition="true" loop="true">
+            <animation type="conditional" condition="!Skin.HasSetting(lowPowerMode)" loop="true">
                 <effect type="fade" start="0" end="100" time="5000"/>
                 <effect type="zoom" start="80" end="130" time="10000" tween="sine" easing="out"/>
                 <effect type="slide" start="0,0" end="-450,0" center="0" delay="0" time="20000" tween="sine" easing="in"/>
                 <effect type="zoom" start="130" end="100" delay="12000" time="8000" tween="sine" easing="in"/>
                 <effect type="fade" start="100" end="0" time="3000" delay="16000"/>
+            </animation>
+			<animation type="conditional" condition="Skin.HasSetting(lowPowerMode)">
+                <effect type="fade" start="0" end="100" time="5000"/>
             </animation>
             <!--library based thumbs-->
             <control type="panel" id="9451">
@@ -127,7 +130,7 @@
             </control>
             <!--settings-->
             <control type="image">
-                <visible>Container(9000).HasFocus(7)</visible>
+                <visible>Container(9000).HasFocus(7) | Container(9000).HasFocus(11)</visible>
                 <include>dimensionsFullscreen</include>
                 <texture>special://skin/extras/backgrounds/settings.jpg</texture>
                 <colordiffuse>44ffffff</colordiffuse>

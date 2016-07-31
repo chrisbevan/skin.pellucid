@@ -1,3 +1,7 @@
+[B]1.1.1[/B]
+
+- [NEW] RPI bugfixes from Jarvis branch
+
 [B]1.1.0[/B]
 
 ***Preparing for Krypton***
