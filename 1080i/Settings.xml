@@ -137,56 +137,56 @@
                         <description>Player Settings</description>
                         <label>$LOCALIZE[14201]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31063] • $LOCALIZE[24012]</property>
+                        <property name="label3">$LOCALIZE[31063]</property>
                         <onclick>activatewindow(PlayerSettings)</onclick>
                     </item>
                     <item>
                         <description>Library Settings</description>
                         <label>$LOCALIZE[14203]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31063] • $LOCALIZE[24012]</property>
-                        <onclick>activatewindow(LibrarySettings)</onclick>
+                        <property name="label3">$LOCALIZE[31079]</property>
+                        <onclick>activatewindow(MediaSettings)</onclick>
                     </item>
                     <item>
                         <description>PVR Settings</description>
                         <label>$LOCALIZE[14205]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31006] • $LOCALIZE[31065]</property>
+                        <property name="label3">$LOCALIZE[31081]</property>
                         <onclick>ActivateWindow(PVRSettings)</onclick>
                     </item>
                     <item>
                         <description>Services Settings</description>
                         <label>$LOCALIZE[14208]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31071] • $LOCALIZE[1273]</property>
+                        <property name="label3">$LOCALIZE[31071]</property>
                         <onclick>activatewindow(ServiceSettings)</onclick>
                     </item>
                     <item>
                         <description>Interface settings</description>
                         <label>$LOCALIZE[14207]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31061] • $LOCALIZE[24008]</property>
+                        <property name="label3">$LOCALIZE[31061]</property>
                         <onclick>activatewindow(InterfaceSettings)</onclick>
                     </item>
                     <item>
                         <description>Skin settings</description>
                         <label>$LOCALIZE[20077]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31061] • $LOCALIZE[24008]</property>
+                        <property name="label3">$LOCALIZE[31083]</property>
                         <onclick>activatewindow(SkinSettings)</onclick>
                     </item>
                     <item>
                         <description>Profiles</description>
                         <label>$LOCALIZE[14210]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31105] • $LOCALIZE[31106]</property>
+                        <property name="label3">$LOCALIZE[31103]</property>
                         <onclick>activatewindow(Profiles)</onclick>
                     </item>
                     <item>
                         <description>System</description>
                         <label>$LOCALIZE[14209]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[14094] • $LOCALIZE[14095]</property>
+                        <property name="label3">$LOCALIZE[31105]</property>
                         <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
                     <item>
@@ -200,21 +200,21 @@
                         <description>File Manager</description>
                         <label>10003</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31095] • $LOCALIZE[31111]</property>
+                        <property name="label3">$LOCALIZE[31095]</property>
                         <onclick>activatewindow(1103)</onclick>
                     </item>
                     <item>
                         <description>Programs</description>
                         <label>31003</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31067]</property>
+                        <property name="label3">$LOCALIZE[31111]</property>
                         <onclick>ActivateWindow(programs,addons,return)</onclick>
                     </item>
                     <item>
                         <description>System Info</description>
                         <label>$LOCALIZE[138]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31067]</property>
+                        <property name="label3">$LOCALIZE[31108]</property>
                         <onclick>ActivateWindow(systeminfo)</onclick>
                     </item>
                 </content>

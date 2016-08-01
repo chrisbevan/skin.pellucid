@@ -258,7 +258,7 @@ msgid "PVR"
 msgstr ""
 
 msgctxt "#31061"
-msgid "Skin"
+msgid "Interface • Interface"
 msgstr ""
 
 msgctxt "#31062"
@@ -266,7 +266,7 @@ msgid "Memory"
 msgstr ""
 
 msgctxt "#31063"
-msgid "File Lists"
+msgid "Playback • Subtitles"
 msgstr ""
 
 msgctxt "#31064"
@@ -282,7 +282,7 @@ msgid "Audio CDs"
 msgstr ""
 
 msgctxt "#31067"
-msgid "System extensions"
+msgid "Addons • Addons"
 msgstr ""
 
 msgctxt "#31068"
@@ -298,7 +298,7 @@ msgid "Screen"
 msgstr ""
 
 msgctxt "#31071"
-msgid "Networking"
+msgid "Networking • Airplay"
 msgstr ""
 
 msgctxt "#31072"
@@ -329,12 +329,24 @@ msgctxt "#31078"
 msgid "Now and Next"
 msgstr ""
 
+msgctxt "#31079"
+msgid "Library • Library"
+msgstr ""
+
 msgctxt "#31080"
 msgid "Programme Guide"
 msgstr ""
 
+msgctxt "#31081"
+msgid "Live TV • Live TV"
+msgstr ""
+
 msgctxt "#31082"
 msgid "Version"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Skin settings • Skin Settings"
 msgstr ""
 
 msgctxt "#31085"
@@ -358,7 +370,7 @@ msgid "Add Music Playlist"
 msgstr ""
 
 msgctxt "#31095"
-msgid "Transfer"
+msgid "Transfer • Copy Files"
 msgstr ""
 
 msgctxt "#31096"
@@ -390,11 +402,11 @@ msgid "Disable fanart animation effect"
 msgstr ""
 
 msgctxt "#31103"
-msgid "Profile Settings"
+msgid "Profile Settings • Login options"
 msgstr ""
 
 msgctxt "#31105"
-msgid "Login options"
+msgid "System settings • System settings"
 msgstr ""
 
 msgctxt "#31106"
@@ -403,6 +415,10 @@ msgstr ""
 
 msgctxt "#31107"
 msgid "Current profile"
+msgstr ""
+
+msgctxt "#31108"
+msgid "CPU Temp • HDD Space"
 msgstr ""
 
 msgctxt "#31109"
@@ -414,7 +430,7 @@ msgid "Order: Descending"
 msgstr ""
 
 msgctxt "#31111"
-msgid "Copy files"
+msgid "Programs • Programs"
 msgstr ""
 
 msgctxt "#31112"

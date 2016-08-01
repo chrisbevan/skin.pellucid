@@ -153,7 +153,6 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
-
             <name>itemSubTitleCondensed</name>
             <filename>roboto/condensedBold.ttf</filename>
             <size>30</size>
@@ -170,6 +169,13 @@
             <filename>roboto/medium.ttf</filename>
             <size>28</size>
             <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>settingsCategoryTitle</name>
+            <filename>roboto/bold.ttf</filename>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+            <style>uppercase</style>
         </font>
         <font>
             <name>thumbTitle</name>

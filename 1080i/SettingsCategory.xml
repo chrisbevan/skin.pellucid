@@ -101,9 +101,12 @@
             <control type="label" id="14">
                 <description>Default Label</description>
                 <label>-</label>
-                <align>center</align>
-                <font>buttonTitle</font>
-                <textcolor>textActive</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textoffsetx>24</textoffsetx>
+                <height>2-row</height>
+                <font>settingsCategoryTitle</font>
+                <textcolor>ff757575</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="radiobutton" id="8">
