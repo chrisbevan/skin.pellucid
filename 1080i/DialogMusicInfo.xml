@@ -467,7 +467,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>DialogAlbumInfo.xml</label>
+            <label>DialogMusicInfo.xml</label>
         </control>
     </controls>
 </window>

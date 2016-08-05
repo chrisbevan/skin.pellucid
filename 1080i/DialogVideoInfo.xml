@@ -91,14 +91,14 @@
                 <posx>0</posx>
                 <posy>row-5-begin</posy>
                 <width>10-col</width>
-                <height>24</height>
+                <height>3</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--meta-->
             <control type="panel">
                 <posx>12</posx>
-                <posy>7-row</posy>
+                <posy>6-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
@@ -170,7 +170,7 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>10-row</posy>
+                    <posy>9-row</posy>
                     <font>textbox</font>
                     <width>672</width>
                     <align>left</align>

@@ -1,6 +1,23 @@
 [B]1.1.1[/B]
 
 - [NEW] RPI bugfixes from Jarvis branch
+- [ADDED] Addon.xml: Assets tag
+- [MODIFIED] Skinwide includes name / content tagging updated
+- [REMOVED] Custom oninfo screen for recently added videos (nice one Team Kodi!)
+- [NEW] DialogMusicInfo.xml
+- [REMOVED] DialogAlbumInfo.xml
+- [REMOVED] DialogSongInfo.xml
+- [MODIFIED] DialogSelect.xml: Add button id="7"
+- [NEW] MyPlaylist.xml
+- [REMOVED] MyMusicPlaylist.xml
+- [REMOVED] MyVideoPlaylist.xml
+
+[TODO]
+DialogAudioDSPManager.xml
+Check yes / no dialogs working correctly
+Check layouts for newly aggregated dialogs
+
+
 
 [B]1.1.0[/B]
 

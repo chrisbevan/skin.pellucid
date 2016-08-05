@@ -106,7 +106,7 @@
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
-                <textcolor>ff757575</textcolor>
+                <textcolor>highlight</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="radiobutton" id="8">

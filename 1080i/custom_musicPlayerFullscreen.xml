@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
-    <onunload>activateWindow(MusicLibrary)</onunload>
+    <onunload>activateWindow(music)</onunload>
     <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
     <onunload>control.setfocus(9000)</onunload>
     <controls>

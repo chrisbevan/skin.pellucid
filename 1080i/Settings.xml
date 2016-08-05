@@ -143,7 +143,7 @@
                     <item>
                         <description>Library Settings</description>
                         <label>$LOCALIZE[14203]</label>
-                        <label2></label2>
+                        <label2></label2>
                         <property name="label3">$LOCALIZE[31079]</property>
                         <onclick>activatewindow(MediaSettings)</onclick>
                     </item>
@@ -213,7 +213,7 @@
                     <item>
                         <description>System Info</description>
                         <label>$LOCALIZE[138]</label>
-                        <label2></label2>
+                        <label2></label2>
                         <property name="label3">$LOCALIZE[31108]</property>
                         <onclick>ActivateWindow(systeminfo)</onclick>
                     </item>

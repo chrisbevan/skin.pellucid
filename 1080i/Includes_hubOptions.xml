@@ -144,8 +144,8 @@
                     <onright>control.setfocus(9999)</onright>
                     <onup>9003</onup>
                     <ondown>noop</ondown>
-                    <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
-                    <include condition="window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
+                    <include condition="Window.isactive(Videos) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+                    <include condition="Window.isactive(Music) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
                     <include condition="window.isactive(pictures)">picturesSideMenu</include>
                 </control>
             </control>

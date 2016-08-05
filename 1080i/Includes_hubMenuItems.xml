@@ -31,7 +31,7 @@
                 <visible>Library.HasContent(Video)</visible>
                 <label>31005</label>
                 <label2/>
-                <onclick>activateWindow(VideoLibrary)</onclick>
+                <onclick>activateWindow(VidvideoseoLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
                 <onclick>Control.SetFocus(9998)</onclick>
             </item>
@@ -207,7 +207,7 @@
                 <visible>Library.HasContent(music)</visible>
                 <label>31005</label>
                 <label2/>
-                <onclick>ActivateWindow(MusicLibrary)</onclick>
+                <onclick>ActivateWindow(music)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,true)</onclick>
                 <onclick>Control.SetFocus(9998)</onclick>
             </item>
@@ -224,7 +224,7 @@
                 <visible>Library.HasContent(Music)</visible>
                 <label>133</label>
                 <label2/>
-                <onclick>replaceWindow(musiclibrary,musicdb://artists)</onclick>
+                <onclick>replaceWindow(music,musicdb://artists)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
             </item>
@@ -232,7 +232,7 @@
                 <visible>Library.HasContent(Music)</visible>
                 <label>132</label>
                 <label2/>
-                <onclick>replaceWindow(musiclibrary,musicdb://albums)</onclick>
+                <onclick>replaceWindow(music,musicdb://albums)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
             </item>
@@ -240,7 +240,7 @@
                 <visible>Library.HasContent(Music)</visible>
                 <label>135</label>
                 <label2/>
-                <onclick>ReplaceWindow(MusicLibrary,musicdb://genres)</onclick>
+                <onclick>ReplaceWindow(music,musicdb://genres)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
             </item>
@@ -249,7 +249,7 @@
                 <label>20389</label>
                 <label2/>
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
-                <onclick>activateWindow(Videolibrary,videodb://musicvideos/titles/)</onclick>
+                <onclick>activateWindow(videos,videodb://musicvideos/titles/)</onclick>
                 <onclick>control.setfocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
@@ -257,7 +257,7 @@
                 <visible/>
                 <label>136</label>
                 <label2/>
-                <onclick>ReplaceWindow(MusicLibrary,special://musicplaylists/)</onclick>
+                <onclick>ReplaceWindow(music,special://musicplaylists/)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
             </item>
@@ -268,9 +268,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon1Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon1Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon1Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon1)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon1Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon1)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon1Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon1)],return)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
             <item>
@@ -279,9 +279,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon2Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon2Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon2Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon2)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon2Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon2)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon2Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon2)],return)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
             <item>
@@ -290,9 +290,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon3)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon3)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon3)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon3Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -302,9 +302,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon4)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon4)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon4)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon4Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -314,9 +314,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon5)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon5)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon5)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon5Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -326,9 +326,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon6)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon6)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon6)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon6Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -338,9 +338,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon7)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon7)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon7)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon7Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -350,9 +350,9 @@
                 <onclick>Skin.SetString(keepMusicMenuActive,true)</onclick>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioAddon)">ActivateWindow(musiclibrary)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioAddon)">ActivateWindow(music)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioAddon)">RunAddon($INFO[Skin.String(customMusicAddon8)])</onclick>
-                <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioPlaylist)">ActivateWindow(MusicLibrary,$INFO[Skin.String(customMusicAddon8)],return)</onclick>
+                <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioPlaylist)">ActivateWindow(music,$INFO[Skin.String(customMusicAddon8)],return)</onclick>
                 <onclick condition="StringCompare(Skin.String(customMusicAddon8Type),audioPlaylist)">PlayerControl(play)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
@@ -361,7 +361,7 @@
                 <visible/>
                 <label>31010</label>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-                <onclick>ReplaceWindow(MusicLibrary,Addons,return)</onclick>
+                <onclick>ReplaceWindow(music,Addons,return)</onclick>
                 <onclick>setfocus(50)</onclick>
             </item>
             <item>

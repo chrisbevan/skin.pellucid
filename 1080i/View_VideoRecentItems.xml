@@ -91,7 +91,6 @@
                 <orientation>horizontal</orientation>
                 <onback>control.setfocus(9000)</onback>
                 <content>$INFO[control.getlabel(9123)]</content>
-                <oninfo>RunScript(script.skin.helper.service,action=showinfo,movieid=$INFO[container(9998).listitem.dbid])</oninfo>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>
@@ -210,7 +209,6 @@
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
                 <onclick>activatewindow(Video,videodb://tvshows/titles/$INFO[listitem.dbid])</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
-                <oninfo>RunScript(script.skin.helper.service,action=showinfo,tvshowid=$INFO[container(9998).listitem.dbid])</oninfo>
                 <itemlayout width="228" height="312">
                     <control type="image">
                         <posx>0</posx>

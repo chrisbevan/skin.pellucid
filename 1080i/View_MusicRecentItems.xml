@@ -71,7 +71,7 @@
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
                 <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-                <onclick>activatewindow(Musiclibrary,musicdb://albums/$INFO[listitem.DBID])</onclick>
+                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID])</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <content>$INFO[control.getlabel(9123)]</content>
                 <itemlayout width="300" height="4-col">

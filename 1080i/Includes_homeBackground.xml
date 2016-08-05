@@ -52,115 +52,169 @@
                 <focusedlayout/>
                 <content>$VAR[homescreenCollage]</content>
             </control>
-            <!--video (no Library)-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(10) | Container(9000).HasFocus(13) | Container(9000).HasFocus(14)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
-            <control type="image">
-                <visible>Container(9000).HasFocus(1) + !Library.HasContent(Movies)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+            
+			<!--Discs inserted / Live TV-->
+			<control type="group">
+				<visible>Container(9000).HasFocus(10) | Container(9000).HasFocus(13) | Container(9000).HasFocus(14)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+	            <control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	                <animation type="windowopen">
+	                    <effect type="fade" end="100" time="1000" delay="800"/>
+	                </animation>
+	            </control>
+			</control>
+			
+			<!--videos (no library present)-->
+			<control type="group">
+				<visible>Container(9000).HasFocus(1) + !Library.HasContent(Movies)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--music (no Library)-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(2) + !Library.HasContent(Music)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/music.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(2) + !Library.HasContent(Music)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/music.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--photos-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(9)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/weather.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(9)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/weather.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--games-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(4)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/games.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(4)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/games.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--photos-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(3)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/photos.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(3)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/photos.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--search-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(6)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/search.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(6)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/search.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--settings-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(7) | Container(9000).HasFocus(11)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/settings.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(7) | Container(9000).HasFocus(11)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/settings.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--power-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(8)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/power.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(8)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/power.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
+			
             <!--advanced launcher-->
-            <control type="image">
-                <visible>Container(9000).HasFocus(12)</visible>
-                <include>dimensionsFullscreen</include>
-                <texture>special://skin/extras/backgrounds/advancedLauncher.jpg</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <animation type="windowopen">
-                    <effect type="fade" end="100" time="1000" delay="800"/>
-                </animation>
-            </control>
+			<control type="group">
+				<visible>Container(9000).HasFocus(12)</visible>
+				<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>colors/black.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+            	<control type="image">
+	                <include>dimensionsFullscreen</include>
+	                <texture>special://skin/extras/backgrounds/advancedLauncher.jpg</texture>
+	                <colordiffuse>44ffffff</colordiffuse>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+			</control>
         </control>
     </include>
 </includes>

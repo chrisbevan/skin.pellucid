@@ -16,5 +16,10 @@
         <license></license>
         <forum></forum>
         <source>https://github.com/chrisbevan/skin.pellucid</source>
+		<assets>
+		    <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+        </assets>
     </extension>
 </addon>

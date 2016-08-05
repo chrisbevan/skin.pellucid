@@ -339,7 +339,7 @@
                     </focusedlayout>
                     <content>
                         <item id="1">
-                            <description>Ok / manual / getmore Button</description>
+                            <description>Ok / manual / get more Button</description>
                             <label fallback="186">$INFO[control.getlabel(5)]</label>
                             <label2></label2>
                             <thumb>-</thumb>
@@ -347,19 +347,21 @@
                         </item>
                         <item id="2">
                             <description>Cancel Button</description>
-                            <label>222</label>
                             <label2></label2>
                             <thumb>-</thumb>
-                            <onclick>PreviousMenu</onclick>
+          					<onclick>SendClick(2000,7)</onclick>
                         </item>
                     </content>
                 </control>
                 <control type="group">
                     <visible>false</visible>
                     <control type="button" id="5">
-                        <visible>false</visible>
                         <description>OK / Manual button</description>
                         <label>186</label>
+                    </control>
+					<control type="button" id="7">
+                        <description>Cancel</description>
+                        <label>222</label>
                     </control>
                 </control>
             </control>
