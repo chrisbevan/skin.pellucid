@@ -15,7 +15,10 @@
 [TODO]
 DialogAudioDSPManager.xml
 Check yes / no dialogs working correctly
-Check layouts for newly aggregated dialogs
+[DONE] Check layouts for newly aggregated dialogs (dialogSettings.xml)
+[Finalise] strings for settings dialog
+check all active strings
+MyPVRTimers needs creating and testing
 
 
 
@@ -40,7 +43,6 @@ Check layouts for newly aggregated dialogs
 - [REMOVED] ProfileSettings.xml
 - [REMOVED] VideoOSDSettings.xml
 - [REMOVED] DialogMuteBug.xml
-
 - [MODIFIED] Settings.xml: Updated to reflect changes to Kodi settings structure
 
 [B]1.0.0[/B]

@@ -84,7 +84,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>settingsCategoryTitle</font>
                         <textcolor>menuUnselected</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
@@ -127,7 +127,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>settingsCategoryTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
@@ -201,7 +201,7 @@
                         <label>10003</label>
                         <label2></label2>
                         <property name="label3">$LOCALIZE[31095]</property>
-                        <onclick>activatewindow(1103)</onclick>
+                        <onclick>activatewindow(filemanager)</onclick>
                     </item>
                     <item>
                         <description>Programs</description>

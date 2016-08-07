@@ -25,7 +25,7 @@
                 <width>17-col</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
-                <label>$INFO[ListItem.Property(Addon.Type)]</label>
+                <label>$INFO[ListItem.AddonType]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -86,7 +86,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>mediumStrong</font>
-                    <label>$INFO[ListItem.Property(Addon.Name)]</label>
+                    <label>$INFO[ListItem.addonname]</label>
                 </control>
                 <control type="label">
                     <posx>12</posx>
@@ -94,7 +94,7 @@
                     <width>12-col-gutter</width>
                     <font>small</font>
                     <textcolor>highlight</textcolor>
-                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)], $INFO[ListItem.Property(Addon.Creator)][/B]</label>
+                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.AddonVersion], $INFO[ListItem.AddonCreator][/B]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
@@ -102,7 +102,7 @@
                     <font>textbox</font>
                     <width>12-col-gutter</width>
                     <height>9-row</height>
-                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
+                    <label>$INFO[ListItem.AddonDescription]</label>
                     <autoscroll delay="5000" time="1000" repeat="10000"/>
                 </control>
             </control>

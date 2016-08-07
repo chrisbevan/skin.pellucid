@@ -42,7 +42,7 @@
                 <width>4-col-gutter</width>
                 <height>4-col-gutter</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[System.AddonIcon(ListItem.Property(Addon.id))]</texture>
+                <texture fallback="colors/offblack.png">$INFO[System.AddonIcon(ListItem.Addonid)]</texture>
                 <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
@@ -62,7 +62,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <label>$INFO[ListItem.Property(Addon.Name)] $LOCALIZE[5]</label>
+                <label>$INFO[ListItem.AddonName] $LOCALIZE[5]</label>
                 <textcolor>textActive</textcolor>
             </control>
 

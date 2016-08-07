@@ -16,7 +16,7 @@
                 <posx>-36</posx>
                 <posy>-36</posy>
                 <width>7-col</width>
-                <height>14-row</height>
+                <height>16-row</height>
                 <texture>colors/black.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>textboxInactive</colordiffuse>

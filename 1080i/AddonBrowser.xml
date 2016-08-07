@@ -64,16 +64,6 @@
                 <posy>13-row</posy>
                 <width>6-col</width>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="6">
-                    <width>6-col</width>
-                    <texturenofocus>-</texturenofocus>
-                    <radiowidth/>
-                    <radioheight/>
-                    <textureradiofocus>-</textureradiofocus>
-                    <textureradionofocus>-</textureradionofocus>
-                    <label>25000</label>
-                    <onright>9999</onright>
-                </control>
                 <control type="radiobutton" id="7">
                     <width>6-col</width>
                     <texturenofocus>-</texturenofocus>
@@ -97,7 +87,7 @@
                 <control type="button" id="5">
                     <width>6-col</width>
                     <texturenofocus>-</texturenofocus>
-                    <label>24063</label>
+                    <label>10004</label>
                     <onright>9999</onright>
                 </control>
                 <control type="button" id="9">
@@ -141,7 +131,7 @@
                 </control>
                 <control type="label">
                     <description>Addon Title</description>
-                    <visible>!isempty(ListItem.Property(Addon.Creator))</visible>
+                    <visible>!isempty(ListItem.AddonCreator)</visible>
                     <posx>9-col</posx>
                     <posy>58</posy>
                     <width>10-col-gutter</width>
@@ -156,7 +146,7 @@
                     <font>textbox</font>
                     <width>10-col-gutter</width>
                     <height>160</height>
-                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
+                    <label>$INFO[ListItem.AddonDescription]</label>
                     <autoscroll delay="5000" time="1000" repeat="10000"/>
                 </control>
             </control>

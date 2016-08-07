@@ -258,7 +258,7 @@ msgid "PVR"
 msgstr ""
 
 msgctxt "#31061"
-msgid "Interface • Interface"
+msgid "Adjust look and feel of Kodi"
 msgstr ""
 
 msgctxt "#31062"
@@ -266,7 +266,7 @@ msgid "Memory"
 msgstr ""
 
 msgctxt "#31063"
-msgid "Playback • Subtitles"
+msgid "Manage content playback"
 msgstr ""
 
 msgctxt "#31064"
@@ -282,7 +282,7 @@ msgid "Audio CDs"
 msgstr ""
 
 msgctxt "#31067"
-msgid "Addons • Addons"
+msgid "Extend Kodi's functionality"
 msgstr ""
 
 msgctxt "#31068"
@@ -298,7 +298,7 @@ msgid "Screen"
 msgstr ""
 
 msgctxt "#31071"
-msgid "Networking • Airplay"
+msgid "Communications and sharing"
 msgstr ""
 
 msgctxt "#31072"
@@ -330,7 +330,7 @@ msgid "Now and Next"
 msgstr ""
 
 msgctxt "#31079"
-msgid "Library • Library"
+msgid "Import your content into Kodi"
 msgstr ""
 
 msgctxt "#31080"
@@ -338,7 +338,7 @@ msgid "Programme Guide"
 msgstr ""
 
 msgctxt "#31081"
-msgid "Live TV • Live TV"
+msgid "Digital Television Setup"
 msgstr ""
 
 msgctxt "#31082"
@@ -346,7 +346,7 @@ msgid "Version"
 msgstr ""
 
 msgctxt "#31083"
-msgid "Skin settings • Skin Settings"
+msgid "Skin specific options"
 msgstr ""
 
 msgctxt "#31085"
@@ -370,7 +370,7 @@ msgid "Add Music Playlist"
 msgstr ""
 
 msgctxt "#31095"
-msgid "Transfer • Copy Files"
+msgid "Transfer and copy files"
 msgstr ""
 
 msgctxt "#31096"
@@ -402,11 +402,11 @@ msgid "Disable fanart animation effect"
 msgstr ""
 
 msgctxt "#31103"
-msgid "Profile Settings • Login options"
+msgid "Control how Kodi is used"
 msgstr ""
 
 msgctxt "#31105"
-msgid "System settings • System settings"
+msgid "Manage your Kodi system"
 msgstr ""
 
 msgctxt "#31106"
@@ -418,7 +418,7 @@ msgid "Current profile"
 msgstr ""
 
 msgctxt "#31108"
-msgid "CPU Temp • HDD Space"
+msgid "About this Kodi Installation"
 msgstr ""
 
 msgctxt "#31109"
@@ -430,7 +430,7 @@ msgid "Order: Descending"
 msgstr ""
 
 msgctxt "#31111"
-msgid "Programs • Programs"
+msgid "Manage your program addons"
 msgstr ""
 
 msgctxt "#31112"

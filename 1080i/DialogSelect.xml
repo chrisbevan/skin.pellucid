@@ -89,7 +89,7 @@
                             <width>12-col-gutter</width>
                             <font>itemSubTitle</font>
                             <textcolor>highlight</textcolor>
-                            <label>$INFO[container(6).ListItem.Property(Addon.Creator)]</label>
+                            <label>$INFO[container(6).ListItem.AddonCreator]</label>
                         </control>
                         <control type="textbox" id="400">
                             <posx>6-col-indent</posx>
@@ -97,7 +97,7 @@
                             <font>textbox</font>
                             <width>12-col-gutter</width>
                             <height>160</height>
-                            <label>$INFO[container(6).ListItem.Property(Addon.Description)]</label>
+                            <label>$INFO[container(6).ListItem.AddonDescription]</label>
                             <autoscroll delay="5000" time="1000" repeat="10000"/>
                         </control>
                     </control>
@@ -347,6 +347,7 @@
                         </item>
                         <item id="2">
                             <description>Cancel Button</description>
+							<label>222</label>
                             <label2></label2>
                             <thumb>-</thumb>
           					<onclick>SendClick(2000,7)</onclick>
