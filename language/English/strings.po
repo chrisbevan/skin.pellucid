@@ -342,7 +342,7 @@ msgid "Digital Television Setup"
 msgstr ""
 
 msgctxt "#31082"
-msgid "Version"
+msgid "By"
 msgstr ""
 
 msgctxt "#31083"

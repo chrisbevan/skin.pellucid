@@ -11,14 +11,22 @@
 - [NEW] MyPlaylist.xml
 - [REMOVED] MyMusicPlaylist.xml
 - [REMOVED] MyVideoPlaylist.xml
+- [NEW] Busy spinner (nicked from Estuary)
+- [NEW] DialogPlayerProcessInfo.xml
+
 
 [TODO]
+Revise player stop on return
 DialogAudioDSPManager.xml
-Check yes / no dialogs working correctly
+DialogPlayerProcessInfo.xml
+Check screenshots work in dialogAddonSettings
+Check yes / no progress bar works ok
 [DONE] Check layouts for newly aggregated dialogs (dialogSettings.xml)
 [Finalise] strings for settings dialog
 check all active strings
 MyPVRTimers needs creating and testing
+Screenshots etc
+
 
 
 

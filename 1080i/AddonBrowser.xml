@@ -106,17 +106,9 @@
                     <posy>0</posy>
                     <width>22-col</width>
                     <height>11-row</height>
-                    <aspectratio aligny="center">keep</aspectratio>
+                    <aspectratio aligny="center">scale</aspectratio>
                     <texture fallback="addonDefaultBG.png">$INFO[ListItem.art(fanart)]</texture>
                     <colordiffuse>22ffffff</colordiffuse>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>22-col</width>
-                    <height>11-row</height>
-                    <aspectratio aligny="center">scale</aspectratio>
-                    <texture>vignette.png</texture>
                 </control>
                 <control type="image">
                     <posx>4-col</posx>
@@ -137,7 +129,7 @@
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <font>medium</font>
+                    <font>mediumLight</font>
                     <label>$INFO[ListItem.label]</label>
                 </control>
                 <control type="textbox" id="400">

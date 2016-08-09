@@ -48,7 +48,48 @@
                 <aspectratio aligny="center">scale</aspectratio>
                 <texture fallback="colors/offblack.png">$INFO[ListItem.art(fanart)]</texture>
             </control>
-            <control type="image">
+			<!--screenshots-->
+			<control type="panel" id="50">
+	            <posx>6-col</posx>
+	            <posy>3-row</posy>
+	            <width>12-col</width>
+	            <height>8-row</height>
+	            <onleft>50</onleft>
+	            <onright>50</onright>
+	            <ondown>8000</ondown>
+				<orientation>horizontal</orientation>
+	            <scrolltime tween="cubic" easing="out">600</scrolltime>
+	            <itemlayout width="444" height="336">
+	                <control type="image">
+	                    <posx>0</posx>
+	                    <posy>0</posy>
+	                    <width>6-col-gutter</width>
+	                    <height>4-col-gutter</height>
+	                    <aspectratio>scale</aspectratio>
+	                    <texture border="6">$INFO[Listitem.thumb]</texture>
+	                    <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+	                    <bordersize>3</bordersize>
+	                    <colordiffuse>ffffffff</colordiffuse>
+	                </control>
+	            </itemlayout>
+	            <focusedlayout width="444" height="336">
+	                <control type="group">
+	                    <include>focusThumb</include>
+	                    <control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>6-col-gutter</width>
+	                        <height>4-col-gutter</height>
+	                        <aspectratio>scale</aspectratio>
+	                        <texture>$INFO[Listitem.thumb]</texture>
+	                        <bordertexture border="6">colors/white.png</bordertexture>
+	                        <bordersize>6</bordersize>
+	                        <colordiffuse>ffffffff</colordiffuse>
+	                    </control>
+	                </control>
+	            </focusedlayout>
+	        </control>
+			<control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
@@ -58,9 +99,9 @@
             </control>
             <control type="image">
                 <posx>1-col</posx>
-                <posy>3-row</posy>
-                <width>4-col</width>
-                <height>4-col</height>
+                <posy>7-row</posy>
+                <width>2-col</width>
+                <height>2-col</height>
                 <aspectratio>stretch</aspectratio>
                 <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
                 <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
@@ -94,7 +135,7 @@
                     <width>12-col-gutter</width>
                     <font>small</font>
                     <textcolor>highlight</textcolor>
-                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.AddonVersion], $INFO[ListItem.AddonCreator][/B]</label>
+                    <label>[B]$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,][/B]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
@@ -118,6 +159,7 @@
                     <height>14-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
+					<onup>50</onup>
                     <itemlayout width="6-col" height="2-row">
                         <control type="label">
                             <posx>0</posx>
@@ -233,13 +275,6 @@
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
-                        <item>
-                            <visible>Control.IsEnabled(10)</visible>
-                            <label>$INFO[Control.GetLabel(10)]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,10)</onclick>
-                        </item>
                     </content>
                 </control>
             </control>
@@ -261,10 +296,6 @@
             <control type="button" id="9">
                 <description>Addon Settings</description>
                 <label>24020</label>
-            </control>
-            <control type="button" id="10">
-                <description>Changelog button</description>
-                <label>24036</label>
             </control>
             <control type="button" id="12">
                 <description>Launch addon</description>
