@@ -1,3 +1,9 @@
+[B]1.0.2[/B]
+- [FIX] Repeat and shuffle icons position
+- [NEW] Left and right now skips tracks in fullscreen music view
+
+Note: Moving straight to song view shows listing briefly
+
 [B]1.0.1[/B]
 
 ***RPI Bugfixes***
