@@ -34,7 +34,7 @@
                 <width>8-col</width>
                 <height>8-col</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$INFO[ListItem.art(thumb)]</texture>
+                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$VAR[songViewThumb]</texture>
                 <bordertexture border="6" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                 <bordersize>6</bordersize>
                 <fadetime>500</fadetime>
@@ -51,7 +51,7 @@
                 <font>largeLight</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>[B]$INFO[ListItem.Album][/B]</label>
+                <label>[B]$VAR[songViewAlbum][/B]</label>
             </control>
             <control type="label">
                 <posx>col-10-begin</posx>
@@ -61,7 +61,7 @@
                 <font>regular</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
+                <label>$VAR[songViewArtist]</label>
             </control>
         </control>
         <control type="panel" id="50">

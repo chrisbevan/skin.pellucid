@@ -1,6 +1,6 @@
 [B]1.1.1[/B]
 
-- [NEW] RPI bugfixes from Jarvis branch
+- [NEW] RPI / general bugfixes from Jarvis branch
 - [ADDED] Addon.xml: Assets tag
 - [MODIFIED] Skinwide includes name / content tagging updated
 - [REMOVED] Custom oninfo screen for recently added videos (nice one Team Kodi!)
@@ -13,6 +13,8 @@
 - [REMOVED] MyVideoPlaylist.xml
 - [NEW] Busy spinner (nicked from Estuary)
 - [NEW] DialogPlayerProcessInfo.xml
+- Numerous misc tweaks and fixes
+- [MODIFIED] Addon Browser design reworked
 
 
 [TODO]
@@ -26,6 +28,7 @@ Check yes / no progress bar works ok
 check all active strings
 MyPVRTimers needs creating and testing
 Screenshots etc
+Check if feedback notification appears when updating libraries
 
 
 

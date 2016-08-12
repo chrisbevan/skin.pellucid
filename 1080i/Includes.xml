@@ -87,8 +87,7 @@
 				<effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
 				<effect type="fade" start="100" end="0" time="240" />
 			</animation>
-			<visible></visible>
-			<visible>!Window.IsActive(startup) + !isempty(container.foldername) + !IntegerGreaterThan(container.numitems,0) | window.isactive(busydialog)</visible>
+			<visible>!Window.IsActive(startup) + !isempty(container.foldername) + !IntegerGreaterThan(container.numitems,0) + !ListItem.IsParentFolder | window.isactive(busydialog)</visible>
 			<control type="image">
 				<texture>colors/black.png</texture>
 				<include>dimensionsFullscreen</include>

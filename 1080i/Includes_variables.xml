@@ -44,6 +44,19 @@
         <value condition="Playlist.IsRandom">$LOCALIZE[191]: $LOCALIZE[16041]</value>
         <value>$LOCALIZE[191]: $LOCALIZE[16039]</value>
     </variable>
+	<!--offset song view, show artist / album if parent view is active-->
+	<variable name="songViewArtist">
+		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Artist] $INFO[ListItem(1).Year,(,)]</value>
+		<value>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</value>
+	</variable>
+	<variable name="songViewAlbum">
+		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Album]</value>
+		<value>$INFO[ListItem.Album]</value>
+	</variable>
+	<variable name="songViewThumb">
+		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).art(thumb)]</value>
+		<value>$INFO[ListItem.art(thumb)]</value>
+	</variable>
     <!--Music player repeat state-->
     <variable name="repeatState">
         <value condition="Playlist.IsRepeat">$LOCALIZE[597]</value>
