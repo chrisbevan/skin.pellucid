@@ -30,7 +30,7 @@
                     <animation type="windowopen">
                         <effect type="fade" start="0" end="100" time="300" delay="700"/>
                         <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
-                        <effect type="rotateY" end="5" center="auto,auto" time="500"/>
+                        
                         <effect type="zoom" end="90" time="0"/>
                     </animation>
                     <control type="group">
@@ -41,15 +41,6 @@
                             <height>768</height>
                             <aspectratio scalediffuse="false">stretch</aspectratio>
                             <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.art(poster)]</texture>
-                            <fadetime>200</fadetime>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>768</posy>
-                            <width>8-col</width>
-                            <height>2-row</height>
-                            <aspectratio align="center" aligny="top">scale</aspectratio>
-                            <texture fallback="colors/black.png" diffuse="masks/thumbFader.png" flipy="true">$INFO[Listitem.art(poster)]</texture>
                             <fadetime>200</fadetime>
                         </control>
                     </control>

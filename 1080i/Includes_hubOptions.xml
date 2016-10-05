@@ -25,6 +25,7 @@
             <control type="group" id="9002">
                 <!--shortcuts-->
                 <control type="panel" id="9003">
+					<visible>!window.isactive(home)</visible>
                     <posx>col-10-begin</posx>
                     <posy>7-row</posy>
                     <width>6-col</width>
@@ -147,6 +148,7 @@
                     <include condition="Window.isactive(Videos) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
                     <include condition="Window.isactive(Music) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
                     <include condition="window.isactive(pictures)">picturesSideMenu</include>
+					<include condition="window.isactive(home)">homeSideMenu</include>
                 </control>
             </control>
         </control>

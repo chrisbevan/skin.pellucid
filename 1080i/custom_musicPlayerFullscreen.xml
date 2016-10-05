@@ -133,8 +133,8 @@
                          <overlaytexture>-</overlaytexture>
                          <info>Player.Progress</info>
                    </control>
-                    <control type="label">
-                        <posx>24</posx>
+                   <control type="label">
+				      	<posx>24</posx>
                         <posy>3-row</posy>
                         <width>612</width>
                         <height>2-row</height>
@@ -145,7 +145,7 @@
                         <scroll>false</scroll>
                         <label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
                     </control>
-					<control type="label">
+                    <control type="label">
                         <posx>9-col-gutter</posx>
                         <posy>3-row</posy>
                         <width>612</width>
@@ -159,7 +159,7 @@
                     </control>
                     <control type="label">
                         <visible>Playlist.IsRepeat | Playlist.IsRepeatOne</visible>
-                        <posx>8-col-gutter</posx>
+                        <posx>5-col-gutter</posx>
                         <posy>3-row</posy>
                         <width>612</width>
                         <height>2-row</height>
@@ -171,7 +171,7 @@
                     </control>
                     <control type="label">
                         <visible>Playlist.IsRandom</visible>
-                        <posx>9-col-gutter</posx>
+                        <posx>384</posx>
                         <posy>3-row</posy>
                         <width>612</width>
                         <height>2-row</height>
@@ -194,13 +194,15 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <!--hidden buttons to handle dialog autohide-->
-        <control type="button" id="9876">
+		<control type="button" id="9876">
             <posx>-100</posx>
             <posy>-100</posy>
             <height>1-col</height>
             <width>1-col</width>
             <onup>noop</onup>
             <ondown>6789</ondown>
+            <onleft>playercontrol(previous)</onleft>
+            <onright>playercontrol(next)</onright>
             <onclick>activatewindow(1105)</onclick>
         </control>
         <control type="button" id="6789">
@@ -210,6 +212,8 @@
             <width>1-col</width>
             <onup>9876</onup>
             <ondown>noop</ondown>
+            <onleft>playercontrol(previous)</onleft>
+            <onright>playercontrol(next)</onright>
             <onclick>activatewindow(1105)</onclick>
         </control>
         <!--debugging-->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -128,7 +129,7 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="7">
+                <control type="radiobutton" id="1">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Reverse power down options</description>
                     <width>14-col</width>
@@ -136,47 +137,7 @@
                     <onclick>Skin.ToggleSetting(exitFirst)</onclick>
                     <selected>Skin.HasSetting(exitFirst)</selected>
                 </control>
-                <control type="radiobutton" id="8">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Video</description>
-                    <width>14-col</width>
-                    <label>31147</label>
-                    <onclick>Skin.ToggleSetting(hideVideo)</onclick>
-                    <selected>Skin.HasSetting(hideVideo)</selected>
-                </control>
-                <control type="radiobutton" id="9">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Music</description>
-                    <width>14-col</width>
-                    <label>31148</label>
-                    <onclick>Skin.ToggleSetting(hideMusic)</onclick>
-                    <selected>Skin.HasSetting(hideMusic)</selected>
-                </control>
-                <control type="radiobutton" id="10">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Pictures</description>
-                    <width>14-col</width>
-                    <label>31149</label>
-                    <onclick>Skin.ToggleSetting(hidePictures)</onclick>
-                    <selected>Skin.HasSetting(hidePictures)</selected>
-                </control>
-                <control type="radiobutton" id="11">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Games</description>
-                    <width>14-col</width>
-                    <label>31157</label>
-                    <onclick>Skin.ToggleSetting(hideGames)</onclick>
-                    <selected>Skin.HasSetting(hideGames)</selected>
-                </control>
-                <control type="radiobutton" id="12">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Hide Search</description>
-                    <width>14-col</width>
-                    <label>31150</label>
-                    <onclick>Skin.ToggleSetting(hideSearch)</onclick>
-                    <selected>Skin.HasSetting(hideSearch)</selected>
-                </control>
-                <control type="radiobutton" id="15">
+                <control type="radiobutton" id="7">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Enable Debug Grid</description>
                     <width>14-col</width>
@@ -184,7 +145,7 @@
                     <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
                     <selected>Skin.HasSetting(DebugGrid)</selected>
                 </control>
-                <control type="radiobutton" id="16">
+                <control type="radiobutton" id="8">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Disable Debug Info</description>
                     <width>14-col</width>
@@ -192,7 +153,7 @@
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
                 </control>
-                <control type="button" id="17">
+                <control type="button" id="9">
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Reload skin</description>
                     <width>14-col</width>
@@ -200,7 +161,7 @@
                     <onclick>ReloadSkin()</onclick>
                     <onclick>activateWindow(home)</onclick>
                 </control>
-                <control type="radiobutton" id="20">
+                <control type="radiobutton" id="10">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Disable fanart animation effect</description>
                     <width>14-col</width>
@@ -209,6 +170,13 @@
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
                 </control>
+				<control type="button" id="12">
+                    <visible>Container(8000).Hasfocus(2)</visible>
+                    <description>Reset main menu</description>
+                    <width>14-col</width>
+                    <label>31052</label>
+                    <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+                </control>	
             </control>
         </control>
         <!--debugging-->

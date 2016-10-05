@@ -13,24 +13,35 @@
 - [REMOVED] MyVideoPlaylist.xml
 - [NEW] Busy spinner (nicked from Estuary)
 - [NEW] DialogPlayerProcessInfo.xml
-- Numerous misc tweaks and fixes
 - [MODIFIED] Addon Browser design reworked
+- Numerous misc tweaks and fixes
 
 
 [TODO]
-Revise player stop on return
-DialogAudioDSPManager.xml
-DialogPlayerProcessInfo.xml
-Check screenshots work in dialogAddonSettings
+
+Skin shortcuts for all sub menus
+- homescreen images will need to be changed (not so - use the path)
+
+Dialogselect revision / simplification
+
+Change accent color? (Skin helper script)
+
 Check yes / no progress bar works ok
-[DONE] Check layouts for newly aggregated dialogs (dialogSettings.xml)
-[Finalise] strings for settings dialog
+
+Revise player stop on return
+
+DialogAudioDSPManager.xml
+
+DialogPlayerProcessInfo.xml
+
+Check RCB (e.g. busy spinner and menu width)
+
+Check screenshots work in dialogAddonSettings
+
 check all active strings
 MyPVRTimers needs creating and testing
 Screenshots etc
 Check if feedback notification appears when updating libraries
-
-
 
 
 [B]1.1.0[/B]

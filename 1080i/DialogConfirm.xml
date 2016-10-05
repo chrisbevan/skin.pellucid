@@ -14,7 +14,7 @@
                 <posy>0</posy>
                 <control type="label" id="1">
                     <description>heading</description>
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col-gutter</width>
                     <height>2-row</height>
@@ -24,14 +24,14 @@
                 </control>
                 <control type="progress" id="20">
                 <description>Progressbar</description>
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>2-row</posy>
                     <width>12-col-gutter</width>
                     <height>1-row</height>
                     <info>System.Progressbar</info>
                 </control>
                 <control type="textbox" id="9">
-                    <posx>12</posx>
+                    <posx>0</posx>
                     <posy>2-row</posy>
                     <width>828</width>
                     <height>156</height>
@@ -40,76 +40,143 @@
 					<autoscroll delay="3000" time="2000" repeat="5000"/>
                </control>
             </control>
-            <!--Yes / No-->
+            <!--options-->
 			<control type="group">
 				<posx>col-7-begin</posx>
                 <posy>8-row</posy>
-            	<control type="image">
-	                <posx>0</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture>colors/black.png</texture>
-	            </control>
-	            <control type="image">
-	                <visible>control.hasfocus(10)</visible>
-	                <posx>0</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture>colors/white.png</texture>
-	                <colordiffuse>highlight</colordiffuse>
-	                <animation type="conditional" condition="control.hasfocus(10)" loop="false" reversible="false">
-	                    <effect type="fade" time="500"/>
-	                    <effect type="rotatey" end="180" center="36" tween="back" easing="out" time="1000"/>
-	                </animation>
-	            </control>
-	            <control type="label">
-	                <posx>0</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <align>center</align>
-	                <aligny>center</aligny>
-	                <font>symbolLarge</font>
-	                <textcolor>textActive</textcolor>
-	                <label>×</label>
-	            </control>
-	            <control type="image">
-	                <posx>4-col</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture>colors/black.png</texture>
-	            </control>
-	            <control type="image">
-	                <visible>control.hasfocus(11)</visible>
-	                <posx>4-col</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture>colors/white.png</texture>
-	                <colordiffuse>highlight</colordiffuse>
-	                <animation type="conditional" condition="control.hasfocus(11)" loop="false" reversible="false">
-	                    <effect type="fade" time="500"/>
-	                    <effect type="rotatey" end="180" center="324" tween="back" easing="out" time="1000"/>
-	                </animation>
-	            </control>
-	            <control type="label">
-	                <posx>4-col</posx>
-	                <posy>0</posy>
-	                <width>1-col</width>
-	                <height>2-row</height>
-	                <align>center</align>
-	                <aligny>center</aligny>
-	                <font>symbolLarge</font>
-	                <textcolor>textActive</textcolor>
-	                <label>✓</label>
-	            </control>
+
+				<!--OK only-->
+				<control type="group">
+					<visible>Control.IsVisible(11) + !Control.IsVisible(10) + !Control.IsVisible(12)</visible>
+	            	<control type="image">
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/black.png</texture>
+		            </control>
+		            <control type="image">
+		                <visible>control.hasfocus(11)</visible>
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/white.png</texture>
+		                <colordiffuse>highlight</colordiffuse>
+		            </control>
+		            <control type="label">
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <align>center</align>
+		                <aligny>center</aligny>
+		                <font>symbolLarge</font>
+		                <textcolor>textActive</textcolor>
+		                <label>✓</label>
+		            </control>
+				</control>
+
+				<!--yes / no-->
+				<control type="group">
+					<visible>Control.IsVisible(10) + Control.IsVisible(11)</visible>
+            		<control type="image">
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/black.png</texture>
+		            </control>
+		            <control type="image">
+		                <visible>control.hasfocus(10)</visible>
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/white.png</texture>
+		                <colordiffuse>highlight</colordiffuse>
+		                <animation type="conditional" condition="control.hasfocus(10)" loop="false" reversible="false">
+		                    <effect type="fade" time="500"/>
+		                    <effect type="rotatey" end="180" center="36" tween="back" easing="out" time="1000"/>
+		                </animation>
+		            </control>
+		            <control type="label">
+						<visible>String.IsEqual(control.getlabel(10),$LOCALIZE[186])</visible>
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <align>center</align>
+		                <aligny>center</aligny>
+		                <font>symbolLarge</font>
+		                <textcolor>textActive</textcolor>
+		                <label>✓</label>
+		            </control>
+					<control type="label">
+						<visible>!String.IsEqual(control.getlabel(10),$LOCALIZE[186])</visible>
+		                <posx>0</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <align>center</align>
+		                <aligny>center</aligny>
+		                <font>symbolLarge</font>
+		                <textcolor>textActive</textcolor>
+		                <label>×</label>
+		            </control>
+					<control type="image">
+		                <posx>4-col</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/black.png</texture>
+		            </control>
+		            <control type="image">
+		                <visible>control.hasfocus(11)</visible>
+		                <posx>4-col</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <aspectratio>stretch</aspectratio>
+		                <texture>colors/white.png</texture>
+		                <colordiffuse>highlight</colordiffuse>
+		                <animation type="conditional" condition="control.hasfocus(11)" loop="false" reversible="false">
+		                    <effect type="fade" time="500"/>
+		                    <effect type="rotatey" end="180" center="324" tween="back" easing="out" time="1000"/>
+		                </animation>
+		            </control>
+		            <control type="label">
+						<visible>String.IsEqual(control.getlabel(11),$LOCALIZE[107])</visible>
+		                <posx>4-col</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <align>center</align>
+		                <aligny>center</aligny>
+		                <font>symbolLarge</font>
+		                <textcolor>textActive</textcolor>
+		                <label>✓</label>
+		            </control>
+					<control type="label">
+						<visible>!String.IsEqual(control.getlabel(11),$LOCALIZE[107])</visible>
+		                <posx>4-col</posx>
+		                <posy>0</posy>
+		                <width>1-col</width>
+		                <height>2-row</height>
+		                <align>center</align>
+		                <aligny>center</aligny>
+		                <font>symbolLarge</font>
+		                <textcolor>textActive</textcolor>
+		                <label></label>
+		            </control>
+				</control>
+				
+				<!--custom button active-->
 				<control type="group">
 					<visible>Control.IsVisible(12)</visible>
 					<control type="image">
@@ -146,6 +213,7 @@
 		                <label>✓</label>
 		            </control>
 				</control>
+				
 	            <control type="grouplist" id="9000">
 	                <posx>1-col</posx>
 	                <posy>0</posy>
@@ -164,7 +232,6 @@
 	                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
 	                    <focusedcolor>black</focusedcolor>
 	                    <width>3-col</width>
-	                    <label>106</label>
 	                </control>
 	                <control type="button" id="11">
 	                    <description>Cancel</description>
@@ -172,15 +239,13 @@
 	                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
 	                    <focusedcolor>black</focusedcolor>
 	                    <width>3-col</width>
-	                    <label>107</label>
 	                </control>
 	                <control type="button" id="12">
-	                    <description>Custom Button</description>
+	                    <description>Custom</description>
 	                    <texturefocus>colors/white.png</texturefocus>
 	                    <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
 	                    <focusedcolor>black</focusedcolor>
 	                    <width>3-col</width>
-	                    <label>107</label>
 	                </control>
 	            </control>
 	        </control>

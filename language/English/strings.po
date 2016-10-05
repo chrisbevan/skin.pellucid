@@ -190,7 +190,7 @@ msgid "Video"
 msgstr ""
 
 msgctxt "#31041"
-msgid "Edit Menu Shortcuts"
+msgid "Edit Menu Items"
 msgstr ""
 
 msgctxt "#31042"
@@ -231,6 +231,10 @@ msgstr ""
 
 msgctxt "#31051"
 msgid "Disc Menu"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Reset menu to default"
 msgstr ""
 
 msgctxt "#31053"
@@ -347,6 +351,10 @@ msgstr ""
 
 msgctxt "#31083"
 msgid "Skin specific options"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Manage Home Screen Menu"
 msgstr ""
 
 msgctxt "#31085"

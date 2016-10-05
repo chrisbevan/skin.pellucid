@@ -316,6 +316,7 @@
 	                <height>2-row</height>
                     <width>col-5-begin</width>
                     <font>menuTitle</font>
+					<textwidth>4-col-gutter</textwidth>
                     <textcolor>textActive</textcolor>
                     <focusedcolor>highlight</focusedcolor>
                     <disabledcolor>menuDisabled</disabledcolor>
@@ -325,9 +326,8 @@
                     <textureradionofocus>-</textureradionofocus>
                     <radiowidth/>
                     <radioheight/>
-                    <textoffsetx>col-1-begin</textoffsetx>
-					<textwidth>4-col-gutter</textwidth>
-	                <label>24999</label>
+                    <textoffsetx>21</textoffsetx>
+	                <label>          $LOCALIZE[24999]</label>
 	                <onright>9999</onright>
 	            </control>
 	            <control type="button" id="5">

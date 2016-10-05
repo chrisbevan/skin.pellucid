@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onload>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
@@ -44,6 +45,7 @@
                 <posy>row-4-begin</posy>
                 <width>col-5-begin</width>
                 <height>24-row</height>
+				<onleft>9002</onleft>
                 <orientation>vertical</orientation>
                 <itemlayout width="col-5-begin" height="2-row">
                     <control type="label">
@@ -80,7 +82,9 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
-                <content>
+                <content><include>skinshortcuts-mainmenu</include></content>
+				<!--
+				<content>
                     <item id="13">
                         <visible>System.HasMediaDVD</visible>
                         <label>341</label>
@@ -171,6 +175,7 @@
                         <onclick>ActivateWindow(ShutdownMenu)</onclick>
                     </item>
                 </content>
+			-->
             </control>
         </control>
         <!--Date / time and weather-->
@@ -209,6 +214,9 @@
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
         </control>
+		<!--hub menu-->
+        <include>hubMenu</include>
+        <include>hubOptions</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
