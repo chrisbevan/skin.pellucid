@@ -4,17 +4,8 @@
 	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onunload>
 	<onunload>control.setfocus(9000)</onunload>
 	<controls>
-		<control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-        </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>vignette.png</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+		<!--background-->
+        <include>globalBackground</include>
 		<control type="group">
             <posx>0</posx>
             <posy>0</posy>
@@ -26,59 +17,59 @@
 				<control type="button" id="301">
 					<description>Add a new shortcut</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32000]</label>
 				</control>
 				<control type="button" id="302">
 					<description>Delete shortcut</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32001]</label>
 				</control>
 				<control type="button" id="303">
 					<description>Move shortcut up</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32002]</label>
 				</control>
 				<control type="button" id="304">
 					<description>Move shortcut down</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32003]</label>
 				</control>
 				<control type="button" id="305">
 					<description>Change shortcut label</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32025]</label>
 				</control>
 				<control type="button" id="307">
 					<description>Change shortcut action</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32027]</label>
 				</control>
 				<control type="button" id="308">
 					<description>Reset shortcuts</description>
 					<onright>211</onright>
-					<width>5-col</width>
+					<width>5-col-gutter</width>
 					<onclick>noop</onclick>
 					<label>$ADDON[script.skinshortcuts 32028]</label>
 				</control>
 			</control>
 			<control type="group">
 				<animation type="windowopen">
-	                <effect type="slide" start="0" end="col-6-begin" tween="sine" easing="out" delay="0" time="400"/>
+	                <effect type="slide" start="0" end="col-5-begin" tween="sine" easing="out" delay="0" time="400"/>
 	            </animation>
 	            <animation type="windowclose">
-	                <effect type="slide" start="col-6-begin" end="0" tween="sine" easing="out" time="400"/>
+	                <effect type="slide" start="col-5-begin" end="0" tween="sine" easing="out" time="400"/>
 	            </animation>
 				<control type="image">
 	                <posx>0</posx>

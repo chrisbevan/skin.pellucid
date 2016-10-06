@@ -20,13 +20,11 @@
 [TODO]
 
 Skin shortcuts for all sub menus
-- homescreen images will need to be changed (not so - use the path)
-
-Dialogselect revision / simplification
-
-Change accent color? (Skin helper script)
+- homescreen images
 
 Check yes / no progress bar works ok
+
+PRV mini window and recordings storage indicator
 
 Revise player stop on return
 

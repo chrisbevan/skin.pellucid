@@ -179,10 +179,10 @@
                 <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
 	                <effect type="fade" start="100" end="0" time="200"/>
 	            </animation>
-	            <posx>col-1-begin</posx>
+	            <posx>60</posx>
 	            <posy>678</posy>
 	            <width>24-col</width>
-	            <height>2-row</height>
+	            <height>84</height>
 	            <onleft>9000</onleft>
 	            <ondown>9998</ondown>
 	            <onback>9000</onback>
@@ -191,37 +191,39 @@
 	                <control type="label">
 	                    <posx>0</posx>
 	                    <posy>0</posy>
-	                    <width>4-col-gutter</width>
+	                    <width>4-col</width>
 	                    <height>2-row</height>
 	                    <font>itemTitle</font>
+	                    <aligny>center</aligny>
+	                    <align>center</align>
 	                    <textcolor>44FFFFFF</textcolor>
 	                    <shadowcolor>-</shadowcolor>
 	                    <label>$INFO[ListItem.property(textTitle)]</label>
 	                </control>
 	            </itemlayout>
-	            <focusedlayout width="4-col" height="2-row">
+	            <focusedlayout width="4-col" height="78">
+	                <control type="image">
+	                    <posx>0</posx>
+	                    <posy>56</posy>
+	                    <width>4-col-textbox</width>
+	                    <height>9</height>
+	                    <texture>colors/white.png</texture>
+	                    <colordiffuse>highlight</colordiffuse>
+	                    <aspectratio>stretch</aspectratio>
+	                    <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
+	                </control>
 	                <control type="label">
-						<visible>Control.HasFocus(9123)</visible>
 	                    <posx>0</posx>
 	                    <posy>0</posy>
-	                    <width>4-col-gutter</width>
+	                    <width>4-col</width>
 	                    <height>2-row</height>
 	                    <font>itemTitle</font>
+	                    <aligny>center</aligny>
+	                    <align>center</align>
 	                    <textcolor>textActive</textcolor>
 	                    <shadowcolor>-</shadowcolor>
 	                    <label>$INFO[ListItem.property(textTitle)]</label>
 						<animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
-	                </control>
-					<control type="label">
-						<visible>!Control.HasFocus(9123)</visible>
-	                    <posx>0</posx>
-	                    <posy>0</posy>
-	                    <width>4-col-gutter</width>
-	                    <height>2-row</height>
-	                    <font>itemTitle</font>
-	                    <selectedcolor>textActive</selectedcolor>
-	                    <shadowcolor>-</shadowcolor>
-	                    <label>$INFO[ListItem.property(textTitle)]</label>
 	                </control>
 	            </focusedlayout>
                 <content>

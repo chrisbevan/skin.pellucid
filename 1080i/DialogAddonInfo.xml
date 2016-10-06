@@ -6,7 +6,7 @@
         <!--About this addon-->
         <control type="group">
             <posx>col-4-begin</posx>
-            <posy>row-1-begin</posy>
+            <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
@@ -34,7 +34,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>24-row</height>
+                <height>20-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -44,15 +44,15 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>10-row</height>
+                <height>8-row</height>
                 <aspectratio aligny="center">scale</aspectratio>
                 <texture fallback="colors/offblack.png">$INFO[ListItem.art(fanart)]</texture>
             </control>
 			<!--screenshots-->
 			<control type="panel" id="50">
-	            <posx>6-col</posx>
-	            <posy>3-row</posy>
-	            <width>12-col</width>
+	            <posx>1-col</posx>
+	            <posy>87</posy>
+	            <width>16-col</width>
 	            <height>8-row</height>
 	            <onleft>50</onleft>
 	            <onright>50</onright>
@@ -89,40 +89,30 @@
 	                </control>
 	            </focusedlayout>
 	        </control>
-			<control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>10-row</height>
-                <aspectratio aligny="center">scale</aspectratio>
-                <texture>vignette.png</texture>
-            </control>
-            <control type="image">
-                <posx>1-col</posx>
-                <posy>7-row</posy>
-                <width>2-col</width>
-                <height>2-col</height>
-                <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-                <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
-            </control>
             <control type="group">
                 <posx>6-col</posx>
-                <posy>12-row</posy>
+                <posy>10-row</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
-                    <height>14-row</height>
+                    <height>12-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
+				<control type="image">
+	                <posx>12</posx>
+	                <posy>12</posy>
+	                <width>2-col-gutter</width>
+	                <height>2-col-gutter</height>
+	                <aspectratio>stretch</aspectratio>
+	                <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+	            </control>
                 <control type="label">
                     <description>Addon Title</description>
-                    <posx>12</posx>
-                    <posy>0</posy>
+                    <posx>2-col-indent</posx>
+                    <posy>12</posy>
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -130,19 +120,19 @@
                     <label>$INFO[ListItem.addonname]</label>
                 </control>
                 <control type="label">
-                    <posx>12</posx>
+                    <posx>2-col-indent</posx>
                     <posy>2-row</posy>
                     <width>12-col-gutter</width>
-                    <font>small</font>
+                    <font>smallStrong</font>
                     <textcolor>highlight</textcolor>
-                    <label>[B]$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,][/B]</label>
+                    <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
                     <posy>4-row</posy>
                     <font>textbox</font>
                     <width>12-col-gutter</width>
-                    <height>9-row</height>
+                    <height>7-row</height>
                     <label>$INFO[ListItem.AddonDescription]</label>
                     <autoscroll delay="5000" time="1000" repeat="10000"/>
                 </control>
@@ -151,7 +141,7 @@
             <control type="group">
                 <visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
                 <posx>0</posx>
-                <posy>12-row</posy>
+                <posy>10-row</posy>
                 <control type="list" id="8000">
                     <posx>0</posx>
                     <posy>0</posy>

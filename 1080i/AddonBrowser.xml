@@ -23,14 +23,14 @@
 	            	<control type="panel" id="50">
 		                <posx>col-1-begin</posx>
 		                <posy>row-5-begin</posy>
-		                <width>15-col</width>
+		                <width>24-col</width>
 		                <height>23-row</height>
 		                <onleft>9000</onleft>
 		                <onright>60</onright>
 		                <ondown>50</ondown>
 		                <onup>50</onup>
 		                <pagecontrol>60</pagecontrol>
-		                <itemlayout width="15-col" height="2-row">
+		                <itemlayout width="8-col" height="2-row">
 		                    <control type="image">
 		                        <posx>0</posx>
 		                        <posy>3</posy>
@@ -39,178 +39,75 @@
 		                        <aspectratio scalediffuse="false">stretch</aspectratio>
 		                        <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 		                    </control>
-		                    <control type="image">
-		                        <posx>1-col</posx>
-		                        <posy>0</posy>
-		                        <width>12-col-textbox</width>
-		                        <height>69</height>
-		                        <aspectratio>stretch</aspectratio>
-		                        <texture border="0">colors/black.png</texture>
-		                        <colordiffuse>textboxInactive</colordiffuse>
-		                    </control>
 							<control type="image">
-		                        <posx>13-col</posx>
-		                        <posy>0</posy>
-		                        <width>1-col-textbox</width>
-		                        <height>69</height>
-		                        <aspectratio>stretch</aspectratio>
-		                        <texture border="0">colors/black.png</texture>
-		                        <colordiffuse>textboxInactive</colordiffuse>
-		                    </control>
-							<control type="image">
-		                        <posx>14-col</posx>
-		                        <posy>0</posy>
-		                        <width>1-col</width>
-		                        <height>69</height>
-		                        <aspectratio>stretch</aspectratio>
-		                        <texture border="0">colors/black.png</texture>
-		                        <colordiffuse>textboxInactive</colordiffuse>
-		                    </control>
-		                    <control type="label">
-		                        <posx>1-col-indent</posx>
-		                        <posy>0</posy>
-		                        <width>11-col-gutter</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <font>itemTitle</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label>$INFO[ListItem.Label]</label>
-		                    </control>
-		                    <control type="label">
 								<visible>ListItem.AddonBroken</visible>
-		                        <posx>12-col-gutter</posx>
-		                        <posy>0</posy>
-		                        <width>2-col</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <align>right</align>
-		                        <font>symbolLarge</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label></label>
-		                    </control>
-							<control type="label">
-								<visible>ListItem.Property(Addon.IsInstalled)</visible>
-		                        <posx>985</posx>
-		                        <posy>0</posy>
-		                        <width>1-col</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <align>right</align>
-		                        <font>symbolLarge</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label></label>
-		                    </control>
-		                </itemlayout>
-		                <focusedlayout width="15-col" height="2-row">
-		                    <control type="image">
 		                        <posx>0</posx>
 		                        <posy>3</posy>
 		                        <width>66</width>
 		                        <height>66</height>
 		                        <aspectratio scalediffuse="false">stretch</aspectratio>
-		                        <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-		                        <animation type="focus" loop="false" reversible="false">
+		                        <texture diffuse="masks/circle.png" border="0">colors/white.png</texture>
+								<colordiffuse>77ff0000</colordiffuse>
+		                    </control>
+		                    <control type="label">
+			                    <posx>1-col-indent</posx>
+			                    <posy>0</posy>
+			                    <width>6-col</width>
+			                    <height>2-row</height>
+			                    <aligny>center</aligny>
+			                    <font>itemTitle</font>
+			                    <textcolor>textActive</textcolor>
+			                    <shadowcolor>-</shadowcolor>
+			                    <label>$INFO[ListItem.Label]</label>
+			                </control>
+		                </itemlayout>
+		                <focusedlayout width="8-col" height="2-row">
+		                    <control type="group">
+								<animation type="focus" loop="false" reversible="false">
 		                            <effect type="fade" time="500"/>
 		                            <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
 		                        </animation>
-		                    </control>
+								<control type="image">
+			                        <posx>0</posx>
+			                        <posy>3</posy>
+			                        <width>66</width>
+			                        <height>66</height>
+			                        <aspectratio scalediffuse="false">stretch</aspectratio>
+			                        <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+			                    </control>
+								<control type="image">
+									<visible>ListItem.AddonBroken</visible>
+			                        <posx>0</posx>
+			                        <posy>3</posy>
+			                        <width>66</width>
+			                        <height>66</height>
+			                        <aspectratio scalediffuse="false">stretch</aspectratio>
+			                        <texture diffuse="masks/circle.png" border="0">colors/white.png</texture>
+									<colordiffuse>77ff0000</colordiffuse>
+			                    </control>
+							</control>
 		                    <control type="image">
 		                        <posx>1-col</posx>
 		                        <posy>0</posy>
-		                        <width>14-col</width>
+		                        <width>7-col</width>
 		                        <height>2-row</height>
 		                        <aspectratio>stretch</aspectratio>
 		                        <texture border="0">colors/white.png</texture>
 		                        <colordiffuse>highlight</colordiffuse>
 		                    </control>
 							<control type="label">
-		                        <posx>1-col-indent</posx>
-		                        <posy>0</posy>
-		                        <width>11-col-gutter</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <font>itemTitle</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label>$INFO[ListItem.Label]</label>
-		                    </control>
-		                    <control type="label">
-								<visible>ListItem.AddonBroken</visible>
-		                        <posx>12-col-gutter</posx>
-		                        <posy>0</posy>
-		                        <width>2-col</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <align>right</align>
-		                        <font>symbolLarge</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label></label>
-		                    </control>
-							<control type="label">
-								<visible>ListItem.Property(Addon.IsInstalled)</visible>
-		                        <posx>985</posx>
-		                        <posy>0</posy>
-		                        <width>1-col</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <align>right</align>
-		                        <font>symbolLarge</font>
-		                        <textcolor>textActive</textcolor>
-		                        <shadowcolor>-</shadowcolor>
-		                        <label></label>
-		                    </control>
+			                    <posx>1-col-indent</posx>
+			                    <posy>0</posy>
+			                    <width>6-col</width>
+			                    <height>2-row</height>
+			                    <aligny>center</aligny>
+			                    <font>itemTitle</font>
+			                    <textcolor>textActive</textcolor>
+			                    <shadowcolor>-</shadowcolor>
+			                    <label>$INFO[ListItem.Label]</label>
+			                </control>
 		                </focusedlayout>
 		            </control>
-	            </control>
-				<!--cover art-->
-	            <control type="group">
-	                <posx>col-17-begin</posx>
-	                <posy>222</posy>
-	                <control type="group">
-	                    <animation type="windowopen">
-	                        <effect type="fade" start="0" end="100" time="300" delay="700"/>
-	                        <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="700"/>
-	                        <effect type="zoom" end="90" time="0"/>
-	                    </animation>
-	                    <control type="group">
-	                        <control type="image">
-	                            <posx>0</posx>
-	                            <posy>0</posy>
-	                            <width>8-col</width>
-	                            <height>8-col</height>
-	                            <aspectratio scalediffuse="false">stretch</aspectratio>
-	                            <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-	                            <fadetime>200</fadetime>
-	                        </control>
-	                    </control>
-	                </control>
-					<control type="group">
-						<posy>13-row</posy>
-						<control type="label">
-			                <description>Addon Title</description>
-			                <visible>!isempty(ListItem.AddonCreator)</visible>
-			                <posx>0</posx>
-			                <posy>58</posy>
-			                <width>7-col</width>
-			                <height>2-row</height>
-			                <aligny>center</aligny>
-			                <font>mediumLight</font>
-			                <label>$INFO[ListItem.label]</label>
-			            </control>
-			            <control type="textbox" id="400">
-			                <posx>0</posx>
-			                <posy>4-row</posy>
-			                <font>textbox</font>
-			                <width>7-col</width>
-			                <height>178</height>
-			                <label>$INFO[ListItem.AddonDescription]</label>
-			                <autoscroll delay="5000" time="1000" repeat="10000"/>
-			            </control>
-					</control>		
 	            </control>
 	        </control>
 			<!--page scrollbar-->
@@ -219,8 +116,8 @@
 	            <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
 	            <control type="scrollbar" id="60">
                     <posx>48r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>23-row</height>
+                    <posy>row-11-begin</posy>
+                    <height>9-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>

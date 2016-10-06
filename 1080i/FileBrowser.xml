@@ -40,7 +40,7 @@
             <posx>col-6-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <include>modalDialogInOut</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -65,7 +65,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>16-col</width>
-                <height>732</height>
+                <height>722</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -74,18 +74,18 @@
                 <posx>12-col</posx>
                 <posy>2-row</posy>
                 <width>4-col</width>
-                <height>732</height>
+                <height>722</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="panel" id="450">
-                <posx>6</posx>
-                <posy>78</posy>
+                <posx>0</posx>
+                <posy>75</posy>
                 <width>12-col</width>
                 <height>20-row</height>
                 <onright>9000</onright>
-                <itemlayout height="75" width="12-col">
+                <itemlayout height="72" width="12-col">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -110,7 +110,7 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>780</width>
+                        <width>11-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>

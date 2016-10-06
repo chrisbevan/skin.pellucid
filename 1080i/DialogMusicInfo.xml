@@ -282,7 +282,7 @@
                     <posy>24</posy>
                     <width>528</width>
                     <align>left</align>
-                    <height>3-row</height>
+                    <height>100</height>
                     <aligny>center</aligny>
                     <font>largeLight</font>
                     <textcolor>textActive</textcolor>
@@ -291,18 +291,18 @@
              </control>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>-12</posy>
+                    <posy>-24</posy>
                     <width>528</width>
                     <align>left</align>
-                    <font>smallLight</font>
+                    <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[ListItem.artist,, ]$INFO[Listitem.year,(,)]</label>
+                    <label>$INFO[ListItem.artist]</label>
                     <shadowcolor>-</shadowcolor>
                 </control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>5-row</posy>
+                    <posy>168</posy>
                     <font>textbox</font>
                     <width>528</width>
                     <align>left</align>
