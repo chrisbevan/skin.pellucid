@@ -214,6 +214,7 @@
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
         </control>
+		<include>miniVideoPlayer</include>
 		<!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

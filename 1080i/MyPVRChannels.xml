@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9999</defaultcontrol>
-
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
         <include>globalBackground</include>
@@ -73,35 +71,10 @@
                     <textcolor>textActive</textcolor>
                 </control>
             </control>
-
             <!--dateTime-->
             <include>dateTime</include>
-
-			<!--mini player window-->
-			<control type="group">
-				<visible>Player.HasVideo</visible>
-				<posx>col-20-begin</posx>
-				<posy>row-22-begin</posy>
-				<control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>444</width>
-                    <height>255</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/black.png</texture>
-					<bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <colordiffuse>overlay</colordiffuse>
-                </control>
-				<control type="videowindow">
-					<posx>6</posx>
-					<posy>6</posy>
-					<width>6-col</width>
-					<height>243</height>
-				</control>
-			</control>
         </control>
-
+		<include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

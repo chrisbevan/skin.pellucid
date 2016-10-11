@@ -2,8 +2,6 @@
 <window>
     <views>10</views>
     <defaultcontrol always="false">9999</defaultcontrol>
-
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
         <include>globalBackground</include>
@@ -175,6 +173,7 @@
             <!--dateTime-->
             <include>dateTime</include>
         </control>
+		<include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

@@ -40,13 +40,13 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <--addon details-->
-            <control type="image">
+			<control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
                 <height>8-row</height>
                 <aspectratio aligny="center">scale</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[ListItem.art(fanart)]</texture>
+                <texture fallback="colors/black.png">$INFO[ListItem.art(fanart)]</texture>
             </control>
 			<!--screenshots-->
 			<control type="panel" id="50">

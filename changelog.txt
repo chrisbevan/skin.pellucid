@@ -19,14 +19,18 @@
 
 [TODO]
 
+Home Backgrounds (esp. non library)
+
+Fix stop from fullscreen music view
+
 Skin shortcuts for all sub menus
 - homescreen images
 
 Check yes / no progress bar works ok
 
-PRV mini window and recordings storage indicator
+and recordings storage indicator
 
-Revise player stop on return
+Add user option Revise player stop on return
 
 DialogAudioDSPManager.xml
 

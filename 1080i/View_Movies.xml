@@ -70,16 +70,7 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>11-col-textbox</width>
-                        <height>69</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="0">colors/black.png</texture>
-                        <colordiffuse>textboxInactive</colordiffuse>
-                    </control>
-					<control type="image">
-                        <posx>12-col</posx>
-                        <posy>0</posy>
-                        <width>2-col-textbox</width>
+                        <width>13-col-textbox</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="0">colors/black.png</texture>
@@ -97,7 +88,7 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>11-col-gutter</width>
+                        <width>12-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -106,16 +97,16 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>12-col-gutter</posx>
+                        <posx>708</posx>
                         <posy>0</posy>
-                        <width>2-col</width>
+                        <width>4-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <align>right</align>
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.duration, , $LOCALIZE[31018]]</label>
+                        <label>$INFO[ListItem.year]</label>
                     </control>
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>
@@ -156,7 +147,7 @@
 					<control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
-                        <width>11-col-gutter</width>
+                        <width>12-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -165,16 +156,16 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <posx>12-col-gutter</posx>
+                        <posx>708</posx>
                         <posy>0</posy>
-                        <width>2-col</width>
+                        <width>4-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <align>right</align>
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.duration, , $LOCALIZE[31018]]</label>
+                        <label>$INFO[ListItem.year]</label>
                     </control>
 					<control type="label">
 						<visible>!isempty(ListItem.playcount)</visible>

@@ -46,7 +46,7 @@ msgid "Power"
 msgstr ""
 
 msgctxt "#31005"
-msgid "What's New"
+msgid "Latest Content"
 msgstr ""
 
 msgctxt "#31006"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="homeBackground">
+		<!--Video content-->
         <control type="group">
             <animation type="conditional" condition="!Skin.HasSetting(lowPowerMode)" loop="true">
                 <effect type="fade" start="0" end="100" time="5000"/>
@@ -12,8 +13,7 @@
 			<animation type="conditional" condition="Skin.HasSetting(lowPowerMode)">
                 <effect type="fade" start="0" end="100" time="5000"/>
             </animation>
-            <!--library based thumbs-->
-            <control type="panel" id="9451">
+            <control type="panel">
                 <enable>false</enable>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -28,193 +28,19 @@
                     <effect type="fade" end="0" time="0"/>
                 </animation>
                 <itemlayout width="3-col" height="3-col">
-                    <control type="image">
-                        <visible>Container(9000).HasFocus(10)</visible>
+                    <control type="image">  		
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>3-col-textbox</width>
-                        <height>3-col-textbox</height>
+                        <width>204</width>
+                        <height>204</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.art(poster)]</texture>
-                        <colordiffuse>44FFFFFF</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <visible>!Container(9000).HasFocus(10)</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>3-col-textbox</width>
-                        <height>3-col-textbox</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
+                        <texture border="0">$INFO[Listitem.thumb]</texture>
                         <colordiffuse>44FFFFFF</colordiffuse>
                     </control>
                 </itemlayout>
                 <focusedlayout/>
-                <content>$VAR[homescreenCollage]</content>
+                <content>special://skin/extras/playlists/collage_RandomContent.xsp</content>
             </control>
-            
-			<!--Discs inserted / Live TV-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(10) | Container(9000).HasFocus(13) | Container(9000).HasFocus(14)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-	            <control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	                <animation type="windowopen">
-	                    <effect type="fade" end="100" time="1000" delay="800"/>
-	                </animation>
-	            </control>
-			</control>
-			
-			<!--videos (no library present)-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(1) + !Library.HasContent(Movies)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/videos.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--music (no Library)-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(2) + !Library.HasContent(Music)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/music.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--photos-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(9)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/weather.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--games-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(4)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/games.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--photos-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(3)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/photos.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--search-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(6)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/search.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--settings-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(7) | Container(9000).HasFocus(11)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/settings.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--power-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(8)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/power.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
-			
-            <!--advanced launcher-->
-			<control type="group">
-				<visible>Container(9000).HasFocus(12)</visible>
-				<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>colors/black.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-            	<control type="image">
-	                <include>dimensionsFullscreen</include>
-	                <texture>special://skin/extras/backgrounds/advancedLauncher.jpg</texture>
-	                <colordiffuse>44ffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-			</control>
         </control>
     </include>
 </includes>

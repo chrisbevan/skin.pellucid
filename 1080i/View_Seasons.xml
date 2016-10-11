@@ -92,8 +92,20 @@
                             <bordersize>6</bordersize>
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
+						<control type="label">
+                            <visible>ListItem.IsParentFolder</visible>
+                            <posx>12</posx>
+                            <posy>4-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textDisabled</textcolor>
+                            <label>..</label>
+                        </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
                             <posy>4-row</posy>
                             <width>240</width>
@@ -142,17 +154,30 @@
                                 <bordersize>6</bordersize>
                                 <colordiffuse>ff666666</colordiffuse>
                             </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>4-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011] ]</label>
-                            </control>
+							<control type="label">
+	                            <visible>ListItem.IsParentFolder</visible>
+	                            <posx>12</posx>
+	                            <posy>4-row</posy>
+	                            <width>240</width>
+	                            <height>2-row</height>
+	                            <align>center</align>
+	                            <aligny>center</aligny>
+	                            <font>regularStrong</font>
+	                            <textcolor>textActive</textcolor>
+	                            <label>..</label>
+	                        </control>
+	                        <control type="label">
+	                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
+	                            <posx>12</posx>
+	                            <posy>4-row</posy>
+	                            <width>240</width>
+	                            <height>2-row</height>
+	                            <align>center</align>
+	                            <aligny>center</aligny>
+	                            <font>regularStrong</font>
+	                            <textcolor>textActive</textcolor>
+	                            <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011] ]</label>
+	                        </control>
                             <control type="label">
                                 <posx>12</posx>
                                 <posy>5-row</posy>

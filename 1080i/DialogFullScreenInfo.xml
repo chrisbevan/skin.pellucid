@@ -10,6 +10,29 @@
                 <effect type="fade" start="100" end="0" time="200" tween="sine" easing="in"/>
             </animation>
             <include>dateTime</include>
+
+			<!--thumbnail-->
+			<control type="group">
+				<posx>col-1-begin</posx>
+                <posy>row-1-begin</posy>
+				<animation type="Windowopen">
+                    <effect type="fade" start="0" end="100" time="300"/>
+                    <effect type="slide" start="0,-300" end="0,0" tween="cubic" easing="out" time="400"/>
+                </animation>
+                <animation type="Windowclose">
+                    <effect type="fade" start="100" end="0" time="300"/>
+                    <effect type="slide" end="0,-300" tween="cubic" easing="out" time="400"/>
+                </animation>
+				<control type="image">
+	                <posx>0</posx>
+	                <posy>0</posy>
+	                <width>2-col-textbox</width>
+	                <height>4-col-textbox</height>
+	                <aspectratio scalediffuse="false" aligny="top">keep</aspectratio>
+	                <texture border="0">$INFO[player.art(thumb)]</texture>
+	            </control>
+			</control>
+
             <control type="group">
                 <posx>0</posx>
                 <posy>row-22-begin</posy>
@@ -31,34 +54,16 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
 				<control type="image">
-                    <posx>col-4-begin</posx>
+                    <posx>col-1-begin</posx>
                     <posy>0</posy>
-                    <width>21-col</width>
+                    <width>24-col</width>
                     <height>2-row</height>
                     <texture colordiffuse="highlight">colors/white.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-				<!--thumbnail-->
-				<control type="image">
-                    <posx>col-1-begin</posx>
-	                <posy>0</posy>
-	                <width>3-col-textbox</width>
-	                <height>3-col-textbox</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>DefaultAlbumCover.png</texture>
-                    <colordiffuse></colordiffuse>
-                </control>
-				<control type="image">
-	                <posx>col-1-begin</posx>
-	                <posy>0</posy>
-	                <width>3-col-textbox</width>
-	                <height>3-col-textbox</height>
-	                <aspectratio scalediffuse="false">scale</aspectratio>
-	                <texture border="0">$INFO[player.art(thumb)]</texture>
-	            </control>
                 <control type="label">
-                    <posx>324</posx>
+                    <posx>120</posx>
                     <posy>0</posy>
                     <width>16-col</width>
                     <height>2-row</height>
@@ -91,10 +96,10 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="textbox">
-                	<posx>324</posx>
+                	<posx>120</posx>
                     <posy>84</posy>
                     <font>textbox</font>
-                    <width>1476</width>
+                    <width>23-col</width>
                     <textcolor>textActive</textcolor>
                     <height>116</height>
                     <label fallback="31205">$INFO[videoplayer.plot]</label>

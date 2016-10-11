@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <onload condition="window.previous(0)">setfocus(9000)</onload>
     <previouswindow>home</previouswindow>
     <controls>
@@ -80,8 +79,9 @@
                 </control>
                 <!--dateTime-->
                 <include>dateTime</include>
-            </control>
+            </control>			
         </control>
+		<include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

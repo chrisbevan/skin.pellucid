@@ -31,12 +31,12 @@
                 <visible>Library.HasContent(Video)</visible>
                 <label>31005</label>
                 <label2/>
-                <onclick>activateWindow(VidvideoseoLibrary)</onclick>
+                <onclick>activateWindow(VideoLibrary)</onclick>
                 <onclick>Skin.SetString(showRecentVideoItems,true)</onclick>
                 <onclick>Control.SetFocus(9998)</onclick>
             </item>
             <item>
-                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                <visible>PVR.HasTVChannels</visible>
                 <label>31006</label>
                 <label2/>
                 <onclick>ActivateWindow(TVChannels)</onclick>
@@ -44,7 +44,7 @@
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
             <item>
-                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                <visible>PVR.HasTVChannels</visible>
                 <label>31112</label>
                 <label2/>
                 <onclick>ActivateWindow(TVGuide)</onclick>
@@ -52,7 +52,7 @@
                 <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
             </item>
             <item>
-                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                <visible>PVR.HasTVChannels</visible>
                 <label>19163</label>
                 <label2/>
                 <onclick>ActivateWindow(TVRecordings)</onclick>

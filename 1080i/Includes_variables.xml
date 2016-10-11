@@ -76,11 +76,6 @@
         <value condition="window.isactive(infodialog) + window.isactive(extendedprogressdialog)">323</value>
         <value>95</value>
     </variable>
-    <!--homescreen background image content-->
-    <variable name="homescreenCollage">
-        <value condition="Container(9000).HasFocus(1)">special://skin/extras/playlists/collage_RandomMovies.xsp</value>
-        <value condition="Container(9000).HasFocus(2)">special://skin/extras/playlists/collage_RandomAlbums.xsp</value>
-    </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
         <value condition="SubString(MusicPlayer.Rating,1)"></value>
