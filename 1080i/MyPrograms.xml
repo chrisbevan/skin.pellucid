@@ -29,7 +29,7 @@
 			            <onback>9000</onback>
 			            <pagecontrol>60</pagecontrol>
 			            <scrolltime tween="cubic" easing="out">600</scrolltime>
-			            <itemlayout width="300" height="348">
+			            <itemlayout width="4-col" height="348">
 			                <control type="image">
 			                    <posx>0</posx>
 			                    <posy>0</posy>
@@ -44,22 +44,20 @@
 			                <control type="label">
 			                    <visible>!controlgroup(9000).hasfocus</visible>
 			                    <posx>12</posx>
-			                    <posy>264</posy>
+			                    <posy>262</posy>
 			                    <width>240</width>
 			                    <height>1-row</height>
-			                    <align>center</align>
 			                    <aligny>center</aligny>
 			                    <font>thumbtitle</font>
-			                    <textcolor>textDisabled</textcolor>
+			                    <textcolor>textActive</textcolor>
 			                    <label>[B]$INFO[ListItem.label][/B]</label>
 			                </control>
 			                <control type="label">
 			                    <visible>!controlgroup(9000).hasfocus</visible>
 			                    <posx>12</posx>
-			                    <posy>292</posy>
+			                    <posy>286</posy>
 			                    <width>240</width>
 			                    <height>1-row</height>
-			                    <align>center</align>
 			                    <aligny>center</aligny>
 			                    <font>thumbTitle</font>
 			                    <textcolor>textDisabled</textcolor>
@@ -103,10 +101,9 @@
 			                    </control>
 			                    <control type="label">
 			                        <posx>12</posx>
-			                        <posy>264</posy>
+			                        <posy>262</posy>
 			                        <width>240</width>
 			                        <height>1-row</height>
-			                        <align>center</align>
 			                        <aligny>center</aligny>
 			                        <font>thumbtitle</font>
 			                        <textcolor>textActive</textcolor>
@@ -114,10 +111,9 @@
 			                    </control>
 			                    <control type="label">
 			                        <posx>12</posx>
-			                        <posy>292</posy>
+			                        <posy>286</posy>
 			                        <width>240</width>
 			                        <height>1-row</height>
-			                        <align>center</align>
 			                        <aligny>center</aligny>
 			                        <font>thumbTitle</font>
 			                        <textcolor>textActive</textcolor>

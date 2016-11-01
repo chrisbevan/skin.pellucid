@@ -79,7 +79,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
+                            <label>$INFO[ListItem.Date,,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="24-col" height="2-row">
@@ -139,28 +139,28 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
+                            <label>$INFO[ListItem.Date,,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </focusedlayout>
                 </control>
                 <!--Additional info-->
                 <control type="group">
-                    <posx>0</posx>
+                    <posx>16-col</posx>
                     <posy>22-row</posy>
                     <control type="progress">
                         <description>Disk usage bar</description>
                         <left>0</left>
                         <top>1</top>
-                        <width>24-col</width>
+                        <width>8-col</width>
                         <height>1-row</height>
-                        <texturebg colordiffuse="overlay">colors/black.png</texturebg>
+                        <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
                         <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                         <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>24-col</width>
+                        <width>8-col</width>
                         <font>itemSubTitle</font>
                         <align>center</align>
                         <textcolor>background</textcolor>
@@ -207,7 +207,6 @@
             <!--dateTime-->
             <include>dateTime</include>
         </control>
-		<include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

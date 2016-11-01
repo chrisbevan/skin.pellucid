@@ -19,6 +19,8 @@
 
 [TODO]
 
+event log screen (in settings)
+
 Home Backgrounds (esp. non library)
 
 Fix stop from fullscreen music view
@@ -28,17 +30,16 @@ Skin shortcuts for all sub menus
 
 Check yes / no progress bar works ok
 
-and recordings storage indicator
-
 Add user option Revise player stop on return
 
 DialogAudioDSPManager.xml
+
+Gamepad setup
 
 DialogPlayerProcessInfo.xml
 
 Check RCB (e.g. busy spinner and menu width)
 
-Check screenshots work in dialogAddonSettings
 
 check all active strings
 MyPVRTimers needs creating and testing

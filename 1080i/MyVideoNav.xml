@@ -81,7 +81,6 @@
                 <include>dateTime</include>
             </control>			
         </control>
-		<include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
