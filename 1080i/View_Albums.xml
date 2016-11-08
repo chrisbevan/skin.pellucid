@@ -39,7 +39,7 @@
                     <height>4-col-gutter</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="6">DefaultAlbumCover.png</texture>
-                    <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                    <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
                     <bordersize>6</bordersize>
                     <colordiffuse>overlay</colordiffuse>
                 </control>
@@ -84,7 +84,7 @@
                     <height>4-col-gutter</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="6">$INFO[Listitem.thumb]</texture>
-                    <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                    <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
                     <bordersize>6</bordersize>
                     <colordiffuse>ffFFFFFF</colordiffuse>
                 </control>
@@ -125,26 +125,26 @@
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
-					<control type="label">
-	                    <posx>12</posx>
-	                    <posy>262</posy>
-	                    <width>240</width>
-	                    <height>1-row</height>
-	                    <aligny>center</aligny>
-	                    <font>thumbtitle</font>
-	                    <textcolor>textActive</textcolor>
-	                    <label>[B]$INFO[ListItem.Title][/B]</label>
-	                </control>
-	                <control type="label">
-	                    <posx>12</posx>
-	                    <posy>286</posy>
-	                    <width>240</width>
-	                    <height>1-row</height>
-	                    <aligny>center</aligny>
-	                    <font>thumbTitle</font>
-	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[ListItem.artist]</label>
-	                </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>262</posy>
+                        <width>240</width>
+                        <height>1-row</height>
+                        <aligny>center</aligny>
+                        <font>thumbtitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>[B]$INFO[ListItem.Title][/B]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>286</posy>
+                        <width>240</width>
+                        <height>1-row</height>
+                        <aligny>center</aligny>
+                        <font>thumbTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label>$INFO[ListItem.artist]</label>
+                    </control>
                 </control>
             </focusedlayout>
         </control>

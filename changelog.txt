@@ -19,6 +19,14 @@
 
 [TODO]
 
+Check control is active for recent items
+
+Dialog OK / yesNo revision
+
+Revise onback for the menu to prevent dodgy nav
+
+Rework Addon selection to single list with large right space (same size as addon info)
+
 event log screen (in settings)
 
 Home Backgrounds (esp. non library)
@@ -26,7 +34,6 @@ Home Backgrounds (esp. non library)
 Fix stop from fullscreen music view
 
 Skin shortcuts for all sub menus
-- homescreen images
 
 Check yes / no progress bar works ok
 

@@ -7,25 +7,16 @@
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-
             <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
             <!--Main content listing-->
             <control type="group" id="9999">
-                <!--recent items-->
-                <control type="group">
-                    <visible>Library.HasContent(Music) + SubString(skin.string(showRecentMusicItems),true)</visible>
-                    <onleft>9000</onleft>
-                    <include>musicRecentItems</include>
-                </control>
                 <!--source content-->
                 <control type="group" id="9500">
-                    <visible>skin.string(showRecentMusicItems) + SubString(skin.string(showRecentMusicItems),false)</visible>
                     <include>artist</include>
                     <include>album</include>
                     <include>artistalbums</include>
@@ -35,10 +26,9 @@
                     <include>musicaddons</include>
                 </control>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="8000">
-                <visible>Control.IsVisible(60) + SubString(skin.string(showRecentMusicItems),false)</visible>
+                <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
                     <posx>48r</posx>
@@ -48,7 +38,6 @@
                     <onback>9999</onback>
                 </control>
             </control>
-
             <!--Folder titles-->
             <control type="group">
                 <posx>0</posx>

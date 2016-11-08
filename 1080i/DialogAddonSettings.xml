@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9</defaultcontrol>
-
     <controls>
         <include>globalBackground</include>
         <!--configuration options-->
@@ -42,7 +41,7 @@
                 <width>4-col-gutter</width>
                 <height>4-col-gutter</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[System.AddonIcon(ListItem.Addonid)]</texture>
+                <texture>$INFO[System.AddonIcon(ListItem.Addonid)]</texture>
                 <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
@@ -65,7 +64,6 @@
                 <label>$INFO[ListItem.AddonName] $LOCALIZE[5]</label>
                 <textcolor>textActive</textcolor>
             </control>
-
             <!--subnav-->
             <control type="grouplist" id="9">
                 <posx>0</posx>
@@ -76,7 +74,6 @@
                 <onright>2</onright>
                 <orientation>vertical</orientation>
             </control>
-
             <!--options area-->
             <control type="image">
                 <posx>4-col</posx>
@@ -96,7 +93,6 @@
                 <onright>9001</onright>
                 <orientation>vertical</orientation>
             </control>
-
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>18-col</posx>

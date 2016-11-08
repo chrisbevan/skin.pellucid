@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
     <color name="black">ff111111</color>
-    <color name="background">ff222222</color>
-    <color name="highlight">ffee3343</color>
+    <color name="background">66222222</color>
+    <color name="highlight">ffe8175d</color>
     <color name="overlay">44ffffff</color>
     <color name="textActive">fff0f0f0</color>
     <color name="textDisabled">ff757575</color>

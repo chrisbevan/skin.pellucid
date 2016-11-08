@@ -40,7 +40,7 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <--addon details-->
-			<control type="image">
+            <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
@@ -48,47 +48,47 @@
                 <aspectratio aligny="center">scale</aspectratio>
                 <texture fallback="colors/black.png">$INFO[ListItem.art(fanart)]</texture>
             </control>
-			<!--screenshots-->
-			<control type="panel" id="50">
-	            <posx>1-col</posx>
-	            <posy>87</posy>
-	            <width>16-col</width>
-	            <height>8-row</height>
-	            <onleft>50</onleft>
-	            <onright>50</onright>
-	            <ondown>8000</ondown>
-				<orientation>horizontal</orientation>
-	            <scrolltime tween="cubic" easing="out">600</scrolltime>
-	            <itemlayout width="444" height="336">
-	                <control type="image">
-	                    <posx>0</posx>
-	                    <posy>0</posy>
-	                    <width>6-col-gutter</width>
-	                    <height>4-col-gutter</height>
-	                    <aspectratio>scale</aspectratio>
-	                    <texture border="6">$INFO[Listitem.thumb]</texture>
-	                    <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
-	                    <bordersize>3</bordersize>
-	                    <colordiffuse>ffffffff</colordiffuse>
-	                </control>
-	            </itemlayout>
-	            <focusedlayout width="444" height="336">
-	                <control type="group">
-	                    <include>focusThumb</include>
-	                    <control type="image">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>6-col-gutter</width>
-	                        <height>4-col-gutter</height>
-	                        <aspectratio>scale</aspectratio>
-	                        <texture>$INFO[Listitem.thumb]</texture>
-	                        <bordertexture border="6">colors/white.png</bordertexture>
-	                        <bordersize>6</bordersize>
-	                        <colordiffuse>ffffffff</colordiffuse>
-	                    </control>
-	                </control>
-	            </focusedlayout>
-	        </control>
+            <!--screenshots-->
+            <control type="panel" id="50">
+                <posx>1-col</posx>
+                <posy>87</posy>
+                <width>16-col</width>
+                <height>8-row</height>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <ondown>8000</ondown>
+                <orientation>horizontal</orientation>
+                <scrolltime tween="cubic" easing="out">600</scrolltime>
+                <itemlayout width="444" height="336">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture border="6">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="444" height="336">
+                    <control type="group">
+                        <include>focusThumb</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>6-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture>$INFO[Listitem.thumb]</texture>
+                            <bordertexture border="6">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
             <control type="group">
                 <posx>6-col</posx>
                 <posy>10-row</posy>
@@ -101,14 +101,14 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-				<control type="image">
-	                <posx>12</posx>
-	                <posy>12</posy>
-	                <width>2-col-gutter</width>
-	                <height>2-col-gutter</height>
-	                <aspectratio>stretch</aspectratio>
-	                <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-	            </control>
+                <control type="image">
+                    <posx>12</posx>
+                    <posy>12</posy>
+                    <width>2-col-gutter</width>
+                    <height>2-col-gutter</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+                </control>
                 <control type="label">
                     <description>Addon Title</description>
                     <posx>2-col-indent</posx>
@@ -149,7 +149,7 @@
                     <height>14-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
-					<onup>50</onup>
+                    <onup>50</onup>
                     <itemlayout width="6-col" height="2-row">
                         <control type="label">
                             <posx>0</posx>
@@ -245,23 +245,16 @@
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(8) + SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
-                            <label2></label2>
+                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),enable)</visible>
+                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label2></label2>
                             <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
+                            <onclick>SendClick(146,7)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(8) + !SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
-                        </item>
-                        <item>
-                            <visible>Control.IsEnabled(7)</visible>
-                            <label>$INFO[Control.GetLabel(7)]</label>
-                            <label2></label2>
+                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),disable)</visible>
+                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
@@ -289,9 +282,6 @@
             </control>
             <control type="button" id="12">
                 <description>Launch addon</description>
-            </control>
-            <control type="radiobutton" id="13">
-                <description>Enable / disable auto update</description>
             </control>
         </control>
         <!--debugging-->

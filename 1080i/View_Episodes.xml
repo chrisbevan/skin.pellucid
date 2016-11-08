@@ -37,17 +37,26 @@
         </control>
 
         <!--overlay-->
-        <control type="image">
+        <control type="group">
             <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
             <posx>949</posx>
             <posy>0</posy>
-            <width>972</width>
-            <height>fullscreenHeight</height>
-            <aspectratio scalediffuse="false">stretch</aspectratio>
-            <texture border="0">colors/white.png</texture>
-            <bordertexture border="3" colordiffuse="highlight">colors/white.png</bordertexture>
-            <bordersize>6,0,0,0</bordersize>
-            <colordiffuse>background</colordiffuse>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ffFFFFFF</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <include>globalBackground</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>6</width>
+                <height>fullscreenHeight</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
         </control>
 
         <!--title-->
@@ -114,7 +123,7 @@
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
                     <control type="label">
-						<visible>ListItem.IsParentFolder</visible>
+                        <visible>ListItem.IsParentFolder</visible>
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
                         <width>9-col</width>
@@ -126,7 +135,7 @@
                         <label>..</label>
                         <scroll>false</scroll>
                     </control>
-					<control type="label">
+                    <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
                         <width>9-col</width>
@@ -187,8 +196,8 @@
                         <bordersize>0</bordersize>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
-					<control type="label">
-						<visible>ListItem.IsParentFolder</visible>
+                    <control type="label">
+                        <visible>ListItem.IsParentFolder</visible>
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
                         <width>9-col</width>

@@ -19,7 +19,6 @@
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-
         <!--Folder titles-->
         <control type="group">
             <posx>0</posx>
@@ -220,7 +219,6 @@
                 <!--panel ends-->
             </control>
         </control>
-
         <!--location control-->
         <control type="button" id="100">
             <description>change location button</description>
@@ -231,7 +229,6 @@
             <onright>Weather.LocationNext</onright>
             <onleft>Weather.LocationPrevious</onleft>
         </control>
-
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

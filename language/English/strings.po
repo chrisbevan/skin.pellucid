@@ -74,7 +74,7 @@ msgid "Season"
 msgstr ""
 
 msgctxt "#31012"
-msgid "Video Library"
+msgid "My Library"
 msgstr ""
 
 msgctxt "#31013"
@@ -413,6 +413,10 @@ msgctxt "#31103"
 msgid "Control how Kodi is used"
 msgstr ""
 
+msgctxt "#31104"
+msgid "Addon"
+msgstr ""
+
 msgctxt "#31105"
 msgid "Manage your Kodi system"
 msgstr ""
@@ -570,11 +574,11 @@ msgid "Set Latest Content"
 msgstr ""
 
 msgctxt "#31176"
-msgid "Recent Movies"
+msgid "New Movies"
 msgstr ""
 
 msgctxt "#31178"
-msgid "Recent TV Shows"
+msgid "New TV Shows"
 msgstr ""
 
 msgctxt "#31179"
@@ -586,7 +590,7 @@ msgid "Recent Albums"
 msgstr ""
 
 msgctxt "#31181"
-msgid "Random Selection"
+msgid "Random Albums"
 msgstr ""
 
 msgctxt "#31182"
@@ -610,7 +614,7 @@ msgid "View"
 msgstr ""
 
 msgctxt "#31187"
-msgid "Most Played"
+msgid "Top Albums"
 msgstr ""
 
 msgctxt "#31188"

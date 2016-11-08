@@ -3,14 +3,12 @@
 <includes>
     <!--folder titles-->
     <variable name="listTitle">
-        <value condition="Window.isactive(Videos) + SubString(skin.string(showRecentVideoItems),true)">$LOCALIZE[31012]</value>
+        <value condition="Window.isactive(1106)">$LOCALIZE[31012]</value>
         <value condition="Window.isactive(Videos) + Substring(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011] ,]</value>
         <value condition="Window.isactive(Videos) + Container.Content(movies)">$LOCALIZE[20342] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR]</value>
         <value condition="Window.isactive(Videos) + [Container.Content(seasons) | Container.Content(tvshows) | Container.Content(episodes)]">$LOCALIZE[20343] [COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod][/COLOR]</value>
         <value condition="Window.isactive(Videos) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Videos) + isEmpty(container.foldername)">$LOCALIZE[31012]</value>
-
-        <value condition="Window.isactive(Music) + SubString(skin.string(showRecentMusicItems),true)">$LOCALIZE[31053]</value>
         <value condition="Window.isactive(Music) + SubString(container.folderpath,addons://)">$LOCALIZE[31058]</value>
         <value condition="Window.isactive(Music) + SubString(container.folderpath,plugin://)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + Container.Content(albums) + !SubString(container.folderpath,musicdb://albums)">$LOCALIZE[31037] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
@@ -21,12 +19,11 @@
         <value condition="Window.isactive(Music) + isEmpty(container.foldername)">$LOCALIZE[31053]</value>
         <!--
         <value condition="Window.isactive(Music) + SubString(container.foldername,playlists)">$LOCALIZE[20011]</value>
-		-->
+        -->
     </variable>
     <variable name="listSubTitle">
-        <value condition="Window.isactive(Videos) + SubString(skin.string(showRecentVideoItems),false)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.isactive(Videos) + SubString(skin.string(showRecentVideoItems),true)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.isactive(Music) + SubString(skin.string(showRecentMusicItems),true)">$INFO[Window(Home).Property(Music.AlbumsCount)] $LOCALIZE[31038]</value>
+        <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
+        <value condition="Window.isactive(1106)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342] / ]$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343] / ]$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
         <value condition="Window.isactive(Music)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
     </variable>
     <!--list view item detail / subheader-->
@@ -42,19 +39,19 @@
         <value condition="Playlist.IsRandom">$LOCALIZE[191]: $LOCALIZE[16041]</value>
         <value>$LOCALIZE[191]: $LOCALIZE[16039]</value>
     </variable>
-	<!--offset song view, show artist / album if parent view is active-->
-	<variable name="songViewArtist">
-		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Artist] $INFO[ListItem(1).Year,(,)]</value>
-		<value>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</value>
-	</variable>
-	<variable name="songViewAlbum">
-		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Album]</value>
-		<value>$INFO[ListItem.Album]</value>
-	</variable>
-	<variable name="songViewThumb">
-		<value condition="ListItem.IsParentFolder">$INFO[ListItem(1).art(thumb)]</value>
-		<value>$INFO[ListItem.art(thumb)]</value>
-	</variable>
+    <!--offset song view, show artist / album if parent view is active-->
+    <variable name="songViewArtist">
+        <value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Artist] $INFO[ListItem(1).Year,(,)]</value>
+        <value>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</value>
+    </variable>
+    <variable name="songViewAlbum">
+        <value condition="ListItem.IsParentFolder">$INFO[ListItem(1).Album]</value>
+        <value>$INFO[ListItem.Album]</value>
+    </variable>
+    <variable name="songViewThumb">
+        <value condition="ListItem.IsParentFolder">$INFO[ListItem(1).art(thumb)]</value>
+        <value>$INFO[ListItem.art(thumb)]</value>
+    </variable>
     <!--Music player repeat state-->
     <variable name="repeatState">
         <value condition="Playlist.IsRepeat">$LOCALIZE[597]</value>

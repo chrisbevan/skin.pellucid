@@ -1,185 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
     <defaultcontrol always="true">9000</defaultcontrol>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000)</onload>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
-    <onload>Skin.Reset(keepMusicMenuActive)</onload>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;mode=single)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
     <controls>
         <include>globalBackground</include>
-        <include>homeBackground</include>
-        <!--browse controls-->
-        <control type="group">
-            <animation type="windowopen">
-                <effect type="fade" start="0" end="100" delay="500" time="300"/>
-                <effect type="slide" start="-200" end="0" tween="sine" easing="out" delay="500" time="400"/>
-            </animation>
-            <animation type="windowclose">
-                <effect type="fade" start="100" end="0" time="300"/>
-                <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
-            </animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>col-5-begin</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <!--logo-->
-            <control type="image">
-                <posx>col-1-begin</posx>
-                <posy>row-1-begin</posy>
-                <width>1-col</width>
-                <height>1-col</height>
-                <texture>kodilogo.png</texture>
-                <colordiffuse>textActive</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="list" id="9000">
-                <posx>0</posx>
-                <posy>row-4-begin</posy>
-                <width>col-5-begin</width>
-                <height>24-row</height>
-				<onleft>9002</onleft>
-                <orientation>vertical</orientation>
-                <itemlayout width="col-5-begin" height="2-row">
-                    <control type="label">
-                        <posx>col-1-begin</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <font>menuTitle</font>
-                        <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="col-5-begin" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>col-5-begin</width>
-                        <height>2-row</height>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>textActive</colordiffuse>
-                        <aspectratio>stretch</aspectratio>
-                    </control>
-                    <control type="label">
-                        <posx>col-1-begin</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <font>menuTitle</font>
-                        <aligny>center</aligny>
-                        <textcolor>highlight</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </focusedlayout>
-                <content><include>skinshortcuts-mainmenu</include></content>
-				<!--
-				<content>
-                    <item id="13">
-                        <visible>System.HasMediaDVD</visible>
-                        <label>341</label>
-                        <label2/>
-                        <onclick>XBMC.PlayDVD()</onclick>
-                    </item>
-                    <item id="14">
-                        <visible>System.HasMediaDVD</visible>
-                        <label>31135</label>
-                        <label2/>
-                        <onclick>EjectTray()</onclick>
-                    </item>
-                    <item id="10">
-                        <visible>System.GetBool(pvrmanager.enabled)</visible>
-                        <label>31006</label>
-                        <label2/>
-                        <onclick>ActivateWindow(TVChannels)</onclick>
-                        <onclick>Control.SetFocus(50)</onclick>
-                        <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                    </item>
-                    <item id="1">
-                        <visible>!Skin.HasSetting(hideVideo)</visible>
-                        <label>31000</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick condition="!Library.HasContent(Video)">ActivateWindow(Videos,sources://video/)</onclick>
-                        <onclick condition="!Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,false)</onclick>
-                        <onclick condition="Library.HasContent(Video)">ActivateWindow(Videos,library://video/)</onclick>
-                        <onclick condition="Library.HasContent(Video)">Skin.SetString(showRecentVideoItems,true)</onclick>
-                    </item>
-                    <item id="2">
-                        <visible>!Skin.HasSetting(hideMusic)</visible>
-                        <label>31001</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick condition="!Library.HasContent(Music)">ActivateWindow(Music,files)</onclick>
-                        <onclick condition="!Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,false)</onclick>
-                        <onclick condition="Library.HasContent(Music)">ActivateWindow(Music,musicdb://)</onclick>
-                        <onclick condition="Library.HasContent(Music)">Skin.SetString(showRecentMusicItems,true)</onclick>
-                    </item>
-                    <item id="3">
-                        <visible>!Skin.HasSetting(hidePictures)</visible>
-                        <label>31002</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(pictures)</onclick>
-                    </item>
-                    <item id="4">
-                        <visible>!Skin.HasSetting(hideGames) + System.HasAddon(script.games.rom.collection.browser)</visible>
-                        <label>31156</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>RunScript(script.games.rom.collection.browser,)</onclick>
-                    </item>
-                    <item id="12">
-                        <visible>System.HasAddon(plugin.program.advanced.launcher)</visible>
-                        <label>31036</label>
-                        <thumb>-</thumb>
-                        <onclick>RunAddon(plugin.program.advanced.launcher,)</onclick>
-                    </item>
-                    <item id="6">
-                        <visible>!Skin.HasSetting(hideSearch)</visible>
-                        <label>137</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick condition="!System.HasAddon(script.globalsearch)">RunPlugin(plugin://script.globalsearch)</onclick>
-                        <onclick condition="System.HasAddon(script.globalsearch)">RunScript(script.globalsearch)</onclick>
-                        <onclick>Skin.SetString(showRecentMusicItems,false)</onclick>
-                        <onclick>Skin.SetString(showRecentVideoItems,false)</onclick>
-                    </item>
-                    <item id="9">
-                        <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
-                        <label>31197</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(weather)</onclick>
-                    </item>
-                    <item id="7">
-                        <label>5</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(settings)</onclick>
-                    </item>
-                    <item id="8">
-                        <label>31004</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(ShutdownMenu)</onclick>
-                    </item>
-                </content>
-			-->
-            </control>
-        </control>
         <!--Date / time and weather-->
-        <control type="group">
+        <control type="group" id="9999">
             <posx>18-col</posx>
             <posy>row-21-begin</posy>
             <control type="label">
@@ -213,8 +41,17 @@
                 <textcolor>textActive</textcolor>
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
+            <control type="button" id="9876">
+                <posx>800</posx>
+                <posy>0</posy>
+                <height>1-col</height>
+                <width>1-col</width>
+                <onup>noop</onup>
+                <ondown>6789</ondown>
+                <onleft>9001</onleft>
+            </control>
         </control>
-		<!--hub menu-->
+        <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
         <!--debugging-->
