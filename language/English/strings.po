@@ -449,6 +449,10 @@ msgctxt "#31112"
 msgid "TV Guide"
 msgstr ""
 
+msgctxt "#31113"
+msgid "Kodi Addons"
+msgstr ""
+
 msgctxt "#31117"
 msgid "Launch addon"
 msgstr ""

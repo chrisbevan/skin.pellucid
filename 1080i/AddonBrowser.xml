@@ -27,7 +27,7 @@
                     <width>17-col</width>
                     <height>2-row</height>
                     <font>dialogTitle</font>
-                    <label>$INFO[container.foldername]</label>
+                    <label>$LOCALIZE[31113]</label>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
                 </control>
@@ -44,11 +44,10 @@
                 <control type="panel" id="50">
                     <visible>String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>24</posx>
-                    <posy>96</posy>
+                    <posy>100</posy>
                     <width>18-col</width>
                     <height>20-row</height>
                     <onleft>9000</onleft>
-                    <onright>60</onright>
                     <ondown>50</ondown>
                     <onup>50</onup>
                     <itemgap>0</itemgap>
@@ -62,7 +61,7 @@
                             <texture border="6">$INFO[listitem.icon]</texture>
                             <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>overlay</colordiffuse>
+                            <colordiffuse>ff333333</colordiffuse>
                         </control>
                         <control type="textbox">
                             <posx>12</posx>
@@ -72,7 +71,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>itemTitle</font>
-                            <textcolor>textDisabled</textcolor>
+                            <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                         </control>
                     </itemlayout>
@@ -89,6 +88,15 @@
                                 <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                                 <bordersize>6</bordersize>
                                 <colordiffuse>ff666666</colordiffuse>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>240</width>
+                                <height>240</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture border="6">$INFO[listitem.icon]</texture>
+                                <colordiffuse>ff333333</colordiffuse>
                             </control>
                             <control type="textbox">
                                 <posx>12</posx>
@@ -274,7 +282,8 @@
                         <width>10-col</width>
                         <height>10-col</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture border="0">$INFO[listitem.thumb]</texture>
+                        <texture fallback="defaultAddon.png" border="0">$INFO[listitem.thumb]</texture>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>10-col-gutter</posx>
@@ -297,11 +306,11 @@
                     <visible>Control.IsVisible(60)</visible>
                     <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                     <control type="scrollbar" id="60">
-                        <posx>48r</posx>
+                        <posx>1620</posx>
                         <posy>row-11-begin</posy>
-                        <height>9-row</height>
-                        <onleft>9999</onleft>
-                        <onback>9999</onback>
+                        <height>10-row</height>
+                        <onleft>50</onleft>
+                        <onback>50</onback>
                     </control>
                 </control>
             </control>
