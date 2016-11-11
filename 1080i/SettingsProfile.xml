@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">4</defaultcontrol>
-     
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -39,7 +38,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <label>31103</label>
+                <label>14210</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -54,7 +53,7 @@
             <control type="image">
                 <description>profile image</description>
                 <posx>156</posx>
-                <posy>84</posy>
+                <posy>96</posy>
                 <width>4-col-gutter</width>
                 <height>4-col-gutter</height>
                 <texture fallback="colors/offblack.png" border="0">$INFO[System.ProfileThumb]</texture>
@@ -105,7 +104,7 @@
                         <width>69</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/offblack.png">$INFO[listitem.icon]</texture>
+                        <texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
@@ -144,12 +143,13 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>69</width>
+                        <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="colors/offblack.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>

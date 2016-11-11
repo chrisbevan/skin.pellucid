@@ -143,6 +143,5 @@
             <include>WindowID</include>
             <label>script-skinshortcuts.xml</label>
         </control>
-
     </controls>
 </window>

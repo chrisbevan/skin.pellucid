@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>5</defaultcontrol>
-	<include>fadeInOut</include>
+    <include>fadeInOut</include>
     <controls>
-		<include>modalDialog</include>
+        <!--background-->
+        <include>globalBackground</include>
         <control type="group">
             <visible>!Window.IsVisible(sliderdialog)</visible>
-			<posx>col-5-begin</posx>
+            <posx>col-5-begin</posx>
             <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
@@ -28,7 +29,7 @@
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-			<control type="image">
+            <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
@@ -47,7 +48,6 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-
             <control type="grouplist" id="5">
                 <description>control area</description>
                 <posx>0</posx>
@@ -58,7 +58,6 @@
                 <onup>5</onup>
                 <ondown>5</ondown>
             </control>
-
             <control type="button" id="7">
                 <description>Default Button</description>
             </control>
@@ -69,7 +68,13 @@
                 <description>Default SpinControlex</description>
             </control>
             <control type="edit" id="12">
-                <description>Default Edit</description>
+                <width>8-col</width>
+                <font>buttonTitle</font>
+                <align>left</align>
+                <texturefocus>colors/white.png</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textoffsetx>24</textoffsetx>
+                <focusedcolor>black</focusedcolor>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
@@ -86,7 +91,7 @@
                 <shadowcolor>-</shadowcolor>
             </control>
 
-			<!--dialog control buttons-->
+            <!--dialog control buttons-->
             <control type="panel" id="9000">
                 <posx>12-col</posx>
                 <posy>2-row</posy>
@@ -187,7 +192,6 @@
                     </item>
                 </content>
             </control>
-
             <!--dialog controls-->
             <control type="group">
                 <visible>false</visible>
@@ -201,6 +205,12 @@
                     <description>Clear / Settings</description>
                 </control>
             </control>
+        </control>
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>dialogSettings.xml</label>
         </control>
     </controls>
 </window>

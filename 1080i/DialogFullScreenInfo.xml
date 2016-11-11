@@ -11,11 +11,11 @@
             </animation>
             <include>dateTime</include>
 
-			<!--thumbnail-->
-			<control type="group">
-				<posx>col-1-begin</posx>
+            <!--thumbnail-->
+            <control type="group">
+                <posx>col-1-begin</posx>
                 <posy>row-1-begin</posy>
-				<animation type="Windowopen">
+                <animation type="Windowopen">
                     <effect type="fade" start="0" end="100" time="300"/>
                     <effect type="slide" start="0,-300" end="0,0" tween="cubic" easing="out" time="400"/>
                 </animation>
@@ -23,15 +23,15 @@
                     <effect type="fade" start="100" end="0" time="300"/>
                     <effect type="slide" end="0,-300" tween="cubic" easing="out" time="400"/>
                 </animation>
-				<control type="image">
-	                <posx>0</posx>
-	                <posy>0</posy>
-	                <width>2-col-textbox</width>
-	                <height>4-col-textbox</height>
-	                <aspectratio scalediffuse="false" aligny="top">keep</aspectratio>
-	                <texture border="0">$INFO[player.art(thumb)]</texture>
-	            </control>
-			</control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>2-col-textbox</width>
+                    <height>4-col-textbox</height>
+                    <aspectratio scalediffuse="false" aligny="top">keep</aspectratio>
+                    <texture border="0">$INFO[player.art(thumb)]</texture>
+                </control>
+            </control>
 
             <control type="group">
                 <posx>0</posx>
@@ -45,18 +45,18 @@
                     <effect type="slide" end="0,300" tween="cubic" easing="out" time="400"/>
                 </animation>
                 <control type="image">
-                    <posx>col-1-begin</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
-                    <width>24-col</width>
-                    <height>6-row</height>
+                    <width>fullscreenWidth</width>
+                    <height>10-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>textboxInactive</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-				<control type="image">
-                    <posx>col-1-begin</posx>
+                <control type="image">
+                    <posx>0</posx>
                     <posy>0</posy>
-                    <width>24-col</width>
+                    <width>fullscreenWidth</width>
                     <height>2-row</height>
                     <texture colordiffuse="highlight">colors/white.png</texture>
                     <colordiffuse>ccffffff</colordiffuse>
@@ -68,18 +68,18 @@
                     <width>16-col</width>
                     <height>2-row</height>
                     <font>pageSubTitle</font>
-					<aligny>center</aligny>
+                    <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <label>[B]$INFO[videoplayer.Title][/B]</label>
                 </control>
-				<control type="label">
-					<visible>VideoPlayer.HasMenu</visible>
+                <control type="label">
+                    <visible>VideoPlayer.HasMenu</visible>
                     <posx>col-17-begin</posx>
                     <posy>0</posy>
                     <width>4-col</width>
                     <height>2-row</height>
                     <font>pageSubTitle</font>
-					<aligny>center</aligny>
+                    <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31049] [B]$INFO[player.Chapter] / $INFO[player.Chaptercount][/B]</label>
                 </control>
@@ -90,13 +90,13 @@
                     <height>2-row</height>
                     <font>pageSubTitle</font>
                     <align>right</align>
-					<aligny>center</aligny>
+                    <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
                     <label>[B]$INFO[Videoplayer.time] / $INFO[Videoplayer.duration][/B]</label>
                     <scroll>false</scroll>
                 </control>
                 <control type="textbox">
-                	<posx>120</posx>
+                    <posx>120</posx>
                     <posy>84</posy>
                     <font>textbox</font>
                     <width>23-col</width>

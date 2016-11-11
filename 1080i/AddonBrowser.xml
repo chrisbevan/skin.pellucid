@@ -315,109 +315,68 @@
                 </control>
             </control>
         </control>
-
         <!-- Options menu-->
         <control type="group">
-            <animation type="Conditional" condition="controlgroup(9000).hasfocus">
-                <effect type="fade" start="0" end="100" time="300"/>
-                <effect type="slide" start="-200" end="0" tween="sine" easing="out" time="400"/>
-            </animation>
             <animation type="Conditional" condition="!controlgroup(9000).hasfocus">
                 <effect type="fade" start="100" end="0" time="300"/>
-                <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
+            </animation>
+            <animation type="Conditional" condition="controlgroup(9000).hasfocus">
+                <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>col-5-begin</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <include>dimensionsFullscreen</include>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ddFFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--section logo-->
-            <control type="group">
-                <control type="label">
-                    <posx>col-1-begin</posx>
-                    <posy>row-1-begin</posy>
-                    <width>2-col</width>
-                    <height>1-col</height>
-                    <font>symbolVeryLarge</font>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <!--options-->
             <control type="grouplist" id="9000">
-                <posx>0</posx>
-                <posy>row-4-begin</posy>
+                <posx>col-10-begin</posx>
+                <posy>8-row</posy>
+                <itemgap>0</itemgap>
                 <width>6-col</width>
+                <height>17-row</height>
+                <itemgap>0</itemgap>
+                <onleft>control.setfocus(50)</onleft>
+                <onright>control.setfocus(50)</onright>
                 <orientation>vertical</orientation>
                 <control type="radiobutton" id="7">
-                    <height>2-row</height>
-                    <width>col-5-begin</width>
-                    <font>menuTitle</font>
-                    <textwidth>4-col-gutter</textwidth>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
-                    <disabledcolor>menuDisabled</disabledcolor>
-                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <width>6-col</width>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <textureradiofocus>-</textureradiofocus>
                     <textureradionofocus>-</textureradionofocus>
                     <radiowidth/>
                     <radioheight/>
-                    <textoffsetx>21</textoffsetx>
-                    <label>          $LOCALIZE[25001]</label>
-                    <onright>9999</onright>
+                    <label>$LOCALIZE[25001]</label>
                 </control>
                 <control type="radiobutton" id="8">
-                    <height>2-row</height>
-                    <width>col-5-begin</width>
-                    <font>menuTitle</font>
-                    <textwidth>4-col-gutter</textwidth>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
-                    <disabledcolor>menuDisabled</disabledcolor>
-                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-                    <texturenofocus>-</texturenofocus>
+                    <width>6-col</width>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <textureradiofocus>-</textureradiofocus>
                     <textureradionofocus>-</textureradionofocus>
                     <radiowidth/>
                     <radioheight/>
-                    <textoffsetx>21</textoffsetx>
-                    <label>          $LOCALIZE[24999]</label>
-                    <onright>9999</onright>
+                    <label>$LOCALIZE[24999]</label>
                 </control>
                 <control type="button" id="5">
-                    <height>2-row</height>
-                    <width>col-5-begin</width>
-                    <font>menuTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
-                    <disabledcolor>menuDisabled</disabledcolor>
-                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textoffsetx>col-1-begin</textoffsetx>
-                    <textwidth>4-col-gutter</textwidth>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
+                    <width>6-col</width>
                     <label>10004</label>
-                    <onright>9999</onright>
                 </control>
                 <control type="button" id="9">
-                    <height>2-row</height>
-                    <width>col-5-begin</width>
-                    <font>menuTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <focusedcolor>highlight</focusedcolor>
-                    <disabledcolor>menuDisabled</disabledcolor>
-                    <texturefocus colordiffuse="textActive">colors/white.png</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textoffsetx>col-1-begin</textoffsetx>
-                    <textwidth>4-col-gutter</textwidth>
+                    <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                    <focusedcolor>textActive</focusedcolor>
+                    <width>6-col</width>
                     <label>24034</label>
-                    <onright>9999</onright>
                 </control>
             </control>
         </control>

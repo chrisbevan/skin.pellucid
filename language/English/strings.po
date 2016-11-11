@@ -453,6 +453,18 @@ msgctxt "#31113"
 msgid "Kodi Addons"
 msgstr ""
 
+msgctxt "#31114"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Set Homescreen Background"
+msgstr ""
+
 msgctxt "#31117"
 msgid "Launch addon"
 msgstr ""

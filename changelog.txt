@@ -14,37 +14,29 @@
 - [NEW] Busy spinner (nicked from Estuary)
 - [NEW] DialogPlayerProcessInfo.xml
 - [MODIFIED] Addon Browser design reworked
+- [NEW] DialogPlayerProcessInfo.xml
 - Numerous misc tweaks and fixes
 
 
 [TODO]
 
-Addon Options side menu
-
-Check control is active for recent items
-
-Dialog OK / yesNo revision - Check yes / no progress bar works ok
-
-Revise onback for the menu to prevent dodgy nav
-
+Gamepad setup
+DialogAudioDSPManager.xml
 event log screen (in settings)
+MyPVRTimers
 
-Home Background slideshow
+Pictures section refresh
 
 Fix stop from fullscreen music view
 
-Add user option Revise player stop on return
+Revise onback for the menu to prevent dodgy nav
 
-DialogAudioDSPManager.xml
-
-Gamepad setup
-
-DialogPlayerProcessInfo.xml
+Add user option: Revise player stop on return
 
 Check RCB (e.g. busy spinner and menu width)
 
 check all active strings
-MyPVRTimers needs creating and testing
+
 Screenshots etc
 Check if feedback notification appears when updating libraries
 
