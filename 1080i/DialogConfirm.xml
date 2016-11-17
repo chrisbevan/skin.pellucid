@@ -22,15 +22,15 @@
             </control>
             <control type="progress" id="20">
             <description>Progressbar</description>
-                <posx>-96</posx>
-                <posy>2-row</posy>
+                <posx>0</posx>
+                <posy>-72</posy>
                 <width>8-col</width>
                 <height>1-row</height>
                 <info>System.Progressbar</info>
             </control>
             <control type="textbox" id="9">
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>8-col-gutter</width>
                 <height>124</height>
                 <font>textbox</font>
@@ -40,7 +40,7 @@
            <!--options-->
            <control type="panel" id="9000">
                <posx>0</posx>
-               <posy>6-row</posy>
+               <posy>228</posy>
                <width>8-col</width>
                <height>6-row</height>
                <orientation>vertical</orientation>
@@ -112,6 +112,7 @@
                </focusedlayout>
                <content>
                    <item id="1">
+                       <visible>control.isvisible(10)</visible>
                        <description>No</description>
                        <label>$INFO[control.getlabel(10)]</label>
                        <label2></label2>
@@ -119,6 +120,7 @@
                        <onclick>SendClick(10)</onclick>
                    </item>
                    <item id="2">
+                       <visible>control.isvisible(11)</visible>
                        <description>Yes / OK</description>
                        <label>$INFO[control.getlabel(11)]</label>
                        <label2></label2>
@@ -126,6 +128,7 @@
                        <onclick>SendClick(11)</onclick>
                    </item>
                    <item id="3">
+                       <visible>control.isvisible(12)</visible>
                        <visible>Control.IsVisible(12)</visible>
                        <description>Custom Button</description>
                        <label>$INFO[control.getlabel(12)]</label>

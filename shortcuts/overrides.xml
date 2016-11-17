@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+    <groupoverride group="mainmenu" condition="true">setfocus(9500)</groupoverride>
+</overrides>

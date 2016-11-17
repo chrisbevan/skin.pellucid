@@ -2,8 +2,7 @@
 <addon id="skin.pellucid" version="1.1.1" name="Pellucid" provider-name="theDeadman">
     <requires>
         <import addon="xbmc.gui" version="5.12.0"/>
-        <import addon="script.skin.helper.service" version="1.0.0"/>
-		<import addon="script.skinshortcuts" version="1.0.0"/>
+        <import addon="script.skinshortcuts" version="1.0.0"/>
         <import addon="resource.images.weathericons.outline" version="0.0.5"/>
         <import addon="resource.images.weatherfanart.single" version="0.0.6"/>
     </requires>
@@ -17,8 +16,8 @@
         <license></license>
         <forum></forum>
         <source>https://github.com/chrisbevan/skin.pellucid</source>
-		<assets>
-		    <icon>resources/icon.png</icon>
+        <assets>
+            <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
             <screenshot>resources/screenshot-01.jpg</screenshot>
         </assets>

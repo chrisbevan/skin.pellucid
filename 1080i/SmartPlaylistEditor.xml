@@ -19,7 +19,6 @@
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-
                 <control type="label">
                     <posx>24</posx>
                     <posy>0</posy>
@@ -30,7 +29,6 @@
                     <label>31203</label>
                     <textcolor>textActive</textcolor>
                 </control>
-
                 <!--name playlist-->
                 <control type="group">
                     <posx>0</posx>
@@ -59,7 +57,6 @@
                         <ondown>22</ondown>
                     </control>
                 </control>
-
                 <!--set playlist type, limits and sort-->
                 <control type="group">
                     <posx>0</posx>
@@ -73,7 +70,7 @@
                         <colordiffuse>overlay</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
-                    <control type="spincontrolex" id="22">
+                    <control type="button" id="22">
                         <description>Set Playlist type</description>
                         <posx>12</posx>
                         <posy>12</posy>
@@ -84,7 +81,7 @@
                         <ondown>18</ondown>
                         <onup>12</onup>
                     </control>
-                    <control type="spincontrolex" id="17">
+                    <control type="button" id="17">
                         <posx>6-col</posx>
                         <posy>12</posy>
                         <width>420</width>
@@ -94,7 +91,7 @@
                         <onup>12</onup>
                         <ondown>19</ondown>
                     </control>
-                    <control type="spincontrolex" id="18">
+                    <control type="button" id="18">
                         <posx>12</posx>
                         <posy>96</posy>
                         <width>6-col-gutter</width>
@@ -104,27 +101,22 @@
                         <onup>22</onup>
                         <ondown>10</ondown>
                     </control>
-                    <control type="togglebutton" id="19">
+                    <control type="button" id="19">
                         <posx>6-col</posx>
                         <posy>96</posy>
                         <width>420</width>
                         <height>2-row</height>
                         <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
-                        <alttexturenofocus colordiffuse="overlay">colors/black.png</alttexturenofocus>
-                        <texturefocus>colors/white.png</texturefocus>
-                        <alttexturefocus>colors/white.png</alttexturefocus>
                         <textoffsetx>24</textoffsetx>
                         <textcolor>textActive</textcolor>
                         <focusedcolor>black</focusedcolor>
-                        <label>$LOCALIZE[31110]</label>
-                        <altlabel>$LOCALIZE[31109]</altlabel>
+                        <label>$LOCALIZE[31109]</label>
                         <onright>9002</onright>
                         <onup>17</onup>
                         <onleft>18</onleft>
                         <ondown>10</ondown>
                     </control>
                 </control>
-
                 <!--rules list-->
                 <control type="group">
                     <posx>0</posx>
@@ -196,7 +188,6 @@
                             </control>
                         </focusedlayout>
                     </control>
-
                     <!--items must match...-->
                     <control type="image">
                         <posx>0</posx>
@@ -207,8 +198,7 @@
                         <colordiffuse>overlay</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
-
-                    <control type="spincontrolex" id="16">
+                    <control type="button" id="16">
                         <posx>12</posx>
                         <posy>312</posy>
                         <width>12-col-gutter</width>
@@ -218,7 +208,6 @@
                         <ondown>9002</ondown>
                     </control>
                 </control>
-
                 <!--add / edit / delete rules-->
                 <control type="panel" id="9001">
                     <posx>12</posx>
@@ -284,7 +273,6 @@
                         </item>
                     </content>
                 </control>
-
                 <!--OK / Cancel-->
                 <control type="panel" id="9002">
                     <posx>0</posx>

@@ -279,27 +279,17 @@
                 <posy>row-1-begin</posy>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>24</posy>
+                    <posy>0</posy>
                     <width>528</width>
                     <align>left</align>
                     <height>100</height>
                     <aligny>center</aligny>
                     <font>largeLight</font>
                     <textcolor>textActive</textcolor>
-                    <label>$INFO[listitem.album]</label>
+                    <label>[B]$INFO[ListItem.artist][/B] $INFO[listitem.album]</label>
                     <wrapmultiline>true</wrapmultiline>
              </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>-24</posy>
-                    <width>528</width>
-                    <align>left</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[ListItem.artist]</label>
-                    <shadowcolor>-</shadowcolor>
-                </control>
-                <!--synopsis-->
+            <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
                     <posy>168</posy>

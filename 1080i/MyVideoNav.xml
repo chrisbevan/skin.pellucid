@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <onload condition="window.previous(0)">setfocus(9000)</onload>
-    <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-            <!--window fader-->
-            <animation type="conditional" condition="[window.next(0) | window.next(1)] + !player.hasvideo">
-                <effect type="fade" start="100" end="0" time="300"/>
-            </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
             <!--Main content listing-->

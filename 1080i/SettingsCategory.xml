@@ -89,7 +89,7 @@
                 <height>18-row</height>
                 <onleft>3</onleft>
                 <onright>3</onright>
-                <onup>20</onup>
+                <onup>5</onup>
                 <ondown>5</ondown>
                 <orientation>vertical</orientation>
                 <itemgap>0</itemgap>

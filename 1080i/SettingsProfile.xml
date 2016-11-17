@@ -6,7 +6,7 @@
         <include>globalBackground</include>
         <control type="group">
             <posx>col-9-begin</posx>
-            <posy>row-2-begin</posy>
+            <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <animation type="conditional" condition="window.isactive(profilesettings)">
@@ -26,7 +26,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>8-col</width>
-                <height>23-row</height>
+                <height>21-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>44ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>

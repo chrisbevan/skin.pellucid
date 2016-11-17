@@ -15,21 +15,25 @@
 - [NEW] DialogPlayerProcessInfo.xml
 - [MODIFIED] Addon Browser design reworked
 - [NEW] DialogPlayerProcessInfo.xml
+- [NEW] EventLog.xml
+- [NEW] Privacy policy added to system info
+- [NEW] DialogAudioDSPManager.xml
 - Numerous misc tweaks and fixes
+- [MODIFIED] SmartPlaylistEditor.xml / SmartPlaylistRule.xml
 
 
 [TODO]
+Add recent content screen to main menu
 
 Gamepad setup
-DialogAudioDSPManager.xml
-event log screen (in settings)
+
 MyPVRTimers
+
+Make sure default view is a pagewidth single list. Change all views to 50 (except episodes / songs / seasons etc)
 
 Pictures section refresh
 
 Fix stop from fullscreen music view
-
-Revise onback for the menu to prevent dodgy nav
 
 Add user option: Revise player stop on return
 
@@ -38,7 +42,6 @@ Check RCB (e.g. busy spinner and menu width)
 check all active strings
 
 Screenshots etc
-Check if feedback notification appears when updating libraries
 
 
 [B]1.1.0[/B]

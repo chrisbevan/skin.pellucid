@@ -434,11 +434,7 @@ msgid "About this Kodi Installation"
 msgstr ""
 
 msgctxt "#31109"
-msgid "Order: Ascending"
-msgstr ""
-
-msgctxt "#31110"
-msgid "Order: Descending"
+msgid "Order: "
 msgstr ""
 
 msgctxt "#31111"
@@ -469,8 +465,20 @@ msgctxt "#31117"
 msgid "Launch addon"
 msgstr ""
 
+msgctxt "#31118"
+msgid "PVR not active"
+msgstr ""
+
+msgctxt "#31119"
+msgid "Privacy Policy"
+msgstr ""
+
 msgctxt "#31120"
 msgid "Playing"
+msgstr ""
+
+msgctxt "#31121"
+msgid "My Kodi"
 msgstr ""
 
 msgctxt "#31123"
