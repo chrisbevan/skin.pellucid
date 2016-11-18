@@ -20,24 +20,24 @@
 - [NEW] DialogAudioDSPManager.xml
 - Numerous misc tweaks and fixes
 - [MODIFIED] SmartPlaylistEditor.xml / SmartPlaylistRule.xml
+- [NEW] MyPVRTimers.xml
 
 
 [TODO]
-Add recent content screen to main menu
+Music menu: Radio recordings??
+
+Menu overrides: select correct content list
+Make sure default view is a pagewidth single list. Change all views to 50 (except episodes / songs / seasons etc)
+
+Finish recent content screen - default backgrounds
 
 Gamepad setup
 
-MyPVRTimers
-
-Make sure default view is a pagewidth single list. Change all views to 50 (except episodes / songs / seasons etc)
-
 Pictures section refresh
 
-Fix stop from fullscreen music view
+Fix stop from fullscreen music view & Check that the fanart is working
 
 Add user option: Revise player stop on return
-
-Check RCB (e.g. busy spinner and menu width)
 
 check all active strings
 

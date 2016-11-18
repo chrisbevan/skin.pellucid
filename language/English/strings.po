@@ -50,7 +50,7 @@ msgid "Latest Content"
 msgstr ""
 
 msgctxt "#31006"
-msgid "Live TV"
+msgid "TV"
 msgstr ""
 
 msgctxt "#31007"
@@ -245,6 +245,10 @@ msgctxt "#31054"
 msgid "by"
 msgstr ""
 
+msgctxt "#31055"
+msgid "Timers"
+msgstr ""
+
 msgctxt "#31056"
 msgid "Photo Library"
 msgstr ""
@@ -255,6 +259,10 @@ msgstr ""
 
 msgctxt "#31058"
 msgid "Music Addons"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Radio"
 msgstr ""
 
 msgctxt "#31060"
@@ -363,6 +371,10 @@ msgstr ""
 
 msgctxt "#31086"
 msgid "Add Music Addon"
+msgstr ""
+
+msgctxt "#31087"
+msgid "PVR Timers"
 msgstr ""
 
 msgctxt "#31089"
@@ -538,19 +550,7 @@ msgid "Director"
 msgstr ""
 
 msgctxt "#31147"
-msgid "Home: Hide Video"
-msgstr ""
-
-msgctxt "#31148"
-msgid "Home: Hide Music"
-msgstr ""
-
-msgctxt "#31149"
-msgid "Home: Hide Pictures"
-msgstr ""
-
-msgctxt "#31150"
-msgid "Home: Hide Search"
+msgid "Search"
 msgstr ""
 
 msgctxt "#31151"
@@ -590,7 +590,7 @@ msgid "Radio"
 msgstr ""
 
 msgctxt "#31165"
-msgid "Recordings"
+msgid "TV Recordings"
 msgstr ""
 
 msgctxt "#31175"

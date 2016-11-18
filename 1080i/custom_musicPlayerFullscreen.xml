@@ -2,7 +2,6 @@
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
     <onunload>activateWindow(music)</onunload>
-    <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
     <onunload>control.setfocus(9000)</onunload>
     <controls>
         <include>globalBackground</include>
@@ -10,15 +9,12 @@
             <include>fadeInOut</include>
             <control type="group">
                 <!--fanart-->
-                <control type="multiimage">
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
-                    <imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Music.ExtraFanArt)]</imagepath>
-                    <aspectratio>keep</aspectratio>
-                    <timeperimage>10000</timeperimage>
-                    <fadetime>1000</fadetime>
-                    <randomize>true</randomize>
+                    <texture border="0">$INFO[player.art(fanart)]</texture>
+                    <aspectratio>stretch</aspectratio>
                     <include>kenBurnsey</include>
                     <colordiffuse>44ffffff</colordiffuse>
                 </control>
@@ -134,7 +130,7 @@
                          <info>Player.Progress</info>
                    </control>
                    <control type="label">
-				      	<posx>24</posx>
+                        <posx>24</posx>
                         <posy>3-row</posy>
                         <width>612</width>
                         <height>2-row</height>
@@ -194,7 +190,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <!--hidden buttons to handle dialog autohide-->
-		<control type="button" id="9876">
+        <control type="button" id="9876">
             <posx>-100</posx>
             <posy>-100</posy>
             <height>1-col</height>

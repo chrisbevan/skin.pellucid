@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
     <shortcut>
+        <visible>Player.HasAudio</visible>
+        <label>31136</label>
+        <label2>10005</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>Skin.SetString(recentitems,music)</action>
+        <action>activateWindow(1103)</action>
+    </shortcut>
+    <shortcut>
+        <visible>System.HasAddon(script.globalsearch)</visible>
+        <label>31147</label>
+        <label2>10005</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>RunScript(script.globalsearch,artists=true&amp;albums=true)</action>
+        <action>right</action>
+    </shortcut>
+    <shortcut>
+        <label>31005</label>
+        <label2>10005</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(1106)</action>
+    </shortcut>
+    <shortcut>
+        <visible>PVR.HasRadioChannels</visible>
         <label>32087</label>
         <label2>10005</label2>
-        <icon>DefaultAudio.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Radiochannels)</action>
     </shortcut>
     <shortcut>
+        <visible>Library.HasContent(Music)</visible>
         <label>133</label>
         <label2>10005</label2>
-        <icon>DefaultMusicArtists.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(MusicLibrary,musicdb://artists/)</action>
     </shortcut>
     <shortcut>
+        <visible>Library.HasContent(Music)</visible>
         <label>132</label>
         <label2>10005</label2>
-        <icon>DefaultMusicAlbums.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(MusicLibrary,musicdb://albums/)</action>
     </shortcut>
     <shortcut>
+        <visible>Library.HasContent(Music)</visible>
         <label>135</label>
         <label2>10005</label2>
-        <icon>DefaultFolder.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(MusicLibrary,musicdb://genres/)</action>
     </shortcut>
     <shortcut>
+        <visible>Library.HasContent(Music)</visible>
         <label>136</label>
         <label2>10005</label2>
-        <icon>DefaultFolder.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>activateWindow(MusicLibrary,special://musicplaylists/)</action>
     </shortcut>
     <shortcut>
         <label>744</label>
         <label2>10005</label2>
-        <icon>DefaultFolder.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Music,Files)</action>
     </shortcut>
     <shortcut>
         <label>1038</label>
         <label2>10005</label2>
-        <icon>DefaultAddonMusic.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(MusicLibrary,Addons)</action>
     </shortcut>

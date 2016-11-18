@@ -9,12 +9,25 @@
             <!--fanart-->
             <control type="group">
                 <control type="image">
+                    <visible>String.IsEqual(skin.string(recentitems),video)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>fullscreenWidth</width>
                     <height>fullscreenHeight</height>
-                    <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture background="true" fallback="special://skin/extras/backgrounds/videos.jpg" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
+                    <fadetime>500</fadetime>
+                    <colordiffuse>77FFFFFF</colordiffuse>
+                    <include>kenBurnsey</include>
+                </control>
+                <control type="image">
+                    <visible>String.IsEqual(skin.string(recentitems),music)</visible>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>fullscreenWidth</width>
+                    <height>fullscreenHeight</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture background="true" fallback="special://skin/extras/backgrounds/music.jpg" border="0">$INFO[container(9998).listitem.art(fanart)]</texture>
                     <fadetime>500</fadetime>
                     <colordiffuse>77FFFFFF</colordiffuse>
                     <include>kenBurnsey</include>
@@ -387,27 +400,11 @@
                 <ondown>9998</ondown>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <itemlayout width="4-col-gutter" height="48">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1</width>
-                        <height>48</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>4-col-gutter</posx>
-                        <posy>0</posy>
-                        <width>1</width>
-                        <height>48</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                    </control>
+                <itemlayout width="204" height="48">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>204</width>
                         <height>48</height>
                         <font>smallStrong</font>
                         <align>center</align>
@@ -417,11 +414,11 @@
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="4-col-gutter" height="48">
+                <focusedlayout width="204" height="48">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>204</width>
                         <height>48</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
@@ -429,7 +426,7 @@
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>204</width>
                         <height>48</height>
                         <font>smallStrong</font>
                         <align>center</align>
@@ -441,28 +438,31 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
-                        <visible>Library.HasContent(movies)</visible>
+                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(movies)</visible>
                         <label>special://skin/extras/playlists/recentMovies.xsp</label>
                         <property name="textTitle">31176</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="2">
-                        <visible>Library.HasContent(tvshows)</visible>
+                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(tvshows)</visible>
                         <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
                         <property name="textTitle">31178</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
+                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
                         <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="4">
+                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
                         <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="5">
+                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
                         <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
                         <onclick>noop</onclick>

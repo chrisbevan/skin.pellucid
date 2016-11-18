@@ -37,6 +37,15 @@
             <label>31041</label>
             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videos)</onclick>
         </control>
+        <control type="button" id="508">
+            <visible>PVR.HasTVChannels</visible>
+            <description>PVR Timers</description>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>textActive</focusedcolor>
+            <width>6-col</width>
+            <label>31087</label>
+            <onclick>ActivateWindow(TVTimerRules)</onclick>
+        </control>
         <control type="button" id="507">
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
@@ -88,6 +97,15 @@
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
+        </control>
+        <control type="button" id="508">
+            <visible>PVR.HasRadioChannels</visible>
+            <description>PVR Timers</description>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>textActive</focusedcolor>
+            <width>6-col</width>
+            <label>31087</label>
+            <onclick>ActivateWindow(RadioTimerRules)</onclick>
         </control>
         <control type="button" id="503">
             <width>6-col</width>

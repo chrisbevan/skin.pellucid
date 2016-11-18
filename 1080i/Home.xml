@@ -12,11 +12,15 @@
                 <effect type="zoom" center="auto" start="105" tween="sine" end="100" time="1500"/>
             </animation>
             <include>modalDialogContentShift</include>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <texture>$INFO[skin.string(homeBackground)]</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
+            <control type="multiimage">
+                  <include>dimensionsFullscreen</include>
+                  <imagepath>special://skin/extras/homeBackgrounds</imagepath>
+                  <timeperimage>20000</timeperimage>
+                  <fadetime>1000</fadetime>
+                  <pauseatend>10000</pauseatend>
+                  <randomize>true</randomize>
+                  <loop>yes</loop>
+                  <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>
@@ -27,14 +31,14 @@
         </control>
         <!--Date / time and weather-->
         <control type="group">
-            <posx>1852</posx>
-            <posy>858</posy>
+            <posx>col-9-begin</posx>
+            <posy>row-23-begin</posy>
             <control type="label">
                 <posx>0</posx>
                 <posy>-24</posy>
-                <width>24-col</width>
+                <width>8-col</width>
                 <height>4-row</height>
-                <align>right</align>
+                <align>center</align>
                 <font>veryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[System.Time]</label>
@@ -42,10 +46,10 @@
             <control type="label">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>24-col</width>
+                <width>8-col</width>
                 <height>4-row</height>
                 <font>regular</font>
-                <align>right</align>
+                <align>center</align>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>

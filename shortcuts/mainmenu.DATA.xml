@@ -1,66 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
     <shortcut>
+        <visible>System.HasMediaDVD</visible>
         <label>32032</label>
         <label2>32034</label2>
-        <icon>DefaultDVDFull.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>XBMC.PlayDVD()</action>
     </shortcut>
     <shortcut>
-        <label>31005</label>
+        <visible>System.HasMediaDVD</visible>
+        <label>32033</label>
         <label2>32034</label2>
-        <icon>DefaultVideo.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(1106)</action>
+        <action>EjectTray()</action>
     </shortcut>
     <shortcut>
-        <label>32022</label>
+        <visible>System.HasAddon(script.globalsearch)</visible>
+        <label>31147</label>
         <label2>32034</label2>
-        <icon>DefaultTVShows.png</icon>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>RunScript(script.globalsearch)</action>
+        <action>right</action>
+    </shortcut>
+    <shortcut>
+        <visible>PVR.HasTVChannels</visible>
+        <label>31006</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(TVChannels)</action>
     </shortcut>
     <shortcut>
-        <label>10006</label>
+        <visible>PVR.HasRadioChannels</visible>
+        <label>32087</label>
         <label2>32034</label2>
-        <icon>DefaultVideo.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(Videos)</action>
+        <action>ActivateWindow(Radiochannels)</action>
     </shortcut>
     <shortcut>
+        <visible>Library.HasContent(Video)</visible>
+        <label>10006</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>Skin.SetString(recentitems,video)</action>
+        <action>ActivateWindow(1106)</action>
+    </shortcut>
+    <shortcut>
+        <visible>!Library.HasContent(Video)</visible>
+        <label>10006</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(Videos,sources://video/)</action>
+    </shortcut>
+    <shortcut>
+        <visible>Library.HasContent(Music)</visible>
         <label>10005</label>
         <label2>32034</label2>
-        <icon>DefaultMusicAlbums.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(Music)</action>
+        <action>Skin.SetString(recentitems,music)</action>
+        <action>ActivateWindow(1106)</action>
+    </shortcut>
+    <shortcut>
+        <visible>!Library.HasContent(Music)</visible>
+        <label>10005</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(Music,Files)</action>
     </shortcut>
     <shortcut>
         <label>12600</label>
         <label2>32034</label2>
-        <icon>DefaultShortcut.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Weather)</action>
     </shortcut>
     <shortcut>
         <label>10002</label>
         <label2>32034</label2>
-        <icon>DefaultPicture.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Pictures)</action>
     </shortcut>
     <shortcut>
         <label>10004</label>
         <label2>32034</label2>
-        <icon>DefaultShortcut.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Settings)</action>
     </shortcut>
     <shortcut>
         <label>31004</label>
         <label2>32034</label2>
-        <icon>DefaultShortcut.png</icon>
+        <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(shutdownmenu)</action>
     </shortcut>
+-->
 </shortcuts>

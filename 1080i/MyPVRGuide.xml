@@ -2,7 +2,6 @@
 <window>
     <views>10</views>
     <defaultcontrol always="false">9999</defaultcontrol>
-    <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
