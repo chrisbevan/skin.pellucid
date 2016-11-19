@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-
     <include>fadeInOut</include>
     <controls>
         <!--page container group-->
@@ -15,6 +14,10 @@
             <control type="group" id="9999">
                 <!--source content-->
                 <control type="group">
+                    <animation type="windowopen">
+                        <effect type="fade" start="0" end="100" time="500"/>
+                        <effect type="zoom" center="auto" start="120" end="100" time="300"/>
+                    </animation>
                     <control type="panel" id="50">
                         <posx>78</posx>
                         <posy>row-5-begin</posy>

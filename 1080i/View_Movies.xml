@@ -5,7 +5,7 @@
         <control type="group">
             <!--fanart-->
             <control type="group">
-                <visible>container.content(movies)</visible>
+                <visible>container.content(movies) | container.content(tvshows)</visible>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
                     <aspectratio scalediffuse="false">stretch</aspectratio>

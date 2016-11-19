@@ -15,7 +15,7 @@
             <control type="multiimage">
                   <include>dimensionsFullscreen</include>
                   <imagepath>special://skin/extras/homeBackgrounds</imagepath>
-                  <timeperimage>20000</timeperimage>
+                  <timeperimage>45000</timeperimage>
                   <fadetime>1000</fadetime>
                   <pauseatend>10000</pauseatend>
                   <randomize>true</randomize>

@@ -11,11 +11,15 @@
             <animation type="windowOpen" condition="!Skin.HasSetting(lowPowerMode)">
                 <effect type="zoom" center="auto" start="105" tween="sine" end="100" time="1500"/>
             </animation>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <texture>$INFO[skin.string(homeBackground)]</texture>
-                <colordiffuse>6Affffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
+            <control type="multiimage">
+                  <include>dimensionsFullscreen</include>
+                  <imagepath>special://skin/extras/homeBackgrounds</imagepath>
+                  <timeperimage>45000</timeperimage>
+                  <fadetime>1000</fadetime>
+                  <pauseatend>10000</pauseatend>
+                  <randomize>true</randomize>
+                  <loop>yes</loop>
+                  <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <include>dimensionsFullscreen</include>

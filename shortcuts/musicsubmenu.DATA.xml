@@ -10,15 +10,6 @@
         <action>activateWindow(1103)</action>
     </shortcut>
     <shortcut>
-        <visible>System.HasAddon(script.globalsearch)</visible>
-        <label>31147</label>
-        <label2>10005</label2>
-        <icon>DefaultAddon.png</icon>
-        <thumb />
-        <action>RunScript(script.globalsearch,artists=true&amp;albums=true)</action>
-        <action>right</action>
-    </shortcut>
-    <shortcut>
         <label>31005</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
@@ -66,17 +57,17 @@
         <action>activateWindow(MusicLibrary,special://musicplaylists/)</action>
     </shortcut>
     <shortcut>
+        <label>31090</label>
+        <label2>10005</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(MusicLibrary,Addons)</action>
+    </shortcut>
+    <shortcut>
         <label>744</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
         <action>ActivateWindow(Music,Files)</action>
-    </shortcut>
-    <shortcut>
-        <label>1038</label>
-        <label2>10005</label2>
-        <icon>DefaultAddon.png</icon>
-        <thumb />
-        <action>ActivateWindow(MusicLibrary,Addons)</action>
     </shortcut>
 </shortcuts>

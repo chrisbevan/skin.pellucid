@@ -377,8 +377,16 @@ msgctxt "#31087"
 msgid "PVR Timers"
 msgstr ""
 
+msgctxt "#31088"
+msgid "Video Addons"
+msgstr ""
+
 msgctxt "#31089"
 msgid "File Browser"
+msgstr ""
+
+msgctxt "#31090"
+msgid "Music Addons"
 msgstr ""
 
 msgctxt "#31091"
@@ -446,7 +454,11 @@ msgid "About this Kodi Installation"
 msgstr ""
 
 msgctxt "#31109"
-msgid "Order: "
+msgid "Order: Ascending"
+msgstr ""
+
+msgctxt "#31110"
+msgid "Order: Descending"
 msgstr ""
 
 msgctxt "#31111"
