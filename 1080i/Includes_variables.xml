@@ -82,4 +82,9 @@
         <value condition="SubString(MusicPlayer.Rating,5)"></value>
         <value></value>
     </variable>
+    <!--home background location-->
+    <variable name="homeBackgroundLocation">
+        <value condition="!isempty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
+        <value>special://skin/extras/homeBackgrounds</value>
+    </variable>
 </includes>

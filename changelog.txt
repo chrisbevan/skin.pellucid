@@ -24,28 +24,16 @@
 
 
 [TODO]
-Video files node onback not working correctly
+Gamepad setup
+
+Add user option: Revise player stop on return
 
 Recent items video: Add in progress videos node
+- check recent episodes
 
 Check all XMLS are present
 
-Fix stop from fullscreen music view & Check that the fanart is working
-
-Music menu: Radio recordings??
-
-Menu overrides: select correct content list
-Make sure default view is a pagewidth single list. Change all views to 50 (except episodes / songs / seasons etc)
-
 Lose .DS_Store (need to do this on the windows box)
-
-Gamepad setup
-
-Pictures section refresh
-
-
-
-Add user option: Revise player stop on return
 
 check all active strings
 

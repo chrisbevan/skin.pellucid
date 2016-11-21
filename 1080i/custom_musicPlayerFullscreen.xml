@@ -2,7 +2,7 @@
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
     <onunload>activateWindow(music)</onunload>
-    <onunload>control.setfocus(9000)</onunload>
+    <onunload>control.setfocus(50)</onunload>
     <controls>
         <include>globalBackground</include>
         <control type="group">
@@ -13,7 +13,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
-                    <texture border="0">$INFO[player.art(fanart)]</texture>
+                    <texture fallback="special://skin/extras/backgrounds/music.jpg" border="0">$INFO[player.art(fanart)]</texture>
                     <aspectratio>stretch</aspectratio>
                     <include>kenBurnsey</include>
                     <colordiffuse>44ffffff</colordiffuse>

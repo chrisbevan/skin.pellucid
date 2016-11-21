@@ -13,7 +13,7 @@
             </animation>
             <control type="multiimage">
                   <include>dimensionsFullscreen</include>
-                  <imagepath>special://skin/extras/homeBackgrounds</imagepath>
+                  <imagepath>$VAR[homeBackgroundLocation]</imagepath>
                   <timeperimage>45000</timeperimage>
                   <fadetime>1000</fadetime>
                   <pauseatend>10000</pauseatend>

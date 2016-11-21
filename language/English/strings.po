@@ -482,7 +482,7 @@ msgid "Video decoder"
 msgstr ""
 
 msgctxt "#31116"
-msgid "Set Homescreen Background"
+msgid "Set Homescreen Background directory"
 msgstr ""
 
 msgctxt "#31117"
@@ -505,6 +505,10 @@ msgctxt "#31121"
 msgid "My Kodi"
 msgstr ""
 
+msgctxt "#31122"
+msgid "Reset home backgrounds to default"
+msgstr ""
+
 msgctxt "#31123"
 msgid "Current Playlist"
 msgstr ""
@@ -517,8 +521,16 @@ msgctxt "#31126"
 msgid "Settings level"
 msgstr ""
 
+msgctxt "#31127"
+msgid "Resume TV"
+msgstr ""
+
 msgctxt "#31131"
 msgid "Switch to this profile now"
+msgstr ""
+
+msgctxt "#31132"
+msgid "Resume Movie"
 msgstr ""
 
 msgctxt "#31133"
@@ -622,7 +634,7 @@ msgid "Options"
 msgstr ""
 
 msgctxt "#31180"
-msgid "Recent Albums"
+msgid "New Albums"
 msgstr ""
 
 msgctxt "#31181"

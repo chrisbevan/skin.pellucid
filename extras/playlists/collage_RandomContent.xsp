@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="mixed">
-    <name>collage_RandomContent</name>
-    <match>all</match>
-	<rule field="playlist" operator="is">randomAlbums</rule>
-	<rule field="playlist" operator="is">recentMovies</rule>
-    <limit>50</limit>
-    <order direction="ascending">random</order>
-</smartplaylist>

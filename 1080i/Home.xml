@@ -7,14 +7,13 @@
     <controls>
         <include>globalBackground</include>
         <control type="group">
-            <visible>!isempty(skin.string(homeBackground))</visible>
             <animation type="windowOpen" condition="!Skin.HasSetting(lowPowerMode)">
                 <effect type="zoom" center="auto" start="105" tween="sine" end="100" time="1500"/>
             </animation>
             <include>modalDialogContentShift</include>
             <control type="multiimage">
                   <include>dimensionsFullscreen</include>
-                  <imagepath>special://skin/extras/homeBackgrounds</imagepath>
+                  <imagepath>$VAR[homeBackgroundLocation]</imagepath>
                   <timeperimage>45000</timeperimage>
                   <fadetime>1000</fadetime>
                   <pauseatend>10000</pauseatend>

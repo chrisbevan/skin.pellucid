@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
     <include>fadeInOut</include>
+    <previouswindow>home</previouswindow>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -10,10 +11,7 @@
             <include>modalDialogContentShift</include>
             <!--Main content listing-->
             <control type="group" id="9999">
-                <animation type="windowopen">
-                    <effect type="fade" start="0" end="100" time="500"/>
-                    <effect type="zoom" center="auto" start="120" end="100" time="300"/>
-                </animation>
+                <include>contentOpen</include>
                 <!--source content-->
                 <control type="group" id="9500">
                     <include>movies</include>
@@ -73,7 +71,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyVideoNav.xml</label>
+            <label>MyVideoNav.xml $INFO[container.folderpath]</label>
         </control>
     </controls>
 </window>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol>3</defaultcontrol>
+    <controls>
+
+        <control type="label">
+            <description>Controller types heading</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>220</width>
+            <height>25</height>
+            <font>font12</font>
+            <label>35050</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textcolor>blue</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+
+        <control type="scrollbar" id="30">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>25</width>
+            <height>405</height>
+            <onleft>50</onleft>
+            <onright>3</onright>
+            <ondown>3</ondown>
+            <onup>3</onup>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+        </control>
+
+        <control type="grouplist" id="3">
+            <description>Controller types grouplist</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>220</width>
+            <height>405</height>
+            <onleft>30</onleft>
+            <onright>5</onright>
+            <onup>9001</onup>
+            <ondown>9001</ondown>
+            <pagecontrol>30</pagecontrol>
+        </control>
+
+        <control type="button" id="10">
+            <description>Default controller types button</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>40</height>
+            <width>220</width>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font12_title</font>
+            <textcolor>white</textcolor>
+        </control>
+
+        <control type="gamecontroller" id="31">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>480</width>
+            <height>286</height>
+        </control>
+
+        <control type="label">
+            <description>Feature types heading</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>220</width>
+            <height>25</height>
+            <font>font12</font>
+            <label>35059</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textcolor>blue</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control>
+
+        <control type="scrollbar" id="50">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>25</width>
+            <height>405</height>
+            <onleft>5</onleft>
+            <onright>30</onright>
+            <ondown>5</ondown>
+            <onup>5</onup>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+        </control>
+
+        <control type="grouplist" id="5">
+            <description>Feature types grouplist</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>220</width>
+            <height>405</height>
+            <onleft>3</onleft>
+            <onright>50</onright>
+            <onup>9001</onup>
+            <ondown>9001</ondown>
+            <pagecontrol>50</pagecontrol>
+        </control>
+
+        <control type="button" id="7">
+            <description>Default feature types button</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>40</height>
+            <width>220</width>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font12_title</font>
+            <textcolor>white</textcolor>
+            <pulseonselect>false</pulseonselect>
+        </control>
+
+        <!--dialog buttons-->
+        <control type="group">
+            <control type="button" id="18">
+                <description>Ok Button</description>
+                <label>186</label>
+            </control>
+            <control type="button" id="19">
+                <description>Reset Button</description>
+                <label>10035</label>
+            </control>
+            <control type="button" id="20">
+                <description>Link to install more controllers</description>
+                <label>$LOCALIZE[21452]</label>
+            </control>
+            <control type="button" id="17">
+                <description>Help button</description>
+                <label>$LOCALIZE[10043]</label>
+            </control>
+        </control>
+
+
+        <!--debugging-->
+        <include>DebugGrid</include>
+        <control type="label">
+            <include>DialogID</include>
+            <label>DialogGameControllers.xml</label>
+        </control>
+    </controls>
+</window>

@@ -12,6 +12,7 @@
             <ondown>50</ondown>
             <onup>50</onup>
             <pagecontrol>60</pagecontrol>
+            <onback>home</onback>
             <itemlayout width="24-col" height="2-row">
                 <control type="image">
                     <posx>0</posx>
@@ -31,7 +32,7 @@
                     <colordiffuse>textboxInactive</colordiffuse>
                 </control>
                 <control type="label">
-				    <posx>1-col-indent</posx>
+                    <posx>1-col-indent</posx>
                     <posy>0</posy>
                     <width>22-col-gutter</width>
                     <height>2-row</height>
@@ -78,7 +79,7 @@
                     <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="label">
-				    <posx>1-col-indent</posx>
+                    <posx>1-col-indent</posx>
                     <posy>0</posy>
                     <width>22-col-gutter</width>
                     <height>2-row</height>

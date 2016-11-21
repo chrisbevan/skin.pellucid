@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1106">
-    <defaultcontrol always="false">9123</defaultcontrol>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <controls>
         <control type="group" id="9999">
             <include>fadeInOut</include>
@@ -52,6 +52,9 @@
                     </control>
                     <include>globalBackground</include>
                     <control type="image">
+                        <animation type="conditional" condition="control.hasfocus(9001)">
+                            <effect type="fade" start="100" end="0" time="200"/>
+                        </animation>
                         <posx>0</posx>
                         <posy>-48</posy>
                         <width>fullscreenWidth</width>
@@ -73,7 +76,7 @@
                     <posx>col-1-begin</posx>
                     <posy>row-8-begin</posy>
                     <control type="label">
-                        <visible>Container(9123).HasFocus(1)</visible>
+                        <visible>Container(9123).HasFocus(1) | Container(9123).HasFocus(6)</visible>
                         <posx>24-col</posx>
                         <posy>0</posy>
                         <width>24-col</width>
@@ -87,6 +90,19 @@
                     </control>
                     <control type="label">
                         <visible>Container(9123).HasFocus(2)</visible>
+                        <posx>24-col</posx>
+                        <posy>0</posy>
+                        <width>24-col</width>
+                        <height>8-row</height>
+                        <align>right</align>
+                        <font>veryLargeLight</font>
+                        <textcolor>66ffffff</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>[B]$INFO[container(9998).listitem.tvshowtitle][/B][CR]$INFO[container(9998).ListItem.Season,$LOCALIZE[31011], ]$INFO[container(9998).ListItem.Episode,$LOCALIZE[31204], ]</label>
+                    </control>
+                    <control type="label">
+                        <visible>Container(9123).HasFocus(7)</visible>
                         <posx>24-col</posx>
                         <posy>0</posy>
                         <width>24-col</width>
@@ -115,7 +131,7 @@
             </control>
             <!--content listing-->
             <control type="panel" id="9998">
-                <visible>container(9123).hasfocus(1) | container(9123).hasfocus(2)</visible>
+                <visible>container(9123).hasfocus(1) | container(9123).hasfocus(2) | container(9123).hasfocus(6) | container(9123).hasfocus(7)</visible>
                 <posx>72</posx>
                 <posy>row-20-begin</posy>
                 <width>1848</width>
@@ -392,6 +408,9 @@
                 </focusedlayout>
             </control>
             <control type="list" id="9123">
+                <animation type="conditional" condition="control.hasfocus(9001)">
+                    <effect type="fade" start="100" end="0" time="200"/>
+                </animation>
                 <posx>63</posx>
                 <posy>654</posy>
                 <width>24-col</width>
@@ -447,6 +466,18 @@
                         <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(tvshows)</visible>
                         <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
                         <property name="textTitle">31178</property>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item id="6">
+                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(movies)</visible>
+                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
+                        <property name="textTitle">31132</property>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item id="7">
+                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(tvshows)</visible>
+                        <label>special://skin/extras/playlists/inprogressTVShows.xsp</label>
+                        <property name="textTitle">31127</property>
                         <onclick>noop</onclick>
                     </item>
                     <item id="3">
