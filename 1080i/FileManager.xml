@@ -10,12 +10,12 @@
             <include>modalDialogInOutVertical</include>
             <!--page title-->
             <control type="group">
-                <posx>col-6-begin</posx>
-                <posy>row-4-begin</posy>
+                <posx>col-4-begin</posx>
+                <posy>row-5-begin</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>16-col</width>
+                    <width>18-col</width>
                     <height>2-row</height>
                     <texture>colors/white.png</texture>
                     <colordiffuse>highlight</colordiffuse>
@@ -25,7 +25,7 @@
                 <control type="label">
                     <posx>24</posx>
                     <posy>0</posy>
-                    <width>16-col</width>
+                    <width>18-col</width>
                     <height>2-row</height>
                     <font>dialogTitle</font>
                     <label>10003</label>
@@ -35,7 +35,7 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>2-row</posy>
-                    <width>16-col</width>
+                    <width>18-col</width>
                     <height>660</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
@@ -44,12 +44,13 @@
             </control>
             <!--left panel-->
             <control type="group">
-                <posx>col-6-begin</posx>
+                <posx>col-4-begin</posx>
                 <posy>row-7-begin</posy>
                 <control type="label" id="101">
                     <description>Header Label</description>
                     <posx>24</posx>
                     <posy>0</posy>
+                    <height>2-row</height>
                     <width>8-col-gutter</width>
                     <label>-</label>
                     <font>settingsCategoryTitle</font>
@@ -60,13 +61,13 @@
                 <control type="list" id="20">
                     <posx>12</posx>
                     <posy>2-row</posy>
-                    <width>8-col</width>
+                    <width>9-col</width>
                     <height>15-row</height>
                     <onright>21</onright>
-                    <itemlayout height="2-row" width="8-col">
+                    <itemlayout height="2-row" width="9-col">
                         <control type="label">
                             <posx>12</posx>
-                            <width>8-col-gutter</width>
+                            <width>9-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>
@@ -83,16 +84,16 @@
                             <textcolor>highlight</textcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="2-row" width="8-col">
+                    <focusedlayout height="2-row" width="9-col">
                         <control type="image">
-                            <width>8-col-gutter</width>
+                            <width>9-col-gutter</width>
                             <height>2-row</height>
                             <texture>colors/white.png</texture>
                             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <width>8-col-gutter</width>
+                            <width>9-col-gutter</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>
@@ -114,13 +115,14 @@
             </control>
             <!--right panel-->
             <control type="group">
-                <posx>col-14-begin</posx>
+                <posx>col-13-begin</posx>
                 <posy>row-7-begin</posy>
                 <control type="label" id="102">
                     <description>Header Label</description>
                     <posx>12</posx>
                     <posy>0</posy>
-                    <width>8-col-gutter</width>
+                    <width>9-col-gutter</width>
+                    <height>2-row</height>
                     <label>-</label>
                     <font>settingsCategoryTitle</font>
                     <textcolor>highlight</textcolor>
@@ -128,13 +130,13 @@
                 <control type="list" id="21">
                     <posx>0</posx>
                     <posy>2-row</posy>
-                    <width>8-col</width>
+                    <width>636</width>
                     <height>15-row</height>
                     <onleft>20</onleft>
-                    <itemlayout height="2-row" width="8-col">
+                    <itemlayout height="2-row" width="636">
                         <control type="label">
                             <posx>12</posx>
-                            <width>8-col-gutter</width>
+                            <width>636</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>
@@ -151,16 +153,16 @@
                             <textcolor>highlight</textcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="2-row" width="8-col">
+                    <focusedlayout height="2-row" width="636">
                         <control type="image">
-                            <width>8-col-gutter</width>
+                            <width>636</width>
                             <height>2-row</height>
                             <texture>colors/white.png</texture>
                             <animation effect="fade" start="100" end="50" condition="Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">
                             <posx>12</posx>
-                            <width>8-col-gutter</width>
+                            <width>636</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <info>ListItem.Label</info>

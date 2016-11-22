@@ -165,9 +165,9 @@
                 <control type="panel" id="50">
                     <visible>!String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>0</posx>
-                    <posy>2-row</posy>
+                    <posy>75</posy>
                     <width>8-col</width>
-                    <height>20-row</height>
+                    <height>717</height>
                     <onleft>9000</onleft>
                     <onright>60</onright>
                     <ondown>50</ondown>

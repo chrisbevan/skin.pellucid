@@ -21,15 +21,13 @@
 - Numerous misc tweaks and fixes
 - [MODIFIED] SmartPlaylistEditor.xml / SmartPlaylistRule.xml
 - [NEW] MyPVRTimers.xml
+- [NEW] DialogGameControllers.xml
 
 
 [TODO]
-Gamepad setup
-
 Add user option: Revise player stop on return
 
-Recent items video: Add in progress videos node
-- check recent episodes
+Recent items video: - check recent episodes
 
 Check all XMLS are present
 
