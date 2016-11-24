@@ -2,7 +2,7 @@
 <includes>
     <!--Hub options menu (sort order etc)-->
     <include name="hubOptions">
-        <--hub options-->
+        <!--hub options-->
         <control type="group">
             <animation type="Conditional" condition="!controlgroup(9002).hasfocus | window.isactive(1100)">
                 <effect type="fade" start="100" end="0" time="300"/>

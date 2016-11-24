@@ -8,11 +8,6 @@
             <effect type="fade" start="100" end="0" time="300"/>
         </animation>
     </include>
-    <include name="fadeIn">
-        <animation type="focus">
-            <effect type="fade" start="0" end="100" time="500"/>
-        </animation>
-    </include>
     <include name="listSlideIn">
         <effect type="fade" start="0" end="100" time="300" delay="600"/>
         <effect type="slide" start="3-col" end="0" center="auto" tween="cubic" easing="out" time="400" delay="500"/>

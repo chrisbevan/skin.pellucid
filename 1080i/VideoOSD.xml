@@ -235,21 +235,21 @@
                         <label>13395</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(123)</onclick>
+                        <onclick>ActivateWindow(osdvideosettings)</onclick>
                     </item>
                     <item>
                         <description>Audio Settings</description>
                         <label>13396</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(124)</onclick>
+                        <onclick>ActivateWindow(osdaudiosettings)</onclick>
                     </item>
                     <item>
                         <description>Bookmarks</description>
                         <label>298</label>
                         <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>ActivateWindow(125)</onclick>
+                        <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                 </content>
             </control>

@@ -31,8 +31,6 @@ Recent items video: - check recent episodes
 
 Check all XMLS are present
 
-Lose .DS_Store (need to do this on the windows box)
-
 check all active strings
 
 Screenshots etc

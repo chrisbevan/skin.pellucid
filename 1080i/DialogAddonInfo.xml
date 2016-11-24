@@ -39,7 +39,7 @@
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <--addon details-->
+            <!--addon details-->
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>

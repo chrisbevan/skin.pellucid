@@ -774,7 +774,7 @@
                         <height>1-col</height>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <label>IP</label>
+                        <label>31093</label>
                         <textoffsetx>0</textoffsetx>
                         <onleft>304</onleft>
                         <onright>160</onright>

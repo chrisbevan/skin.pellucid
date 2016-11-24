@@ -70,12 +70,6 @@
             <linespacing>0.9</linespacing>
         </font>
         <font>
-            <name>regularSemibold</name>
-            <filename>roboto/semibold.ttf</filename>
-            <size>36</size>
-            <linespacing>0.9</linespacing>
-        </font>
-        <font>
             <name>regularLight</name>
             <filename>roboto/light.ttf</filename>
             <size>36</size>

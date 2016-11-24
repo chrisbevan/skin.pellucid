@@ -62,17 +62,6 @@
     <variable name="unwatchedOnly">
         <value condition="System.Setting(hidewatched)">$LOCALIZE[31213]</value>
     </variable>
-    <!--fullscreeninfo titles-->
-    <variable name="nowPlayingTitle">
-        <value condition="!StringCompare(VideoPlayer.title,VideoPlayer.TVShowTitle)">$INFO[videoplayer.tvshowtitle] $INFO[videoplayer.title]</value>
-        <value condition="StringCompare(VideoPlayer.title,VideoPlayer.TVShowTitle)">$INFO[videoplayer.title]</value>
-    </variable>
-    <!--Shift progress dialogs where possible to avoid overlaps-->
-    <variable name="progressDialogPosition">
-        <value condition="window.isactive(infodialog) + !window.isactive(extendedprogressdialog)">209</value>
-        <value condition="window.isactive(infodialog) + window.isactive(extendedprogressdialog)">323</value>
-        <value>95</value>
-    </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
         <value condition="SubString(MusicPlayer.Rating,1)"></value>

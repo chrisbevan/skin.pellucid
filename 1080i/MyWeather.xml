@@ -29,7 +29,7 @@
                 <posy>row-1-begin</posy>
                 <width>14-col</width>
                 <font>pageTitle</font>
-                <label>Weather</label>
+                <label>31197</label>
                 <textcolor>textActive</textcolor>
             </control>
             <!--source subtitle-->
@@ -115,7 +115,7 @@
                         <width>12-col</width>
                         <height>2-row</height>
                         <font>regular</font>
-                        <label>Wind $INFO[Window.Property(Current.wind)]</label>
+                        <label>$LOCALIZE[31094] $INFO[Window.Property(Current.wind)]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                     </control>

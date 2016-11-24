@@ -57,11 +57,7 @@
             <control type="label">
                 <width>24-col</width>
                 <label>$INFO[PVR.ActStreamSNR,$LOCALIZE[19009]: ]</label>
-            </control>
-            <control type="label">
-                <width>24-col</width>
-                <label>$INFO[Player.Process(videodecoder),$LOCALIZE[31115]: ]$VAR[VideoHWDecoder, (,)]</label>
-            </control>
+            </control> 
             <control type="label">
                 <width>24-col</width>
                 <label>$INFO[Player.Process(pixformat),$LOCALIZE[31114]: ]</label>

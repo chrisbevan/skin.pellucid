@@ -397,6 +397,14 @@ msgctxt "#31092"
 msgid "Add Music Playlist"
 msgstr ""
 
+msgctxt "#31093"
+msgid "IP"
+msgstr ""
+
+msgctxt "#31094"
+msgid "Wind"
+msgstr ""
+
 msgctxt "#31095"
 msgid "Transfer and copy files"
 msgstr ""
@@ -517,12 +525,20 @@ msgctxt "#31124"
 msgid "Search Library"
 msgstr ""
 
+msgctxt "#31125"
+msgid "Searching for"
+msgstr ""
+
 msgctxt "#31126"
 msgid "Settings level"
 msgstr ""
 
 msgctxt "#31127"
 msgid "Resume TV"
+msgstr ""
+
+msgctxt "#31128"
+msgid "Add"
 msgstr ""
 
 msgctxt "#31131"
