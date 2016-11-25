@@ -25,16 +25,11 @@
 
 
 [TODO]
-dialogPVRinfo: extra button (see forum)
-
 Check all PVR windows
 
 Add user option: Revise player stop on return
 
 PVR mini window
-
-Screenshots
-
 
 [B]1.1.0[/B]
 

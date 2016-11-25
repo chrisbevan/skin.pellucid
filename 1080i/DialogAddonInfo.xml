@@ -67,9 +67,8 @@
                         <height>4-col-gutter</height>
                         <aspectratio>scale</aspectratio>
                         <texture border="6">$INFO[Listitem.thumb]</texture>
-                        <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
-                        <colordiffuse>ffffffff</colordiffuse>
+                        <bordertexture border="6" colordiffuse="aa111111">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
                     </control>
                 </itemlayout>
                 <focusedlayout width="444" height="336">
