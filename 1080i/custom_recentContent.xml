@@ -89,7 +89,7 @@
                         <label>[B]$INFO[container(9998).listitem.title][/B][CR]$INFO[container(9998).listitem.director,$LOCALIZE[31196]. ,.] $INFO[container(9998).listitem.year,,]</label>
                     </control>
                     <control type="label">
-                        <visible>Container(9123).HasFocus(2)</visible>
+                        <visible>Container(9123).HasFocus(7)</visible>
                         <posx>24-col</posx>
                         <posy>0</posy>
                         <width>24-col</width>
@@ -99,10 +99,10 @@
                         <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
-                        <label>[B]$INFO[container(9998).listitem.tvshowtitle][/B][CR]$INFO[container(9998).ListItem.Season,$LOCALIZE[31011], ]$INFO[container(9998).ListItem.Episode,$LOCALIZE[31204], ]</label>
+                        <label>[B]$INFO[container(9998).listitem.tvshowtitle][/B][CR]$INFO[container(9998).ListItem.Season,$LOCALIZE[31011] , ]$INFO[container(9998).ListItem.Episode,$LOCALIZE[31204] ,]</label>
                     </control>
                     <control type="label">
-                        <visible>Container(9123).HasFocus(7)</visible>
+                        <visible>Container(9123).HasFocus(2)</visible>
                         <posx>24-col</posx>
                         <posy>0</posy>
                         <width>24-col</width>
@@ -129,9 +129,9 @@
                     </control>
                 </control>
             </control>
-            <!--content listing-->
+            <!--content listing: movies and tvshows-->
             <control type="panel" id="9998">
-                <visible>container(9123).hasfocus(1) | container(9123).hasfocus(2) | container(9123).hasfocus(6) | container(9123).hasfocus(7)</visible>
+                <visible>container(9123).hasfocus(1) | container(9123).hasfocus(2) | container(9123).hasfocus(6)</visible>
                 <posx>72</posx>
                 <posy>row-20-begin</posy>
                 <width>1848</width>
@@ -295,6 +295,116 @@
                     </control>
                 </focusedlayout>
             </control>
+			<!--content listing: episodes-->
+            <control type="panel" id="9998">
+                <visible>container(9123).hasfocus(7)</visible>
+                <posx>72</posx>
+                <posy>row-20-begin</posy>
+                <width>1848</width>
+                <height>9-row</height>
+                <onup>9123</onup>
+                <onleft>9000</onleft>
+                <onback>9000</onback>
+                <orientation>horizontal</orientation>
+                <onback>control.setfocus(9000)</onback>
+                <content>$INFO[control.getlabel(9123)]</content>
+                <itemlayout width="420" height="312">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>384</width>
+                        <height>288</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="6">DefaultPoster.png</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>overlay</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>2-row</posy>
+                        <width>360</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>regularStrong</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.tvshowtitle]</label>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>360</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>384</width>
+                        <height>288</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="420" height="312">
+                    <control type="group">
+                        <include>focusThumb</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>384</width>
+                            <height>288</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="6">DefaultPoster.png</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>360</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textDisabled</textcolor>
+                            <label>$INFO[ListItem.tvshowtitle]</label>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>360</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textDisabled</textcolor>
+                            <label>$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,]</label>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>384</width>
+                            <height>288</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                    </control>
+                </focusedlayout>
+            </control>
+			<!--content listing: Music-->
             <control type="panel" id="9998">
                 <visible>container(9123).hasfocus(3) | container(9123).hasfocus(4) | container(9123).hasfocus(5)</visible>
                 <posx>72</posx>

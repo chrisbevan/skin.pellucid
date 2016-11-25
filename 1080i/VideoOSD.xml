@@ -4,6 +4,12 @@
     <onload>Control.SetFocus(8001,3)</onload>
     <include>fadeInOut</include>
     <controls>
+		<control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>colors/black.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <colordiffuse>textboxInactive</colordiffuse>
+        </control>
         <control type="group">
             <!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
@@ -12,15 +18,6 @@
             <posx>col-10-begin</posx>
             <posy>row-8-begin</posy>
             <include>modalDialogInOutVertical</include>
-            <control type="image">
-                <posx>-36</posx>
-                <posy>-36</posy>
-                <width>7-col</width>
-                <height>16-row</height>
-                <texture>colors/black.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <colordiffuse>textboxInactive</colordiffuse>
-            </control>
             <!--player controls-->
             <control type="panel" id="8001">
                 <posx>0</posx>
@@ -127,7 +124,7 @@
             <control type="panel" id="8002">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>6-col</width>
+                <width>429</width>
                 <height>12-row</height>
                 <itemgap>0</itemgap>
                 <onup>8001</onup>

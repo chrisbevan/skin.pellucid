@@ -25,11 +25,13 @@
 
 
 [TODO]
+PVR mini window
+
+Skin shortcuts default menus not quite right (need overrides?? Multiple actions not allowed in default)
+
 Add user option: Revise player stop on return
 
-Recent items video: - check recent episodes
-
-Check all XMLS are present
+Recent items video: - resume episodes
 
 check all active strings
 

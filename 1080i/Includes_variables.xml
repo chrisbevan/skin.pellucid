@@ -23,7 +23,7 @@
     </variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.isactive(1106)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342] / ]$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343] / ]$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
+        <value condition="Window.isactive(1106)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342] • ]$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343] • ]$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
         <value condition="Window.isactive(Music)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
     </variable>
     <!--list view item detail / subheader-->
