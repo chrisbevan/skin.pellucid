@@ -25,13 +25,14 @@
 
 
 [TODO]
+Gamecontrollers: button separators (see forum)
+dialogPVRinfo: extra button (see forum)
+
+Check all PVR windows and consider including OSD
+
 Add user option: Revise player stop on return
 
 Recent items video: - check recent episodes
-
-Check all XMLS are present
-
-check all active strings
 
 Screenshots etc
 
