@@ -28,11 +28,14 @@
 Gamecontrollers: button separators (see forum)
 dialogPVRinfo: extra button (see forum)
 
-Check all PVR windows and consider including OSD
+Check all PVR windows
 
 Add user option: Revise player stop on return
+PVR mini window
 
-Recent items video: - check recent episodes
+Skin shortcuts default menus not quite right (need overrides?? Multiple actions not allowed in default)
+
+Add user option: Revise player stop on return
 
 Screenshots etc
 
