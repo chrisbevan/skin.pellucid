@@ -6,7 +6,6 @@
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>Skin.SetString(recentitems,music)</action>
         <action>activateWindow(1103)</action>
     </shortcut>
     <shortcut>
@@ -25,7 +24,6 @@
         <action>ActivateWindow(Radiochannels)</action>
     </shortcut>
     <shortcut>
-        <visible>Library.HasContent(Music)</visible>
         <label>133</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
@@ -33,7 +31,6 @@
         <action>ActivateWindow(MusicLibrary,musicdb://artists/)</action>
     </shortcut>
     <shortcut>
-        <visible>Library.HasContent(Music)</visible>
         <label>132</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
@@ -41,7 +38,6 @@
         <action>ActivateWindow(MusicLibrary,musicdb://albums/)</action>
     </shortcut>
     <shortcut>
-        <visible>Library.HasContent(Music)</visible>
         <label>135</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
@@ -49,7 +45,6 @@
         <action>ActivateWindow(MusicLibrary,musicdb://genres/)</action>
     </shortcut>
     <shortcut>
-        <visible>Library.HasContent(Music)</visible>
         <label>136</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>

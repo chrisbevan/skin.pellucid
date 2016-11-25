@@ -186,6 +186,17 @@
                 <onright>3</onright>
                 <onback>3</onback>
             </control>
+            <control type="label" id="8">
+                <description>Default Label</description>
+                <label>-</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textoffsetx>24</textoffsetx>
+                <height>2-row</height>
+                <font>settingsCategoryTitle</font>
+                <textcolor>highlight</textcolor>
+                <shadowcolor>-</shadowcolor>
+            </control>
         </control>
         <!--dialog buttons (hidden)-->
         <control type="group">
