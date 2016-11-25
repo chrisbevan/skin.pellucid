@@ -30,13 +30,10 @@ dialogPVRinfo: extra button (see forum)
 Check all PVR windows
 
 Add user option: Revise player stop on return
+
 PVR mini window
 
-Skin shortcuts default menus not quite right (need overrides?? Multiple actions not allowed in default)
-
-Add user option: Revise player stop on return
-
-Screenshots etc
+Screenshots
 
 
 [B]1.1.0[/B]
