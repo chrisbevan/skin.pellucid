@@ -25,11 +25,7 @@
 
 
 [TODO]
-Check all PVR windows
-
-Add user option: Revise player stop on return
-
-PVR mini window
+Mini video window. Add user option: Revise player stop on return
 
 [B]1.1.0[/B]
 

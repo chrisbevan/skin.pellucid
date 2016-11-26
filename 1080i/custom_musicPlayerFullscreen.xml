@@ -20,6 +20,7 @@
                 </control>
                 <!--visualisation-->
                 <control type="visualisation" id="2">
+                    <visible>!SlideShow.IsActive</visible>
                     <description>visualisation</description>
                     <posx>0</posx>
                     <posy>0</posy>

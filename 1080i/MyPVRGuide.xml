@@ -7,10 +7,8 @@
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
             <!--Main content listing-->
             <control type="group" id="9999">
                 <!--initial animation-->
@@ -164,6 +162,8 @@
             </control>
             <!--dateTime-->
             <include>dateTime</include>
+            <!--mini window-->
+            <include>miniVideoPlayer</include>
         </control>
         <!--hub menu-->
         <include>hubMenu</include>

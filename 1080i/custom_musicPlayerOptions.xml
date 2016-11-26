@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1105">
     <defaultcontrol always="true">8001</defaultcontrol>
+    <include>fadeInOut</include>
     <controls>
+        <control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>colors/black.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <colordiffuse>overlay</colordiffuse>
+        </control>
         <!-- options menu-->
         <control type="group">
             <posx>col-10-begin</posx>
             <posy>row-6-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-            <control type="image">
-                <posx>-36</posx>
-                <posy>-36</posy>
-                <width>7-col</width>
-                <height>16-row</height>
-                <texture>colors/black.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <colordiffuse>overlay</colordiffuse>
-            </control>
             <!--player controls-->
             <control type="panel" id="8001">
                 <posx>0</posx>
@@ -172,7 +170,7 @@
             <control type="panel" id="8003">
                 <posx>0</posx>
                 <posy>4-row</posy>
-                <width>6-col</width>
+                <width>429</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>
                 <onup>8002</onup>

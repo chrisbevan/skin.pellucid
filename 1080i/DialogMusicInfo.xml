@@ -4,6 +4,7 @@
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="400" delay="400"/>
     </animation>
+    <onload condition="container.content(songs)">action(back)</onload>
     <controls>
         <!--fanart / coverart if available-->
         <control type="group">

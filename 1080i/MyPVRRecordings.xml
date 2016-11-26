@@ -203,6 +203,8 @@
             </control>
             <!--dateTime-->
             <include>dateTime</include>
+            <!--mini window-->
+            <include>miniVideoPlayer</include>
         </control>
         <!--hub menu-->
         <include>hubMenu</include>

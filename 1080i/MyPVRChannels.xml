@@ -4,25 +4,20 @@
     <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
-
         <!--page container group-->
         <control type="group">
-
             <!--window fader-->
             <animation type="conditional" condition="window.next(0) | window.next(1)">
                 <effect type="fade" start="100" end="0" time="300"/>
             </animation>
-
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
             <!--Main content listing-->
             <control type="group" id="9999">
                 <!--initial animation-->
                 <include>contentOpen</include>
                 <include>liveTVChannels</include>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="9400">
                 <visible>Control.IsVisible(60) + !control.isvisible(10)</visible>
@@ -35,7 +30,6 @@
                     <onback>9999</onback>
                 </control>
             </control>
-
             <!--Folder titles-->
             <control type="group">
                 <posx>col-1-begin</posx>
@@ -70,6 +64,8 @@
             </control>
             <!--dateTime-->
             <include>dateTime</include>
+            <!--mini window-->
+            <include>miniVideoPlayer</include>
         </control>
         <!--hub menu-->
         <include>hubMenu</include>
