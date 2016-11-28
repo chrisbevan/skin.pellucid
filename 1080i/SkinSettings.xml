@@ -100,10 +100,6 @@
                             <label>$LOCALIZE[128]</label>
                             <onclick>noop</onclick>
                         </item>
-                        <item id="2">
-                            <label>$LOCALIZE[31162]</label>
-                            <onclick>noop</onclick>
-                        </item>
                         <item id="3">
                             <label>$LOCALIZE[31044]</label>
                             <onclick>noop</onclick>
@@ -186,13 +182,6 @@
                     <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
-                </control>
-                <control type="button" id="12">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Reset main menu</description>
-                    <width>14-col</width>
-                    <label>31052</label>
-                    <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                 </control>
             </control>
         </control>

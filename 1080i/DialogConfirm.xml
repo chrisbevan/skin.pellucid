@@ -21,11 +21,13 @@
                 <textcolor>textActive</textcolor>
             </control>
             <control type="progress" id="20">
-            <description>Progressbar</description>
+                <description>Progressbar</description>
                 <posx>0</posx>
                 <posy>-72</posy>
                 <width>8-col</width>
-                <height>1-row</height>
+                <height>24</height>
+                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
+                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                 <info>System.Progressbar</info>
             </control>
             <control type="textbox" id="9">
