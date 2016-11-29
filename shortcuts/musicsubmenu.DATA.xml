@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
     <shortcut>
-        <visible>Player.HasAudio</visible>
+        <visible>Player.HasMedia</visible>
         <label>31136</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
@@ -13,9 +13,9 @@
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-		<action>Skin.SetString(recentitems,music)</action>
+        <action>Skin.SetString(recentitems,music)</action>
         <action>ActivateWindow(1106)</action>
-		<action>control.setfocus(9998)</action>
+        <action>control.setfocus(9998)</action>
     </shortcut>
     <shortcut>
         <visible>PVR.HasRadioChannels</visible>

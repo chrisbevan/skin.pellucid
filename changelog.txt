@@ -25,7 +25,8 @@
 
 
 [TODO]
-Mini video window. Add user option: Revise player stop on return
+Check user option: player stop on return (include may need work)
+Needs to allow PVR content if user has not adjusted their settings.
 
 [B]1.1.0[/B]
 

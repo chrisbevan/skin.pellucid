@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
@@ -66,6 +67,8 @@
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--debug-->
         <include>DebugGrid</include>
         <control type="label">

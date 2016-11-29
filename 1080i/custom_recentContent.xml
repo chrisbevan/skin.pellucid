@@ -295,7 +295,7 @@
                     </control>
                 </focusedlayout>
             </control>
-			<!--content listing: episodes-->
+            <!--content listing: episodes-->
             <control type="panel" id="9998">
                 <visible>container(9123).hasfocus(7)</visible>
                 <posx>72</posx>
@@ -404,7 +404,7 @@
                     </control>
                 </focusedlayout>
             </control>
-			<!--content listing: Music-->
+            <!--content listing: Music-->
             <control type="panel" id="9998">
                 <visible>container(9123).hasfocus(3) | container(9123).hasfocus(4) | container(9123).hasfocus(5)</visible>
                 <posx>72</posx>
@@ -639,6 +639,8 @@
                 <include>dateTime</include>
             </control>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

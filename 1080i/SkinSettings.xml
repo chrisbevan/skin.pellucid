@@ -125,6 +125,14 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
+                <control type="radiobutton" id="6">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Stop video on return to menu</description>
+                    <width>14-col</width>
+                    <label>31138</label>
+                    <onclick>Skin.ToggleSetting(stopVideoOnMenu)</onclick>
+                    <selected>Skin.HasSetting(stopVideoOnMenu)</selected>
+                </control>
                 <control type="button" id="2">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Set home background image directory</description>

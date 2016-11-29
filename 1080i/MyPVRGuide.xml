@@ -3,6 +3,7 @@
     <views>10</views>
     <include>fadeInOut</include>
     <defaultcontrol always="true">9999</defaultcontrol>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -162,9 +163,9 @@
             </control>
             <!--dateTime-->
             <include>dateTime</include>
-            <!--mini window-->
-            <include>miniVideoPlayer</include>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

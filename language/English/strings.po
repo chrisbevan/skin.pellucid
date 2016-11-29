@@ -569,6 +569,10 @@ msgctxt "#31137"
 msgid "Content Scraper:"
 msgstr ""
 
+msgctxt "#31138"
+msgid "Stop video playing on return to menu"
+msgstr ""
+
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
 msgstr ""

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
     <shortcut>
+        <visible>Player.HasMedia</visible>
+        <label>31136</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>action(FullScreen)</action>
+    </shortcut>
+    <shortcut>
         <label>32032</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
