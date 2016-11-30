@@ -1,6 +1,6 @@
 Pellucid
 ===================
 
-Pellucid is a skin for Kodi by theDeadMan
+Pellucid is a skin for Kodi Krypton by theDeadMan.
 
 

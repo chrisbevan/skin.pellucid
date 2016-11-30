@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1106">
     <defaultcontrol always="true">9000</defaultcontrol>
+	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <controls>
         <control type="group" id="9999">
             <include>fadeInOut</include>
