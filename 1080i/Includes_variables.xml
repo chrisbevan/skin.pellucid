@@ -64,12 +64,17 @@
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
-        <value condition="SubString(MusicPlayer.Rating,1)"></value>
-        <value condition="SubString(MusicPlayer.Rating,2)"></value>
-        <value condition="SubString(MusicPlayer.Rating,3)"></value>
-        <value condition="SubString(MusicPlayer.Rating,4)"></value>
-        <value condition="SubString(MusicPlayer.Rating,5)"></value>
-        <value></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,1)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,2)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,3)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,4)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,5)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,6)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,7)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,8)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,9)"></value>
+        <value condition="stringcompare(MusicPlayer.UserRating,10)"></value>
+        <value></value>
     </variable>
     <!--home background location-->
     <variable name="homeBackgroundLocation">

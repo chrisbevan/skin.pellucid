@@ -541,6 +541,14 @@ msgctxt "#31128"
 msgid "Add"
 msgstr ""
 
+msgctxt "#31129"
+msgid "Artist"
+msgstr ""
+
+msgctxt "#31130"
+msgid "Year"
+msgstr ""
+
 msgctxt "#31131"
 msgid "Switch to this profile now"
 msgstr ""
@@ -635,6 +643,22 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Album"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Genre"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Rate"
 msgstr ""
 
 msgctxt "#31175"

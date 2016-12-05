@@ -8,8 +8,6 @@
     <include file="Includes_hubOptions.xml"/>
     <include file="Includes_hubOptionsItems.xml"/>
     <include file="View_LiveTVChannels.xml"/>
-    <include file="View_VideoRecentItems.xml"/>
-    <include file="View_MusicRecentItems.xml"/>
     <include file="View_Seasons.xml"/>
     <include file="View_Episodes.xml"/>
     <include file="View_Movies.xml"/>

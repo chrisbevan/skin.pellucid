@@ -211,7 +211,6 @@
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
-                    
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>0</posy>
@@ -308,7 +307,7 @@
                         <visible>false</visible>
                     </item>
                     <item>
-                        <label>38023</label>
+                        <label>31169</label>
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>SendClick(2003,7)</onclick>

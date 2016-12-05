@@ -81,14 +81,14 @@
                         <label>$INFO[MusicPlayer.Title]</label>
                    </control>
                    <control type="label">
-                       <posx>8-col-indent</posx>
+                       <posx>8-col</posx>
                        <posy>0</posy>
                        <width>612</width>
                        <height>2-row</height>
                        <font>regularStrong</font>
                        <textcolor>textActive</textcolor>
                        <scroll>true</scroll>
-                       <label>[B]$INFO[MusicPlayer.rating,,*][/B]</label>
+                       <label>[B]$INFO[MusicPlayer.userrating,,*][/B]</label>
                   </control>
                    <control type="image">
                        <posx>0</posx>

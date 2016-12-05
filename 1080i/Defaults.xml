@@ -184,7 +184,7 @@
     </default>
     <default type="scrollbar">
         <width>12</width>
-        <texturesliderbar>colors/inactive.png</texturesliderbar>
+        <texturesliderbar>-</texturesliderbar>
         <texturesliderbackground colordiffuse="overlay">colors/black.png</texturesliderbackground>
         <texturesliderbarfocus colordiffuse="highlight">colors/white.png</texturesliderbarfocus>
         <showonepage>false</showonepage>

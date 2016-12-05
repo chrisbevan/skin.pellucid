@@ -4,7 +4,6 @@
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="400" delay="400"/>
     </animation>
-    <onload condition="container.content(songs)">action(back)</onload>
     <controls>
         <!--fanart / coverart if available-->
         <control type="group">
@@ -410,12 +409,229 @@
                 </content>
             </control>
         </control>
+        <!--content is a song-->
+        <control type="group">
+            <visible>container.content(songs)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <!--content-->
+            <control type="group">
+                <posx>col-7-begin</posx>
+                <posy>row-5-begin</posy>
+                <include>modalDialogInOut</include>
+                <!--titles-->
+                <control type="label">
+                    <description>Song title</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>12-col-gutter</width>
+                    <height>3-row</height>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>largeLight</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>$INFO[ListItem.title]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+                <!--col 1-->
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>4-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31129][/COLOR] $INFO[ListItem.artist]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>5-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31130][/COLOR] $INFO[ListItem.year]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>6-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31193][/COLOR] $INFO[ListItem.duration]</label>
+                </control>
+                <!--col 2-->
+                <control type="label">
+                    <posx>6-col</posx>
+                    <posy>4-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31166][/COLOR] $INFO[ListItem.album]</label>
+                </control>
+                <control type="label">
+                    <posx>6-col</posx>
+                    <posy>5-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31167][/COLOR] $INFO[ListItem.genre]</label>
+                </control>
+                <control type="label">
+                    <posx>6-col</posx>
+                    <posy>6-row</posy>
+                    <width>6-col-gutter</width>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>[COLOR highlight]$LOCALIZE[31168][/COLOR] $INFO[ListItem.UserRating]</label>
+                </control>
+                <!--synopsis-->
+                <control type="textbox">
+                    <posx>0</posx>
+                    <posy>8-row</posy>
+                    <font>textbox</font>
+                    <width>12-col</width>
+                    <align>left</align>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <height>200</height>
+                    <label>$INFO[ListItem.Property(Album_Description)]</label>
+                    <autoscroll delay="10000" time="1000" repeat="10000"/>
+                </control>
+                <!--dialog controls-->
+                <control type="list" id="8000">
+                    <posx>0</posx>
+                    <posy>16-row</posy>
+                    <width>12-col</width>
+                    <height>2-row</height>
+                    <orientation>horizontal</orientation>
+                    <itemlayout width="4-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/black.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <font>symbolLarge</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label2]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>3-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="4-col" height="2-row">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/white.png</texture>
+                            <colordiffuse>highlight</colordiffuse>
+                            <include>spinFocusIcon</include>
+                        </control>
+                        <control type="image">
+                            <posx>1-col</posx>
+                            <posy>0</posy>
+                            <width>3-col</width>
+                            <height>2-row</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>colors/white.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <font>symbolLarge</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label2]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1-col-indent</posx>
+                            <posy>0</posy>
+                            <width>3-col</width>
+                            <height>2-row</height>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>black</textcolor>
+                            <label>$INFO[ListItem.label]</label>
+                            <shadowcolor>-</shadowcolor>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item id="1">
+                            <label>31075</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>dialog.close(all,true)</onclick>
+                            <onclick>action(select)</onclick>
+                        </item>
+                        <item id="2">
+                            <label>31169</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(2003,7)</onclick>
+                        </item>
+                        <item id="3">
+                            <label>13511</label>
+                            <label2></label2>
+                            <thumb>-</thumb>
+                            <onclick>SendClick(2003,10)</onclick>
+                        </item>
+                    </content>
+                </control>
+            </control>
+
+        </control>
         <!--dialog controls-->
         <control type="group">
             <visible>false</visible>
             <control type="button" id="6">
                 <description>Refresh button</description>
                 <label>184</label>
+            </control>
+            <control type="button" id="7">
+                <description>Set rating</description>
             </control>
             <control type="button" id="10">
                 <description>Get Thumb</description>

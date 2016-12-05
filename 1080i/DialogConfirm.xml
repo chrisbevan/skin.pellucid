@@ -21,6 +21,7 @@
                 <textcolor>textActive</textcolor>
             </control>
             <control type="progress" id="20">
+                <visible>false</visible>
                 <description>Progressbar</description>
                 <posx>0</posx>
                 <posy>-72</posy>
