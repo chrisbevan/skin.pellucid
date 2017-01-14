@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-
     <controls>
         <include>globalBackground</include>
         <!--About this addon-->
         <control type="group">
             <posx>col-4-begin</posx>
-            <posy>row-1-begin</posy>
+            <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
@@ -26,7 +25,7 @@
                 <width>17-col</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
-                <label>$INFO[ListItem.Property(Addon.Type)]</label>
+                <label>$INFO[ListItem.AddonType]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -35,75 +34,105 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>24-row</height>
+                <height>20-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <--addon details-->
+            <!--addon details-->
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>10-row</height>
+                <height>8-row</height>
                 <aspectratio aligny="center">scale</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[ListItem.art(fanart)]</texture>
+                <texture fallback="colors/black.png">$INFO[ListItem.art(fanart)]</texture>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>10-row</height>
-                <aspectratio aligny="center">scale</aspectratio>
-                <texture>vignette.png</texture>
-            </control>
-            <control type="image">
+            <!--screenshots-->
+            <control type="panel" id="50">
                 <posx>1-col</posx>
-                <posy>3-row</posy>
-                <width>4-col</width>
-                <height>4-col</height>
-                <aspectratio>stretch</aspectratio>
-                <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-                <bordertexture border="3" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
+                <posy>87</posy>
+                <width>16-col</width>
+                <height>8-row</height>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <ondown>8000</ondown>
+                <orientation>horizontal</orientation>
+                <scrolltime tween="cubic" easing="out">600</scrolltime>
+                <itemlayout width="444" height="336">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>6-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>scale</aspectratio>
+                        <texture border="6">$INFO[Listitem.thumb]</texture>
+                        <bordertexture border="6" colordiffuse="aa111111">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="444" height="336">
+                    <control type="group">
+                        <include>focusThumb</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>6-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>scale</aspectratio>
+                            <texture>$INFO[Listitem.thumb]</texture>
+                            <bordertexture border="6">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                    </control>
+                </focusedlayout>
             </control>
             <control type="group">
                 <posx>6-col</posx>
-                <posy>12-row</posy>
+                <posy>10-row</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>12-col</width>
-                    <height>14-row</height>
+                    <height>12-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
+                <control type="image">
+                    <posx>12</posx>
+                    <posy>12</posy>
+                    <width>2-col-gutter</width>
+                    <height>2-col-gutter</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
+                </control>
                 <control type="label">
                     <description>Addon Title</description>
-                    <posx>12</posx>
-                    <posy>0</posy>
+                    <posx>2-col-indent</posx>
+                    <posy>12</posy>
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>mediumStrong</font>
-                    <label>$INFO[ListItem.Property(Addon.Name)]</label>
+                    <label>$INFO[ListItem.addonname]</label>
                 </control>
                 <control type="label">
-                    <posx>12</posx>
+                    <posx>2-col-indent</posx>
                     <posy>2-row</posy>
                     <width>12-col-gutter</width>
-                    <font>small</font>
+                    <font>smallStrong</font>
                     <textcolor>highlight</textcolor>
-                    <label>[B]$LOCALIZE[31082] $INFO[ListItem.Property(Addon.Version)], $INFO[ListItem.Property(Addon.Creator)][/B]</label>
+                    <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
                     <posy>4-row</posy>
                     <font>textbox</font>
                     <width>12-col-gutter</width>
-                    <height>9-row</height>
-                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
+                    <height>7-row</height>
+                    <label>$INFO[ListItem.AddonDescription]</label>
                     <autoscroll delay="5000" time="1000" repeat="10000"/>
                 </control>
             </control>
@@ -111,7 +140,7 @@
             <control type="group">
                 <visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
                 <posx>0</posx>
-                <posy>12-row</posy>
+                <posy>10-row</posy>
                 <control type="list" id="8000">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -119,6 +148,7 @@
                     <height>14-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
+                    <onup>50</onup>
                     <itemlayout width="6-col" height="2-row">
                         <control type="label">
                             <posx>0</posx>
@@ -214,32 +244,18 @@
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(8) + SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31015]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
-                        </item>
-                        <item>
-                            <visible>Control.IsEnabled(8) + !SubString(Control.GetLabel(13),*)</visible>
-                            <label>$LOCALIZE[31013]: $LOCALIZE[31016]</label>
-                            <label2></label2>
-                            <thumb>-</thumb>
-                            <onclick>SendClick(146,13)</onclick>
-                        </item>
-                        <item>
-                            <visible>Control.IsEnabled(7)</visible>
-                            <label>$INFO[Control.GetLabel(7)]</label>
-                            <label2></label2>
+                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),enable)</visible>
+                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(10)</visible>
-                            <label>$INFO[Control.GetLabel(10)]</label>
-                            <label2></label2>
+                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),disable)</visible>
+                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label2></label2>
                             <thumb>-</thumb>
-                            <onclick>SendClick(146,10)</onclick>
+                            <onclick>SendClick(146,7)</onclick>
                         </item>
                     </content>
                 </control>
@@ -263,15 +279,8 @@
                 <description>Addon Settings</description>
                 <label>24020</label>
             </control>
-            <control type="button" id="10">
-                <description>Changelog button</description>
-                <label>24036</label>
-            </control>
             <control type="button" id="12">
                 <description>Launch addon</description>
-            </control>
-            <control type="radiobutton" id="13">
-                <description>Enable / disable auto update</description>
             </control>
         </control>
         <!--debugging-->

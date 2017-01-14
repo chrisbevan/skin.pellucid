@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [B]1.0.2[/B]
 - [FIX] Repeat and shuffle icons position
 - [NEW] Left and right now skips tracks in fullscreen music view
@@ -61,3 +62,24 @@ Note: Moving straight to song view shows listing briefly
 
 
 
+=======
+**Changelog**
+
+[V1.0.3]
+- Minor bug fixes and tweaks
+- [CHANGED] TVShow Episode count now reflects watched / unwatched status
+- [CHANGED] TVShow view revised to poster view
+- [NEW] Basic weather info now available on homescreen
+- [CHANGED] Default and skin colour options revised
+- [NEW] Higher quality homescreen backgrounds
+
+[V1.0.2]
+- Bug fixes
+- Extra colour themes added
+
+[V1.0.0]
+- Initial release
+- [UPDATED] MyMusicPlaylistEditor.xml
+- [REMOVED] Unused images
+- Minor fixes and bug squashing (thanks Ronie!)
+>>>>>>> Krypton

@@ -5,7 +5,7 @@
     <controls>
         <include>globalBackground</include>
         <control type="image">
-            <include>fullscreenDimensions</include>
+            <include>dimensionsFullscreen</include>
             <aspectratio scalediffuse="false" align="left">scale</aspectratio>
             <texture border="0">$INFO[Listitem.thumb]</texture>
             <colordiffuse>22ffffff</colordiffuse>

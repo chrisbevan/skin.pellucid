@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">4</defaultcontrol>
-     
     <controls>
         <!--background-->
         <include>globalBackground</include>
         <control type="group">
             <posx>col-9-begin</posx>
-            <posy>row-2-begin</posy>
+            <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <animation type="conditional" condition="window.isactive(profilesettings)">
@@ -23,15 +22,6 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>8-col</width>
-                <height>23-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>44ffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
@@ -39,7 +29,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
-                <label>31103</label>
+                <label>14210</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
@@ -53,10 +43,10 @@
             </control>
             <control type="image">
                 <description>profile image</description>
-                <posx>156</posx>
-                <posy>84</posy>
-                <width>4-col-gutter</width>
-                <height>4-col-gutter</height>
+                <posx>0</posx>
+                <posy>73</posy>
+                <width>8-col</width>
+                <height>10-row</height>
                 <texture fallback="colors/offblack.png" border="0">$INFO[System.ProfileThumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -64,7 +54,7 @@
                 <posx>0</posx>
                 <posy>10-row</posy>
                 <width>8-col</width>
-                <height>2-row</height>
+                <height>73</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>textboxInactive</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -88,14 +78,14 @@
                 <posy>12-row</posy>
                 <width>8-col</width>
                 <label>20096</label>
-                <texturenofocus>colors/black.png</texturenofocus>
+                <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                 <align>left</align>
                 <ondown>2</ondown>
             </control>
             <control type="panel" id="2">
-                <posx>12</posx>
-                <posy>516</posy>
-                <width>8-col-gutter</width>
+                <posx>0</posx>
+                <posy>507</posy>
+                <width>8-col</width>
                 <height>8-row</height>
                 <onup>4</onup>
                 <itemlayout width="8-col" height="2-row">
@@ -105,7 +95,7 @@
                         <width>69</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/offblack.png">$INFO[listitem.icon]</texture>
+                        <texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
                     </control>
@@ -144,12 +134,13 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>69</width>
+                        <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/offblack.png">$INFO[listitem.icon]</texture>
+                        <texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>ffffffff</colordiffuse>
+                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>

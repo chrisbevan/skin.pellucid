@@ -21,14 +21,46 @@
                 <label>$LOCALIZE[31206]</label>
                 <textcolor>textActive</textcolor>
             </control>
-            <!--source subtitle-->
-            <control type="label">
-                <posx>col-1-begin</posx>
+            <!--source subtitle / content selector-->
+            <control type="list" id="95">
+                <posx>8</posx>
                 <posy>96</posy>
-                <width>auto</width>
-                <font>pageSubTitle</font>
-                <label>$LOCALIZE[31207] $INFO[System.TotalUptime]</label>
-                <textcolor>textActive</textcolor>
+                <width>12-col</width>
+                <height>1-row</height>
+                <orientation>horizontal</orientation>
+                <itemlayout width="3-col" height="1-row">
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <font>pageSubTitle</font>
+                        <textcolor>44FFFFFF</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="3-col" height="1-row">
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col</width>
+                        <font>pageSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <shadowcolor>-</shadowcolor>
+                        <label>$INFO[ListItem.label]</label>
+                        <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>           $LOCALIZE[31121]</label>
+                        <onclick>noop</onclick>
+                    </item>
+                    <item id="2">
+                        <label>31119</label>
+                        <onclick>noop</onclick>
+                    </item>
+                </content>
             </control>
             <!--dateTime-->
             <include>dateTime</include>
@@ -37,7 +69,8 @@
             <posx>col-1-begin</posx>
             <posy>row-6-begin</posy>
             <include>modalDialogInOutVertical</include>
-            <control type="panel" id="95">
+            <control type="panel">
+                <visible>container(95).hasfocus(1)</visible>
                 <posx>12</posx>
                 <posy>0</posy>
                 <width>24-col</width>
@@ -205,15 +238,26 @@
                         <onclick>noop</onclick>
                     </item>
                     <item id="8">
-                        <visible>System.GetBool(pvrmanager.enabled)</visible>
                         <description>PVR</description>
                         <label>24019</label>
-                        <label2>$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
+                        <label2 fallback="31118">$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
                         <property name="itemIcon">&gt;</property>
                         <thumb>-</thumb>
                         <onclick>noop</onclick>
                     </item>
                 </content>
+            </control>
+            <!--privacy policy-->
+            <control type="textbox">
+                <visible>container(95).hasfocus(2)</visible>
+                <posx>0</posx>
+                <posy>-36</posy>
+                <font>textbox</font>
+                <width>24-col</width>
+                <textcolor>textActive</textcolor>
+                <height>23-row</height>
+                <label>$INFO[System.PrivacyPolicy]</label>
+                <autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
             </control>
         </control>
         <!--debugging-->

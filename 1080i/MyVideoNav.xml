@@ -1,37 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="false">9000</defaultcontrol>
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
-    <onload condition="window.previous(0)">setfocus(9000)</onload>
-    <previouswindow>home</previouswindow>
+    <defaultcontrol always="true">9999</defaultcontrol>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload>Skin.SetString(recentitems,video)</onload>
+    <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-
-            <!--window fader-->
-            <animation type="conditional" condition="[window.next(0) | window.next(1)] + !player.hasvideo">
-                <effect type="fade" start="100" end="0" time="300"/>
-            </animation>
-
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
             <!--Main content listing-->
             <control type="group" id="9999">
-                <animation type="windowopen">
-                    <effect type="fade" start="0" end="100" time="500"/>
-                </animation>
-                <!--recent items-->
-                <control type="group">
-                    <visible>Library.HasContent(Video) + [SubString(skin.string(showRecentVideoItems),true) | isEmpty(container.foldername)]</visible>
-                    <onleft>9000</onleft>
-                    <!--content-->
-                    <include>videoRecentItems</include>
-                </control>
+                <include>contentOpen</include>
                 <!--source content-->
                 <control type="group" id="9500">
-                    <visible>[SubString(skin.string(showRecentVideoItems),false) | !skin.string(showRecentVideoItems)]</visible>
                     <include>movies</include>
                     <include>tvshows</include>
                     <include>videofiles</include>
@@ -39,36 +22,22 @@
                     <include>episodes</include>
                 </control>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="8000">
-                <visible>Control.IsVisible(60) + SubString(skin.string(showRecentVideoItems),false)</visible>
+                <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <visible>Substring(Container.folderpath,plugin)</visible>
-                    <posx>51r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>23-row</height>
-                    <onleft>9999</onleft>
-                    <onback>9999</onback>
-                </control>
-                <control type="scrollbar" id="60">
-                    <visible>!Substring(Container.folderpath,plugin)</visible>
-                    <posx>48r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>23-row</height>
+                    <posx>52r</posx>
+                    <posy>row-6-begin</posy>
+                    <height>20-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
             </control>
-
             <!--Folder titles-->
             <control type="group">
                 <posx>0</posx>
                 <posy>0</posy>
-                <animation type="Conditional" condition="IntegerGreaterThan(container.numitems,0)">
-                    <effect type="fade" start="0" end="100" time="300"/>
-                </animation>
                 <!--source title-->
                 <control type="label">
                     <posx>col-1-begin</posx>
@@ -91,6 +60,8 @@
                 <include>dateTime</include>
             </control>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
@@ -100,7 +71,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyVideoNav.xml $INFO[container.folderpath]</label>
+            <label>MyVideoNav.xml</label>
         </control>
     </controls>
 </window>

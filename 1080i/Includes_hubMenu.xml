@@ -24,53 +24,21 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--section logo-->
-            <control type="group">
-                <!--videos-->
-                <control type="label">
-                    <visible>Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)</visible>
-                    <posx>col-1-begin</posx>
-                    <posy>row-1-begin</posy>
-                    <width>1-col</width>
-                    <height>1-col</height>
-                    <font>symbolVeryLarge</font>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
-                <!--music-->
-                <control type="label">
-                    <visible>window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)</visible>
-                    <posx>col-1-begin</posx>
-                    <posy>row-1-begin</posy>
-                    <width>1-col</width>
-                    <height>1-col</height>
-                    <font>symbolVeryLarge</font>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
-                <!--pictures-->
-                <control type="label">
-                    <visible>window.isactive(pictures)</visible>
-                    <posx>col-1-begin</posx>
-                    <posy>row-1-begin</posy>
-                    <width>1-col</width>
-                    <height>1-col</height>
-                    <font>symbolVeryLarge</font>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label></label>
-                </control>
+            <!--logo-->
+            <control type="image">
+                <posx>col-1-begin</posx>
+                <posy>row-1-begin</posy>
+                <width>1-col</width>
+                <height>1-col</height>
+                <texture>kodilogo.png</texture>
+                <colordiffuse>textActive</colordiffuse>
+                <aspectratio>stretch</aspectratio>
             </control>
             <control type="list" id="9001">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
                 <width>col-5-begin</width>
-                <height>24-row</height>
+                <height>832</height>
                 <orientation>vertical</orientation>
                 <onleft>9002</onleft>
                 <onright>9999</onright>
@@ -110,9 +78,12 @@
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>
-                <include condition="Window.isactive(videolibrary) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoMenu</include>
-                <include condition="window.isactive(musiclibrary) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicMenu</include>
-                <include condition="Window.isactive(pictures)">picturesMenu</include>
+                <content>
+                    <include condition="window.isactive(home)">skinshortcuts-mainmenu</include>
+                    <include condition="window.isactive(pictures)">skinshortcuts-group-picturessubmenu</include>
+                    <include condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),music)] | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers)">skinshortcuts-group-musicsubmenu</include>
+                    <include condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),video)] | window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers)">skinshortcuts-group-videosubmenu</include>
+                </content>
             </control>
         </control>
     </include>

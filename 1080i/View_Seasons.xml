@@ -3,7 +3,6 @@
     <include name="seasons">
         <control type="group">
             <visible>!isempty(container.folderpath) + container.content(seasons) + !container.content(episodes)</visible>
-
             <!--fanart-->
             <control type="group">
                 <visible>!Substring(Container.folderpath,plugin)</visible>
@@ -26,11 +25,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-
             <control type="group">
-                <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
-                    <effect type="fade" start="100" end="0" time="200"/>
-                </animation>
                 <!--title-->
                 <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
@@ -47,34 +42,27 @@
                         <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
                     </control>
                 </control>
-
                 <!--overlay-->
-                <control type="image">
+                <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
-                    <posx>0</posx>
                     <posy>row-15-begin</posy>
-                    <width>fullscreenWidth</width>
-                    <height>15-row</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture border="0">colors/white.png</texture>
-                    <colordiffuse>background</colordiffuse>
+                    <posy>0</posy>
+                    <include>globalBackground</include>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>fullscreenWidth</width>
+                        <height>6</height>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture border="0">colors/white.png</texture>
+                        <colordiffuse>highlight</colordiffuse>
+                    </control>
                 </control>
-                <control type="image">
-                    <visible>!Substring(Container.folderpath,plugin)</visible>
-                    <posx>0</posx>
-                    <posy>row-15-begin</posy>
-                    <width>fullscreenWidth</width>
-                    <height>6</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture border="0">colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                </control>
-
                 <!--content-->
                 <control type="panel" id="58">
                     <visible>!isempty(container.folderpath) + !StringCompare(container.foldername,files) + !container.content(episodes) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-17-begin</posy>
+                    <posy>624</posy>
                     <width>1836</width>
                     <height>11-row</height>
                     <onleft>9000</onleft>
@@ -93,7 +81,19 @@
                             <colordiffuse>textboxInactive</colordiffuse>
                         </control>
                         <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <visible>ListItem.IsParentFolder</visible>
+                            <posx>12</posx>
+                            <posy>4-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textDisabled</textcolor>
+                            <label>..</label>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
                             <posy>4-row</posy>
                             <width>240</width>
@@ -123,7 +123,7 @@
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
                             <texture border="6">$INFO[ListItem.thumb]</texture>
-                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>ffffffff</colordiffuse>
                         </control>
@@ -143,6 +143,19 @@
                                 <colordiffuse>ff666666</colordiffuse>
                             </control>
                             <control type="label">
+                                <visible>ListItem.IsParentFolder</visible>
+                                <posx>12</posx>
+                                <posy>4-row</posy>
+                                <width>240</width>
+                                <height>2-row</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>regularStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>..</label>
+                            </control>
+                            <control type="label">
+                                <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                                 <posx>12</posx>
                                 <posy>4-row</posy>
                                 <width>240</width>

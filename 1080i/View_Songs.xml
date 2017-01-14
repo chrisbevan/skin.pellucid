@@ -34,7 +34,7 @@
                 <width>8-col</width>
                 <height>8-col</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$INFO[ListItem.art(thumb)]</texture>
+                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$VAR[songViewThumb]</texture>
                 <bordertexture border="6" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
                 <bordersize>6</bordersize>
                 <fadetime>500</fadetime>
@@ -51,7 +51,7 @@
                 <font>largeLight</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>[B]$INFO[ListItem.Album][/B]</label>
+                <label>[B]$VAR[songViewAlbum][/B]</label>
             </control>
             <control type="label">
                 <posx>col-10-begin</posx>
@@ -61,7 +61,7 @@
                 <font>regular</font>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
-                <label>$INFO[ListItem.Artist] $INFO[ListItem.Year,(,)]</label>
+                <label>$VAR[songViewArtist]</label>
             </control>
         </control>
         <control type="panel" id="50">
@@ -154,6 +154,18 @@
                     <colordiffuse>textboxInactive</colordiffuse>
                 </control>
                 <control type="label">
+                    <visible>ListItem.IsParentFolder</visible>
+                    <posx>1-col-indent</posx>
+                    <posy>0</posy>
+                    <width>11-col-gutter</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>..</label>
+                </control>
+                <control type="label">
                     <posx>1-col-indent</posx>
                     <posy>0</posy>
                     <width>11-col-gutter</width>
@@ -165,16 +177,17 @@
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>12-col</posx>
+                    <visible>!ListItem.IsParentFolder</visible>
+                    <posx>12-col-gutter</posx>
                     <posy>0</posy>
-                    <width>1-col-gutter</width>
+                    <width>1-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label fallback="•••">$INFO[ListItem.Rating,,*]</label>
+                    <label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
                 </control>
                 <control type="label">
                     <posx>13-col-indent</posx>
@@ -259,6 +272,18 @@
                     <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="label">
+                    <visible>ListItem.IsParentFolder</visible>
+                    <posx>1-col-indent</posx>
+                    <posy>0</posy>
+                    <width>11-col-gutter</width>
+                    <height>2-row</height>
+                    <aligny>center</aligny>
+                    <font>itemTitle</font>
+                    <textcolor>textActive</textcolor>
+                    <shadowcolor>-</shadowcolor>
+                    <label>..</label>
+                </control>
+                <control type="label">
                     <posx>1-col-indent</posx>
                     <posy>0</posy>
                     <width>11-col-gutter</width>
@@ -270,16 +295,17 @@
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">
-                    <posx>12-col</posx>
+                    <visible>!ListItem.IsParentFolder</visible>
+                    <posx>12-col-gutter</posx>
                     <posy>0</posy>
-                    <width>1-col-gutter</width>
+                    <width>1-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <shadowcolor>-</shadowcolor>
-                    <label fallback="•••">$INFO[ListItem.Rating,,*]</label>
+                    <label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
                 </control>
                 <control type="label">
                     <posx>13-col-indent</posx>

@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
     <defaultcontrol always="true">9876</defaultcontrol>
-    <onunload>activateWindow(MusicLibrary)</onunload>
-    <onunload>Skin.SetString(showRecentMusicItems,true)</onunload>
-    <onunload>control.setfocus(9000)</onunload>
+    <onunload>activateWindow(music)</onunload>
+    <onunload>control.setfocus(50)</onunload>
     <controls>
         <include>globalBackground</include>
         <control type="group">
             <include>fadeInOut</include>
             <control type="group">
                 <!--fanart-->
-                <control type="multiimage">
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>dimensionsFullscreen</include>
-                    <imagepath background="true">$INFO[Window(Home).Property(SkinHelper.Music.ExtraFanArt)]</imagepath>
-                    <aspectratio>keep</aspectratio>
-                    <timeperimage>10000</timeperimage>
-                    <fadetime>1000</fadetime>
-                    <randomize>true</randomize>
+                    <texture fallback="special://skin/extras/backgrounds/music.jpg" border="0">$INFO[player.art(fanart)]</texture>
+                    <aspectratio>stretch</aspectratio>
                     <include>kenBurnsey</include>
                     <colordiffuse>44ffffff</colordiffuse>
                 </control>
                 <!--visualisation-->
                 <control type="visualisation" id="2">
+                    <visible>!SlideShow.IsActive</visible>
                     <description>visualisation</description>
                     <posx>0</posx>
                     <posy>0</posy>
@@ -84,14 +81,14 @@
                         <label>$INFO[MusicPlayer.Title]</label>
                    </control>
                    <control type="label">
-                       <posx>8-col-indent</posx>
+                       <posx>8-col</posx>
                        <posy>0</posy>
                        <width>612</width>
                        <height>2-row</height>
                        <font>regularStrong</font>
                        <textcolor>textActive</textcolor>
                        <scroll>true</scroll>
-                       <label>[B]$INFO[MusicPlayer.rating,,*][/B]</label>
+                       <label>[B]$INFO[MusicPlayer.userrating,,*][/B]</label>
                   </control>
                    <control type="image">
                        <posx>0</posx>
@@ -133,7 +130,7 @@
                          <overlaytexture>-</overlaytexture>
                          <info>Player.Progress</info>
                    </control>
-                    <control type="label">
+                   <control type="label">
                         <posx>24</posx>
                         <posy>3-row</posy>
                         <width>612</width>

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9000</defaultcontrol>
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
-    <onload condition="window.previous(0)">setfocus(9000)</onload>
-    <previouswindow>home</previouswindow>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-            <!--window fader-->
-            <animation type="conditional" condition="window.next(0) | window.next(1)">
-                <effect type="fade" start="100" end="0" time="300"/>
-            </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
             <!--Main content listing-->
             <control type="group" id="9999">
+                <include>contentOpen</include>
                 <onleft>9000</onleft>
                 <include>photos</include>
             </control>
@@ -24,9 +20,9 @@
                 <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>48r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>826</height>
+                    <posx>52r</posx>
+                    <posy>row-6-begin</posy>
+                    <height>20-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
@@ -37,7 +33,6 @@
                 <posy>row-1-begin</posy>
                 <!--source title-->
                 <control type="label">
-                    <visible>IntegerGreaterThan(container.Numitems,0)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>14-col</width>
@@ -71,6 +66,8 @@
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--debug-->
         <include>DebugGrid</include>
         <control type="label">

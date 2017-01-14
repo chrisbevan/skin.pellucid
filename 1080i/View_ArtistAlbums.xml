@@ -12,7 +12,7 @@
                 <width>fullscreenWidth</width>
                 <height>fullscreenHeight</height>
                 <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
-                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
+                <texture background="true" fallback="special://skin/extras/backgrounds/music.jpg" border="0">$INFO[Container.Art(artist.fanart)]</texture>
                 <fadetime>500</fadetime>
                 <colordiffuse>77FFFFFF</colordiffuse>
                 <include>kenBurnsey</include>

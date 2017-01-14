@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <views>10</views>
-    <defaultcontrol always="false">9999</defaultcontrol>
-
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
-    <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
+    <include>fadeInOut</include>
+    <defaultcontrol always="true">9999</defaultcontrol>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload>Skin.SetString(recentitems,video)</onload>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
         <control type="group">
-
-            <!--window fader-->
-            <animation type="conditional" condition="window.next(0) | window.next(1)">
-                <effect type="fade" start="100" end="0" time="300"/>
-            </animation>
-
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-
-            <!--initial animation-->
-            <animation type="Windowopen">
-                <effect type="fade" start="0" end="100" time="300"/>
-            </animation>
-
             <!--Main content listing-->
             <control type="group" id="9999">
+                <!--initial animation-->
+                <include>contentOpen</include>
                 <control type="epggrid" id="10">
                     <description>EPG Grid</description>
                     <posx>col-1-begin</posx>
@@ -175,6 +165,8 @@
             <!--dateTime-->
             <include>dateTime</include>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

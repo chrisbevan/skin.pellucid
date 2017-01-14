@@ -1,65 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
     <controls>
         <!--page container group-->
         <control type="group">
             <include>globalBackground</include>
-
-            <!--window fader-->
-            <animation type="conditional" condition="window.next(0)">
-                <effect type="fade" start="100" end="0" time="300"/>
-            </animation>
-
+            <!--shift page for certain modal dialogs-->
+            <include>modalDialogContentShift</include>
             <!--Main content listing-->
             <control type="group" id="9999">
                 <!--source content-->
                 <control type="group">
+                    <include>contentOpen</include>
                     <control type="panel" id="50">
-                        <posx>col-1-begin</posx>
+                        <posx>78</posx>
                         <posy>row-5-begin</posy>
-                        <width>24-col</width>
+                        <width>1800</width>
                         <height>24-row</height>
                         <onleft>9000</onleft>
                         <onright>60</onright>
                         <ondown>50</ondown>
                         <onup>50</onup>
+                        <onback>9000</onback>
                         <pagecontrol>60</pagecontrol>
-                        <itemlayout width="4-col" height="4-col">
+                        <scrolltime tween="cubic" easing="out">600</scrolltime>
+                        <itemlayout width="4-col" height="348">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>4-col-gutter</width>
                                 <height>4-col-gutter</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture border="3">colors/black.png</texture>
-                                <bordertexture colordiffuse="07FFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
-                                <colordiffuse>textboxInactive</colordiffuse>
+                                <texture border="6">DefaultAlbumCover.png</texture>
+                                <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
+                                <bordersize>6</bordersize>
+                                <colordiffuse>overlay</colordiffuse>
                             </control>
                             <control type="label">
                                 <posx>12</posx>
-                                <posy>2-row</posy>
+                                <posy>262</posy>
                                 <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
+                                <height>1-row</height>
                                 <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textDisabled</textcolor>
-                                <label>$INFO[ListItem.label]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>3-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
+                                <font>thumbtitle</font>
                                 <textcolor>textActive</textcolor>
-                                <label>$INFO[ListItem.label2]</label>
+                                <label>[B]$INFO[ListItem.label][/B]</label>
+                            </control>
+                            <control type="label">
+                                <posx>12</posx>
+                                <posy>286</posy>
+                                <width>240</width>
+                                <height>1-row</height>
+                                <aligny>center</aligny>
+                                <font>thumbTitle</font>
+                                <textcolor>textDisabled</textcolor>
+                                <label>$INFO[ListItem.AddonSummary]</label>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -67,13 +64,13 @@
                                 <width>4-col-gutter</width>
                                 <height>4-col-gutter</height>
                                 <aspectratio>stretch</aspectratio>
-                                <texture fallback="" border="0">$INFO[Listitem.thumb]</texture>
-                                <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                                <bordersize>3</bordersize>
+                                <texture border="6">$INFO[Listitem.thumb]</texture>
+                                <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
+                                <bordersize>6</bordersize>
                                 <colordiffuse>ffFFFFFF</colordiffuse>
                             </control>
                         </itemlayout>
-                        <focusedlayout width="4-col" height="4-col">
+                        <focusedlayout width="4-col" height="348">
                             <control type="group">
                                 <include>focusThumb</include>
                                 <control type="image">
@@ -82,99 +79,58 @@
                                     <width>4-col-gutter</width>
                                     <height>4-col-gutter</height>
                                     <aspectratio>stretch</aspectratio>
-                                    <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.thumb]</texture>
-                                    <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-                                    <bordersize>3</bordersize>
-                                    <colordiffuse>ffFFFFFF</colordiffuse>
+                                    <texture border="6">DefaultAlbumCover.png</texture>
+                                    <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                                    <bordersize>6</bordersize>
+                                    <colordiffuse>ff666666</colordiffuse>
                                 </control>
                                 <control type="image">
-                                    <posx>3</posx>
-                                    <posy>3</posy>
-                                    <width>258</width>
-                                    <height>258</height>
-                                    <aspectratio>stretch</aspectratio>
-                                    <texture border="0">colors/black.png</texture>
-                                    <colordiffuse>ccFFFFFF</colordiffuse>
-                                </control>
-                                <control type="label">
-                                    <posx>12</posx>
-                                    <posy>2-row</posy>
-                                    <width>240</width>
-                                    <height>2-row</height>
-                                    <align>center</align>
-                                    <aligny>center</aligny>
-                                    <font>regularStrong</font>
-                                    <textcolor>textActive</textcolor>
-                                    <label>$INFO[ListItem.label]</label>
-                                </control>
-                                <control type="label">
-                                    <posx>12</posx>
-                                    <posy>3-row</posy>
-                                    <width>240</width>
-                                    <height>2-row</height>
-                                    <align>center</align>
-                                    <aligny>center</aligny>
-                                    <font>buttonTitle</font>
-                                    <textcolor>highlight</textcolor>
-                                    <label>$INFO[ListItem.label2]</label>
-                                </control>
-                                <control type="grouplist">
-                                    <posx>42</posx>
-                                    <posy>5-row</posy>
+                                    <posx>0</posx>
+                                    <posy>0</posy>
                                     <width>4-col-gutter</width>
-                                    <orientation>horizontal</orientation>
-                                    <control type="label">
-                                        <width>24</width>
-                                        <height>2-row</height>
-                                        <aligny>center</aligny>
-                                        <font>symbol</font>
-                                        <textcolor>textActive</textcolor>
-                                        <label></label>
-                                    </control>
-                                    <control type="label">
-                                        <width>1-col</width>
-                                        <height>2-row</height>
-                                        <aligny>center</aligny>
-                                        <font>smallStrong</font>
-                                        <textcolor>textActive</textcolor>
-                                        <label>$LOCALIZE[31185]</label>
-                                    </control>
-                                    <control type="label">
-                                        <width>24</width>
-                                        <height>2-row</height>
-                                        <aligny>center</aligny>
-                                        <font>symbol</font>
-                                        <textcolor>textActive</textcolor>
-                                        <label></label>
-                                    </control>
-                                    <control type="label">
-                                        <width>1-col</width>
-                                        <height>2-row</height>
-                                        <aligny>center</aligny>
-                                        <font>smallStrong</font>
-                                        <textcolor>textActive</textcolor>
-                                        <label>$LOCALIZE[31184]</label>
-                                    </control>
+                                    <height>4-col-gutter</height>
+                                    <aspectratio>stretch</aspectratio>
+                                    <texture border="6">$INFO[Listitem.thumb]</texture>
+                                    <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+                                    <bordersize>6</bordersize>
+                                </control>
+                                <control type="label">
+                                    <posx>12</posx>
+                                    <posy>262</posy>
+                                    <width>240</width>
+                                    <height>1-row</height>
+                                    <aligny>center</aligny>
+                                    <font>thumbtitle</font>
+                                    <textcolor>textActive</textcolor>
+                                    <label>[B]$INFO[ListItem.label][/B]</label>
+                                </control>
+                                <control type="label">
+                                    <posx>12</posx>
+                                    <posy>286</posy>
+                                    <width>240</width>
+                                    <height>1-row</height>
+                                    <aligny>center</aligny>
+                                    <font>thumbTitle</font>
+                                    <textcolor>textActive</textcolor>
+                                    <label>$INFO[ListItem.AddonSummary]</label>
                                 </control>
                             </control>
                         </focusedlayout>
                     </control>
                 </control>
             </control>
-
             <!--page scrollbar-->
             <control type="group" id="8000">
-                <visible>Control.IsVisible(60) + SubString(skin.string(showRecentVideoItems),false)</visible>
+                <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>48r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>789</height>
+                    <posx>52r</posx>
+                    <posy>row-6-begin</posy>
+                    <height>20-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
             </control>
-
             <!--Folder titles-->
             <control type="group">
                 <!--source title-->
@@ -201,6 +157,8 @@
             <!--dateTime-->
             <include>dateTime</include>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>

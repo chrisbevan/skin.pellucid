@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">-</defaultcontrol>
+<<<<<<< HEAD
      
+=======
+>>>>>>> Krypton
     <controls>
         <control type="group">
             <posx>col-19-begin</posx>
-            <include condition="!window.isactive(infodialog)">progressPosition1</include>
-            <include condition="window.isactive(infodialog)">progressPosition2</include>
+            <include condition="!window.isactive(Notification)">progressPosition1</include>
+            <include condition="window.isactive(Notification)">progressPosition2</include>
             <visible>!player.passthrough</visible>
             <animation type="Windowclose">
                 <effect type="fade" start="100" end="0" time="400" tween="sine"/>

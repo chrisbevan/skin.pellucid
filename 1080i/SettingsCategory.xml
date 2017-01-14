@@ -32,6 +32,14 @@
             </control>
             <control type="image">
                 <posx>0</posx>
+                <posy>71</posy>
+                <width>18-col</width>
+                <height>1</height>
+                <texture>colors/black.png</texture>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
                 <height>18-row</height>
@@ -90,7 +98,7 @@
                 <height>18-row</height>
                 <onleft>3</onleft>
                 <onright>3</onright>
-                <onup>20</onup>
+                <onup>5</onup>
                 <ondown>5</ondown>
                 <orientation>vertical</orientation>
                 <itemgap>0</itemgap>
@@ -102,9 +110,12 @@
             <control type="label" id="14">
                 <description>Default Label</description>
                 <label>-</label>
-                <align>center</align>
-                <font>buttonTitle</font>
-                <textcolor>textActive</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <textoffsetx>24</textoffsetx>
+                <height>2-row</height>
+                <font>settingsCategoryTitle</font>
+                <textcolor>highlight</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
             <control type="radiobutton" id="8">
@@ -120,9 +131,11 @@
                 <texturenofocus>-</texturenofocus>
             </control>
             <!--subcat menu buttons-->
-            <control type="button" id="10">
+            <control type="togglebutton" id="10">
                 <description>Default Category Button</description>
+                <width>287</width>
                 <font>buttonTitle</font>
+                <texturefocus>colors/white.png</texturefocus>
                 <texturenofocus>-</texturenofocus>
             </control>
             <control type="button" id="20">

@@ -37,7 +37,7 @@
             <name>largeLight</name>
             <filename>roboto/light.ttf</filename>
             <size>54</size>
-            <linespacing>0.8</linespacing>
+            <linespacing>0.9</linespacing>
         </font>
         <font>
             <name>medium</name>
@@ -66,12 +66,6 @@
         <font>
             <name>regularStrong</name>
             <filename>roboto/bold.ttf</filename>
-            <size>36</size>
-            <linespacing>0.9</linespacing>
-        </font>
-        <font>
-            <name>regularSemibold</name>
-            <filename>roboto/semibold.ttf</filename>
             <size>36</size>
             <linespacing>0.9</linespacing>
         </font>
@@ -133,7 +127,6 @@
         </font>
         <font>
             <name>largeTitle</name>
-            <!--prev dialogTitle-->
             <filename>roboto/black.ttf</filename>
             <size>60</size>
             <linespacing>1.0</linespacing>
@@ -153,7 +146,6 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
-
             <name>itemSubTitleCondensed</name>
             <filename>roboto/condensedBold.ttf</filename>
             <size>30</size>
@@ -172,9 +164,15 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
+            <name>settingsCategoryTitle</name>
+            <filename>roboto/black.ttf</filename>
+            <size>22</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
             <name>thumbTitle</name>
             <filename>roboto/regular.ttf</filename>
-            <size>24</size>
+            <size>20</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>

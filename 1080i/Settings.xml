@@ -30,7 +30,7 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
-                <posx>12</posx>
+                <posx>24</posx>
                 <posy>0</posy>
                 <width>8-col</width>
                 <height>2-row</height>
@@ -76,7 +76,7 @@
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
-                        <textcolor>menuUnselected</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
@@ -85,7 +85,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>settingsCategoryTitle</font>
                         <textcolor>menuUnselected</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
@@ -128,12 +128,13 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>settingsCategoryTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[listitem.property(label3)]</label>
                     </control>
                 </focusedlayout>
                 <content>
+<<<<<<< HEAD
                     <item id="1">
                         <description>Appearance</description>
                         <label>480</label>
@@ -147,13 +148,29 @@
                         <label2></label2>
                         <property name="label3">$LOCALIZE[31063] • $LOCALIZE[24012]</property>
                         <onclick>activatewindow(VideosSettings)</onclick>
+=======
+                    <item>
+                        <description>Player Settings</description>
+                        <label>$LOCALIZE[14201]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31063]</property>
+                        <onclick>activatewindow(PlayerSettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Library Settings</description>
+                        <label>$LOCALIZE[14203]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31079]</property>
+                        <onclick>activatewindow(MediaSettings)</onclick>
+>>>>>>> Krypton
                     </item>
                     <item id="9">
                         <label>$LOCALIZE[31060]</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31006] • $LOCALIZE[31065]</property>
+                        <property name="label3">$LOCALIZE[31081]</property>
                         <onclick>ActivateWindow(PVRSettings)</onclick>
                     </item>
+<<<<<<< HEAD
                     <item id="3">
                         <description>Music</description>
                         <label>2</label>
@@ -181,6 +198,35 @@
                         <label2></label2>
                         <property name="label3">$LOCALIZE[31069] • $LOCALIZE[14036]</property>
                         <onclick>activatewindow(WeatherSettings)</onclick>
+=======
+                    <item>
+                        <description>Services Settings</description>
+                        <label>$LOCALIZE[14208]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31071]</property>
+                        <onclick>activatewindow(ServiceSettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Interface settings</description>
+                        <label>$LOCALIZE[14207]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31061]</property>
+                        <onclick>activatewindow(InterfaceSettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Skin settings</description>
+                        <label>$LOCALIZE[20077]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31083]</property>
+                        <onclick>activatewindow(SkinSettings)</onclick>
+                    </item>
+                    <item>
+                        <description>Profiles</description>
+                        <label>$LOCALIZE[14210]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31103]</property>
+                        <onclick>activatewindow(Profiles)</onclick>
+>>>>>>> Krypton
                     </item>
                     <item id="7">
                         <description>Services</description>
@@ -193,7 +239,7 @@
                         <description>System</description>
                         <label>13000</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[14094] • $LOCALIZE[14095]</property>
+                        <property name="label3">$LOCALIZE[31105]</property>
                         <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
                     <item id="9">
@@ -207,16 +253,31 @@
                         <description>File Manager</description>
                         <label>10003</label>
                         <label2></label2>
+<<<<<<< HEAD
                         <property name="label3">$LOCALIZE[31095] • $LOCALIZE[31111]</property>
                         <onclick>activatewindow(3)</onclick>
+=======
+                        <property name="label3">$LOCALIZE[31095]</property>
+                        <onclick>activatewindow(filemanager)</onclick>
+>>>>>>> Krypton
                     </item>
                     <item id="11">
                         <description>Programs</description>
                         <label>31003</label>
                         <label2></label2>
-                        <property name="label3">$LOCALIZE[31067]</property>
+                        <property name="label3">$LOCALIZE[31111]</property>
                         <onclick>ActivateWindow(programs,addons,return)</onclick>
                     </item>
+<<<<<<< HEAD
+=======
+                    <item>
+                        <description>System Info</description>
+                        <label>$LOCALIZE[138]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31108]</property>
+                        <onclick>ActivateWindow(systeminfo)</onclick>
+                    </item>
+>>>>>>> Krypton
                 </content>
             </control>
         </control>

@@ -1,44 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <defaultcontrol always="true">9999</defaultcontrol>
+    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onload>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
-    <onload>Skin.Reset(keepMusicMenuActive)</onload>
     <animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
     <animation effect="fade" start="0" end="100" time="500" reversible="true">WindowOpen</animation>
     <controls>
         <include>globalBackground</include>
-        <include>homeBackground</include>
-        <!--browse controls-->
         <control type="group">
-            <animation type="windowopen">
-                <effect type="fade" start="0" end="100" delay="500" time="300"/>
-                <effect type="slide" start="-200" end="0" tween="sine" easing="out" delay="500" time="400"/>
+            <animation type="windowOpen" condition="!Skin.HasSetting(lowPowerMode)">
+                <effect type="zoom" center="auto" start="105" tween="sine" end="100" time="1500"/>
             </animation>
-            <animation type="windowclose">
-                <effect type="fade" start="100" end="0" time="300"/>
-                <effect type="slide" start="0" end="-200" tween="sine" easing="out" time="400"/>
-            </animation>
-            <posx>0</posx>
-            <posy>0</posy>
+            <include>modalDialogContentShift</include>
+            <control type="multiimage">
+                  <include>dimensionsFullscreen</include>
+                  <imagepath>$VAR[homeBackgroundLocation]</imagepath>
+                  <timeperimage>45000</timeperimage>
+                  <fadetime>1000</fadetime>
+                  <pauseatend>10000</pauseatend>
+                  <randomize>true</randomize>
+                  <loop>yes</loop>
+                  <aspectratio>stretch</aspectratio>
+            </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>col-5-begin</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <!--logo-->
-            <control type="image">
-                <posx>col-1-begin</posx>
-                <posy>row-1-begin</posy>
-                <width>1-col</width>
-                <height>1-col</height>
-                <texture>kodilogo.png</texture>
-                <colordiffuse>textActive</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
+<<<<<<< HEAD
             <control type="list" id="9000">
                 <posx>0</posx>
                 <posy>row-4-begin</posy>
@@ -178,43 +168,59 @@
                     </item>
                 </content>
             </control>
+=======
+>>>>>>> Krypton
         </control>
         <!--Date / time and weather-->
         <control type="group">
-            <posx>18-col</posx>
-            <posy>row-21-begin</posy>
+            <posx>col-1-begin</posx>
+            <posy>row-22-begin</posy>
             <control type="label">
-                <posx>8-col</posx>
-                <posy>12</posy>
+                <posx>0</posx>
+                <posy>-24</posy>
                 <width>24-col</width>
                 <height>4-row</height>
-                <align>right</align>
+                <align>center</align>
                 <font>veryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
-                <posx>8-col</posx>
-                <posy>3-row</posy>
+                <posx>0</posx>
+                <posy>2-row</posy>
                 <width>24-col</width>
                 <height>4-row</height>
-                <align>right</align>
-                <font>Large</font>
+                <font>regular</font>
+                <align>center</align>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
             <control type="label">
                 <visible>!isempty(Window(Weather).Property(WeatherProvider))</visible>
-                <posx>8-col</posx>
-                <posy>182</posy>
+                <posx>0</posx>
+                <posy>3-row</posy>
                 <width>24-col</width>
-                <height>3-row</height>
-                <align>right</align>
+                <height>5-row</height>
+                <align>center</align>
                 <font>regular</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
             </control>
         </control>
+        <!--hidden button to reveal background-->
+        <control type="button" id="9999">
+            <posx>-500</posx>
+            <posy>0</posy>
+            <width>1-col</width>
+            <height>2-row</height>
+            <onleft>9000</onleft>
+            <onclick>control.setfocus(9000)</onclick>
+        </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
+        <!--hub menu-->
+        <include>hubMenu</include>
+        <include>hubOptions</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -48,7 +48,7 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
-            <--view options-->
+            <!--view options-->
             <control type="grouplist" id="9000">
                 <posx>0</posx>
                 <posy>2-row</posy>

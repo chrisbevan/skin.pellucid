@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="false">9999</defaultcontrol>
-    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
-    <onunload>Skin.SetString(showRecentVideoItems,true)</onunload>
+    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload>Skin.SetString(recentitems,video)</onload>
+    <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -13,12 +14,9 @@
             </animation>
             <!--shift page for certain modal dialogs-->
             <include>modalDialogContentShift</include>
-            <!--initial animation-->
-            <animation type="Windowopen">
-                <effect type="fade" start="0" end="100" time="300"/>
-            </animation>
             <!--Main content listing-->
             <control type="group" id="9999">
+                <include>contentOpen</include>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <control type="panel" id="50">
@@ -80,7 +78,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
+                            <label>$INFO[ListItem.Date,,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="24-col" height="2-row">
@@ -140,28 +138,28 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.Date,$LOCALIZE[31192]: ,   ]$INFO[ListItem.Duration,(,)]</label>
+                            <label>$INFO[ListItem.Date,,   ]$INFO[ListItem.Duration,(,)]</label>
                         </control>
                     </focusedlayout>
                 </control>
                 <!--Additional info-->
                 <control type="group">
-                    <posx>0</posx>
+                    <posx>16-col</posx>
                     <posy>22-row</posy>
                     <control type="progress">
                         <description>Disk usage bar</description>
                         <left>0</left>
                         <top>1</top>
-                        <width>24-col</width>
+                        <width>8-col</width>
                         <height>1-row</height>
-                        <texturebg colordiffuse="overlay">colors/black.png</texturebg>
+                        <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
                         <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                         <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>24-col</width>
+                        <width>8-col</width>
                         <font>itemSubTitle</font>
                         <align>center</align>
                         <textcolor>background</textcolor>
@@ -176,9 +174,9 @@
                 <visible>Control.IsVisible(60)</visible>
                 <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(9400).hasfocus">conditional</animation>
                 <control type="scrollbar" id="60">
-                    <posx>51r</posx>
-                    <posy>row-5-begin</posy>
-                    <height>21-row</height>
+                    <posx>52r</posx>
+                    <posy>row-6-begin</posy>
+                    <height>20-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
@@ -208,6 +206,8 @@
             <!--dateTime-->
             <include>dateTime</include>
         </control>
+        <!--mini window-->
+        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <include>hubOptions</include>
