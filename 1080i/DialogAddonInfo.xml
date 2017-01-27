@@ -124,7 +124,7 @@
                     <width>12-col-gutter</width>
                     <font>smallStrong</font>
                     <textcolor>highlight</textcolor>
-                    <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
+                    <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,] • $INFO[ListItem.addonversion,$LOCALIZE[31139]: , ]</label>
                 </control>
                 <control type="textbox" id="400">
                     <posx>12</posx>
@@ -245,14 +245,14 @@
                         </item>
                         <item>
                             <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),enable)</visible>
-                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label>$LOCALIZE[31218]</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),disable)</visible>
-                            <label>$INFO[Control.GetLabel(7)] $LOCALIZE[31104]</label>
+                            <label>$LOCALIZE[31104]</label>
                             <label2></label2>
                             <thumb>-</thumb>
                             <onclick>SendClick(146,7)</onclick>

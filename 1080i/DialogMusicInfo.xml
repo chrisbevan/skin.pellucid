@@ -410,6 +410,20 @@
             <visible>container.content(songs)</visible>
             <posx>0</posx>
             <posy>0</posy>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <texture>colors/black.png</texture>
+                <colordiffuse>e9FFFFFF</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <include>dimensionsFullscreen</include>
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <!--content-->
             <control type="group">
                 <posx>col-7-begin</posx>
@@ -617,7 +631,6 @@
                     </content>
                 </control>
             </control>
-
         </control>
         <!--dialog controls-->
         <control type="group">

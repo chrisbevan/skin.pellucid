@@ -503,22 +503,22 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-                <posx>0</posx>
+                <posx>-6</posx>
                 <posy>0</posy>
-                <width>10-col</width>
-                <height>row-5-begin</height>
+                <width>6</width>
+                <height>fullscreenHeight</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--content-->
             <control type="group">
-                <posx>12</posx>
+                <posx>24</posx>
                 <posy>row-1-begin</posy>
                 <control type="label">
                     <posx>0</posx>
                     <posy>-12</posy>
-                    <width>672</width>
+                    <width>660</width>
                     <align>left</align>
                     <height>3-row</height>
                     <aligny>center</aligny>
