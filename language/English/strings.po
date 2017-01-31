@@ -585,6 +585,14 @@ msgctxt "#31139"
 msgid "Version"
 msgstr ""
 
+msgctxt "#31140"
+msgid "Formed"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Years active"
+msgstr ""
+
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
 msgstr ""
@@ -607,6 +615,18 @@ msgstr ""
 
 msgctxt "#31147"
 msgid "Search"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Style"
+msgstr ""
+
+msgctxt "#31149"
+msgid "Released"
+msgstr ""
+
+msgctxt "#31150"
+msgid "Label"
 msgstr ""
 
 msgctxt "#31151"
