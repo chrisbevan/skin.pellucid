@@ -1,5 +1,12 @@
 **Changelog**
 
+[V1.0.5]
+DONE - video playlists
+DONE - pvr info screen rework (header - 2 column mode)
+DONE - Add user options for menu customisation to skin settings
+DONE - album default art fix
+DONE - picture section fix
+
 [V1.0.4]
 - Minor tweaks and bug fixes
 - [NEW] User option to remove weather data from homescreen

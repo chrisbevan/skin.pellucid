@@ -490,7 +490,7 @@ msgid "Video decoder"
 msgstr ""
 
 msgctxt "#31116"
-msgid "Set Homescreen Background directory"
+msgid "Set home background directory"
 msgstr ""
 
 msgctxt "#31117"
@@ -683,6 +683,26 @@ msgstr ""
 
 msgctxt "#31169"
 msgid "Rate"
+msgstr ""
+
+msgctxt "#31170"
+msgid "Menus"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Edit home menu"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Edit video section menu"
+msgstr ""
+
+msgctxt "#31173"
+msgid "Edit music section menu"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Edit picture section menu"
 msgstr ""
 
 msgctxt "#31175"
