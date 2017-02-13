@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1105">
     <defaultcontrol always="true">8001</defaultcontrol>
-    <include>fadeInOut</include>
     <controls>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <colordiffuse>overlay</colordiffuse>
-        </control>
         <!-- options menu-->
         <control type="group">
-            <posx>col-10-begin</posx>
-            <posy>row-6-begin</posy>
-            <!--animations-->
-            <include>modalDialogInOutVertical</include>
+            <posx>1488</posx>
+            <posy>0</posy>
+            <animation type="Windowopen">
+                <effect type="fade" start="0" end="100" time="300" delay="100"/>
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="100"/>
+            </animation>
+            <animation type="windowClose">
+                <effect type="fade" start="100" end="0" time="350"/>
+                <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
+            </animation>
+            <!--overlay-->
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>10-col</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>cc111111</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>-6</posx>
+                <posy>0</posy>
+                <width>6</width>
+                <height>fullscreenHeight</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <!--thumbnail-->
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>6-col</width>
+                <height>6-col</height>
+                <texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <!--player controls-->
             <control type="panel" id="8001">
                 <posx>0</posx>
-                <posy>0</posy>
+                <posy>12-row</posy>
                 <width>6-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
@@ -26,15 +54,6 @@
                 <onup>Control.SetFocus(8003,4)</onup>
                 <orientation>horizontal</orientation>
                 <itemlayout width="1-col" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col-textbox</width>
-                        <height>69</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -51,11 +70,10 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col-textbox</width>
-                        <height>69</height>
+                        <width>1-col</width>
+                        <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -65,7 +83,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label2]</label>
                         <shadowcolor>-</shadowcolor>
                     </control>
@@ -88,6 +106,7 @@
                         <label2></label2>
                         <thumb>-</thumb>
                         <onclick>PlayerControl(stop)</onclick>
+                        <onclick>Dialog.Close(1105)</onclick>
                     </item>
                     <item>
                         <visible>Player.Playing | player.forwarding | player.rewinding</visible>
@@ -120,16 +139,7 @@
             <!--Star rating-->
             <control type="group">
                 <posx>0</posx>
-                <posy>2-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col</width>
-                    <height>69</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                </control>
+                <posy>14-row</posy>
                 <control type="image">
                     <visible>control.hasfocus(8002)</visible>
                     <posx>0</posx>
@@ -144,7 +154,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1-col</width>
-                    <height>69</height>
+                    <height>2-row</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>symbolLarge</font>
@@ -154,7 +164,7 @@
                 <control type="button" id="8002">
                     <posx>1-col</posx>
                     <posy>0</posy>
-                    <height>69</height>
+                    <height>2-row</height>
                     <width>5-col</width>
                     <font>symbolLarge</font>
                     <textoffsetx>12</textoffsetx>
@@ -169,22 +179,13 @@
             <!--final options-->
             <control type="panel" id="8003">
                 <posx>0</posx>
-                <posy>4-row</posy>
+                <posy>16-row</posy>
                 <width>429</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>
                 <onup>8002</onup>
                 <ondown>Control.SetFocus(8001,3)</ondown>
                 <itemlayout width="6-col" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <height>69</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -202,7 +203,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -244,7 +245,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemSubTitle</font>
+                        <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>

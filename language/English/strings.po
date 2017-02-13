@@ -657,8 +657,20 @@ msgctxt "#31159"
 msgid "Unknown"
 msgstr ""
 
+msgctxt "#31160"
+msgid "Ends"
+msgstr ""
+
+msgctxt "#31161"
+msgid "Turn off Subtitles"
+msgstr ""
+
 msgctxt "#31162"
 msgid "Home menu items"
+msgstr ""
+
+msgctxt "#31163"
+msgid "Music Player"
 msgstr ""
 
 msgctxt "#31164"
@@ -713,6 +725,10 @@ msgctxt "#31176"
 msgid "New Movies"
 msgstr ""
 
+msgctxt "#31177"
+msgid "Audio Settings"
+msgstr ""
+
 msgctxt "#31178"
 msgid "New TV Shows"
 msgstr ""
@@ -763,6 +779,10 @@ msgstr ""
 
 msgctxt "#31190"
 msgid "All Episodes"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Video Settings"
 msgstr ""
 
 msgctxt "#31192"

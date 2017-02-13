@@ -5,7 +5,11 @@ DONE - video playlists
 DONE - pvr info screen rework (header - 2 column mode)
 DONE - Add user options for menu customisation to skin settings
 DONE - album default art fix
-DONE - picture section fix
+DONE - rework fullscreen options OSD
+
+- picture section fix
+
+DONE - Reworked music fullscreen menu. Ensure closes properly on stop
 
 [V1.0.4]
 - Minor tweaks and bug fixes
