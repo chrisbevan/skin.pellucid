@@ -4,7 +4,7 @@
     <controls>
         <!-- options menu-->
         <control type="group">
-            <posx>1488</posx>
+            <posx>1390</posx>
             <posy>0</posy>
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300" delay="100"/>
@@ -35,18 +35,18 @@
             </control>
             <!--thumbnail-->
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>6-col</width>
-                <height>6-col</height>
+                <posx>66</posx>
+                <posy>66</posy>
+                <width>6-col-gutter</width>
+                <height>6-col-gutter</height>
                 <texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--player controls-->
             <control type="panel" id="8001">
-                <posx>0</posx>
-                <posy>12-row</posy>
+                <posx>54</posx>
+                <posy>15-row</posy>
                 <width>6-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
@@ -138,8 +138,8 @@
             </control>
             <!--Star rating-->
             <control type="group">
-                <posx>0</posx>
-                <posy>14-row</posy>
+                <posx>54</posx>
+                <posy>18-row</posy>
                 <control type="image">
                     <visible>control.hasfocus(8002)</visible>
                     <posx>0</posx>
@@ -178,8 +178,8 @@
             </control>
             <!--final options-->
             <control type="panel" id="8003">
-                <posx>0</posx>
-                <posy>16-row</posy>
+                <posx>54</posx>
+                <posy>20-row</posy>
                 <width>429</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>
@@ -282,6 +282,7 @@
                         <onclick>activateWindow(musicOSD)</onclick>
                     </item>
                     <item>
+                        <visible>Visualisation.HasPresets</visible>
                         <description>Visualisation Settings</description>
                         <label>$LOCALIZE[21417]</label>
                         <label2></label2>
