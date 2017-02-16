@@ -4,7 +4,7 @@
     <controls>
         <!-- options menu-->
         <control type="group">
-            <posx>1390</posx>
+            <posx>1438</posx>
             <posy>0</posy>
             <animation type="Windowopen">
                 <effect type="fade" start="0" end="100" time="300" delay="100"/>
@@ -35,18 +35,18 @@
             </control>
             <!--thumbnail-->
             <control type="image">
-                <posx>66</posx>
-                <posy>66</posy>
-                <width>6-col-gutter</width>
-                <height>6-col-gutter</height>
+                <posx>24</posx>
+                <posy>24</posy>
+                <width>6-col</width>
+                <height>6-col</height>
                 <texture fallback="DefaultAlbumCover.png">$INFO[MusicPlayer.Cover]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--player controls-->
             <control type="panel" id="8001">
-                <posx>54</posx>
-                <posy>15-row</posy>
+                <posx>24</posx>
+                <posy>384</posy>
                 <width>6-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
@@ -54,6 +54,15 @@
                 <onup>Control.SetFocus(8003,4)</onup>
                 <orientation>horizontal</orientation>
                 <itemlayout width="1-col" height="2-row">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>colors/black.png</texture>
+                        <colordiffuse>textboxInactive</colordiffuse>
+                    </control>
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -107,6 +116,7 @@
                         <thumb>-</thumb>
                         <onclick>PlayerControl(stop)</onclick>
                         <onclick>Dialog.Close(1105)</onclick>
+                        <onclick>Dialog.Close(1103)</onclick>
                     </item>
                     <item>
                         <visible>Player.Playing | player.forwarding | player.rewinding</visible>
@@ -138,8 +148,8 @@
             </control>
             <!--Star rating-->
             <control type="group">
-                <posx>54</posx>
-                <posy>18-row</posy>
+                <posx>24</posx>
+                <posy>14-row</posy>
                 <control type="image">
                     <visible>control.hasfocus(8002)</visible>
                     <posx>0</posx>
@@ -178,10 +188,10 @@
             </control>
             <!--final options-->
             <control type="panel" id="8003">
-                <posx>54</posx>
-                <posy>20-row</posy>
+                <posx>24</posx>
+                <posy>16-row</posy>
                 <width>429</width>
-                <height>10-row</height>
+                <height>14-row</height>
                 <orientation>vertical</orientation>
                 <onup>8002</onup>
                 <ondown>Control.SetFocus(8001,3)</ondown>
@@ -251,6 +261,22 @@
                     </control>
                 </focusedlayout>
                 <content>
+                    <item>
+                        <description>go to artist</description>
+                        <label>31155</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>Dialog.Close(all,true)</onclick>
+                        <onclick>Runscript(script.musicfinder,action=artist,title=$INFO[musicplayer.artist],listid=50)</onclick>
+                    </item>
+                    <item>
+                        <description>go to album</description>
+                        <label>31158</label>
+                        <label2></label2>
+                        <thumb>-</thumb>
+                        <onclick>Dialog.Close(all,true)</onclick>
+                        <onclick>Runscript(script.musicfinder,action=album,title=$INFO[musicplayer.album],listid=50)</onclick>
+                    </item>
                     <item>
                         <description>Playlist</description>
                         <label>31123</label>

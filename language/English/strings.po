@@ -645,12 +645,20 @@ msgctxt "#31154"
 msgid "Search for Subtitles"
 msgstr ""
 
+msgctxt "#31155"
+msgid "Go to Artist"
+msgstr ""
+
 msgctxt "#31156"
 msgid "Games"
 msgstr ""
 
 msgctxt "#31157"
 msgid "Home: Hide Games"
+msgstr ""
+
+msgctxt "#31158"
+msgid "Go to Album"
 msgstr ""
 
 msgctxt "#31159"

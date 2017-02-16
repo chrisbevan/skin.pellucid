@@ -6,10 +6,14 @@ DONE - pvr info screen rework (header - 2 column mode)
 DONE - Add user options for menu customisation to skin settings
 DONE - album default art fix
 DONE - rework fullscreen options OSD
+DONE - Reworked music fullscreen menu. Ensure closes properly on stop
+DONE - add 'go to artist'
+DONE - add 'go to album'
 
 - picture section fix
+- add check for musicfinder script to buttons when on repo
 
-DONE - Reworked music fullscreen menu. Ensure closes properly on stop
+
 
 [V1.0.4]
 - Minor tweaks and bug fixes

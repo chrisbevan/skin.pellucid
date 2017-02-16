@@ -84,7 +84,7 @@
     <!--menu logos-->
     <variable name="menuLogo">
         <value condition="window.isactive(pictures)"></value>
-        <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),music)] | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers)"></value>
-        <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),video)] | window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers)"></value>
+        <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),music)] | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)"></value>
+        <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),video)] | window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)"></value>
     </variable>
 </includes>
