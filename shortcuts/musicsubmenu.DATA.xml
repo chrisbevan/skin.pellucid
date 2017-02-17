@@ -28,35 +28,35 @@
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(MusicLibrary,musicdb://artists/)</action>
+        <action>ActivateWindow(Music,musicdb://artists/)</action>
     </shortcut>
     <shortcut>
         <label>132</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(MusicLibrary,musicdb://albums/)</action>
+        <action>ActivateWindow(Music,musicdb://albums/)</action>
     </shortcut>
     <shortcut>
         <label>135</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(MusicLibrary,musicdb://genres/)</action>
+        <action>ActivateWindow(Music,musicdb://genres/)</action>
     </shortcut>
     <shortcut>
         <label>136</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>activateWindow(MusicLibrary,special://musicplaylists/)</action>
+        <action>activateWindow(Music,special://musicplaylists/)</action>
     </shortcut>
     <shortcut>
         <label>31090</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
-        <action>ActivateWindow(MusicLibrary,Addons)</action>
+        <action>ActivateWindow(Music,Addons)</action>
     </shortcut>
     <shortcut>
         <label>744</label>

@@ -2,6 +2,22 @@
 <window type="dialog" id="1105">
     <defaultcontrol always="true">8001</defaultcontrol>
     <controls>
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>row-1-begin</posy>
+            <width>12-col</width>
+            <font>pageTitle</font>
+            <label>$INFO[System.Time]</label>
+            <textcolor>textActive</textcolor>
+        </control>
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>94</posy>
+            <width>12-col</width>
+            <font>pageSubTitle</font>
+            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+            <textcolor>textActive</textcolor>
+        </control>
         <!-- options menu-->
         <control type="group">
             <posx>1438</posx>

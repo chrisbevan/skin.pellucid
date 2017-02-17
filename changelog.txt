@@ -9,11 +9,10 @@ DONE - rework fullscreen options OSD
 DONE - Reworked music fullscreen menu. Ensure closes properly on stop
 DONE - add 'go to artist'
 DONE - add 'go to album'
-
-- picture section fix
+DONE - picture section fix
 - add check for musicfinder script to buttons when on repo
 
-
+Extra overrides required for submenus (e.g. selecting 'artist' when artist is not open fails to reopen the window properly. )
 
 [V1.0.4]
 - Minor tweaks and bug fixes

@@ -3,6 +3,22 @@
     <defaultcontrol always="true">8001</defaultcontrol>
     <onload>Control.SetFocus(8001,3)</onload>
     <controls>
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>row-1-begin</posy>
+            <width>12-col</width>
+            <font>pageTitle</font>
+            <label>$INFO[System.Time]</label>
+            <textcolor>textActive</textcolor>
+        </control>
+        <control type="label">
+            <posx>col-1-begin</posx>
+            <posy>94</posy>
+            <width>12-col</width>
+            <font>pageSubTitle</font>
+            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
+            <textcolor>textActive</textcolor>
+        </control>
         <control type="group">
             <posx>1200</posx>
             <posy>0</posy>
@@ -136,7 +152,7 @@
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>388</height>
-                    <label fallback="31205">$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,. ]$INFO[videoplayer.plot]</label>
+                    <label fallback="31205">[B]$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,. ][/B]$INFO[videoplayer.plot]</label>
                     <autoscroll>false</autoscroll>
                     <shadowcolor>-</shadowcolor>
                     <pagecontrol>61</pagecontrol>
