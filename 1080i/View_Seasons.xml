@@ -26,6 +26,9 @@
                 </control>
             </control>
             <control type="group">
+                <animation type="conditional" condition="control.hasfocus(9001)">
+                    <effect type="fade" start="100" end="0" time="200"/>
+                </animation>
                 <!--title-->
                 <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>

@@ -75,7 +75,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyMusicNav.xml</label>
+            <label>MyMusicNav.xml $INFO[container.folderpath]</label>
         </control>
     </controls>
 </window>
