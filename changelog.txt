@@ -10,6 +10,9 @@ DONE - Reworked music fullscreen menu. Ensure closes properly on stop
 DONE - add 'go to artist'
 DONE - add 'go to album'
 DONE - picture section fix
+DONE - add party mode as default music menu item
+DONE - reposition now playing box
+
 - add check for musicfinder script to buttons when on repo
 
 

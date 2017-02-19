@@ -13,7 +13,7 @@
         </control>
         <control type="label">
             <posx>col-1-begin</posx>
-            <posy>94</posy>
+            <posy>96</posy>
             <width>12-col</width>
             <font>pageSubTitle</font>
             <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>

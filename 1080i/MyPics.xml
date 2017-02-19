@@ -65,7 +65,6 @@
         </control>
         <!--hub menu-->
         <include>hubMenu</include>
-        <include>hubOptions</include>
         <!--mini window-->
         <include>miniVideoPlayer</include>
         <!--debug-->
