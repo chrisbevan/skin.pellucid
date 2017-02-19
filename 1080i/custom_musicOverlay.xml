@@ -65,7 +65,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <height>1-row</height>
-                <label>[B]$INFO[MusicPlayer.ChannelName,, ][/B]$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
+                <label>[B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
                 <scroll>true</scroll>
                 <textcolor>textActive</textcolor>
             </control>

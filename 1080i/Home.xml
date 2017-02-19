@@ -71,12 +71,12 @@
         <!--now playing music-->
         <control type="group">
             <visible>player.hasaudio</visible>
-            <posx>col-7-begin</posx>
+            <posx>col-1-begin</posx>
             <posy>row-26-begin</posy>
             <control type="grouplist">
                 <posx>0</posx>
                 <posy>18</posy>
-                <width>12-col</width>
+                <width>24-col</width>
                 <align>center</align>
                 <itemgap>18</itemgap>
                 <orientation>horizontal</orientation>
@@ -118,13 +118,13 @@
                     <description>Artist</description>
                     <posx>0</posx>
                     <posy>0</posy>
-                    <font>regular</font>
+                    <font>small</font>
                     <width>auto</width>
                     <height>2-row</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <height>2-row</height>
-                    <label>[B]$INFO[MusicPlayer.ChannelName,, ][/B]$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
+                    <label>$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
                     <scroll>true</scroll>
                     <textcolor>textActive</textcolor>
                     <wrapmultiline>false</wrapmultiline>
