@@ -1,5 +1,19 @@
 **Changelog**
 
+[V1.1.1]
+- [FIXED] Aspect ratio incorrect in poster view (thanks wiiija)
+- [NEW] Artist slideshow support
+- [NEW] Polish translation (thanks Etharr)
+- [FIXED] Context menu onback handling in addons (thanks Solbero)
+- [FIXED] onback from music visualisation screen
+
+
+[SKINNERS NOTES]
+- CANT BE FIXED?? Check content is present before assigning view (DoggZipp bug)
+- allow poster view for plugin / plex sourced movies
+- expand image handling where possible
+
+
 [V1.1.0]
 - Various tweaks and GUI updates.
 - [NEW] Additional user options for menu customisation added to skin settings
@@ -32,7 +46,3 @@
 - [REMOVED] Unused images
 - Minor fixes and bug squashing (thanks Ronie!)
 
-[SKINNERS NOTES]
-- CANT BE FIXED: Check content is present before assigning view (DoggZipp bug)
-- consider poster view for plugin / plex sourced movies
-- expand image handling

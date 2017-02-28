@@ -65,7 +65,7 @@
                 <align>center</align>
                 <font>regular</font>
                 <textcolor>textActive</textcolor>
-                <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [LOWERCASE]$INFO[weather.conditions][/LOWERCASE]</label>
+                <label>$INFO[weather.location] [B]$INFO[weather.temperature][/B] [CAPITALIZE]$INFO[weather.conditions][/CAPITALIZE]</label>
             </control>
         </control>
         <!--now playing music-->
