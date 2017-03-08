@@ -43,9 +43,9 @@
 			<thumb />
 			<property name="labelID">favourites</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(Pictures,"/Users/chrisbevan/Sync/Art &amp; Design/CraveControl/",return)</onclick>
-			<property name="path">ActivateWindow(Pictures,"/Users/chrisbevan/Sync/Art &amp; Design/CraveControl/",return)</property>
-			<property name="list">/Users/chrisbevan/Sync/Art &amp; Design/CraveControl/</property>
+			<onclick>ActivateWindow(Videos,special://profile/playlists/video/recentMovies.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://profile/playlists/video/recentMovies.xsp,return)</property>
+			<property name="list">special://profile/playlists/video/recentMovies.xsp</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">favourites</property>
 			<property name="group">mainmenu</property>
@@ -933,6 +933,24 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">17</property>
+			<label>Music videos</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID" />
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">musicsubmenu</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">17</property>
 			<label>Party mode</label>
 			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
@@ -947,8 +965,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31059]</label>
 			<label2>Music</label2>
@@ -965,8 +983,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -983,8 +1001,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -1001,8 +1019,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -1019,8 +1037,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -1037,8 +1055,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -1055,8 +1073,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -1073,8 +1091,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Music</label2>
@@ -1090,8 +1108,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>Music</label2>
@@ -1107,8 +1125,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Music</label2>
@@ -3504,6 +3522,24 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">17</property>
+			<label>Music videos</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID" />
+			<visible>Library.HasContent(MusicVideos)</visible>
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">musicsubmenu</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">17</property>
 			<label>Party mode</label>
 			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
@@ -3518,8 +3554,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31059]</label>
 			<label2>Music</label2>
@@ -3536,8 +3572,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -3554,8 +3590,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -3572,8 +3608,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -3590,8 +3626,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -3608,8 +3644,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -3626,8 +3662,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -3644,8 +3680,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Music</label2>
@@ -3661,8 +3697,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>Music</label2>
@@ -3678,8 +3714,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Music</label2>
@@ -3965,6 +4001,24 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">17</property>
+			<label>Music videos</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID" />
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<onclick condition="true">control.setfocus(9999)</onclick>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">musicsubmenu</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">17</property>
 			<label>Party mode</label>
 			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
@@ -3979,8 +4033,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31059]</label>
 			<label2>Music</label2>
@@ -3997,8 +4051,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -4015,8 +4069,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[133]</label>
 			<label2>Music</label2>
@@ -4033,8 +4087,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -4051,8 +4105,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUMBER[8]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[132]</label>
 			<label2>Music</label2>
@@ -4069,8 +4123,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -4087,8 +4141,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>Music</label2>
@@ -4105,8 +4159,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Music</label2>
@@ -4122,8 +4176,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>Music</label2>
@@ -4139,8 +4193,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
 			<property name="mainmenuid">17</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Music</label2>

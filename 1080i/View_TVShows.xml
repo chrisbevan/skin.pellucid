@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="tvshows">
-        <visible>window.isactive(Videos,videodb://tvshows/titles/)</visible>
         <control type="group">
             <!--fanart-->
             <control type="group">
-                <visible>Substring(Container.folderpath,plugin)</visible>
+                <visible>$EXP[isTVShow]</visible>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                     <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                     <fadetime>500</fadetime>
-                    <colordiffuse>99ffffff</colordiffuse>
+                    <colordiffuse>22ffffff</colordiffuse>
                     <include>kenBurnsey</include>
                 </control>
             </control>
             <control type="panel" id="50">
-                <visible>Substring(container.folderpath,videodb://) + Library.HasContent(tvshows) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + !container.content(movies) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons) + !container.content(files)</visible>
+                <visible>$EXP[isTVShow]</visible>
                 <posx>90</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>

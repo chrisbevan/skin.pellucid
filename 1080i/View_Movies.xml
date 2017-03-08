@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="movies">
-        <visible>window.isactive(Videos,videodb://movies/titles/)</visible>
         <control type="group">
             <!--fanart-->
             <control type="group">
-                <visible>container.content(movies) | container.content(tvshows)</visible>
+                <visible>$EXP[isMovie]</visible>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -16,7 +15,7 @@
                 <include>kenBurnsey</include>
             </control>
             <control type="panel" id="50">
-                <visible>Library.HasContent(movies) + !container.content(files) + !isempty(container.foldername) + !StringCompare(container.foldername,files) + Substring(container.folderpath,videodb://) + !StringCompare(container.foldername,Video Playlists) + !container.content(tvshows) + !container.content(episodes) + !container.content(seasons) + !Substring(Container.folderpath,plugin) + !container.content(addons)</visible>
+                <visible>$EXP[isMovie]</visible>
                 <posx>90</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>

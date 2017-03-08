@@ -6,13 +6,19 @@
 - [NEW] Polish translation (thanks Etharr)
 - [FIXED] Context menu onback handling in addons (thanks Solbero)
 - [FIXED] onback from music visualisation screen
-
+- [NEW] Video Playlists now display in correct content view with title
+- [NEW] Artwork downloader support
+- Various minor tweaks
 
 [SKINNERS NOTES]
-- CANT BE FIXED?? Check content is present before assigning view (DoggZipp bug)
-- allow poster view for plugin / plex sourced movies
 - expand image handling where possible
 
+- add filters to context menu
+
+- music video handling
+- Add music videos as a default menu item
+DONE--Folder title
+DONE--Info view
 
 [V1.1.0]
 - Various tweaks and GUI updates.

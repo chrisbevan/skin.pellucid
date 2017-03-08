@@ -900,3 +900,8 @@ msgstr ""
 msgctxt "#31218"
 msgid "Enable this addon"
 msgstr ""
+
+msgctxt "#31219"
+msgid "Download art"
+msgstr ""
+
