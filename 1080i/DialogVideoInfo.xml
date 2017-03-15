@@ -7,36 +7,38 @@
         <effect type="fade" start="100" end="0" time="400" delay="200"/>
     </animation>
     <controls>
+        <!--background-->
+        <control type="image">
+            <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <include>dimensionsFullscreen</include>
+            <texture>colors/black.png</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        <control type="image">
+            <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <include>dimensionsFullscreen</include>
+            <texture>colors/black.png</texture>
+            <colordiffuse>ddffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        <!--movie / tv show fanart-->
         <control type="group">
-            <!--background / fanart-->
             <control type="image">
                 <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <include>dimensionsFullscreen</include>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
-                <posx>0</posx>
-                <posy>0</posy>
-                <include>dimensionsFullscreen</include>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ddffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
-                <posx>0</posx>
-                <posy>0</posy>
-                <include>dimensionsFullscreen</include>
-                <texture>$INFO[listitem.art(fanart)]</texture>
+                <texture>$INFO[ListItem.Art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
                 <include>kenBurnsey</include>
             </control>
+            <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>
                 <posx>3-col</posx>

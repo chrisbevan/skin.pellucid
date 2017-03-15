@@ -1,5 +1,8 @@
 **Changelog**
 
+[PLANNED WORKS]
+- expand image handling
+
 [V1.1.1]
 - [FIXED] Aspect ratio incorrect in poster view (thanks wiiija)
 - [NEW] Artist slideshow support
@@ -7,18 +10,10 @@
 - [FIXED] Context menu onback handling in addons (thanks Solbero)
 - [FIXED] onback from music visualisation screen
 - [NEW] Video Playlists now display in correct content view with title
+- [NEW] Music video support
 - [NEW] Artwork downloader support
+- [NEW] German translation (thanks Matthias)
 - Various minor tweaks
-
-[SKINNERS NOTES]
-- expand image handling where possible
-
-- add filters to context menu
-
-- music video handling
-- Add music videos as a default menu item
-DONE--Folder title
-DONE--Info view
 
 [V1.1.0]
 - Various tweaks and GUI updates.
