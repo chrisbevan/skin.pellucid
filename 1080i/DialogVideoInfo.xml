@@ -28,16 +28,10 @@
         </control>
         <!--movie / tv show fanart-->
         <control type="group">
-            <control type="image">
-                <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
-                <posx>0</posx>
-                <posy>0</posy>
-                <include>dimensionsFullscreen</include>
-                <texture>$INFO[ListItem.Art(fanart)]</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-                <include>kenBurnsey</include>
-            </control>
+
+            <!--<include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemFanart</include>-->
+            <include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
+
             <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>

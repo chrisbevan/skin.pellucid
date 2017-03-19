@@ -88,4 +88,10 @@
         <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),music)] | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)"></value>
         <value condition="[window.isactive(1106) + String.IsEqual(skin.string(recentitems),video)] | window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)"></value>
     </variable>
+    <!--extra fanart sourcing-->
+    <variable name="extraFanartLocation">
+        <value condition="container.content(movies)">$INFO[listitem.path,,extrafanart]</value>
+        <value condition="container.content(tvshows)">$INFO[listitem.filenameandpath,,extrafanart]</value>
+        <value condition="container.content(seasons)">$INFO[container.listitem.path,,extrafanart]</value>
+    </variable>
 </includes>

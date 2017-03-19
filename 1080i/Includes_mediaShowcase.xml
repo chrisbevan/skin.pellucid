@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!--media showcase-->
+    <include name="itemShowcase">
+        <!--list container to hold extrafanart-->
+        <control type="list" id="99999">
+            <posx>-4</posx>
+            <posy>-4</posy>
+            <width>4</width>
+            <height>4</height>
+            <enable>false</enable>
+            <preloaditems>2</preloaditems>
+            <itemlayout />
+            <focusedlayout />
+            <content>$VAR[extraFanartLocation]</content>
+        </control>
+
+        <!--
+        <control type="image">
+            <visible>Integer.IsGreater(container(99999).numitems,0) + !Skin.HasSetting(disableExtendedFanart)</visible>
+            <include>dimensionsFullscreen</include>
+            <texture>$INFO[container(99999).listitem.filenameandpath,,]</texture>
+            <colordiffuse>ffffffff</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
+        -->
+
+        <control type="grouplist" id="99998">
+              <posx>0</posx>
+              <posy>row-7-begin</posy>
+              <width>fullscreenWidth</width>
+              <height>fullscreenHeight</height>
+              <itemgap>36</itemgap>
+              <scrolltime tween="sine" easing="out">1000</scrolltime>
+              <orientation>horizontal</orientation>
+
+              <!--NOOO!! set images to be buttons instead???-->
+
+              <control type="image">
+                  <width>960</width>
+                  <height>540</height>
+                  <texture>$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+            </control>
+
+            <control type="image" id="100">
+                  <width>360</width>
+                  <height>540</height>
+                  <texture>$INFO[listitem.art(poster)]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+              </control>
+
+            <control type="image">
+                  <visible>!isempty(container(99999).ListItemNoWrap(1).filenameandpath,,)</visible>
+                  <width>960</width>
+                  <height>540</height>
+                  <texture>$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+            </control>
+
+            <control type="image">
+                  <visible>!isempty(container(99999).ListItemNoWrap(2).filenameandpath,,)</visible>
+                  <width>960</width>
+                  <height>540</height>
+                  <texture>$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+            </control>
+
+            <control type="image">
+                  <visible>!isempty(container(99999).ListItemNoWrap(3).filenameandpath,,)</visible>
+                  <width>960</width>
+                  <height>540</height>
+                  <texture>$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+            </control>
+
+            <control type="image">
+                  <visible>!isempty(container(99999).ListItemNoWrap(4).filenameandpath,,)</visible>
+                  <width>960</width>
+                  <height>540</height>
+                  <texture>$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
+                  <colordiffuse>ffffffff</colordiffuse>
+                  <aspectratio>stretch</aspectratio>
+            </control>
+        </control>
+
+        <control type="group">
+            <control type="button" id="1">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1-col</width>
+                <height>2-row</height>
+                <onleft>2</onleft>
+                <onright>2</onright>
+                <onclick>Control.setfocus(99998,3)</onclick>
+            </control>
+            <control type="button" id="2">
+                <posx>1-col</posx>
+                <posy>0</posy>
+                <width>1-col</width>
+                <height>2-row</height>
+                <onleft>1</onleft>
+                <onright>1</onright>
+                <onclick>Control.Move(99998,1)</onclick>
+            </control>
+        </control>
+
+
+    </include>
+</includes>

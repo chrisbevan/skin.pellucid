@@ -1,7 +1,12 @@
 **Changelog**
 
 [PLANNED WORKS]
-- expand image handling
+
+
+[V1.2.0]
+- [NEW] Extended fanart support for video info and seasons (active by default)
+- [NEW] User option: disable extended fanart
+- [NEW] Keyboard autocomplete support
 
 [V1.1.1]
 - [FIXED] Aspect ratio incorrect in poster view (thanks wiiija)
