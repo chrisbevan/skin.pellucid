@@ -10,106 +10,165 @@
             <height>4</height>
             <enable>false</enable>
             <preloaditems>2</preloaditems>
-            <itemlayout />
-            <focusedlayout />
+            <itemlayout/>
+            <focusedlayout/>
             <content>$VAR[extraFanartLocation]</content>
         </control>
-
-        <!--
-        <control type="image">
-            <visible>Integer.IsGreater(container(99999).numitems,0) + !Skin.HasSetting(disableExtendedFanart)</visible>
-            <include>dimensionsFullscreen</include>
-            <texture>$INFO[container(99999).listitem.filenameandpath,,]</texture>
-            <colordiffuse>ffffffff</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
-        -->
-
         <control type="grouplist" id="99998">
-              <posx>0</posx>
-              <posy>row-7-begin</posy>
-              <width>fullscreenWidth</width>
-              <height>fullscreenHeight</height>
-              <itemgap>36</itemgap>
-              <scrolltime tween="sine" easing="out">1000</scrolltime>
-              <orientation>horizontal</orientation>
-
-              <!--NOOO!! set images to be buttons instead???-->
-
-              <control type="image">
-                  <width>960</width>
-                  <height>540</height>
-                  <texture>$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-            </control>
-
-            <control type="image" id="100">
-                  <width>360</width>
-                  <height>540</height>
-                  <texture>$INFO[listitem.art(poster)]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-              </control>
-
-            <control type="image">
-                  <visible>!isempty(container(99999).ListItemNoWrap(1).filenameandpath,,)</visible>
-                  <width>960</width>
-                  <height>540</height>
-                  <texture>$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-            </control>
-
-            <control type="image">
-                  <visible>!isempty(container(99999).ListItemNoWrap(2).filenameandpath,,)</visible>
-                  <width>960</width>
-                  <height>540</height>
-                  <texture>$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-            </control>
-
-            <control type="image">
-                  <visible>!isempty(container(99999).ListItemNoWrap(3).filenameandpath,,)</visible>
-                  <width>960</width>
-                  <height>540</height>
-                  <texture>$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-            </control>
-
-            <control type="image">
-                  <visible>!isempty(container(99999).ListItemNoWrap(4).filenameandpath,,)</visible>
-                  <width>960</width>
-                  <height>540</height>
-                  <texture>$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
-                  <colordiffuse>ffffffff</colordiffuse>
-                  <aspectratio>stretch</aspectratio>
-            </control>
-        </control>
-
-        <control type="group">
-            <control type="button" id="1">
+            <posx>col-1-begin</posx>
+            <posy>row-4-begin</posy>
+            <width>24-col</width>
+            <height>fullscreenHeight</height>
+            <itemgap>2-col</itemgap>
+            <pagecontrol>62</pagecontrol>
+            <scrolltime tween="sine" easing="out">500</scrolltime>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <animation type="windowopen">
+                <effect type="fade" start="0" end="100" delay="250" time="1000"/>
+            </animation>
+            <control type="label">
+                <visible>!isempty(ListItem.tagline)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>1-col</width>
-                <height>2-row</height>
-                <onleft>2</onleft>
-                <onright>2</onright>
-                <onclick>Control.setfocus(99998,3)</onclick>
+                <width>756</width>
+                <height>756</height>
+                <font>large</font>
+                <align>center</align>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[ListItem.tagline]</label>
+                <wrapmultiline>true</wrapmultiline>
             </control>
-            <control type="button" id="2">
-                <posx>1-col</posx>
-                <posy>0</posy>
-                <width>1-col</width>
-                <height>2-row</height>
-                <onleft>1</onleft>
-                <onright>1</onright>
-                <onclick>Control.Move(99998,1)</onclick>
+            <control type="image">
+                <visible>!isempty(ListItem.art(poster))</visible>
+                <posx>0</posx>
+                <width>504</width>
+                <height>756</height>
+                <texture>$INFO[listitem.art(poster)]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="image">
+                <visible>!isempty(ListItem.art(fanart))</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[listitem.art(fanart)]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="panel" id="50">
+                <posx>0</posx>
+                <posy>12</posy>
+                <width>20-col</width>
+                <height>756</height>
+                <enable>false</enable>
+                <itemlayout width="5-col" height="388">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>300</width>
+                        <height>300</height>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
+                        <texture border="0" fallback="colors/offblack.png">$INFO[listitem.thumb]</texture>
+                        <bordertexture border="3">colors/white.png</bordertexture>
+                        <bordersize>3</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <posy>12</posy>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>290</posy>
+                            <width>5-col-gutter</width>
+                            <height>1-row</height>
+                            <font>thumbtitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>[B]$INFO[ListItem.label][/B]</label>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>314</posy>
+                            <width>5-col-gutter</width>
+                            <height>1-row</height>
+                            <font>thumbtitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label2]</label>
+                        </control>
+                    </control>
+                </itemlayout>
+                <focusedlayout/>
+            </control>
+            <control type="image">
+                <visible>!isempty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="image">
+                <visible>!isempty(listitem.art(discart))</visible>
+                <width>756</width>
+                <height>756</height>
+                <texture>$INFO[listitem.art(discart)]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <visible>!isempty(container(99999).ListItemNoWrap(1).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="image">
+                <visible>!isempty(container(99999).ListItemNoWrap(2).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="image">
+                <visible>!isempty(container(99999).ListItemNoWrap(3).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
+            </control>
+            <control type="image">
+                <visible>!isempty(container(99999).ListItemNoWrap(4).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
+                <width>1344</width>
+                <height>756</height>
+                <texture>$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+                <bordertexture border="3">colors/white.png</bordertexture>
+                <bordersize>3</bordersize>
             </control>
         </control>
 
+        <control type="scrollbar" id="62">
+            <posx>col-6-begin</posx>
+            <posy>row-26-begin</posy>
+            <height>12</height>
+            <width>8-col</width>
+            <orientation>horizontal</orientation>
+        </control>
 
     </include>
 </includes>

@@ -1,6 +1,8 @@
 **Changelog**
 
 [PLANNED WORKS]
+- showcase media -- Add main cast mugshots / polaroid style with labels
+- ensure spotlight disabled when no content
 
 
 [V1.2.0]
