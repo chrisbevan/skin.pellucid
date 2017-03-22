@@ -4,7 +4,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[31136]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31136</property>
@@ -21,7 +21,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$ADDON[script.skinshortcuts 32032]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">dvd</property>
@@ -38,7 +38,7 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$ADDON[script.skinshortcuts 32033]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">32033</property>
@@ -55,7 +55,7 @@
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[31147]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
@@ -73,7 +73,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[31006]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31006</property>
@@ -90,7 +90,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31059</property>
@@ -107,7 +107,7 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[10006]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">videos</property>
@@ -128,7 +128,7 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[10006]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">videos--0</property>
@@ -145,7 +145,7 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[10005]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music</property>
@@ -166,7 +166,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[10005]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music--0</property>
@@ -183,7 +183,7 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[12600]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">weather</property>
@@ -200,7 +200,7 @@
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[10002]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">pictures</property>
@@ -216,7 +216,7 @@
 		<item id="13">
 			<property name="id">$NUMBER[13]</property>
 			<label>$LOCALIZE[10004]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">settings</property>
@@ -232,7 +232,7 @@
 		<item id="14">
 			<property name="id">$NUMBER[14]</property>
 			<label>$LOCALIZE[31004]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31004</property>
@@ -732,11 +732,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Video)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -821,35 +822,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[[Library.HasContent(TVShows)] + [!window.isactive(videos)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
+			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>Videos</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>[window.isactive(videos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>Videos</label2>
@@ -865,8 +849,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Videos</label2>
@@ -882,8 +866,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Videos</label2>
@@ -903,7 +887,7 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31136</property>
@@ -921,7 +905,7 @@
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31147]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
@@ -940,16 +924,17 @@
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31005]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -957,7 +942,7 @@
 			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31031]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31031</property>
@@ -975,7 +960,7 @@
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31059</property>
@@ -993,16 +978,17 @@
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1010,17 +996,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[132]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1028,17 +1015,18 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[135]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
+			<property name="path">Container.Update(musicdb://genres/)</property>
+			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1046,62 +1034,8 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
-			<property name="path">Container.Update(musicdb://genres/)</property>
-			<property name="list">Container.Update(musicdb://genres/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">136</property>
@@ -1114,47 +1048,30 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>[window.isactive(music) + Library.HasContent(musicvideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31090</property>
@@ -1167,11 +1084,11 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">744</property>
@@ -1477,11 +1394,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Video)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Test profile)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1566,35 +1484,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[[Library.HasContent(TVShows)] + [!window.isactive(videos)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
+			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>[window.isactive(videos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -1610,8 +1511,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -1627,8 +1528,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -1690,11 +1591,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Test profile)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1743,11 +1645,12 @@
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1755,17 +1658,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
+			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1773,77 +1677,24 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
 			<property name="path">Container.Update(musicdb://genres/)</property>
 			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -1859,8 +1710,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -1868,35 +1719,18 @@
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>[window.isactive(music) + Library.HasContent(musicvideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -1912,8 +1746,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -2898,6 +2732,7 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>Library.HasContent(Video)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
@@ -2987,35 +2822,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[Library.HasContent(TVShows)] + [!window.isactive(videos)]</visible>
+			<visible>Library.HasContent(TVShows)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>Videos</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>window.isactive(videos)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>Videos</label2>
@@ -3031,8 +2849,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Videos</label2>
@@ -3048,8 +2866,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Videos</label2>
@@ -3111,6 +2929,7 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>Library.HasContent(Video)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
@@ -3200,35 +3019,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[Library.HasContent(TVShows)] + [!window.isactive(videos)]</visible>
+			<visible>Library.HasContent(TVShows)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>window.isactive(videos)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3244,8 +3046,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3261,8 +3063,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3326,11 +3128,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Video)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3415,35 +3218,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[[Library.HasContent(TVShows)] + [!window.isactive(videos)]] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
+			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>Videos</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>[window.isactive(videos)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>Videos</label2>
@@ -3459,8 +3245,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>Videos</label2>
@@ -3476,8 +3262,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>Videos</label2>
@@ -3539,11 +3325,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Video)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Test profile)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3628,35 +3415,18 @@
 			<thumb />
 			<property name="labelID">tvshows</property>
 			<property name="defaultID">tvshows</property>
-			<visible>[[Library.HasContent(TVShows)] + [!window.isactive(videos)]] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
+			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/)</property>
-			<property name="list">videodb://tvshows/titles/</property>
+			<onclick condition="window.isactive(videos)">Container.Update(videodb://tvshows/titles/)</onclick>
+			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
+			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
+			<onclick condition="!window.isactive(videos)">ActivateWindow(Videos,videodb://tvshows/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2>$ADDON[script.skinshortcuts 32014]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">tvshows--0</property>
-			<property name="defaultID">tvshows--0</property>
-			<visible>[window.isactive(videos)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://tvshows/titles/)</onclick>
-			<property name="path">Container.Update(videodb://tvshows/titles/)</property>
-			<property name="list">Container.Update(videodb://tvshows/titles/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">videosubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[31088]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3672,8 +3442,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3689,8 +3459,8 @@
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$ADDON[script.skinshortcuts 32014]</label2>
@@ -3712,7 +3482,7 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31136</property>
@@ -3730,7 +3500,7 @@
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31147]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
@@ -3749,11 +3519,12 @@
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31005]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
@@ -3766,7 +3537,7 @@
 			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31031]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31031</property>
@@ -3784,7 +3555,7 @@
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31059</property>
@@ -3802,16 +3573,17 @@
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3819,17 +3591,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[132]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>window.isactive(music)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3837,17 +3610,18 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[135]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
+			<property name="path">Container.Update(musicdb://genres/)</property>
+			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3855,62 +3629,8 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>window.isactive(music)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>window.isactive(music)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
-			<property name="path">Container.Update(musicdb://genres/)</property>
-			<property name="list">Container.Update(musicdb://genres/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">136</property>
@@ -3923,47 +3643,30 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]</visible>
+			<visible>Library.HasContent(MusicVideos)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>window.isactive(music) + Library.HasContent(musicvideos)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31090</property>
@@ -3976,11 +3679,11 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">744</property>
@@ -4039,6 +3742,7 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
@@ -4092,11 +3796,12 @@
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4104,17 +3809,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
+			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>window.isactive(music)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4122,77 +3828,24 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>window.isactive(music)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[Library.HasContent(Music)] + [!window.isactive(music)]</visible>
+			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>window.isactive(music)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
 			<property name="path">Container.Update(musicdb://genres/)</property>
 			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4208,8 +3861,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4217,35 +3870,18 @@
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]</visible>
+			<visible>Library.HasContent(MusicVideos)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>window.isactive(music) + Library.HasContent(musicvideos)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4261,8 +3897,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4284,7 +3920,7 @@
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31136</property>
@@ -4302,7 +3938,7 @@
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31147]</label>
-			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<label2>Common menu item</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
@@ -4321,16 +3957,17 @@
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31005]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -4338,7 +3975,7 @@
 			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31031]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31031</property>
@@ -4356,7 +3993,7 @@
 			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31059</property>
@@ -4374,16 +4011,17 @@
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4391,17 +4029,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[132]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4409,17 +4048,18 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label>$LOCALIZE[135]</label>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
+			<property name="path">Container.Update(musicdb://genres/)</property>
+			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4427,62 +4067,8 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135</property>
-			<property name="defaultID">135</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
-			<property name="path">Container.Update(musicdb://genres/)</property>
-			<property name="list">Container.Update(musicdb://genres/)</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">136</property>
@@ -4495,47 +4081,30 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>[window.isactive(music) + Library.HasContent(musicvideos)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31090</property>
@@ -4548,11 +4117,11 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
-			<label2>$LOCALIZE[10005]</label2>
+			<label2>Music</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">744</property>
@@ -4611,11 +4180,12 @@
 			<thumb />
 			<property name="labelID">31005</property>
 			<property name="defaultID">31005</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
 			<onclick>ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
-			<visible>[StringCompare(System.ProfileName,Test profile)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -4664,11 +4234,12 @@
 			<thumb />
 			<property name="labelID">133</property>
 			<property name="defaultID">133</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://artists/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://artists/)</property>
-			<property name="list">musicdb://artists/</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://artists/)</onclick>
+			<property name="path">Container.Update(musicdb://artists/)</property>
+			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://artists/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4676,17 +4247,18 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[133]</label>
+			<label>$LOCALIZE[132]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
-			<property name="labelID">133--0</property>
-			<property name="defaultID">133--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<property name="labelID">132</property>
+			<property name="defaultID">132</property>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://artists/)</onclick>
-			<property name="path">Container.Update(musicdb://artists/)</property>
-			<property name="list">Container.Update(musicdb://artists/)</property>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://albums/)</onclick>
+			<property name="path">Container.Update(musicdb://albums/)</property>
+			<property name="list">Container.Update(musicdb://albums/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://albums/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4694,77 +4266,24 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132</property>
-			<property name="defaultID">132</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://albums/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://albums/)</property>
-			<property name="list">musicdb://albums/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[132]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">132--0</property>
-			<property name="defaultID">132--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://albums/)</onclick>
-			<property name="path">Container.Update(musicdb://albums/)</property>
-			<property name="list">Container.Update(musicdb://albums/)</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[135]</label>
 			<label2>$LOCALIZE[10005]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">135</property>
 			<property name="defaultID">135</property>
-			<visible>[[Library.HasContent(Music)] + [!window.isactive(music)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Music,musicdb://genres/)</onclick>
-			<property name="path">ActivateWindow(Music,musicdb://genres/)</property>
-			<property name="list">musicdb://genres/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[135]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">135--0</property>
-			<property name="defaultID">135--0</property>
-			<visible>[window.isactive(music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(musicdb://genres/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(musicdb://genres/)</onclick>
 			<property name="path">Container.Update(musicdb://genres/)</property>
 			<property name="list">Container.Update(musicdb://genres/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Music,musicdb://genres/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[136]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4780,8 +4299,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4789,35 +4308,18 @@
 			<thumb />
 			<property name="labelID">musicvideos</property>
 			<property name="defaultID">musicvideos</property>
-			<visible>[[Library.HasContent(MusicVideos)] + [!window.isactive(music) + Library.HasContent(musicvideos)]] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/)</property>
-			<property name="list">videodb://musicvideos/titles/</property>
-			<visible>StringCompare(System.ProfileName,Test profile)</visible>
-			<property name="group">musicsubmenu</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="14">
-			<property name="id">$NUMBER[14]</property>
-			<property name="mainmenuid">16</property>
-			<label>$LOCALIZE[20389]</label>
-			<label2>$LOCALIZE[10005]</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb />
-			<property name="labelID">musicvideos--0</property>
-			<property name="defaultID">musicvideos--0</property>
-			<visible>[window.isactive(music) + Library.HasContent(musicvideos)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
-			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>Container.Update(videodb://musicvideos/titles/)</onclick>
+			<onclick condition="window.isactive(music)">Container.Update(videodb://musicvideos/titles/)</onclick>
 			<property name="path">Container.Update(videodb://musicvideos/titles/)</property>
 			<property name="list">Container.Update(videodb://musicvideos/titles/)</property>
+			<onclick condition="!window.isactive(music)">ActivateWindow(Videos,videodb://musicvideos/titles/)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="15">
-			<property name="id">$NUMBER[15]</property>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[31090]</label>
 			<label2>$LOCALIZE[10005]</label2>
@@ -4833,8 +4335,8 @@
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="16">
-			<property name="id">$NUMBER[16]</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
 			<property name="mainmenuid">16</property>
 			<label>$LOCALIZE[744]</label>
 			<label2>$LOCALIZE[10005]</label2>

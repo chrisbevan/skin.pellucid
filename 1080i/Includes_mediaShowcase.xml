@@ -17,7 +17,7 @@
         <control type="grouplist" id="99998">
             <posx>0</posx>
             <posy>row-3-begin</posy>
-            <width>20000</width>
+            <width>13000</width>
             <height>fullscreenHeight</height>
             <itemgap>0</itemgap>
             <scrolltime tween="sine" easing="out">500</scrolltime>
@@ -27,24 +27,24 @@
                 <effect type="fade" start="0" end="100" delay="250" time="1000"/>
             </animation>
             <!--movement-->
-            <animation effect="slide" time="300" end="0,0" condition="Control.HasFocus(999981)">condition</animation>
-            <animation effect="slide" time="300" end="-700,0" condition="Control.HasFocus(999982)">condition</animation>
-            <animation effect="slide" time="300" end="-1400,0" condition="Control.HasFocus(999983)">condition</animation>
-            <animation effect="slide" time="300" end="-1900,0" condition="Control.HasFocus(999984)">condition</animation>
-            <animation effect="slide" time="300" end="-2600,0" condition="Control.HasFocus(999985)">condition</animation>
-            <animation effect="slide" time="300" end="-3100,0" condition="Control.HasFocus(999986)">condition</animation>
-            <animation effect="slide" time="300" end="-3800,0" condition="Control.HasFocus(999987)">condition</animation>
-            <animation effect="slide" time="300" end="-4500,0" condition="Control.HasFocus(999988)">condition</animation>
-            <animation effect="slide" time="300" end="-5200,0" condition="Control.HasFocus(999989)">condition</animation>
-            <animation effect="slide" time="300" end="-5900,0" condition="Control.HasFocus(999990)">condition</animation>
-            <animation effect="slide" time="300" end="-6600,0" condition="Control.HasFocus(999991)">condition</animation>
-            <animation effect="slide" time="300" end="-7200,0" condition="Control.HasFocus(999992)">condition</animation>
-            <animation effect="slide" time="300" end="-7900,0" condition="Control.HasFocus(999993)">condition</animation>
-            <animation effect="slide" time="300" end="-8600,0" condition="Control.HasFocus(999994)">condition</animation>
-            <animation effect="slide" time="300" end="-9300,0" condition="Control.HasFocus(999995)">condition</animation>
-            <animation effect="slide" time="300" end="-10000,0" condition="Control.HasFocus(999996)">condition</animation>
-            <animation effect="slide" time="300" end="-10700,0" condition="Control.HasFocus(999997)">condition</animation>
-            <animation effect="slide" time="300" end="-11400,0" condition="Control.HasFocus(999998)">condition</animation>
+            <animation effect="slide" time="200" end="0,0" condition="Control.HasFocus(999981)">condition</animation>
+            <animation effect="slide" time="200" end="-700,0" condition="Control.HasFocus(999982)">condition</animation>
+            <animation effect="slide" time="200" end="-1400,0" condition="Control.HasFocus(999983)">condition</animation>
+            <animation effect="slide" time="200" end="-1900,0" condition="Control.HasFocus(999984)">condition</animation>
+            <animation effect="slide" time="200" end="-2600,0" condition="Control.HasFocus(999985)">condition</animation>
+            <animation effect="slide" time="200" end="-3100,0" condition="Control.HasFocus(999986)">condition</animation>
+            <animation effect="slide" time="200" end="-3800,0" condition="Control.HasFocus(999987)">condition</animation>
+            <animation effect="slide" time="200" end="-4500,0" condition="Control.HasFocus(999988)">condition</animation>
+            <animation effect="slide" time="200" end="-5200,0" condition="Control.HasFocus(999989)">condition</animation>
+            <animation effect="slide" time="200" end="-5900,0" condition="Control.HasFocus(999990)">condition</animation>
+            <animation effect="slide" time="200" end="-6600,0" condition="Control.HasFocus(999991)">condition</animation>
+            <animation effect="slide" time="200" end="-7200,0" condition="Control.HasFocus(999992)">condition</animation>
+            <animation effect="slide" time="200" end="-7900,0" condition="Control.HasFocus(999993)">condition</animation>
+            <animation effect="slide" time="200" end="-8600,0" condition="Control.HasFocus(999994)">condition</animation>
+            <animation effect="slide" time="200" end="-9300,0" condition="Control.HasFocus(999995)">condition</animation>
+            <animation effect="slide" time="200" end="-10000,0" condition="Control.HasFocus(999996)">condition</animation>
+            <animation effect="slide" time="200" end="-10700,0" condition="Control.HasFocus(999997)">condition</animation>
+            <animation effect="slide" time="200" end="-11400,0" condition="Control.HasFocus(999998)">condition</animation>
             <control type="label">
                 <visible>!isempty(listitem.tagline)</visible>
                 <posx>col-1-begin</posx>
@@ -186,23 +186,6 @@
                 <bordertexture border="3">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
-            <control type="image">
-                <posx>3-col</posx>
-                <width>1-col</width>
-                <height>756</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-        </control>
-
-        <control type="scrollbar" id="62">
-            <posx>col-9-begin</posx>
-            <posy>row-27-begin</posy>
-            <height>12</height>
-            <width>8-col</width>
-            <orientation>horizontal</orientation>
-            <onback>8000</onback>
         </control>
 
         <!--navigation-->

@@ -69,7 +69,7 @@
             </control>
             <control type="image">
                 <posx>col-1-begin</posx>
-                <posy>898</posy>
+                <posy>886</posy>
                 <width>5-col</width>
                 <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                 <aspectratio align="left">keep</aspectratio>
