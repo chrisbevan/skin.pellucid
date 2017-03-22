@@ -4,7 +4,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[31136]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31136</property>
@@ -21,7 +21,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$ADDON[script.skinshortcuts 32032]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">dvd</property>
@@ -38,7 +38,7 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$ADDON[script.skinshortcuts 32033]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">32033</property>
@@ -55,7 +55,7 @@
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[31147]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">script.globalsearch</property>
@@ -73,7 +73,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[31006]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31006</property>
@@ -90,7 +90,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[31059]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31059</property>
@@ -107,7 +107,7 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[10006]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">videos</property>
@@ -123,12 +123,12 @@
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">videos</property>
 			<property name="group">mainmenu</property>
-			<property name="hasSubmenu">False</property>
+			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[10006]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">videos--0</property>
@@ -145,7 +145,7 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[10005]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music</property>
@@ -166,7 +166,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[10005]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">music--0</property>
@@ -183,7 +183,7 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[12600]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">weather</property>
@@ -200,7 +200,7 @@
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[10002]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">pictures</property>
@@ -216,7 +216,7 @@
 		<item id="13">
 			<property name="id">$NUMBER[13]</property>
 			<label>$LOCALIZE[10004]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">settings</property>
@@ -232,7 +232,7 @@
 		<item id="14">
 			<property name="id">$NUMBER[14]</property>
 			<label>$LOCALIZE[31004]</label>
-			<label2>Common menu item</label2>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
 			<icon>DefaultAddon.png</icon>
 			<thumb />
 			<property name="labelID">31004</property>
@@ -506,6 +506,55 @@
 			<property name="list">EjectTray()</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),dvd)</visible>
 			<property name="group">dvd</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[20389]</label>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID">musicvideos</property>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[744]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">744</property>
+			<property name="defaultID">744</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
+			<property name="list">Files</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videos)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[1037]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videos)</visible>
+			<property name="group">videos</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -2043,7 +2092,55 @@
 		<description>No items</description>
 	</include>
 	<include name="skinshortcuts-group-videos">
-		<description>No items</description>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[20389]</label>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID">musicvideos</property>
+			<visible>Library.HasContent(MusicVideos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[744]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">744</property>
+			<property name="defaultID">744</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
+			<property name="list">Files</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[1037]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">7</property>
@@ -2095,7 +2192,55 @@
 		</item>
 	</include>
 	<include name="skinshortcuts-group-alt-videos">
-		<description>No items</description>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[20389]</label>
+			<label2>$ADDON[script.skinshortcuts 32034]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">musicvideos</property>
+			<property name="defaultID">musicvideos</property>
+			<visible>[Library.HasContent(MusicVideos)] + StringCompare(Window(10000).Property(submenuVisibility),videos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
+			<property name="list">videodb://musicvideos/titles/</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[744]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">744</property>
+			<property name="defaultID">744</property>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Files,return)</property>
+			<property name="list">Files</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),videos)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">7</property>
+			<label>$LOCALIZE[1037]</label>
+			<label2>$ADDON[script.skinshortcuts 32014]</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<property name="list">Addons</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),videos)</visible>
+			<property name="group">videos</property>
+			<property name="isSubmenu">True</property>
+		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">7</property>

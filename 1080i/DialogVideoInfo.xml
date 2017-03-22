@@ -26,10 +26,7 @@
         </control>
         <!--movie / tv show fanart-->
         <control type="group">
-
-            <!--<include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemFanart</include>-->
             <include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
-
             <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>
@@ -72,9 +69,8 @@
             </control>
             <control type="image">
                 <posx>col-1-begin</posx>
-                <posy>row-23-begin</posy>
+                <posy>898</posy>
                 <width>5-col</width>
-                <height>4-col</height>
                 <texture>$INFO[ListItem.Art(clearlogo)]</texture>
                 <aspectratio align="left">keep</aspectratio>
             </control>
@@ -92,6 +88,15 @@
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
             </animation>
+            <animation type="conditional" condition="control.hasfocus(8000)">
+                <effect type="fade" start="0" end="100" time="300" delay="300"/>
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
+            </animation>
+            <animation type="conditional" condition="!control.hasfocus(8000)">
+                <effect type="fade" start="100" end="0" time="350"/>
+                <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
+            </animation>
+
             <!--overlay-->
             <control type="image">
                 <posx>0</posx>
@@ -212,6 +217,7 @@
                 <height>6-row</height>
                 <itemgap>3</itemgap>
                 <onup>61</onup>
+                <onleft>999981</onleft>
                 <orientation>vertical</orientation>
                 <itemlayout width="5-col" height="2-row">
                     <control type="image">
@@ -298,10 +304,14 @@
                         <onclick>sendclick(2003,8)</onclick>
                     </item>
                     <item>
-                        <label>31074</label>
-                        <label2></label2>
+                        <description>Artwork downloader</description>
+                        <label>$LOCALIZE[31219]</label>
+                        <label2></label2>
                         <thumb>-</thumb>
-                        <onclick>control.setfocus(62)</onclick>
+                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,tvshow)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,movie)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,musicvideo)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
                     </item>
                     <item>
                         <label>20410</label>

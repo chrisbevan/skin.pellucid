@@ -15,21 +15,39 @@
             <content>$VAR[extraFanartLocation]</content>
         </control>
         <control type="grouplist" id="99998">
-            <posx>col-1-begin</posx>
-            <posy>row-4-begin</posy>
-            <width>24-col</width>
+            <posx>0</posx>
+            <posy>row-3-begin</posy>
+            <width>20000</width>
             <height>fullscreenHeight</height>
-            <itemgap>2-col</itemgap>
-            <pagecontrol>62</pagecontrol>
+            <itemgap>0</itemgap>
             <scrolltime tween="sine" easing="out">500</scrolltime>
             <orientation>horizontal</orientation>
             <usecontrolcoords>true</usecontrolcoords>
             <animation type="windowopen">
                 <effect type="fade" start="0" end="100" delay="250" time="1000"/>
             </animation>
+            <!--movement-->
+            <animation effect="slide" time="300" end="0,0" condition="Control.HasFocus(999981)">condition</animation>
+            <animation effect="slide" time="300" end="-700,0" condition="Control.HasFocus(999982)">condition</animation>
+            <animation effect="slide" time="300" end="-1400,0" condition="Control.HasFocus(999983)">condition</animation>
+            <animation effect="slide" time="300" end="-1900,0" condition="Control.HasFocus(999984)">condition</animation>
+            <animation effect="slide" time="300" end="-2600,0" condition="Control.HasFocus(999985)">condition</animation>
+            <animation effect="slide" time="300" end="-3100,0" condition="Control.HasFocus(999986)">condition</animation>
+            <animation effect="slide" time="300" end="-3800,0" condition="Control.HasFocus(999987)">condition</animation>
+            <animation effect="slide" time="300" end="-4500,0" condition="Control.HasFocus(999988)">condition</animation>
+            <animation effect="slide" time="300" end="-5200,0" condition="Control.HasFocus(999989)">condition</animation>
+            <animation effect="slide" time="300" end="-5900,0" condition="Control.HasFocus(999990)">condition</animation>
+            <animation effect="slide" time="300" end="-6600,0" condition="Control.HasFocus(999991)">condition</animation>
+            <animation effect="slide" time="300" end="-7200,0" condition="Control.HasFocus(999992)">condition</animation>
+            <animation effect="slide" time="300" end="-7900,0" condition="Control.HasFocus(999993)">condition</animation>
+            <animation effect="slide" time="300" end="-8600,0" condition="Control.HasFocus(999994)">condition</animation>
+            <animation effect="slide" time="300" end="-9300,0" condition="Control.HasFocus(999995)">condition</animation>
+            <animation effect="slide" time="300" end="-10000,0" condition="Control.HasFocus(999996)">condition</animation>
+            <animation effect="slide" time="300" end="-10700,0" condition="Control.HasFocus(999997)">condition</animation>
+            <animation effect="slide" time="300" end="-11400,0" condition="Control.HasFocus(999998)">condition</animation>
             <control type="label">
-                <visible>!isempty(ListItem.tagline)</visible>
-                <posx>0</posx>
+                <visible>!isempty(listitem.tagline)</visible>
+                <posx>col-1-begin</posx>
                 <posy>0</posy>
                 <width>756</width>
                 <height>756</height>
@@ -40,6 +58,7 @@
                 <wrapmultiline>true</wrapmultiline>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(ListItem.art(poster))</visible>
                 <posx>0</posx>
                 <width>504</width>
@@ -51,6 +70,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(ListItem.art(fanart))</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -61,7 +81,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="panel" id="50">
-                <posx>0</posx>
+                <posx>180</posx>
                 <posy>12</posy>
                 <width>20-col</width>
                 <height>756</height>
@@ -103,6 +123,7 @@
                 <focusedlayout/>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -113,6 +134,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(listitem.art(discart))</visible>
                 <width>756</width>
                 <height>756</height>
@@ -121,6 +143,7 @@
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(container(99999).ListItemNoWrap(1).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -131,6 +154,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(container(99999).ListItemNoWrap(2).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -141,6 +165,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(container(99999).ListItemNoWrap(3).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -151,6 +176,7 @@
                 <bordersize>3</bordersize>
             </control>
             <control type="image">
+                <posx>2-col</posx>
                 <visible>!isempty(container(99999).ListItemNoWrap(4).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
@@ -160,14 +186,139 @@
                 <bordertexture border="3">colors/white.png</bordertexture>
                 <bordersize>3</bordersize>
             </control>
+            <control type="image">
+                <posx>3-col</posx>
+                <width>1-col</width>
+                <height>756</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
         </control>
 
         <control type="scrollbar" id="62">
-            <posx>col-6-begin</posx>
-            <posy>row-26-begin</posy>
+            <posx>col-9-begin</posx>
+            <posy>row-27-begin</posy>
             <height>12</height>
             <width>8-col</width>
             <orientation>horizontal</orientation>
+            <onback>8000</onback>
+        </control>
+
+        <!--navigation-->
+        <control type="grouplist">
+            <posx>636</posx>
+            <posy>row-27-begin</posy>
+            <orientation>horizontal</orientation>
+            <itemgap>0</itemgap>
+            <control type="button" id="999981">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999982">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999983">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999984">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999985">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999986">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999987">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999988">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999989">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999990">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999991">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999992">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999993">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999994">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999995">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999996">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999997">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
+            <control type="button" id="999998">
+                <width>36</width>
+                <height>12</height>
+                <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <onback>8000</onback>
+            </control>
         </control>
 
     </include>
