@@ -900,3 +900,11 @@ msgstr "Ukrywaj informacje o pogodzie na ekranie startowym"
 msgctxt "#31218"
 msgid "Enable this addon"
 msgstr "Aktywuj"
+
+msgctxt "#31219"
+msgid "Download art"
+msgstr "Pobierz grafikę"
+
+msgctxt "#31220"
+msgid "Disable extended fanart"
+msgstr "Dezaktywuj dodatkowe fototapety"
