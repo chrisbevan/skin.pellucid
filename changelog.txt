@@ -1,6 +1,7 @@
 **Changelog**
 
 [PLANNED WORKS]
+- Improve playlist display in music view (rework as per video)
 
 [V1.2.0]
 - [NEW] Extended fanart support for video info and seasons (active by default)

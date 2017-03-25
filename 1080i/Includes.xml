@@ -33,6 +33,8 @@
     <expression name="isEpisode">container.content(episodes) + !Substring(Container.folderpath,plugin)</expression>
     <expression name="isMusicVideo">container.content(musicvideos) + !Substring(Container.folderpath,plugin)</expression>
 
+    <expression name="isMusicPlaylist">container.content(playlists) + !Substring(Container.folderpath,plugin)</expression>
+
     <!--item fanart-->
     <include name="itemFanart">
         <control type="wraplist" id="99999">
