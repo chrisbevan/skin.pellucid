@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <!--playlist-->
-    <include name="viewMusicPlayList">
+    <include name="musicPlayList">
         <control type="group">
+            <visible>$EXP[isMusicPlaylist]</visible>
+            <!--fanart-->
+            <control type="image">
+                <visible>$EXP[isMusicPlaylist]</visible>
+                <include>dimensionsFullscreen</include>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture background="true" border="0">$INFO[Listitem.art(fanart)]</texture>
+                <fadetime>500</fadetime>
+                <colordiffuse>22ffffff</colordiffuse>
+            </control>
             <control type="panel" id="59">
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
@@ -71,7 +81,7 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>-8</posy>
-                        <width>6-col</width>
+                        <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -82,24 +92,13 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>26</posy>
-                        <width>6-col</width>
+                        <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>smallStrong</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
-                    </control>
-                    <control type="label">
-                        <posx>15-col</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
                     </control>
                     <control type="label">
                         <right>24</right>
@@ -186,7 +185,7 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>-8</posy>
-                        <width>6-col</width>
+                        <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -197,24 +196,13 @@
                     <control type="label">
                         <posx>1-col-indent</posx>
                         <posy>26</posy>
-                        <width>6-col</width>
+                        <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>smallStrong</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
-                    </control>
-                    <control type="label">
-                        <posx>15-col</posx>
-                        <posy>0</posy>
-                        <width>6-col</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
-                        <label></label>
                     </control>
                     <control type="label">
                         <right>24</right>
@@ -233,6 +221,7 @@
         </control>
         <!--coverart selection-->
         <control type="group">
+            <visible>$EXP[isMusicPlaylist]</visible>
             <posx>col-17-begin</posx>
             <posy>row-5-begin</posy>
             <control type="image">

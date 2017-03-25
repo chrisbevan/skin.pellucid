@@ -12,6 +12,7 @@
         <value condition="Window.isactive(Videos) + [Container.Content(seasons) | Container.Content(episodes)]">$LOCALIZE[20343]</value>
         <value condition="Window.isactive(Videos) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Videos) + isEmpty(container.foldername)">$LOCALIZE[31012]</value>
+        <value condition="Window.isactive(Music) + Substring(Container.folderpath,special://profile/playlists)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE]</value>
         <value condition="Window.isactive(Music) + Container.Content(albums) + Substring(Container.folderpath,special://profile/playlists/music)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Music) + SubString(container.folderpath,addons://)">$LOCALIZE[31058]</value>
         <value condition="Window.isactive(Music) + SubString(container.folderpath,plugin://)">$INFO[container.foldername]</value>

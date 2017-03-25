@@ -15,6 +15,18 @@
         <action>::ACTION::</action>
     </override>
 
+    <override action="ActivateWindow(1106)" group="musicsubmenu">
+        <condition>window.isactive(music)</condition>
+        <action>::ACTION::</action>
+        <action>control.setfocus(9998,0)</action>
+    </override>
+
+    <override action="ActivateWindow(1106)" group="videosubmenu">
+        <condition>window.isactive(videos)</condition>
+        <action>::ACTION::</action>
+        <action>control.setfocus(9998,0)</action>
+    </override>
+
     <override action="RunScript(script.globalsearch)">
         <condition>!system.hasaddon(script.globalsearch)</condition>
         <action>InstallAddon(script.globalsearch)</action>

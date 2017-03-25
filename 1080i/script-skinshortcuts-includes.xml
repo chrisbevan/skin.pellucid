@@ -734,9 +734,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Video)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -931,9 +932,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1396,9 +1398,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Video)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -1593,9 +1596,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Music)] + StringCompare(Container(9001).ListItem.Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -2734,9 +2738,10 @@
 			<property name="defaultID">31005</property>
 			<visible>Library.HasContent(Video)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -2931,9 +2936,10 @@
 			<property name="defaultID">31005</property>
 			<visible>Library.HasContent(Video)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3130,9 +3136,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Video)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3327,9 +3334,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Video)] + StringCompare(Window(10000).Property(submenuVisibility),videosubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(videos)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(videos)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">videosubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3526,9 +3534,10 @@
 			<property name="defaultID">31005</property>
 			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3744,9 +3753,10 @@
 			<property name="defaultID">31005</property>
 			<visible>Library.HasContent(Music)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -3964,9 +3974,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
@@ -4182,9 +4193,10 @@
 			<property name="defaultID">31005</property>
 			<visible>[Library.HasContent(Music)] + StringCompare(Window(10000).Property(submenuVisibility),musicsubmenu)</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>ActivateWindow(1106)</onclick>
+			<onclick condition="window.isactive(music)">ActivateWindow(1106)</onclick>
 			<property name="path">ActivateWindow(1106)</property>
 			<property name="list">1106</property>
+			<onclick condition="window.isactive(music)">control.setfocus(9998,0)</onclick>
 			<visible>StringCompare(System.ProfileName,Test profile)</visible>
 			<property name="group">musicsubmenu</property>
 			<property name="isSubmenu">True</property>
