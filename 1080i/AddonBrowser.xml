@@ -299,6 +299,7 @@
                         <colordiffuse></colordiffuse>
                     </control>
                     <control type="image">
+                        <visible>!isempty(ListItem.AddonSummary)</visible>
                         <posx>0</posx>
                         <posy>577</posy>
                         <width>8-col</width>
