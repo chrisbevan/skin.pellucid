@@ -4,15 +4,7 @@
     <include name="musicPlayList">
         <control type="group">
             <visible>$EXP[isMusicPlaylist]</visible>
-            <!--fanart-->
-            <control type="image">
-                <visible>$EXP[isMusicPlaylist]</visible>
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" border="0">$INFO[Listitem.art(fanart)]</texture>
-                <fadetime>500</fadetime>
-                <colordiffuse>22ffffff</colordiffuse>
-            </control>
+
             <control type="panel" id="59">
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
@@ -91,14 +83,14 @@
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
-                        <posy>26</posy>
+                        <posy>28</posy>
                         <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>smallStrong</font>
+                        <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
+                        <label>[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</label>
                     </control>
                     <control type="label">
                         <right>24</right>
@@ -195,14 +187,14 @@
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
-                        <posy>26</posy>
+                        <posy>28</posy>
                         <width>13-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>smallStrong</font>
+                        <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album]</label>
+                        <label>[B]$INFO[ListItem.Artist,, - ]$INFO[ListItem.Album][/B]</label>
                     </control>
                     <control type="label">
                         <right>24</right>

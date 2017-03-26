@@ -89,7 +89,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyMusicPlaylist.xml path: $INFO[container.folderpath]   name: $INFO[container.foldername]   content: $INFO[container.content]    Control: $INFO[System.CurrentControl]</label>
+            <label>MyPlaylist.xml path: $INFO[container.folderpath]   name: $INFO[container.foldername]   content: $INFO[container.content]    Control: $INFO[System.CurrentControl]</label>
         </control>
     </controls>
 </window>

@@ -127,6 +127,18 @@
             <onclick>dialog.close(1104)</onclick>
             <onclick>UpdateLibrary(music)</onclick>
         </control>
+
+        <control type="radiobutton" id="20">
+            <!--<visible>musicPlaylist</visible>-->
+            <description>Shuffle</description>
+            <width>6-col</width>
+            <focusedcolor>textActive</focusedcolor>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <label>Shuffle</label>
+            <onclick condition="!Playlist.IsRandom">PlayerControl(randomOn)</onclick>
+            <onclick condition="Playlist.IsRandom">PlayerControl(randomOff)</onclick>
+        </control>
+
     </include>
     <!--pictures submenu items-->
     <include name="picturesSideMenu">
