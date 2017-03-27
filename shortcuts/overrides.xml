@@ -16,13 +16,13 @@
     </override>
 
     <override action="ActivateWindow(1106)" group="musicsubmenu">
-        <condition>window.isactive(music)</condition>
+        <condition>window.isactive(music) | window.isactive(radiochannels)</condition>
         <action>::ACTION::</action>
         <action>control.setfocus(9998,0)</action>
     </override>
 
     <override action="ActivateWindow(1106)" group="videosubmenu">
-        <condition>window.isactive(videos)</condition>
+        <condition>window.isactive(videos) | window.isactive(tvchannels) |window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers)</condition>
         <action>::ACTION::</action>
         <action>control.setfocus(9998,0)</action>
     </override>
