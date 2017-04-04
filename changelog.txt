@@ -1,5 +1,17 @@
 **Changelog**
 
+[1.2.1]
+- [NEW] Hebrew Translation (thanks Eric P)
+- [NEW] Poster view for plugin sourced movies and tvshows
+TODO:
+- [DONE] Keyboard bugfix
+- [DONE] Song and playlist view: Remove overlay
+- [DONE] Music addons fix
+Filters for movies (context menu) WHERE IS THE FILTER DIALOG???
+Supply better screenshots
+
+
+
 [V1.2.0]
 - [NEW] Extended fanart support for video info and seasons (active by default)
 - [NEW] 'Media Showcase'. This extension to the video info screen presents media art in a much more engaging way, taking advantage of available media art.
