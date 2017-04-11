@@ -72,7 +72,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyVideoNav.xml $INFO[container.folderpath] content: $INFO[container.content]</label>
+            <label>MyVideoNav.xml path: $INFO[container.folderpath] folder: $INFO[container.foldername] content: $INFO[container.content]</label>
         </control>
     </controls>
 </window>

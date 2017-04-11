@@ -7,9 +7,12 @@ TODO:
 - [DONE] Keyboard bugfix
 - [DONE] Song and playlist view: Remove overlay
 - [DONE] Music addons fix
-Filters for movies (context menu) WHERE IS THE FILTER DIALOG???
-Supply better screenshots
+- [DONE] Music and video files fix
+- [DONE] Home background images aspect ratio changed to support other image dimensions (experiment with different options)
+- provide override for auto presentation of music 'now playing' screen.
 
+TO DO: Filters for movies (context menu) WHERE IS THE FILTER DIALOG???
+Supply better screenshots
 
 
 [V1.2.0]

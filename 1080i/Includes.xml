@@ -26,7 +26,7 @@
     <include file="Includes_mediaShowcase.xml"/>
 
     <!--view type conditions-->
-    <expression name="isVideoList">container.content(files) | isempty(container.content) | container.content(playlists) | container.content(addons)</expression>
+    <expression name="isVideoList">!Substring(container.folderpath,videodb://) | container.content(files) | isempty(container.content) | container.content(playlists) | container.content(addons)</expression>
     <expression name="isMovie">container.content(movies) + [Substring(container.folderpath,videodb://) | Substring(container.folderpath,special://profile/playlists/video)]</expression>
     <expression name="isAddonMovieOrTVshow">Substring(container.folderpath,plugin://) + [container.content(movies) | container.content(tvshows)]</expression>
 
@@ -35,7 +35,7 @@
     <expression name="isEpisode">container.content(episodes) + !Substring(Container.folderpath,plugin)</expression>
     <expression name="isMusicVideo">container.content(musicvideos) + !Substring(Container.folderpath,plugin)</expression>
 
-    <expression name="isMusicList">Substring(container.foldername,Files) | container.content(files) | container.content(addons) | [container.content(playlists) + !Substring(Container.folderpath,special://profile/playlists)] | Substring(Container.folderpath,plugin://)</expression>
+    <expression name="isMusicList">!Substring(container.folderpath,musicdb://) | Substring(container.foldername,Files) | container.content(files) | container.content(addons) | [container.content(playlists) + !Substring(Container.folderpath,special://profile/playlists)] | Substring(Container.folderpath,plugin://)</expression>
     <expression name="isMusicArtist">container.content(artists) + [Substring(container.folderpath,musicdb://) | Substring(Container.folderpath,special://profile/playlists)]</expression>
     <expression name="isMusicArtistCatalogue">container.content(albums) + Substring(container.folderpath,albumartistsonly)</expression>
     <expression name="isMusicAlbum">container.content(albums) + [Substring(container.folderpath,musicdb://) | Substring(Container.folderpath,special://profile/playlists)]</expression>
