@@ -12,8 +12,7 @@ TODO:
 - provide override for auto presentation of music 'now playing' screen.
 - [DONE] Time index direct search added
 
-TO DO: Filters for movies (context menu) WHERE IS THE FILTER DIALOG???
-Supply better screenshots
+TO DO: Supply better screenshots
 
 
 

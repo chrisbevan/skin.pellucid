@@ -26,9 +26,9 @@
     <include file="Includes_mediaShowcase.xml"/>
 
     <!--view type conditions-->
-    <expression name="isVideoList">!Substring(container.folderpath,videodb://) | container.content(files) | isempty(container.content) | container.content(playlists) | container.content(addons)</expression>
+    <expression name="isVideoList">!Substring(container.folderpath,special://profile/playlists/video) + !Substring(container.folderpath,videodb://) + !Substring(container.folderpath,plugin://) |container.content(files) | isempty(container.content) | container.content(playlists) | container.content(addons)</expression>
     <expression name="isMovie">container.content(movies) + [Substring(container.folderpath,videodb://) | Substring(container.folderpath,special://profile/playlists/video)]</expression>
-    <expression name="isAddonMovieOrTVshow">Substring(container.folderpath,plugin://) + [container.content(movies) | container.content(tvshows)]</expression>
+    <expression name="isAddonMovieOrTVshow">!Substring(container.folderpath,videodb://) + Substring(container.folderpath,plugin://) + [container.content(movies) | container.content(tvshows)]</expression>
 
     <expression name="isTVShow">container.content(tvshows) + [Substring(container.folderpath,videodb://) | Substring(container.folderpath,special://profile/playlists/video)]</expression>
     <expression name="isSeason">container.content(seasons) + Substring(container.folderpath,videodb://)</expression>
