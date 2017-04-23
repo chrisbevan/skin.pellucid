@@ -1,6 +1,6 @@
 **Changelog**
 
-[V1.2.1]
+[V1.2.2]
 - [NEW] Hebrew Translation (thanks Eric P)
 - [NEW] Poster view enabled for online sourced content
 - [NEW] Time index direct search added
