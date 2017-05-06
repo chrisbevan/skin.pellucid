@@ -1,5 +1,9 @@
 **Changelog**
 
+[V1.2.3]
+- in progress, watched etc??
+- [FIXED] Fullscreen music activation crash
+
 [V1.2.2]
 - [NEW] Hebrew Translation (thanks Eric P)
 - [NEW] Poster view enabled for online sourced content
