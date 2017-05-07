@@ -33,7 +33,7 @@
                     <loop>yes</loop>
                     <imagepath>$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
                     <include>kenBurnsey</include>
-                    <colordiffuse>44ffffff</colordiffuse>
+                    <colordiffuse>88ffffff</colordiffuse>
                 </control>
                 <!--visualisation-->
                 <control type="visualisation" id="2">

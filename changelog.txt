@@ -1,8 +1,16 @@
 **Changelog**
 
 [V1.2.3]
-- in progress, watched etc??
 - [FIXED] Fullscreen music activation crash
+- [FIXED] Incorrect casing on some font calls (thanks BigNoid)
+- [FIXED] Audio offset blocked by dialog background (thanks PaulVT)
+- [FIXED] Remove script-skinshortcuts-includes.xml from tree
+- [FIXED] Vignette on artist slideshow adjusted to increase brightness
+
+- in progress, watched etc??
+
+
+
 
 [V1.2.2]
 - [NEW] Hebrew Translation (thanks Eric P)
