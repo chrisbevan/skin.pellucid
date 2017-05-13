@@ -900,3 +900,7 @@ msgstr "Nascondi sommario meteo nel menu' principale"
 msgctxt "#31218"
 msgid "Enable this addon"
 msgstr "Abilita questo addon"
+
+msgctxt "#31221"
+msgid "Play Disc"
+msgstr "Riprodurre il disco"

@@ -908,3 +908,7 @@ msgstr "Pobierz grafikę"
 msgctxt "#31220"
 msgid "Disable extended fanart"
 msgstr "Dezaktywuj dodatkowe fototapety"
+
+msgctxt "#31221"
+msgid "Play Disc"
+msgstr "Odtwarzać płytę"
