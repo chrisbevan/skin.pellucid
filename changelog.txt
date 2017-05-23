@@ -12,6 +12,7 @@
 - [FIXED] Fullscreen music -> home transition when music is stopped by user
 - [FIXED] Reduced font size on edit source dialog
 - [NEW] up / down now controls volume in fullscreen musicview
+- [NEW] Russian Translation (thanks Vasiliy)
 - Various minor tweaks and fixes
 
 [V1.2.2]
