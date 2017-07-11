@@ -1,5 +1,8 @@
 **Changelog**
 
+[V1.2.4]
+- [UPDATED] French language file
+
 [V1.2.3]
 - [FIXED] Fullscreen music activation could hang kodi in some cases
 - [FIXED] Incorrect casing on some font calls (thanks BigNoid)
