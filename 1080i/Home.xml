@@ -6,9 +6,6 @@
     <controls>
         <include>globalBackground</include>
         <control type="group">
-            <animation type="windowOpen" condition="!Skin.HasSetting(lowPowerMode)">
-                <effect type="zoom" center="auto" start="105" tween="sine" end="100" time="1500"/>
-            </animation>
             <include>modalDialogContentShift</include>
             <control type="multiimage">
                   <animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
@@ -29,9 +26,6 @@
             </control>
         </control>
         <control type="group">
-            <animation type="conditional" condition="control.hasfocus(9001)">
-                <effect type="slide" center="auto" start="0,0" end="2-col,0" time="200"/>
-            </animation>
             <!--Date / time and weather-->
             <control type="group">
                 <posx>col-1-begin</posx>

@@ -2,6 +2,12 @@
 
 [V1.2.4]
 - [UPDATED] French language file
+- [UPDATED] Norwegian language file
+
+**TO DO**
+Channel group
+Check onback for video when small player is active
+Music playlist view issue (see Github)
 
 [V1.2.3]
 - [FIXED] Fullscreen music activation could hang kodi in some cases
