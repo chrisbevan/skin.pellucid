@@ -6,7 +6,9 @@
     <controls>
         <include>globalBackground</include>
         <control type="group">
-            <include>modalDialogContentShift</include>
+            <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
+                <effect type="slide" end="100" time="200" delay="200" center="auto" tween="linear" easing="out"/>
+            </animation>
             <control type="multiimage">
                   <animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
                   <include>dimensionsFullscreen</include>
@@ -29,27 +31,27 @@
             <!--Date / time and weather-->
             <control type="group">
                 <posx>col-1-begin</posx>
-                <posy>row-22-begin</posy>
+                <posy>row-14-begin</posy>
                 <animation type="conditional" condition="player.hasaudio + !skin.hassetting(weatherdisplay)">
                     <effect type="slide" start="0,0" end="0,-72" tween="cubic" easing="out" time="0"/>
                 </animation>
                 <control type="label">
-                    <posx>0</posx>
+                    <posx>24-col</posx>
                     <posy>-24</posy>
                     <width>24-col</width>
                     <height>4-row</height>
-                    <align>center</align>
+                    <align>right</align>
                     <font>veryLarge</font>
                     <textcolor>textActive</textcolor>
                     <label>$INFO[System.Time]</label>
                 </control>
                 <control type="label">
-                    <posx>0</posx>
+                    <posx>24-col</posx>
                     <posy>2-row</posy>
                     <width>24-col</width>
                     <height>4-row</height>
                     <font>regular</font>
-                    <align>center</align>
+                    <align>right</align>
                     <textcolor>textActive</textcolor>
                     <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
                 </control>
@@ -69,12 +71,12 @@
             <control type="group">
                 <visible>player.hasaudio</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-26-begin</posy>
+                <posy>row-17-begin</posy>
                 <control type="grouplist">
                     <posx>0</posx>
                     <posy>18</posy>
                     <width>24-col</width>
-                    <align>center</align>
+                    <align>right</align>
                     <itemgap>18</itemgap>
                     <orientation>horizontal</orientation>
                     <control type="image">

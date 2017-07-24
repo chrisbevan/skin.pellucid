@@ -5,6 +5,7 @@
 - [UPDATED] Norwegian language file
 
 **TO DO**
+New Home screen
 Channel group
 Check onback for video when small player is active
 Music playlist view issue (see Github)
