@@ -913,3 +913,7 @@ msgctxt "#31221"
 msgid "Play Disc"
 msgstr ""
 
+msgctxt "#31222"
+msgid "Change Channel Group"
+msgstr ""
+

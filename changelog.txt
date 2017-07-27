@@ -3,11 +3,9 @@
 [V1.2.4]
 - [UPDATED] French language file
 - [UPDATED] Norwegian language file
+- [UPDATED] Home screen tweaked
+- [UPDATED] PVR Channel group control added to PVR section
 
-**TO DO**
-New Home screen
-Channel group
-Check onback for video when small player is active
 Music playlist view issue (see Github)
 
 [V1.2.3]
