@@ -5,8 +5,7 @@
 - [UPDATED] Norwegian language file
 - [UPDATED] Home screen tweaked
 - [UPDATED] PVR Channel group control added to PVR section
-
-Music playlist view issue (see Github)
+- [FIXED] Music playlist view not behaving properly
 
 [V1.2.3]
 - [FIXED] Fullscreen music activation could hang kodi in some cases
