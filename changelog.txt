@@ -1,5 +1,7 @@
 **Changelog**
 
+***TESTING BRANCH***
+
 [V1.2.4]
 - [UPDATED] French language file
 - [UPDATED] Norwegian language file

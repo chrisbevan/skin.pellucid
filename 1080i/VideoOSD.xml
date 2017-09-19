@@ -72,7 +72,7 @@
                     <description>Progress Bar</description>
                     <posx>150</posx>
                     <posy>212</posy>
-                    <width>324</width>
+                    <width>312</width>
                     <height>12</height>
                     <texturebg>colors/white.png</texturebg>
                     <midtexture colordiffuse="highlight">colors/white.png</midtexture>

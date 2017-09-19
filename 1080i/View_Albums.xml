@@ -2,43 +2,34 @@
 <includes>
     <!--Album browser-->
     <include name="musicalbum">
-        <!--fanart-->
         <control type="group">
-            <visible>$EXP[isMusicAlbum]</visible>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" border="0">$INFO[listitem.Art(artist.fanart)]</texture>
-                <fadetime>1500</fadetime>
-                <colordiffuse>22ffffff</colordiffuse>
-            </control>
-            <control type="panel" id="50">
-                <visible>$EXP[isMusicAlbum]</visible>
-                <posx>78</posx>
-                <posy>row-5-begin</posy>
-                <width>1800</width>
-                <height>24-row</height>
-                <onleft>9000</onleft>
-                <onright>60</onright>
+			<!--most recent-->
+			<control type="panel" id="9998">
+				<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-6-begin</posy>
+                <width>24-col</width>
+                <height>5-col-gutter</height>
                 <ondown>50</ondown>
-                <onup>50</onup>
+                <onleft>9000</onleft>
                 <onback>9000</onback>
-                <pagecontrol>60</pagecontrol>
-                <scrolltime tween="cubic" easing="out">600</scrolltime>
-                <itemlayout width="300" height="348">
+                <orientation>horizontal</orientation>
+                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID],return)</onclick>
+                <onclick>Control.SetFocus(50)</onclick>
+                <itemlayout width="366" height="5-col-gutter">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
+                        <width>5-col-gutter</width>
+                        <height>5-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">DefaultAlbumCover.png</texture>
+                        <texture border="6">colors/white.png</texture>
                         <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>overlay</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>isempty(listitem.title)</visible>
+                        <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
                         <posy>2-row</posy>
                         <width>240</width>
@@ -47,6 +38,120 @@
                         <aligny>center</aligny>
                         <font>regularStrong</font>
                         <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.title]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!controlgroup(9000).hasfocus</visible>
+                        <posx>12</posx>
+                        <posy>3-row</posy>
+                        <width>240</width>
+                        <height>2-row</height>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>buttonTitle</font>
+                        <textcolor>textDisabled</textcolor>
+                        <label>$INFO[ListItem.artist]</label>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>5-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                        <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="366" height="5-col-gutter">
+                    <control type="group">
+                        <include>focusThumb</include>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>5-col-gutter</width>
+                            <height>5-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="6">colors/white.png</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>highlight</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <posx>12</posx>
+                            <posy>2-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>regularStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.title]</label>
+                        </control>
+                        <control type="label">
+                            <visible>!controlgroup(9000).hasfocus</visible>
+                            <posx>12</posx>
+                            <posy>3-row</posy>
+                            <width>240</width>
+                            <height>2-row</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>buttonTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.artist]</label>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>5-col-gutter</width>
+                            <height>5-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
+                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
+                    </control>
+                </focusedlayout>
+				<content>special://skin/extras/playlists/recentAlbums.xsp</content>
+            </control>
+			<!--all albums-->
+            <control type="panel" id="50">
+                <visible>$EXP[isMusicAlbum]</visible>
+                <posx>col-1-begin</posx>
+                <posy>row-18-begin</posy>
+                <width>1800</width>
+                <height>23-row</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <ondown>50</ondown>
+                <onup>9998</onup>
+                <onback>9000</onback>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime tween="cubic" easing="out">600</scrolltime>
+                <itemlayout width="293" height="348">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture border="6">colors/white.png</texture>
+                        <bordertexture border="6" colordiffuse="44FFFFFF">colors/black.png</bordertexture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>highlight</colordiffuse>
+                    </control>
+                    <control type="textbox">
+                        <visible>isempty(listitem.title)</visible>
+                        <posx>24</posx>
+                        <posy>3-row</posy>
+                        <width>228</width>
+                        <height>6-row</height>
+                        <font>largeStrong</font>
+						<wrapmultiline>true</wrapmultiline>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                     <control type="label">
@@ -87,16 +192,27 @@
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="6">DefaultAlbumCover.png</texture>
-                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>6</bordersize>
-                            <colordiffuse>ff666666</colordiffuse>
-                        </control>
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>4-col-gutter</width>
+	                        <height>4-col-gutter</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture border="6">colors/white.png</texture>
+	                        <bordertexture border="6" colordiffuse="44FFFFFF">colors/black.png</bordertexture>
+	                        <bordersize>6</bordersize>
+	                        <colordiffuse>highlight</colordiffuse>
+	                    </control>
+	                    <control type="textbox">
+	                        <visible>isempty(listitem.title)</visible>
+	                        <posx>24</posx>
+	                        <posy>3-row</posy>
+	                        <width>228</width>
+	                        <height>6-row</height>
+	                        <font>largeStrong</font>
+							<wrapmultiline>true</wrapmultiline>
+	                        <textcolor>textActive</textcolor>
+	                        <label>$INFO[ListItem.label]</label>
+	                    </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -106,18 +222,6 @@
                             <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
                             <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
-                        </control>
-                        <control type="label">
-                            <visible>isempty(listitem.title)</visible>
-                            <posx>12</posx>
-                            <posy>2-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
                         </control>
                         <control type="label">
                             <posx>12</posx>
