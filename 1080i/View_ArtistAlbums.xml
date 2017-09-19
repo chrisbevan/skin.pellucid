@@ -42,8 +42,8 @@
                     <visible>$EXP[isMusicArtistCatalogue]</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-11-begin</posy>
-                    <width>21-col</width>
-                    <height>18-row</height>
+                    <width>24-col</width>
+                    <height>19-row</height>
                     <onleft>9000</onleft>
                     <ondown>50</ondown>
                     <onup>50</onup>
