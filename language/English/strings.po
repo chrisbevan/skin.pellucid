@@ -917,3 +917,14 @@ msgctxt "#31222"
 msgid "Change Channel Group"
 msgstr ""
 
+msgctxt "#31223"
+msgid "All Albums"
+msgstr ""
+
+msgctxt "#31224"
+msgid "All Movies"
+msgstr ""
+
+msgctxt "#31225"
+msgid "All TV Shows"
+msgstr ""

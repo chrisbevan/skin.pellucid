@@ -13,7 +13,7 @@
 			<!--quick link selector-->
 			<control type="list" id="9123">
                 <posx>col-1-begin</posx>
-                <posy>row-4-begin</posy>
+                <posy>row-5-begin</posy>
                 <width>24-col</width>
                 <height>2-row</height>
                 <onleft>9000</onleft>
@@ -47,44 +47,17 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item id="1">
-                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(movies)</visible>
-                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
-                        <property name="textTitle">31176</property>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="2">
-                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(tvshows)</visible>
-                        <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
-                        <property name="textTitle">31178</property>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="6">
-                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(movies)</visible>
-                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
-                        <property name="textTitle">31132</property>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="7">
-                        <visible>String.IsEqual(skin.string(recentitems),video) + Library.HasContent(tvshows)</visible>
-                        <label>special://skin/extras/playlists/inprogressTVShows.xsp</label>
-                        <property name="textTitle">31127</property>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="3">
-                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
+                    <item>
                         <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
                         <onclick>noop</onclick>
                     </item>
-                    <item id="4">
-                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
+                    <item>
                         <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
                         <onclick>noop</onclick>
                     </item>
-                    <item id="5">
-                        <visible>String.IsEqual(skin.string(recentitems),music) + Library.HasContent(music)</visible>
+                    <item>
                         <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
                         <onclick>noop</onclick>
@@ -94,7 +67,7 @@
 			<!--quick links-->			
 			<control type="panel" id="9998">
                 <posx>col-1-begin</posx>
-                <posy>row-6-begin</posy>
+                <posy>row-7-begin</posy>
                 <width>24-col</width>
                 <height>11-row</height>
 				<onup>9123</onup>
@@ -112,9 +85,19 @@
                         <height>5-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="6">colors/white.png</texture>
-                        <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
+                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>highlight</colordiffuse>
+                    </control>
+					<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>5-col-gutter</width>
+                        <height>5-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$INFO[ListItem.Art(thumb)]</texture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>ffffffff</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
@@ -126,18 +109,7 @@
                         <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>5-col-gutter</width>
-                        <height>5-col-gutter</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <colordiffuse>ffffffff</colordiffuse>
-                    </control>
+                    </control>      
                 </itemlayout>
                 <focusedlayout width="348" height="5-col-gutter">
                     <control type="group">
@@ -153,6 +125,16 @@
                             <bordersize>6</bordersize>
                             <colordiffuse>highlight</colordiffuse>
                         </control>
+						<control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>5-col-gutter</width>
+                            <height>5-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
+                        </control>
                         <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
@@ -164,23 +146,12 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
 	                    </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>5-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>6</bordersize>
-                            <colordiffuse>ffffffff</colordiffuse>
-                        </control>
                     </control>
                 </focusedlayout>
 				<content>$INFO[control.getlabel(9123)]</content>
             </control>
 		</control>
-			<!--all albums-->
+		<!--all albums-->
 		<control type="group" id="9124">
 			<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
                 <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
@@ -188,18 +159,18 @@
 			<control type="label">
                 <visible>!controlgroup(9000).hasfocus + $EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-18-begin</posy>
+                <posy>row-19-begin</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>All Albums</label>
+                <label>$LOCALIZE[31223]</label>
             </control>
             <control type="panel" id="50">
                 <visible>$EXP[isMusicAlbum]</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-20-begin</posy>
+                <posy>row-21-begin</posy>
                 <width>1800</width>
                 <height>24-row</height>
                 <onleft>9000</onleft>
@@ -217,9 +188,19 @@
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
                         <texture border="6">colors/white.png</texture>
-                        <bordertexture border="6" colordiffuse="44FFFFFF">colors/black.png</bordertexture>
+                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>highlight</colordiffuse>
+                    </control>
+					<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>4-col-gutter</width>
+                        <height>4-col-gutter</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>$INFO[ListItem.Art(thumb)]</texture>
+                        <bordersize>6</bordersize>
+                        <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="textbox">
                         <visible>isempty(listitem.title)</visible>
@@ -243,17 +224,6 @@
                         <textcolor>textActive</textcolor>
                         <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
                     </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
-                    </control>
                 </itemlayout>
                 <focusedlayout width="4-col" height="348">
                     <control type="group">
@@ -265,10 +235,19 @@
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture border="6">colors/white.png</texture>
-	                        <bordertexture border="6" colordiffuse="44FFFFFF">colors/black.png</bordertexture>
+	                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>highlight</colordiffuse>
 	                    </control>
+						<control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>4-col-gutter</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <bordersize>6</bordersize>
+                        </control>
 	                    <control type="textbox">
 	                        <visible>isempty(listitem.title)</visible>
 	                        <posx>24</posx>
@@ -280,16 +259,6 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.label]</label>
 	                    </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>4-col-gutter</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="6">$INFO[ListItem.Art(thumb)]</texture>
-                            <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-                            <bordersize>6</bordersize>
-                        </control>
                         <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>

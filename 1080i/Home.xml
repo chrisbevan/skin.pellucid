@@ -79,7 +79,7 @@
         <!--main menu-->
 		<control type="panel" id="9000">
             <posx>col-1-begin</posx>
-            <posy>row-4-begin</posy>
+            <posy>row-13-begin</posy>
             <width>24-col</width>
             <height>149</height>
 			<onup>9001</onup>

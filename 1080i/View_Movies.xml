@@ -2,79 +2,178 @@
 <includes>
 	<include name="movies">
 		<control type="group">
-			<control type="panel" id="50">
+			<control type="group" id="9125">
 				<visible>$EXP[isMovie]</visible>
-				<posx>90</posx>
-				<posy>row-5-begin</posy>
-				<width>1800</width>
-				<height>25-row</height>
-				<onleft>9000</onleft>
-				<onright>60</onright>
-				<ondown>50</ondown>
-				<onup>50</onup>
-				<onback>9000</onback>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="cubic" easing="out">600</scrolltime>
-				<itemlayout width="252" height="426">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>228</width>
-						<height>342</height>
-						<aspectratio>stretch</aspectratio>
-						<texture border="6">colors/white.png</texture>
-						<bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
-						<bordersize>6</bordersize>
-						<colordiffuse>highlight</colordiffuse>
-					</control>
-					<control type="textbox">
-						<visible>isempty(listitem.title)</visible>
-						<posx>24</posx>
-						<posy>3-row</posy>
-						<width>228</width>
-						<height>6-row</height>
-						<font>largeStrong</font>
-						<wrapmultiline>true</wrapmultiline>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label]</label>
-					</control>
-					<control type="label">
-						<visible>!controlgroup(9000).hasfocus</visible>
-						<posx>12</posx>
-						<posy>338</posy>
-						<width>204</width>
-						<height>1-row</height>
-						<aligny>center</aligny>
-						<font>thumbTitle</font>
-						<textcolor>textActive</textcolor>
-						<label>[B]$INFO[ListItem.title][/B]</label>
-					</control>
-					<control type="label">
-						<visible>!controlgroup(9000).hasfocus</visible>
-						<posx>12</posx>
-						<posy>362</posy>
-						<width>204</width>
-						<height>1-row</height>
-						<aligny>center</aligny>
-						<font>thumbTitle</font>
-						<textcolor>textDisabled</textcolor>
-						<label>$INFO[ListItem.year]</label>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>228</width>
-						<height>342</height>
-						<aspectratio>stretch</aspectratio>
-						<texture border="0">$INFO[ListItem.Art(poster)]</texture>
-						<bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
-						<bordersize>6</bordersize>
-						<colordiffuse>ffffffff</colordiffuse>
-					</control>
-				</itemlayout>
-				<focusedlayout width="252" height="426">
-					<control type="group">
-						<include>focusThumb</include>
+				<animation type="Conditional" condition="!controlgroup(9125).hasfocus">
+	                <effect type="fade" start="100" end="0" time="100"/>
+	            </animation>
+				<animation type="Conditional" condition="controlgroup(9125).hasfocus">
+	                <effect type="fade" start="0" end="100" time="300" delay="300"/>
+	            </animation>
+				<!--quick link selector-->
+				<control type="list" id="9123">
+	                <posx>col-1-begin</posx>
+	                <posy>row-5-begin</posy>
+	                <width>24-col</width>
+	                <height>2-row</height>
+	                <onleft>9000</onleft>
+	                <ondown>9998</ondown>
+	                <onback>9000</onback>
+	                <orientation>horizontal</orientation>
+	                <itemlayout width="228" height="2-row">
+	                    <control type="label">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>228</width>
+	                        <height>2-row</height>
+	                        <font>itemTitle</font>
+	                        <aligny>center</aligny>
+	                        <textcolor>textDisabled</textcolor>
+	                        <shadowcolor>-</shadowcolor>
+	                        <label>$INFO[ListItem.property(textTitle)]</label>
+	                    </control>
+	                </itemlayout>
+	                <focusedlayout width="228" height="2-row">
+	                    <control type="label">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>228</width>
+	                        <height>2-row</height>
+	                        <font>itemTitle</font>
+	                        <aligny>center</aligny>
+	                        <textcolor>textActive</textcolor>
+	                        <shadowcolor>-</shadowcolor>
+	                        <label>$INFO[ListItem.property(textTitle)]</label>
+	                    </control>
+	                </focusedlayout>
+	                <content>
+	                    <item>
+	                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
+	                        <property name="textTitle">31176</property>
+	                        <onclick>noop</onclick>
+	                    </item>
+	                    <item>
+	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
+	                        <property name="textTitle">31132</property>
+	                        <onclick>noop</onclick>
+	                    </item>
+	                </content>
+	            </control>
+				<!--quick links-->			
+				<control type="panel" id="9998">
+	                <posx>col-1-begin</posx>
+	                <posy>row-7-begin</posy>
+	                <width>24-col</width>
+	                <height>11-row</height>
+					<onup>9123</onup>
+	                <ondown>50</ondown>
+	                <onleft>9000</onleft>
+	                <onback>9000</onback>
+	                <orientation>horizontal</orientation>
+	                <itemlayout width="597" height="5-col-gutter">
+	                    <control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>597</width>
+	                        <height>5-col-gutter</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture border="6">colors/white.png</texture>
+	                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+	                        <bordersize>6</bordersize>
+	                        <colordiffuse>highlight</colordiffuse>
+	                    </control>
+						<control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>597</width>
+	                        <height>5-col-gutter</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
+	                        <bordersize>6</bordersize>
+	                        <colordiffuse>ffffffff</colordiffuse>
+	                    </control>
+	                    <control type="label">
+	                        <visible>!controlgroup(9000).hasfocus</visible>
+	                        <posx>12</posx>
+	                        <posy>9-row</posy>
+	                        <width>312</width>
+	                        <height>2-row</height>
+	                        <aligny>center</aligny>
+	                        <font>thumbTitle</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
+	                    </control>      
+	                </itemlayout>
+	                <focusedlayout width="597" height="5-col-gutter">
+	                    <control type="group">
+	                        <include>focusThumb</include>
+	                        <control type="image">
+	                            <posx>0</posx>
+	                            <posy>0</posy>
+	                            <width>597</width>
+	                            <height>5-col-gutter</height>
+	                            <aspectratio>stretch</aspectratio>
+	                            <texture border="6">colors/white.png</texture>
+	                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+	                            <bordersize>6</bordersize>
+	                            <colordiffuse>highlight</colordiffuse>
+	                        </control>
+							<control type="image">
+	                            <posx>0</posx>
+	                            <posy>0</posy>
+	                            <width>597</width>
+	                            <height>5-col-gutter</height>
+	                            <aspectratio>stretch</aspectratio>
+	                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+	                            <bordersize>6</bordersize>
+	                            <colordiffuse>ffffffff</colordiffuse>
+	                        </control>
+	                        <control type="label">
+		                        <visible>!controlgroup(9000).hasfocus</visible>
+		                        <posx>12</posx>
+		                        <posy>9-row</posy>
+		                        <width>312</width>
+		                        <height>2-row</height>
+		                        <aligny>center</aligny>
+		                        <font>thumbTitle</font>
+		                        <textcolor>textActive</textcolor>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
+		                    </control>
+	                    </control>
+	                </focusedlayout>
+					<content>$INFO[control.getlabel(9123)]</content>
+	            </control>
+			</control>
+			<!--all movies-->
+			<control type="group" id="9124">
+				<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
+	                <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
+	            </animation>
+				<control type="label">
+	                <visible>!controlgroup(9000).hasfocus + !$EXP[isTVEpisode]</visible>
+	                <posx>col-1-begin</posx>
+	                <posy>row-19-begin</posy>
+	                <width>12-col</width>
+	                <height>2-row</height>
+	                <aligny>center</aligny>
+	                <font>itemTitle</font>
+	                <textcolor>textActive</textcolor>
+	                <label>$LOCALIZE[31224]</label>
+	            </control>
+				<control type="panel" id="50">
+					<visible>$EXP[isMovie]</visible>
+					<posx>90</posx>
+					<posy>row-21-begin</posy>
+					<width>1800</width>
+					<height>25-row</height>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<ondown>50</ondown>
+					<onup>9125</onup>
+					<onback>9000</onback>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime tween="cubic" easing="out">600</scrolltime>
+					<itemlayout width="252" height="426">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -82,9 +181,19 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="6">colors/white.png</texture>
-							<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+							<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
 							<bordersize>6</bordersize>
 							<colordiffuse>highlight</colordiffuse>
+						</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>228</width>
+							<height>342</height>
+							<aspectratio>stretch</aspectratio>
+							<texture>$INFO[ListItem.Art(poster)]</texture>
+							<bordersize>6</bordersize>
+							<colordiffuse>ffffffff</colordiffuse>
 						</control>
 						<control type="textbox">
 							<visible>isempty(listitem.title)</visible>
@@ -97,17 +206,8 @@
 							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.label]</label>
 						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>228</width>
-							<height>342</height>
-							<aspectratio>stretch</aspectratio>
-							<texture border="0">$INFO[ListItem.Art(poster)]</texture>
-							<bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-							<bordersize>6</bordersize>
-						</control>
 						<control type="label">
+							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
 							<posy>338</posy>
 							<width>204</width>
@@ -118,17 +218,74 @@
 							<label>[B]$INFO[ListItem.title][/B]</label>
 						</control>
 						<control type="label">
+							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
 							<posy>362</posy>
 							<width>204</width>
 							<height>1-row</height>
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
-							<textcolor>textActive</textcolor>
+							<textcolor>textDisabled</textcolor>
 							<label>$INFO[ListItem.year]</label>
 						</control>
-					</control>
-				</focusedlayout>
+					</itemlayout>
+					<focusedlayout width="252" height="426">
+						<control type="group">
+							<include>focusThumb</include>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>228</width>
+								<height>342</height>
+								<aspectratio>stretch</aspectratio>
+								<texture border="6">colors/white.png</texture>
+								<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+								<bordersize>6</bordersize>
+								<colordiffuse>highlight</colordiffuse>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>228</width>
+								<height>342</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>$INFO[ListItem.Art(poster)]</texture>
+								<bordersize>6</bordersize>
+							</control>
+							<control type="textbox">
+								<visible>isempty(listitem.title)</visible>
+								<posx>24</posx>
+								<posy>3-row</posy>
+								<width>228</width>
+								<height>6-row</height>
+								<font>largeStrong</font>
+								<wrapmultiline>true</wrapmultiline>
+								<textcolor>textActive</textcolor>
+								<label>$INFO[ListItem.label]</label>
+							</control>
+							<control type="label">
+								<posx>12</posx>
+								<posy>338</posy>
+								<width>204</width>
+								<height>1-row</height>
+								<aligny>center</aligny>
+								<font>thumbTitle</font>
+								<textcolor>textActive</textcolor>
+								<label>[B]$INFO[ListItem.title][/B]</label>
+							</control>
+							<control type="label">
+								<posx>12</posx>
+								<posy>362</posy>
+								<width>204</width>
+								<height>1-row</height>
+								<aligny>center</aligny>
+								<font>thumbTitle</font>
+								<textcolor>textActive</textcolor>
+								<label>$INFO[ListItem.year]</label>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
 			</control>
 		</control>
 	</include>
