@@ -1,33 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
-    <defaultcontrol always="true">9000</defaultcontrol>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onload>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
-    <controls>
-        <include>globalBackground</include>           
-        <!--mini window-->
-        <include>miniVideoPlayer</include>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onload>
+	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+	<controls>
+		<include>globalBackground</include>
+		<control type="group">
+			<control type="multiimage">
+				<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+				<include>dimensionsFullscreen</include>
+				<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+				<timeperimage>45000</timeperimage>
+				<fadetime>200</fadetime>
+				<pauseatend>10000</pauseatend>
+				<randomize>true</randomize>
+				<loop>yes</loop>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>vignette.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		</control>
+		<!--mini window-->
+		<include>miniVideoPlayer</include>
+		<!--main menu-->
+		<control type="panel" id="9000">
+			<posx>col-5-begin</posx>
+			<posy>row-12-begin</posy>
+			<width>16-col</width>
+			<height>12-row</height>
+			<ondown>9001</ondown>
+			<orientation>vertical</orientation>
+			<itemlayout width="4-col" height="3-row">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>4-col-textbox</width>
+					<height>105</height>
+					<texture>colors/black.png</texture>
+					<colordiffuse>overlay</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>4-col-gutter</width>
+					<height>3-row</height>
+					<font>dialogTitle</font>
+					<wrapmultiline>true</wrapmultiline>
+					<aligny>center</aligny>
+					<align>center</align>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>-</shadowcolor>
+					<label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="4-col" height="3-row">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>4-col-textbox</width>
+					<height>105</height>
+					<texture>colors/white.png</texture>
+					<colordiffuse>highlight</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>4-col-gutter</width>
+					<height>3-row</height>
+					<font>dialogTitle</font>
+					<wrapmultiline>true</wrapmultiline>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>textActive</textcolor>
+					<shadowcolor>-</shadowcolor>
+					<label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<include>skinshortcuts-mainmenu</include>
+			</content>
+		</control>
 		<!--power / settings-->
 		<control type="group">
-			<posx>col-23-begin</posx>
-			<posy>row-1-begin</posy>
+			<posx>col-12-begin</posx>
+			<posy>row-26-begin</posy>
 			<control type="panel" id="9001">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>2-col</width>
 				<height>1-col</height>
 				<orientation>horizontal</orientation>
-				<ondown>9000</ondown>
+				<onup>9000</onup>
 				<itemlayout width="1-col" height="1-col">
-					<control type="image">
-		                <posx>0</posx>
-		                <posy>0</posy>
-		                <width>1-col-textbox</width>
-		                <height>1-col</height>
-		                <aspectratio>stretch</aspectratio>
-		                <texture>colors/black.png</texture>
-		                <colordiffuse>overlay</colordiffuse>
-		            </control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -43,14 +113,14 @@
 				</itemlayout>
 				<focusedlayout width="1-col" height="1-col">
 					<control type="image">
-		                <posx>0</posx>
-		                <posy>0</posy>
-		                <width>1-col-textbox</width>
-		                <height>1-col</height>
-		                <aspectratio>stretch</aspectratio>
-		                <texture>colors/white.png</texture>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>1-col</width>
+						<height>1-col</height>
+						<aspectratio>stretch</aspectratio>
+						<texture diffuse="masks/circle.png">colors/white.png</texture>
 						<colordiffuse>highlight</colordiffuse>
-		            </control>
+					</control>
 					<control type="label">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -66,79 +136,46 @@
 				</focusedlayout>
 				<content>
 					<item>
-                        <label>S</label>
-                        <onclick>ActivateWindow(Settings)</onclick>
-                    </item>
+						<label></label>
+						<onclick>ActivateWindow(Settings)</onclick>
+					</item>
 					<item>
-                        <label>P</label>
-                        <onclick>ActivateWindow(shutdownmenu)</onclick>
-                    </item>
+						<label></label>
+						<onclick>ActivateWindow(shutdownmenu)</onclick>
+					</item>
 				</content>
 			</control>
 		</control>
-        <!--main menu-->
-		<control type="panel" id="9000">
+		<!--Date / time and weather-->
+        <control type="group">
             <posx>col-1-begin</posx>
-            <posy>row-13-begin</posy>
-            <width>24-col</width>
-            <height>149</height>
-			<onup>9001</onup>
-            <orientation>horizontal</orientation>
-            <itemlayout width="4-col" height="149">
-				<control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>149</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="label">
-                    <posx>24</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>149</height>
-                    <font>mediumStrong</font>
-					<wrapmultiline>true</wrapmultiline>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout width="4-col" height="4-col">
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>149</height>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="label">
-                    <posx>24</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>149</height>
-                    <font>mediumStrong</font>
-					<wrapmultiline>true</wrapmultiline>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
-                    <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
-                </control>
-            </focusedlayout>
-            <content>
-                <include>skinshortcuts-mainmenu</include>
-             </content>
+            <posy>row-8-begin</posy>
+            <control type="label">
+                <posx>0</posx>
+                <posy>-24</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>center</align>
+                <font>largeStrong</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>1-row</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <font>regular</font>
+                <align>center</align>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
+            </control>
         </control>
-        <!--debugging-->
-        <include>DebugGrid</include>
-        <control type="label">
-            <include>WindowID</include>
-            <label>Home.xml</label>
-        </control>
-    </controls>
+		<!--debugging-->
+		<include>DebugGrid</include>
+		<control type="label">
+			<include>WindowID</include>
+			<label>Home.xml</label>
+		</control>
+	</controls>
 </window>

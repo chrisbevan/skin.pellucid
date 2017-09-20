@@ -96,12 +96,12 @@
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
 	                        <posy>9-row</posy>
-	                        <width>312</width>
+	                        <width>584</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,][/COLOR]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,:][/COLOR] $INFO[ListItem.label]</label>
 	                    </control>      
 	                </itemlayout>
 	                <focusedlayout width="597" height="5-col-gutter">
@@ -132,12 +132,12 @@
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
 		                        <posy>9-row</posy>
-		                        <width>312</width>
+		                        <width>584</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,][/COLOR]</label>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.Season,$LOCALIZE[31011] , ]$INFO[ListItem.Episode,$LOCALIZE[31204] ,:][/COLOR] $INFO[ListItem.label]</label>
 		                    </control>
 	                    </control>
 	                </focusedlayout>
@@ -151,7 +151,7 @@
                 <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
             </animation>
 			<control type="label">
-                <visible>!controlgroup(9000).hasfocus</visible>
+                <visible>!controlgroup(9000).hasfocus + $EXP[isTVShow]</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-19-begin</posy>
                 <width>12-col</width>

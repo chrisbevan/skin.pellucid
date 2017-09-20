@@ -96,7 +96,7 @@
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
 	                        <posy>9-row</posy>
-	                        <width>312</width>
+	                        <width>584</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
@@ -132,7 +132,7 @@
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
 		                        <posy>9-row</posy>
-		                        <width>312</width>
+		                        <width>584</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>

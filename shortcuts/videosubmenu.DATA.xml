@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
-    <shortcut>
-        <label>Home</label>
-        <label2>32034</label2>
-        <icon>DefaultAddon.png</icon>
-        <thumb />
-        <action>ActivateWindow(home)</action>
-    </shortcut>
 	<shortcut>
         <visible>Player.HasMedia</visible>
         <label>31136</label>
