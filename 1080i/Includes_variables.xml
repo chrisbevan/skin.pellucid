@@ -3,7 +3,6 @@
 <includes>
     <!--folder titles-->
     <variable name="listTitle">
-        <value condition="Window.isactive(1106)">$LOCALIZE[31012]</value>
         <value condition="Window.isactive(Videos) + Container.Content(musicvideos)">$LOCALIZE[20389] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + [Container.Content(movies) | container.content(tvshows)] + Substring(Container.folderpath,special://profile/playlists/video)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + Substring(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011] ,]</value>
@@ -22,11 +21,17 @@
         <value condition="Window.isactive(Music) + !container.content(genres) + SubString(container.folderpath,musicdb://genres)">$LOCALIZE[31199] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
         <value condition="Window.isactive(Music) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + isEmpty(container.foldername)">$LOCALIZE[31053]</value>
-    </variable>
+    	<value condition="Window.isactive(Weather)">$LOCALIZE[31197]</value>
+		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[31164] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
+		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31165][/COLOR]</value>
+	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.isactive(1106)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[20342] • ]$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[20343] • ]$INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[132]]</value>
         <value condition="Window.isactive(Music)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
+		<value condition="Window.isactive(Weather)">$LOCALIZE[31212] $INFO[Window.Property(WeatherProvider)]</value>
+		<value condition="Window.isactive(TVchannels) | Window.isactive(RadioChannels) | Window.isactive(TVGuide)">$INFO[Pvr.BackendChannels] $LOCALIZE[31017] ($INFO[control.getlabel(29)])</value>
+		<value condition="Window.isactive(TVRecordings)">$INFO[container.numitems] $LOCALIZE[31165]</value>
     </variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">

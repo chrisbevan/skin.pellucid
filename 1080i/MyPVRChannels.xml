@@ -39,6 +39,9 @@
             <control type="group">
 				<include>pageHeader</include>    
             </control>
+			<control type="label" id="29">
+			     <visible>false</visible>
+            </control>
         </control>
         <!--mini window-->
         <include>miniVideoPlayer</include>

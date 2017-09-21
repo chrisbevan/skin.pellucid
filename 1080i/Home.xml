@@ -16,6 +16,7 @@
 				<randomize>true</randomize>
 				<loop>yes</loop>
 				<aspectratio>scale</aspectratio>
+				<colordiffuse>99ffffff</colordiffuse>
 			</control>
 			<control type="image">
 				<include>dimensionsFullscreen</include>
@@ -44,10 +45,10 @@
 					<colordiffuse>overlay</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
-				<control type="label">
-					<posx>0</posx>
+				<control type="textbox">
+					<posx>12</posx>
 					<posy>0</posy>
-					<width>4-col-gutter</width>
+					<width>252</width>
 					<height>3-row</height>
 					<font>dialogTitle</font>
 					<wrapmultiline>true</wrapmultiline>
@@ -68,15 +69,15 @@
 					<colordiffuse>highlight</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
-				<control type="label">
-					<posx>0</posx>
+				<control type="textbox">
+					<posx>12</posx>
 					<posy>0</posy>
-					<width>4-col-gutter</width>
+					<width>252</width>
 					<height>3-row</height>
 					<font>dialogTitle</font>
 					<wrapmultiline>true</wrapmultiline>
-					<align>center</align>
 					<aligny>center</aligny>
+					<align>center</align>
 					<textcolor>textActive</textcolor>
 					<shadowcolor>-</shadowcolor>
 					<label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
@@ -152,12 +153,13 @@
             <posy>row-8-begin</posy>
             <control type="label">
                 <posx>0</posx>
-                <posy>-24</posy>
+                <posy>-36</posy>
                 <width>24-col</width>
                 <height>2-row</height>
                 <align>center</align>
-                <font>largeStrong</font>
+                <font>veryLarge</font>
                 <textcolor>textActive</textcolor>
+				<shadowcolor>44000000</shadowcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
@@ -168,6 +170,7 @@
                 <font>regular</font>
                 <align>center</align>
                 <textcolor>textActive</textcolor>
+				<shadowcolor>44000000</shadowcolor>
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
         </control>

@@ -68,11 +68,11 @@
             <include>kenBurnsey</include>
         </control>
         <control type="image">
-            <visible>!Integer.IsGreater(container(99999).numitems,0) | Skin.HasSetting(disableExtendedFanart)</visible>
+            <visible>!Integer.IsGreater(container(99999).numitems,0) | Skin.HasSetting(disableExtendedFanart) | ListItem.IsParentFolder</visible>
             <posx>0</posx>
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
-            <texture>$INFO[ListItem.Art(fanart)]</texture>
+            <texture>$INFO[container.Art(fanart)]</texture>
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
             <include>kenBurnsey</include>
@@ -158,7 +158,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
     </include>
-	<!--page heaser-->
+	<!--page header-->
 	<include name="pageHeader">
 		<control type="group">
 			<posx>col-1-begin</posx>

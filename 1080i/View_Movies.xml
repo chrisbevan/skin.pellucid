@@ -2,29 +2,29 @@
 <includes>
 	<include name="movies">
 		<control type="group">
-			<control type="group" id="9125">
+			<control type="group" id="9101">
 				<visible>$EXP[isMovie]</visible>
-				<animation type="Conditional" condition="!controlgroup(9125).hasfocus">
+				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
 	                <effect type="fade" start="100" end="0" time="100"/>
 	            </animation>
-				<animation type="Conditional" condition="controlgroup(9125).hasfocus">
+				<animation type="Conditional" condition="controlgroup(9101).hasfocus">
 	                <effect type="fade" start="0" end="100" time="300" delay="300"/>
 	            </animation>
 				<!--quick link selector-->
-				<control type="list" id="9123">
+				<control type="list" id="9102">
 	                <posx>col-1-begin</posx>
 	                <posy>row-5-begin</posy>
 	                <width>24-col</width>
 	                <height>2-row</height>
 	                <onleft>9000</onleft>
-	                <ondown>9998</ondown>
+	                <ondown>9103</ondown>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-	                <itemlayout width="228" height="2-row">
+	                <itemlayout width="4-col-gutter" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>228</width>
+	                        <width>4-col-gutter</width>
 	                        <height>2-row</height>
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
@@ -33,11 +33,11 @@
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 	                    </control>
 	                </itemlayout>
-	                <focusedlayout width="228" height="2-row">
+	                <focusedlayout width="4-col-gutter" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>228</width>
+	                        <width>4-col-gutter</width>
 	                        <height>2-row</height>
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
@@ -60,17 +60,17 @@
 	                </content>
 	            </control>
 				<!--quick links-->			
-				<control type="panel" id="9998">
-	                <posx>col-1-begin</posx>
+				<control type="panel" id="9103">
+	                <posx>90</posx>
 	                <posy>row-7-begin</posy>
-	                <width>24-col</width>
+	                <width>1734</width>
 	                <height>11-row</height>
-					<onup>9123</onup>
-	                <ondown>50</ondown>
+					<onup>9102</onup>
+	                <ondown>Control.SetFocus(50,0)</ondown>
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-	                <itemlayout width="597" height="5-col-gutter">
+	                <itemlayout width="598" height="5-col-gutter">
 	                    <control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
@@ -104,7 +104,7 @@
 	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
 	                    </control>      
 	                </itemlayout>
-	                <focusedlayout width="597" height="5-col-gutter">
+	                <focusedlayout width="598" height="5-col-gutter">
 	                    <control type="group">
 	                        <include>focusThumb</include>
 	                        <control type="image">
@@ -141,16 +141,16 @@
 		                    </control>
 	                    </control>
 	                </focusedlayout>
-					<content>$INFO[control.getlabel(9123)]</content>
+					<content>$INFO[control.getlabel(9102)]</content>
 	            </control>
 			</control>
 			<!--all movies-->
-			<control type="group" id="9124">
-				<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
+			<control type="group" id="9104">
+				<animation type="Conditional" condition="controlgroup(9104).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
 	            </animation>
 				<control type="label">
-	                <visible>!controlgroup(9000).hasfocus + !$EXP[isTVEpisode]</visible>
+					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie]</visible>
 	                <posx>col-1-begin</posx>
 	                <posy>row-19-begin</posy>
 	                <width>12-col</width>
@@ -165,11 +165,11 @@
 					<posx>90</posx>
 					<posy>row-21-begin</posy>
 					<width>1800</width>
-					<height>25-row</height>
+					<height>22-row</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<ondown>50</ondown>
-					<onup>9125</onup>
+					<onup>9103</onup>
 					<onback>9000</onback>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="cubic" easing="out">600</scrolltime>

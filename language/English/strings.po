@@ -534,7 +534,7 @@ msgid "Settings level"
 msgstr ""
 
 msgctxt "#31127"
-msgid "Resume TV"
+msgid "Continue Watching"
 msgstr ""
 
 msgctxt "#31128"
@@ -554,7 +554,7 @@ msgid "Switch to this profile now"
 msgstr ""
 
 msgctxt "#31132"
-msgid "Resume Movie"
+msgid "Continue Watching"
 msgstr ""
 
 msgctxt "#31133"

@@ -20,26 +20,26 @@
                 <ondown>9998</ondown>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <itemlayout width="228" height="2-row">
+                <itemlayout width="234" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>228</width>
+                        <width>234</width>
                         <height>2-row</height>
-                        <font>itemTitle</font>
+                        <font>pageSubtitle</font>
                         <aligny>center</aligny>
                         <textcolor>textDisabled</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="228" height="2-row">
+                <focusedlayout width="234" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>228</width>
+                        <width>234</width>
                         <height>2-row</height>
-                        <font>itemTitle</font>
+                        <font>pageSubtitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
@@ -71,7 +71,7 @@
                 <width>24-col</width>
                 <height>11-row</height>
 				<onup>9123</onup>
-                <ondown>50</ondown>
+                <ondown>Control.SetFocus(50,0)</ondown>
                 <onleft>9000</onleft>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
@@ -163,7 +163,7 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <font>itemTitle</font>
+                <font>pageSubtitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31223]</label>
             </control>

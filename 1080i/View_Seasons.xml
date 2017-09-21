@@ -23,16 +23,18 @@
                 <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-2-begin</posy>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>11-row</posy>
+                    <posy>row-8-begin</posy>
+					<control type="label">
+                        <posx>24-col</posx>
+                        <posy>0</posy>
                         <width>24-col</width>
-                        <height>2-row</height>
-                        <font>large</font>
-                        <textcolor>textActive</textcolor>
+                        <height>8-row</height>
+                        <align>right</align>
+                        <font>veryLargeLight</font>
+                        <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
-                        <label>[B]$INFO[container.foldername][/B] [COLOR highlight]$INFO[listitem.genre][/COLOR]</label>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>[B]$INFO[container.foldername][/B]</label>
                     </control>
                 </control>
                 <!--overlay-->
@@ -55,9 +57,9 @@
                 <control type="panel" id="58">
                     <visible>$EXP[isSeason]</visible>
                     <posx>col-1-begin</posx>
-                    <posy>624</posy>
-                    <width>1836</width>
-                    <height>11-row</height>
+                    <posy>row-16-begin</posy>
+                    <width>1860</width>
+                    <height>13-row</height>
                     <onleft>9000</onleft>
                     <onright>58</onright>
                     <orientation>horizontal</orientation>
@@ -68,10 +70,20 @@
                             <width>4-col-gutter</width>
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">DefaultPoster.png</texture>
-                            <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
+                            <texture border="6">colors/white.png</texture>
+                            <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>ff777777</colordiffuse>
+                            <colordiffuse>highlight</colordiffuse>
+                        </control>
+						<control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>4-col-gutter</width>
+                            <height>396</height>
+                            <aspectratio>stretch</aspectratio>
+                            <texture>$INFO[ListItem.art(poster)]</texture>
+                            <bordersize>6</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
@@ -81,59 +93,44 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>textDisabled</textcolor>
+                            <font>largeStrong</font>
+                            <textcolor>textActive</textcolor>
                             <label>..</label>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
-                            <posy>4-row</posy>
+                            <posy>384</posy>
                             <width>240</width>
                             <height>2-row</height>
-                            <align>center</align>
                             <aligny>center</aligny>
-                            <font>regularStrong</font>
-                            <textcolor>textDisabled</textcolor>
-                            <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011] ]</label>
-                        </control>
-                        <control type="label">
-                            <visible>!controlgroup(9000).hasfocus</visible>
-                            <posx>12</posx>
-                            <posy>5-row</posy>
-                            <width>240</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>textDisabled</textcolor>
-                            <label>$VAR[itemDetail]</label>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>396</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture border="6">$INFO[ListItem.thumb]</texture>
-                            <bordertexture border="6" colordiffuse="11FFFFFF">colors/black.png</bordertexture>
-                            <bordersize>6</bordersize>
-                            <colordiffuse>ffffffff</colordiffuse>
+                            <font>thumbTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label fallback="31190">[B]$INFO[ListItem.label][/B][CR][COLOR textInactive]$VAR[itemDetail][/COLOR]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="4-col" height="391">
                         <control type="group">
                             <include>focusThumb</include>
+							<control type="image">
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                        <width>4-col-gutter</width>
+		                        <height>396</height>
+		                        <aspectratio>stretch</aspectratio>
+		                        <texture border="6">colors/white.png</texture>
+		                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+		                        <bordersize>6</bordersize>
+		                        <colordiffuse>highlight</colordiffuse>
+		                    </control>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>4-col-gutter</width>
                                 <height>396</height>
                                 <aspectratio aligny="top">scale</aspectratio>
-                                <texture fallback="DefaultPoster.png" border="6">$INFO[ListItem.thumb]</texture>
-                                <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                                <texture>$INFO[ListItem.art(poster)]</texture>
                                 <bordersize>6</bordersize>
-                                <colordiffuse>ff666666</colordiffuse>
                             </control>
                             <control type="label">
                                 <visible>ListItem.IsParentFolder</visible>
@@ -143,33 +140,21 @@
                                 <height>2-row</height>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <font>regularStrong</font>
+                                <font>largeStrong</font>
                                 <textcolor>textActive</textcolor>
                                 <label>..</label>
                             </control>
                             <control type="label">
-                                <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
-                                <posx>12</posx>
-                                <posy>4-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>regularStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label fallback="31190">$INFO[ListItem.season,$LOCALIZE[31011] ]</label>
-                            </control>
-                            <control type="label">
-                                <posx>12</posx>
-                                <posy>5-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>buttonTitle</font>
-                                <textcolor>textActive</textcolor>
-                                <label>$VAR[itemDetail]</label>
-                            </control>
+	                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
+	                            <posx>12</posx>
+	                            <posy>384</posy>
+	                            <width>240</width>
+	                            <height>2-row</height>
+	                            <aligny>center</aligny>
+	                            <font>thumbTitle</font>
+	                            <textcolor>textActive</textcolor>
+	                            <label fallback="31190">[B]$INFO[ListItem.label][/B][CR][COLOR textInactive]$VAR[itemDetail][/COLOR]</label>
+	                        </control>
                         </control>
                     </focusedlayout>
                 </control>
