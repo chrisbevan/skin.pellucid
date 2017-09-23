@@ -5,6 +5,21 @@
     <onload>Skin.SetString(recentitems,music)</onload>
     <controls>
         <include>globalBackground</include>
+		<control type="group">
+            <visible>$EXP[isMusicSong]</visible>
+            <control type="image">
+                <include>dimensionsFullscreen</include>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
+				<fadetime>500</fadetime>
+                <colordiffuse>77ffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <texture>vignette.png</texture>
+                <colordiffuse>ffffffff</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+        </control>
         <!--page container group-->
         <control type="group">
             <!--shift page for certain modal dialogs-->

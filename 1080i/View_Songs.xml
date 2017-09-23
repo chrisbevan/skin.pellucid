@@ -4,20 +4,6 @@
     <include name="musicsongs">
         <control type="group">
             <visible>$EXP[isMusicSong]</visible>
-            <control type="image">
-                <include>dimensionsFullscreen</include>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
-                <colordiffuse>77ffffff</colordiffuse>
-            </control>
-            <control type="image">
-                <texture>vignette.png</texture>
-                <colordiffuse>ffffffff</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-        </control>
-        <control type="group">
-            <visible>$EXP[isMusicSong]</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
             <animation type="visible">

@@ -62,31 +62,31 @@
 				<!--quick links-->			
 				<control type="panel" id="9103">
 	                <posx>90</posx>
-	                <posy>row-7-begin</posy>
-	                <width>1734</width>
+	                <posy>276</posy>
+	                <width>1740</width>
 	                <height>11-row</height>
 					<onup>9102</onup>
-	                <ondown>Control.SetFocus(50,0)</ondown>
+	                <ondown>50</ondown>
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-	                <itemlayout width="598" height="5-col-gutter">
+	                <itemlayout width="586" height="5-col-gutter">
 	                    <control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>597</width>
-	                        <height>5-col-gutter</height>
+	                        <width>566</width>
+	                        <height>318</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture border="6">colors/white.png</texture>
+	                        <texture border="6">colors/black.png</texture>
 	                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>highlight</colordiffuse>
+	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
 						<control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>597</width>
-	                        <height>5-col-gutter</height>
+	                        <width>566</width>
+	                        <height>318</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>6</bordersize>
@@ -95,34 +95,45 @@
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>9-row</posy>
+	                        <posy>312</posy>
 	                        <width>584</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
 	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
-	                    </control>      
+	                    </control>
+	      				<control type="progress">
+							<visible>ListItem.IsResumable</visible>
+			                <description>Progress Bar</description>
+			                <posx>12</posx>
+			                <posy>294</posy>
+			                <width>542</width>
+			                <height>12</height>
+			                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
+			                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+			                <info>ListItem.PercentPlayed</info>
+			            </control>
 	                </itemlayout>
-	                <focusedlayout width="598" height="5-col-gutter">
+	                <focusedlayout width="586" height="5-col-gutter">
 	                    <control type="group">
 	                        <include>focusThumb</include>
 	                        <control type="image">
 	                            <posx>0</posx>
 	                            <posy>0</posy>
-	                            <width>597</width>
-	                            <height>5-col-gutter</height>
+	                            <width>566</width>
+	                            <height>318</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture border="6">colors/white.png</texture>
+	                            <texture border="6">colors/black.png</texture>
 	                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
 	                            <bordersize>6</bordersize>
-	                            <colordiffuse>highlight</colordiffuse>
+	                            <colordiffuse>FF000000</colordiffuse>
 	                        </control>
 							<control type="image">
 	                            <posx>0</posx>
 	                            <posy>0</posy>
-	                            <width>597</width>
-	                            <height>5-col-gutter</height>
+	                            <width>566</width>
+	                            <height>318</height>
 	                            <aspectratio>stretch</aspectratio>
 	                            <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                            <bordersize>6</bordersize>
@@ -131,7 +142,7 @@
 	                        <control type="label">
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
-		                        <posy>9-row</posy>
+		                        <posy>312</posy>
 		                        <width>584</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
@@ -139,6 +150,17 @@
 		                        <textcolor>textActive</textcolor>
 		                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
 		                    </control>
+		      				<control type="progress">
+								<visible>ListItem.IsResumable</visible>
+				                <description>Progress Bar</description>
+				                <posx>12</posx>
+				                <posy>294</posy>
+				                <width>542</width>
+				                <height>12</height>
+				                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
+				                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+				                <info>ListItem.PercentPlayed</info>
+				            </control>
 	                    </control>
 	                </focusedlayout>
 					<content>$INFO[control.getlabel(9102)]</content>
@@ -152,7 +174,7 @@
 				<control type="label">
 					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie]</visible>
 	                <posx>col-1-begin</posx>
-	                <posy>row-19-begin</posy>
+	                <posy>696</posy>
 	                <width>12-col</width>
 	                <height>2-row</height>
 	                <aligny>center</aligny>
@@ -170,7 +192,7 @@
 					<onright>60</onright>
 					<ondown>50</ondown>
 					<onup>9103</onup>
-					<onback>9000</onback>
+					<onback>9103</onback>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="cubic" easing="out">600</scrolltime>
 					<itemlayout width="252" height="426">
@@ -180,9 +202,19 @@
 							<width>228</width>
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/white.png</texture>
+							<texture border="6">colors/black.png</texture>
 							<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
 							<bordersize>6</bordersize>
+							<colordiffuse>overlay</colordiffuse>
+						</control>
+						<control type="image">
+							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
+							<posx>6</posx>
+							<posy>0</posy>
+							<width>216</width>
+							<height>6</height>
+							<aspectratio>stretch</aspectratio>
+							<texture border="6">colors/white.png</texture>
 							<colordiffuse>highlight</colordiffuse>
 						</control>
 						<control type="image">
@@ -238,10 +270,10 @@
 								<width>228</width>
 								<height>342</height>
 								<aspectratio>stretch</aspectratio>
-								<texture border="6">colors/white.png</texture>
+								<texture border="6">colors/black.png</texture>
 								<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 								<bordersize>6</bordersize>
-								<colordiffuse>highlight</colordiffuse>
+								<colordiffuse>FF000000</colordiffuse>
 							</control>
 							<control type="image">
 								<posx>0</posx>

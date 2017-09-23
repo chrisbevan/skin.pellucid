@@ -56,10 +56,10 @@
 							<width>4-col-gutter</width>
 							<height>4-col-gutter</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/white.png</texture>
+							<texture border="6">colors/black.png</texture>
 							<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
 							<bordersize>6</bordersize>
-							<colordiffuse>highlight</colordiffuse>
+							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
 							<posx>0</posx>
@@ -114,10 +114,10 @@
 								<width>4-col-gutter</width>
 								<height>4-col-gutter</height>
 								<aspectratio>stretch</aspectratio>
-								<texture border="6">colors/white.png</texture>
+								<texture border="6">colors/black.png</texture>
 								<bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
 								<bordersize>6</bordersize>
-								<colordiffuse>highlight</colordiffuse>
+								<colordiffuse>FF000000</colordiffuse>
 							</control>
 							<control type="image">
 								<posx>0</posx>

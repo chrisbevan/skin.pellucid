@@ -23,18 +23,17 @@
                 <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-8-begin</posy>
+                    <posy>row-9-begin</posy>
 					<control type="label">
-                        <posx>24-col</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
                         <width>24-col</width>
                         <height>8-row</height>
-                        <align>right</align>
                         <font>veryLargeLight</font>
                         <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
-                        <label>[B]$INFO[container.foldername][/B]</label>
+                        <label>$INFO[container.foldername]</label>
                     </control>
                 </control>
                 <!--overlay-->
@@ -70,10 +69,10 @@
                             <width>4-col-gutter</width>
                             <height>396</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">colors/white.png</texture>
+                            <texture border="6">colors/black.png</texture>
                             <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>overlay</colordiffuse>
                         </control>
 						<control type="image">
                             <posx>0</posx>
@@ -118,10 +117,10 @@
 		                        <width>4-col-gutter</width>
 		                        <height>396</height>
 		                        <aspectratio>stretch</aspectratio>
-		                        <texture border="6">colors/white.png</texture>
+		                        <texture border="6">colors/black.png</texture>
 		                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 		                        <bordersize>6</bordersize>
-		                        <colordiffuse>highlight</colordiffuse>
+		                        <colordiffuse>FF000000</colordiffuse>
 		                    </control>
                             <control type="image">
                                 <posx>0</posx>

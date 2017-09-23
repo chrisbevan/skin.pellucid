@@ -66,12 +66,12 @@
             </control>
 			<!--quick links-->			
 			<control type="panel" id="9998">
-                <posx>col-1-begin</posx>
-                <posy>row-7-begin</posy>
+                <posx>90</posx>
+                <posy>276</posy>
                 <width>24-col</width>
                 <height>11-row</height>
 				<onup>9123</onup>
-                <ondown>Control.SetFocus(50,0)</ondown>
+                <ondown>50</ondown>
                 <onleft>9000</onleft>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
@@ -84,10 +84,10 @@
                         <width>5-col-gutter</width>
                         <height>5-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/white.png</texture>
+                        <texture border="6">colors/black.png</texture>
                         <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
                         <posx>0</posx>
@@ -120,10 +120,10 @@
                             <width>5-col-gutter</width>
                             <height>5-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">colors/white.png</texture>
+                            <texture border="6">colors/black.png</texture>
                             <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>highlight</colordiffuse>
+                            <colordiffuse>FF000000</colordiffuse>
                         </control>
 						<control type="image">
                             <posx>0</posx>
@@ -159,7 +159,7 @@
 			<control type="label">
                 <visible>!controlgroup(9000).hasfocus + $EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-19-begin</posy>
+                <posy>696</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
@@ -177,7 +177,7 @@
                 <onright>60</onright>
                 <ondown>50</ondown>
                 <onup>9998</onup>
-                <onback>9000</onback>
+                <onback>9998</onback>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <itemlayout width="293" height="348">
@@ -187,10 +187,10 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/white.png</texture>
+                        <texture border="6">colors/black.png</texture>
                         <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
+                        <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
                         <posx>0</posx>
@@ -234,10 +234,10 @@
 	                        <width>4-col-gutter</width>
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture border="6">colors/white.png</texture>
+	                        <texture border="6">colors/black.png</texture>
 	                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>highlight</colordiffuse>
+	                        <colordiffuse>FF000000</colordiffuse>
 	                    </control>
 						<control type="image">
                             <posx>0</posx>

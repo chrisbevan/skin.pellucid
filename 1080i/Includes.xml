@@ -62,7 +62,7 @@
             <visible>Integer.IsGreater(container(99999).numitems,0) + !Skin.HasSetting(disableExtendedFanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[container(99999).listitem.filenameandpath,,]</texture>
-            <colordiffuse>ffffffff</colordiffuse>
+            <colordiffuse>44ffffff</colordiffuse>
             <fadetime>500</fadetime>
             <aspectratio>stretch</aspectratio>
             <include>kenBurnsey</include>
@@ -73,7 +73,7 @@
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[container.Art(fanart)]</texture>
-            <colordiffuse>ffffffff</colordiffuse>
+            <colordiffuse>44ffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
             <include>kenBurnsey</include>
         </control>

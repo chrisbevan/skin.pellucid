@@ -18,6 +18,9 @@
             <animation type="windowopen">
                 <effect type="slide" start="-384" end="0" tween="sine" delay="500" time="400"/>
             </animation>
+			<animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="0"/>
+            </animation>
             <animation type="Conditional" condition="controlgroup(9000).hasfocus">
                 <effect type="slide" start="-384" end="0" tween="sine" time="400"/>
             </animation>
