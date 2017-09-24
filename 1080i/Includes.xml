@@ -167,7 +167,7 @@
 			<control type="label">
 	            <posx>0</posx>
 	            <posy>0</posy>
-	            <width>12-col</width>
+	            <width>18-col</width>
 	            <font>pageTitle</font>
 	            <label>$VAR[listTitle]</label>
 	            <textcolor>textActive</textcolor>

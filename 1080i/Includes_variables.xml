@@ -25,6 +25,7 @@
 		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
 		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[31164] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
 		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31165][/COLOR]</value>
+		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
 	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
@@ -32,12 +33,13 @@
 		<value condition="Window.isactive(Weather)">$LOCALIZE[31212] $INFO[Window.Property(WeatherProvider)]</value>
 		<value condition="Window.isactive(TVchannels) | Window.isactive(RadioChannels) | Window.isactive(TVGuide)">$INFO[Pvr.BackendChannels] $LOCALIZE[31017] ($INFO[control.getlabel(29)])</value>
 		<value condition="Window.isactive(TVRecordings)">$INFO[container.numitems] $LOCALIZE[31165]</value>
+		<value condition="Window.isactive(programs)">$INFO[container.Numitems,, $LOCALIZE[31145]]</value>
     </variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
         <value condition="Container.Content(tvshows) + !isempty(listitem.property(totalseasons))">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
-        <value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
+        <value condition="Container.Content(seasons)">$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[31189]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
         <value/>
     </variable>

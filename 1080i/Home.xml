@@ -43,7 +43,7 @@
 					<width>4-col-textbox</width>
 					<height>105</height>
 					<texture>colors/black.png</texture>
-					<colordiffuse>overlay</colordiffuse>
+					<colordiffuse>77000000</colordiffuse>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="textbox">
@@ -154,7 +154,7 @@
             <posy>row-8-begin</posy>
             <control type="label">
                 <posx>0</posx>
-                <posy>-36</posy>
+                <posy>-48</posy>
                 <width>24-col</width>
                 <height>2-row</height>
                 <align>center</align>

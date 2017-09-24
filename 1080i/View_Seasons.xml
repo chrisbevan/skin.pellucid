@@ -23,17 +23,28 @@
                 <control type="group">
                     <visible>!Substring(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-9-begin</posy>
+                    <posy>row-4-begin</posy>
 					<control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>24-col</width>
-                        <height>8-row</height>
+                        <height>3-row</height>
                         <font>veryLargeLight</font>
                         <textcolor>66ffffff</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
-                        <label>$INFO[container.foldername]</label>
+                        <label>$INFO[container.showtitle]</label>
+                    </control>
+					<control type="textbox">
+                        <posx>0</posx>
+                        <posy>4-row</posy>
+                        <width>10-col</width>
+                        <height>198</height>
+                        <font>textbox</font>
+                        <textcolor>66ffffff</textcolor>
+                        <shadowcolor>-</shadowcolor>
+						<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
+                        <label>$INFO[container.showplot]</label>
                     </control>
                 </control>
                 <!--overlay-->
@@ -74,6 +85,16 @@
                             <bordersize>6</bordersize>
                             <colordiffuse>overlay</colordiffuse>
                         </control>
+						<control type="image">
+							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+							<posx>6</posx>
+							<posy>0</posy>
+							<width>252</width>
+							<height>6</height>
+							<aspectratio>stretch</aspectratio>
+							<texture border="6">colors/white.png</texture>
+							<colordiffuse>highlight</colordiffuse>
+						</control>
 						<control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
