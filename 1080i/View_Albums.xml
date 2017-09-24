@@ -44,6 +44,9 @@
                         <textcolor>textActive</textcolor>
                         <shadowcolor>-</shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
+						<animation type="conditional" condition="control.hasfocus(9123)" loop="true">
+                            <effect type="fade" start="100" end="50" time="1000"/>
+                        </animation>
                     </control>
                 </focusedlayout>
                 <content>

@@ -20,6 +20,7 @@
 	                <ondown>9103</ondown>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
+					<pulseonselect>true</pulseonselect>
 	                <itemlayout width="4-col-gutter" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
@@ -34,6 +35,7 @@
 	                    </control>
 	                </itemlayout>
 	                <focusedlayout width="4-col-gutter" height="2-row">
+						
 	                    <control type="label">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
@@ -44,6 +46,9 @@
 	                        <textcolor>textActive</textcolor>
 	                        <shadowcolor>-</shadowcolor>
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
+							<animation type="conditional" condition="control.hasfocus(9102)" loop="true">
+	                            <effect type="fade" start="100" end="50" time="1000"/>
+	                        </animation>
 	                    </control>
 	                </focusedlayout>
 	                <content>

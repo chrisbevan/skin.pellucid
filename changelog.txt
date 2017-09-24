@@ -6,6 +6,8 @@ DONE - set ondown in movie view etc to select first item in grid
 
 DONE - Add progress bar to resumable content
 
+- playlist titles not working. (See Github for random label)
+
 [V1.2.4]
 - [UPDATED] French language file
 - [UPDATED] Norwegian language file

@@ -32,7 +32,7 @@
 		<control type="panel" id="9000">
 			<posx>col-5-begin</posx>
 			<posy>row-12-begin</posy>
-			<width>16-col</width>
+			<width>18-col</width>
 			<height>12-row</height>
 			<ondown>9001</ondown>
 			<orientation>vertical</orientation>
@@ -175,6 +175,69 @@
                 <label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
             </control>
         </control>
+		<!--now playing music-->
+		            <control type="group">
+		                <visible>player.hasaudio</visible>
+		                <posx>col-1-begin</posx>
+		                <posy>row-24-begin</posy>
+		                <control type="grouplist">
+		                    <posx>0</posx>
+		                    <posy>0</posy>
+		                    <width>24-col</width>
+		                    <align>center</align>
+		                    <itemgap>18</itemgap>
+		                    <orientation>horizontal</orientation>
+		                    <control type="image">
+		                        <visible>!player.paused + !System.Platform.Linux.RaspberryPi</visible>
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                        <width>1-col-gutter</width>
+		                        <height>1-col-gutter</height>
+		                        <texture>equaliser.gif</texture>
+		                    </control>
+		                    <control type="label">
+		                        <visible>!player.paused + System.Platform.Linux.RaspberryPi</visible>
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                        <width>1-col-gutter</width>
+		                        <height>2-row</height>
+		                        <align>center</align>
+		                        <aligny>center</aligny>
+		                        <font>symbolLarge</font>
+		                        <textcolor>textActive</textcolor>
+		                        <shadowcolor>-</shadowcolor>
+		                        <label></label>
+		                    </control>
+		                    <control type="label">
+		                        <visible>player.paused</visible>
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                        <width>1-col-gutter</width>
+		                        <height>2-row</height>
+		                        <align>center</align>
+		                        <aligny>center</aligny>
+		                        <font>symbolLarge</font>
+		                        <textcolor>textActive</textcolor>
+		                        <shadowcolor>-</shadowcolor>
+		                        <label></label>
+		                    </control>
+		                    <control type="label">
+		                        <description>Artist</description>
+		                        <posx>0</posx>
+		                        <posy>0</posy>
+		                        <font>small</font>
+		                        <width>auto</width>
+		                        <height>2-row</height>
+		                        <align>center</align>
+		                        <aligny>center</aligny>
+		                        <height>2-row</height>
+		                        <label>$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
+		                        <scroll>true</scroll>
+		                        <textcolor>textActive</textcolor>
+		                        <wrapmultiline>false</wrapmultiline>
+		                    </control>
+		                </control>
+		            </control>
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">
