@@ -73,6 +73,7 @@
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
+					<onclick>activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid])</onclick>
 	                <itemlayout width="586" height="5-col-gutter">
 	                    <control type="image">
 	                        <posx>0</posx>
