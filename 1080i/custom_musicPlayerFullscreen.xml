@@ -53,7 +53,9 @@
                     <height>182</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">DefaultAlbumCover.png</texture>
-                    <colordiffuse>textboxInactive</colordiffuse>
+                    <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                    <bordersize>6</bordersize>
+                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -62,9 +64,6 @@
                     <height>182</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="6">$INFO[player.art(thumb)]</texture>
-                    <colordiffuse>ffffffff</colordiffuse>
-                    <bordertexture border="6">colors/white.png</bordertexture>
-                    <bordersize>6</bordersize>
                 </control>
                 <!--track info-->
                 <control type="group">
