@@ -19,7 +19,7 @@
         </animation>
         <animation type="windowclose">
             <effect type="fade" start="100" end="0" time="300"/>
-            <effect type="zoom" center="auto" start="100" end="90" time="300"/>
+            <effect type="zoom" center="auto" start="100" end="98" time="300"/>
         </animation>
     </include>
     <!--ken burnsey style effect for fanart images-->

@@ -6,6 +6,8 @@ DONE - recent tvshow episode listing not working
 DONE - Add progress bar to resumable content
 DONE - playlist titles not working. (See Github for random label)
 
+Librelec settings
+
 [V1.2.4]
 - [UPDATED] French language file
 - [UPDATED] Norwegian language file
