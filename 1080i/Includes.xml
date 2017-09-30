@@ -127,7 +127,6 @@
             </control>
         </control>
     </include>
-
     <!--modal dialogs-->
     <include name="modalDialog">
         <control type="image">

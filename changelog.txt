@@ -1,12 +1,13 @@
 **Changelog**
 
-***TESTING BRANCH***
-DONE - set ondown in movie view etc to select first item in grid
-DONE - recent tvshow episode listing not working 
-DONE - Add progress bar to resumable content
-DONE - playlist titles not working. (See Github for random label)
+[V1.3.0]
 
-Librelec settings
+***Users are strongly encouraged to reset their menu structures***
+
+- [NEW] Spotlight area removed and reintegrated into standard library views
+- [NEW] Homescreen redesigned
+- [NEW] Music fullscreen view redesigned
+- Numerous tweaks and polishes skin wide
 
 [V1.2.4]
 - [UPDATED] French language file

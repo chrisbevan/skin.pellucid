@@ -44,7 +44,7 @@
 			<!--Track info-->
 			<control type="grouplist">
 				<posx>col-1-begin</posx>
-				<posy>row-20-begin</posy>
+				<posy>row-21-begin</posy>
 				<orientation>vertical</orientation>
 				<itemgap>10</itemgap>
 				<control type="textbox">
@@ -60,7 +60,7 @@
 				<control type="textbox">
 					<width>10-col</width>
 					<height>auto</height>
-					<font>regular</font>
+					<font>textbox</font>
 					<textcolor>textActive</textcolor>
 					<scroll>false</scroll>
 					<shadowcolor>33000000</shadowcolor>
@@ -73,7 +73,7 @@
 					<textcolor>textActive</textcolor>
 					<scroll>false</scroll>
 					<shadowcolor>33000000</shadowcolor>
-					<label>[B]$INFO[musicplayer.Playlistposition,$LOCALIZE[554] ,]$INFO[musicplayer.Playlistlength, / ]  $INFO[MusicPlayer.TimeRemaining,[ , ]][/B]</label>
+					<label>[B]$INFO[musicplayer.Playlistposition,$LOCALIZE[554] ,]$INFO[musicplayer.Playlistlength, / ]  $INFO[MusicPlayer.TimeRemaining][/B]</label>
 				</control>
 			</control>
 		</control>

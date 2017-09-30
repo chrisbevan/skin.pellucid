@@ -928,3 +928,11 @@ msgstr ""
 msgctxt "#31225"
 msgid "All TV Shows"
 msgstr ""
+
+msgctxt "#31226"
+msgid "LibreElec Settings"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Additional options for LibreElec"
+msgstr ""
