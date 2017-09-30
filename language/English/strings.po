@@ -936,3 +936,7 @@ msgstr ""
 msgctxt "#31227"
 msgid "Additional options for LibreElec"
 msgstr ""
+
+msgctxt "#31228"
+msgid "Edit Menu"
+msgstr ""

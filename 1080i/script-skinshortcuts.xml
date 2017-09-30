@@ -35,7 +35,7 @@
                 <width>18-col-gutter</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
-                <label>$LOCALIZE[31171]</label>
+                <label>$LOCALIZE[31228]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor>-</shadowcolor>
             </control>
