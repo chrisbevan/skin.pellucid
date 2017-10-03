@@ -9,7 +9,7 @@
             <posy>0</posy>
             <!--overlay-->
             <control type="image">
-                <include>fullscreenDimensions</include>
+                <include>dimensionsFullscreen</include>
                 <texture>colors/black.png</texture>
                 <colordiffuse>e9FFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>

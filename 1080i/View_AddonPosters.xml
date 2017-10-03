@@ -2,22 +2,10 @@
 <includes>
     <include name="addonposters">
         <control type="group">
-            <!--fanart-->
-            <control type="group">
-                <visible>$EXP[isAddonMovieOrTVshow]</visible>
-                <control type="image">
-                    <include>dimensionsFullscreen</include>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture background="true" border="0">$INFO[Listitem.art(fanart)]</texture>
-                    <fadetime>500</fadetime>
-                    <colordiffuse>22ffffff</colordiffuse>
-                </control>
-                <include>kenBurnsey</include>
-            </control>
             <control type="panel" id="50">
                 <visible>$EXP[isAddonMovieOrTVshow]</visible>
                 <posx>90</posx>
-				<posy>row-21-begin</posy>
+				<posy>row-5-begin</posy>
 				<width>1800</width>
 				<height>22-row</height>
 				<onleft>9000</onleft>
