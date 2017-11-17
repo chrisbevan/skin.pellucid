@@ -23,7 +23,7 @@
                     <include>episodes</include>
                     <include>musicvideos</include>
                 </control>
-            </control>
+            </control> 
             <!--page scrollbar-->
             <control type="group" id="8000">
                 <visible>Control.IsVisible(60)</visible>
@@ -35,7 +35,7 @@
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
-            </control>
+            </control> 
             <!--page header-->
             <control type="group">
 				<include>pageHeader</include>    

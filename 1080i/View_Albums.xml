@@ -29,7 +29,7 @@
                         <font>pageSubtitle</font>
                         <aligny>center</aligny>
                         <textcolor>textDisabled</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
@@ -42,7 +42,7 @@
                         <font>pageSubtitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
 						<animation type="conditional" condition="control.hasfocus(9123)" loop="true">
                             <effect type="fade" start="100" end="50" time="1000"/>
@@ -53,17 +53,17 @@
                     <item>
                         <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
-                        <onclick>noop</onclick>
+                        
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
-                        <onclick>noop</onclick>
+                        
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
-                        <onclick>noop</onclick>
+                        
                     </item>
                 </content>
             </control>
@@ -206,7 +206,7 @@
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="textbox">
-                        <visible>isempty(listitem.title)</visible>
+                        <visible>String.IsEmpty(listitem.title)</visible>
                         <posx>24</posx>
                         <posy>3-row</posy>
                         <width>228</width>
@@ -252,7 +252,7 @@
                             <bordersize>6</bordersize>
                         </control>
 	                    <control type="textbox">
-	                        <visible>isempty(listitem.title)</visible>
+	                        <visible>String.IsEmpty(listitem.title)</visible>
 	                        <posx>24</posx>
 	                        <posy>3-row</posy>
 	                        <width>228</width>

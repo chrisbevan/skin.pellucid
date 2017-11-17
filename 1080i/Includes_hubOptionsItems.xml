@@ -13,7 +13,7 @@
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
         </control>
         <control type="button" id="3">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
@@ -22,7 +22,7 @@
             <onclick>sendclick(videos,3)</onclick>
         </control>
         <control type="togglebutton" id="4">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
@@ -66,8 +66,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <onclick>sendclick(videos,14)</onclick>
@@ -78,9 +78,9 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <texturenofocus></texturenofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <onclick>right</onclick>
             <onclick>xbmc.mastermode</onclick>
             <selected>system.ismaster</selected>
@@ -100,7 +100,7 @@
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
         </control>
         <control type="button" id="3">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
@@ -109,7 +109,7 @@
             <onclick>sendclick(music,3)</onclick>
         </control>
         <control type="togglebutton" id="4">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
@@ -164,7 +164,7 @@
     <include name="picturesSideMenu">
         <!--sorting-->
         <control type="button" id="3">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort by</description>
             <width>6-col</width>
             <focusedcolor>textActive</focusedcolor>
@@ -173,7 +173,7 @@
             <onclick>sendclick(pictures,3)</onclick>
         </control>
         <control type="togglebutton" id="4">
-            <visible>!isempty(Container.SortMethod)</visible>
+            <visible>!String.IsEmpty(Container.SortMethod)</visible>
             <description>Sort direction</description>
             <label>31109</label>
             <altlabel>31110</altlabel>
@@ -190,8 +190,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <label>$LOCALIZE[25001]</label>
@@ -201,8 +201,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <label>$LOCALIZE[24999]</label>

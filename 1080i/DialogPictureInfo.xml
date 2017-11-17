@@ -14,7 +14,7 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>12-col</width>
-                <height>-</height>
+                <height></height>
                 <aspectratio align="left" aligny="top">keep</aspectratio>
                 <texture>$INFO[listitem.thumb]</texture>
             </control>
@@ -32,7 +32,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>highlight</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -41,7 +41,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <label fallback="31159">$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">

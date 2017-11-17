@@ -37,7 +37,7 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[5]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--menu-->
             <control type="Panel" id="9000">

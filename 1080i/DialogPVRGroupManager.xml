@@ -64,7 +64,7 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[19143]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--group menu-->
             <control type="image">
@@ -106,7 +106,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="4-col">
@@ -138,7 +138,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                 </control>
@@ -193,7 +193,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </itemlayout>
@@ -229,7 +229,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </focusedlayout>
@@ -284,7 +284,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </itemlayout>
@@ -320,7 +320,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </focusedlayout>
@@ -407,7 +407,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -418,7 +418,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -426,28 +426,28 @@
                         <description>Add group</description>
                         <label>31099</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(26)</onclick>
                     </item>
                     <item id="2">
                         <description>Rename Group</description>
                         <label>31100</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(27)</onclick>
                     </item>
                     <item id="3">
                         <description>Delete Group</description>
                         <label>31101</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(28)</onclick>
                     </item>
                     <item id="4">
                         <description>OK</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(29)</onclick>
                     </item>
                 </content>

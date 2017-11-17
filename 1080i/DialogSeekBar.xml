@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+    <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
         <control type="image">
             <include>dimensionsFullscreen</include>
@@ -12,7 +12,7 @@
             <posx>col-1-begin</posx>
             <posy>row-20-begin</posy>
             <control type="label">
-                <visible>!IsEmpty(Player.SeekNumeric)</visible>
+                <visible>!String.IsEmpty(Player.SeekNumeric)</visible>
                 <posx>0</posx>
                 <posy>12</posy>
                 <width>24-col</width>
@@ -80,7 +80,7 @@
                 <orientation>horizontal</orientation>
             </control>
             <control type="label">
-                <visible>stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
+                <visible>String.IsEqual(VideoPlayer.TVShowTitle,Player.title)</visible>
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>
@@ -88,10 +88,10 @@
                 <font>small</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
-                <visible>!stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
+                <visible>!String.IsEqual(VideoPlayer.TVShowTitle,Player.title)</visible>
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>
@@ -99,7 +99,7 @@
                 <font>small</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>0</posx>
@@ -108,7 +108,7 @@
                 <font>smallStrong</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Time]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>18-col</posx>
@@ -118,7 +118,7 @@
                 <align>right</align>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Duration]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--ff / rw speed indicators-->
@@ -134,7 +134,7 @@
                 <font>symbolVeryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label></label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>1-col-indent</posx>
@@ -144,7 +144,7 @@
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[player.SeekStepSize]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--debugging-->

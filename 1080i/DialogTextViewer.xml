@@ -35,7 +35,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="textbox" id="5">
                 <description>textarea</description>

@@ -29,7 +29,7 @@
                     <onback>9000</onback>
                     <rulerlayout height="2-row" width="216">
                         <control type="label" id="2">
-                            <visible>SubString(ListItem.Label,:)</visible>
+                            <visible>String.Contains(ListItem.Label,:)</visible>
                             <posx>0</posx>
                             <posy>12</posy>
                             <width>216</width>
@@ -55,7 +55,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelName]</label>
                         </control>
                     </channellayout>
@@ -86,7 +86,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.ChannelName]</label>
                             <scroll>true</scroll>
                         </control>
@@ -107,7 +107,7 @@
                             <textoffsetx>12</textoffsetx>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
@@ -136,7 +136,7 @@
                             <textoffsetx>12</textoffsetx>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>

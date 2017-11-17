@@ -21,6 +21,8 @@
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 					<pulseonselect>true</pulseonselect>
+
+					<!--continue watching-->
 	                <itemlayout width="4-col-gutter" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
@@ -30,10 +32,12 @@
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
 	                        <textcolor>textDisabled</textcolor>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 	                    </control>
 	                </itemlayout>
+
+					<!--New movies-->
 	                <focusedlayout width="4-col-gutter" height="2-row">		
 	                    <control type="label">
 	                        <posx>0</posx>
@@ -43,7 +47,7 @@
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
 	                        <textcolor>textActive</textcolor>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 							<animation type="conditional" condition="control.hasfocus(9102)" loop="true">
 	                            <effect type="fade" start="100" end="50" time="1000"/>
@@ -54,17 +58,18 @@
 	                    <item>
 	                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
 	                        <property name="textTitle">31176</property>
-	                        <onclick>noop</onclick>
+	                        
 	                    </item>
 	                    <item>
 	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
 	                        <property name="textTitle">31132</property>
-	                        <onclick>noop</onclick>
+	                        
 	                    </item>
 	                </content>
 	            </control>
 				<!--quick links-->			
 				<control type="panel" id="9103">
+
 	                <posx>90</posx>
 	                <posy>276</posy>
 	                <width>1740</width>
@@ -184,7 +189,7 @@
 	                <aligny>center</aligny>
 	                <font>itemTitle</font>
 	                <textcolor>textActive</textcolor>
-	                <label>$LOCALIZE[31224]</label>
+	                <label>$LOCALIZE[31224] hello</label>
 	            </control>
 				<control type="panel" id="50">
 					<visible>$EXP[isMovie]</visible>
@@ -232,7 +237,7 @@
 							<colordiffuse>ffffffff</colordiffuse>
 						</control>
 						<control type="textbox">
-							<visible>isempty(listitem.title)</visible>
+							<visible>String.IsEmpty(listitem.title)</visible>
 							<posx>24</posx>
 							<posy>3-row</posy>
 							<width>228</width>
@@ -251,7 +256,7 @@
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.title][/B]</label>
+							<label>[B]Hello/B]</label>
 						</control>
 						<control type="label">
 							<visible>!controlgroup(9000).hasfocus</visible>
@@ -289,7 +294,7 @@
 								<bordersize>6</bordersize>
 							</control>
 							<control type="textbox">
-								<visible>isempty(listitem.title)</visible>
+								<visible>String.IsEmpty(listitem.title)</visible>
 								<posx>24</posx>
 								<posy>3-row</posy>
 								<width>228</width>

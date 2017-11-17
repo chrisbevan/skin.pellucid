@@ -30,7 +30,7 @@
                     <font>dialogTitle</font>
                     <label>10003</label>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -52,10 +52,10 @@
                     <posy>0</posy>
                     <height>2-row</height>
                     <width>8-col-gutter</width>
-                    <label>-</label>
+                    <label></label>
                     <font>settingsCategoryTitle</font>
                     <textcolor>highlight</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <!--left file list-->
                 <control type="list" id="20">
@@ -123,7 +123,7 @@
                     <posy>0</posy>
                     <width>9-col-gutter</width>
                     <height>2-row</height>
-                    <label>-</label>
+                    <label></label>
                     <font>settingsCategoryTitle</font>
                     <textcolor>highlight</textcolor>
                 </control>

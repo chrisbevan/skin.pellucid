@@ -45,7 +45,7 @@
                 <font>dialogTitle</font>
                 <label>35050</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="grouplist" id="3">
                 <description>Controller types grouplist</description>
@@ -121,7 +121,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -132,7 +132,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -140,28 +140,28 @@
                         <description>Ok Button</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10820,18)</onclick>
                     </item>
                     <item id="2">
                         <description>Reset Button</description>
                         <label>409</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10820,19)</onclick>
                     </item>
                     <item id="3">
                         <description>Install more Button</description>
                         <label>$LOCALIZE[21452]</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10820,20)</onclick>
                     </item>
                     <item id="4">
                         <description>Help Button</description>
                         <label>$LOCALIZE[10043]</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10820,17)</onclick>
                     </item>
                 </content>
@@ -188,14 +188,14 @@
             </control>
             <control type="label" id="8">
                 <description>Default Label</description>
-                <label>-</label>
+                <label></label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
                 <textcolor>highlight</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--dialog buttons (hidden)-->

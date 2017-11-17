@@ -14,7 +14,7 @@
             <width>192</width>
             <height>192</height>
             <texturefocus>calibration/CalibrateTopLeft.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturenofocus></texturenofocus>
         </control>
         <control type="mover" id="9">
             <description>right bottom mover</description>
@@ -23,7 +23,7 @@
             <width>192</width>
             <height>192</height>
             <texturefocus>calibration/CalibrateBottomRight.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturenofocus></texturenofocus>
         </control>
         <control type="mover" id="10">
             <description>subtitle position mover</description>
@@ -32,7 +32,7 @@
             <width>768</width>
             <height>192</height>
             <texturefocus>calibration/CalibrateSubTitles.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturenofocus></texturenofocus>
         </control>
         <control type="resize" id="11">
             <description>pixel aspect ratio box</description>
@@ -41,7 +41,7 @@
             <width>384</width>
             <height>384</height>
             <texturefocus>calibration/CalibratePixelRatio.png</texturefocus>
-            <texturenofocus>-</texturenofocus>
+            <texturenofocus></texturenofocus>
         </control>
         <control type="label" id="2">
             <description>coordinates label</description>
@@ -50,7 +50,7 @@
             <width>1860</width>
             <align>center</align>
             <font>regular</font>
-            <label>-</label>
+            <label></label>
         </control>
         <control type="label" id="3">
             <description>help information</description>
@@ -59,7 +59,7 @@
             <width>1860</width>
             <font>regular</font>
             <align>center</align>
-            <label>-</label>
+            <label></label>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
