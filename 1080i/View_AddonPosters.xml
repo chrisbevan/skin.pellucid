@@ -37,7 +37,7 @@
 						<colordiffuse>ffffffff</colordiffuse>
 					</control>
 					<control type="textbox">
-						<visible>isempty(listitem.title)</visible>
+						<visible>String.IsEmpty(listitem.title)</visible>
 						<posx>24</posx>
 						<posy>3-row</posy>
 						<width>228</width>
@@ -94,7 +94,7 @@
 							<bordersize>6</bordersize>
 						</control>
 						<control type="textbox">
-							<visible>isempty(listitem.title)</visible>
+							<visible>String.IsEmpty(listitem.title)</visible>
 							<posx>24</posx>
 							<posy>3-row</posy>
 							<width>228</width>

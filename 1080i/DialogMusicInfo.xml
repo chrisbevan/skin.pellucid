@@ -142,7 +142,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>highlight</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -151,7 +151,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <label fallback="31159">$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">
@@ -160,26 +160,26 @@
                     <item>
                         <label>$LOCALIZE[31140]</label>
                         <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[515]</label>
                         <label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31141]</label>
                         <label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31193]</label>
                         <label2>$INFO[ListItem.Property(Artist_Style)]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                 </content>
             </control>
@@ -211,7 +211,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -222,7 +222,7 @@
                         <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">
@@ -254,7 +254,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -265,32 +265,32 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
                     <item>
                         <label>184</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(6)</onclick>
                     </item>
                     <item>
                         <label>13405</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10)</onclick>
                     </item>
                     <item>
                         <label>20413</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(12)</onclick>
                     </item>
                     <item>
                         <label>31169</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(7)</onclick>
                     </item>
                 </content>
@@ -377,7 +377,7 @@
                          <font>itemSubTitle</font>
                          <textcolor>highlight</textcolor>
                          <label>$INFO[ListItem.label]</label>
-                         <shadowcolor>-</shadowcolor>
+                         <shadowcolor></shadowcolor>
                      </control>
                      <control type="label">
                          <posx>12</posx>
@@ -386,7 +386,7 @@
                          <font>itemSubTitle</font>
                          <textcolor>textActive</textcolor>
                          <label fallback="31159">$INFO[ListItem.label2]</label>
-                         <shadowcolor>-</shadowcolor>
+                         <shadowcolor></shadowcolor>
                      </control>
                  </itemlayout>
                  <focusedlayout width="5-col" height="2-row">
@@ -395,26 +395,26 @@
                      <item>
                          <label>$LOCALIZE[31149]</label>
                          <label2>$INFO[ListItem.Year]</label2>
-                         <thumb>-</thumb>
-                         <onclick>noop</onclick>
+                         <thumb></thumb>
+                         
                      </item>
                      <item>
                          <label>$LOCALIZE[31150]</label>
                          <label2>$INFO[ListItem.Property(Album_Label)]</label2>
-                         <thumb>-</thumb>
-                         <onclick>noop</onclick>
+                         <thumb></thumb>
+                         
                      </item>
                      <item>
                          <label>$LOCALIZE[31167]</label>
                          <label2>$INFO[ListItem.Genre]</label2>
-                         <thumb>-</thumb>
-                         <onclick>noop</onclick>
+                         <thumb></thumb>
+                         
                      </item>
                      <item>
                          <label>$LOCALIZE[31148]</label>
                          <label2>$INFO[ListItem.Property(Album_Style)]</label2>
-                         <thumb>-</thumb>
-                         <onclick>noop</onclick>
+                         <thumb></thumb>
+                         
                      </item>
                  </content>
              </control>
@@ -447,7 +447,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -458,7 +458,7 @@
                         <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">
@@ -490,7 +490,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -501,32 +501,32 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
                     <item>
                         <label>184</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(6)</onclick>
                     </item>
                     <item>
                         <label>13405</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10)</onclick>
                     </item>
                     <item>
                         <label>20413</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(12)</onclick>
                     </item>
                     <item>
                         <label>31169</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(7)</onclick>
                     </item>
                 </content>
@@ -567,7 +567,7 @@
                     <aligny>center</aligny>
                     <font>largeLight</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.title]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -580,7 +580,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31129][/COLOR] $INFO[ListItem.artist]</label>
                 </control>
                 <control type="label">
@@ -591,7 +591,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31130][/COLOR] $INFO[ListItem.year]</label>
                 </control>
                 <control type="label">
@@ -602,7 +602,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31193][/COLOR] $INFO[ListItem.duration]</label>
                 </control>
                 <!--col 2-->
@@ -614,7 +614,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31166][/COLOR] $INFO[ListItem.album]</label>
                 </control>
                 <control type="label">
@@ -625,7 +625,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31167][/COLOR] $INFO[ListItem.genre]</label>
                 </control>
                 <control type="label">
@@ -636,7 +636,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>[COLOR highlight]$LOCALIZE[31168][/COLOR] $INFO[ListItem.UserRating]</label>
                 </control>
                 <!--synopsis-->
@@ -647,7 +647,7 @@
                     <width>12-col</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <height>200</height>
                     <label>$INFO[ListItem.Property(Album_Description)]</label>
                     <autoscroll delay="10000" time="1000" repeat="10000"/>
@@ -678,7 +678,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -689,7 +689,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout width="4-col" height="2-row">
@@ -721,7 +721,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -732,27 +732,27 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="1">
                             <label>31075</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>dialog.close(all,true)</onclick>
                             <onclick>action(select)</onclick>
                         </item>
                         <item id="2">
                             <label>31169</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(2003,7)</onclick>
                         </item>
                         <item id="3">
                             <label>13511</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(2003,10)</onclick>
                         </item>
                     </content>

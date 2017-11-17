@@ -127,7 +127,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -138,7 +138,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -146,21 +146,21 @@
                         <description>Ok Button</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10140,10)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10140,11)</onclick>
                     </item>
                     <item id="3">
                         <description>Defaults Button</description>
                         <label>409</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(10140,12)</onclick>
                     </item>
                 </content>
@@ -170,7 +170,7 @@
                 <width>287</width>
                 <font>buttonTitle</font>
                 <texturefocus>colors/white.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="button" id="3">
                 <description>Default Button</description>
@@ -182,7 +182,7 @@
                 <description>Default spincontrolex</description>
             </control>
             <control type="label" id="7">
-                <label>-</label>
+                <label></label>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>

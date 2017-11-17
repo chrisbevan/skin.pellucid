@@ -45,7 +45,7 @@
                 <font>symbolVeryLarge</font>
                 <aligny>center</aligny>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label>$VAR[menuLogo]</label>
             </control>
             <control type="list" id="9001">
@@ -66,7 +66,7 @@
                         <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
                 </itemlayout>
@@ -88,7 +88,7 @@
                         <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>highlight</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
                 </focusedlayout>

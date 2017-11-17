@@ -78,26 +78,26 @@
 	                        <font>symbolLarge</font>
 	                        <textcolor>highlight</textcolor>
 	                        <label>$INFO[ListItem.label2]</label>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                    </control>
 	                </focusedlayout>
 	                <content>
 	                    <item>
 	                        <description>Previous</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(previous)</onclick>
 	                    </item>
 	                    <item>
 	                        <description>Rewind</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(rewind)</onclick>
 	                    </item>
 	                    <item>
 	                        <description>Stop</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(stop)</onclick>
 	                        <onclick>Dialog.Close(1105)</onclick>
 	                        <onclick>Dialog.Close(1103)</onclick>
@@ -106,26 +106,26 @@
 	                        <visible>Player.Playing | player.forwarding | player.rewinding</visible>
 	                        <description>Play/Pause</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(play)</onclick>
 	                    </item>
 	                    <item>
 	                        <visible>Player.Paused</visible>
 	                        <description>Pause</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(play)</onclick>
 	                    </item>
 	                    <item>
 	                        <description>Fast forward</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(forward)</onclick>
 	                    </item>
 	                    <item>
 	                        <description>Next Chapter</description>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(next)</onclick>
 	                    </item>
 	                </content>
@@ -167,7 +167,7 @@
 	                    <ondown>control.setfocus(8003,0)</ondown>
 	                    <onleft>decreaserating</onleft>
 	                    <onright>increaserating</onright>
-	                    <onclick>noop</onclick>
+	                    
 	                </control>
 	            </control>
 	            <!--final options-->
@@ -231,7 +231,7 @@
 	                        <font>symbolLarge</font>
 	                        <textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.label2]</label>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                    </control>
 	                    <control type="label">
 	                        <posx>1-col-indent</posx>
@@ -249,7 +249,7 @@
 	                        <description>go to artist</description>
 	                        <label>31155</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick condition="!System.hasAddon(script.musicfinder)">InstallAddon(script.musicfinder)</onclick>
 	                        <onclick condition="System.hasAddon(script.musicfinder)">Dialog.Close(all,true)</onclick>
 	                        <onclick condition="System.hasAddon(script.musicfinder)">Runscript(script.musicfinder,action=artist,title=$INFO[musicplayer.artist],listid=50)</onclick>
@@ -258,7 +258,7 @@
 	                        <description>go to album</description>
 	                        <label>31158</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick condition="!System.hasAddon(script.musicfinder)">InstallAddon(script.musicfinder)</onclick>
 	                        <onclick condition="System.hasAddon(script.musicfinder)">Dialog.Close(all,true)</onclick>
 	                        <onclick condition="System.hasAddon(script.musicfinder)">Runscript(script.musicfinder,action=album,title=$INFO[musicplayer.album],listid=50)</onclick>
@@ -267,7 +267,7 @@
 	                        <description>Playlist</description>
 	                        <label>31123</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>Dialog.Close(all,true)</onclick>
 	                        <onclick>action(back)</onclick>
 	                        <onclick>activateWindow(musicplaylist)</onclick>
@@ -276,14 +276,14 @@
 	                        <description>Repeat</description>
 	                        <label>$VAR[repeatState]</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>PlayerControl(Repeat)</onclick>
 	                    </item>
 	                    <item>
 	                        <description>Shuffle</description>
 	                        <label>$VAR[shuffleState]</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick condition="!Playlist.IsRandom">PlayerControl(RandomOn)</onclick>
 	                        <onclick condition="Playlist.IsRandom">PlayerControl(RandomOff)</onclick>
 	                    </item>
@@ -291,7 +291,7 @@
 	                        <description>Visualisation</description>
 	                        <label>31032</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>activateWindow(musicOSD)</onclick>
 	                    </item>
 	                    <item>
@@ -299,7 +299,7 @@
 	                        <description>Visualisation Settings</description>
 	                        <label>$LOCALIZE[21417]</label>
 	                        <label2></label2>
-	                        <thumb>-</thumb>
+	                        <thumb></thumb>
 	                        <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 	                    </item>
 	                </content>

@@ -7,7 +7,7 @@
     <controls>
         <!--background-->
         <control type="image">
-            <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
@@ -16,7 +16,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-            <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
@@ -26,7 +26,7 @@
         </control>
         <!--movie / tv show fanart-->
         <control type="group">
-            <include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
+            <include condition="!String.Contains(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
             <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>
@@ -77,7 +77,7 @@
         </control>
         <!--content is movie, music video or tvshow (from XBMC Library)-->
         <control type="group">
-            <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
             <posx>1200</posx>
             <posy>0</posy>
             <animation type="Windowopen">
@@ -131,7 +131,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>highlight</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>12</posx>
@@ -140,7 +140,7 @@
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <label fallback="31159">$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">
@@ -149,26 +149,26 @@
                     <item>
                         <label>$LOCALIZE[562]</label>
                         <label2>$INFO[ListItem.year]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[515]</label>
                         <label2>$INFO[ListItem.genre]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31146]</label>
                         <label2>$INFO[ListItem.director]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31193]</label>
                         <label2>$INFO[ListItem.duration,, $LOCALIZE[31018]]</label2>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                 </content>
             </control>
@@ -199,7 +199,7 @@
                     <height>388</height>
                     <label fallback="31205">$INFO[ListItem.plot]</label>
                     <autoscroll>false</autoscroll>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">
@@ -239,7 +239,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -250,7 +250,7 @@
                         <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="5-col" height="2-row">
@@ -282,7 +282,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -293,21 +293,21 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
                     <item>
                         <label>31075</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>sendclick(2003,8)</onclick>
                     </item>
                     <item>
                         <description>Artwork downloader</description>
                         <label>$LOCALIZE[31219]</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,tvshow)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,movie)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
                         <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,musicvideo)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
@@ -316,25 +316,25 @@
                     <item>
                         <label>20410</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(2003,11)</onclick>
                     </item>
                     <item>
                         <label>31076</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(2003,6)</onclick>
                     </item>
                     <item>
                         <label>13511</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(2003,10)</onclick>
                     </item>
                     <item>
                         <label>31169</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(2003,7)</onclick>
                     </item>
                 </content>
@@ -343,7 +343,7 @@
 
         <!--content is tvshow episode or content is from a plugin-->
         <control type="group">
-            <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes)</visible>
             <!--animations-->
             <include>modalDialogInOut</include>
             <!--thumbnail if available-->
@@ -376,7 +376,7 @@
                     <aligny>center</aligny>
                     <font>largeLight</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -410,7 +410,7 @@
                     <width>12-col</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <height>160</height>
                     <label fallback="31205">$INFO[ListItem.plot]</label>
                     <autoscroll>false</autoscroll>
@@ -449,7 +449,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -460,7 +460,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout width="6-col" height="2-row">
@@ -492,7 +492,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -503,21 +503,21 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="1">
                             <label>31075</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>sendclick(2003,8)</onclick>
                         </item>
                         <item id="2">
-                            <visible>!Substring(Container.folderpath,plugin)</visible>
+                            <visible>!String.Contains(Container.folderpath,plugin)</visible>
                             <label>31076</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
                     </content>

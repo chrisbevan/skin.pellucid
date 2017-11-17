@@ -81,7 +81,7 @@
                     <texturenofocus colordiffuse="99ffffff">colors/offblack.png</texturenofocus>
                     <texturefocus>colors/offblack.png</texturefocus>
                     <textoffsetx>24</textoffsetx>
-                    <label>-</label>
+                    <label></label>
                     <align>left</align>
                     <onup>16</onup>
                     <onright>20</onright>
@@ -167,7 +167,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -178,7 +178,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -186,21 +186,21 @@
                             <description>OK</description>
                             <label>186</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(129,18)</onclick>
                         </item>
                         <item id="2">
                             <description>Cancel</description>
                             <label>222</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(129,19)</onclick>
                         </item>
                         <item id="3">
                             <description>Remove Rule</description>
                             <label>1210</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>dialog.close(137,true)</onclick>
                             <onclick>Control.Message(14,click,136)</onclick>
                             <onclick>Control.setfocus(10)</onclick>

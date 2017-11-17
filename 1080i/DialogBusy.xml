@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">-</defaultcontrol>
+    <defaultcontrol always="true"></defaultcontrol>
     <controls>
         <control type="label">
             <posy>0</posy>

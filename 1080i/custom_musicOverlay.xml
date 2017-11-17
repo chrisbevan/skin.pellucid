@@ -35,7 +35,7 @@
                 <aligny>center</aligny>
                 <font>symbolLarge</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label></label>
             </control>
             <control type="label">
@@ -48,7 +48,7 @@
                 <aligny>center</aligny>
                 <font>symbolLarge</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label></label>
                 <animation type="conditional" condition="true" loop="true">
                     <effect type="fade" start="0" end="100" time="1000"/>

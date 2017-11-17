@@ -311,10 +311,10 @@
                         <ondown>303</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -533,10 +533,10 @@
                         <ondown>304</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -756,10 +756,10 @@
                         <ondown>309</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <textoffsetx>0</textoffsetx>

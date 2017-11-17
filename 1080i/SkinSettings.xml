@@ -36,7 +36,7 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -68,7 +68,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="4-col">
@@ -89,21 +89,21 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="1">
                             <label>$LOCALIZE[128]</label>
-                            <onclick>noop</onclick>
+                            
                         </item>
                         <item id="2">
                             <label>$LOCALIZE[31170]</label>
-                            <onclick>noop</onclick>
+                            
                         </item>
                         <item id="3">
                             <label>$LOCALIZE[31044]</label>
-                            <onclick>noop</onclick>
+                            
                         </item>
                     </content>
                 </control>

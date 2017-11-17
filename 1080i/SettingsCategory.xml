@@ -11,7 +11,7 @@
             <posy>0</posy>
             <width>8-col</width>
             <font>regular</font>
-            <label>-</label>
+            <label></label>
             <textcolor>menuUnselected</textcolor>
         </control>
         <!--Settings category-->
@@ -55,7 +55,7 @@
                 <font>dialogTitle</font>
                 <label>$INFO[control.getlabel(2)]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--Category submenu-->
             <control type="button" id="1234">
@@ -71,7 +71,7 @@
             <control type="grouplist" id="3">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>-</width>
+                <width></width>
                 <itemgap>0</itemgap>
                 <height>18-row</height>
                 <onleft>9000</onleft>
@@ -104,30 +104,30 @@
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>
-                <label>-</label>
+                <label></label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
                 <textcolor>highlight</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <!--subcat menu buttons-->
             <control type="togglebutton" id="10">
@@ -135,7 +135,7 @@
                 <width>287</width>
                 <font>buttonTitle</font>
                 <texturefocus>colors/white.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="button" id="20">
                 <visible>false</visible>
