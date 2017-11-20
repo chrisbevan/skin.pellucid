@@ -120,20 +120,20 @@
                         </control>
 						<control type="group">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-							<posx>214</posx>
+							<posx>202</posx>
 							<posy>6</posy>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>36</width>
-								<height>36</height>
+								<width>56</width>
+								<height>56</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>colors/white.png</texture>
+								<texture>masks/newContent.png</texture>
 								<colordiffuse>highlight</colordiffuse>
 							</control>
 							<control type="label">
-								<posx>8</posx>
-								<posy>-2</posy>
+								<posx>28</posx>
+								<posy>-4</posy>
 								<width>36</width>
 								<height>36</height>
 								<aligny>center</aligny>
@@ -191,20 +191,20 @@
 	                        </control>
 							<control type="group">
 								<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-								<posx>214</posx>
-								<posy>0</posy>
+								<posx>202</posx>
+								<posy>6</posy>
 								<control type="image">
 									<posx>0</posx>
 									<posy>0</posy>
-									<width>36</width>
-									<height>36</height>
+									<width>56</width>
+									<height>56</height>
 									<aspectratio>stretch</aspectratio>
-									<texture>colors/white.png</texture>
+									<texture>masks/newContent.png</texture>
 									<colordiffuse>highlight</colordiffuse>
 								</control>
 								<control type="label">
-									<posx>8</posx>
-									<posy>-2</posy>
+									<posx>28</posx>
+									<posy>-4</posy>
 									<width>36</width>
 									<height>36</height>
 									<aligny>center</aligny>

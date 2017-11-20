@@ -214,16 +214,6 @@
 							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
-							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-							<posx>6</posx>
-							<posy>0</posy>
-							<width>216</width>
-							<height>6</height>
-							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
-						</control>
-						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>228</width>
@@ -265,6 +255,30 @@
 							<font>thumbTitle</font>
 							<textcolor>textDisabled</textcolor>
 							<label>$INFO[ListItem.year]</label>
+						</control>
+						<control type="group">
+							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
+							<posx>166</posx>
+							<posy>6</posy>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>56</width>
+								<height>56</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>masks/newContent.png</texture>
+								<colordiffuse>highlight</colordiffuse>
+							</control>
+							<control type="label">
+								<posx>28</posx>
+								<posy>-4</posy>
+								<width>36</width>
+								<height>36</height>
+								<aligny>center</aligny>
+								<font>symbol</font>
+								<textcolor>textActive</textcolor>
+								<label></label>
+							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout width="252" height="426">
@@ -320,6 +334,30 @@
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
 								<label>$INFO[ListItem.year]</label>
+							</control>
+							<control type="group">
+								<visible>String.IsEmpty(ListItem.PlayCount)</visible>
+								<posx>166</posx>
+								<posy>6</posy>
+								<control type="image">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>56</width>
+									<height>56</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>masks/newContent.png</texture>
+									<colordiffuse>highlight</colordiffuse>
+								</control>
+								<control type="label">
+									<posx>28</posx>
+									<posy>-4</posy>
+									<width>36</width>
+									<height>36</height>
+									<aligny>center</aligny>
+									<font>symbol</font>
+									<textcolor>textActive</textcolor>
+									<label></label>
+								</control>
 							</control>
 						</control>
 					</focusedlayout>
