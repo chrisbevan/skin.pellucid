@@ -105,8 +105,8 @@
 				<onup>9000</onup>
 				<itemlayout width="1-col" height="1-col">
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>-1</posx>
+						<posy>-1</posy>
 						<width>1-col</width>
 						<height>1-col</height>
 						<font>symbolLarge</font>
@@ -128,8 +128,8 @@
 						<colordiffuse>highlight</colordiffuse>
 					</control>
 					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>-1</posx>
+						<posy>-1</posy>
 						<width>1-col</width>
 						<height>1-col</height>
 						<font>symbolLarge</font>
