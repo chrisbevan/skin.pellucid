@@ -46,7 +46,7 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[14111]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--view options-->
             <control type="grouplist" id="9000">
@@ -65,8 +65,8 @@
                 <control type="radiobutton" id="22">
                     <description>Only show current level</description>
                     <width>5-col</width>
-                    <textureradiofocus>-</textureradiofocus>
-                    <textureradionofocus>-</textureradionofocus>
+                    <textureradiofocus></textureradiofocus>
+                    <textureradionofocus></textureradionofocus>
                     <radiowidth/>
                     <radioheight/>
                 </control>
@@ -96,7 +96,7 @@
                         <aligny>top</aligny>
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
@@ -107,7 +107,7 @@
                         <aligny>top</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.Label][/B] - $INFO[ListItem.Property(Event.Description)]</label>
                     </control>
                 </itemlayout>
@@ -128,7 +128,7 @@
                         <aligny>top</aligny>
                         <font>itemSubTitle</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                     <control type="label">
@@ -139,7 +139,7 @@
                         <aligny>top</aligny>
                         <font>itemTitle</font>
                         <textcolor>black</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.Label][/B] - $INFO[ListItem.Property(Event.Description)]</label>
                     </control>
                 </focusedlayout>

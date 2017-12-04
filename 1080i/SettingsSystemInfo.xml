@@ -57,7 +57,7 @@
 						<height>2-row</height>
                         <font>pageSubTitle</font>
                         <textcolor>44FFFFFF</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </itemlayout>
@@ -69,7 +69,7 @@
 						<height>2-row</height>
                         <font>pageSubTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.label]</label>
                         <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
                     </control>
@@ -77,11 +77,11 @@
                 <content>
                     <item id="1">
                         <label>$LOCALIZE[31121]</label>
-                        <onclick>noop</onclick>
+                        
                     </item>
                     <item id="2">
                         <label>31119</label>
-                        <onclick>noop</onclick>
+                        
                     </item>
                 </content>
             </control>
@@ -127,7 +127,7 @@
                         <font>dialogTitle</font>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -179,7 +179,7 @@
                         <font>dialogTitle</font>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -207,56 +207,56 @@
                         <label>482</label>
                         <label2>$INFO[System.BuildVersion][CR]$INFO[System.BuildDate]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="2">
                         <description>Connectivity</description>
                         <label>705</label>
                         <label2>$INFO[Network.IPAddress][CR]$INFO[Network.MacAddress]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="3">
                         <description>Storage</description>
                         <label>13277</label>
                         <label2>$INFO[System.TotalSpace][CR]$INFO[System.FreeSpace]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="4">
                         <description>Memory</description>
                         <label>31062</label>
                         <label2>$INFO[System.Memory(total),, $LOCALIZE[20161]][CR]$INFO[System.FreeMemory] / $INFO[System.Memory(free.percent),, $LOCALIZE[156]]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="5">
                         <description>CPU</description>
                         <label>31064</label>
                         <label2>$INFO[System.CpuFrequency][CR]$LOCALIZE[139]$INFO[System.CPUTemperature, ,]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="6">
                         <description>Screen Resolution</description>
                         <label>31070</label>
                         <label2>$INFO[System.ScreenWidth] x $INFO[System.ScreenHeight][CR]$INFO[System.FPS,, $LOCALIZE[31144]]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="7">
                         <description>Media</description>
                         <label>20060</label>
                         <label2>$INFO[Window(Home).Property(Movies.Count),$LOCALIZE[20342]: ,][CR]$INFO[Window(Home).Property(TVShows.Count),$LOCALIZE[20343]: ,][CR]$INFO[Window(Home).Property(Music.AlbumsCount),$LOCALIZE[132]: ,]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="8">
                         <visible>PVR.HasTVChannels</visible>
@@ -264,8 +264,8 @@
                         <label>24019</label>
                         <label2>$INFO[Pvr.BackendName][CR]$INFO[PVR.BackendDiskspace]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                     <item id="9">
                         <visible>!PVR.HasTVChannels</visible>
@@ -273,8 +273,8 @@
                         <label>24019</label>
                         <label2>$LOCALIZE[31118]</label2>
                         <property name="itemIcon">&gt;</property>
-                        <thumb>-</thumb>
-                        <onclick>noop</onclick>
+                        <thumb></thumb>
+                        
                     </item>
                 </content>
             </control>

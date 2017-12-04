@@ -34,7 +34,7 @@
 						<font>veryLargeLight</font>
 						<textcolor>66ffffff</textcolor>
 						<wrapmultiline>true</wrapmultiline>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<label>$INFO[container.foldername]</label>
 					</control>
 				</control>

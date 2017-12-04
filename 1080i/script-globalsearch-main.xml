@@ -35,7 +35,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>auto</width>
-                    <label>-</label>
+                    <label></label>
                     <font>pageSubTitle</font>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -45,7 +45,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>auto</width>
-                    <label>-</label>
+                    <label></label>
                     <font>pageSubTitle</font>
                     <textcolor>textActive</textcolor>
                 </control>
@@ -66,7 +66,7 @@
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>4-col</width>
-                <label>-</label>
+                <label></label>
                 <font>itemSubTitle</font>
                 <textcolor>textActive</textcolor>
                 <align>center</align>
@@ -101,7 +101,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[342]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="110">
                         <visible>false</visible>
@@ -130,7 +130,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -164,7 +164,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -183,7 +183,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[20343]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="120">
                         <visible>false</visible>
@@ -213,7 +213,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -247,7 +247,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -266,7 +266,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[33054]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="130">
                         <visible>false</visible>
@@ -296,7 +296,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -330,7 +330,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -348,7 +348,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[20360]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="140">
                         <visible>false</visible>
@@ -378,7 +378,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -412,7 +412,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -430,7 +430,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[20389]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="150">
                         <visible>false</visible>
@@ -460,7 +460,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -494,7 +494,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -513,7 +513,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[133]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="160">
                         <visible>false</visible>
@@ -543,7 +543,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -577,7 +577,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -596,7 +596,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[132]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="170">
                         <visible>false</visible>
@@ -626,7 +626,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -660,7 +660,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
@@ -679,7 +679,7 @@
                         <font>regularStrong</font>
                         <label>[COLOR highlight]•[/COLOR] $LOCALIZE[134]</label>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label" id="180">
                         <visible>false</visible>
@@ -709,7 +709,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -743,7 +743,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>

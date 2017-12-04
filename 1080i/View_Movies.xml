@@ -32,7 +32,7 @@
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
 	                        <textcolor>textDisabled</textcolor>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 	                    </control>
 	                </itemlayout>
@@ -45,7 +45,7 @@
 	                        <font>itemTitle</font>
 	                        <aligny>center</aligny>
 	                        <textcolor>textActive</textcolor>
-	                        <shadowcolor>-</shadowcolor>
+	                        <shadowcolor></shadowcolor>
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 							<animation type="conditional" condition="control.hasfocus(9102)" loop="true">
 	                            <effect type="fade" start="100" end="50" time="1000"/>
@@ -56,12 +56,12 @@
 	                    <item>
 	                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
 	                        <property name="textTitle">31176</property>
-	                        <onclick>noop</onclick>
+	                        
 	                    </item>
 	                    <item>
 	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
 	                        <property name="textTitle">31132</property>
-	                        <onclick>noop</onclick>
+	                        
 	                    </item>
 	                </content>
 	            </control>

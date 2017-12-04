@@ -135,11 +135,11 @@
 						<width>9-col</width>
 						<height>2-row</height>
 						<reveal>false</reveal>
-						<texturebg>-</texturebg>
-						<lefttexture>-</lefttexture>
+						<texturebg></texturebg>
+						<lefttexture></lefttexture>
 						<midtexture border="36" colordiffuse="22FFFFFF">colors/white.png</midtexture>
-						<righttexture>-</righttexture>
-						<overlaytexture>-</overlaytexture>
+						<righttexture></righttexture>
+						<overlaytexture></overlaytexture>
 						<info>Player.Progress</info>
 					</control>
 					<control type="label">
@@ -150,7 +150,7 @@
 						<font>regularStrong</font>
 						<align>left</align>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<scroll>false</scroll>
 						<label>$INFO[MusicPlayer.time,, / ]$INFO[MusicPlayer.duration]</label>
 					</control>
@@ -162,7 +162,7 @@
 						<font>regularStrong</font>
 						<align>right</align>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<scroll>false</scroll>
 						<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554] ]$INFO[musicplayer.Playlistlength, / ]</label>
 					</control>
@@ -175,7 +175,7 @@
 						<font>symbolLarge</font>
 						<align>right</align>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<label></label>
 					</control>
 					<control type="label">
@@ -187,7 +187,7 @@
 						<font>symbolLarge</font>
 						<align>right</align>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<label></label>
 					</control>
 				</control>

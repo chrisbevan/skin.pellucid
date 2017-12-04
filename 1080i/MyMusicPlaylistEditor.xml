@@ -28,7 +28,7 @@
                     <font>dialogTitle</font>
                     <label>31057</label>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -62,7 +62,7 @@
                     <label>31022</label>
                     <font>settingsCategoryTitle</font>
                     <textcolor>highlight</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <!--left file list-->
                 <control type="list" id="50">
@@ -252,7 +252,7 @@
                                 <font>symbolLarge</font>
                                 <textcolor>textActive</textcolor>
                                 <label>$INFO[ListItem.label2]</label>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                             </control>
                             <control type="label">
                                 <posx>1-col-indent</posx>
@@ -263,7 +263,7 @@
                                 <font>buttonTitle</font>
                                 <textcolor>black</textcolor>
                                 <label>$INFO[ListItem.label]</label>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                             </control>
                         </focusedlayout>
                         <content>
@@ -271,14 +271,14 @@
                                 <description>Open</description>
                                 <label>31019</label>
                                 <label2></label2>
-                                <thumb>-</thumb>
+                                <thumb></thumb>
                                 <onclick>SendClick(503,6)</onclick>
                             </item>
                             <item id="2">
                                 <description>Save</description>
                                 <label>31020</label>
                                 <label2></label2>
-                                <thumb>-</thumb>
+                                <thumb></thumb>
                                 <onclick>SendClick(503,7)</onclick>
                                 <onclick>Notification($LOCALIZE[31020],$LOCALIZE[31153])</onclick>
                             </item>
@@ -286,7 +286,7 @@
                                 <description>Clear</description>
                                 <label>31021</label>
                                 <label2></label2>
-                                <thumb>-</thumb>
+                                <thumb></thumb>
                                 <onclick>SendClick(503,8)</onclick>
                             </item>
                         </content>

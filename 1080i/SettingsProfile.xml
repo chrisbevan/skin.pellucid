@@ -31,7 +31,7 @@
                 <font>dialogTitle</font>
                 <label>14210</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -78,7 +78,7 @@
                 <font>itemSubTitle</font>
                 <label>$LOCALIZE[31107]: [COLOR highlight]$INFO[System.ProfileName][/COLOR]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--dialog controls-->
             <control type="radiobutton" id="4">

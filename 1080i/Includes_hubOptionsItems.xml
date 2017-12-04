@@ -66,8 +66,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <onclick>sendclick(videos,14)</onclick>
@@ -78,9 +78,9 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <texturenofocus></texturenofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <onclick>right</onclick>
             <onclick>xbmc.mastermode</onclick>
             <selected>system.ismaster</selected>
@@ -190,8 +190,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <label>$LOCALIZE[25001]</label>
@@ -201,8 +201,8 @@
             <width>6-col</width>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradiofocus></textureradiofocus>
+            <textureradionofocus></textureradionofocus>
             <radiowidth/>
             <radioheight/>
             <label>$LOCALIZE[24999]</label>

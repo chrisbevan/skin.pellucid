@@ -48,7 +48,7 @@
                             <height>66</height>
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label></label>
                         </control>
                         <control type="label">
@@ -58,7 +58,7 @@
                             <height>2-row</height>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -68,7 +68,7 @@
                             <height>2-row</height>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Date]</label>
                         </control>
                         <control type="label">
@@ -78,7 +78,7 @@
                             <height>2-row</height>
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Comment]</label>
                         </control>
                     </itemlayout>
@@ -113,7 +113,7 @@
                                 <height>66</height>
                                 <font>symbolLarge</font>
                                 <textcolor>black</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>✓</label>
                             </control>
                         </control>
@@ -125,7 +125,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -136,7 +136,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Date]</label>
                         </control>
                         <control type="label">
@@ -147,7 +147,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Comment]</label>
                         </control>
                     </focusedlayout>
@@ -174,7 +174,7 @@
                         <align>center</align>
                         <textcolor>textActive</textcolor>
                         <selectedcolor>textActive</selectedcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[Pvr.BackendDiskSpace]</label>
                     </control>
                 </control>

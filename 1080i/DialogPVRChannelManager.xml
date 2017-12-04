@@ -48,7 +48,7 @@
                     <font>dialogTitle</font>
                     <label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <control type="label">
                     <visible>!IsEmpty(Window.Property(IsRadio))</visible>
@@ -60,7 +60,7 @@
                     <font>dialogTitle</font>
                     <label>$LOCALIZE[19199] - $LOCALIZE[19024]</label>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
 
                 <!--channel list-->
@@ -108,7 +108,7 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </itemlayout>
@@ -144,7 +144,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </focusedlayout>
@@ -193,7 +193,7 @@
                         <font>buttonTitle</font>
                         <align>left</align>
                         <texturefocus>colors/white.png</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <texturenofocus></texturenofocus>
                         <textoffsetx>24</textoffsetx>
                         <focusedcolor>black</focusedcolor>
                         <label>19201</label>
@@ -384,7 +384,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -395,7 +395,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -403,21 +403,21 @@
                             <description>Apply Button</description>
                             <label>14070</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(5)</onclick>
                         </item>
                         <item id="2">
                             <description>Ok Button</description>
                             <label>186</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(4)</onclick>
                         </item>
                         <item id="3">
                             <description>Cancel Button</description>
                             <label>222</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(6)</onclick>
                         </item>
                     </content>

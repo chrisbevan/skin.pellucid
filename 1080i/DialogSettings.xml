@@ -58,7 +58,7 @@
                 <aligny>center</aligny>
                 <font>dialogTitle</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="grouplist" id="5">
                 <description>control area</description>
@@ -84,7 +84,7 @@
                 <font>buttonTitle</font>
                 <align>left</align>
                 <texturefocus>colors/white.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
                 <textoffsetx>24</textoffsetx>
                 <focusedcolor>black</focusedcolor>
             </control>
@@ -93,14 +93,14 @@
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>
-                <label>-</label>
+                <label></label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
                 <textcolor>highlight</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--dialog control buttons-->
             <control type="panel" id="9000">
@@ -121,7 +121,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -132,7 +132,7 @@
                         <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="4-col" height="2-row">
@@ -164,7 +164,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -175,7 +175,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -183,14 +183,14 @@
                         <description>Ok Button</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(28)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(29)</onclick>
                     </item>
                     <item id="3">
@@ -198,7 +198,7 @@
                         <description>clear / settings</description>
                         <label>31048</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(30)</onclick>
                     </item>
                 </content>

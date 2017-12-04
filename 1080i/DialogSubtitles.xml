@@ -90,7 +90,7 @@
                             <font>itemTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label2</info>
                         </control>
                         <!--language / rating / sync / CC-->
@@ -103,7 +103,7 @@
                             <font>itemSubTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label] - $INFO[ListItem.ActualIcon]*</label>
                         </control>
                     </itemlayout>
@@ -128,7 +128,7 @@
                             <font>itemTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label2</info>
                         </control>
                         <!--language / rating / sync / CC-->
@@ -141,7 +141,7 @@
                             <font>itemSubTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <label>$INFO[ListItem.Label] - $INFO[ListItem.ActualIcon]*</label>
                         </control>
                     </focusedlayout>
@@ -187,7 +187,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>!ListItem.property(man)</visible>
                         </control>
@@ -200,7 +200,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>ListItem.property(man)</visible>
                         </control>
@@ -237,7 +237,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>!ListItem.property(man)</visible>
                         </control>
@@ -250,7 +250,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                             <info>ListItem.Label</info>
                             <visible>ListItem.property(man)</visible>
                         </control>

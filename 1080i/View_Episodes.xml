@@ -122,7 +122,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Episode]</label>
                         <scroll>false</scroll>
                     </control>
@@ -145,7 +145,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>..</label>
                         <scroll>false</scroll>
                     </control>
@@ -157,7 +157,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                         <scroll>false</scroll>
                     </control>
@@ -171,7 +171,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </itemlayout>
@@ -196,7 +196,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Episode]</label>
                         <scroll>false</scroll>
                     </control>
@@ -219,7 +219,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>..</label>
                         <scroll>false</scroll>
                     </control>
@@ -231,7 +231,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                         <scroll>false</scroll>
                     </control>
@@ -245,7 +245,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </focusedlayout>
@@ -288,7 +288,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -301,7 +301,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </itemlayout>
@@ -335,7 +335,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -348,7 +348,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </focusedlayout>

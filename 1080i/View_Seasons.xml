@@ -32,7 +32,7 @@
                         <font>veryLargeLight</font>
                         <textcolor>ffffffff</textcolor>
 						<aligny>center</aligny>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <wrapmultiline>true</wrapmultiline>
                         <label>$INFO[container.showtitle]</label>
                     </control>
@@ -43,7 +43,7 @@
                         <height>198</height>
                         <font>textbox</font>
                         <textcolor>ffffffff</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[container.showplot]</label>
                     </control>
                 </control>

@@ -125,7 +125,7 @@
                     <height>348</height>
                     <label fallback="31205">$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,. ]$INFO[videoplayer.plot]</label>
                     <autoscroll>false</autoscroll>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">
@@ -187,58 +187,58 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
                     <item>
                         <description>Previous</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(previous)</onclick>
                     </item>
                     <item>
                         <description>Rewind</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(rewind)</onclick>
                     </item>
                     <item>
                         <description>Stop</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(stop)</onclick>
                     </item>
                     <item>
                         <visible>Player.Playing | player.forwarding | player.rewinding</visible>
                         <description>Play/Pause</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
                         <visible>Player.Paused</visible>
                         <description>Pause</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
                         <description>Fast forward</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(forward)</onclick>
                     </item>
                     <item>
                         <description>Next Chapter</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(next)</onclick>
                     </item>
                     <item>
                         <enabled>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enabled>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(record)</onclick>
                     </item>
                 </content>
@@ -303,7 +303,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -321,14 +321,14 @@
                         <visible>VideoPlayer.HasMenu</visible>
                         <label>31051</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     </item>
                     <item>
                         <description>Download subtitles</description>
                         <label>31154</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
                     </item>
                     <item>
@@ -336,7 +336,7 @@
                         <visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>
                         <label>24012</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ShowSubtitles</onclick>
                     </item>
                     <item>
@@ -344,7 +344,7 @@
                         <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
                         <label>31161</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ShowSubtitles</onclick>
                     </item>
                     <item>
@@ -352,28 +352,28 @@
                         <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
                         <label>31202</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SubtitleDelay</onclick>
                     </item>
                     <item>
                         <description>Video Settings</description>
                         <label>31191</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(osdvideosettings)</onclick>
                     </item>
                     <item>
                         <description>Audio Settings</description>
                         <label>31177</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(osdaudiosettings)</onclick>
                     </item>
                     <item>
                         <description>Bookmarks</description>
                         <label>298</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                 </content>

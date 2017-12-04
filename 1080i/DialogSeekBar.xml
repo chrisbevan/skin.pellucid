@@ -88,7 +88,7 @@
                 <font>small</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <visible>!stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
@@ -99,7 +99,7 @@
                 <font>small</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>0</posx>
@@ -108,7 +108,7 @@
                 <font>smallStrong</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Time]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>18-col</posx>
@@ -118,7 +118,7 @@
                 <align>right</align>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Duration]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--ff / rw speed indicators-->
@@ -134,7 +134,7 @@
                 <font>symbolVeryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label></label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>1-col-indent</posx>
@@ -144,7 +144,7 @@
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[player.SeekStepSize]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--debugging-->
