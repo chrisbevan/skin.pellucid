@@ -48,7 +48,7 @@
                 <label>$VAR[songViewArtist]</label>
             </control>
         </control>
-        <control type="panel" id="50">
+        <control type="panel" id="53">
             <visible>$EXP[isMusicSong]</visible>
             <posx>col-10-begin</posx>
             <posy>row-9-begin</posy>

@@ -9,7 +9,7 @@
 
         <!--fanart (if available)-->
         <control type="image">
-            <visible>SubString(ListItem.label,fanart)</visible>
+            <visible>String.Contains(ListItem.label,fanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.thumb]</texture>
             <colordiffuse>6affffff</colordiffuse>
@@ -17,7 +17,7 @@
             <fadetime>400</fadetime>
         </control>
         <control type="image">
-            <visible>!SubString(ListItem.label,fanart)</visible>
+            <visible>!String.Contains(ListItem.label,fanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.FileNameAndPath]</texture>
             <colordiffuse>ffffffff</colordiffuse>
@@ -27,7 +27,7 @@
 
         <!--poster (if available)-->
         <control type="image">
-            <visible>SubString(ListItem.label,remote art)</visible>
+            <visible>String.Contains(ListItem.label,remote art)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.thumb]</texture>
             <colordiffuse>6affffff</colordiffuse>

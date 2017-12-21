@@ -106,7 +106,7 @@
                                 <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">colors/offblack.png</texture>
                             </control>
                             <control type="label">
-                                <visible>!isempty(ListItem.playcount) + !ListItem.IsResumable</visible>
+                                <visible>!String.IsEmpty(ListItem.playcount) + !ListItem.IsResumable</visible>
                                 <posx>16</posx>
                                 <posy>2</posy>
                                 <width>66</width>
@@ -164,7 +164,7 @@
                         <height>48</height>
                         <texturebg colordiffuse="textboxInactive">colors/black.png</texturebg>
                         <midtexture colordiffuse="highlight">colors/white.png</midtexture>
-                        <info>PVR.backenddiskspaceprogr</info><visible>!IntegerGreaterThan(PVR.backenddiskspaceprogr,100)</visible>
+                        <info>PVR.backenddiskspaceprogr</info><visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
                     </control>
                     <control type="label">
                         <posx>0</posx>

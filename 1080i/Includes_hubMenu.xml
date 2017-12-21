@@ -40,12 +40,11 @@
             <control type="label">
                 <posx>col-1-begin</posx>
                 <posy>row-1-begin</posy>
-                <width>1-col</width>
-                <height>1-col</height>
+                <width>73</width>
+                <height>73</height>
                 <font>symbolVeryLarge</font>
                 <aligny>center</aligny>
                 <textcolor>textActive</textcolor>
-                <shadowcolor></shadowcolor>
                 <label>$VAR[menuLogo]</label>
             </control>
             <control type="list" id="9001">

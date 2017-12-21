@@ -236,7 +236,7 @@
                         <onclick>PlayerControl(next)</onclick>
                     </item>
                     <item>
-                        <enabled>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enabled>
+                        <enabled>System.GetBool(pvrmanager.enabled) + PVR.CanRecordPlayingChannel</enabled>
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>PlayerControl(record)</onclick>

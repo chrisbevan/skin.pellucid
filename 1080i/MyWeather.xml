@@ -39,13 +39,13 @@
                     <label>[COLOR highlight]$LOCALIZE[31200][/COLOR] $INFO[Window.Property(Location)]</label>
                     <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>
-                    <animation type="Conditional" condition="isempty(Window.Property(location))" loop="false" reversible="true">
+                    <animation type="Conditional" condition="String.IsEmpty(Window.Property(location))" loop="false" reversible="true">
                         <effect type="rotatey" end="180" center="auto" tween="back" easing="out" time="2000"/>
                         <effect type="fade" start="100" end="30" time="800"/>
                     </animation>
                 </control>
                 <control type="group">
-                    <animation type="Conditional" condition="isempty(Window.Property(location))" loop="false" reversible="true">
+                    <animation type="Conditional" condition="String.IsEmpty(Window.Property(location))" loop="false" reversible="true">
                         <effect type="rotatey" end="180" center="auto" tween="back" easing="out" time="3500"/>
                         <effect type="fade" start="100" end="30" time="800"/>
                     </animation>
@@ -102,7 +102,7 @@
 
             <!--remaining forecast begins-->
             <control type="group">
-                <animation type="Conditional" condition="isempty(Window.Property(location))" loop="false" reversible="true">
+                <animation type="Conditional" condition="String.IsEmpty(Window.Property(location))" loop="false" reversible="true">
                     <effect type="slide" start="0,0" end="0,400" time="1500" tween="back" easing="out"/>
                     <effect type="fade" start="100" end="0" time="300"/>
                 </animation>

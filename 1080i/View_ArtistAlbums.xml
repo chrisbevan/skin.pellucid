@@ -38,7 +38,7 @@
 						<label>$INFO[container.foldername]</label>
 					</control>
 				</control>
-				<control type="panel" id="50">
+				<control type="panel" id="52">
 					<visible>$EXP[isMusicArtistCatalogue]</visible>
 					<posx>col-1-begin</posx>
 					<posy>row-11-begin</posy>
@@ -72,7 +72,7 @@
 							<colordiffuse>ffFFFFFF</colordiffuse>
 						</control>
 						<control type="textbox">
-							<visible>isempty(listitem.title)</visible>
+							<visible>String.IsEmpty(listitem.title)</visible>
 							<posx>24</posx>
 							<posy>3-row</posy>
 							<width>228</width>
@@ -129,7 +129,7 @@
 								<bordersize>6</bordersize>
 							</control>
 							<control type="textbox">
-								<visible>isempty(listitem.title)</visible>
+								<visible>String.IsEmpty(listitem.title)</visible>
 								<posx>24</posx>
 								<posy>3-row</posy>
 								<width>228</width>

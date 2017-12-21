@@ -9,7 +9,7 @@
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-1-begin</posy>
-            <animation type="Conditional" condition="IntegerGreaterThan(container.numitems,0)">
+            <animation type="Conditional" condition="Integer.IsGreater(container.numitems,0)">
                 <effect type="fade" start="0" end="100" time="300"/>
             </animation>
             <!--source title-->

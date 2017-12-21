@@ -4,31 +4,30 @@
     <!--folder titles-->
     <variable name="listTitle">
         <value condition="Window.isactive(Videos) + Container.Content(musicvideos)">$LOCALIZE[20389] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Videos) + [Container.Content(movies) | container.content(tvshows)] + Substring(Container.folderpath,special://profile/playlists/video)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Videos) + Substring(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011] ,]</value>
+        <value condition="Window.isactive(Videos) + [Container.Content(movies) | container.content(tvshows)] + String.Contains(Container.folderpath,special://profile/playlists/video)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Videos) + String.Contains(Container.folderpath,plugin)">$INFO[container.foldername] $INFO[ListItem.TVShowTitle,- ,] $INFO[ListItem.season,$LOCALIZE[31011] ,]</value>
         <value condition="Window.isactive(Videos) + Container.Content(movies)">$LOCALIZE[20342] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + Container.Content(tvshows)">$LOCALIZE[31216] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Videos) + [Container.Content(seasons) | Container.Content(episodes)]">$LOCALIZE[20343]</value>
-        <value condition="Window.isactive(Videos) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
-        <value condition="Window.isactive(Videos) + isEmpty(container.foldername)">$LOCALIZE[31012]</value>
-        <value condition="Window.isactive(Music) + Substring(Container.folderpath,special://profile/playlists)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE]</value>
-        <value condition="Window.isactive(Music) + Container.Content(albums) + Substring(Container.folderpath,special://profile/playlists/music)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
-        <value condition="Window.isactive(Music) + SubString(container.folderpath,addons://)">$LOCALIZE[31058]</value>
-        <value condition="Window.isactive(Music) + SubString(container.folderpath,plugin://)">$INFO[container.foldername]</value>
+        <value condition="Window.isactive(Videos) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
+        <value condition="Window.isactive(Videos) + String.IsEmpty(container.foldername)">$LOCALIZE[31012]</value>
+        <value condition="Window.isactive(Music) + String.Contains(Container.folderpath,special://profile/playlists)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE]</value>
+        <value condition="Window.isactive(Music) + Container.Content(albums) + String.Contains(Container.folderpath,special://profile/playlists/music)">[CAPITALIZE]$INFO[container.foldername][/CAPITALIZE] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
+        <value condition="Window.isactive(Music) + String.Contains(container.folderpath,addons://)">$LOCALIZE[31058]</value>
+        <value condition="Window.isactive(Music) + String.Contains(container.folderpath,plugin://)">$INFO[container.foldername]</value>
         <value condition="Window.isactive(Music) + Container.Content(albums)">$LOCALIZE[31038] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Music) + Container.Content(artists)">$LOCALIZE[31024] [LOWERCASE][COLOR highlight]$LOCALIZE[31054] $INFO[container.sortmethod] $INFO[Container.SortOrder,(,)][/COLOR][/LOWERCASE]</value>
         <value condition="Window.isactive(Music) + Container.Content(songs)">$LOCALIZE[31182]</value>
-        <value condition="Window.isactive(Music) + !container.content(genres) + SubString(container.folderpath,musicdb://genres)">$LOCALIZE[31199] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
-        <value condition="Window.isactive(Music) + !isEmpty(container.foldername)">$INFO[container.foldername]</value>
-        <value condition="Window.isactive(Music) + isEmpty(container.foldername)">$LOCALIZE[31053]</value>
+        <value condition="Window.isactive(Music) + !container.content(genres) + String.Contains(container.folderpath,musicdb://genres)">$LOCALIZE[31199] [COLOR highlight]$INFO[container.foldername][/COLOR]</value>
+        <value condition="Window.isactive(Music) + !String.IsEmpty(container.foldername)">$INFO[container.foldername]</value>
+        <value condition="Window.isactive(Music) + String.IsEmpty(container.foldername)">$LOCALIZE[31053]</value>
     	<value condition="Window.isactive(Weather)">$LOCALIZE[31197]</value>
 		<value condition="Window.isactive(TVchannels) | Window.isactive(TVGuide)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
 		<value condition="Window.isactive(RadioChannels)">$LOCALIZE[31164] [COLOR highlight]$LOCALIZE[31078][/COLOR]</value>
 		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[31006] [COLOR highlight]$LOCALIZE[31165][/COLOR]</value>
 		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$LOCALIZE[31123]</value>
-		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>
-		
+		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>	
 	</variable>
     <variable name="listSubTitle">
         <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
@@ -38,13 +37,13 @@
 		<value condition="Window.isactive(TVRecordings)">$INFO[container.numitems] $LOCALIZE[31165]</value>
 		<value condition="Window.isactive(programs)">$INFO[container.Numitems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
-		<value condition="Window.isactive(pictures) + IntegerGreaterThan(container.Numitems,0) + Container.HasFolders">$INFO[container.Numitems,, $LOCALIZE[31038]]</value>
-    	<value condition="Window.isactive(pictures) + IntegerGreaterThan(container.Numitems,0) + !Container.HasFolders">$INFO[container.foldername,,] $INFO[container.Numitems,(, $LOCALIZE[31050])]</value>
+		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + Container.HasFolders">$INFO[container.Numitems,, $LOCALIZE[31038]]</value>
+    	<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + !Container.HasFolders">$INFO[container.foldername,,] $INFO[container.Numitems,(, $LOCALIZE[31050])]</value>
 	</variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
         <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
-        <value condition="Container.Content(tvshows) + !isempty(listitem.property(totalseasons))">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
+        <value condition="Container.Content(tvshows) + !String.IsEmpty(listitem.property(totalseasons))">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
         <value condition="Container.Content(seasons)">$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[31189]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
         <value/>
@@ -79,26 +78,26 @@
     </variable>
     <!--Star rating for music tracks-->
     <variable name="starRating">
-        <value condition="stringcompare(MusicPlayer.UserRating,1)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,2)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,3)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,4)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,5)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,6)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,7)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,8)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,9)"></value>
-        <value condition="stringcompare(MusicPlayer.UserRating,10)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,1)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,2)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,3)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,4)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,5)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,6)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,7)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,8)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,9)"></value>
+        <value condition="String.IsEqual(MusicPlayer.UserRating,10)"></value>
         <value></value>
     </variable>
     <!--home background location-->
     <variable name="homeBackgroundLocation">
-        <value condition="!isempty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
+        <value condition="!String.IsEmpty(Skin.String(homeBackground))">$INFO[Skin.String(homeBackground)]</value>
         <value>special://skin/extras/homeBackgrounds</value>
     </variable>
     <!--menu logos-->
     <variable name="menuLogo">
-        <value condition="window.isactive(pictures)"></value>
+        <value condition="Window.IsActive(pictures)"></value>
         <value condition="window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)"></value>
         <value condition="window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)"></value>
     </variable>

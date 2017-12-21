@@ -4,6 +4,7 @@
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload>Skin.SetString(recentitems,video)</onload>
     <include>fadeInOut</include>
+	<views>50,51,52,53,54,58</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->

@@ -7,7 +7,7 @@
     <controls>
         <!--background-->
         <control type="image">
-            <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
@@ -16,7 +16,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
-            <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <include>dimensionsFullscreen</include>
@@ -26,7 +26,7 @@
         </control>
         <!--movie / tv show fanart-->
         <control type="group">
-            <include condition="!Substring(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
+            <include condition="!String.Contains(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
             <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>
@@ -77,7 +77,7 @@
         </control>
         <!--content is movie, music video or tvshow (from XBMC Library)-->
         <control type="group">
-            <visible>!Substring(Container.folderpath,plugin) + !container.content(episodes)</visible>
+            <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
             <posx>1200</posx>
             <posy>0</posy>
             <animation type="Windowopen">
@@ -342,7 +342,7 @@
 
         <!--content is tvshow episode or content is from a plugin-->
         <control type="group">
-            <visible>Substring(Container.folderpath,plugin) | container.content(episodes)</visible>
+            <visible>String.Contains(Container.folderpath,plugin) | container.content(episodes)</visible>
             <!--animations-->
             <include>modalDialogInOut</include>
             <!--thumbnail if available-->
@@ -513,7 +513,7 @@
                             <onclick>sendclick(2003,8)</onclick>
                         </item>
                         <item id="2">
-                            <visible>!Substring(Container.folderpath,plugin)</visible>
+                            <visible>!String.Contains(Container.folderpath,plugin)</visible>
                             <label>31076</label>
                             <label2></label2>
                             <thumb></thumb>

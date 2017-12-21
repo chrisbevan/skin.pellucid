@@ -28,7 +28,7 @@
                 </control>
                 <control type="label" id="401">
                     <description>heading</description>
-                    <visible>!StringCompare(control.getlabel(401),control.getlabel(402))</visible>
+                    <visible>!String.IsEqual(control.getlabel(401),control.getlabel(402))</visible>
                     <posx>24</posx>
                     <posy>0</posy>
                     <font>itemSubTitle</font>
@@ -44,7 +44,7 @@
                     </animation>
                 </control>
                 <control type="label">
-                    <visible>StringCompare(control.getlabel(401),control.getlabel(402))</visible>
+                    <visible>String.IsEqual(control.getlabel(401),control.getlabel(402))</visible>
                     <posx>24</posx>
                     <posy>0</posy>
                     <font>itemSubTitle</font>

@@ -30,7 +30,7 @@
                 <label>$LOCALIZE[1036]</label>
             </control>
             <control type="label">
-                <visible>!IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                <visible>!Integer.IsGreater(Container(450).NumItems,0)</visible>
                 <posx>0</posx>
                 <posy>45</posy>
                 <width>8-col</width>

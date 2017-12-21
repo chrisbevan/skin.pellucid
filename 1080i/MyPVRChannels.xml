@@ -7,6 +7,7 @@
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="300"/>
     </animation>
+	<views>50</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->

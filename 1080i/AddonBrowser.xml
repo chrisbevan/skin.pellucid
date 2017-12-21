@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
+	<views>50,51</views>
     <controls>
         <include>globalBackground</include>
         <control type="group" id="9999">
@@ -174,7 +175,7 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="panel" id="50">
+                <control type="panel" id="51">
                     <visible>!String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>0</posx>
                     <posy>73</posy>
@@ -299,7 +300,7 @@
                         <colordiffuse></colordiffuse>
                     </control>
                     <control type="image">
-                        <visible>!isempty(ListItem.AddonSummary)</visible>
+                        <visible>!String.IsEmpty(ListItem.AddonSummary)</visible>
                         <posx>0</posx>
                         <posy>577</posy>
                         <width>8-col</width>

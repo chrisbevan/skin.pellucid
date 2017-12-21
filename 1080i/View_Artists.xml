@@ -4,7 +4,7 @@
     <include name="musicartist">
         <control type="group">
             <!--content-->
-            <control type="panel" id="50">
+            <control type="panel" id="51">
                 <visible>$EXP[isMusicArtist]</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>

@@ -2,7 +2,7 @@
 <includes>
     <!--Music genre browser-->
     <include name="musicgenre">
-        <control type="panel" id="50">
+        <control type="panel" id="55">
             <visible>$EXP[isMusicGenre]</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
