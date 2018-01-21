@@ -149,25 +149,21 @@
                         <label>$LOCALIZE[562]</label>
                         <label2>$INFO[ListItem.year]</label2>
                         <thumb></thumb>
-                        
                     </item>
                     <item>
                         <label>$LOCALIZE[515]</label>
                         <label2>$INFO[ListItem.genre]</label2>
                         <thumb></thumb>
-                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31146]</label>
                         <label2>$INFO[ListItem.director]</label2>
                         <thumb></thumb>
-                        
                     </item>
                     <item>
                         <label>$LOCALIZE[31193]</label>
                         <label2>$INFO[ListItem.duration,, $LOCALIZE[31018]]</label2>
                         <thumb></thumb>
-                        
                     </item>
                 </content>
             </control>
@@ -182,8 +178,8 @@
                     <align>left</align>
                     <height>115</height>
                     <aligny>center</aligny>
-                    <font>largeLight</font>
-                    <textcolor>textActive</textcolor>
+                    <font>largeStrong</font>
+                    <textcolor>highlight</textcolor>
                     <label>$INFO[listitem.title]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -210,7 +206,7 @@
             </control>
             <!--dialog controls-->
             <control type="panel" id="8000">
-                <posx>0</posx>
+                <posx>12</posx>
                 <posy>23-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
@@ -266,7 +262,7 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>4-col</width>
+                        <width>3-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
@@ -355,9 +351,9 @@
                     <width>12-col</width>
                     <height>486</height>
                     <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-                    <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
-                    <bordertexture border="3" colordiffuse="33FFFFFF">colors/white.png</bordertexture>
-                    <bordersize>3</bordersize>
+                    <texture fallback="colors/black.png">$INFO[Listitem.thumb]</texture>
+                    <bordertexture colordiffuse="11ffffff">colors/white.png</bordertexture>
+                    <bordersize>6</bordersize>
                 </control>
             </control>
             <!--content-->
@@ -373,8 +369,8 @@
                     <height>2-row</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>largeLight</font>
-                    <textcolor>textActive</textcolor>
+                    <font>largeStrong</font>
+                    <textcolor>highlight</textcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>
@@ -385,7 +381,7 @@
                     <width>12-col</width>
                     <orientation>horizontal</orientation>
                     <control type="label">
-                        <width>1-col-gutter</width>
+                        <width>36</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
@@ -398,7 +394,7 @@
                         <aligny>center</aligny>
                         <font>regularStrong</font>
                         <textcolor>textActive</textcolor>
-                        <label fallback="31159">$INFO[listitem.duration,, $LOCALIZE[31018]]</label>
+                        <label fallback="31159">$INFO[listitem.duration]</label>
                     </control>
                 </control>
                 <!--synopsis-->

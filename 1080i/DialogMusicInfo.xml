@@ -103,8 +103,8 @@
 				<align>left</align>
 				<height>115</height>
 				<aligny>center</aligny>
-				<font>largeLight</font>
-				<textcolor>textActive</textcolor>
+				<font>largeStrong</font>
+				<textcolor>highlight</textcolor>
 				<label>$INFO[listitem.artist]</label>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
@@ -161,31 +161,27 @@
 						<label>$LOCALIZE[31140]</label>
 						<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
 						<thumb></thumb>
-						
 					</item>
 					<item>
 						<label>$LOCALIZE[515]</label>
 						<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
 						<thumb></thumb>
-						
 					</item>
 					<item>
 						<label>$LOCALIZE[31141]</label>
 						<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
 						<thumb></thumb>
-						
 					</item>
 					<item>
 						<label>$LOCALIZE[31193]</label>
 						<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
 						<thumb></thumb>
-						
 					</item>
 				</content>
 			</control>
 			<!--dialog controls-->
 			<control type="panel" id="8000">
-				<posx>0</posx>
+				<posx>12</posx>
 				<posy>row-25-begin</posy>
 				<width>10-col</width>
 				<height>4-row</height>
@@ -239,7 +235,7 @@
 					<control type="image">
 						<posx>1-col</posx>
 						<posy>0</posy>
-						<width>4-col</width>
+						<width>3-col</width>
 						<height>2-row</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/white.png</texture>
@@ -350,8 +346,8 @@
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
-	                    <font>largeLight</font>
-	                    <textcolor>textActive</textcolor>
+	                    <font>largeStrong</font>
+	                    <textcolor>highlight</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[listitem.album]</label>
 	                </control>
@@ -409,32 +405,28 @@
 							<label>$LOCALIZE[31149]</label>
 							<label2>$INFO[ListItem.Year]</label2>
 							<thumb></thumb>
-							
 						</item>
 						<item>
 							<label>$LOCALIZE[31150]</label>
 							<label2>$INFO[ListItem.Property(Album_Label)]</label2>
 							<thumb></thumb>
-							
 						</item>
 						<item>
 							<label>$LOCALIZE[31167]</label>
 							<label2>$INFO[ListItem.Genre]</label2>
 							<thumb></thumb>
-							
 						</item>
 						<item>
 							<label>$LOCALIZE[31148]</label>
 							<label2>$INFO[ListItem.Property(Album_Style)]</label2>
 							<thumb></thumb>
-							
 						</item>
 					</content>
 				</control>
 			</control>
 			<!--dialog controls-->
 			<control type="panel" id="8000">
-				<posx>0</posx>
+				<posx>12</posx>
 				<posy>row-25-begin</posy>
 				<width>10-col</width>
 				<height>6-row</height>
@@ -488,7 +480,7 @@
 					<control type="image">
 						<posx>1-col</posx>
 						<posy>0</posy>
-						<width>4-col</width>
+						<width>3-col</width>
 						<height>2-row</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/white.png</texture>

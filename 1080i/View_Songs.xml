@@ -19,8 +19,8 @@
                 <width>8-col</width>
                 <height>8-col</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$VAR[songViewThumb]</texture>
-                <bordertexture border="6" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" >$VAR[songViewThumb]</texture>
+                <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                 <bordersize>6</bordersize>
                 <fadetime>500</fadetime>
             </control>
@@ -33,16 +33,18 @@
                 <width>15-col</width>
                 <height>2-row</height>
                 <font>largeStrong</font>
+				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
                 <label>$VAR[songViewAlbum]</label>
             </control>
             <control type="label">
                 <posx>col-10-begin</posx>
-                <posy>row-7-begin</posy>
+                <posy>row-6-begin</posy>
                 <width>15-col</width>
-                <height>1-row</height>
+                <height>3-row</height>
                 <font>regular</font>
+				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
                 <label>$VAR[songViewArtist]</label>

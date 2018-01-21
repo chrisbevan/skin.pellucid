@@ -55,17 +55,14 @@
                     <item>
                         <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
-                        
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
-                        
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
-                        
                     </item>
                 </content>
             </control>
@@ -89,8 +86,8 @@
                         <width>5-col-gutter</width>
                         <height>5-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/black.png</texture>
-                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                        <texture>colors/black.png</texture>
+                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
@@ -102,7 +99,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ffffffff</colordiffuse>
+                        <colordiffuse>77ffffff</colordiffuse>
                     </control>
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
@@ -125,8 +122,8 @@
                             <width>5-col-gutter</width>
                             <height>5-col-gutter</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">colors/black.png</texture>
-                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <texture>colors/black.png</texture>
+                            <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>FF000000</colordiffuse>
                         </control>
@@ -192,8 +189,8 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/black.png</texture>
-                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                        <texture>colors/black.png</texture>
+                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
@@ -205,7 +202,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <colordiffuse>77ffffff</colordiffuse>
                     </control>
                     <control type="textbox">
                         <visible>String.IsEmpty(listitem.title)</visible>
@@ -239,8 +236,8 @@
 	                        <width>4-col-gutter</width>
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture border="6">colors/black.png</texture>
-	                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+	                        <texture>colors/black.png</texture>
+	                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>FF000000</colordiffuse>
 	                    </control>

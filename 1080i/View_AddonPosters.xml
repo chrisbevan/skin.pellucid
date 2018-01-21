@@ -21,8 +21,8 @@
 						<width>228</width>
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="6">colors/black.png</texture>
-						<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+						<texture>colors/black.png</texture>
+						<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
 						<bordersize>6</bordersize>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
@@ -34,7 +34,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>ffffffff</colordiffuse>
+						<colordiffuse>77ffffff</colordiffuse>
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>
@@ -79,8 +79,8 @@
 							<width>228</width>
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/black.png</texture>
-							<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+							<texture>colors/black.png</texture>
+							<bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 							<bordersize>6</bordersize>
 							<colordiffuse>FF000000</colordiffuse>
 						</control>

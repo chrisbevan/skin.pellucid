@@ -22,7 +22,7 @@
                     <posx>col-1-begin</posx>
                     <posy>row-5-begin</posy>
                     <width>24-col</width>
-                    <height>22-row</height>
+                    <height>23-row</height>
                     <timeblocks>30</timeblocks>
                     <progresstexture border="0,33,18,14">UIControls/PVR-EpgProgressIndicator.png</progresstexture>
                     <rulerunit>6</rulerunit>

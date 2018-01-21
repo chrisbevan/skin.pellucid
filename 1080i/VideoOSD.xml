@@ -74,8 +74,8 @@
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
-	                    <font>largeLight</font>
-	                    <textcolor>textActive</textcolor>
+	                    <font>largeStrong</font>
+	                    <textcolor>highlight</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[videoplayer.title]</label>
 	                </control>

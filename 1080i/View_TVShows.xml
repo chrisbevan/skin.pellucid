@@ -83,8 +83,8 @@
 	                        <width>566</width>
 	                        <height>318</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture border="6">colors/black.png</texture>
-	                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+	                        <texture>colors/black.png</texture>
+	                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
@@ -96,7 +96,7 @@
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>ffffffff</colordiffuse>
+	                        <colordiffuse>77ffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
@@ -131,7 +131,7 @@
 	                            <height>318</height>
 	                            <aspectratio>stretch</aspectratio>
 	                            <texture border="6">colors/black.png</texture>
-	                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+	                            <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
 	                            <bordersize>6</bordersize>
 	                            <colordiffuse>FF000000</colordiffuse>
 	                        </control>
@@ -209,8 +209,8 @@
 						<width>228</width>
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="6">colors/black.png</texture>
-						<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+						<texture>colors/black.png</texture>
+						<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
 						<bordersize>6</bordersize>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
@@ -222,7 +222,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>ffffffff</colordiffuse>
+						<colordiffuse>77ffffff</colordiffuse>
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>
