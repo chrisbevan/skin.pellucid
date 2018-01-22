@@ -33,23 +33,35 @@
                 <width>col-5-begin</width>
                 <height>fullscreenHeight</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>textboxOverlay</colordiffuse>
+                <colordiffuse>33ffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
-            <control type="label">
-                <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
-                <width>73</width>
-                <height>73</height>
-                <font>symbolVeryLarge</font>
-                <aligny>center</aligny>
-                <textcolor>textActive</textcolor>
-                <label>$VAR[menuLogo]</label>
-            </control>
+			<control type="group">
+				<posx>col-1-begin</posx>
+                <posy>row-2-begin</posy>
+				<control type="image">
+	                <posx>0</posx>
+	                <posy>0</posy>
+	                <width>96</width>
+	                <height>96</height>
+	                <texture diffuse="masks/circle.png">colors/white.png</texture>
+	                <aspectratio>stretch</aspectratio>
+	            </control>
+	            <control type="label">
+	                <posx>12</posx>
+	                <posy>8</posy>
+	                <width>73</width>
+	                <height>73</height>
+	                <font>symbolVeryLarge</font>
+	                <aligny>center</aligny>
+	                <textcolor>black</textcolor>
+	                <label>$VAR[menuLogo]</label>
+	            </control>
+			</control>
             <control type="list" id="9001">
                 <posx>0</posx>
-                <posy>row-8-begin</posy>
+                <posy>row-6-begin</posy>
                 <width>col-5-begin</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
