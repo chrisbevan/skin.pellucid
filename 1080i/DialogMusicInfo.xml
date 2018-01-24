@@ -99,12 +99,12 @@
 			<control type="label">
 				<posx>24</posx>
 				<posy>66</posy>
-				<width>684</width>
+				<width>7-col</width>
 				<align>left</align>
 				<height>115</height>
 				<aligny>center</aligny>
-				<font>largeStrong</font>
-				<textcolor>highlight</textcolor>
+				<font>largeTitle</font>
+				<textcolor>textActive</textcolor>
 				<label>$INFO[listitem.artist]</label>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
@@ -346,8 +346,8 @@
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
-	                    <font>largeStrong</font>
-	                    <textcolor>highlight</textcolor>
+	                    <font>largeTitle</font>
+	                    <textcolor>textActive</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[listitem.album]</label>
 	                </control>
@@ -570,7 +570,7 @@
 					<height>3-row</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>largeLight</font>
+					<font>largeTitle</font>
 					<textcolor>textActive</textcolor>
 					<shadowcolor></shadowcolor>
 					<label>$INFO[ListItem.title]</label>

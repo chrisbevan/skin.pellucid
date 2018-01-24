@@ -32,7 +32,7 @@
                 <posy>row-5-begin</posy>
                 <width>15-col</width>
                 <height>2-row</height>
-                <font>largeStrong</font>
+                <font>largeTitle</font>
 				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>

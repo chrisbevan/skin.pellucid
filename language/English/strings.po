@@ -944,3 +944,11 @@ msgstr ""
 msgctxt "#31229"
 msgid "Play Music"
 msgstr ""
+
+msgctxt "#31230"
+msgid "Game Settings"
+msgstr ""
+
+msgctxt "#31231"
+msgid "Game related options"
+msgstr ""

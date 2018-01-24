@@ -162,7 +162,7 @@
                     </item>
                     <item>
                         <label>$LOCALIZE[31193]</label>
-                        <label2>$INFO[ListItem.duration,, $LOCALIZE[31018]]</label2>
+                        <label2>$INFO[ListItem.duration]</label2>
                         <thumb></thumb>
                     </item>
                 </content>
@@ -174,12 +174,12 @@
                 <control type="label">
                     <posx>0</posx>
                     <posy>-6</posy>
-                    <width>660</width>
+                    <width>7-col</width>
                     <align>left</align>
                     <height>115</height>
                     <aligny>center</aligny>
-                    <font>largeStrong</font>
-                    <textcolor>highlight</textcolor>
+                    <font>largeTitle</font>
+                    <textcolor>textActive</textcolor>
                     <label>$INFO[listitem.title]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -369,8 +369,8 @@
                     <height>2-row</height>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <font>largeStrong</font>
-                    <textcolor>highlight</textcolor>
+                    <font>largeTitle</font>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                     <wrapmultiline>true</wrapmultiline>

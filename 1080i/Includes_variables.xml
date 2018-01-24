@@ -30,19 +30,19 @@
 		<value condition="Window.isactive(pictures)">$LOCALIZE[31056]</value>	
 	</variable>
     <variable name="listSubTitle">
-        <value condition="Window.isactive(Videos)">$INFO[container.Numitems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
-        <value condition="Window.isactive(Music)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
+        <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
+        <value condition="Window.isactive(Music)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(Weather)">$LOCALIZE[31212] $INFO[Window.Property(WeatherProvider)]</value>
 		<value condition="Window.isactive(TVchannels) | Window.isactive(RadioChannels) | Window.isactive(TVGuide)">$INFO[Pvr.BackendChannels] $LOCALIZE[31017] ($INFO[control.getlabel(29)])</value>
-		<value condition="Window.isactive(TVRecordings)">$INFO[container.numitems] $LOCALIZE[31165]</value>
-		<value condition="Window.isactive(programs)">$INFO[container.Numitems,, $LOCALIZE[31145]]</value>
-		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.Numitems,, $LOCALIZE[31014]]</value>
-		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + Container.HasFolders">$INFO[container.Numitems,, $LOCALIZE[31038]]</value>
-    	<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + !Container.HasFolders">$INFO[container.foldername,,] $INFO[container.Numitems,(, $LOCALIZE[31050])]</value>
+		<value condition="Window.isactive(TVRecordings)">$INFO[container.NumAllItems] $LOCALIZE[31165]</value>
+		<value condition="Window.isactive(programs)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
+		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
+		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + Container.HasFolders">$INFO[container.NumAllItems,, $LOCALIZE[31038]]</value>
+    	<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + !Container.HasFolders">$INFO[container.foldername,,] $INFO[container.NumAllItems,(, $LOCALIZE[31050])]</value>
 	</variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
-        <value condition="Container.Content(movies)">$INFO[Listitem.duration,, $LOCALIZE[31018]]</value>
+        <value condition="Container.Content(movies)">$INFO[Listitem.duration]</value>
         <value condition="Container.Content(tvshows) + !String.IsEmpty(listitem.property(totalseasons))">[B]$INFO[ListItem.Property(TotalSeasons)][/B] $LOCALIZE[31188] • [B]$INFO[ListItem.Property(NumEpisodes)][/B] $LOCALIZE[31189]</value>
         <value condition="Container.Content(seasons)">$INFO[ListItem.Property(TotalEpisodes)] $LOCALIZE[31189]</value>
         <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>

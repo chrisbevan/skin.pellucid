@@ -30,7 +30,7 @@
                     <height>2-row</height>
                     <align>center</align>
                     <aligny>top</aligny>
-                    <font>largeStrong</font>
+                    <font>largeTitle</font>
                     <textcolor>77FFFFFF</textcolor>
                 </control>
                 <control type="label" id="314">

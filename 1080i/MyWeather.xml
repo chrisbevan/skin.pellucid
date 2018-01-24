@@ -62,7 +62,7 @@
                         <posy>4-row</posy>
                         <width>21-col</width>
                         <height>2-row</height>
-                        <font>largeStrong</font>
+                        <font>largeTitle</font>
                         <label>$LOCALIZE[31026]: $INFO[Window.Property(Day0.Outlook)]</label>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>

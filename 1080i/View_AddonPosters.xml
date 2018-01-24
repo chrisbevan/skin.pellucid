@@ -42,7 +42,7 @@
 						<posy>3-row</posy>
 						<width>228</width>
 						<height>6-row</height>
-						<font>largeStrong</font>
+						<font>largeTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>textActive</textcolor>
 						<label>$INFO[ListItem.label]</label>
@@ -99,7 +99,7 @@
 							<posy>3-row</posy>
 							<width>228</width>
 							<height>6-row</height>
-							<font>largeStrong</font>
+							<font>largeTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.label]</label>

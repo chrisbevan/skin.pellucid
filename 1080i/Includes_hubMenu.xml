@@ -32,36 +32,28 @@
                 <posy>0</posy>
                 <width>col-5-begin</width>
                 <height>fullscreenHeight</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>33ffffff</colordiffuse>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--logo-->
 			<control type="group">
 				<posx>col-1-begin</posx>
                 <posy>row-2-begin</posy>
-				<control type="image">
-	                <posx>0</posx>
-	                <posy>0</posy>
-	                <width>96</width>
-	                <height>96</height>
-	                <texture diffuse="masks/circle.png">colors/white.png</texture>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
 	            <control type="label">
-	                <posx>12</posx>
-	                <posy>8</posy>
+	                <posx>0</posx>
+	                <posy>-12</posy>
 	                <width>73</width>
 	                <height>73</height>
 	                <font>symbolVeryLarge</font>
 	                <aligny>center</aligny>
-	                <textcolor>black</textcolor>
+	                <textcolor>eeffffff</textcolor>
 	                <label>$VAR[menuLogo]</label>
 	            </control>
 			</control>
             <control type="list" id="9001">
                 <posx>0</posx>
-                <posy>row-6-begin</posy>
+                <posy>row-5-begin</posy>
                 <width>col-5-begin</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
@@ -74,9 +66,9 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <height>2-row</height>
-                        <font>itemTitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>eeffffff</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>
@@ -85,10 +77,19 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
+                        <width>82</width>
+                        <height>2-row</height>
+                        <texture>colors/white.png</texture>
+						<bordertexture colordiffuse="highlight">colors/white.png</bordertexture>
+		                <bordersize>0,0,3,0</bordersize>
+                        <aspectratio>stretch</aspectratio>
+                    </control>
+					<control type="image">
+                        <posx>81</posx>
+                        <posy>0</posy>
                         <width>col-5-begin</width>
                         <height>2-row</height>
                         <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="label">
@@ -96,9 +97,9 @@
                         <posy>0</posy>
                         <width>4-col-gutter</width>
                         <height>2-row</height>
-                        <font>itemTitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
-                        <textcolor>textActive</textcolor>
+                        <textcolor>highlight</textcolor>
                         <shadowcolor></shadowcolor>
                         <label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
                     </control>

@@ -93,7 +93,7 @@
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>largeStrong</font>
+                            <font>largeTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>..</label>
                         </control>
@@ -164,7 +164,7 @@
                                 <height>2-row</height>
                                 <align>center</align>
                                 <aligny>center</aligny>
-                                <font>largeStrong</font>
+                                <font>largeTitle</font>
                                 <textcolor>textActive</textcolor>
                                 <label>..</label>
                             </control>

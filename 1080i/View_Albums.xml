@@ -28,7 +28,7 @@
                         <posy>0</posy>
                         <width>234</width>
                         <height>2-row</height>
-                        <font>pageSubtitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textDisabled</textcolor>
                         <shadowcolor></shadowcolor>
@@ -41,7 +41,7 @@
                         <posy>0</posy>
                         <width>234</width>
                         <height>2-row</height>
-                        <font>pageSubtitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
@@ -165,7 +165,7 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <font>pageSubtitle</font>
+                <font>menuTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31223]</label>
             </control>
@@ -210,7 +210,7 @@
                         <posy>3-row</posy>
                         <width>228</width>
                         <height>6-row</height>
-                        <font>largeStrong</font>
+                        <font>largeTitle</font>
 						<wrapmultiline>true</wrapmultiline>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
@@ -256,7 +256,7 @@
 	                        <posy>3-row</posy>
 	                        <width>228</width>
 	                        <height>6-row</height>
-	                        <font>largeStrong</font>
+	                        <font>largeTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 	                        <textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.label]</label>

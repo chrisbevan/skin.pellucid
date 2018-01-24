@@ -15,8 +15,13 @@
 - [COMPLETE] Player.CanRecord -> PVR.CanRecordPlayingChannel
 - [COMPLETE] ListItem.ChannelNumber -> ListItem.ChannelNumberLabel
 - [COMPLETE] isempty() -> string.isempty()
+- [COMPLETE] listitem.duration string adjustments
+- [COMPLETE] playlist.random checked
+- [COMPLETE] Player.recording checked
+- [COMPLETE] PVR.time/duration/progress checked
+- [COMPLETE] Games settings
 
-
+[complete up to DialogPVRGroupManager.xml section]
 
 - new window: MyGames.xml
 

@@ -73,7 +73,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemTitle</font>
+                        <font>settingsCategory</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -116,7 +116,7 @@
                         <width>5-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
-                        <font>itemTitle</font>
+                        <font>settingsCategory</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
@@ -168,11 +168,11 @@
                         <onclick>activatewindow(InterfaceSettings)</onclick>
                     </item>
                     <item>
-                        <description>Skin settings</description>
-                        <label>$LOCALIZE[20077]</label>
-                        <label2></label2>
-                        <property name="label3">$LOCALIZE[31083]</property>
-                        <onclick>activatewindow(SkinSettings)</onclick>
+                        <description>Game settings</description>
+                        <label>$LOCALIZE[31230]</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31231]</property>
+                        <onclick>activatewindow(gamesettings)</onclick>
                     </item>
                     <item>
                         <description>Profiles</description>

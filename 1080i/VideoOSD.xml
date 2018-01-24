@@ -74,7 +74,7 @@
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
-	                    <font>largeStrong</font>
+	                    <font>largeTitle</font>
 	                    <textcolor>highlight</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[videoplayer.title]</label>
@@ -239,7 +239,7 @@
                         <enabled>System.GetBool(pvrmanager.enabled) + PVR.CanRecordPlayingChannel</enabled>
                         <label2></label2>
                         <thumb></thumb>
-                        <onclick>PlayerControl(record)</onclick>
+                        <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </item>
                 </content>
             </control>

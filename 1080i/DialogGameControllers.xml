@@ -57,9 +57,9 @@
             </control>
             <control type="gamecontroller" id="31">
                 <posx>5-col</posx>
-                <posy>5-row</posy>
+                <posy>3-row</posy>
                 <width>8-col</width>
-                <height>343</height>
+                <height>8-col</height>
             </control>
             <!--dialog buttons-->
             <control type="panel" id="9001">

@@ -77,7 +77,7 @@
         <!--title-->
         <control type="group">
             <posx>col-13-begin</posx>
-            <posy>row-6-begin</posy>
+            <posy>row-5-begin</posy>
             <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <control type="label">
                 <posx>24</posx>
@@ -85,9 +85,19 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <align></align>
-                <font>medium</font>
+                <font>largeTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>[B]$INFO[Container.ShowTitle][/B][CR]$INFO[listitem.Season,$LOCALIZE[31011] , ]</label>
+                <label>$INFO[Container.ShowTitle]</label>
+            </control>
+			<control type="label">
+                <posx>24</posx>
+                <posy>2-row</posy>
+                <width>12-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>menuTitle</font>
+                <textcolor>menuUnselected</textcolor>
+                <label>$INFO[listitem.Season,$LOCALIZE[31011] , ]</label>
             </control>
         </control>
         <!--episode synopsis & thumb-->
@@ -96,11 +106,10 @@
             <control type="fixedlist" id="53">
                 <visible>$EXP[isEpisode]</visible>
                 <posx>978</posx>
-                <posy>row-10-begin</posy>
+                <posy>row-9-begin</posy>
                 <width>12-col</width>
                 <height>19-row</height>
                 <onleft>9000</onleft>
-                
 				<movement>4</movement>
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">
