@@ -56,15 +56,6 @@
 					<width>5-row</width>
 					<height>182</height>
 					<aspectratio>stretch</aspectratio>
-					<texture border="0">DefaultAlbumCover.png</texture>
-					<colordiffuse>textboxInactive</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>5-row</width>
-					<height>182</height>
-					<aspectratio>stretch</aspectratio>
 					<texture border="6">$INFO[player.art(thumb)]</texture>
 					<colordiffuse>ffffffff</colordiffuse>
 				</control>
@@ -85,7 +76,7 @@
 						<posy>0</posy>
 						<width>542</width>
 						<height>2-row</height>
-						<font>regularStrong</font>
+						<font>dialogTitle</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[MusicPlayer.Title]</label>

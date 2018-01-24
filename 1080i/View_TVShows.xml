@@ -22,11 +22,11 @@
 	                <ondown>9203</ondown>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-	                <itemlayout width="4-col-gutter" height="2-row">
+	                <itemlayout width="4-col" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>4-col-gutter</width>
+	                        <width>4-col</width>
 	                        <height>2-row</height>
 	                        <font>menuTitle</font>
 	                        <aligny>center</aligny>
@@ -35,11 +35,11 @@
 	                        <label>$INFO[ListItem.property(textTitle)]</label>
 	                    </control>
 	                </itemlayout>
-	                <focusedlayout width="4-col-gutter" height="2-row">
+	                <focusedlayout width="4-col" height="2-row">
 	                    <control type="label">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>4-col-gutter</width>
+	                        <width>4-col</width>
 	                        <height>2-row</height>
 	                        <font>menuTitle</font>
 	                        <aligny>center</aligny>
@@ -73,7 +73,7 @@
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-					<onclick>activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid])</onclick>
+					<onclick>activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid]/)</onclick>
 	                <itemlayout width="586" height="5-col-gutter">
 	                    <control type="image">
 	                        <posx>0</posx>

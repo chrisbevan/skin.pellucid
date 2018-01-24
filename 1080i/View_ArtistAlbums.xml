@@ -8,7 +8,7 @@
 			<control type="image">
 				<include>dimensionsFullscreen</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture background="true" border="0">$INFO[container.Art(artist.fanart)]</texture>
+				<texture border="0">$INFO[Container.Art(fanart)]</texture>
 				<fadetime>0</fadetime>
 				<colordiffuse>66ffffff</colordiffuse>
 			</control>
@@ -43,11 +43,11 @@
                     <posy>row-8-begin</posy>
 					<control type="label">
                         <posx>0</posx>
-                        <posy>0</posy>
+                        <posy>4-row</posy>
                         <width>10-col</width>
                         <height>4-row</height>
-                        <font>veryLarge</font>
-                        <textcolor>44ffffff</textcolor>
+                        <font>largeTitle</font>
+                        <textcolor>textActive</textcolor>
 						<aligny>center</aligny>
                         <shadowcolor></shadowcolor>
                         <wrapmultiline>true</wrapmultiline>

@@ -952,3 +952,7 @@ msgstr ""
 msgctxt "#31231"
 msgid "Game related options"
 msgstr ""
+
+msgctxt "#31232"
+msgid "Games"
+msgstr ""

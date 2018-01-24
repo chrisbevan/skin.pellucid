@@ -43,7 +43,7 @@
                 <posy>row-6-begin</posy>
                 <width>15-col</width>
                 <height>3-row</height>
-                <font>regular</font>
+                <font>menuTitle</font>
 				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>

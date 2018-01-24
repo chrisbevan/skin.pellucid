@@ -100,30 +100,22 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="image">
-                    <posx>12</posx>
-                    <posy>12</posy>
-                    <width>2-col-gutter</width>
-                    <height>2-col-gutter</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-                </control>
                 <control type="label">
                     <description>Addon Title</description>
-                    <posx>2-col</posx>
+                    <posx>12</posx>
                     <posy>12</posy>
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <font>mediumStrong</font>
-                    <label>$INFO[ListItem.addonname]$INFO[ListItem.addonversion, (,)]</label>
+                    <font>menuTitle</font>
+                    <label>[B]$INFO[ListItem.addonname]$INFO[ListItem.addonversion, (,)][/B]</label>
                 </control>
                 <control type="label">
-                    <posx>2-col</posx>
-                    <posy>84</posy>
+                    <posx>12</posx>
+                    <posy>72</posy>
                     <width>9-col</width>
-                    <font>buttonTitle</font>
-                    <textcolor>textDisabled</textcolor>
+                    <font>menuTitle</font>
+                    <textcolor>menuUnselected</textcolor>
                     <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
                 </control>
                 <control type="textbox" id="400">

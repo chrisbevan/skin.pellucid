@@ -144,6 +144,12 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
+            <name>playlistSubTitle</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
             <name>itemSubTitleCondensed</name>
             <filename>roboto/condensedBold.ttf</filename>
             <size>26</size>

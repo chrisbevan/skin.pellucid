@@ -24,6 +24,7 @@
 [complete up to DialogPVRGroupManager.xml section]
 
 - new window: MyGames.xml
+- new menu needs building for games section
 
 - new dialog: GameOSD.xml
 

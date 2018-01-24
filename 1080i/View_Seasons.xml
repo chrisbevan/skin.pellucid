@@ -29,8 +29,8 @@
                         <posy>0</posy>
                         <width>10-col</width>
                         <height>4-row</height>
-                        <font>veryLarge</font>
-                        <textcolor>44ffffff</textcolor>
+                        <font>largeTitle</font>
+                        <textcolor>textActive</textcolor>
 						<aligny>center</aligny>
                         <shadowcolor></shadowcolor>
                         <wrapmultiline>true</wrapmultiline>

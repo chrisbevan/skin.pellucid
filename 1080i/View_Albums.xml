@@ -22,11 +22,11 @@
                 <ondown>9998</ondown>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <itemlayout width="234" height="2-row">
+                <itemlayout width="246" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>234</width>
+                        <width>246</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -35,11 +35,11 @@
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="234" height="2-row">
+                <focusedlayout width="246" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>234</width>
+                        <width>246</width>
                         <height>2-row</height>
                         <font>menuTitle</font>
                         <aligny>center</aligny>
@@ -77,7 +77,7 @@
                 <onleft>9000</onleft>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID],return)</onclick>
+                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
                 <itemlayout width="348" height="5-col-gutter">
                     <control type="image">
