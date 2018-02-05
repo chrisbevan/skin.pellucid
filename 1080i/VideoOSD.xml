@@ -1,383 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8001</defaultcontrol>
-    <onload>Control.SetFocus(8001,3)</onload>
+    <onload>Control.SetFocus(8001)</onload>
     <controls>
-        <control type="label">
-            <posx>col-1-begin</posx>
-            <posy>row-1-begin</posy>
-            <width>12-col</width>
-            <font>pageTitle</font>
-            <label>$INFO[System.Time]</label>
-            <textcolor>textActive</textcolor>
-        </control>
-        <control type="label">
-            <posx>col-1-begin</posx>
-            <posy>96</posy>
-            <width>12-col</width>
-            <font>pageSubTitle</font>
-            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
-            <textcolor>textActive</textcolor>
-        </control>
-        <control type="group">
-            <posx>1176</posx>
-            <posy>0</posy>
-            <animation type="Windowopen">
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
-            </animation>
-            <animation type="windowClose">
-                <effect type="slide" start="0" end="900" tween="cubic" easing="in" time="400"/>
-            </animation>
-            <!--fade out if audio / video menu active-->
+		<control type="group">
+			<posx>col-1-begin</posx>
+            <posy>row-21-begin</posy>
+			<!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
                 <effect type="fade" start="100" end="0" time="350"/>
-                <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
+                <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
-            <!--overlay-->
-            <control type="image">
-                <posx>0</posx>
+			<animation type="windowopen">
+                <effect type="fade" start="0" end="100" time="350"/>
+                <effect type="slide" start="0,300" end="0,0" tween="cubic" easing="out" time="400"/>
+            </animation>
+			<animation type="windowclose">
+                <effect type="fade" start="100" end="0" time="350"/>
+                <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
+            </animation>
+			<control type="image">
+                <posx>-96</posx>
                 <posy>0</posy>
-                <width>12-col</width>
-                <height>fullscreenHeight</height>
+                <width>fullscreenWidth</width>
+                <height>2-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>aa111111</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="image">
+                <posx>-96</posx>
+                <posy>2-row</posy>
+				<width>fullscreenWidth</width>
+                <height>143</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>aa111111</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="image">
+                <posx>-96</posx>
+                <posy>6-row</posy>
+                <width>fullscreenWidth</width>
+                <height>2-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>cc111111</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-6</posx>
+			<control type="label">
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>6</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="group">
-                <posx>36</posx>
-                <posy>row-1-begin</posy>
-                <control type="grouplist">
-					<posx>0</posx>
-                    <posy>0</posy>
-					<orientation>vertical</orientation>
-					<itemgap>24</itemgap>
-					<control type="label">
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>1-row</height>
-	                    <aligny>center</aligny>
-	                    <font>itemTitle</font>
-	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]</label>
-	                </control>
-					<control type="label">
-	                    <width>8-col</width>
-	                    <align>left</align>
-	                    <height>3-row</height>
-	                    <aligny>center</aligny>
-	                    <font>largeTitle</font>
-	                    <textcolor>highlight</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-	                    <label>$INFO[videoplayer.title]</label>
-	                </control>
-				</control>
-                <!--player position-->
-                <control type="progress">
-                    <description>Progress Bar</description>
-                    <posx>150</posx>
-                    <posy>212</posy>
-                    <width>312</width>
-                    <height>12</height>
-                    <texturebg>colors/white.png</texturebg>
-                    <midtexture colordiffuse="highlight">colors/white.png</midtexture>
-                    <info>Player.Progress</info>
-                </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>5-row</posy>
-                    <width>8-col</width>
-                    <height>2-row</height>
-                    <font>pageSubTitle</font>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[Videoplayer.time][/B]</label>
-                    <scroll>false</scroll>
-                </control>
-                <control type="label">
-                    <right>col-1-begin</right>
-                    <posy>5-row</posy>
-                    <width>8-col</width>
-                    <height>2-row</height>
-                    <font>pageSubTitle</font>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[Videoplayer.duration][/B]</label>
-                    <scroll>false</scroll>
-                </control>
-                <!--synopsis-->
-                <control type="textbox">
-                    <posx>0</posx>
-                    <posy>8-row</posy>
-                    <font>textbox</font>
-                    <width>624</width>
-                    <align>left</align>
-                    <textcolor>textActive</textcolor>
-                    <height>348</height>
-                    <label fallback="31205">$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,. ]$INFO[videoplayer.plot]</label>
-                    <autoscroll>false</autoscroll>
-                    <shadowcolor></shadowcolor>
-                    <pagecontrol>61</pagecontrol>
-                </control>
-                <control type="scrollbar" id="61">
-                    <posx>60r</posx>
-                    <posy>9-row</posy>
-                    <height>7-row</height>
-                    <ondown>8001</ondown>
-                </control>
-            </control>
-            <!--player controls-->
-            <control type="panel" id="8001">
-                <posx>36</posx>
-                <posy>row-20-begin</posy>
-                <width>10-col</width>
+                <align>left</align>
+				<width>19-col</width>
                 <height>2-row</height>
-                <itemgap>0</itemgap>
-                <ondown>Control.SetFocus(8002,0)</ondown>
-                <onup>Control.SetFocus(61)</onup>
-                <orientation>horizontal</orientation>
-                <itemlayout width="92" height="2-row">
-					<control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <colordiffuse>overlay</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="92" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor></shadowcolor>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item>
-                        <description>Previous</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(previous)</onclick>
-                    </item>
-                    <item>
-                        <description>Rewind</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(rewind)</onclick>
-                    </item>
-                    <item>
-                        <description>Stop</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(stop)</onclick>
-                    </item>
-                    <item>
-                        <visible>Player.Playing | player.forwarding | player.rewinding</visible>
-                        <description>Play/Pause</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(play)</onclick>
-                    </item>
-                    <item>
-                        <visible>Player.Paused</visible>
-                        <description>Pause</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(play)</onclick>
-                    </item>
-                    <item>
-                        <description>Fast forward</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(forward)</onclick>
-                    </item>
-                    <item>
-                        <description>Next Chapter</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(next)</onclick>
-                    </item>
-                    <item>
-                        <enabled>System.GetBool(pvrmanager.enabled) + PVR.CanRecordPlayingChannel</enabled>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PVR.ToggleRecordPlayingChannel</onclick>
-                    </item>
-                </content>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>[COLOR highlight]$INFO[videoplayer.TVShowTitle,, ]$INFO[VideoPlayer.ChannelName,, ][/COLOR]$INFO[videoplayer.title]</label>
             </control>
-            <!--menu items-->
-            <control type="panel" id="8002">
-                <posx>24</posx>
-                <posy>row-23-begin</posy>
-                <width>9-col</width>
-                <height>12-row</height>
-                <itemgap>0</itemgap>
-                <onup>8001</onup>
-                <itemlayout width="324" height="2-row">
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>0</posy>
-                        <width>224</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="324" height="2-row">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>1-col</posx>
-                        <posy>0</posy>
-                        <width>252</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>eeffffff</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor></shadowcolor>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
-                        <posy>0</posy>
-                        <width>224</width>
-                        <height>2-row</height>
-                        <aligny>center</aligny>
-                        <font>itemSubTitle</font>
-                        <textcolor>black</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item>
-                        <visible>VideoPlayer.HasMenu</visible>
-                        <label>31051</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(ShowVideoMenu)</onclick>
-                    </item>
-                    <item>
-                        <description>Download subtitles</description>
-                        <label>31154</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
-                    </item>
-                    <item>
-                        <description>Enable Subtitles</description>
-                        <visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>
-                        <label>24012</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ShowSubtitles</onclick>
-                    </item>
-                    <item>
-                        <description>Disable Subtitles</description>
-                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-                        <label>31161</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ShowSubtitles</onclick>
-                    </item>
-                    <item>
-                        <description>Adjust subtitle offset</description>
-                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-                        <label>31202</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>SubtitleDelay</onclick>
-                    </item>
-                    <item>
-                        <description>Video Settings</description>
-                        <label>31191</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdvideosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Audio Settings</description>
-                        <label>31177</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdaudiosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Bookmarks</description>
-                        <label>298</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(videobookmarks)</onclick>
-                    </item>
-                </content>
+			<control type="label">
+                <posx>24-col</posx>
+                <posy>-3</posy>
+                <width>8-col</width>
+                <height>2-row</height>
+                <font>itemTitle</font>
+				<align>right</align>
+                <aligny>center</aligny>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                <scroll>false</scroll>
+            </control>          
+			<control type="textbox">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <font>textbox</font>
+                <width>1706</width>
+                <align>left</align>
+                <textcolor>textActive</textcolor>
+                <height>120</height>
+                <label fallback="31205">$INFO[videoplayer.plot]</label>
+                <autoscroll>false</autoscroll>
+                <shadowcolor></shadowcolor>
             </control>
+			<!--dialog controls-->
+			<control type="grouplist" id="8001">
+				<posx>0</posx>
+                <posy>6-row</posy>
+				<orientation>horizontal</orientation>
+				<itemgap>12</itemgap>
+				<onleft>8001</onleft>
+				<control type="button" id="8">
+					<visible>VideoPlayer.HasMenu</visible> 
+                    <description>DVD Menu</description>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31051</label>
+                    <onclick>PlayerControl(ShowVideoMenu)</onclick>
+		        </control>
+				<control type="button" id="7">
+					<visible>PVR.CanRecordPlayingChannel</visible>
+                    <description>Record</description>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31201</label>
+                    <onclick>PVR.ToggleRecordPlayingChannel</onclick>
+		        </control>
+				<control type="button" id="1">
+					<description>Download subtitles</description>		            
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+		            <width>auto</width>
+					<font>itemSubtitle</font>
+					<label>31154</label>
+					<onclick>ActivateWindow(SubtitleSearch)</onclick>
+		        </control>
+				<control type="button" id="2">
+					<description>Enable Subtitles</description>
+					<visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>		            
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+					<label>24012</label>
+					<onclick>ShowSubtitles</onclick>
+		        </control>
+				<control type="button" id="3">
+                    <description>Disable Subtitles</description>
+                    <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31161</label>
+					<onclick>ShowSubtitles</onclick>
+		        </control>
+				<control type="button" id="4">
+                    <description>Adjust subtitle offset</description>
+                    <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31202</label>
+                    <onclick>SubtitleDelay</onclick>
+		        </control>
+				<control type="button" id="5">
+                    <description>Video Settings</description>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31191</label>
+                    <onclick>ActivateWindow(osdvideosettings)</onclick>
+		        </control>
+                <control type="button" id="6">
+                    <description>Audio Settings</description>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>31177</label>
+                    <onclick>ActivateWindow(osdaudiosettings)</onclick>
+		        </control>
+				<control type="button" id="9">
+                    <description>Bookmarks</description>
+					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+		            <focusedcolor>textActive</focusedcolor>
+					<font>itemSubtitle</font>
+		            <width>auto</width>
+                    <label>298</label>
+                    <onclick>ActivateWindow(videobookmarks)</onclick>
+		        </control>
+			</control>			
+		</control>
+		
+		<!--page header-->
+        <control type="group">
+			<include>pageHeader</include>    
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

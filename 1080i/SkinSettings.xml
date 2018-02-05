@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -95,15 +95,12 @@
                     <content>
                         <item id="1">
                             <label>$LOCALIZE[128]</label>
-                            
                         </item>
                         <item id="2">
                             <label>$LOCALIZE[31170]</label>
-                            
                         </item>
                         <item id="3">
                             <label>$LOCALIZE[31044]</label>
-                            
                         </item>
                     </content>
                 </control>
@@ -220,7 +217,14 @@
                     <label>31174</label>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
                 </control>
-                <control type="radiobutton" id="16">
+				<control type="button" id="16">
+                    <visible>Container(8000).Hasfocus(2)</visible>
+                    <description>Edit games menu</description>
+                    <width>14-col</width>
+                    <label>31233</label>
+                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
+                </control>
+                <control type="radiobutton" id="17">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Extended Fanart</description>
                     <width>14-col</width>

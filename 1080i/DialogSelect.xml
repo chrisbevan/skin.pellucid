@@ -150,13 +150,12 @@
                             </control>
                         </focusedlayout>
                     </control>
-
                     <!--skin selection etc-->
                     <control type="panel" id="6">
                         <posx>0</posx>
                         <posy>73</posy>
                         <width>12-col</width>
-                        <height>18-row</height>
+                        <height>19-row</height>
                         <onright>9999</onright>
                         <itemlayout height="72" width="12-col">
                             <control type="image">

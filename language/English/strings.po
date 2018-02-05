@@ -956,3 +956,11 @@ msgstr ""
 msgctxt "#31232"
 msgid "Games"
 msgstr ""
+
+msgctxt "#31233"
+msgid "Edit game section menu"
+msgstr ""
+
+msgctxt "#31234"
+msgid "Game Addons"
+msgstr ""

@@ -42,12 +42,14 @@
 				</control>
 			</control>
 			<!--Track info-->
-			<!--Track info-->
 			<control type="group">
 				<posx>col-1-begin</posx>
 				<posy>row-23-begin</posy>
 				<animation type="conditional" condition="!String.IsEqual(MusicPlayer.Time,00:00)">
 					<effect type="slide" start="0,500" end="0,0" tween="sine" time="400"/>
+				</animation>
+				<animation type="conditional" condition="true">
+					<effect type="fade" end="60" time="0"/>
 				</animation>
 				<!--coverart (or channel art if radio)-->
 				<control type="image">
