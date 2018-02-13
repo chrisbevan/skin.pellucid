@@ -26,6 +26,8 @@
 
 - check controls for new window: MyGames.xml
 
+- musicvideos
+
 - Screenshots etc need updating
 
 - global search needs updating

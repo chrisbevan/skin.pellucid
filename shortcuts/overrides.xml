@@ -12,32 +12,32 @@
 	</override>
 	<override action="ActivateWindow(Videos,videodb://movies/titles/)" group="mainmenu">
 		<action>::ACTION::</action>
-		<action>control.setfocus(9103)</action>
+		<action>control.setfocus(9103,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Videos,videodb://movies/titles/)" group="videosubmenu">
 		<condition>!window.isactive(videos)</condition>
 		<action>::ACTION::</action>
-		<action>control.setfocus(9103)</action>
+		<action>control.setfocus(9103,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Videos,videodb://movies/titles/)" group="videosubmenu">
 		<condition>window.isactive(videos)</condition>
 		<action>Container.Update(videodb://movies/titles/)</action>
-		<action>control.setfocus(9103)</action>
+		<action>control.setfocus(9103,0,absolute)</action>
 	</override>
 	
 	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="mainmenu">
 		<action>::ACTION::</action>
-		<action>control.setfocus(9203)</action>
+		<action>control.setfocus(9203,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="videosubmenu">
 		<condition>!window.isactive(videos)</condition>
 		<action>::ACTION::</action>
-		<action>control.setfocus(9203)</action>
+		<action>control.setfocus(9203,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="videosubmenu">
 		<condition>window.isactive(videos)</condition>
 		<action>Container.Update(videodb://tvshows/titles/)</action>
-		<action>control.setfocus(9203)</action>
+		<action>control.setfocus(9203,0,absolute)</action>
 	</override>
 	
 	<override action="ActivateWindow(Music,musicdb://artists/)" group="musicsubmenu">
@@ -51,17 +51,17 @@
 	
 	<override action="ActivateWindow(Music,musicdb://albums/)" group="mainmenu">
 		<action>::ACTION::</action>
-		<action>control.setfocus(9998)</action>
+		<action>control.setfocus(9998,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Music,musicdb://albums/)" group="musicsubmenu">
 		<condition>!window.isactive(music)</condition>
 		<action>::ACTION::</action>
-		<action>control.setfocus(9998)</action>
+		<action>control.setfocus(9998,0,absolute)</action>
 	</override>
 	<override action="ActivateWindow(Music,musicdb://albums/)" group="musicsubmenu">
 		<condition>window.isactive(music)</condition>
 		<action>Container.Update(musicdb://albums/)</action>
-		<action>control.setfocus(9998)</action>
+		<action>control.setfocus(9998,0,absolute)</action>
 	</override>
 	
 	<override action="ActivateWindow(Music,musicdb://genres/)" group="musicsubmenu">

@@ -2,6 +2,6 @@
 <smartplaylist type="movies">
     <name>recentMovies</name>
     <match>all</match>
-    <limit>20</limit>
+    <limit>10</limit>
     <order direction="descending">dateadded</order>
 </smartplaylist>
