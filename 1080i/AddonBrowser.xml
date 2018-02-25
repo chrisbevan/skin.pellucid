@@ -140,7 +140,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>18-col</width>
-                    <height>2-row</height>
+                    <height>71</height>
                     <texture>colors/white.png</texture>
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -161,7 +161,7 @@
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>18-col</width>
-                    <height>20-row</height>
+                    <height>19-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -170,7 +170,7 @@
                     <posx>10-col</posx>
                     <posy>2-row</posy>
                     <width>8-col</width>
-                    <height>20-row</height>
+                    <height>19-row</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -178,9 +178,9 @@
                 <control type="panel" id="51">
                     <visible>!String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>0</posx>
-                    <posy>73</posy>
+                    <posy>2-row</posy>
                     <width>10-col</width>
-                    <height>717</height>
+                    <height>19-row</height>
                     <onleft>activateWindow(1104)</onleft>
                     <onright>60</onright>
                     <ondown>50</ondown>
@@ -288,14 +288,14 @@
                 <!--icon and description-->
                 <control type="group">
                     <posx>10-col</posx>
-                    <posy>2-row</posy>
+                    <posy>1-row</posy>
                     <control type="image">
                         <posx>0</posx>
-                        <posy>1</posy>
+                        <posy>1-row</posy>
                         <width>8-col</width>
-                        <height>575</height>
+                        <height>19-row</height>
                         <fadetime>500</fadetime>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
                         <texture fallback="defaultAddon.png" border="0">$INFO[listitem.thumb]</texture>
                         <colordiffuse></colordiffuse>
                     </control>
@@ -304,7 +304,7 @@
                         <posx>0</posx>
                         <posy>577</posy>
                         <width>8-col</width>
-                        <height>141</height>
+                        <height>143</height>
                         <texture>colors/black.png</texture>
                         <aspectratio>stretch</aspectratio>
                         <colordiffuse>overlay</colordiffuse>

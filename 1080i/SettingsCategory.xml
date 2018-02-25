@@ -41,7 +41,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -60,7 +60,7 @@
             <!--Category submenu-->
             <control type="button" id="1234">
                 <posx>0</posx>
-                <posy>18-row</posy>
+                <posy>17-row</posy>
                 <font>smallStrong</font>
                 <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
                 <label>[B][COLOR highlight]$LOCALIZE[31025]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
@@ -85,7 +85,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -94,7 +94,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <onleft>3</onleft>
                 <onright>3</onright>
                 <onup>5</onup>

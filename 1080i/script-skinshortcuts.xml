@@ -43,7 +43,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -53,7 +53,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>4-col</width>
-				<height>18-row</height>
+				<height>17-row</height>
                 <control type="button" id="301">
                     <description>Add a new shortcut</description>
                     <onright>211</onright>
@@ -103,7 +103,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -112,7 +112,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <onleft>300</onleft>
                 <orientation>vertical</orientation>
                 <itemlayout width="14-col" height="2-row">

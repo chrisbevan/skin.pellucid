@@ -26,18 +26,20 @@
 - [COMPLETE] DialogPVRChannelManager.xml updated
 - [COMPLETE] MyMusicPlaylistEditor.xml updated
 
-- return heebo font and add font include for Israel
-- check controls for new window: MyGames.xml
+[ADDON BROWSER.XML cleanup]
 
+- check controls for new window: MyGames.xml
+- new dialog: GameOSD.xml
+- new dialog: Subtitles update
 - musicvideos
 
-- Subtitles update
+
 
 - Screenshots etc need updating
 
 - global search needs updating
 
-- new dialog: GameOSD.xml
+
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.

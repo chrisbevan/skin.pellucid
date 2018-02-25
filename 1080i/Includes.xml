@@ -26,7 +26,7 @@
     <include file="Includes_mediaShowcase.xml"/>
 
     <!--view type conditions-->
-    <expression name="isVideoList">!String.Contains(container.folderpath,special://profile/playlists/video) + !String.Contains(container.folderpath,videodb://) + !String.Contains(container.folderpath,plugin://) | container.content(files) | String.IsEmpty(container.content) | container.content(playlists) | container.content(addons) | container.content(tvshows)</expression>
+    <expression name="isVideoList">!String.Contains(container.folderpath,special://profile/playlists/video) + !String.Contains(container.folderpath,videodb://) + !String.Contains(container.folderpath,plugin://) | container.content(files) | String.IsEmpty(container.content) | container.content(playlists) | container.content(addons)</expression>
     <expression name="isMovie">container.content(movies) + [String.Contains(container.folderpath,videodb://) | String.Contains(container.folderpath,special://profile/playlists/video)]</expression>
     <expression name="isAddonMovieOrTVshow">!String.Contains(container.folderpath,videodb://) + String.Contains(container.folderpath,plugin://) + [container.content(movies) | container.content(tvshows)]</expression>
 
@@ -149,14 +149,14 @@
     <include name="globalBackground">
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
+            <texture>backgroundImage.jpg</texture>
             <colordiffuse>ffFFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>colors/white.png</texture>
-            <colordiffuse>background</colordiffuse>
+            <texture>colors/black.png</texture>
+            <colordiffuse>CCFFFFFF</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
     </include>

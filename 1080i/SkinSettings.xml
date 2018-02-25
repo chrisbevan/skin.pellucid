@@ -42,7 +42,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -110,7 +110,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -119,7 +119,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>20-row</height>
+                <height>17-row</height>
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>

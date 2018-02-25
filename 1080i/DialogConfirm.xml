@@ -17,12 +17,12 @@
                 <width>8-col-gutter</width>
                 <height>2-row</height>
                 <wrapmultiline>true</wrapmultiline>
-                <font>dialogTitle</font>
+                <font>confirmTitle</font>
                 <textcolor>textActive</textcolor>
             </control>
             <control type="textbox" id="9">
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>80</posy>
                 <width>8-col-gutter</width>
                 <height>124</height>
                 <font>textbox</font>
