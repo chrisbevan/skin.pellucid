@@ -21,12 +21,17 @@
 - [COMPLETE] PVR.time/duration/progress checked
 - [COMPLETE] Games settings
 - [COMPLETE] New shortcuts menu for games
+- [COMPLETE] DialogAddonSettings updated
+- [COMPLETE] DialogPVRGroupManager.xml updated
+- [COMPLETE] DialogPVRChannelManager.xml updated
+- [COMPLETE] MyMusicPlaylistEditor.xml updated
 
-[complete up to DialogPVRGroupManager.xml section]
-
+- return heebo font and add font include for Israel
 - check controls for new window: MyGames.xml
 
 - musicvideos
+
+- Subtitles update
 
 - Screenshots etc need updating
 

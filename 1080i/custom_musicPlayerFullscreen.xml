@@ -49,7 +49,7 @@
 					<effect type="slide" start="0,500" end="0,0" tween="sine" time="400"/>
 				</animation>
 				<animation type="conditional" condition="true">
-					<effect type="fade" end="60" time="0"/>
+					<effect type="fade" end="90" time="0"/>
 				</animation>
 				<!--coverart (or channel art if radio)-->
 				<control type="image">

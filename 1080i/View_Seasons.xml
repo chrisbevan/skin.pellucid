@@ -23,18 +23,28 @@
                 <control type="group">
                     <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-7-begin</posy>
+                    <posy>row-5-begin</posy>
 					<control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>10-col</width>
-                        <height>4-row</height>
+                        <width>12-col</width>
+                        <height>2-row</height>
                         <font>largeTitle</font>
                         <textcolor>textActive</textcolor>
 						<aligny>center</aligny>
                         <shadowcolor></shadowcolor>
-                        <wrapmultiline>true</wrapmultiline>
                         <label>$INFO[container.showtitle]</label>
+                    </control>
+					<control type="textbox">
+                        <posx>0</posx>
+                        <posy>3-row</posy>
+                        <width>14-col</width>
+                        <height>192</height>
+                        <font>textbox</font>
+                        <textcolor>textActive</textcolor>
+						<aligny>center</aligny>
+                        <shadowcolor></shadowcolor>
+                        <label>$INFO[container.showplot]</label>
                     </control>
                 </control>
                 <!--overlay-->
@@ -100,7 +110,7 @@
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
-                            <posy>384</posy>
+                            <posy>390</posy>
                             <width>240</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
@@ -171,7 +181,7 @@
                             <control type="label">
 	                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
 	                            <posx>12</posx>
-	                            <posy>384</posy>
+	                            <posy>390</posy>
 	                            <width>240</width>
 	                            <height>2-row</height>
 	                            <aligny>center</aligny>

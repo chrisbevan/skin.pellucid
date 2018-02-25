@@ -39,13 +39,13 @@
                 <textcolor>textActive</textcolor>
             </control>
             <!--subnav-->
-            <control type="grouplist" id="9">
+            <control type="grouplist" id="3">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>4-col</width>
                 <height>20-row</height>
                 <onleft>9000</onleft>
-                <onright>2</onright>
+                <onright>5</onright>
                 <orientation>vertical</orientation>
             </control>
             <!--options area-->
@@ -58,12 +58,12 @@
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="grouplist" id="2">
+            <control type="grouplist" id="5">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>10-col</width>
                 <height>20-row</height>
-                <onleft>9</onleft>
+                <onleft>3</onleft>
                 <onright>9001</onright>
                 <orientation>vertical</orientation>
             </control>
@@ -74,7 +74,7 @@
                 <width>4-col</width>
                 <height>20-row</height>
                 <orientation>vertical</orientation>
-                <onleft>2</onleft>
+                <onleft>5</onleft>
                 <itemlayout width="6-col" height="2-row">
                     <control type="label">
                         <posx>0</posx>
@@ -156,7 +156,7 @@
                         <thumb></thumb>
                         <onclick>SendClick(10140,11)</onclick>
                     </item>
-                    <item id="3">
+                    <item id="7">
                         <description>Defaults Button</description>
                         <label>409</label>
                         <label2></label2>
@@ -165,7 +165,7 @@
                     </item>
                 </content>
             </control>
-            <control type="togglebutton" id="13">
+            <control type="togglebutton" id="10">
                 <description>Default Category Button</description>
                 <width>287</width>
                 <font>buttonTitle</font>
@@ -175,20 +175,20 @@
             <control type="button" id="3">
                 <description>Default Button</description>
             </control>
-            <control type="radiobutton" id="4">
+            <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
             </control>
-            <control type="spincontrolex" id="5">
+            <control type="spincontrolex" id="9">
                 <description>Default spincontrolex</description>
             </control>
-            <control type="label" id="7">
+            <control type="label" id="14">
                 <label></label>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
                 <textcolor>highlight</textcolor>
             </control>
-            <control type="image" id="6">
+            <control type="image" id="11">
                 <description>Default Separator</description>
                 <width>1</width>
                 <height>1</height>
@@ -196,19 +196,22 @@
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="sliderex" id="8">
+            <control type="edit" id="12">
+                <description>Default Edit</description>
+            </control>
+			<control type="sliderex" id="13">
                 <description>Default Slider</description>
             </control>
             <!--ok, cancel etc buttons-->
             <control type="group">
                 <visible>false</visible>
-                <control type="button" id="10">
+                <control type="button" id="28">
                     <description>OK Button</description>
                 </control>
-                <control type="button" id="11">
+                <control type="button" id="29">
                     <description>Cancel Button</description>
                 </control>
-                <control type="button" id="12">
+                <control type="button" id="30">
                     <description>Defaults Button</description>
                 </control>
             </control>

@@ -31,25 +31,7 @@
             <control type="image">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <width>6-col-textbox</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>10-col</posx>
-                <posy>2-row</posy>
-                <width>6-col-textbox</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
+                <width>12-col</width>
                 <height>21-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
@@ -70,11 +52,11 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>4-col-textbox</width>
-                <height>2-row</height>
+                <width>4-col</width>
+                <height>71</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <colordiffuse>44FFFFFF</colordiffuse>
+                <colordiffuse>FFFFFFFF</colordiffuse>
             </control>
             <control type="label">
                 <description>name label</description>
@@ -111,17 +93,6 @@
                     </itemlayout>
                     <focusedlayout height="2-row" width="4-col">
                         <control type="image">
-                            <visible>!control.hasfocus(13)</visible>
-                            <posx>0</posx>
-                            <posy></posy>
-                            <width>4-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                            <colordiffuse>77FFFFFF</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <visible>control.hasfocus(13)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>4-col</width>
@@ -152,20 +123,18 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>6-col-textbox</width>
-                    <height>2-row</height>
+                    <width>6-col</width>
+                    <height>71</height>
                     <texture>colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
-                    <colordiffuse>44FFFFFF</colordiffuse>
                 </control>
                 <control type="label" id="22">
                     <description>name label</description>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>0</posy>
                     <width>6-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <align>center</align>
                     <font>itemSubTitle</font>
                     <textcolor>black</textcolor>
                 </control>
@@ -247,20 +216,18 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>6-col-textbox</width>
-                    <height>2-row</height>
+                    <width>6-col</width>
+                    <height>71</height>
                     <texture>colors/white.png</texture>
                     <aspectratio>stretch</aspectratio>
-                    <colordiffuse>44FFFFFF</colordiffuse>
                 </control>
                 <control type="label" id="21">
                     <description>name label</description>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>0</posy>
                     <width>6-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <align>center</align>
                     <font>itemSubTitle</font>
                     <textcolor>black</textcolor>
                 </control>
@@ -339,27 +306,15 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 <posx>16-col</posx>
                 <posy>2-row</posy>
                 <width>4-col</width>
-                <height>2-row</height>
+                <height>71</height>
                 <texture>colors/white.png</texture>
                 <aspectratio>stretch</aspectratio>
-                <colordiffuse>44FFFFFF</colordiffuse>
-            </control>
-            <control type="label">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
-                <align>center</align>
-                <font>itemSubTitle</font>
-                <textcolor>black</textcolor>
-                <label>$LOCALIZE[31179]</label>
             </control>
             <control type="panel" id="9001">
                 <posx>16-col</posx>
                 <posy>4-row</posy>
                 <width>4-col</width>
-                <height>8-row</height>
+                <height>12-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>12</onleft>
@@ -430,6 +385,13 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                     </control>
                 </focusedlayout>
                 <content>
+					<item id="5">
+                        <description>Switch TV / Radio</description>
+                        <label>31236</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>SendClick(34)</onclick>
+                    </item>
                     <item id="1">
                         <description>Add group</description>
                         <label>31099</label>
@@ -464,6 +426,9 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
         <!--hidden dialog controls-->
         <control type="group">
             <visible>false</visible>
+			<control type="togglebutton" id="34">
+                <description>Switch TV / Radio</description>
+            </control>
             <control type="button" id="26">
                 <description>Add Group</description>
             </control>

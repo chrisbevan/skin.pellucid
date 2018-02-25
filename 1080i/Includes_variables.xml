@@ -35,7 +35,7 @@
         <value condition="Window.isactive(Music)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(Weather)">$LOCALIZE[31212] $INFO[Window.Property(WeatherProvider)]</value>
 		<value condition="Window.isactive(TVchannels) | Window.isactive(RadioChannels) | Window.isactive(TVGuide)">$INFO[Pvr.BackendChannels] $LOCALIZE[31017] ($INFO[control.getlabel(29)])</value>
-		<value condition="Window.isactive(TVRecordings)">$INFO[container.NumAllItems] $LOCALIZE[31165]</value>
+		<value condition="Window.isactive(TVRecordings)">$INFO[container.NumAllItems] $LOCALIZE[31165] ($INFO[Pvr.BackendDiskSpace])</value>
 		<value condition="Window.isactive(programs)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(games)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>

@@ -43,8 +43,8 @@
                 <posy>2-row</posy>
                 <width>20-col</width>
                 <height>21-row</height>
-                <texture>colors/offblack.png</texture>
-                <colordiffuse></colordiffuse>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!-- ** Required ** Do not change <id>or<type>-->

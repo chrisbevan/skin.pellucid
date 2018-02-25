@@ -5,9 +5,9 @@
     <controls>
 		<control type="group">
 			<posx>col-1-begin</posx>
-            <posy>row-21-begin</posy>
+            <posy>row-22-begin</posy>
 			<!--fade out if audio / video menu active-->
-            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
+            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
@@ -19,42 +19,45 @@
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
+			<animation type="conditional" condition="true">
+				<effect type="fade" end="90" time="0"/>
+			</animation>
+			<control type="image">
+                <posx>-96</posx>
+                <posy>2-row</posy>
+                <width>fullscreenWidth</width>
+                <height>45</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse></colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
 			<control type="image">
                 <posx>-96</posx>
                 <posy>0</posy>
                 <width>fullscreenWidth</width>
                 <height>2-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>aa111111</colordiffuse>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="image">
                 <posx>-96</posx>
-                <posy>2-row</posy>
+                <posy>118</posy>
 				<width>fullscreenWidth</width>
-                <height>143</height>
+                <height>6-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>aa111111</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-			<control type="image">
-                <posx>-96</posx>
-                <posy>6-row</posy>
-                <width>fullscreenWidth</width>
-                <height>2-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>cc111111</colordiffuse>
+                <colordiffuse>dd000000</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="label">
                 <posx>0</posx>
                 <posy>0</posy>
                 <align>left</align>
-				<width>19-col</width>
+				<width>16-col</width>
                 <height>2-row</height>
                 <font>dialogTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>[COLOR highlight]$INFO[videoplayer.TVShowTitle,, ]$INFO[VideoPlayer.ChannelName,, ][/COLOR]$INFO[videoplayer.title]</label>
+                <label>[B]$INFO[videoplayer.TVShowTitle,,   ]$INFO[VideoPlayer.ChannelName,,   ][/B]$INFO[videoplayer.title]</label>
             </control>
 			<control type="label">
                 <posx>24-col</posx>
@@ -63,14 +66,13 @@
                 <height>2-row</height>
                 <font>itemTitle</font>
 				<align>right</align>
-                <aligny>center</aligny>
                 <textcolor>textActive</textcolor>
-                <label>$INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                <label>$INFO[Player.TimeRemaining(mm),, $LOCALIZE[31235]] / $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
                 <scroll>false</scroll>
             </control>          
 			<control type="textbox">
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>132</posy>
                 <font>textbox</font>
                 <width>1706</width>
                 <align>left</align>
@@ -82,8 +84,8 @@
             </control>
 			<!--dialog controls-->
 			<control type="grouplist" id="8001">
-				<posx>0</posx>
-                <posy>6-row</posy>
+				<posx>-24</posx>
+                <posy>2-row</posy>
 				<orientation>horizontal</orientation>
 				<itemgap>12</itemgap>
 				<onleft>8001</onleft>
@@ -92,8 +94,10 @@
                     <description>DVD Menu</description>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>1-row</height>
                     <label>31051</label>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
 		        </control>
@@ -102,8 +106,10 @@
                     <description>Record</description>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>31201</label>
                     <onclick>PVR.ToggleRecordPlayingChannel</onclick>
 		        </control>
@@ -111,7 +117,9 @@
 					<description>Download subtitles</description>		            
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 		            <width>auto</width>
+					<height>45</height>
 					<font>itemSubtitle</font>
 					<label>31154</label>
 					<onclick>ActivateWindow(SubtitleSearch)</onclick>
@@ -121,8 +129,10 @@
 					<visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>		            
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
 					<label>24012</label>
 					<onclick>ShowSubtitles</onclick>
 		        </control>
@@ -131,8 +141,10 @@
                     <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>31161</label>
 					<onclick>ShowSubtitles</onclick>
 		        </control>
@@ -141,8 +153,10 @@
                     <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>31202</label>
                     <onclick>SubtitleDelay</onclick>
 		        </control>
@@ -150,8 +164,10 @@
                     <description>Video Settings</description>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>31191</label>
                     <onclick>ActivateWindow(osdvideosettings)</onclick>
 		        </control>
@@ -159,8 +175,10 @@
                     <description>Audio Settings</description>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>31177</label>
                     <onclick>ActivateWindow(osdaudiosettings)</onclick>
 		        </control>
@@ -168,8 +186,10 @@
                     <description>Bookmarks</description>
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
+					<textcolor>black</textcolor>
 					<font>itemSubtitle</font>
 		            <width>auto</width>
+					<height>45</height>
                     <label>298</label>
                     <onclick>ActivateWindow(videobookmarks)</onclick>
 		        </control>
