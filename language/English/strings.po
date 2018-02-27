@@ -642,7 +642,7 @@ msgid "Playlist saved"
 msgstr ""
 
 msgctxt "#31154"
-msgid "Search for Subtitles"
+msgid "Subtitles"
 msgstr ""
 
 msgctxt "#31155"

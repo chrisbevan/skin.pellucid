@@ -25,19 +25,20 @@
 - [COMPLETE] DialogPVRGroupManager.xml updated
 - [COMPLETE] DialogPVRChannelManager.xml updated
 - [COMPLETE] MyMusicPlaylistEditor.xml updated
+- [COMPLETE] Subtitle Update
 
 [ADDON BROWSER.XML cleanup]
 
+- global search needs updating
 - check controls for new window: MyGames.xml
 - new dialog: GameOSD.xml
-- new dialog: Subtitles update
 - musicvideos
 
 
 
 - Screenshots etc need updating
 
-- global search needs updating
+
 
 
 

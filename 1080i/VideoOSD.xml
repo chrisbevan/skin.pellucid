@@ -7,7 +7,7 @@
 			<posx>col-1-begin</posx>
             <posy>row-22-begin</posy>
 			<!--fade out if audio / video menu active-->
-            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
+            <animation type="Conditional" condition="Window.IsActive(osdsubtitlesettings) | Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
@@ -114,7 +114,7 @@
                     <onclick>PVR.ToggleRecordPlayingChannel</onclick>
 		        </control>
 				<control type="button" id="1">
-					<description>Download subtitles</description>		            
+					<description>subtitles</description>		            
 					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
 		            <focusedcolor>textActive</focusedcolor>
 					<textcolor>black</textcolor>
@@ -122,43 +122,7 @@
 					<height>45</height>
 					<font>itemSubtitle</font>
 					<label>31154</label>
-					<onclick>ActivateWindow(SubtitleSearch)</onclick>
-		        </control>
-				<control type="button" id="2">
-					<description>Enable Subtitles</description>
-					<visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>		            
-					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-		            <focusedcolor>textActive</focusedcolor>
-					<textcolor>black</textcolor>
-					<font>itemSubtitle</font>
-		            <width>auto</width>
-					<height>45</height>
-					<label>24012</label>
-					<onclick>ShowSubtitles</onclick>
-		        </control>
-				<control type="button" id="3">
-                    <description>Disable Subtitles</description>
-                    <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-		            <focusedcolor>textActive</focusedcolor>
-					<textcolor>black</textcolor>
-					<font>itemSubtitle</font>
-		            <width>auto</width>
-					<height>45</height>
-                    <label>31161</label>
-					<onclick>ShowSubtitles</onclick>
-		        </control>
-				<control type="button" id="4">
-                    <description>Adjust subtitle offset</description>
-                    <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-					<texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-		            <focusedcolor>textActive</focusedcolor>
-					<textcolor>black</textcolor>
-					<font>itemSubtitle</font>
-		            <width>auto</width>
-					<height>45</height>
-                    <label>31202</label>
-                    <onclick>SubtitleDelay</onclick>
+					<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
 		        </control>
 				<control type="button" id="5">
                     <description>Video Settings</description>

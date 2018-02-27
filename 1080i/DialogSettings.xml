@@ -6,7 +6,7 @@
         <!--background-->
         <include condition="!Player.HasVideo">globalBackground</include>
         <control type="group">
-            <animation type="conditional" condition="Window.IsVisible(sliderdialog) | window.isvisible(selectdialog)" reversible="false">
+            <animation type="conditional" condition="Window.IsVisible(sliderdialog) | window.isvisible(selectdialog) | window.isactive(subtitlesearch)" reversible="false">
                 <effect type="fade" start="100" end="0" time="200"/>
             </animation>
             <posx>col-5-begin</posx>
@@ -17,35 +17,35 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>16-col</width>
-                <height>2-row</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
+                <height>20-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
+			<control type="image">
                 <visible>player.hasvideo</visible>
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>0</posy>
                 <width>16-col</width>
-                <height>19-row</height>
+                <height>20-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>99FFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
+			<control type="image">
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>0</posy>
                 <width>16-col</width>
-                <height>19-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
+                <height>71</height>
+                <texture>colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <height>19-row</height>
+                <height>18-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -65,7 +65,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>12-col</width>
-                <height>19-row</height>
+                <height>18-row</height>
                 <onright>9000</onright>
                 <onup>5</onup>
                 <ondown>5</ondown>
