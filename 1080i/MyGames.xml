@@ -13,7 +13,7 @@
             <control type="group" id="9999">
                 <include>contentOpen</include>
                 <onleft>9000</onleft>
-                <include>videofiles</include>
+                <include>games</include>
             </control>
             <!--page scrollbar-->
             <control type="group" id="8000">

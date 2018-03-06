@@ -37,6 +37,15 @@
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
+			<control type="image">
+                <posx>0</posx>
+                <posy>2-row</posy>
+                <width>20-col</width>
+                <height>71</height>
+                <texture>colors/black.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <colordiffuse>textboxInactive</colordiffuse>
+            </control>
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
@@ -49,15 +58,6 @@
                 <shadowcolor></shadowcolor>
             </control>
             <!--group menu-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>71</height>
-                <texture>colors/white.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <colordiffuse>FFFFFFFF</colordiffuse>
-            </control>
             <control type="label">
                 <description>name label</description>
                 <posx>24</posx>
@@ -66,7 +66,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>itemSubTitle</font>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31194]</label>
             </control>
             <control type="group">
@@ -114,20 +114,11 @@
                     </focusedlayout>
                 </control>
             </control>
-
             <!--grouped channels list-->
             <control type="group">
                 <description>Grouped Channels list</description>
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col</width>
-                    <height>71</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label" id="22">
                     <description>name label</description>
                     <posx>12</posx>
@@ -136,7 +127,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                 </control>
                 <control type="panel" id="12">
                     <posx>0</posx>
@@ -213,14 +204,6 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 <description>Channels list</description>
                 <posx>10-col</posx>
                 <posy>2-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col</width>
-                    <height>71</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label" id="21">
                     <description>name label</description>
                     <posx>12</posx>
@@ -229,7 +212,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                 </control>
                 <control type="panel" id="11">
                     <posx>0</posx>
@@ -302,14 +285,6 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 </control>
             </control>
             <!--Dialog controls-->
-            <control type="image">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>71</height>
-                <texture>colors/white.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="panel" id="9001">
                 <posx>16-col</posx>
                 <posy>4-row</posy>

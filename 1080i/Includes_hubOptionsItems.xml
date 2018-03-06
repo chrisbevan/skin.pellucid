@@ -10,7 +10,7 @@
             <width>6-col</width>
             <label>31147</label>
             <onclick>dialog.close(1104)</onclick>
-            <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true)</onclick>
+            <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
         </control>
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
@@ -97,7 +97,7 @@
             <width>6-col</width>
             <label>31147</label>
             <onclick>dialog.close(1104)</onclick>
-            <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true)</onclick>
+            <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
         </control>
         <control type="button" id="3">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>

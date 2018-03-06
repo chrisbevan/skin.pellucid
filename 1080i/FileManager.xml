@@ -46,7 +46,8 @@
                     <posy>2-row</posy>
                     <width>18-col</width>
                     <height>71</height>
-                    <texture>colors/white.png</texture>
+                    <texture>colors/black.png</texture>
+					<colordiffuse>textboxInactive</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
@@ -61,8 +62,8 @@
                     <height>2-row</height>
                     <width>8-col-gutter</width>
                     <label></label>
-                    <font>settingsCategory</font>
-                    <textcolor>black</textcolor>
+                    <font>itemSubtitle</font>
+                    <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
                 <!--left file list-->
@@ -132,8 +133,8 @@
                     <width>9-col-gutter</width>
                     <height>2-row</height>
                     <label></label>
-                    <font>settingsCategory</font>
-                    <textcolor>black</textcolor>
+                    <font>itemSubtitle</font>
+                    <textcolor>textActive</textcolor>
                 </control>
                 <control type="list" id="21">
                     <posx>0</posx>

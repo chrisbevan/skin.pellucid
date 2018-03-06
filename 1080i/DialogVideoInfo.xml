@@ -26,7 +26,7 @@
         </control>
         <!--movie / tv show fanart-->
         <control type="group">
-            <include condition="!String.Contains(Container.folderpath,plugin) + !container.content(episodes)">itemShowcase</include>
+            <include condition="!String.Contains(Container.folderpath,plugin) + !container.content(episodes) + !container.content(musicvideos)">itemShowcase</include>
             <!--music video-->
             <control type="group">
                 <visible>container.content(musicvideos)</visible>

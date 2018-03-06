@@ -29,6 +29,15 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
+				<control type="image">
+                    <posx>0</posx>
+                    <posy>2-row</posy>
+                    <width>22-col</width>
+                    <height>71</height>
+                    <texture>colors/black.png</texture>
+					<colordiffuse>textboxInactive</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
                 <control type="image">
                     <posx>6-col</posx>
                     <posy>2-row</posy>
@@ -63,14 +72,6 @@
                     <shadowcolor></shadowcolor>
                 </control>
                 <!--channel list-->
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>8-col</width>
-                    <height>71</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label">
                     <description>name label</description>
                     <posx>24</posx>
@@ -79,7 +80,7 @@
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31214]</label>
                 </control>
                 <control type="list" id="20">
@@ -147,23 +148,15 @@
                     </focusedlayout>
                 </control>
                 <!--channel management options-->
-                <control type="image">
-                    <posx>8-col</posx>
-                    <posy>2-row</posy>
-                    <width>8-col</width>
-                    <height>71</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label">
                     <description>name label</description>
-                    <posx>444</posx>
+                    <posx>456</posx>
                     <posy>2-row</posy>
                     <width>8-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31179]</label>
                 </control>
                 <control type="group">
@@ -295,15 +288,7 @@
                         <ondown>32</ondown>
                     </control>
                 </control>
-                <!--OK / Cancel / apply-->
-                <control type="image">
-                    <posx>16-col</posx>
-                    <posy>2-row</posy>
-                    <width>6-col</width>
-                    <height>71</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <!--OK / Cancel / apply-->                 
                 <control type="panel" id="9000">
                     <posx>17-col</posx>
                     <posy>4-row</posy>

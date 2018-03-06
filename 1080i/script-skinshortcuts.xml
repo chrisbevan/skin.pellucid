@@ -54,6 +54,7 @@
                 <posy>2-row</posy>
                 <width>4-col</width>
 				<height>17-row</height>
+				<itemgap>0</itemgap>
                 <control type="button" id="301">
                     <description>Add a new shortcut</description>
                     <onright>211</onright>

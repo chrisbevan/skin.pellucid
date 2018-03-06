@@ -972,3 +972,7 @@ msgstr ""
 msgctxt "#31236"
 msgid "Radio / TV"
 msgstr ""
+
+msgctxt "#31237"
+msgid "Results for"
+msgstr ""

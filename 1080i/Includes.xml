@@ -22,6 +22,7 @@
     <include file="View_MusicPlaylist.xml"/>
     <include file="View_ArtistAlbums.xml"/>
     <include file="View_MusicVideos.xml"/>
+	<include file="View_Games.xml"/>
     <include file="script-skinshortcuts-includes.xml"/>
     <include file="Includes_mediaShowcase.xml"/>
 
