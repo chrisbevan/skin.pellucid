@@ -147,21 +147,21 @@
                         <label>186</label>
                         <label2></label2>
                         <thumb></thumb>
-                        <onclick>SendClick(10140,10)</onclick>
+                        <onclick>SendClick(28)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
                         <label2></label2>
                         <thumb></thumb>
-                        <onclick>SendClick(10140,11)</onclick>
+                        <onclick>SendClick(29)</onclick>
                     </item>
-                    <item id="7">
+                    <item id="3">
                         <description>Defaults Button</description>
                         <label>409</label>
                         <label2></label2>
                         <thumb></thumb>
-                        <onclick>SendClick(10140,12)</onclick>
+                        <onclick>SendClick(30)</onclick>
                     </item>
                 </content>
             </control>
@@ -172,7 +172,7 @@
                 <texturefocus>colors/white.png</texturefocus>
                 <texturenofocus></texturenofocus>
             </control>
-            <control type="button" id="3">
+            <control type="button" id="7">
                 <description>Default Button</description>
             </control>
             <control type="radiobutton" id="8">
@@ -180,13 +180,6 @@
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default spincontrolex</description>
-            </control>
-            <control type="label" id="14">
-                <label></label>
-                <textoffsetx>24</textoffsetx>
-                <height>2-row</height>
-                <font>settingsCategoryTitle</font>
-                <textcolor>highlight</textcolor>
             </control>
             <control type="image" id="11">
                 <description>Default Separator</description>
@@ -201,6 +194,13 @@
             </control>
 			<control type="sliderex" id="13">
                 <description>Default Slider</description>
+            </control>
+			<control type="label" id="14">
+                <label></label>
+                <textoffsetx>24</textoffsetx>
+                <height>2-row</height>
+                <font>settingsCategoryTitle</font>
+                <textcolor>highlight</textcolor>
             </control>
             <!--ok, cancel etc buttons-->
             <control type="group">

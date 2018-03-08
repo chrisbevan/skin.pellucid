@@ -28,14 +28,13 @@
 - [COMPLETE] Subtitle Update
 - [COMPLETE] Music Videos
 - [COMPLETE] global search addon skinned
+- [COMPLETE] GameOSD.xml
 
-- new dialog: GameOSD.xml
+- ensure texture background doesn't appear behind ken burns effect 
 
-- dialogsettings.xml - check controls (irl fails...)
+- restore player controls video
 
 - check controls for new window: MyGames.xml
-
-
 - Screenshots etc need updating
 
 
