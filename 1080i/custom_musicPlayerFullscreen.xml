@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1103">
 	<defaultcontrol always="true">9876</defaultcontrol>
-	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<onunload>control.setfocus(9999)</onunload>
 	<controls>
-		<include>globalBackground</include>
+		<control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>colors/black.png</texture>
+            <aspectratio>stretch</aspectratio>
+        </control>
 		<control type="group">
 			<include>fadeInOut</include>
 			<control type="group">
 				<!--fanart-->
 				<control type="image">
-					<visible>String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+					<visible>!Visualisation.Enabled</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<include>dimensionsFullscreen</include>
@@ -19,22 +22,9 @@
 					<include>kenBurnsey</include>
 					<colordiffuse>44ffffff</colordiffuse>
 				</control>
-				<!--artist slideshow (if active)-->
-				<control type="multiimage">
-					<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
-					<include>dimensionsFullscreen</include>
-					<aspectratio>scale</aspectratio>
-					<timeperimage>15000</timeperimage>
-					<randomize>true</randomize>
-					<fadetime>1000</fadetime>
-					<loop>yes</loop>
-					<imagepath>$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-					<include>kenBurnsey</include>
-					<colordiffuse>88ffffff</colordiffuse>
-				</control>
 				<!--visualisation-->
 				<control type="visualisation" id="2">
-					<visible>!SlideShow.IsActive</visible>
+					<visible>Visualisation.Enabled</visible>
 					<description>visualisation</description>
 					<posx>0</posx>
 					<posy>0</posy>

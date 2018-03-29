@@ -148,16 +148,16 @@
     </include>
     <!--Global background-->
     <include name="globalBackground">
-        <control type="image">
+		<control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>backgroundImage.jpg</texture>
-            <colordiffuse>ffFFFFFF</colordiffuse>
+            <texture>colors/white.png</texture>
+            <colordiffuse>background</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>
-            <texture>colors/black.png</texture>
-            <colordiffuse>CCFFFFFF</colordiffuse>
+            <texture>backgroundImage.jpg</texture>
+            <colordiffuse>ff333333</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
     </include>

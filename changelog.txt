@@ -30,9 +30,8 @@
 - [COMPLETE] global search addon skinned
 - [COMPLETE] GameOSD.xml
 
-- ensure texture background doesn't appear behind ken burns effect 
-
 - restore player controls video
+- Add volume passthrough / % volume control (see https://github.com/xperience1080/skin.xperience1080/blob/master/1080i/DialogVolumeBar.xml)
 
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating

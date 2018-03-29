@@ -55,8 +55,13 @@
                 <width>468</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <label>$INFO[player.volume]</label>
+                <label>$INFO[Control.GetLabel(20),, %]</label>
             </control>
+        </control>
+		<!--provide % vals for volume-->
+		<control type="progress" id="20">
+		    <visible>false</visible>
+            <info>Player.Volume</info>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>
