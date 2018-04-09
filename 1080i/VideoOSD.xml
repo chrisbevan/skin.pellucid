@@ -5,52 +5,49 @@
     <controls>
 		<control type="group">
 			<posx>col-1-begin</posx>
-            <posy>row-22-begin</posy>
+            <posy>row-21-begin</posy>
 			<!--fade out if audio / video menu active-->
             <animation type="Conditional" condition="Window.IsActive(osdsubtitlesettings) | Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
                 <effect type="fade" start="100" end="0" time="350"/>
-                <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
 			<animation type="windowopen">
                 <effect type="fade" start="0" end="100" time="350"/>
-                <effect type="slide" start="0,300" end="0,0" tween="cubic" easing="out" time="400"/>
             </animation>
 			<animation type="windowclose">
                 <effect type="fade" start="100" end="0" time="350"/>
-                <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
             </animation>
 			<animation type="conditional" condition="true">
 				<effect type="fade" end="90" time="0"/>
 			</animation>
 			<control type="image">
-                <posx>-96</posx>
+                <posx>0</posx>
                 <posy>2-row</posy>
-                <width>fullscreenWidth</width>
+                <width>24-col</width>
                 <height>45</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse></colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="image">
-                <posx>-96</posx>
+                <posx>0</posx>
                 <posy>0</posy>
-                <width>fullscreenWidth</width>
+                <width>24-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="image">
-                <posx>-96</posx>
+                <posx>0</posx>
                 <posy>118</posy>
-				<width>fullscreenWidth</width>
-                <height>6-row</height>
+				<width>24-col</width>
+                <height>4-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>dd000000</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="label">
-                <posx>0</posx>
+                <posx>24</posx>
                 <posy>0</posy>
                 <align>left</align>
 				<width>16-col</width>
@@ -60,21 +57,21 @@
                 <label>[B]$INFO[videoplayer.TVShowTitle,,   ]$INFO[VideoPlayer.ChannelName,,   ][/B]$INFO[videoplayer.title]</label>
             </control>
 			<control type="label">
-                <posx>24-col</posx>
+                <posx>1704</posx>
                 <posy>-3</posy>
                 <width>8-col</width>
                 <height>2-row</height>
                 <font>itemTitle</font>
 				<align>right</align>
                 <textcolor>textActive</textcolor>
-                <label>$INFO[Player.TimeRemaining(mm),, $LOCALIZE[31235]] / $INFO[Videoplayer.time] / $INFO[Videoplayer.duration]</label>
+                <label>$INFO[Player.TimeRemaining(mm),, $LOCALIZE[31235]]  [ $INFO[Videoplayer.time] / $INFO[Videoplayer.duration] ]</label>
                 <scroll>false</scroll>
             </control>          
 			<control type="textbox">
-                <posx>0</posx>
-                <posy>132</posy>
+                <posx>24</posx>
+                <posy>128</posy>
                 <font>textbox</font>
-                <width>1706</width>
+                <width>1682</width>
                 <align>left</align>
                 <textcolor>textActive</textcolor>
                 <height>120</height>
@@ -84,7 +81,7 @@
             </control>
 			<!--dialog controls-->
 			<control type="grouplist" id="8001">
-				<posx>-24</posx>
+				<posx>0</posx>
                 <posy>2-row</posy>
 				<orientation>horizontal</orientation>
 				<itemgap>12</itemgap>
