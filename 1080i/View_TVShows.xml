@@ -12,10 +12,28 @@
 	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
+				<control type="image">
+		            <posx>0</posx>
+			        <posy>0</posy>
+			        <width>fullscreenWidth</width>
+			        <height>738</height>
+		            <texture>$INFO[container(9203).listitem.art(fanart)]</texture>
+		            <colordiffuse>FF333333</colordiffuse>
+		            <aspectratio>scale</aspectratio>
+		        </control>
+				<control type="image">
+                    <posx>0</posx>
+                    <posy>738</posy>
+                    <width>fullscreenWidth</width>
+                    <height>6</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture border="0">colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                </control>
 				<!--quick link selector-->
 				<control type="list" id="9202">
 	                <posx>col-1-begin</posx>
-	                <posy>row-5-begin</posy>
+	                <posy>180</posy>
 	                <width>24-col</width>
 	                <height>2-row</height>
 	                <onleft>9000</onleft>
@@ -65,7 +83,7 @@
 				<!--quick links-->			
 				<control type="panel" id="9203">
 					<posx>90</posx>
-	                <posy>276</posy>
+	                <posy>288</posy>
 	                <width>1740</width>
 	                <height>11-row</height>
 					<onup>9202</onup>
@@ -94,7 +112,7 @@
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>77ffffff</colordiffuse>
+	                        <colordiffuse>ffffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
@@ -174,12 +192,12 @@
 		<!--all TVShows-->
 		<control type="group" id="9204">
 			<animation type="Conditional" condition="controlgroup(9204).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
-                <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
+                <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
             </animation>
 			<control type="label">
                 <visible>!controlgroup(9000).hasfocus + $EXP[isTVShow] + !$EXP[isMovie]</visible>
                 <posx>col-1-begin</posx>
-                <posy>696</posy>
+                <posy>760</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
@@ -190,9 +208,9 @@
 			<control type="panel" id="52">
 				<visible>$EXP[isTVShow] + !$EXP[isMovie]</visible>
 				<posx>90</posx>
-				<posy>row-21-begin</posy>
+				<posy>864</posy>
 				<width>1800</width>
-				<height>22-row</height>
+				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<ondown>50</ondown>
