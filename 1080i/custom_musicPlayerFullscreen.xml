@@ -34,7 +34,7 @@
 			<!--Track info-->
 			<control type="group">
 				<posx>col-1-begin</posx>
-				<posy>row-22-begin</posy>
+				<posy>row-25-begin</posy>
 				<animation type="conditional" condition="!String.IsEqual(MusicPlayer.Time,00:00)">
 					<effect type="slide" start="0,500" end="0,0" tween="sine" time="400"/>
 				</animation>
@@ -44,16 +44,25 @@
 				<!--track info-->
 				<control type="group">
 					<posx>0</posx>
-					<posy>0</posy>					
+					<posy>-12</posy>
+					<control type="image">
+						<posx>-54</posx>
+						<posy>-6</posy>
+						<width>4-row</width>
+						<height>4-row</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="0" diffuse="masks/circle.png">$INFO[player.art(thumb)]</texture>
+						<colordiffuse>ccffffff</colordiffuse>
+					</control>					
 					<control type="textbox">
-						<posx>0</posx>
+						<posx>114</posx>
 						<posy>0</posy>
-						<width>9-col</width>
+						<width>12-col</width>
 						<height>8-row</height>
 						<font>dialogTitle</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
-						<label>[B]$INFO[MusicPlayer.Title][/B][CR]$INFO[MusicPlayer.artist][CR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)][CR][CR]$INFO[musicplayer.Playlistposition,$LOCALIZE[554] ]$INFO[musicplayer.Playlistlength, / ]    $INFO[MusicPlayer.timeremaining]</label>
+						<label>[B]$INFO[MusicPlayer.Title][/B][CR]$INFO[MusicPlayer.artist][CR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]  •  $INFO[musicplayer.Playlistposition,$LOCALIZE[554] ]$INFO[musicplayer.Playlistlength, / ]  •  $INFO[MusicPlayer.timeremaining]</label>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
 				</control>
