@@ -17,9 +17,10 @@
 		        <posy>0</posy>
 		        <width>fullscreenWidth</width>
 		        <height>738</height>
-	            <texture fallback="colors/black.png">$INFO[container(9998).listitem.art(fanart)]</texture>
+	            <texture>special://skin/extras/backgrounds/music.jpg</texture>
 	            <colordiffuse>FF333333</colordiffuse>
-	            <aspectratio>scale</aspectratio>
+	            <aspectratio aligny="top">scale</aspectratio>
+				<fadetime>200</fadetime>
 	        </control>
 			<control type="image">
                 <posx>0</posx>
@@ -97,12 +98,12 @@
                 <orientation>horizontal</orientation>
                 <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
-                <itemlayout width="348" height="5-col-gutter">
+                <itemlayout width="352" height="5-col-gutter">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-                        <height>5-col-gutter</height>
+                        <width>324</width>
+                        <height>324</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
                         <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
@@ -112,8 +113,8 @@
 					<control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-                        <height>5-col-gutter</height>
+                        <width>324</width>
+                        <height>324</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>6</bordersize>
@@ -122,8 +123,8 @@
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
-                        <posy>330</posy>
-                        <width>312</width>
+                        <posy>318</posy>
+                        <width>300</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
@@ -131,14 +132,14 @@
                         <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
                     </control>      
                 </itemlayout>
-                <focusedlayout width="348" height="5-col-gutter">
+                <focusedlayout width="352" height="5-col-gutter">
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>5-col-gutter</height>
+                            <width>324</width>
+	                        <height>324</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
                             <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
@@ -148,8 +149,8 @@
 						<control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>5-col-gutter</height>
+                            <width>324</width>
+	                        <height>324</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.Art(thumb)]</texture>
                             <bordersize>6</bordersize>
@@ -158,8 +159,8 @@
                         <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>330</posy>
-	                        <width>312</width>
+	                        <posy>318</posy>
+	                        <width>300</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
