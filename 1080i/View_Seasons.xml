@@ -2,10 +2,10 @@
 <includes>
     <include name="seasons">
         <control type="group">
-            <visible>!isempty(container.folderpath) + container.content(seasons) + !container.content(episodes)</visible>
+            <visible>!String.IsEmpty(container.folderpath) + container.content(seasons) + !container.content(episodes)</visible>
             <!--fanart-->
             <control type="group">
-                <visible>!Substring(Container.folderpath,plugin)</visible>
+                <visible>!String.Contains(Container.folderpath,plugin)</visible>
                 <posy>-100</posy>
                 <include>itemFanart</include>
                 <control type="image">
@@ -21,35 +21,35 @@
                 </animation>
                 <!--title-->
                 <control type="group">
-                    <visible>!Substring(Container.folderpath,plugin)</visible>
+                    <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-4-begin</posy>
+                    <posy>row-5-begin</posy>
 					<control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>24-col</width>
-                        <height>3-row</height>
-                        <font>veryLargeLight</font>
-                        <textcolor>ffffffff</textcolor>
+                        <width>12-col</width>
+                        <height>2-row</height>
+                        <font>largeTitle</font>
+                        <textcolor>textActive</textcolor>
 						<aligny>center</aligny>
-                        <shadowcolor>-</shadowcolor>
-                        <wrapmultiline>true</wrapmultiline>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[container.showtitle]</label>
                     </control>
 					<control type="textbox">
                         <posx>0</posx>
-                        <posy>4-row</posy>
-                        <width>12-col</width>
-                        <height>198</height>
+                        <posy>3-row</posy>
+                        <width>14-col</width>
+                        <height>192</height>
                         <font>textbox</font>
-                        <textcolor>ffffffff</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <textcolor>textActive</textcolor>
+						<aligny>center</aligny>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[container.showplot]</label>
                     </control>
                 </control>
                 <!--overlay-->
                 <control type="group">
-                    <visible>!Substring(Container.folderpath,plugin)</visible>
+                    <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posy>row-15-begin</posy>
                     <posy>0</posy>
                     <include>globalBackground</include>
@@ -77,41 +77,53 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>396</height>
+                            <width>252</width>
+                            <height>378</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">colors/black.png</texture>
-                            <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                            <texture>colors/black.png</texture>
+                            <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>overlay</colordiffuse>
                         </control>
 						<control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>4-col-gutter</width>
-                            <height>396</height>
+                            <width>252</width>
+                            <height>378</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.art(poster)]</texture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>ffffffff</colordiffuse>
+                            <colordiffuse>77ffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
                             <posx>12</posx>
                             <posy>4-row</posy>
-                            <width>240</width>
+                            <width>228</width>
                             <height>2-row</height>
                             <align>center</align>
                             <aligny>center</aligny>
-                            <font>largeStrong</font>
+                            <font>largeLight</font>
                             <textcolor>textActive</textcolor>
                             <label>..</label>
+                        </control>
+						<control type="textbox">
+                            <visible>String.StartsWith(ListItem.label,*)</visible>
+                            <posx>12</posx>
+                            <posy>4-row</posy>
+                            <width>228</width>
+                            <height>4-row</height>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <font>largeLight</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.label]</label>
                         </control>
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
-                            <posy>384</posy>
-                            <width>240</width>
+                            <posy>372</posy>
+                            <width>228</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <font>thumbTitle</font>
@@ -120,7 +132,7 @@
                         </control>
 						<control type="group">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-							<posx>202</posx>
+							<posx>190</posx>
 							<posy>6</posy>
 							<control type="image">
 								<posx>0</posx>
@@ -149,40 +161,52 @@
 							<control type="image">
 		                        <posx>0</posx>
 		                        <posy>0</posy>
-		                        <width>4-col-gutter</width>
-		                        <height>396</height>
+		                        <width>252</width>
+	                            <height>378</height>
 		                        <aspectratio>stretch</aspectratio>
-		                        <texture border="6">colors/black.png</texture>
-		                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+		                        <texture>colors/black.png</texture>
+		                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 		                        <bordersize>6</bordersize>
 		                        <colordiffuse>FF000000</colordiffuse>
 		                    </control>
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>4-col-gutter</width>
-                                <height>396</height>
+                                <width>252</width>
+	                            <height>378</height>
                                 <aspectratio aligny="top">scale</aspectratio>
                                 <texture>$INFO[ListItem.art(poster)]</texture>
                                 <bordersize>6</bordersize>
                             </control>
                             <control type="label">
-                                <visible>ListItem.IsParentFolder</visible>
-                                <posx>12</posx>
-                                <posy>4-row</posy>
-                                <width>240</width>
-                                <height>2-row</height>
-                                <align>center</align>
-                                <aligny>center</aligny>
-                                <font>largeStrong</font>
-                                <textcolor>textActive</textcolor>
-                                <label>..</label>
-                            </control>
+	                            <visible>ListItem.IsParentFolder</visible>
+	                            <posx>12</posx>
+	                            <posy>4-row</posy>
+	                            <width>228</width>
+	                            <height>2-row</height>
+	                            <align>center</align>
+	                            <aligny>center</aligny>
+	                            <font>largeLight</font>
+	                            <textcolor>textActive</textcolor>
+	                            <label>..</label>
+	                        </control>
+							<control type="textbox">
+	                            <visible>String.StartsWith(ListItem.label,*)</visible>
+	                            <posx>12</posx>
+	                            <posy>4-row</posy>
+	                            <width>228</width>
+	                            <height>4-row</height>
+	                            <align>left</align>
+	                            <aligny>center</aligny>
+	                            <font>largeLight</font>
+	                            <textcolor>textActive</textcolor>
+	                            <label>$INFO[ListItem.label]</label>
+	                        </control>
                             <control type="label">
 	                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
 	                            <posx>12</posx>
-	                            <posy>384</posy>
-	                            <width>240</width>
+	                            <posy>372</posy>
+	                            <width>228</width>
 	                            <height>2-row</height>
 	                            <aligny>center</aligny>
 	                            <font>thumbTitle</font>
@@ -191,7 +215,7 @@
 	                        </control>
 							<control type="group">
 								<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-								<posx>202</posx>
+								<posx>190</posx>
 								<posy>6</posy>
 								<control type="image">
 									<posx>0</posx>

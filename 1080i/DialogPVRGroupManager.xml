@@ -31,29 +31,20 @@
             <control type="image">
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <width>6-col-textbox</width>
+                <width>12-col</width>
                 <height>21-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>10-col</posx>
+			<control type="image">
+                <posx>0</posx>
                 <posy>2-row</posy>
-                <width>6-col-textbox</width>
-                <height>21-row</height>
+                <width>20-col</width>
+                <height>71</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
+                <colordiffuse>textboxInactive</colordiffuse>
             </control>
             <control type="label">
                 <posx>24</posx>
@@ -64,18 +55,9 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[19143]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--group menu-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>4-col-textbox</width>
-                <height>2-row</height>
-                <texture>colors/white.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <colordiffuse>44FFFFFF</colordiffuse>
-            </control>
             <control type="label">
                 <description>name label</description>
                 <posx>24</posx>
@@ -84,7 +66,7 @@
                 <height>2-row</height>
                 <aligny>center</aligny>
                 <font>itemSubTitle</font>
-                <textcolor>black</textcolor>
+                <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31194]</label>
             </control>
             <control type="group">
@@ -106,22 +88,11 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="4-col">
                         <control type="image">
-                            <visible>!control.hasfocus(13)</visible>
-                            <posx>0</posx>
-                            <posy></posy>
-                            <width>4-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                            <colordiffuse>77FFFFFF</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <visible>control.hasfocus(13)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>4-col</width>
@@ -138,36 +109,25 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                 </control>
             </control>
-
             <!--grouped channels list-->
             <control type="group">
                 <description>Grouped Channels list</description>
                 <posx>4-col</posx>
                 <posy>2-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col-textbox</width>
-                    <height>2-row</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                    <colordiffuse>44FFFFFF</colordiffuse>
-                </control>
                 <control type="label" id="22">
                     <description>name label</description>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>0</posy>
                     <width>6-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <align>center</align>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                 </control>
                 <control type="panel" id="12">
                     <posx>0</posx>
@@ -193,8 +153,10 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="8-col">
@@ -229,8 +191,10 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </focusedlayout>
                 </control>
@@ -240,25 +204,15 @@
                 <description>Channels list</description>
                 <posx>10-col</posx>
                 <posy>2-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>6-col-textbox</width>
-                    <height>2-row</height>
-                    <texture>colors/white.png</texture>
-                    <aspectratio>stretch</aspectratio>
-                    <colordiffuse>44FFFFFF</colordiffuse>
-                </control>
                 <control type="label" id="21">
                     <description>name label</description>
-                    <posx>0</posx>
+                    <posx>12</posx>
                     <posy>0</posy>
                     <width>6-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <align>center</align>
                     <font>itemSubTitle</font>
-                    <textcolor>black</textcolor>
+                    <textcolor>textActive</textcolor>
                 </control>
                 <control type="panel" id="11">
                     <posx>0</posx>
@@ -284,8 +238,10 @@
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="8-col">
@@ -320,38 +276,20 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
-                            <shadowcolor>-</shadowcolor>
-                            <label>$INFO[ListItem.ChannelNumber,(,) - ]$INFO[ListItem.ChannelName]</label>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel
+ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         </control>
                     </focusedlayout>
                 </control>
             </control>
             <!--Dialog controls-->
-            <control type="image">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>2-row</height>
-                <texture>colors/white.png</texture>
-                <aspectratio>stretch</aspectratio>
-                <colordiffuse>44FFFFFF</colordiffuse>
-            </control>
-            <control type="label">
-                <posx>16-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>2-row</height>
-                <aligny>center</aligny>
-                <align>center</align>
-                <font>itemSubTitle</font>
-                <textcolor>black</textcolor>
-                <label>$LOCALIZE[31179]</label>
-            </control>
             <control type="panel" id="9001">
                 <posx>16-col</posx>
                 <posy>4-row</posy>
                 <width>4-col</width>
-                <height>8-row</height>
+                <height>12-row</height>
                 <itemgap>3</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>12</onleft>
@@ -407,7 +345,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -418,36 +356,43 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
+					<item id="5">
+                        <description>Switch TV / Radio</description>
+                        <label>31236</label>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>SendClick(34)</onclick>
+                    </item>
                     <item id="1">
                         <description>Add group</description>
                         <label>31099</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(26)</onclick>
                     </item>
                     <item id="2">
                         <description>Rename Group</description>
                         <label>31100</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(27)</onclick>
                     </item>
                     <item id="3">
                         <description>Delete Group</description>
                         <label>31101</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(28)</onclick>
                     </item>
                     <item id="4">
                         <description>OK</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(29)</onclick>
                     </item>
                 </content>
@@ -456,6 +401,9 @@
         <!--hidden dialog controls-->
         <control type="group">
             <visible>false</visible>
+			<control type="togglebutton" id="34">
+                <description>Switch TV / Radio</description>
+            </control>
             <control type="button" id="26">
                 <description>Add Group</description>
             </control>

@@ -3,11 +3,11 @@
     <include name="episodes">
         <!--fanart-->
         <control type="group">
-            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <posy>0</posy>
             <posx>0</posx>
             <control type="image">
-                <visible>!isempty(container.art(season.poster))</visible>
+                <visible>!String.IsEmpty(container.art(season.poster))</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>960</width>
@@ -22,7 +22,7 @@
                 </animation>
             </control>
             <control type="image">
-                <visible>isempty(container.art(season.poster))</visible>
+                <visible>String.IsEmpty(container.art(season.poster))</visible>
                 <posx>-966</posx>
                 <posy>0</posy>
                 <width>1920</width>
@@ -54,7 +54,7 @@
         </control>
         <!--overlay-->
         <control type="group">
-            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <posx>949</posx>
             <posy>0</posy>
             <control type="image">
@@ -78,30 +78,39 @@
         <control type="group">
             <posx>col-13-begin</posx>
             <posy>row-5-begin</posy>
-            <visible>Substring(container.folderpath,videodb://) + !isempty(container.folderpath) + container.content(episodes) + !Substring(Container.folderpath,plugin)</visible>
+            <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <align></align>
-                <font>medium</font>
+                <font>largeTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>[B]$INFO[Container.ShowTitle][/B] $INFO[listitem.Season,$LOCALIZE[31011] , ]</label>
+                <label>$INFO[Container.ShowTitle]</label>
+            </control>
+			<control type="label">
+                <posx>24</posx>
+                <posy>2-row</posy>
+                <width>12-col</width>
+                <height>1-row</height>
+                <align></align>
+                <font>menuTitle</font>
+                <textcolor>menuUnselected</textcolor>
+                <label>$INFO[listitem.Season,$LOCALIZE[31011] , ]</label>
             </control>
         </control>
         <!--episode synopsis & thumb-->
         <control type="group">
             <!--tvhsow library-sourced episode list-->
-            <control type="panel" id="52">
+            <control type="fixedlist" id="53">
                 <visible>$EXP[isEpisode]</visible>
-                <posx>954</posx>
-                <posy>row-8-begin</posy>
+                <posx>978</posx>
+                <posy>row-9-begin</posy>
                 <width>12-col</width>
                 <height>19-row</height>
                 <onleft>9000</onleft>
-                <onright>60</onright>
-                <pagecontrol>60</pagecontrol>
+				<movement>4</movement>
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">
                         <posx>0</posx>
@@ -122,7 +131,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Episode]</label>
                         <scroll>false</scroll>
                     </control>
@@ -145,7 +154,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>..</label>
                         <scroll>false</scroll>
                     </control>
@@ -157,12 +166,12 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
+                        <visible>!String.IsEmpty(ListItem.playcount)</visible>
                         <posx>11-col</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -171,7 +180,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </itemlayout>
@@ -196,7 +205,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Episode]</label>
                         <scroll>false</scroll>
                     </control>
@@ -219,7 +228,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>..</label>
                         <scroll>false</scroll>
                     </control>
@@ -231,12 +240,12 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
+                        <visible>!String.IsEmpty(ListItem.playcount)</visible>
                         <posx>11-col</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -245,14 +254,14 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </focusedlayout>
             </control>
             <!--Plugin-sourced Episode list-->
             <control type="panel" id="52">
-                <visible>Substring(Container.folderpath,plugin)</visible>
+                <visible>String.Contains(Container.folderpath,plugin)</visible>
                 <posx>col-1-begin</posx>
                 <posy>row-5-begin</posy>
                 <width>24-col</width>
@@ -288,11 +297,11 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
+                        <visible>!String.IsEmpty(ListItem.playcount)</visible>
                         <posx>23-col</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -301,7 +310,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </itemlayout>
@@ -335,11 +344,11 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!isempty(ListItem.playcount)</visible>
+                        <visible>!String.IsEmpty(ListItem.playcount)</visible>
                         <posx>23-col</posx>
                         <posy>0</posy>
                         <width>1-col</width>
@@ -348,7 +357,7 @@
                         <aligny>center</aligny>
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label></label>
                     </control>
                 </focusedlayout>

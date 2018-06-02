@@ -49,7 +49,7 @@
                         <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.starttime][/B]</label>
                     </control>
                     <control type="label">
@@ -60,7 +60,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -72,7 +72,7 @@
                         <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.nextstarttime][/B]</label>
                     </control>
                     <control type="label">
@@ -83,7 +83,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.nextTitle]</label>
                     </control>
                 </itemlayout>
@@ -117,7 +117,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <scroll>true</scroll>
                     </control>
@@ -130,7 +130,7 @@
                         <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.starttime][/B]</label>
                     </control>
                     <control type="label">
@@ -141,7 +141,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">
@@ -153,7 +153,7 @@
                         <align>right</align>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>[B]$INFO[ListItem.nextstarttime][/B]</label>
                     </control>
                     <control type="label">
@@ -164,7 +164,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.nextTitle]</label>
                     </control>
                 </focusedlayout>

@@ -57,7 +57,7 @@
     </shortcut>
     <shortcut>
         <visible>!Library.HasContent(Video)</visible>
-        <label>10006</label>
+        <label>3</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
@@ -65,7 +65,7 @@
     </shortcut>
     <shortcut>
         <visible>Library.HasContent(Music)</visible>
-        <label>10005</label>
+        <label>2</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
@@ -73,7 +73,7 @@
     </shortcut>
     <shortcut>
         <visible>!Library.HasContent(Music)</visible>
-        <label>10005</label>
+        <label>2</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
@@ -88,6 +88,13 @@
         <action>PlayerControl(Partymode(music))</action>
     </shortcut>
     <shortcut>
+        <label>31232</label>
+        <label2>32034</label2>
+        <icon>DefaultAddon.png</icon>
+        <thumb />
+        <action>ActivateWindow(games)</action>
+    </shortcut>
+	<shortcut>
         <label>12600</label>
         <label2>32034</label2>
         <icon>DefaultAddon.png</icon>

@@ -3,6 +3,7 @@
     <defaultcontrol always="true">59</defaultcontrol>
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
+	<views>59</views>
     <controls>
         <include>globalBackground</include>
         <!--fanart-->

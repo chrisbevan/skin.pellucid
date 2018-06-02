@@ -11,7 +11,7 @@
             <posy>0</posy>
             <width>8-col</width>
             <font>regular</font>
-            <label>-</label>
+            <label></label>
             <textcolor>menuUnselected</textcolor>
         </control>
         <!--Settings category-->
@@ -41,7 +41,7 @@
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -55,12 +55,12 @@
                 <font>dialogTitle</font>
                 <label>$INFO[control.getlabel(2)]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--Category submenu-->
             <control type="button" id="1234">
                 <posx>0</posx>
-                <posy>18-row</posy>
+                <posy>17-row</posy>
                 <font>smallStrong</font>
                 <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
                 <label>[B][COLOR highlight]$LOCALIZE[31025]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
@@ -71,7 +71,7 @@
             <control type="grouplist" id="3">
                 <posx>0</posx>
                 <posy>2-row</posy>
-                <width>-</width>
+                <width></width>
                 <itemgap>0</itemgap>
                 <height>18-row</height>
                 <onleft>9000</onleft>
@@ -85,7 +85,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -94,7 +94,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <onleft>3</onleft>
                 <onright>3</onright>
                 <onup>5</onup>
@@ -104,30 +104,30 @@
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>
-                <label>-</label>
+                <label></label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <textoffsetx>24</textoffsetx>
                 <height>2-row</height>
                 <font>settingsCategoryTitle</font>
                 <textcolor>highlight</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <!--subcat menu buttons-->
             <control type="togglebutton" id="10">
@@ -135,7 +135,7 @@
                 <width>287</width>
                 <font>buttonTitle</font>
                 <texturefocus>colors/white.png</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturenofocus></texturenofocus>
             </control>
             <control type="button" id="20">
                 <visible>false</visible>

@@ -19,8 +19,8 @@
                 <width>8-col</width>
                 <height>8-col</height>
                 <aspectratio>stretch</aspectratio>
-                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" border="6">$VAR[songViewThumb]</texture>
-                <bordertexture border="6" colordiffuse="07FFFFFF">colors/white.png</bordertexture>
+                <texture fallback="DefaultAlbumCover.png" diffuse="masks/discSurface.png" >$VAR[songViewThumb]</texture>
+                <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                 <bordersize>6</bordersize>
                 <fadetime>500</fadetime>
             </control>
@@ -32,23 +32,25 @@
                 <posy>row-5-begin</posy>
                 <width>15-col</width>
                 <height>2-row</height>
-                <font>largeStrong</font>
+                <font>largeTitle</font>
+				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label>$VAR[songViewAlbum]</label>
             </control>
             <control type="label">
                 <posx>col-10-begin</posx>
-                <posy>row-7-begin</posy>
+                <posy>row-6-begin</posy>
                 <width>15-col</width>
-                <height>1-row</height>
-                <font>regular</font>
+                <height>3-row</height>
+                <font>menuTitle</font>
+				<aligny>center</aligny>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label>$VAR[songViewArtist]</label>
             </control>
         </control>
-        <control type="panel" id="50">
+        <control type="panel" id="53">
             <visible>$EXP[isMusicSong]</visible>
             <posx>col-10-begin</posx>
             <posy>row-9-begin</posy>
@@ -88,7 +90,7 @@
 	                    <aligny>center</aligny>
 	                    <font>symbolLarge</font>
 	                    <textcolor>textActive</textcolor>
-	                    <shadowcolor>-</shadowcolor>
+	                    <shadowcolor></shadowcolor>
 	                    <label></label>
 	                </control>
                 <control type="label">
@@ -101,7 +103,7 @@
                     <aligny>center</aligny>
                     <font>symbolLarge</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label></label>
                 </control>
                 <control type="label">
@@ -114,7 +116,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.TrackNumber]</label>
                 </control>
                 <control type="image">
@@ -146,7 +148,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>..</label>
                 </control>
                 <control type="label">
@@ -157,7 +159,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">
@@ -170,7 +172,7 @@
                     <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
                 </control>
                 <control type="label">
@@ -182,7 +184,7 @@
                     <align>center</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.duration]</label>
                 </control>
             </itemlayout>
@@ -216,7 +218,7 @@
                     <aligny>center</aligny>
                     <font>symbolLarge</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label></label>
                 </control>
                 <control type="label">
@@ -229,7 +231,7 @@
                     <aligny>center</aligny>
                     <font>symbolLarge</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label></label>
                 </control>
                 <control type="label">
@@ -242,7 +244,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.TrackNumber]</label>
                 </control>
                 <control type="image">
@@ -264,7 +266,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>..</label>
                 </control>
                 <control type="label">
@@ -275,7 +277,7 @@
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">
@@ -288,7 +290,7 @@
                     <align>right</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
                 </control>
                 <control type="label">
@@ -300,7 +302,7 @@
                     <align>center</align>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.duration]</label>
                 </control>
             </focusedlayout>

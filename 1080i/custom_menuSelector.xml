@@ -2,6 +2,6 @@
 <window type="dialog" id="1107">
     <onload>Dialog.Close(all,true)</onload>
     <onload>control.setfocus(9000)</onload>
-    <visible>[Window.IsActive(videos) | window.IsActive(music)] + isempty(container.folderpath)</visible>
+    <visible>[Window.IsActive(videos) | window.IsActive(music)] + String.IsEmpty(container.folderpath)</visible>
     <controls></controls>
 </window>

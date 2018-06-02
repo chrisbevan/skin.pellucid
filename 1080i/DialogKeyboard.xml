@@ -30,7 +30,7 @@
                     <height>2-row</height>
                     <align>center</align>
                     <aligny>top</aligny>
-                    <font>largeStrong</font>
+                    <font>largeTitle</font>
                     <textcolor>77FFFFFF</textcolor>
                 </control>
                 <control type="label" id="314">
@@ -51,7 +51,7 @@
                 <posx>col-1-begin</posx>
                 <posy>0</posy>
                 <control type="label" id="311">
-                    <visible>String.IsEmpty(Container(5000).ListItem.Label) | String.IsEmpty(Control.GetLabel(312).index(1))</visible>
+                    <visible>String.String.IsEmpty(Container(5000).ListItem.Label) | String.String.IsEmpty(Control.GetLabel(312).index(1))</visible>
                     <description>header label</description>
                     <posx>0</posx>
                     <posy>-18</posy>
@@ -311,10 +311,10 @@
                         <ondown>303</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -533,10 +533,10 @@
                         <ondown>304</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <radioposy>12</radioposy>
@@ -756,10 +756,10 @@
                         <ondown>309</ondown>
                         <texturenofocus colordiffuse="keyboardInactive">colors/white.png</texturenofocus>
                         <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <textureradioonfocus>-</textureradioonfocus>
-                        <textureradioonnofocus>-</textureradioonnofocus>
-                        <textureradioofffocus>-</textureradioofffocus>
-                        <textureradiooffnofocus>-</textureradiooffnofocus>
+                        <textureradioonfocus></textureradioonfocus>
+                        <textureradioonnofocus></textureradioonnofocus>
+                        <textureradioofffocus></textureradioofffocus>
+                        <textureradiooffnofocus></textureradiooffnofocus>
                         <radiowidth>24</radiowidth>
                         <radioheight>24</radioheight>
                         <textoffsetx>0</textoffsetx>

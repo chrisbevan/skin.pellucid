@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="!IntegerGreaterThan(container(3).numitems,0) + !IntegerGreaterThan(container(6).numitems,0)">control.SetFocus(9999)</onload>
+    <onload condition="!Integer.IsGreater(container(3).numitems,0) + !Integer.IsGreater(container(6).numitems,0)">control.SetFocus(9999)</onload>
     <controls>
         <!--background-->
         <include condition="!Player.HasVideo">globalBackground</include>
@@ -28,7 +28,7 @@
                     <aligny>center</aligny>
                     <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
                 <control type="image">
                     <visible>player.hasvideo</visible>
@@ -96,7 +96,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -134,7 +134,7 @@
                                 <font>symbolLarge</font>
                                 <textcolor>black</textcolor>
                                 <selectedcolor>black</selectedcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>✓</label>
                             </control>
                             <control type="label">
@@ -150,13 +150,12 @@
                             </control>
                         </focusedlayout>
                     </control>
-
                     <!--skin selection etc-->
                     <control type="panel" id="6">
                         <posx>0</posx>
                         <posy>73</posy>
                         <width>12-col</width>
-                        <height>18-row</height>
+                        <height>19-row</height>
                         <onright>9999</onright>
                         <itemlayout height="72" width="12-col">
                             <control type="image">
@@ -175,7 +174,7 @@
                                 <aligny>center</aligny>
                                 <font>itemTitle</font>
                                 <textcolor>textActive</textcolor>
-                                <shadowcolor>-</shadowcolor>
+                                <shadowcolor></shadowcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
@@ -235,7 +234,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -246,7 +245,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout width="4-col" height="2-row">
@@ -278,7 +277,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -289,7 +288,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -297,14 +296,14 @@
                             <description>Ok / manual / get more Button</description>
                             <label fallback="186">$INFO[control.getlabel(5)]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(2000,5)</onclick>
                         </item>
                         <item id="2">
                             <description>Cancel Button</description>
                             <label>222</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>PreviousMenu</onclick>
                         </item>
                     </content>

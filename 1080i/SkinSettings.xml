@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -36,13 +36,13 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[20077]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width>18-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -68,7 +68,7 @@
                             <font>buttonTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout height="2-row" width="4-col">
@@ -89,21 +89,18 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="1">
                             <label>$LOCALIZE[128]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="2">
                             <label>$LOCALIZE[31170]</label>
-                            <onclick>noop</onclick>
                         </item>
                         <item id="3">
                             <label>$LOCALIZE[31044]</label>
-                            <onclick>noop</onclick>
                         </item>
                     </content>
                 </control>
@@ -113,7 +110,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>18-row</height>
+                <height>17-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
@@ -122,7 +119,7 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>20-row</height>
+                <height>17-row</height>
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
@@ -220,7 +217,14 @@
                     <label>31174</label>
                     <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
                 </control>
-                <control type="radiobutton" id="16">
+				<control type="button" id="16">
+                    <visible>Container(8000).Hasfocus(2)</visible>
+                    <description>Edit games menu</description>
+                    <width>14-col</width>
+                    <label>31233</label>
+                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
+                </control>
+                <control type="radiobutton" id="17">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Extended Fanart</description>
                     <width>14-col</width>

@@ -12,39 +12,58 @@
 				<effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
                 <effect type="fade" start="0" end="100" time="300" delay="350"/>
             </animation>
+			<control type="image">
+	            <posx>0</posx>
+		        <posy>0</posy>
+		        <width>fullscreenWidth</width>
+		        <height>738</height>
+	            <texture>special://skin/extras/backgrounds/music.jpg</texture>
+	            <colordiffuse>FF333333</colordiffuse>
+	            <aspectratio aligny="top">scale</aspectratio>
+				<fadetime>200</fadetime>
+	        </control>
+			<control type="image">
+                <posx>0</posx>
+                <posy>738</posy>
+                <width>fullscreenWidth</width>
+                <height>6</height>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <texture border="0">colors/white.png</texture>
+                <colordiffuse>highlight</colordiffuse>
+            </control>
 			<!--quick link selector-->
 			<control type="list" id="9123">
                 <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
+                <posy>180</posy>
                 <width>24-col</width>
                 <height>2-row</height>
                 <onleft>9000</onleft>
                 <ondown>9998</ondown>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <itemlayout width="234" height="2-row">
+                <itemlayout width="246" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>234</width>
+                        <width>246</width>
                         <height>2-row</height>
-                        <font>pageSubtitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textDisabled</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="234" height="2-row">
+                <focusedlayout width="246" height="2-row">
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>234</width>
+                        <width>246</width>
                         <height>2-row</height>
-                        <font>pageSubtitle</font>
+                        <font>menuTitle</font>
                         <aligny>center</aligny>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.property(textTitle)]</label>
 						<animation type="conditional" condition="control.hasfocus(9123)" loop="true">
                             <effect type="fade" start="100" end="50" time="1000"/>
@@ -55,24 +74,21 @@
                     <item>
                         <label>special://skin/extras/playlists/recentAlbums.xsp</label>
                         <property name="textTitle">31180</property>
-                        <onclick>noop</onclick>
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/topAlbums.xsp</label>
                         <property name="textTitle">31187</property>
-                        <onclick>noop</onclick>
                     </item>
                     <item>
                         <label>special://skin/extras/playlists/randomAlbums.xsp</label>
                         <property name="textTitle">31181</property>
-                        <onclick>noop</onclick>
                     </item>
                 </content>
             </control>
 			<!--quick links-->			
 			<control type="panel" id="9998">
                 <posx>90</posx>
-                <posy>276</posy>
+                <posy>288</posy>
                 <width>24-col</width>
                 <height>11-row</height>
 				<onup>9123</onup>
@@ -80,25 +96,25 @@
                 <onleft>9000</onleft>
                 <onback>9000</onback>
                 <orientation>horizontal</orientation>
-                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID],return)</onclick>
+                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
                 <onclick>Control.SetFocus(50)</onclick>
-                <itemlayout width="348" height="5-col-gutter">
+                <itemlayout width="352" height="5-col-gutter">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-                        <height>5-col-gutter</height>
+                        <width>324</width>
+                        <height>324</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/black.png</texture>
-                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                        <texture>colors/black.png</texture>
+                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>5-col-gutter</width>
-                        <height>5-col-gutter</height>
+                        <width>324</width>
+                        <height>324</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>6</bordersize>
@@ -107,8 +123,8 @@
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
-                        <posy>9-row</posy>
-                        <width>312</width>
+                        <posy>318</posy>
+                        <width>300</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
@@ -116,25 +132,25 @@
                         <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
                     </control>      
                 </itemlayout>
-                <focusedlayout width="348" height="5-col-gutter">
+                <focusedlayout width="352" height="5-col-gutter">
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>5-col-gutter</height>
+                            <width>324</width>
+	                        <height>324</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="6">colors/black.png</texture>
-                            <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+                            <texture>colors/black.png</texture>
+                            <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
                             <bordersize>6</bordersize>
                             <colordiffuse>FF000000</colordiffuse>
                         </control>
 						<control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>5-col-gutter</height>
+                            <width>324</width>
+	                        <height>324</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.Art(thumb)]</texture>
                             <bordersize>6</bordersize>
@@ -143,8 +159,8 @@
                         <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>9-row</posy>
-	                        <width>312</width>
+	                        <posy>318</posy>
+	                        <width>300</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
@@ -159,25 +175,25 @@
 		<!--all albums-->
 		<control type="group" id="9124">
 			<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
-                <effect type="slide" start="0,0" end="0,-504" tween="sine" time="400"/>
+                <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
             </animation>
 			<control type="label">
                 <visible>!controlgroup(9000).hasfocus + $EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
                 <posx>col-1-begin</posx>
-                <posy>696</posy>
+                <posy>760</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <font>pageSubtitle</font>
+                <font>menuTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[31223]</label>
             </control>
-            <control type="panel" id="50">
+            <control type="panel" id="54">
                 <visible>$EXP[isMusicAlbum]</visible>
                 <posx>col-1-begin</posx>
-                <posy>row-21-begin</posy>
+                <posy>864</posy>
                 <width>1800</width>
-                <height>24-row</height>
+                <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <ondown>50</ondown>
@@ -192,8 +208,8 @@
                         <width>4-col-gutter</width>
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture border="6">colors/black.png</texture>
-                        <bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+                        <texture>colors/black.png</texture>
+                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                         <bordersize>6</bordersize>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
@@ -205,15 +221,15 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>6</bordersize>
-                        <colordiffuse>ffFFFFFF</colordiffuse>
+                        <colordiffuse>77ffffff</colordiffuse>
                     </control>
                     <control type="textbox">
-                        <visible>isempty(listitem.title)</visible>
+                        <visible>String.IsEmpty(listitem.title)</visible>
                         <posx>24</posx>
                         <posy>3-row</posy>
                         <width>228</width>
                         <height>6-row</height>
-                        <font>largeStrong</font>
+                        <font>largeTitle</font>
 						<wrapmultiline>true</wrapmultiline>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
@@ -221,7 +237,7 @@
                     <control type="label">
                         <visible>!controlgroup(9000).hasfocus</visible>
                         <posx>12</posx>
-                        <posy>7-row</posy>
+                        <posy>258</posy>
                         <width>240</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
@@ -239,8 +255,8 @@
 	                        <width>4-col-gutter</width>
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture border="6">colors/black.png</texture>
-	                        <bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+	                        <texture>colors/black.png</texture>
+	                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>FF000000</colordiffuse>
 	                    </control>
@@ -254,12 +270,12 @@
                             <bordersize>6</bordersize>
                         </control>
 	                    <control type="textbox">
-	                        <visible>isempty(listitem.title)</visible>
+	                        <visible>String.IsEmpty(listitem.title)</visible>
 	                        <posx>24</posx>
 	                        <posy>3-row</posy>
 	                        <width>228</width>
 	                        <height>6-row</height>
-	                        <font>largeStrong</font>
+	                        <font>largeTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 	                        <textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.label]</label>
@@ -267,7 +283,7 @@
                         <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>7-row</posy>
+	                        <posy>258</posy>
 	                        <width>240</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>

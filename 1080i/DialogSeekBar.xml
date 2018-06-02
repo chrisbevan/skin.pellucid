@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+    <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
         <control type="image">
             <include>dimensionsFullscreen</include>
@@ -10,9 +10,9 @@
         </control>
         <control type="group">
             <posx>col-1-begin</posx>
-            <posy>row-20-begin</posy>
+            <posy>row-19-begin</posy>
             <control type="label">
-                <visible>!IsEmpty(Player.SeekNumeric)</visible>
+                <visible>!String.IsEmpty(Player.SeekNumeric)</visible>
                 <posx>0</posx>
                 <posy>12</posy>
                 <width>24-col</width>
@@ -66,59 +66,60 @@
                 <posy>80</posy>
                 <width>18-col</width>
                 <height>24</height>
-                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
-                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                <texturebg colordiffuse="77000000" border="19">colors/black.png</texturebg>
+                <midtexture colordiffuse="highlight" border="19">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
             <control type="slider" id="401">
                 <posx>0</posx>
                 <posy>80</posy>
                 <width>18-col</width>
-                <height>24</height>
+                <height>36</height>
                 <texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
                 <textureslidernib>colors/white.png</textureslidernib>
                 <orientation>horizontal</orientation>
             </control>
             <control type="label">
-                <visible>stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
+                <visible>String.IsEqual(VideoPlayer.TVShowTitle,Player.title)</visible>
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>
                 <align>center</align>
-                <font>small</font>
+                <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
-                <visible>!stringcompare(VideoPlayer.TVShowTitle,Player.title)</visible>
+                <visible>!String.IsEqual(VideoPlayer.TVShowTitle,Player.title)</visible>
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>
+				<height>1-row</height>
                 <align>center</align>
-                <font>small</font>
+                <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>0</posx>
-                <posy>3-row</posy>
+                <posy>120</posy>
                 <width>8-col</width>
-                <font>smallStrong</font>
+                <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Time]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>18-col</posx>
-                <posy>3-row</posy>
+                <posy>120</posy>
                 <width>8-col</width>
-                <font>smallStrong</font>
+                <font>itemTitle</font>
                 <align>right</align>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.Duration]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--ff / rw speed indicators-->
@@ -127,14 +128,15 @@
             <posx>12-col</posx>
             <posy>row-21-begin</posy>
             <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1-col</width>
+                <posx>-18</posx>
+                <posy>-32</posy>
+                <width>100</width>
+				<height>100</height>
                 <align>center</align>
                 <font>symbolVeryLarge</font>
                 <textcolor>textActive</textcolor>
                 <label></label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="label">
                 <posx>1-col-indent</posx>
@@ -144,7 +146,7 @@
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[player.SeekStepSize]</label>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--debugging-->

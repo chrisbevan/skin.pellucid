@@ -92,7 +92,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -100,7 +100,7 @@
                             <description>Browse</description>
                             <label>1024</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(129,11)</onclick>
                         </item>
                     </content>
@@ -118,7 +118,7 @@
                     <height>6-row</height>
                     <onright>8000</onright>
                     <ondown>12</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout width="11-col-gutter" height="2-row">
                         <control type="image">
@@ -141,7 +141,7 @@
                             <textcolor>textActive</textcolor>
                             <selectedcolor>textActive</selectedcolor>
                             <label>$LOCALIZE[31208]: $INFO[listitem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
                     <focusedlayout width="11-col-gutter" height="2-row">
@@ -165,7 +165,7 @@
                             <textcolor>black</textcolor>
                             <selectedcolor>black</selectedcolor>
                             <label>$LOCALIZE[31208]: $INFO[listitem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                 </control>
@@ -189,7 +189,7 @@
                     <textoffsetx>112</textoffsetx>
                     <font>itemTitle</font>
                     <align>left</align>
-                    <label>-</label>
+                    <label></label>
                     <onup>10</onup>
                     <ondown>8001</ondown>
                 </control>
@@ -202,7 +202,7 @@
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31210]:</label>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                 </control>
             </control>
 
@@ -288,7 +288,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -299,7 +299,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -307,14 +307,14 @@
                             <description>Ok Button</description>
                             <label>186</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(129,18)</onclick>
                         </item>
                         <item>
                             <description>Cancel Button</description>
                             <label>222</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(129,19)</onclick>
                         </item>
                     </content>

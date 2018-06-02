@@ -2,7 +2,7 @@
 <includes>
     <include name="addonposters">
         <control type="group">
-            <control type="panel" id="50">
+            <control type="panel" id="54">
                 <visible>$EXP[isAddonMovieOrTVshow]</visible>
                 <posx>90</posx>
 				<posy>row-5-begin</posy>
@@ -21,8 +21,8 @@
 						<width>228</width>
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="6">colors/black.png</texture>
-						<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+						<texture>colors/black.png</texture>
+						<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
 						<bordersize>6</bordersize>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
@@ -34,15 +34,15 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>ffffffff</colordiffuse>
+						<colordiffuse>77ffffff</colordiffuse>
 					</control>
 					<control type="textbox">
-						<visible>isempty(listitem.title)</visible>
+						<visible>String.IsEmpty(listitem.title)</visible>
 						<posx>24</posx>
 						<posy>3-row</posy>
 						<width>228</width>
 						<height>6-row</height>
-						<font>largeStrong</font>
+						<font>largeTitle</font>
 						<wrapmultiline>true</wrapmultiline>
 						<textcolor>textActive</textcolor>
 						<label>$INFO[ListItem.label]</label>
@@ -79,8 +79,8 @@
 							<width>228</width>
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/black.png</texture>
-							<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
+							<texture>colors/black.png</texture>
+							<bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 							<bordersize>6</bordersize>
 							<colordiffuse>FF000000</colordiffuse>
 						</control>
@@ -94,12 +94,12 @@
 							<bordersize>6</bordersize>
 						</control>
 						<control type="textbox">
-							<visible>isempty(listitem.title)</visible>
+							<visible>String.IsEmpty(listitem.title)</visible>
 							<posx>24</posx>
 							<posy>3-row</posy>
 							<width>228</width>
 							<height>6-row</height>
-							<font>largeStrong</font>
+							<font>largeTitle</font>
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.label]</label>

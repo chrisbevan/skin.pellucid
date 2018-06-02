@@ -31,7 +31,7 @@
                 <font>dialogTitle</font>
                 <label>14210</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -47,7 +47,7 @@
                 <posy>73</posy>
                 <width>8-col</width>
                 <height>10-row</height>
-                <texture fallback="colors/offblack.png" border="0">$INFO[System.ProfileThumb]</texture>
+                <texture fallback="colors/black.png" border="0">$INFO[System.ProfileThumb]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -78,7 +78,7 @@
                 <font>itemSubTitle</font>
                 <label>$LOCALIZE[31107]: [COLOR highlight]$INFO[System.ProfileName][/COLOR]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--dialog controls-->
             <control type="radiobutton" id="4">
@@ -104,7 +104,7 @@
                         <width>69</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/offblack.png">$INFO[listitem.icon]</texture>
+                        <texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
                     </control>
                     <control type="image">
@@ -145,9 +145,9 @@
                         <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture fallback="colors/black.png">$INFO[listitem.icon]</texture>
+                        <texture fallback="colors/white.png">$INFO[listitem.icon]</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>ffffffff</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                         <include>spinFocusIcon</include>
                     </control>
                     <control type="label">

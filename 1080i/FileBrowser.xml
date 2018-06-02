@@ -9,7 +9,7 @@
 
         <!--fanart (if available)-->
         <control type="image">
-            <visible>SubString(ListItem.label,fanart)</visible>
+            <visible>String.Contains(ListItem.label,fanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.thumb]</texture>
             <colordiffuse>6affffff</colordiffuse>
@@ -17,7 +17,7 @@
             <fadetime>400</fadetime>
         </control>
         <control type="image">
-            <visible>!SubString(ListItem.label,fanart)</visible>
+            <visible>!String.Contains(ListItem.label,fanart)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.FileNameAndPath]</texture>
             <colordiffuse>ffffffff</colordiffuse>
@@ -27,7 +27,7 @@
 
         <!--poster (if available)-->
         <control type="image">
-            <visible>SubString(ListItem.label,remote art)</visible>
+            <visible>String.Contains(ListItem.label,remote art)</visible>
             <include>dimensionsFullscreen</include>
             <texture>$INFO[listitem.thumb]</texture>
             <colordiffuse>6affffff</colordiffuse>
@@ -59,7 +59,7 @@
                 <font>dialogTitle</font>
                 <label>31089</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <control type="image">
                 <posx>0</posx>
@@ -116,7 +116,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
@@ -152,7 +152,7 @@
                         <font>itemTitle</font>
                         <textcolor>black</textcolor>
                         <selectedcolor>black</selectedcolor>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </focusedlayout>
@@ -186,7 +186,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -197,7 +197,7 @@
                         <font>buttonTitle</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="4-col" height="2-row">
@@ -229,7 +229,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -240,7 +240,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -248,14 +248,14 @@
                         <description>Ok Button</description>
                         <label>186</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(126,413)</onclick>
                     </item>
                     <item id="2">
                         <description>Cancel Button</description>
                         <label>222</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(126,414)</onclick>
                     </item>
                     <item id="3">
@@ -263,7 +263,7 @@
                         <description>New Folder Button</description>
                         <label>31048</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(126,415)</onclick>
                     </item>
                 </content>

@@ -120,19 +120,24 @@
         </font>
         <font>
             <name>dialogTitle</name>
-            <filename>roboto/bold.ttf</filename>
+            <filename>roboto_slab/bold.ttf</filename>
             <size>32</size>
+            <linespacing>1.0</linespacing>
+            <style>capitalize</style>
+        </font>
+		<font>
+            <name>confirmTitle</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>34</size>
             <linespacing>1.0</linespacing>
             <style>capitalize</style>
         </font>
         <font>
             <name>largeTitle</name>
-            <filename>roboto/black.ttf</filename>
+            <filename>roboto_slab/regular.ttf</filename>
             <size>60</size>
-            <linespacing>1.0</linespacing>
-            <style>uppercase</style>
+            <linespacing>0.8</linespacing>
         </font>
-
         <font>
             <name>itemTitle</name>
             <filename>roboto/bold.ttf</filename>
@@ -146,6 +151,12 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
+            <name>playlistSubTitle</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
             <name>itemSubTitleCondensed</name>
             <filename>roboto/condensedBold.ttf</filename>
             <size>26</size>
@@ -153,7 +164,7 @@
         </font>
         <font>
             <name>menuTitle</name>
-            <filename>roboto/regular.ttf</filename>
+            <filename>roboto_slab/bold.ttf</filename>
             <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
@@ -161,6 +172,12 @@
             <name>buttonTitle</name>
             <filename>roboto/medium.ttf</filename>
             <size>28</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>settingsCategory</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>
@@ -171,7 +188,7 @@
         </font>
         <font>
             <name>thumbTitle</name>
-            <filename>roboto/regular.ttf</filename>
+            <filename>roboto_slab/regular.ttf</filename>
             <size>20</size>
             <linespacing>1.0</linespacing>
         </font>
@@ -206,7 +223,8 @@
             <size>30</size>
         </font>
     </fontset>
-  <fontset id="heebo">
+	<fontset id="heebo">
+		<!--Heebo fontset for Hebrew etc users-->
         <font>
             <name>veryLarge</name>
             <filename>heebo/black.ttf</filename>
@@ -306,13 +324,13 @@
         </font>
         <font>
             <name>textboxExtraLeading</name>
-            <filename>roboto/regular.ttf</filename>
+            <filename>heebo/regular.ttf</filename>
             <size>30</size>
             <linespacing>1</linespacing>
         </font>
         <font>
             <name>pageTitle</name>
-            <filename>roboto/condensedBold.ttf</filename>
+            <filename>heebo/condensedBold.ttf</filename>
             <size>48</size>
             <linespacing>1.0</linespacing>
         </font>
@@ -329,14 +347,19 @@
             <linespacing>1.0</linespacing>
             <style>capitalize</style>
         </font>
+		<font>
+            <name>confirmTitle</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>34</size>
+            <linespacing>1.0</linespacing>
+            <style>capitalize</style>
+        </font>
         <font>
             <name>largeTitle</name>
-            <filename>heebo/black.ttf</filename>
+            <filename>heebo/regular.ttf</filename>
             <size>60</size>
-            <linespacing>1.0</linespacing>
-            <style>uppercase</style>
+            <linespacing>0.8</linespacing>
         </font>
-
         <font>
             <name>itemTitle</name>
             <filename>heebo/bold.ttf</filename>
@@ -350,14 +373,20 @@
             <linespacing>1.0</linespacing>
         </font>
         <font>
-            <name>itemSubTitleCondensed</name>
+            <name>playlistSubTitle</name>
             <filename>heebo/bold.ttf</filename>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>itemSubTitleCondensed</name>
+            <filename>heebo/condensedBold.ttf</filename>
             <size>26</size>
             <linespacing>0.8</linespacing>
         </font>
         <font>
             <name>menuTitle</name>
-            <filename>heebo/regular.ttf</filename>
+            <filename>heebo/bold.ttf</filename>
             <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
@@ -365,6 +394,12 @@
             <name>buttonTitle</name>
             <filename>heebo/medium.ttf</filename>
             <size>28</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>settingsCategory</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>
@@ -409,5 +444,5 @@
             <filename>heebo/regular.ttf</filename>
             <size>30</size>
         </font>
-    </fontset>
+	</fontset>
 </fonts>

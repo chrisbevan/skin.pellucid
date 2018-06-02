@@ -102,7 +102,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -113,7 +113,7 @@
                         <font>buttonTitle</font>
                         <textcolor>black</textcolor>
                         <label>$INFO[ListItem.label]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
@@ -121,14 +121,14 @@
                         <description>Create Bookmark button</description>
                         <label>294</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(125,2)</onclick>
                     </item>
                     <item id="2">
                         <description>Clear Bookmark button</description>
                         <label>296</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(125,3)</onclick>
                     </item>
                     <item id="3">
@@ -136,7 +136,7 @@
                         <visible>videoplayer.content(episodes)</visible>
                         <label>20406</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>SendClick(125,4)</onclick>
                     </item>
                 </content>

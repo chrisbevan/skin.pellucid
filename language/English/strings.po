@@ -642,7 +642,7 @@ msgid "Playlist saved"
 msgstr ""
 
 msgctxt "#31154"
-msgid "Search for Subtitles"
+msgid "Subtitles"
 msgstr ""
 
 msgctxt "#31155"
@@ -943,4 +943,36 @@ msgstr ""
 
 msgctxt "#31229"
 msgid "Play Music"
+msgstr ""
+
+msgctxt "#31230"
+msgid "Game Settings"
+msgstr ""
+
+msgctxt "#31231"
+msgid "Game related options"
+msgstr ""
+
+msgctxt "#31232"
+msgid "Games"
+msgstr ""
+
+msgctxt "#31233"
+msgid "Edit game section menu"
+msgstr ""
+
+msgctxt "#31234"
+msgid "Game Addons"
+msgstr ""
+
+msgctxt "#31235"
+msgid "mins remaining"
+msgstr ""
+
+msgctxt "#31236"
+msgid "Radio / TV"
+msgstr ""
+
+msgctxt "#31237"
+msgid "Results for"
 msgstr ""

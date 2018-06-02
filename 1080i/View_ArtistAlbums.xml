@@ -8,9 +8,9 @@
 			<control type="image">
 				<include>dimensionsFullscreen</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<texture background="true" border="0">$INFO[container.Art(artist.fanart)]</texture>
+				<texture border="0">$INFO[Container(52).Art(fanart)]</texture>
 				<fadetime>0</fadetime>
-				<colordiffuse>44ffffff</colordiffuse>
+				<colordiffuse>66ffffff</colordiffuse>
 			</control>
 			<control type="image">
 				<include>dimensionsFullscreen</include>
@@ -18,36 +18,53 @@
 				<colordiffuse>ffffffff</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
+			<!--overlay-->
+            <control type="group">
+                <posy>row-17-begin</posy>
+                <posy>0</posy>
+                <include>globalBackground</include>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>fullscreenWidth</width>
+                    <height>6</height>
+                    <aspectratio scalediffuse="false">stretch</aspectratio>
+                    <texture border="0">colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
+                </control>
+            </control>
 			<control type="group">
 				<animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
 					<effect type="fade" start="100" end="0" time="200"/>
 				</animation>
-				<!--titles-->
-				<control type="group">
-					<posx>col-1-begin</posx>
-					<posy>row-6-begin</posy>
+				<!--title-->
+                <control type="group">
+                    <posx>col-1-begin</posx>
+                    <posy>row-8-begin</posy>
 					<control type="label">
-						<posx>0</posx>
-						<posy>-12</posy>
-						<width>16-col</width>
-						<height>3-row</height>
-						<font>veryLargeLight</font>
-						<textcolor>66ffffff</textcolor>
-						<wrapmultiline>true</wrapmultiline>
-						<shadowcolor>-</shadowcolor>
-						<label>$INFO[container.foldername]</label>
-					</control>
-				</control>
-				<control type="panel" id="50">
+                        <posx>0</posx>
+                        <posy>4-row</posy>
+                        <width>10-col</width>
+                        <height>4-row</height>
+                        <font>largeTitle</font>
+                        <textcolor>textActive</textcolor>
+						<aligny>center</aligny>
+                        <shadowcolor></shadowcolor>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>$INFO[container.foldername]</label>
+                    </control>
+                </control>
+				<control type="panel" id="52">
 					<visible>$EXP[isMusicArtistCatalogue]</visible>
 					<posx>col-1-begin</posx>
-					<posy>row-11-begin</posy>
+					<posy>row-19-begin</posy>
 					<width>24-col</width>
 					<height>19-row</height>
 					<onleft>9000</onleft>
 					<ondown>50</ondown>
 					<onup>50</onup>
 					<pagecontrol>60</pagecontrol>
+					<orientation>horizontal</orientation>
 					<scrolltime tween="cubic" easing="out">600</scrolltime>
 					<itemlayout width="300" height="348">
 						<control type="image">
@@ -56,8 +73,8 @@
 							<width>4-col-gutter</width>
 							<height>4-col-gutter</height>
 							<aspectratio>stretch</aspectratio>
-							<texture border="6">colors/black.png</texture>
-							<bordertexture border="6" colordiffuse="22FFFFFF">colors/black.png</bordertexture>
+							<texture>colors/black.png</texture>
+							<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
 							<bordersize>6</bordersize>
 							<colordiffuse>overlay</colordiffuse>
 						</control>
@@ -69,10 +86,10 @@
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
 							<bordersize>6</bordersize>
-							<colordiffuse>ffFFFFFF</colordiffuse>
+							<colordiffuse>77FFFFFF</colordiffuse>
 						</control>
 						<control type="textbox">
-							<visible>isempty(listitem.title)</visible>
+							<visible>String.IsEmpty(listitem.title)</visible>
 							<posx>24</posx>
 							<posy>3-row</posy>
 							<width>228</width>
@@ -85,7 +102,7 @@
 						<control type="label">
 							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
-							<posy>262</posy>
+							<posy>268</posy>
 							<width>240</width>
 							<height>1-row</height>
 							<aligny>center</aligny>
@@ -96,7 +113,7 @@
 						<control type="label">
 							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
-							<posy>286</posy>
+							<posy>292</posy>
 							<width>240</width>
 							<height>1-row</height>
 							<aligny>center</aligny>
@@ -114,8 +131,8 @@
 								<width>4-col-gutter</width>
 								<height>4-col-gutter</height>
 								<aspectratio>stretch</aspectratio>
-								<texture border="6">colors/black.png</texture>
-								<bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
+								<texture>colors/black.png</texture>
+								<bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
 								<bordersize>6</bordersize>
 								<colordiffuse>FF000000</colordiffuse>
 							</control>
@@ -129,7 +146,7 @@
 								<bordersize>6</bordersize>
 							</control>
 							<control type="textbox">
-								<visible>isempty(listitem.title)</visible>
+								<visible>String.IsEmpty(listitem.title)</visible>
 								<posx>24</posx>
 								<posy>3-row</posy>
 								<width>228</width>
@@ -141,7 +158,7 @@
 							</control>
 							<control type="label">
 								<posx>12</posx>
-								<posy>262</posy>
+								<posy>268</posy>
 								<width>240</width>
 								<height>1-row</height>
 								<aligny>center</aligny>
@@ -151,7 +168,7 @@
 							</control>
 							<control type="label">
 								<posx>12</posx>
-								<posy>286</posy>
+								<posy>292</posy>
 								<width>240</width>
 								<height>1-row</height>
 								<aligny>center</aligny>

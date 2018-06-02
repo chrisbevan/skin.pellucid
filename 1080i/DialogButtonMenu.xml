@@ -54,38 +54,38 @@
                     <item id="1">
                         <label>13016</label>
                         <visible>System.CanPowerDown + !Skin.HasSetting(exitFirst)</visible>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>xbmc.powerdown()</onclick>
                     </item>
                     <item id="2">
                         <description>Exit to desktop</description>
                         <visible>Skin.HasSetting(exitFirst)</visible>
                         <label>13012</label>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>XBMC.Quit()</onclick>
                     </item>
                     <item id="3">
                         <label>13011</label>
                         <visible>System.CanSuspend</visible>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>XBMC.Suspend()</onclick>
                     </item>
                     <item id="4">
                         <label>13010</label>
                         <visible>System.CanHibernate</visible>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>XBMC.Hibernate()</onclick>
                     </item>
                     <item id="5">
                         <label>13013</label>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>XBMC.Reboot()</onclick>
                     </item>
                     <item id="6">
                         <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-                        <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+                        <visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
                         <visible>System.Loggedon</visible>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>dialog.close(all,true)</onclick>
                         <onclick>System.LogOff</onclick>
                     </item>
@@ -93,13 +93,13 @@
                         <description>Exit to desktop</description>
                         <visible>!Skin.HasSetting(exitFirst)</visible>
                         <label>13012</label>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>XBMC.Quit()</onclick>
                     </item>
                     <item id="8">
                         <label>13016</label>
                         <visible>System.CanPowerDown + Skin.HasSetting(exitFirst)</visible>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>xbmc.powerdown()</onclick>
                     </item>
                 </content>

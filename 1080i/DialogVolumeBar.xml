@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">-</defaultcontrol>
+    <defaultcontrol always="true"></defaultcontrol>
     <controls>	
         <control type="group">
             <posx>col-19-begin</posx>
@@ -32,7 +32,7 @@
                 <aligny>center</aligny>
                 <label>13376</label>
                 <textcolor>black</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
 			<control type="label">
 				<visible>Player.Muted</visible>
@@ -55,8 +55,13 @@
                 <width>468</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
-                <label>$INFO[player.volume]</label>
+                <label>$INFO[Control.GetLabel(20),, %]</label>
             </control>
+        </control>
+		<!--provide % vals for volume-->
+		<control type="progress" id="20">
+		    <visible>false</visible>
+            <info>Player.Volume</info>
         </control>
         <!--debugging-->
         <include>DebugGrid</include>

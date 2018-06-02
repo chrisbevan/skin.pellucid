@@ -17,12 +17,12 @@
                 <width>8-col-gutter</width>
                 <height>2-row</height>
                 <wrapmultiline>true</wrapmultiline>
-                <font>regularStrong</font>
+                <font>confirmTitle</font>
                 <textcolor>textActive</textcolor>
             </control>
             <control type="textbox" id="9">
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>80</posy>
                 <width>8-col-gutter</width>
                 <height>124</height>
                 <font>textbox</font>
@@ -88,7 +88,7 @@
                        <font>symbolLarge</font>
                        <textcolor>textActive</textcolor>
                        <label>$INFO[ListItem.label2]</label>
-                       <shadowcolor>-</shadowcolor>
+                       <shadowcolor></shadowcolor>
                    </control>
                    <control type="label">
                        <posx>1-col-indent</posx>
@@ -99,7 +99,7 @@
                        <font>buttonTitle</font>
                        <textcolor>black</textcolor>
                        <label>$INFO[ListItem.label]</label>
-                       <shadowcolor>-</shadowcolor>
+                       <shadowcolor></shadowcolor>
                    </control>
                </focusedlayout>
                <content>
@@ -108,7 +108,7 @@
                        <description>No</description>
                        <label>$INFO[control.getlabel(10)]</label>
                        <label2></label2>
-                       <thumb>-</thumb>
+                       <thumb></thumb>
                        <onclick>SendClick(10)</onclick>
                    </item>
                    <item id="2">
@@ -116,7 +116,7 @@
                        <description>Yes / OK</description>
                        <label>$INFO[control.getlabel(11)]</label>
                        <label2></label2>
-                       <thumb>-</thumb>
+                       <thumb></thumb>
                        <onclick>SendClick(11)</onclick>
                    </item>
                    <item id="3">
@@ -125,7 +125,7 @@
                        <description>Custom Button</description>
                        <label>$INFO[control.getlabel(12)]</label>
                        <label2></label2>
-                       <thumb>-</thumb>
+                       <thumb></thumb>
                        <onclick>SendClick(12)</onclick>
                    </item>
                </content>

@@ -2,7 +2,7 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>fadeInOut</include>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu)</onload>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onload>
 	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<controls>
@@ -60,7 +60,7 @@
 					<aligny>center</aligny>
 					<align>center</align>
 					<textcolor>textActive</textcolor>
-					<shadowcolor>-</shadowcolor>
+					<shadowcolor></shadowcolor>
 					<label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
 				</control>
 			</itemlayout>
@@ -84,7 +84,7 @@
 					<aligny>center</aligny>
 					<align>center</align>
 					<textcolor>textActive</textcolor>
-					<shadowcolor>-</shadowcolor>
+					<shadowcolor></shadowcolor>
 					<label>[CAPITALIZE]$INFO[ListItem.label][/CAPITALIZE]</label>
 				</control>
 			</focusedlayout>
@@ -113,7 +113,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.label]</label>
 					</control>
 				</itemlayout>
@@ -136,7 +136,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>textActive</textcolor>
-						<shadowcolor>-</shadowcolor>
+						<shadowcolor></shadowcolor>
 						<label>$INFO[ListItem.label]</label>
 					</control>
 				</focusedlayout>
@@ -238,7 +238,7 @@
 					<aligny>center</aligny>
 					<font>symbolLarge</font>
 					<textcolor>textActive</textcolor>
-					<shadowcolor>-</shadowcolor>
+					<shadowcolor></shadowcolor>
 					<label></label>
 				</control>
 				<control type="label">
@@ -251,7 +251,7 @@
 					<aligny>center</aligny>
 					<font>symbolLarge</font>
 					<textcolor>textActive</textcolor>
-					<shadowcolor>-</shadowcolor>
+					<shadowcolor></shadowcolor>
 					<label></label>
 				</control>
 				<control type="label">

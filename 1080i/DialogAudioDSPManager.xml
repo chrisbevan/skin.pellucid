@@ -45,7 +45,7 @@
                 <font>dialogTitle</font>
                 <label>$LOCALIZE[15020]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--content selection-->
             <control type="list" id="9000">

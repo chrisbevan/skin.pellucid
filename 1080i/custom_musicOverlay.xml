@@ -35,7 +35,7 @@
                 <aligny>center</aligny>
                 <font>symbolLarge</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label></label>
             </control>
             <control type="label">
@@ -48,7 +48,7 @@
                 <aligny>center</aligny>
                 <font>symbolLarge</font>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label></label>
                 <animation type="conditional" condition="true" loop="true">
                     <effect type="fade" start="0" end="100" time="1000"/>
@@ -66,7 +66,7 @@
                 <aligny>center</aligny>
                 <height>1-row</height>
                 <label>$INFO[MusicPlayer.TimeRemaining]  [B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
-                <scroll>true</scroll>
+                <scroll>false</scroll>
                 <textcolor>textActive</textcolor>
             </control>
         </control>

@@ -3,6 +3,7 @@
     <defaultcontrol always="true">9999</defaultcontrol>
     <include>fadeInOut</include>
     <onload>Skin.SetString(recentitems,music)</onload>
+	<views>50,51,52,53,54,55</views>
     <controls>
         <include>globalBackground</include>
 		<control type="group">
@@ -12,7 +13,7 @@
                 <aspectratio scalediffuse="false">stretch</aspectratio>
                 <texture background="true" fallback="colors/offblack.png" border="0">$INFO[Container.Art(artist.fanart)]</texture>
 				<fadetime>500</fadetime>
-                <colordiffuse>77ffffff</colordiffuse>
+                <colordiffuse>55ffffff</colordiffuse>
             </control>
             <control type="image">
                 <texture>vignette.png</texture>

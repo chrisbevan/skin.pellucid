@@ -30,6 +30,7 @@
                     <include condition="Window.isactive(Music) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
                     <include condition="window.isactive(pictures)">picturesSideMenu</include>
                     <include condition="window.isactive(addonbrowser)">addonsSideMenu</include>
+					<include condition="window.isactive(games)">gameSideMenu</include>
                 </control>
             </control>
         </control>

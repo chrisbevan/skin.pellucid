@@ -1,5 +1,48 @@
 **Changelog**
 
+[V1.4.0] ***LEIA BUILDS ONLY***
+- Preparing for Leia compatibility
+
+- [COMPLETE] xbmc.gui bump to 5.13.0
+- [COMPLETE] removal of deprecated infolabel System.HasModalDialog
+- [COMPLETE] MyPVRGuide.xml: Removed view id's 11,12 and 13
+- [COMPLETE] Removed hyphen as none value
+- [COMPLETE] Rename DialogPVRGuideOSD.xml --> DialogPVRChannelGuide
+- [COMPLETE] Remove instances of <onclick>noop</onclick>
+- [COMPLETE] Removal of deprecated 'stringcompare()'
+- [COMPLETE] Removal of deprecated 'substring()'
+- [COMPLETE] Removal of deprecated 'IntegerGreaterThan()'
+- [COMPLETE] Player.CanRecord -> PVR.CanRecordPlayingChannel
+- [COMPLETE] ListItem.ChannelNumber -> ListItem.ChannelNumberLabel
+- [COMPLETE] isempty() -> string.isempty()
+- [COMPLETE] listitem.duration string adjustments
+- [COMPLETE] playlist.random checked
+- [COMPLETE] Player.recording checked
+- [COMPLETE] PVR.time/duration/progress checked
+- [COMPLETE] Games settings
+- [COMPLETE] New shortcuts menu for games
+- [COMPLETE] DialogAddonSettings updated
+- [COMPLETE] DialogPVRGroupManager.xml updated
+- [COMPLETE] DialogPVRChannelManager.xml updated
+- [COMPLETE] MyMusicPlaylistEditor.xml updated
+- [COMPLETE] Subtitle Update
+- [COMPLETE] Music Videos
+- [COMPLETE] global search addon skinned
+- [COMPLETE] GameOSD.xml
+
+- Centre home menu items
+- restore player controls video
+- Add volume passthrough / % volume control (see https://github.com/xperience1080/skin.xperience1080/blob/master/1080i/DialogVolumeBar.xml)
+
+- Rework spotify addon presentation
+- check controls for new window: MyGames.xml
+- Screenshots etc need updating
+
+
+
+
+
+
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.
 - Minor tweaks

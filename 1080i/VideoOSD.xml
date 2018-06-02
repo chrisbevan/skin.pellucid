@@ -20,18 +20,20 @@
             <textcolor>textActive</textcolor>
         </control>
         <control type="group">
-            <posx>1176</posx>
+            <posx>1236</posx>
             <posy>0</posy>
             <animation type="Windowopen">
-                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
+				<effect type="fade" start="0" end="100" time="400"/>
+                <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="500"/>
             </animation>
             <animation type="windowClose">
-                <effect type="slide" start="0" end="900" tween="cubic" easing="in" time="400"/>
+				<effect type="fade" start="100" end="0" time="1000"/>
+                <effect type="slide" start="0" end="800" tween="cubic" easing="in" time="500"/>
             </animation>
             <!--fade out if audio / video menu active-->
-            <animation type="Conditional" condition="Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels)">
+            <animation type="Conditional" condition="Window.IsActive(osdsubtitlesettings) | Window.IsActive(seekbar) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | window.isactive(PVROSDChannels) | window.isactive(subtitlesearch)">
                 <effect type="fade" start="100" end="0" time="350"/>
-                <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
+                <effect type="slide" start="0" end="900" tween="cubic" easing="in" time="500"/>
             </animation>
             <!--overlay-->
             <control type="image">
@@ -59,12 +61,11 @@
 					<posx>0</posx>
                     <posy>0</posy>
 					<orientation>vertical</orientation>
-					<itemgap>24</itemgap>
+					<itemgap>30</itemgap>
 					<control type="label">
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
-	                    <aligny>center</aligny>
 	                    <font>itemTitle</font>
 	                    <textcolor>textActive</textcolor>
 	                    <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]</label>
@@ -74,44 +75,22 @@
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
-	                    <font>largeLight</font>
+	                    <font>largeTitle</font>
 	                    <textcolor>textActive</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 	                    <label>$INFO[videoplayer.title]</label>
 	                </control>
 				</control>
-                <!--player position-->
-                <control type="progress">
-                    <description>Progress Bar</description>
-                    <posx>150</posx>
-                    <posy>212</posy>
-                    <width>312</width>
-                    <height>12</height>
-                    <texturebg>colors/white.png</texturebg>
-                    <midtexture colordiffuse="highlight">colors/white.png</midtexture>
-                    <info>Player.Progress</info>
-                </control>
+                <!--player position-->   
                 <control type="label">
                     <posx>0</posx>
                     <posy>5-row</posy>
                     <width>8-col</width>
-                    <height>2-row</height>
+                    <height>3-row</height>
                     <font>pageSubTitle</font>
                     <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[Videoplayer.time][/B]</label>
-                    <scroll>false</scroll>
-                </control>
-                <control type="label">
-                    <right>col-1-begin</right>
-                    <posy>5-row</posy>
-                    <width>8-col</width>
-                    <height>2-row</height>
-                    <font>pageSubTitle</font>
-                    <align>right</align>
-                    <aligny>center</aligny>
-                    <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[Videoplayer.duration][/B]</label>
+                    <label>[B]$INFO[Videoplayer.timeremaining,, $LOCALIZE[31143]] $INFO[Player.FinishTime(HH:MM),($LOCALIZE[31160] ,)][/B]</label>
                     <scroll>false</scroll>
                 </control>
                 <!--synopsis-->
@@ -123,13 +102,13 @@
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>348</height>
-                    <label fallback="31205">$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,. ]$INFO[videoplayer.plot]</label>
+                    <label fallback="31205">$INFO[videoplayer.plot]</label>
                     <autoscroll>false</autoscroll>
-                    <shadowcolor>-</shadowcolor>
+                    <shadowcolor></shadowcolor>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">
-                    <posx>60r</posx>
+                    <posx>12r</posx>
                     <posy>9-row</posy>
                     <height>7-row</height>
                     <ondown>8001</ondown>
@@ -187,59 +166,59 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
                 <content>
                     <item>
                         <description>Previous</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(previous)</onclick>
                     </item>
                     <item>
                         <description>Rewind</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(rewind)</onclick>
                     </item>
                     <item>
                         <description>Stop</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(stop)</onclick>
                     </item>
                     <item>
                         <visible>Player.Playing | player.forwarding | player.rewinding</visible>
                         <description>Play/Pause</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
                         <visible>Player.Paused</visible>
                         <description>Pause</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
                         <description>Fast forward</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(forward)</onclick>
                     </item>
                     <item>
                         <description>Next Chapter</description>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(next)</onclick>
                     </item>
                     <item>
-                        <enabled>System.GetBool(pvrmanager.enabled) + Player.CanRecord</enabled>
+                        <enabled>System.GetBool(pvrmanager.enabled) + PVR.CanRecordPlayingChannel</enabled>
                         <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>PlayerControl(record)</onclick>
+                        <thumb></thumb>
+                        <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                     </item>
                 </content>
             </control>
@@ -287,7 +266,7 @@
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
-                        <width>252</width>
+                        <width>240</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
@@ -303,7 +282,7 @@
                         <font>symbolLarge</font>
                         <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor>-</shadowcolor>
+                        <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
                         <posx>1-col-indent</posx>
@@ -321,59 +300,35 @@
                         <visible>VideoPlayer.HasMenu</visible>
                         <label>31051</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>PlayerControl(ShowVideoMenu)</onclick>
                     </item>
                     <item>
-                        <description>Download subtitles</description>
+                        <description>Subtitles</description>
                         <label>31154</label>
                         <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ActivateWindow(SubtitleSearch)</onclick>
-                    </item>
-                    <item>
-                        <description>Enable Subtitles</description>
-                        <visible>VideoPlayer.HasSubtitles + !VideoPlayer.SubtitlesEnabled</visible>
-                        <label>24012</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ShowSubtitles</onclick>
-                    </item>
-                    <item>
-                        <description>Disable Subtitles</description>
-                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-                        <label>31161</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>ShowSubtitles</onclick>
-                    </item>
-                    <item>
-                        <description>Adjust subtitle offset</description>
-                        <visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-                        <label>31202</label>
-                        <label2></label2>
-                        <thumb>-</thumb>
-                        <onclick>SubtitleDelay</onclick>
+                        <thumb></thumb>
+                        <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
                     </item>
                     <item>
                         <description>Video Settings</description>
                         <label>31191</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(osdvideosettings)</onclick>
                     </item>
                     <item>
                         <description>Audio Settings</description>
                         <label>31177</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(osdaudiosettings)</onclick>
                     </item>
                     <item>
                         <description>Bookmarks</description>
                         <label>298</label>
                         <label2></label2>
-                        <thumb>-</thumb>
+                        <thumb></thumb>
                         <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                 </content>

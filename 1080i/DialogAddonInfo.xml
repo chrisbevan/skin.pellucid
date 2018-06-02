@@ -27,7 +27,7 @@
                 <font>dialogTitle</font>
                 <label>$INFO[ListItem.AddonType]</label>
                 <textcolor>textActive</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
             </control>
             <!--dialog background-->
             <control type="image">
@@ -100,30 +100,22 @@
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="image">
-                    <posx>12</posx>
-                    <posy>12</posy>
-                    <width>2-col-gutter</width>
-                    <height>2-col-gutter</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture fallback="colors/offblack.png">$INFO[ListItem.art(thumb)]</texture>
-                </control>
                 <control type="label">
                     <description>Addon Title</description>
-                    <posx>2-col</posx>
+                    <posx>12</posx>
                     <posy>12</posy>
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
-                    <font>mediumStrong</font>
-                    <label>$INFO[ListItem.addonname]$INFO[ListItem.addonversion, (,)]</label>
+                    <font>menuTitle</font>
+                    <label>[B]$INFO[ListItem.addonname]$INFO[ListItem.addonversion, (,)][/B]</label>
                 </control>
                 <control type="label">
-                    <posx>2-col</posx>
-                    <posy>84</posy>
+                    <posx>12</posx>
+                    <posy>72</posy>
                     <width>9-col</width>
-                    <font>buttonTitle</font>
-                    <textcolor>textDisabled</textcolor>
+                    <font>menuTitle</font>
+                    <textcolor>menuUnselected</textcolor>
                     <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
                 </control>
                 <control type="textbox" id="400">
@@ -209,7 +201,7 @@
                             <font>symbolLarge</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                         <control type="label">
                             <posx>1-col-indent</posx>
@@ -220,7 +212,7 @@
                             <font>buttonTitle</font>
                             <textcolor>black</textcolor>
                             <label>$INFO[ListItem.label]</label>
-                            <shadowcolor>-</shadowcolor>
+                            <shadowcolor></shadowcolor>
                         </control>
                     </focusedlayout>
                     <content>
@@ -228,41 +220,41 @@
                             <visible>Control.IsEnabled(12)</visible>
                             <label>31117</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>sendclick(146,12)</onclick>
                         </item>
                         <item>
                             <label>$INFO[Control.GetLabel(6)]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(146,6)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(9)</visible>
                             <label>$INFO[Control.GetLabel(9)]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(146,9)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(8)</visible>
                             <label>$INFO[Control.GetLabel(8)]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),enable)</visible>
                             <label>$LOCALIZE[31218]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
                         <item>
                             <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),disable)</visible>
                             <label>$LOCALIZE[31104]</label>
                             <label2></label2>
-                            <thumb>-</thumb>
+                            <thumb></thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
                     </content>
