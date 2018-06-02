@@ -30,11 +30,14 @@
 - [COMPLETE] global search addon skinned
 - [COMPLETE] GameOSD.xml
 
+- Centre home menu items
 - restore player controls video
 - Add volume passthrough / % volume control (see https://github.com/xperience1080/skin.xperience1080/blob/master/1080i/DialogVolumeBar.xml)
 
+- Rework spotify addon presentation
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
+
 
 
 

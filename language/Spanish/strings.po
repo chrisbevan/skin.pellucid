@@ -1,0 +1,946 @@
+# Kodi Media Center language file
+# Addon Name: Pellucid
+# Addon id: skin.pellucid
+# Addon Provider: chrisbevan
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Skins\n"
+"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: chrisbevan\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "Addon Summary"
+msgid "Un skin para Kodi realizado por theDeadman"
+msgstr ""
+
+msgctxt "Addon Description"
+msgid ""
+"Pellucid es una experiencia ligera, limpia y simple de Kodi diseñada para una máxima facilidad de uso y un mínimo esfuerzo."
+msgstr ""
+
+msgctxt "#31000"
+msgid "Vídeos"
+msgstr ""
+
+msgctxt "#31001"
+msgid "Música"
+msgstr ""
+
+msgctxt "#31002"
+msgid "Imágenes"
+msgstr ""
+
+msgctxt "#31003"
+msgid "Addons de programa"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Energia"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Búsqueda"
+msgstr ""
+
+msgctxt "#31006"
+msgid "TV"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Información del sistema"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Ordenar por"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Género"
+msgstr ""
+
+msgctxt "#31010"
+msgid "Add-ons"
+msgstr ""
+
+msgctxt "#31011"
+msgid "Temporada"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Mi Biblioteca"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Auto actualizar"
+msgstr ""
+
+msgctxt "#31014"
+msgid "título(s)"
+msgstr ""
+
+msgctxt "#31015"
+msgid "On"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Off"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Canales"
+msgstr ""
+
+msgctxt "#31018"
+msgid "minutos"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Abrir lista"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Guardar lista"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Limpiar lista"
+msgstr ""
+
+msgctxt "#31022"
+msgid "Seleccionar ítems"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Notificación"
+msgstr ""
+
+msgctxt "#31024"
+msgid "Artista"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Ajustes"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Pronóstico"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Actualmente"
+msgstr ""
+
+msgctxt "#31028"
+msgid "Sensación"
+msgstr ""
+
+msgctxt "#31029"
+msgid "Lista actual"
+msgstr ""
+
+msgctxt "#31030"
+msgid "Humedad"
+msgstr ""
+
+msgctxt "#31031"
+msgid "Reproducir al azar"
+msgstr ""
+
+msgctxt "#31032"
+msgid "Visualización"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Establecer contenido"
+msgstr ""
+
+msgctxt "#31034"
+msgid "Habilitar cuadricula de depuración"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Habiliar información de depuración"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Lanzador avanzado"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Álbums por"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Álbums"
+msgstr ""
+
+msgctxt "#31039"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Vídeo"
+msgstr ""
+
+msgctxt "#31041"
+msgid "Editar Menu Items"
+msgstr ""
+
+msgctxt "#31042"
+msgid "Configuración específica del tipo de contenido"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Recargar Skin"
+msgstr ""
+
+msgctxt "#31044"
+msgid "Debugging"
+msgstr ""
+
+msgctxt "#31045"
+msgid "nuevo(s) episodio(s)"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Campo:"
+msgstr ""
+
+msgctxt "#31047"
+msgid "Empezar en"
+msgstr ""
+
+msgctxt "#31048"
+msgid "Nueva carpeta"
+msgstr ""
+
+msgctxt "#31049"
+msgid "Capítulo"
+msgstr ""
+
+msgctxt "#31050"
+msgid "toma(s)"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Disc Menu"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Reinicializar menu por defecto"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Libreria musical"
+msgstr ""
+
+msgctxt "#31054"
+msgid "por"
+msgstr ""
+
+msgctxt "#31055"
+msgid "Tiempo"
+msgstr ""
+
+msgctxt "#31056"
+msgid "Libreria de immágenes"
+msgstr ""
+
+msgctxt "#31057"
+msgid "Crear lista musical"
+msgstr ""
+
+msgctxt "#31058"
+msgid "Addons de música"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Radio"
+msgstr ""
+
+msgctxt "#31060"
+msgid "PVR"
+msgstr ""
+
+msgctxt "#31061"
+msgid "Ajusta la apariencia de Kodi"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Memoría"
+msgstr ""
+
+msgctxt "#31063"
+msgid "Administrar la reproducción de contenido"
+msgstr ""
+
+msgctxt "#31064"
+msgstr "CPU"
+msgstr ""
+
+msgctxt "#31065"
+msgstr "EPG"
+msgstr ""
+
+msgctxt "#31066"
+msgstr "CD de audio"
+msgstr ""
+
+msgctxt "#31067"
+msgstr "Extender la funcionalidad de Kodi"
+msgstr ""
+
+msgctxt "#31068"
+msgstr "Presentaciones de diapositivas"
+msgstr ""
+
+msgctxt "#31069"
+msgstr "Ubicaciones"
+msgstr ""
+
+msgctxt "#31070"
+msgstr "Pantalla"
+msgstr ""
+
+msgctxt "#31071"
+msgstr "Comunicaciones y uso compartido"
+msgstr ""
+
+msgctxt "#31072"
+msgstr "Reproducir ahora"
+msgstr ""
+
+msgctxt "#31073"
+msgstr "Guía de canales"
+msgstr ""
+
+msgctxt "#31074"
+msgstr "Reparto y equipo"
+msgstr ""
+
+msgctxt "#31075"
+msgstr "Reproducir"
+msgstr ""
+
+msgctxt "#31076"
+msgstr "Cambiar el título"
+msgstr ""
+
+msgctxt "#31077"
+msgstr "Archivos de música"
+msgstr ""
+
+msgctxt "#31078"
+msgstr "Ahora y Siguiente"
+msgstr ""
+
+msgctxt "#31079"
+msgstr "Importar su contenido en Kodi"
+msgstr ""
+
+msgctxt "#31080"
+msgstr "Guía"
+msgstr ""
+
+msgctxt "#31081"
+msgstr "Configuración de televisión digital"
+msgstr ""
+
+msgctxt "#31082"
+msgstr "Por"
+msgstr ""
+
+msgctxt "#31083"
+msgstr "Opciones específicas del Skin"
+msgstr ""
+
+msgctxt "#31084"
+msgstr "Administrar menú de pantalla de inicio"
+msgstr ""
+
+msgctxt "#31085"
+msgstr "Agregar addon de video"
+msgstr ""
+
+msgctxt "#31086"
+msgstr "Agregar addon de música"
+msgstr ""
+
+msgctxt "#31087"
+msgstr "Temporizadores PVR"
+msgstr ""
+
+msgctxt "#31088"
+msgstr "Video Addons"
+msgstr ""
+
+msgctxt "#31089"
+msgstr "Explorador de archivos"
+msgstr ""
+
+msgctxt "#31090"
+msgstr "Addon de música"
+msgstr ""
+
+msgctxt "#31091"
+msgstr "Agregar lista de reproducción de video"
+msgstr ""
+
+msgctxt "#31092"
+msgstr "Agregar lista de reproducción de música"
+msgstr ""
+
+msgctxt "#31093"
+msgstr "IP"
+msgstr ""
+
+msgctxt "#31094"
+msgstr "Viento"
+msgstr ""
+
+msgctxt "#31095"
+msgstr "Transferir y copiar archivos"
+msgstr ""
+
+msgctxt "#31096"
+msgstr "No se encontraron elementos"
+msgstr ""
+
+msgctxt "#31097"
+msgstr "Lista de reproducción"
+msgstr ""
+
+msgctxt "#31098"
+msgstr "Volumen silenciado"
+msgstr ""
+
+msgctxt "#31099"
+msgstr "Agregar grupo"
+msgstr ""
+
+msgctxt "#31100"
+msgstr "Renombrar grupo"
+msgstr ""
+
+msgctxt "#31101"
+msgstr "Eliminar grupo"
+msgstr ""
+
+msgctxt "#31102"
+msgstr "Modo de bajo consumo de CPU"
+msgstr ""
+
+msgctxt "#31103"
+msgstr "Controla cómo se usa Kodi"
+msgstr ""
+
+msgctxt "#31104"
+msgstr "Desactivar este complemento"
+msgstr ""
+
+msgctxt "#31105"
+msgstr "Administra tu sistema Kodi"
+msgstr ""
+
+msgctxt "#31106"
+msgstr "Usuarios"
+msgstr ""
+
+msgctxt "#31107"
+msgstr "Perfil actual"
+msgstr ""
+
+msgctxt "#31108"
+msgstr "Acerca de esta instalación de Kodi"
+msgstr ""
+
+msgctxt "#31109"
+msgstr "Orden: Ascendente"
+msgstr ""
+
+msgctxt "#31110"
+msgstr "Orden: Descendente"
+msgstr ""
+
+msgctxt "#31111"
+msgstr "Administra los Addons de programa"
+msgstr ""
+
+msgctxt "#31112"
+msgstr "Guía de TV"
+msgstr ""
+
+msgctxt "#31113"
+msgstr "Complementos Kodi"
+msgstr ""
+
+msgctxt "#31114"
+msgstr "Formato de píxel"
+msgstr ""
+
+msgctxt "#31115"
+msgstr "Decodificador de video"
+msgstr ""
+
+msgctxt "#31116"
+msgstr "Establecer el directorio de fondo de pantalla"
+msgstr ""
+
+msgctxt "#31117"
+msgstr "Lanzar complemento"
+msgstr ""
+
+msgctxt "#31118"
+msgstr "PVR no activo"
+msgstr ""
+
+msgctxt "#31119"
+msgstr "Política de privacidad"
+msgstr ""
+
+msgctxt "#31120"
+msgstr "Jugando"
+msgstr ""
+
+msgctxt "#31121"
+msgstr "Mi Kodi"
+msgstr ""
+
+msgctxt "#31122"
+msgstr "Restablecer fondos de inicio a los valores predeterminados"
+msgstr ""
+
+msgctxt "#31123"
+msgstr "Lista de reproducción actual"
+msgstr ""
+
+msgctxt "#31124"
+msgstr "Biblioteca de búsqueda"
+msgstr ""
+
+msgctxt "#31125"
+msgstr "Buscando"
+msgstr ""
+
+msgctxt "#31126"
+msgstr "Nivel de configuración"
+msgstr ""
+
+msgctxt "#31127"
+msgstr "Continuar viendo"
+msgstr ""
+
+msgctxt "#31128"
+msgstr "Agregar"
+msgstr ""
+
+msgctxt "#31129"
+msgstr "Artista"
+msgstr ""
+
+msgctxt "#31130"
+msgstr "Año"
+msgstr ""
+
+msgctxt "#31131"
+msgstr "Cambie a este perfil ahora"
+msgstr ""
+
+msgctxt "#31132"
+msgstr "Continuar viendo"
+msgstr ""
+
+msgctxt "#31133"
+msgstr "Lista aleatoria"
+msgstr ""
+
+msgctxt "#31134"
+msgstr "Búsqueda manual"
+msgstr ""
+
+msgctxt "#31135"
+msgstr "Expulsar disco"
+msgstr ""
+
+msgctxt "#31136"
+msgstr "Reproducción en curso"
+msgstr ""
+
+msgctxt "#31137"
+msgstr "Raspador de contenido:"
+msgstr ""
+
+msgctxt "#31138"
+msgstr "Detener reproducción de video al regresar al menú"
+msgstr ""
+
+msgctxt "#31139"
+msgstr "Versión"
+msgstr ""
+
+msgctxt "#31140"
+msgstr "Formado"
+msgstr ""
+
+msgctxt "#31141"
+msgstr "Años activos"
+msgstr ""
+
+msgctxt "#31142"
+msgstr "Priorizar la salida durante el apagado en el menú de encendido"
+msgstr ""
+
+msgctxt "#31143"
+msgstr "Restante"
+msgstr ""
+
+msgctxt "#31144"
+msgstr "FPS"
+msgstr ""
+
+msgctxt "#31145"
+msgstr "Artículos"
+msgstr ""
+
+msgctxt "#31146"
+msgstr "Director"
+msgstr ""
+
+msgctxt "#31147"
+msgstr "Buscar"
+msgstr ""
+
+msgctxt "#31148"
+msgstr "Estilo"
+msgstr ""
+
+msgctxt "#31149"
+msgstr "Lanzamiento"
+msgstr ""
+
+msgctxt "#31150"
+msgstr "Etiqueta"
+msgstr ""
+
+msgctxt "#31151"
+msgstr "Subtítulos"
+msgstr ""
+
+msgctxt "#31152"
+msgstr "Presiona OK para cancelar"
+msgstr ""
+
+msgctxt "#31153"
+msgstr "Lista de reproducción guardada"
+msgstr ""
+
+msgctxt "#31154"
+msgstr "Buscar subtítulos"
+msgstr ""
+
+msgctxt "#31155"
+msgstr "Ir al artista"
+msgstr ""
+
+msgctxt "#31156"
+msgstr "Juegos"
+msgstr ""
+
+msgctxt "#31157"
+msgstr "Inicio: Ocultar juegos"
+msgstr ""
+
+msgctxt "#31158"
+msgstr "Ir al álbum"
+msgstr ""
+
+msgctxt "#31159"
+msgstr "Desconocido"
+msgstr ""
+
+msgctxt "#31160"
+msgstr "Termina"
+msgstr ""
+
+msgctxt "#31161"
+msgstr "Desactiva los subtítulos"
+msgstr ""
+
+msgctxt "#31162"
+msgstr "Elementos del menú de inicio"
+msgstr ""
+
+msgctxt "#31163"
+msgstr "Reproductor de música"
+msgstr ""
+
+msgctxt "#31164"
+msgstr "Radio"
+msgstr ""
+
+msgctxt "#31165"
+msgstr "Grabaciones de TV"
+msgstr ""
+
+msgctxt "#31166"
+msgstr "Álbum"
+msgstr ""
+
+msgctxt "#31167"
+msgstr "Género"
+msgstr ""
+
+msgctxt "#31168"
+msgstr "Calificación"
+msgstr ""
+
+msgctxt "#31169"
+msgstr "Velocidad"
+msgstr ""
+
+msgctxt "#31170"
+msgstr "Menús"
+msgstr ""
+
+msgctxt "#31171"
+msgstr "Editar menú de inicio"
+msgstr ""
+
+msgctxt "#31172"
+msgstr "Editar el menú de la sección de video"
+msgstr ""
+
+msgctxt "#31173"
+msgstr "Editar el menú de la sección de música"
+msgstr ""
+
+msgctxt "#31174"
+msgstr "Editar menú de sección de imagen"
+msgstr ""
+
+msgctxt "#31175"
+msgstr "Establecer el contenido más reciente"
+msgstr ""
+
+msgctxt "#31176"
+msgstr "Nuevas películas"
+msgstr ""
+
+msgctxt "#31177"
+msgstr "Configuración de audio"
+msgstr ""
+
+msgctxt "#31178"
+msgstr "Nuevos programas de TV"
+msgstr ""
+
+msgctxt "#31179"
+msgstr "Opciones"
+msgstr ""
+
+msgctxt "#31180"
+msgstr "Nuevos álbumes"
+msgstr ""
+
+msgctxt "#31181"
+msgstr "Álbumes aleatorios"
+msgstr ""
+
+msgctxt "#31182"
+msgstr "Pistas"
+msgstr ""
+
+msgctxt "#31183"
+msgstr "Reproducir"
+msgstr ""
+
+msgctxt "#31184"
+msgstr "Información"
+msgstr ""
+
+msgctxt "#31185"
+msgstr "Abrir"
+msgstr ""
+
+msgctxt "#31186"
+msgstr "Vista"
+msgstr ""
+
+msgctxt "#31187"
+msgstr "Álbumes principales"
+msgstr ""
+
+msgctxt "#31188"
+msgid "temporada (s)"
+msgstr ""
+
+msgctxt "#31189"
+msgid "episodio (s)"
+msgstr ""
+
+msgctxt "#31190"
+msgstr "Todos los episodios"
+msgstr ""
+
+msgctxt "#31191"
+msgstr "Configuración de video"
+msgstr ""
+
+msgctxt "#31192"
+msgstr "Fecha"
+msgstr ""
+
+msgctxt "#31193"
+msgstr "Duración"
+msgstr ""
+
+msgctxt "#31194"
+msgstr "Grupo"
+msgstr ""
+
+msgctxt "#31195"
+msgstr "Ocultar elementos vistos:"
+msgstr ""
+
+msgctxt "#31196"
+msgstr "Dir"
+msgstr ""
+
+msgctxt "#31197"
+msgstr "Tiempo"
+msgstr ""
+
+msgctxt "#31198"
+msgstr "sin ver"
+msgstr ""
+
+msgctxt "#31199"
+msgstr "Artistas en"
+msgstr ""
+
+msgctxt "#31200"
+msgstr "Hoy"
+msgstr ""
+
+msgctxt "#31201"
+msgstr "Grabar"
+msgstr ""
+
+msgctxt "#31202"
+msgstr "Ajustar el desplazamiento de subtítulos"
+msgstr ""
+
+msgctxt "#31203"
+msgstr "Lista de reproducción inteligente"
+msgstr ""
+
+msgctxt "#31204"
+msgstr "Episodio"
+msgstr ""
+
+msgctxt "#31205"
+msgstr "No hay más detalles disponibles".
+msgstr ""
+
+msgctxt "#31206"
+msgstr "Información del sistema Kodi"
+msgstr ""
+
+msgctxt "#31207"
+msgstr "Tiempo de actividad total:"
+msgstr ""
+
+msgctxt "#31208"
+msgstr "Ruta"
+msgstr ""
+
+msgctxt "#31209"
+msgstr "<Nombre de origen>"
+msgstr ""
+
+msgctxt "#31210"
+msgstr "Nombre"
+msgstr ""
+
+msgctxt "#31211"
+msgid "<Nombre de lista de reproducción inteligente>"
+msgstr ""
+
+msgctxt "#31212"
+msgstr "De"
+msgstr ""
+
+msgctxt "#31213"
+msgstr "Sin ver"
+msgstr ""
+
+msgctxt "#31214"
+msgstr "Canal"
+msgstr ""
+
+msgctxt "#31215"
+msgstr "Canales de TV"
+msgstr ""
+
+msgctxt "#31216"
+msgstr "Programas de TV"
+msgstr ""
+
+msgctxt "#31217"
+msgstr "Ocultar el resumen del clima en la pantalla de inicio"
+msgstr ""
+
+msgctxt "#31218"
+msgstr "Habilitar este complemento"
+msgstr ""
+
+msgctxt "#31219"
+msgstr "Arte descargado"
+msgstr ""
+
+msgctxt "#31220"
+msgstr "Desactivar fanart extendida"
+msgstr ""
+
+msgctxt "#31221"
+msgstr "Reproducir disco"
+msgstr ""
+
+msgctxt "#31222"
+msgstr "Cambiar grupo de canales"
+msgstr ""
+
+msgctxt "#31223"
+msgstr "Todos los álbumes"
+msgstr ""
+
+msgctxt "#31224"
+msgstr "Todas las películas"
+msgstr ""
+
+msgctxt "#31225"
+msgstr "Todos los programas de TV"
+msgstr ""
+
+msgctxt "#31226"
+msgstr "Configuración de LibreElec"
+msgstr ""
+
+msgctxt "#31227"
+msgstr "Opciones adicionales para LibreElec"
+msgstr ""
+
+msgctxt "#31228"
+msgstr "Menú de edición"
+msgstr ""
+
+msgctxt "#31229"
+msgstr "Reproducir música"
+msgstr ""
