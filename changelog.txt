@@ -29,19 +29,14 @@
 - [COMPLETE] Music Videos
 - [COMPLETE] global search addon skinned
 - [COMPLETE] GameOSD.xml
+- [COMPLETE] Adjust alignment of home menu items based on item count
 
-- Centre home menu items
 - restore player controls video
 - Add volume passthrough / % volume control (see https://github.com/xperience1080/skin.xperience1080/blob/master/1080i/DialogVolumeBar.xml)
 
 - Rework spotify addon presentation
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
-
-
-
-
-
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.

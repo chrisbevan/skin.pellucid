@@ -191,6 +191,8 @@
             </control>
             <control type="edit" id="12">
                 <description>Default Edit</description>
+				<font>buttonTitle</font>
+				<textoffsetx>24</textoffsetx>
             </control>
 			<control type="sliderex" id="13">
                 <description>Default Slider</description>

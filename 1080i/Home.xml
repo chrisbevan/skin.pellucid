@@ -35,6 +35,9 @@
 				<effect type="fade" start="100" end="0" time="500" delay="0"/>
 			</animation>
 			<posx>col-5-begin</posx>
+			<animation condition="string.isEqual(Container(9000).NumItems,1)" effect="slide" end="432,0" time="0">conditional</animation>
+			<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
+			<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>			
 			<posy>row-12-begin</posy>
 			<width>18-col</width>
 			<height>12-row</height>
