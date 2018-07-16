@@ -53,15 +53,7 @@
                     <posy>row-15-begin</posy>
                     <posy>0</posy>
                     <include>globalBackground</include>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>fullscreenWidth</width>
-                        <height>6</height>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <texture border="0">colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                    </control>
+                    
                 </control>
                 <!--content-->
                 <control type="panel" id="58">

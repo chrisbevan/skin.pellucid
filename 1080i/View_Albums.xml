@@ -14,7 +14,7 @@
             </animation>
 			<control type="image">
 	            <posx>0</posx>
-		        <posy>0</posy>
+		        <posy>-24</posy>
 		        <width>fullscreenWidth</width>
 		        <height>738</height>
 	            <texture>special://skin/extras/backgrounds/music.jpg</texture>
@@ -22,15 +22,6 @@
 	            <aspectratio aligny="top">scale</aspectratio>
 				<fadetime>200</fadetime>
 	        </control>
-			<control type="image">
-                <posx>0</posx>
-                <posy>738</posy>
-                <width>fullscreenWidth</width>
-                <height>6</height>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture border="0">colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-            </control>
 			<!--quick link selector-->
 			<control type="list" id="9123">
                 <posx>col-1-begin</posx>

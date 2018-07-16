@@ -63,9 +63,20 @@
                     <width>8-col-gutter</width>
                     <label></label>
                     <font>itemSubtitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>highlight</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
+				<!--page scrollbar-->
+	            <control type="group" id="8000">
+	                <visible>Control.IsVisible(60)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8000).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="60">
+	                    <posx>-18</posx>
+	                    <posy>2-row</posy>
+	                    <height>16-row</height>
+	                    <onright>20</onright>
+	                </control>
+	            </control>
                 <!--left file list-->
                 <control type="list" id="20">
                     <posx>0</posx>
@@ -73,6 +84,8 @@
                     <width>9-col</width>
                     <height>15-row</height>
                     <onright>21</onright>
+					<onleft>60</onleft>
+					<pagecontrol>60</pagecontrol>
                     <itemlayout height="2-row" width="9-col">
                         <control type="label">
                             <posx>24</posx>
@@ -98,7 +111,7 @@
                             <width>9-col-textbox</width>
                             <height>2-row</height>
                             <texture>colors/white.png</texture>
-                            <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(20)">Conditional</animation>
+                            <animation effect="fade" start="100" end="20" condition="!Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -134,7 +147,7 @@
                     <height>2-row</height>
                     <label></label>
                     <font>itemSubtitle</font>
-                    <textcolor>textActive</textcolor>
+                    <textcolor>highlight</textcolor>
                 </control>
                 <control type="list" id="21">
                     <posx>0</posx>
@@ -142,6 +155,8 @@
                     <width>9-col</width>
                     <height>15-row</height>
                     <onleft>20</onleft>
+					<onright>61</onright>
+					<pagecontrol>61</pagecontrol>
                     <itemlayout height="2-row" width="9-col">
                         <control type="label">
                             <posx>24</posx>
@@ -167,7 +182,7 @@
                             <width>9-col</width>
                             <height>2-row</height>
                             <texture>colors/white.png</texture>
-                            <animation effect="fade" start="100" end="50" condition="Control.HasFocus(20)">Conditional</animation>
+                            <animation effect="fade" start="100" end="20" condition="Control.HasFocus(20)">Conditional</animation>
                         </control>
                         <control type="label">
                             <posx>24</posx>
@@ -190,6 +205,17 @@
                         </control>
                     </focusedlayout>
                 </control>
+				<!--page scrollbar-->
+	            <control type="group" id="8001">
+	                <visible>Control.IsVisible(61)</visible>
+	                <animation effect="fade" start="100" end="0" time="100" condition="!controlgroup(8001).hasfocus">conditional</animation>
+	                <control type="scrollbar" id="61">
+	                    <posx>654</posx>
+	                    <posy>2-row</posy>
+	                    <height>16-row</height>
+	                    <onleft>21</onleft>
+	                </control>
+	            </control>
             </control>
         </control>
         <!--debugging-->

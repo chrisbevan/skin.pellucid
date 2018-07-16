@@ -23,15 +23,6 @@
                 <posy>row-17-begin</posy>
                 <posy>0</posy>
                 <include>globalBackground</include>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>fullscreenWidth</width>
-                    <height>6</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture border="0">colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                </control>
             </control>
 			<control type="group">
 				<animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
@@ -57,7 +48,7 @@
 				<control type="panel" id="52">
 					<visible>$EXP[isMusicArtistCatalogue]</visible>
 					<posx>col-1-begin</posx>
-					<posy>row-19-begin</posy>
+					<posy>696</posy>
 					<width>24-col</width>
 					<height>19-row</height>
 					<onleft>9000</onleft>
