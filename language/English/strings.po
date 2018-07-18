@@ -976,3 +976,15 @@ msgstr ""
 msgctxt "#31237"
 msgid "Results for"
 msgstr ""
+
+msgctxt "#31238"
+msgid "Disable recently added section for Movies"
+msgstr ""
+
+msgctxt "#31239"
+msgid "Disable recently added section for TV Shows"
+msgstr ""
+
+msgctxt "#31240"
+msgid "Disable recently added section for Albums"
+msgstr ""

@@ -232,6 +232,30 @@
                     <onclick>Skin.ToggleSetting(disableExtendedFanart)</onclick>
                     <selected>Skin.HasSetting(disableExtendedFanart)</selected>
                 </control>
+				<control type="radiobutton" id="18">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Disable recently added Movies</description>
+                    <width>14-col</width>
+                    <label>31238</label>
+                    <onclick>Skin.ToggleSetting(disableRecentMovies)</onclick>
+                    <selected>Skin.HasSetting(disableRecentMovies)</selected>
+                </control>
+				<control type="radiobutton" id="19">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Disable recently added TVShows</description>
+                    <width>14-col</width>
+                    <label>31239</label>
+                    <onclick>Skin.ToggleSetting(disableRecentTVShows)</onclick>
+                    <selected>Skin.HasSetting(disableRecentTVShows)</selected>
+                </control>
+				<control type="radiobutton" id="20">
+                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <description>Disable recently added Albums</description>
+                    <width>14-col</width>
+                    <label>31240</label>
+                    <onclick>Skin.ToggleSetting(disableRecentAlbums)</onclick>
+                    <selected>Skin.HasSetting(disableRecentAlbums)</selected>
+                </control>
             </control>
         </control>
         <!--debugging-->

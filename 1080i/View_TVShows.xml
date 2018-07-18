@@ -3,7 +3,7 @@
 	<include name="tvshows">
 		<control type="group">
 			<control type="group" id="9201">
-				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists)</visible>
+				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-200" time="200"/>
 					<effect type="fade" start="100" end="0" time="200"/>
@@ -20,6 +20,7 @@
 		            <texture>$INFO[container(9203).listitem.art(fanart)]</texture>
 		            <colordiffuse>FF333333</colordiffuse>
 		            <aspectratio>scale</aspectratio>
+					<fadetime>300</fadetime>
 		        </control>
 				<!--quick link selector-->
 				<control type="list" id="9202">

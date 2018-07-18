@@ -31,10 +31,8 @@
 - [COMPLETE] GameOSD.xml
 - [COMPLETE] Adjust alignment of home menu items based on item count
 - [NEW] Additional wallpapers (Thanks Dadebue)
+- [NEW] USER OPTION: Disable recently added content for movies, tvshows and music
 
-- USER OPTION: Disable recently added
-
-- Rework spotify addon presentation
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
 
