@@ -33,8 +33,12 @@
 - [NEW] Additional wallpapers (Thanks Dadebue)
 - [NEW] USER OPTION: Disable recently added content for movies, tvshows and music
 
+[NETFLIX FIX] https://github.com/asciidisco/plugin.video.netflix
+
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
+
+
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.

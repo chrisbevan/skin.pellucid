@@ -86,15 +86,6 @@
 				<colordiffuse>cc111111</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			<control type="image">
-				<posx>-6</posx>
-				<posy>0</posy>
-				<width>6</width>
-				<height>fullscreenHeight</height>
-				<texture>colors/white.png</texture>
-				<colordiffuse>highlight</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
 			<!--content description-->
 			<control type="label">
 				<posx>24</posx>
@@ -312,15 +303,6 @@
 				<height>fullscreenHeight</height>
 				<texture>colors/black.png</texture>
 				<colordiffuse>cc111111</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			<control type="image">
-				<posx>-6</posx>
-				<posy>0</posy>
-				<width>6</width>
-				<height>fullscreenHeight</height>
-				<texture>colors/white.png</texture>
-				<colordiffuse>highlight</colordiffuse>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<!--title and synopsis-->
