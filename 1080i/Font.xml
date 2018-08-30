@@ -112,6 +112,12 @@
             <size>48</size>
             <linespacing>1.0</linespacing>
         </font>
+		<font>
+            <name>sectionTitle</name>
+            <filename>roboto/condensedBold.ttf</filename>
+            <size>40</size>
+            <linespacing>1.0</linespacing>
+        </font>
         <font>
             <name>pageSubTitle</name>
             <filename>roboto/medium.ttf</filename>

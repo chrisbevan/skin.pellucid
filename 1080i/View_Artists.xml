@@ -3,6 +3,14 @@
     <!--Artist browser-->
     <include name="musicartist">
         <control type="group">
+			<visible>$EXP[isMusicArtist]</visible>
+			<control type="image">
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
             <!--content-->
             <control type="panel" id="51">
                 <visible>$EXP[isMusicArtist]</visible>
@@ -36,18 +44,19 @@
 	                    <aspectratio align="center" aligny="top">scale</aspectratio>
 	                    <texture>$INFO[Listitem.thumb]</texture>
 	                    <bordersize>6</bordersize>
-						<colordiffuse>77ffffff</colordiffuse>
+						<colordiffuse>BBffffff</colordiffuse>
 	                </control>
-	                <control type="label">
-	                    <posx>12</posx>
-	                    <posy>98</posy>
-	                    <width>384</width>
-	                    <height>2-row</height>
+	                <control type="textbox">
+	                    <posx>24</posx>
+	                    <posy>80</posy>
+	                    <width>372</width>
+	                    <height>3-row</height>
 						<align>center</align>
 	                    <aligny>center</aligny>
 	                    <font>menuTitle</font>
 	                    <textcolor>textActive</textcolor>
 	                    <label>$INFO[ListItem.label]</label>
+						<shadowcolor>99000000</shadowcolor>
 	                </control>
 	            </itemlayout>
 	            <focusedlayout width="444" height="264">
@@ -73,16 +82,17 @@
 	                        <texture>$INFO[Listitem.thumb]</texture>
 	                        <bordersize>6</bordersize>
 	                    </control>
-	                    <control type="label">
-		                    <posx>12</posx>
-		                    <posy>98</posy>
-		                    <width>384</width>
-		                    <height>2-row</height>
+	                    <control type="textbox">
+		                    <posx>24</posx>
+		                    <posy>80</posy>
+		                    <width>372</width>
+		                    <height>3-row</height>
 							<align>center</align>
 		                    <aligny>center</aligny>
 		                    <font>menuTitle</font>
 		                    <textcolor>textActive</textcolor>
 		                    <label>$INFO[ListItem.label]</label>
+							<shadowcolor>99000000</shadowcolor>
 		                </control>
 	                </control>
 	            </focusedlayout>

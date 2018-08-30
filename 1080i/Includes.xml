@@ -62,6 +62,12 @@
             <focusedlayout />
             <content>$VAR[extraFanartLocation]</content>
         </control>
+		<control type="image">
+            <include>dimensionsFullscreen</include>
+            <texture>colors/white.png</texture>
+            <colordiffuse>background</colordiffuse>
+            <aspectratio>stretch</aspectratio>
+        </control>
         <control type="image">
             <visible>Integer.IsGreater(container(99999).numitems,0) + !Skin.HasSetting(disableExtendedFanart)</visible>
             <include>dimensionsFullscreen</include>
@@ -69,7 +75,6 @@
             <colordiffuse>66ffffff</colordiffuse>
             <fadetime>500</fadetime>
             <aspectratio>stretch</aspectratio>
-            <include>kenBurnsey</include>
         </control>
         <control type="image">
             <visible>!Integer.IsGreater(container(99999).numitems,0) | Skin.HasSetting(disableExtendedFanart) | ListItem.IsParentFolder</visible>
@@ -79,7 +84,6 @@
             <texture>$INFO[container.Art(fanart)]</texture>
             <colordiffuse>66ffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
-            <include>kenBurnsey</include>
         </control>
     </include>
 
@@ -149,17 +153,17 @@
     <!--Global background-->
     <include name="globalBackground">
 		<control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>colors/white.png</texture>
-            <colordiffuse>background</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
-        <control type="image">
-            <include>dimensionsFullscreen</include>
-            <texture>backgroundImage.jpg</texture>
-            <colordiffuse>ff333333</colordiffuse>
-            <aspectratio>stretch</aspectratio>
-        </control>
+		   <include>dimensionsFullscreen</include>
+           <texture>colors/black.png</texture>
+           <colordiffuse>ffFFFFFF</colordiffuse>
+           <aspectratio>stretch</aspectratio>
+       </control>
+       <control type="image">
+           <include>dimensionsFullscreen</include>
+           <texture>colors/white.png</texture>
+           <colordiffuse>background</colordiffuse>
+           <aspectratio>stretch</aspectratio>
+       </control>
     </include>
 	<!--page header-->
 	<include name="pageHeader">
@@ -171,17 +175,17 @@
 	            <posx>0</posx>
 	            <posy>0</posy>
 	            <width>18-col</width>
-	            <font>pageTitle</font>
+	            <font>sectionTitle</font>
 	            <label>$VAR[listTitle]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
 	        <!--subtitle-->
 	        <control type="label">
 	            <posx>0</posx>
-	            <posy>1-row</posy>
+	            <posy>32</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
-	            <font>pageSubTitle</font>
+	            <font>itemTitle</font>
 	            <label>$VAR[listSubTitle]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
@@ -191,18 +195,18 @@
 	            <posy>0</posy>
 	            <width>12-col</width>
 	            <align>right</align>
-	            <font>pageTitle</font>
+	            <font>sectionTitle</font>
 	            <label>$INFO[System.Time]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
 			<!--date-->
 	        <control type="label">
 	            <posx>24-col</posx>
-	            <posy>1-row</posy>
+	            <posy>32</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
 				<align>right</align>
-	            <font>pageSubTitle</font>
+	            <font>itemTitle</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>

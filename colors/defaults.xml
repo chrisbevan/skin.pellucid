@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
     <color name="black">ff111111</color>
-    <color name="background">ff151515</color>
+    <color name="background">ff1a1a1a</color>
     <color name="highlight">ffad1e4e</color>
 
 	<color name="shighlight">fff03c69</color>

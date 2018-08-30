@@ -14,12 +14,7 @@
                 <height>1440</height>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
                 <texture background="true" border="0">$INFO[container.art(season.poster)]</texture>
-                <colordiffuse>55ffffff</colordiffuse>
-                <animation type="conditional" condition="!controlgroup(9000).hasfocus + !Skin.HasSetting(lowPowerMode)" loop="true" reversible="false">
-                    <effect type="fade" start="0" end="100" time="2000"/>
-                    <effect type="slide" start="0,0" end="0,-360" time="15000"/>
-                    <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
-                </animation>
+                <colordiffuse>ccffffff</colordiffuse>
             </control>
             <control type="image">
                 <visible>String.IsEmpty(container.art(season.poster))</visible>
@@ -72,7 +67,7 @@
             <visible>String.Contains(container.folderpath,videodb://) + !String.IsEmpty(container.folderpath) + container.content(episodes) + !String.Contains(Container.folderpath,plugin)</visible>
             <control type="label">
                 <posx>24</posx>
-                <posy>0</posy>
+                <posy>-6</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <align></align>
@@ -82,25 +77,27 @@
             </control>
 			<control type="label">
                 <posx>24</posx>
-                <posy>2-row</posy>
+                <posy>78</posy>
                 <width>12-col</width>
                 <height>1-row</height>
                 <align></align>
                 <font>menuTitle</font>
                 <textcolor>menuUnselected</textcolor>
-                <label>$INFO[listitem.Season,$LOCALIZE[31011] , ]</label>
+                <label>$INFO[listitem.Season,$LOCALIZE[31011] , | ]$INFO[Container(53).NumItems,, $LOCALIZE[31189]]</label>
             </control>
         </control>
         <!--episode synopsis & thumb-->
         <control type="group">
             <!--tvhsow library-sourced episode list-->
-            <control type="fixedlist" id="53">
+            <control type="list" id="53">
                 <visible>$EXP[isEpisode]</visible>
                 <posx>978</posx>
                 <posy>row-9-begin</posy>
                 <width>12-col</width>
                 <height>19-row</height>
                 <onleft>9000</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
 				<movement>4</movement>
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">

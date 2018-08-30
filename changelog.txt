@@ -33,7 +33,7 @@
 - [NEW] Additional wallpapers (Thanks Dadebue)
 - [NEW] USER OPTION: Disable recently added content for movies, tvshows and music
 
-[NETFLIX FIX] https://github.com/asciidisco/plugin.video.netflix
+[GO TO ALBUM / ARTIST] Update script.
 
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating

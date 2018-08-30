@@ -2,6 +2,23 @@
 <includes>
 	<include name="tvshows">
 		<control type="group">
+			<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
+			<control type="image">
+				<visible>control.hasfocus(9203) | control.hasfocus(9202)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container(9203).listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+				<visible>!control.hasfocus(9203) + !control.hasfocus(9202)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
@@ -12,16 +29,6 @@
 	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
-				<control type="image">
-		            <posx>0</posx>
-			        <posy>-24</posy>
-			        <width>fullscreenWidth</width>
-			        <height>738</height>
-		            <texture>$INFO[container(9203).listitem.art(fanart)]</texture>
-		            <colordiffuse>FF333333</colordiffuse>
-		            <aspectratio>scale</aspectratio>
-					<fadetime>300</fadetime>
-		        </control>
 				<!--quick link selector-->
 				<control type="list" id="9202">
 	                <posx>col-1-begin</posx>
@@ -79,7 +86,7 @@
 	                <width>1740</width>
 	                <height>11-row</height>
 					<onup>9202</onup>
-	                <ondown>50</ondown>
+	                <ondown>52</ondown>
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
@@ -104,7 +111,7 @@
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>ffffffff</colordiffuse>
+	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
@@ -205,7 +212,7 @@
 				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<ondown>50</ondown>
+				<ondown>52</ondown>
 				<onup>9203</onup>
 				<onback>9203</onback>
 				<pagecontrol>60</pagecontrol>
@@ -230,7 +237,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>77ffffff</colordiffuse>
+						<colordiffuse>BBffffff</colordiffuse>
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>

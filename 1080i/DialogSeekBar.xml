@@ -63,18 +63,18 @@
             <control type="progress">
                 <description>Progress Bar</description>
                 <posx>0</posx>
-                <posy>80</posy>
+                <posy>86</posy>
                 <width>18-col</width>
-                <height>24</height>
-                <texturebg colordiffuse="77000000" border="19">colors/black.png</texturebg>
-                <midtexture colordiffuse="highlight" border="19">colors/white.png</midtexture>
+                <height>18</height>
+                <texturebg colordiffuse="77000000">colors/black.png</texturebg>
+                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
             <control type="slider" id="401">
                 <posx>0</posx>
-                <posy>80</posy>
+                <posy>86</posy>
                 <width>18-col</width>
-                <height>36</height>
+                <height>18</height>
                 <texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
                 <textureslidernib>colors/white.png</textureslidernib>
                 <orientation>horizontal</orientation>

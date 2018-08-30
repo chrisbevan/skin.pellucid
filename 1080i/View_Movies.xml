@@ -2,6 +2,23 @@
 <includes>
 	<include name="movies">
 		<control type="group">
+			<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
+			<control type="image">
+				<visible>control.hasfocus(9103) | control.hasfocus(9102)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container(9103).listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
+			<control type="image">
+				<visible>!control.hasfocus(9103) + !control.hasfocus(9102)</visible>
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
 			<control type="group" id="9101">
 				<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
 				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
@@ -12,16 +29,6 @@
 	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
-				<control type="image">
-		            <posx>0</posx>
-			        <posy>-24</posy>
-			        <width>fullscreenWidth</width>
-			        <height>738</height>
-		            <texture fallback="colors/black.png">$INFO[container(9103).listitem.art(fanart)]</texture>
-		            <colordiffuse>FF333333</colordiffuse>
-		            <aspectratio>scale</aspectratio>
-					<fadetime>300</fadetime>
-		        </control>
 				<!--quick link selector-->
 				<control type="list" id="9102">
 	                <posx>col-1-begin</posx>
@@ -104,7 +111,7 @@
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>ffffffff</colordiffuse>
+	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
@@ -228,7 +235,7 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(poster)]</texture>
-							<colordiffuse>77ffffff</colordiffuse>
+							<colordiffuse>BBffffff</colordiffuse>
 						</control>
 						<control type="textbox">
 							<visible>String.IsEmpty(listitem.title)</visible>

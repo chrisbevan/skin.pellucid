@@ -33,12 +33,12 @@
                     <aspectratio>scale</aspectratio>
                     <texture>$INFO[Listitem.thumb]</texture>
                     <bordersize>6</bordersize>
-					<colordiffuse>77ffffff</colordiffuse>
+					<colordiffuse>BBffffff</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>12</posx>
                     <posy>268</posy>
-                    <width>384</width>
+                    <width>360</width>
                     <height>1-row</height>
                     <aligny>center</aligny>
                     <font>thumbTitle</font>
@@ -48,7 +48,7 @@
                 <control type="label">
                     <posx>12</posx>
                     <posy>292</posy>
-                    <width>384</width>
+                    <width>360</width>
                     <height>1-row</height>
                     <aligny>center</aligny>
                     <font>thumbTitle</font>
@@ -82,7 +82,7 @@
                     <control type="label">
                         <posx>12</posx>
                         <posy>268</posy>
-                        <width>384</width>
+                        <width>360</width>
                         <height>1-row</height>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
@@ -92,7 +92,7 @@
                     <control type="label">
                         <posx>12</posx>
                         <posy>292</posy>
-                        <width>384</width>
+                        <width>360</width>
                         <height>1-row</height>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>

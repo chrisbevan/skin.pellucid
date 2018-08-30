@@ -6,7 +6,7 @@
             <!--fanart-->
             <control type="group">
                 <visible>!String.Contains(Container.folderpath,plugin)</visible>
-                <posy>-100</posy>
+                <posy>0</posy>
                 <include>itemFanart</include>
                 <control type="image">
                     <include>dimensionsFullscreen</include>
@@ -23,37 +23,29 @@
                 <control type="group">
                     <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-5-begin</posy>
+                    <posy>row-8-begin</posy>
 					<control type="label">
                         <posx>0</posx>
-                        <posy>0</posy>
+                        <posy>4-row</posy>
                         <width>12-col</width>
-                        <height>2-row</height>
+                        <height>1-row</height>
                         <font>largeTitle</font>
                         <textcolor>textActive</textcolor>
 						<aligny>center</aligny>
                         <shadowcolor></shadowcolor>
+                        <wrapmultiline>true</wrapmultiline>
                         <label>$INFO[container.showtitle]</label>
                     </control>
-					<control type="textbox">
-                        <posx>0</posx>
-                        <posy>3-row</posy>
-                        <width>14-col</width>
-                        <height>192</height>
-                        <font>textbox</font>
-                        <textcolor>textActive</textcolor>
-						<aligny>center</aligny>
-                        <shadowcolor></shadowcolor>
-                        <label>$INFO[container.showplot]</label>
-                    </control>
-                </control>
-                <!--overlay-->
-                <control type="group">
-                    <visible>!String.Contains(Container.folderpath,plugin)</visible>
-                    <posy>row-15-begin</posy>
-                    <posy>0</posy>
-                    <include>globalBackground</include>
-                    
+					<control type="label">
+		                <posx>0</posx>
+		                <posy>5-row</posy>
+		                <width>12-col</width>
+		                <height>2-row</height>
+		                <align></align>
+		                <font>menuTitle</font>
+		                <textcolor>menuUnselected</textcolor>
+		                <label>$INFO[Container(58).ListItemAbsolute(2).genre]</label>
+		            </control>
                 </control>
                 <!--content-->
                 <control type="panel" id="58">
@@ -85,7 +77,7 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.art(poster)]</texture>
                             <bordersize>6</bordersize>
-                            <colordiffuse>77ffffff</colordiffuse>
+                            <colordiffuse>BBffffff</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
