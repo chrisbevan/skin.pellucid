@@ -13,7 +13,7 @@
                 <include>kenBurnsey</include>
             </control>
         </control>
-        <control type="panel" id="50">
+        <control type="panel" id="55">
             <visible>$EXP[isVideoList]</visible>
             <posx>col-1-begin</posx>
             <posy>row-5-begin</posy>
@@ -21,8 +21,8 @@
             <height>23-row</height>
             <onleft>9000</onleft>
             <onright>60</onright>
-            <ondown>50</ondown>
-            <onup>50</onup>
+            <ondown>55</ondown>
+            <onup>55</onup>
             <pagecontrol>60</pagecontrol>
             <itemlayout width="24-col" height="2-row">
                 <control type="image">

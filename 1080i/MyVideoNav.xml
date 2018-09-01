@@ -4,7 +4,7 @@
     <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
     <onload>Skin.SetString(recentitems,video)</onload>
     <include>fadeInOut</include>
-	<views>50,51,52,53,54,58,59</views>
+	<views>50,51,52,53,54,55,58,59</views>
     <controls>
         <include>globalBackground</include>
         <!--page container group-->
@@ -32,7 +32,7 @@
                 <control type="scrollbar" id="60">
                     <posx>54r</posx>
                     <posy>row-8-begin</posy>
-                    <height>20-row</height>
+                    <height>17-row</height>
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>

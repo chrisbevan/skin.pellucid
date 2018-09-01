@@ -87,7 +87,7 @@
 	                <width>1740</width>
 	                <height>11-row</height>
 					<onup>9102</onup>
-	                <ondown>50</ondown>
+	                <ondown>51</ondown>
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>

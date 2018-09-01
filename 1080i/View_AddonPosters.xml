@@ -2,6 +2,14 @@
 <includes>
     <include name="addonposters">
         <control type="group">
+            <visible>$EXP[isAddonMovieOrTVshow]</visible>
+			<control type="image">
+	            <include>dimensionsFullscreen</include>
+	            <texture fallback="colors/black.png">$INFO[listitem.art(fanart)]</texture>
+	            <colordiffuse>FF555555</colordiffuse>
+	            <aspectratio>scale</aspectratio>
+				<fadetime>250</fadetime>
+	        </control>
             <control type="panel" id="54">
                 <visible>$EXP[isAddonMovieOrTVshow]</visible>
                 <posx>90</posx>
@@ -10,8 +18,8 @@
 				<height>22-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-                <ondown>50</ondown>
-                <onup>50</onup>
+                <ondown>54</ondown>
+                <onup>54</onup>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
 				<itemlayout width="252" height="426">
@@ -34,7 +42,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>77ffffff</colordiffuse>
+						<colordiffuse>BBffffff</colordiffuse>
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>
@@ -51,7 +59,7 @@
 						<visible>!controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
 						<posy>338</posy>
-						<width>204</width>
+						<width>192</width>
 						<height>1-row</height>
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
