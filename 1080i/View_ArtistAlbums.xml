@@ -29,7 +29,7 @@
 					<control type="label">
                         <posx>0</posx>
                         <posy>4-row</posy>
-                        <width>10-col</width>
+                        <width>12-col</width>
                         <height>1-row</height>
                         <font>largeTitle</font>
                         <textcolor>textActive</textcolor>

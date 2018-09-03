@@ -20,10 +20,10 @@
             <width>24-col</width>
             <height>23-row</height>
             <onleft>9000</onleft>
-            <onright>60</onright>
+            <onright>61</onright>
             <ondown>55</ondown>
             <onup>55</onup>
-            <pagecontrol>60</pagecontrol>
+            <pagecontrol>61</pagecontrol>
             <itemlayout width="24-col" height="2-row">
                 <control type="image">
                     <posx>0</posx>

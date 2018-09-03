@@ -89,7 +89,7 @@
         <!--episode synopsis & thumb-->
         <control type="group">
             <!--tvhsow library-sourced episode list-->
-            <control type="list" id="53">
+            <control type="panel" id="53">
                 <visible>$EXP[isEpisode]</visible>
                 <posx>978</posx>
                 <posy>row-9-begin</posy>
