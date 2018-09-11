@@ -115,7 +115,7 @@
 	                        <width>324</width>
 	                        <height>324</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>$INFO[ListItem.Art(thumb)]</texture>
+	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
@@ -151,7 +151,7 @@
 	                            <width>324</width>
 		                        <height>324</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+	                            <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
 	                            <bordersize>6</bordersize>
 	                            <colordiffuse>ffffffff</colordiffuse>
 	                        </control>
@@ -213,12 +213,13 @@
 	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
 						<control type="image">
+							<visible>!ListItem.IsParentFolder</visible>
 	                        <posx>0</posx>
 	                        <posy>0</posy>
 	                        <width>4-col-gutter</width>
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>$INFO[ListItem.Art(thumb)]</texture>
+	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
 	                        <bordersize>6</bordersize>
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
@@ -260,12 +261,13 @@
 		                        <colordiffuse>FF000000</colordiffuse>
 		                    </control>
 							<control type="image">
+								<visible>!ListItem.IsParentFolder</visible>
 	                            <posx>0</posx>
 	                            <posy>0</posy>
 	                            <width>4-col-gutter</width>
 	                            <height>4-col-gutter</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+	                            <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
 	                            <bordersize>6</bordersize>
 	                        </control>
 		                    <control type="textbox">

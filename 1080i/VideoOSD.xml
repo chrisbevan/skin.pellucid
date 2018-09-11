@@ -45,15 +45,6 @@
                 <colordiffuse>cc111111</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>-6</posx>
-                <posy>0</posy>
-                <width>6</width>
-                <height>fullscreenHeight</height>
-                <texture>colors/white.png</texture>
-                <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="group">
                 <posx>36</posx>
                 <posy>row-1-begin</posy>
@@ -90,7 +81,7 @@
                     <font>pageSubTitle</font>
                     <aligny>center</aligny>
                     <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[Videoplayer.timeremaining,, $LOCALIZE[31143]] $INFO[Player.FinishTime(HH:MM),($LOCALIZE[31160] ,)][/B]</label>
+                    <label>[B]$INFO[Player.FinishTime(HH:MM),$LOCALIZE[31160] ,]$INFO[player.timeremaining, - , $LOCALIZE[31143]][/B]</label>
                     <scroll>false</scroll>
                 </control>
                 <!--synopsis-->
@@ -98,7 +89,7 @@
                     <posx>0</posx>
                     <posy>8-row</posy>
                     <font>textbox</font>
-                    <width>624</width>
+                    <width>612</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>348</height>
@@ -200,6 +191,7 @@
                         <description>Pause</description>
                         <label2></label2>
                         <thumb></thumb>
+						<onclick>action(back)</onclick>
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>

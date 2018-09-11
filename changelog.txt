@@ -37,8 +37,7 @@
 
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
-
-
+- SPOTIFY SUPPORT
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.
