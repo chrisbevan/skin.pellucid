@@ -23,6 +23,8 @@
     <include file="View_ArtistAlbums.xml"/>
     <include file="View_MusicVideos.xml"/>
 	<include file="View_Games.xml"/>
+	<include file="View_SpotifyAlbums.xml"/>
+	<include file="View_SpotifyArtists.xml"/>
     <include file="script-skinshortcuts-includes.xml"/>
     <include file="Includes_mediaShowcase.xml"/>
 
@@ -36,13 +38,26 @@
     <expression name="isEpisode">container.content(episodes) + !String.Contains(Container.folderpath,plugin)</expression>
     <expression name="isMusicVideo">container.content(musicvideos) + !String.Contains(Container.folderpath,plugin)</expression>
 
-    <expression name="isMusicList">!String.Contains(container.folderpath,musicdb://) | String.Contains(container.foldername,Files) | container.content(files) | container.content(addons) | [container.content(playlists) + !String.Contains(Container.folderpath,special://profile/playlists)] | String.Contains(Container.folderpath,plugin://)</expression>
+    <!--
+	<expression name="isMusicList">!String.Contains(container.folderpath,musicdb://) | String.Contains(container.foldername,Files) | container.content(files) | container.content(addons) | [container.content(playlists) + !String.Contains(Container.folderpath,special://profile/playlists)] | String.Contains(Container.folderpath,plugin://)</expression>
     <expression name="isMusicArtist">container.content(artists) + [String.Contains(container.folderpath,musicdb://) | String.Contains(Container.folderpath,special://profile/playlists)]</expression>
     <expression name="isMusicArtistCatalogue">container.content(albums) + String.Contains(container.folderpath,albumartistsonly)</expression>
     <expression name="isMusicAlbum">container.content(albums) + [String.Contains(container.folderpath,musicdb://) | String.Contains(Container.folderpath,special://profile/playlists)]</expression>
     <expression name="isMusicGenre">container.content(genres) + String.Contains(container.folderpath,musicdb://)</expression>
     <expression name="isMusicSong">container.content(songs) + String.Contains(Container.folderpath,musicdb://)</expression>
     <expression name="isMusicPlaylist">container.content(songs) + [String.Contains(Container.folderpath,.xsp) | String.Contains(Container.foldername,PartyMode) | String.Contains(Container.folderpath,playlistmusic://)]</expression>
+-->
+
+	<expression name="isMusicSpotifyArtist">container.content(artists) + String.Contains(container.folderpath,spotify)</expression>
+	<expression name="isMusicSpotifyAlbum">container.content(albums) + String.Contains(container.folderpath,spotify)</expression>
+
+	<expression name="isMusicList">!String.Contains(container.folderpath,musicdb://) | String.Contains(container.foldername,Files) | container.content(files) | container.content(addons) | [container.content(playlists) + !String.Contains(Container.folderpath,special://profile/playlists)] | String.Contains(Container.folderpath,plugin://)</expression>
+	<expression name="isMusicArtist">container.content(artists) + [String.Contains(container.folderpath,musicdb://) | String.Contains(Container.folderpath,special://profile/playlists)]</expression>
+	<expression name="isMusicArtistCatalogue">container.content(albums) + String.Contains(container.folderpath,albumartistsonly)</expression>
+	<expression name="isMusicAlbum">container.content(albums) + [String.Contains(container.folderpath,musicdb://) | String.Contains(Container.folderpath,special://profile/playlists)]</expression>
+	<expression name="isMusicGenre">container.content(genres) + String.Contains(container.folderpath,musicdb://)</expression>
+	<expression name="isMusicSong">container.content(songs) + [String.Contains(Container.folderpath,musicdb://) | String.Contains(Container.folderpath,spotify)]</expression>
+	<expression name="isMusicPlaylist">container.content(songs) + [String.Contains(Container.folderpath,.xsp) | String.Contains(Container.foldername,PartyMode) | String.Contains(Container.folderpath,playlistmusic://)]</expression>
 
 	<!--weather-->
 	<expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>

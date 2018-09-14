@@ -37,7 +37,7 @@
 
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
-- SPOTIFY SUPPORT
+- SPOTIFY SUPPORT: Titles update and fanart if possible. Artists not working on libreelec
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.

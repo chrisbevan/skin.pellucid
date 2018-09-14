@@ -27,6 +27,18 @@
 	                <fadetime>500</fadetime>
 	                <colordiffuse>77ffffff</colordiffuse>
 	            </control>
+				<control type="image">
+					<visible>!Visualisation.Enabled + string.isempty(player.art(fanart))</visible>
+	                <posx>col-10-begin</posx>
+					<posy>row-8-begin</posy>
+					<width>6-col</width>
+					<height>6-col</height>
+	                <aspectratio scalediffuse="false">stretch</aspectratio>
+	                <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
+                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
+                    <bordersize>6</bordersize>
+                    <colordiffuse>BBffffff</colordiffuse>
+	            </control>
 				<!--visualisation-->
 				<control type="visualisation" id="2">
 					<visible>Visualisation.Enabled</visible>
