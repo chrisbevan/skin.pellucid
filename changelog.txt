@@ -35,9 +35,12 @@
 
 [GO TO ALBUM / ARTIST] Update script.
 
+[FIXED] Subtitle default bug
+[FIXED] library update progress bar
+
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
-- SPOTIFY SUPPORT: Titles update and fanart if possible. Artists not working on libreelec
+- SPOTIFY SUPPORT: playlists
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.

@@ -40,7 +40,7 @@
             <posx>col-6-begin</posx>
             <posy>row-3-begin</posy>
             <!--animations-->
-            <include>modalDialogInOut</include>
+            <include>modalDialogInOutVertical</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>

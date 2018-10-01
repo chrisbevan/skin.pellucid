@@ -59,7 +59,7 @@
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
+                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout width="4-col" height="348">
@@ -106,7 +106,7 @@
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.artist][/COLOR] $INFO[listitem.year]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
 	                    </control>
                     </control>
                 </focusedlayout>

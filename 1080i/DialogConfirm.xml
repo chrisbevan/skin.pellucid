@@ -9,7 +9,18 @@
             <posy>row-8-begin</posy>
             <!--animations-->
             <include>modalDialogInOut</include>
-            <!--text-->
+            <!--progress-->
+			<control type="label">
+					<posx>0</posx>
+	                <posy>-72</posy>
+	                <width>8-col-gutter</width>
+	                <height>2-row</height>
+	                <wrapmultiline>true</wrapmultiline>
+	                <font>mediumStrong</font>
+	                <textcolor>textActive</textcolor>
+					<label>$INFO[System.Progressbar,,%]</label>
+				</control>
+			<!--text-->
             <control type="label" id="1">
                 <description>heading</description>
                 <posx>0</posx>

@@ -134,7 +134,7 @@
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 	                    </control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
@@ -193,7 +193,7 @@
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR][COLOR textDisabled]$INFO[ListItem.year][/COLOR]</label>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 		                    </control>
 		      				<control type="progress">
 								<visible>ListItem.IsResumable</visible>
@@ -291,7 +291,7 @@
 							<height>1-row</height>
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
-							<textcolor>textDisabled</textcolor>
+							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.year]</label>
 						</control>
 						<control type="group">

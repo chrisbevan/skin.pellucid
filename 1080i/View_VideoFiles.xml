@@ -9,8 +9,7 @@
                 <aspectratio scalediffuse="false">stretch</aspectratio>
                 <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.art(fanart)]</texture>
                 <fadetime>500</fadetime>
-                <colordiffuse>99ffffff</colordiffuse>
-                <include>kenBurnsey</include>
+                <colordiffuse>FF555555</colordiffuse>
             </control>
         </control>
         <control type="panel" id="55">

@@ -52,7 +52,7 @@
                     <height>1-row</height>
                     <aligny>center</aligny>
                     <font>thumbTitle</font>
-                    <textcolor>textDisabled</textcolor>
+                    <textcolor>textActive</textcolor>
                     <label>$INFO[ListItem.path]</label>
                 </control>
             </itemlayout>

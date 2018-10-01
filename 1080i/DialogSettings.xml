@@ -180,6 +180,7 @@
                 </focusedlayout>
                 <content>
                     <item id="1">
+						<visible>Control.IsEnabled(28) + !window.isactive(osdsubtitlesettings)</visible>
                         <description>Ok Button</description>
                         <label>186</label>
                         <label2></label2>
@@ -187,6 +188,7 @@
                         <onclick>SendClick(28)</onclick>
                     </item>
                     <item id="2">
+						<visible>Control.IsEnabled(29)</visible>
                         <description>Cancel Button</description>
                         <label>222</label>
                         <label2></label2>
@@ -194,7 +196,7 @@
                         <onclick>SendClick(29)</onclick>
                     </item>
                     <item id="3">
-                        <visible>Control.IsEnabled(30) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings)</visible>
+                        <visible>Control.IsEnabled(30) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !window.isactive(osdsubtitlesettings)</visible>
                         <description>clear / settings</description>
                         <label>31048</label>
                         <label2></label2>

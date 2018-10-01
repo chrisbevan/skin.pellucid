@@ -44,17 +44,6 @@
 						<bordersize>6</bordersize>
 						<colordiffuse>BBffffff</colordiffuse>
 					</control>
-					<control type="textbox">
-						<visible>String.IsEmpty(listitem.title)</visible>
-						<posx>24</posx>
-						<posy>3-row</posy>
-						<width>228</width>
-						<height>6-row</height>
-						<font>largeTitle</font>
-						<wrapmultiline>true</wrapmultiline>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label]</label>
-					</control>
 					<control type="label">
 						<visible>!controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
@@ -64,7 +53,7 @@
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
 						<textcolor>textActive</textcolor>
-						<label>[B]$INFO[ListItem.title][/B]</label>
+						<label>[B]$INFO[ListItem.label][/B]</label>
 					</control>
 					<control type="label">
 						<visible>!controlgroup(9000).hasfocus</visible>
@@ -74,7 +63,7 @@
 						<height>1-row</height>
 						<aligny>center</aligny>
 						<font>thumbTitle</font>
-						<textcolor>textDisabled</textcolor>
+						<textcolor>textActive</textcolor>
 						<label>$INFO[ListItem.year]</label>
 					</control>
 				</itemlayout>
@@ -101,17 +90,6 @@
 							<texture>$INFO[ListItem.Art(poster)]</texture>
 							<bordersize>6</bordersize>
 						</control>
-						<control type="textbox">
-							<visible>String.IsEmpty(listitem.title)</visible>
-							<posx>24</posx>
-							<posy>3-row</posy>
-							<width>228</width>
-							<height>6-row</height>
-							<font>largeTitle</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.label]</label>
-						</control>
 						<control type="label">
 							<posx>12</posx>
 							<posy>338</posy>
@@ -120,7 +98,7 @@
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.title][/B]</label>
+							<label>[B]$INFO[ListItem.label][/B]</label>
 						</control>
 						<control type="label">
 							<posx>12</posx>
