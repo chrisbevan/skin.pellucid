@@ -16,7 +16,7 @@
                 <onup>9998</onup>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
-                <itemlayout width="293" height="348">
+                <itemlayout width="293" height="360">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -62,7 +62,7 @@
                         <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="4-col" height="348">
+                <focusedlayout width="4-col" height="360">
                     <control type="group">
                         <include>focusThumb</include>
                         <control type="image">

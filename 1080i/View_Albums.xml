@@ -3,7 +3,7 @@
     <!--Album browser-->
     <include name="musicalbum">
 		<control type="group">
-			<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue] + !Skin.HasSetting(disableRecentAlbums)</visible>
+			<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]</visible>
 			<control type="image">
 				<visible>control.hasfocus(9998) | control.hasfocus(9123)</visible>
 	            <include>dimensionsFullscreen</include>
@@ -197,10 +197,10 @@
 	                <onright>60</onright>
 	                <ondown>50</ondown>
 	                <onup>9998</onup>
-	                <onback>9998</onback>
+	                <onback>9000</onback>
 	                <pagecontrol>60</pagecontrol>
 	                <scrolltime tween="cubic" easing="out">600</scrolltime>
-	                <itemlayout width="293" height="348">
+	                <itemlayout width="293" height="360">
 	                    <control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
@@ -246,7 +246,7 @@
 	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
 	                    </control>
 	                </itemlayout>
-	                <focusedlayout width="4-col" height="348">
+	                <focusedlayout width="4-col" height="360">
 	                    <control type="group">
 	                        <include>focusThumb</include>
 	                        <control type="image">

@@ -22,7 +22,7 @@
                 <onup>54</onup>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>
-				<itemlayout width="252" height="426">
+				<itemlayout width="252" height="438">
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -67,7 +67,7 @@
 						<label>$INFO[ListItem.year]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout width="252" height="426">
+				<focusedlayout width="252" height="438">
 					<control type="group">
 						<include>focusThumb</include>
 						<control type="image">

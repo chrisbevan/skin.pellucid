@@ -30,6 +30,16 @@
 		<action>Container.Update(videodb://movies/titles/)</action>
 		<action>control.setfocus(9103,0,absolute)</action>
 	</override>
+	<override action="ActivateWindow(Videos,videodb://movies/titles/)" group="videosubmenu">
+		<condition>!window.isactive(videos) + Skin.HasSetting(disableRecentMovies)</condition>
+		<action>::ACTION::</action>
+		<action>control.setfocus(9104,0,absolute)</action>
+	</override>
+	<override action="ActivateWindow(Videos,videodb://movies/titles/)" group="videosubmenu">
+		<condition>window.isactive(videos) + Skin.HasSetting(disableRecentMovies)</condition>
+		<action>Container.Update(videodb://movies/titles/)</action>
+		<action>control.setfocus(9104,0,absolute)</action>
+	</override>
 	
 	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="mainmenu">
 		<condition>!Skin.HasSetting(disableRecentTVShows)</condition>
@@ -49,6 +59,16 @@
 		<condition>window.isactive(videos) + !Skin.HasSetting(disableRecentTVShows)</condition>
 		<action>Container.Update(videodb://tvshows/titles/)</action>
 		<action>control.setfocus(9203,0,absolute)</action>
+	</override>
+	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="videosubmenu">
+		<condition>!window.isactive(videos) + Skin.HasSetting(disableRecentTVShows)</condition>
+		<action>::ACTION::</action>
+		<action>control.setfocus(9204,0,absolute)</action>
+	</override>
+	<override action="ActivateWindow(Videos,videodb://tvshows/titles/)" group="videosubmenu">
+		<condition>window.isactive(videos) + Skin.HasSetting(disableRecentTVShows)</condition>
+		<action>Container.Update(videodb://tvshows/titles/)</action>
+		<action>control.setfocus(9204,0,absolute)</action>
 	</override>
 	
 	<override action="ActivateWindow(Music,musicdb://artists/)" group="musicsubmenu">
@@ -78,6 +98,16 @@
 		<condition>window.isactive(music) + !Skin.HasSetting(disableRecentAlbums)</condition>
 		<action>Container.Update(musicdb://albums/)</action>
 		<action>control.setfocus(9998,0,absolute)</action>
+	</override>
+	<override action="ActivateWindow(Music,musicdb://albums/)" group="musicsubmenu">
+		<condition>!window.isactive(music) + Skin.HasSetting(disableRecentAlbums)</condition>
+		<action>::ACTION::</action>
+		<action>control.setfocus(9124,0,absolute)</action>
+	</override>
+	<override action="ActivateWindow(Music,musicdb://albums/)" group="musicsubmenu">
+		<condition>window.isactive(music) + Skin.HasSetting(disableRecentAlbums)</condition>
+		<action>Container.Update(musicdb://albums/)</action>
+		<action>control.setfocus(9124,0,absolute)</action>
 	</override>
 	
 	<override action="ActivateWindow(Music,musicdb://genres/)" group="musicsubmenu">

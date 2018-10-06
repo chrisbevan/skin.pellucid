@@ -45,7 +45,7 @@
 		                <height>2-row</height>
 		                <align></align>
 		                <font>menuTitle</font>
-		                <textcolor>menuUnselected</textcolor>
+		                <textcolor>textActive</textcolor>
 		                <label>$INFO[Container(52).ListItemAbsolute(0).genre]</label>
 		            </control>
                 </control>
