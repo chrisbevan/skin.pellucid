@@ -38,6 +38,7 @@
 [FIXED] Subtitle default bug
 [FIXED] library update progress bar
 
+- check play / pause on OSD. Something not right. 
 - check controls for new window: MyGames.xml
 - Screenshots etc need updating
 - SPOTIFY SUPPORT: playlists

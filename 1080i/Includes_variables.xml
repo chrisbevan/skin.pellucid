@@ -40,8 +40,7 @@
 		<value condition="Window.isactive(programs)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(games)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
-		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + Container.HasFolders">$INFO[container.NumAllItems,, $LOCALIZE[31038]]</value>
-    	<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0) + !Container.HasFolders">$INFO[container.foldername,,] $INFO[container.NumAllItems,(, $LOCALIZE[31050])]</value>
+		<value condition="Window.isactive(pictures) + Integer.IsGreater(container.Numitems,0)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 	</variable>
     <!--list view item detail / subheader-->
     <variable name="itemDetail">
