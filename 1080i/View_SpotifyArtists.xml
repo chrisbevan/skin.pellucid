@@ -14,7 +14,7 @@
             <!--content-->
             <control type="panel" id="56">
                 <visible>$EXP[isMusicSpotifyArtist]</visible>
-                <posx>col-1-begin</posx>
+                <posx>90</posx>
 	            <posy>row-5-begin</posy>
 	            <width>1800</width>
 	            <height>25-row</height>
@@ -32,8 +32,7 @@
 	                    <height>4-col-gutter</height>
 	                    <aspectratio>scale</aspectratio>
 	                    <texture>colors/black.png</texture>
-	                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-	                    <bordersize>6</bordersize>
+	                    <bordersize>12</bordersize>
 	                    <colordiffuse>overlay</colordiffuse>
 	                </control>
 	                <control type="image">
@@ -43,7 +42,7 @@
 	                    <height>4-col-gutter</height>
 	                    <aspectratio align="center" aligny="top">scale</aspectratio>
 	                    <texture>$INFO[Listitem.art(thumb)]</texture>
-	                    <bordersize>6</bordersize>
+	                    <bordersize>12</bordersize>
 						<colordiffuse>BBffffff</colordiffuse>
 	                </control>
 	                <control type="textbox">

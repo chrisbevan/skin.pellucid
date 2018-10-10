@@ -99,8 +99,7 @@
 	                        <height>318</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>colors/black.png</texture>
-	                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
 						<control type="image">
@@ -111,7 +110,7 @@
 	                        <height>318</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 						<control type="image">
@@ -248,8 +247,7 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>colors/black.png</texture>
-							<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-							<bordersize>6</bordersize>
+							<bordersize>12</bordersize>
 							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
@@ -259,6 +257,7 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(poster)]</texture>
+							<bordersize>12</bordersize>
 							<colordiffuse>BBffffff</colordiffuse>
 						</control>
 						<control type="textbox">

@@ -51,7 +51,7 @@
                 </control>
 				<control type="panel" id="52">
 					<visible>$EXP[isMusicArtistCatalogue]</visible>
-					<posx>col-1-begin</posx>
+					<posx>84</posx>
 					<posy>696</posy>
 					<width>24-col</width>
 					<height>19-row</height>
@@ -69,8 +69,7 @@
 							<height>4-col-gutter</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>colors/black.png</texture>
-							<bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-							<bordersize>6</bordersize>
+							<bordersize>12</bordersize>
 							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
@@ -80,7 +79,7 @@
 							<height>4-col-gutter</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
-							<bordersize>6</bordersize>
+							<bordersize>12</bordersize>
 							<colordiffuse>BBFFFFFF</colordiffuse>
 						</control>
 						<control type="textbox">

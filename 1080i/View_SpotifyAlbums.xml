@@ -6,7 +6,7 @@
 		<control type="group">
             <control type="panel" id="57">
                 <visible>$EXP[isMusicSpotifyAlbum]</visible>
-                <posx>col-1-begin</posx>
+                <posx>90</posx>
                 <posy>row-5-begin</posy>
                 <width>1800</width>
                 <height>24-row</height>
@@ -24,8 +24,7 @@
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
-                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-                        <bordersize>6</bordersize>
+                        <bordersize>12</bordersize>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
@@ -36,7 +35,7 @@
                         <height>4-col-gutter</height>
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-                        <bordersize>6</bordersize>
+                        <bordersize>12</bordersize>
                         <colordiffuse>BBffffff</colordiffuse>
                     </control>
                     <control type="textbox">

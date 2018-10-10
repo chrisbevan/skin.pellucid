@@ -114,9 +114,10 @@
         </font>
 		<font>
             <name>sectionTitle</name>
-            <filename>roboto/condensedBold.ttf</filename>
-            <size>40</size>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>35</size>
             <linespacing>1.0</linespacing>
+			<style>capitalize</style>
         </font>
         <font>
             <name>pageSubTitle</name>
@@ -173,6 +174,13 @@
             <filename>roboto_slab/bold.ttf</filename>
             <size>30</size>
             <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>menuTitle2</name>
+            <filename>roboto_slab/bold.ttf</filename>
+            <size>27</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
         </font>
         <font>
             <name>buttonTitle</name>

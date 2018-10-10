@@ -290,16 +290,6 @@
                         <onclick>sendclick(2003,8)</onclick>
                     </item>
                     <item>
-                        <description>Artwork downloader</description>
-                        <label>$LOCALIZE[31219]</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,tvshow)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,movie)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="system.hasaddon(script.artwork.downloader) + String.IsEqual(ListItem.DBTYPE,musicvideo)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
-                        <onclick condition="!system.hasaddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-                    </item>
-                    <item>
                         <label>20410</label>
                         <label2></label2>
                         <thumb></thumb>

@@ -105,8 +105,7 @@
 	                        <height>324</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>colors/black.png</texture>
-	                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
 						<control type="image">
@@ -116,7 +115,7 @@
 	                        <height>324</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
@@ -189,7 +188,7 @@
 	            </control>
 	            <control type="panel" id="54">
 	                <visible>$EXP[isMusicAlbum]</visible>
-	                <posx>col-1-begin</posx>
+	                <posx>90</posx>
 	                <posy>864</posy>
 	                <width>1800</width>
 	                <height>23-row</height>
@@ -208,8 +207,7 @@
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>colors/black.png</texture>
-	                        <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>overlay</colordiffuse>
 	                    </control>
 						<control type="image">
@@ -220,7 +218,7 @@
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                        <bordersize>6</bordersize>
+	                        <bordersize>12</bordersize>
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 	                    <control type="textbox">

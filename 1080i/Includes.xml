@@ -201,7 +201,7 @@
 	        <!--subtitle-->
 	        <control type="label">
 	            <posx>0</posx>
-	            <posy>28</posy>
+	            <posy>24</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
 	            <font>itemTitle</font>
@@ -215,13 +215,13 @@
 	            <width>12-col</width>
 	            <align>right</align>
 	            <font>sectionTitle</font>
-	            <label>$INFO[System.Time]</label>
+	            <label>[B]$INFO[System.Time][/B]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
 			<!--date-->
 	        <control type="label">
 	            <posx>24-col</posx>
-	            <posy>28</posy>
+	            <posy>24</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
 				<align>right</align>

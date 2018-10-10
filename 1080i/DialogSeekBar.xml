@@ -24,26 +24,15 @@
             </control>
         </control>
         <control type="group">
-            <posx>col-4-begin</posx>
+            <posx>col-3-begin</posx>
             <posy>row-24-begin</posy>
-            <control type="label">
-                <visible>Player.Playing</visible>
-                <posx>0</posx>
-                <posy>-32</posy>
-                <width>18-col</width>
-                <height>2-row</height>
-                <align>center</align>
-                <font>pageTitle</font>
-                <textcolor>textActive</textcolor>
-                <label>31120</label>
-            </control>
             <control type="label">
                 <visible>Player.Paused + !Player.Caching</visible>
                 <posx>0</posx>
                 <posy>-32</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <align>center</align>
+                <align>left</align>
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>112</label>
@@ -54,7 +43,7 @@
                 <posy>-32</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <align>center</align>
+                <align>left</align>
                 <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
@@ -63,18 +52,18 @@
             <control type="progress">
                 <description>Progress Bar</description>
                 <posx>0</posx>
-                <posy>86</posy>
-                <width>18-col</width>
-                <height>18</height>
+                <posy>84</posy>
+                <width>20-col</width>
+                <height>6</height>
                 <texturebg colordiffuse="77000000">colors/black.png</texturebg>
                 <midtexture colordiffuse="highlight">colors/white.png</midtexture>
                 <info>Player.Progress</info>
             </control>
             <control type="slider" id="401">
                 <posx>0</posx>
-                <posy>86</posy>
-                <width>18-col</width>
-                <height>18</height>
+                <posy>84</posy>
+                <width>20-col</width>
+                <height>6</height>
                 <texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
                 <textureslidernib>colors/white.png</textureslidernib>
                 <orientation>horizontal</orientation>
@@ -84,8 +73,8 @@
                 <posx>0</posx>
                 <posy>1-row</posy>
                 <width>18-col</width>
-                <align>center</align>
-                <font>itemTitle</font>
+                <align>left</align>
+                <font>menuTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Player.title]</label>
                 <shadowcolor></shadowcolor>
@@ -96,40 +85,31 @@
                 <posy>1-row</posy>
                 <width>18-col</width>
 				<height>1-row</height>
-                <align>center</align>
-                <font>itemTitle</font>
+                <align>left</align>
+                <font>menuTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
                 <shadowcolor></shadowcolor>
             </control>
             <control type="label">
-                <posx>0</posx>
-                <posy>120</posy>
+                <posx>20-col</posx>
+                <posy>1-row</posy>
                 <width>8-col</width>
+				<align>right</align>
                 <font>itemTitle</font>
                 <textcolor>textActive</textcolor>
-                <label>$INFO[Player.Time]</label>
-                <shadowcolor></shadowcolor>
-            </control>
-            <control type="label">
-                <posx>18-col</posx>
-                <posy>120</posy>
-                <width>8-col</width>
-                <font>itemTitle</font>
-                <align>right</align>
-                <textcolor>textActive</textcolor>
-                <label>$INFO[Player.Duration]</label>
+                <label>[B]$INFO[Player.Time][/B] / [B]$INFO[Player.Duration][/B]</label>
                 <shadowcolor></shadowcolor>
             </control>
         </control>
         <!--ff / rw speed indicators-->
         <control type="group">
             <visible>Player.seeking</visible>
-            <posx>12-col</posx>
-            <posy>row-21-begin</posy>
+            <posx>col-3-begin</posx>
+            <posy>row-22-begin</posy>
             <control type="label">
                 <posx>-18</posx>
-                <posy>-32</posy>
+                <posy>-48</posy>
                 <width>100</width>
 				<height>100</height>
                 <align>center</align>
@@ -140,7 +120,7 @@
             </control>
             <control type="label">
                 <posx>1-col-indent</posx>
-                <posy>0</posy>
+                <posy>-16</posy>
                 <width>24-col</width>
                 <align>left</align>
                 <font>pageTitle</font>

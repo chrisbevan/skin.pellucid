@@ -14,7 +14,7 @@
             <!--content-->
             <control type="panel" id="51">
                 <visible>$EXP[isMusicArtist]</visible>
-                <posx>col-1-begin</posx>
+                <posx>90</posx>
 	            <posy>row-5-begin</posy>
 	            <width>1800</width>
 	            <height>25-row</height>
@@ -32,8 +32,7 @@
 	                    <height>4-col-gutter</height>
 	                    <aspectratio>scale</aspectratio>
 	                    <texture>colors/black.png</texture>
-	                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-	                    <bordersize>6</bordersize>
+	                    <bordersize>12</bordersize>
 	                    <colordiffuse>overlay</colordiffuse>
 	                </control>
 	                <control type="image">
@@ -43,8 +42,8 @@
 	                    <height>4-col-gutter</height>
 	                    <aspectratio align="center" aligny="top">scale</aspectratio>
 	                    <texture>$INFO[Listitem.art(thumb)]</texture>
-	                    <bordersize>6</bordersize>
-						<colordiffuse>BBffffff</colordiffuse>
+	                    <bordersize>12</bordersize>
+						<colordiffuse>99ffffff</colordiffuse>
 	                </control>
 	                <control type="textbox">
 	                    <posx>24</posx>
@@ -56,7 +55,7 @@
 	                    <font>menuTitle</font>
 	                    <textcolor>textActive</textcolor>
 	                    <label>$INFO[ListItem.label]</label>
-						<shadowcolor>99000000</shadowcolor>
+						<shadowcolor>bb000000</shadowcolor>
 	                </control>
 	            </itemlayout>
 	            <focusedlayout width="444" height="264">
@@ -92,7 +91,7 @@
 		                    <font>menuTitle</font>
 		                    <textcolor>textActive</textcolor>
 		                    <label>$INFO[ListItem.label]</label>
-							<shadowcolor>99000000</shadowcolor>
+							<shadowcolor>bb000000</shadowcolor>
 		                </control>
 	                </control>
 	            </focusedlayout>

@@ -50,7 +50,7 @@
                 <!--content-->
                 <control type="panel" id="58">
                     <visible>$EXP[isSeason]</visible>
-                    <posx>col-1-begin</posx>
+                    <posx>84</posx>
                     <posy>row-16-begin</posy>
                     <width>1860</width>
                     <height>13-row</height>
@@ -65,8 +65,7 @@
                             <height>378</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
-                            <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-                            <bordersize>6</bordersize>
+                            <bordersize>12</bordersize>
                             <colordiffuse>overlay</colordiffuse>
                         </control>
 						<control type="image">
@@ -76,7 +75,7 @@
                             <height>378</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.art(poster)]</texture>
-                            <bordersize>6</bordersize>
+                            <bordersize>12</bordersize>
                             <colordiffuse>BBffffff</colordiffuse>
                         </control>
                         <control type="label">
@@ -116,8 +115,8 @@
                         </control>
 						<control type="group">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-							<posx>190</posx>
-							<posy>6</posy>
+							<posx>184</posx>
+							<posy>12</posy>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
