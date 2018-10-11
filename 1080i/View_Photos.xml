@@ -19,7 +19,7 @@
 	        </control>
 			<control type="label">
                 <posx>col-1-begin</posx>
-                <posy>21-row</posy>
+                <posy>20-row</posy>
                 <width>18-col</width>
                 <height>1-row</height>
                 <font>largeTitle</font>
@@ -51,7 +51,6 @@
                     <height>122</height>
                     <aspectratio>scale</aspectratio>
                     <texture>colors/black.png</texture>
-                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                     <bordersize>6</bordersize>
                     <colordiffuse>overlay</colordiffuse>
                 </control>
@@ -65,12 +64,11 @@
                     <bordersize>6</bordersize>
 					<colordiffuse>BBffffff</colordiffuse>
                 </control>
-                <control type="label">
+                <control type="textbox">
                     <posx>12</posx>
                     <posy>122</posy>
-                    <width>192</width>
-                    <height>1-row</height>
-                    <aligny>center</aligny>
+                    <width>180</width>
+                    <height>3-row</height>
                     <font>thumbTitle</font>
                     <textcolor>textActive</textcolor>
                     <label>[B]$INFO[ListItem.label][/B]</label>
@@ -99,16 +97,15 @@
                         <texture>$INFO[Listitem.thumb]</texture>
                         <bordersize>6</bordersize>
                     </control>
-                    <control type="label">
-                        <posx>12</posx>
-                        <posy>122</posy>
-                        <width>192</width>
-                        <height>1-row</height>
-                        <aligny>center</aligny>
-                        <font>thumbTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>[B]$INFO[ListItem.label][/B]</label>
-                    </control>
+                    <control type="textbox">
+	                    <posx>12</posx>
+	                    <posy>122</posy>
+	                    <width>180</width>
+	                    <height>3-row</height>
+	                    <font>thumbTitle</font>
+	                    <textcolor>textActive</textcolor>
+	                    <label>[B]$INFO[ListItem.label][/B]</label>
+	                </control>
                 </control>
             </focusedlayout>
         </control>

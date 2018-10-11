@@ -69,11 +69,11 @@
 	                    </control>
 	                </focusedlayout>
 	                <content>
-						<item>
+						<item id="1">
 	                        <label>special://skin/extras/playlists/recentEpisodes.xsp</label>
 	                        <property name="textTitle">31178</property>
 	                    </item>
-	                    <item>
+	                    <item id="2">
 	                        <label>special://skin/extras/playlists/inprogressTVShows.xsp</label>
 	                        <property name="textTitle">31127</property>
 	                    </item>
@@ -90,7 +90,7 @@
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
-					<onclick>activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid]/)</onclick>
+					<onclick condition="container(9202).hasfocus(1)">activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid]/)</onclick>
 	                <itemlayout width="586" height="5-col-gutter">
 	                    <control type="image">
 	                        <posx>0</posx>

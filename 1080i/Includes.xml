@@ -204,7 +204,7 @@
 	            <posy>24</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
-	            <font>itemTitle</font>
+	            <font>menuTitle2</font>
 	            <label>$VAR[listSubTitle]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
@@ -225,7 +225,7 @@
 	            <width>12-col</width>
 				<height>2-row</height>
 				<align>right</align>
-	            <font>itemTitle</font>
+	            <font>menuTitle2</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>

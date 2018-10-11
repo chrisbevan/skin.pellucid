@@ -128,12 +128,12 @@
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
 	                        <posy>318</posy>
-	                        <width>584</width>
+	                        <width>524</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 	                    </control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
@@ -187,12 +187,13 @@
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
 		                        <posy>318</posy>
-		                        <width>584</width>
+		                        <width>524</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
+								<scroll>false</scroll>
 		                    </control>
 		      				<control type="progress">
 								<visible>ListItem.IsResumable</visible>
@@ -291,7 +292,7 @@
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.year]</label>
+	                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 						</control>
 						<control type="group">
 							<visible>String.String.IsEmpty(ListItem.PlayCount)</visible>
@@ -370,7 +371,7 @@
 								<aligny>center</aligny>
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
-								<label>$INFO[ListItem.year]</label>
+		                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 							</control>
 							<control type="group">
 								<visible>String.String.IsEmpty(ListItem.PlayCount)</visible>

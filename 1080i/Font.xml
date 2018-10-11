@@ -115,7 +115,7 @@
 		<font>
             <name>sectionTitle</name>
             <filename>roboto_slab/bold.ttf</filename>
-            <size>35</size>
+            <size>36</size>
             <linespacing>1.0</linespacing>
 			<style>capitalize</style>
         </font>
@@ -180,7 +180,6 @@
             <filename>roboto_slab/bold.ttf</filename>
             <size>27</size>
             <linespacing>1.0</linespacing>
-			<style>capitalize</style>
         </font>
         <font>
             <name>buttonTitle</name>
