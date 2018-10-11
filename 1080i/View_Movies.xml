@@ -235,7 +235,7 @@
 					<height>23-row</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
-					<ondown>50</ondown>
+					<ondown>51</ondown>
 					<onup>9103</onup>
 					<onback>9000</onback>
 					<pagecontrol>60</pagecontrol>

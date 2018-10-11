@@ -1,4 +1,10 @@
 **Changelog**
+[V2.0.0] ***LEIA RELEASE***
+
+*In pipeline*
+- [GO TO ALBUM / ARTIST] Update script.
+- revise controls for new window: MyGames.xml
+
 
 [V1.4.0] ***LEIA BUILDS ONLY***
 - Preparing for Leia compatibility
@@ -32,16 +38,6 @@
 - [COMPLETE] Adjust alignment of home menu items based on item count
 - [NEW] Additional wallpapers (Thanks Dadebue)
 - [NEW] USER OPTION: Disable recently added content for movies, tvshows and music
-
-[GO TO ALBUM / ARTIST] Update script.
-
-[FIXED] Subtitle default bug
-[FIXED] library update progress bar
-
-- check play / pause on OSD. Something not right. 
-- check controls for new window: MyGames.xml
-- Screenshots etc need updating
-- SPOTIFY SUPPORT: playlists
 
 [V1.3.3]
 - [FIXED] Weather label showing on homescreen even if no weather plugin enabled.
