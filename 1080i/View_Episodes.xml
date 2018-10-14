@@ -98,6 +98,8 @@
                 <onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
+				<ondown>53></ondown>
+				<onup>53</onup>
 				<movement>4</movement>
                 <itemlayout width="12-col" height="2-row">
                     <control type="image">

@@ -56,8 +56,8 @@
 					<width>24-col</width>
 					<height>19-row</height>
 					<onleft>9000</onleft>
-					<ondown>50</ondown>
-					<onup>50</onup>
+					<ondown>52</ondown>
+					<onup>52</onup>
 					<pagecontrol>60</pagecontrol>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="cubic" easing="out">600</scrolltime>

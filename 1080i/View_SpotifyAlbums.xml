@@ -12,8 +12,8 @@
                 <height>24-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <ondown>50</ondown>
-                <onup>9998</onup>
+                <ondown>57</ondown>
+                <onup>57</onup>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">600</scrolltime>
                 <itemlayout width="293" height="360">

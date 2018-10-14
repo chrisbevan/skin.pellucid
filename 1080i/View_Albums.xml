@@ -91,7 +91,7 @@
 	                <width>24-col</width>
 	                <height>11-row</height>
 					<onup>9123</onup>
-	                <ondown>50</ondown>
+	                <ondown>54</ondown>
 	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
@@ -194,7 +194,7 @@
 	                <height>23-row</height>
 	                <onleft>9000</onleft>
 	                <onright>60</onright>
-	                <ondown>50</ondown>
+	                <ondown>54</ondown>
 	                <onup>9998</onup>
 	                <onback>9000</onback>
 	                <pagecontrol>60</pagecontrol>

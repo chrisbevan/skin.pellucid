@@ -10,6 +10,8 @@
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <onback>9000</onback>
+				<ondown>50</ondown>
+				<onup>50</onup>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="cubic" easing="out">400</scrolltime>
                 <itemlayout height="2-row" width="24-col">
