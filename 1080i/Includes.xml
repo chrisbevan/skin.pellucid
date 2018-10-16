@@ -62,6 +62,8 @@
 	<!--photos-->
 	<expression name="isPhotoAlbum">container.content(images)</expression>
 	
+	<!--games-->
+	<expression name="isGame">container.content(games)</expression>
 
 	<!--weather-->
 	<expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
