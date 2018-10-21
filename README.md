@@ -12,5 +12,7 @@ Built for the living room, Pellucid is a clean and carefully designed Kodi exper
 
 Discussion thread: http://forum.kodi.tv/forumdisplay.php?fid=267
 
+Additional homescreen wallpapers provided by Dadebue (https://www.instagram.com/dadebue/)
+
 Created by theDeadMan with, love from Bristol, U.K.
 
