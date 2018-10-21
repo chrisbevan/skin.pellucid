@@ -17,7 +17,7 @@
             <description>Pointer Focus</description>
             <width>45</width>
             <height>45</height>
-            <texture>UIControls/PointerFo.png</texture>
+            <texture>UIControls/PointerFO.png</texture>
         </control>
         <control type="image" id="3">
             <description>Pointer Drag</description>

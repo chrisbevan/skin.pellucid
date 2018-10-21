@@ -183,8 +183,8 @@
                     <height>19-row</height>
                     <onleft>activateWindow(1104)</onleft>
                     <onright>60</onright>
-                    <ondown>50</ondown>
-                    <onup>50</onup>
+                    <ondown>51</ondown>
+                    <onup>51</onup>
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="10-col" height="2-row">
                         <control type="label">

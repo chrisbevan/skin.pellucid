@@ -62,7 +62,7 @@
                     <height>2-row</height>
                     <width>8-col-gutter</width>
                     <label></label>
-                    <font>itemSubtitle</font>
+                    <font>itemSubTitle</font>
                     <textcolor>highlight</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
@@ -146,7 +146,7 @@
                     <width>9-col-gutter</width>
                     <height>2-row</height>
                     <label></label>
-                    <font>itemSubtitle</font>
+                    <font>itemSubTitle</font>
                     <textcolor>highlight</textcolor>
                 </control>
                 <control type="list" id="21">

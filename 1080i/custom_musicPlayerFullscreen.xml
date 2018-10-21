@@ -15,7 +15,7 @@
 				<control type="image">
 					<visible>!Visualisation.Enabled</visible>
 		            <include>dimensionsFullscreen</include>
-		            <texture>colors/white.jpg</texture>
+		            <texture>colors/white.png</texture>
 		            <colordiffuse>background</colordiffuse>
 		            <aspectratio>stretch</aspectratio>
 		        </control>

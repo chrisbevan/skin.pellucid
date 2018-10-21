@@ -62,7 +62,7 @@
 			                    <height>2-row</height>
 			                    <aligny>center</aligny>
 			                    <align>right</align>
-			                    <font>itemSubtitle</font>
+			                    <font>itemSubTitle</font>
 			                    <textcolor>textActive</textcolor>
 			                    <shadowcolor></shadowcolor>
 			                    <label>$INFO[ListItem.AddonSummary]</label>
@@ -108,7 +108,7 @@
 			                    <height>2-row</height>
 			                    <aligny>center</aligny>
 			                    <align>right</align>
-			                    <font>itemSubtitle</font>
+			                    <font>itemSubTitle</font>
 			                    <textcolor>textActive</textcolor>
 			                    <shadowcolor></shadowcolor>
 			                    <label>$INFO[ListItem.AddonSummary]</label>

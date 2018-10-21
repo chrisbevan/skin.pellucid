@@ -266,7 +266,6 @@
 					<height>2-row</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<height>2-row</height>
 					<label>$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
 					<scroll>true</scroll>
 					<textcolor>textActive</textcolor>

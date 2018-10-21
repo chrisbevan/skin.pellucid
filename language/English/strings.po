@@ -988,3 +988,7 @@ msgstr ""
 msgctxt "#31240"
 msgid "Disable recently added section for Albums"
 msgstr ""
+
+msgctxt "#31241"
+msgid "Shuffle"
+msgstr ""

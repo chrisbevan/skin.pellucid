@@ -5,7 +5,6 @@
         <import addon="script.skinshortcuts" version="1.0.13"/>
         <import addon="resource.images.weathericons.outline" version="0.0.5"/>
         <import addon="resource.images.weatherfanart.single" version="0.0.6"/>
-        <import addon="script.musicfinder" version="1.0.0"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

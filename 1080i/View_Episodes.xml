@@ -15,6 +15,11 @@
                 <aspectratio scalediffuse="false">stretch</aspectratio>
                 <texture background="true" border="0">$INFO[container.art(season.poster)]</texture>
                 <colordiffuse>ccffffff</colordiffuse>
+				<animation type="conditional" condition="!controlgroup(9000).hasfocus + !Skin.HasSetting(lowPowerMode)" loop="true" reversible="false">
+				    <effect type="fade" start="0" end="100" time="2000"/>
+                    <effect type="slide" start="0,0" end="0,-280" time="15000"/>
+                    <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
+                </animation>
             </control>
             <control type="image">
                 <visible>String.IsEmpty(container.art(season.poster))</visible>
@@ -25,9 +30,9 @@
                 <aspectratio scalediffuse="false">stretch</aspectratio>
                 <texture background="true" fallback="colors/black.png" border="0">$INFO[container.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
-                <animation type="conditional" condition="!controlgroup(9000).hasfocus + !Skin.HasSetting(lowPowerMode)" loop="true" reversible="false">
+                <animation type="conditional" condition="!controlgroup(9000).hasfocus + !Skin.HasSetting(lowPowerMode)" loop="false" reversible="false">
                     <effect type="fade" start="0" end="100" time="2000"/>
-                    <effect type="zoom" center="auto" start="130" end="100" time="15000"/>
+                    <effect type="zoom" center="auto" start="120" end="100" time="15000"/>
                     <effect type="fade" start="100" end="0" time="1000" delay="14000"/>
                 </animation>
             </control>
@@ -90,7 +95,7 @@
         <control type="group">
             <!--tvhsow library-sourced episode list-->
             <control type="panel" id="53">
-                <visible>$EXP[isEpisode]</visible>
+                <visible>$EXP[isEpisode] + !String.Contains(container.folderpath,smb://) + String.Contains(container.folderpath,videodb://)</visible>
                 <posx>978</posx>
                 <posy>row-9-begin</posy>
                 <width>12-col</width>
@@ -98,7 +103,7 @@
                 <onleft>9000</onleft>
 				<onright>60</onright>
 				<pagecontrol>60</pagecontrol>
-				<ondown>53></ondown>
+				<ondown>53</ondown>
 				<onup>53</onup>
 				<movement>4</movement>
                 <itemlayout width="12-col" height="2-row">

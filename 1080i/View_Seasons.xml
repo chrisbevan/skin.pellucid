@@ -2,7 +2,7 @@
 <includes>
     <include name="seasons">
         <control type="group">
-            <visible>!String.IsEmpty(container.folderpath) + container.content(seasons) + !container.content(episodes)</visible>
+            <visible>!String.IsEmpty(container.folderpath) + container.content(seasons) + !container.content(episodes) + !String.Contains(container.folderpath,smb://) + String.Contains(container.folderpath,videodb://)</visible>
             <!--fanart-->
             <control type="group">
                 <visible>!String.Contains(Container.folderpath,plugin)</visible>
@@ -49,7 +49,7 @@
                 </control>
                 <!--content-->
                 <control type="panel" id="58">
-                    <visible>$EXP[isSeason]</visible>
+                    <visible>$EXP[isSeason] + !String.Contains(container.folderpath,smb://)</visible>
                     <posx>84</posx>
                     <posy>row-16-begin</posy>
                     <width>1860</width>
@@ -92,9 +92,9 @@
                         </control>
 						<control type="textbox">
                             <visible>String.StartsWith(ListItem.label,*)</visible>
-                            <posx>12</posx>
+                            <posx>24</posx>
                             <posy>4-row</posy>
-                            <width>228</width>
+                            <width>216</width>
                             <height>4-row</height>
                             <align>left</align>
                             <aligny>center</aligny>
@@ -175,9 +175,9 @@
 	                        </control>
 							<control type="textbox">
 	                            <visible>String.StartsWith(ListItem.label,*)</visible>
-	                            <posx>12</posx>
+	                            <posx>24</posx>
 	                            <posy>4-row</posy>
-	                            <width>228</width>
+	                            <width>216</width>
 	                            <height>4-row</height>
 	                            <align>left</align>
 	                            <aligny>center</aligny>

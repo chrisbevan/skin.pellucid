@@ -230,7 +230,7 @@
                 <onleft>control.setfocus(20)</onleft>
                 <control type="radiobutton" id="22">
                     <description>Default RadioButton</description>
-                    <label>15064</label>
+                    <label>$LOCALIZE[15064]</label>
                     <width>5-col</width>
                 </control>
                 <control type="button" id="23">

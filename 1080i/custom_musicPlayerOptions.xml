@@ -228,24 +228,6 @@
 	                </focusedlayout>
 	                <content>
 	                    <item>
-	                        <description>go to artist</description>
-	                        <label>31155</label>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick condition="!System.hasAddon(script.musicfinder)">InstallAddon(script.musicfinder)</onclick>
-	                        <onclick condition="System.hasAddon(script.musicfinder)">Dialog.Close(all,true)</onclick>
-	                        <onclick condition="System.hasAddon(script.musicfinder)">Runscript(script.musicfinder,action=artist,title=$INFO[musicplayer.artist],listid=50)</onclick>
-	                    </item>
-	                    <item>
-	                        <description>go to album</description>
-	                        <label>31158</label>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick condition="!System.hasAddon(script.musicfinder)">InstallAddon(script.musicfinder)</onclick>
-	                        <onclick condition="System.hasAddon(script.musicfinder)">Dialog.Close(all,true)</onclick>
-	                        <onclick condition="System.hasAddon(script.musicfinder)">Runscript(script.musicfinder,action=album,title=$INFO[musicplayer.album],listid=50)</onclick>
-	                    </item>
-	                    <item>
 	                        <description>Playlist</description>
 	                        <label>31123</label>
 	                        <label2></label2>
