@@ -4,6 +4,7 @@
 *In pipeline*
 - [GO TO ALBUM / ARTIST] Update script.
 - revise controls for new window: MyGames.xml
+- Rework context menu (activate via second menu)
 
 
 [V1.4.0] ***LEIA BUILDS ONLY***
