@@ -272,7 +272,8 @@
      <!--conditional positioning for progress dialogs (avoid overlaps)-->
     <include name="progressPosition1"><posy>row-2-begin</posy></include>
     <include name="progressPosition2"><posy>row-6-begin</posy></include>
-    <!--mini player window-->
+     
+	<!--mini player window-->
     <include name="miniVideoPlayer">
         <control type="group">
             <visible>!Skin.hassetting(stopVideoOnMenu) + Player.HasVideo + !VideoPlayer.IsFullscreen + !SlideShow.IsActive</visible>

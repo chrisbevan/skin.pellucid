@@ -19,7 +19,10 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
-            <onclick>sendclick(videos,3)</onclick>
+            <onclick condition="window.isactive(videos)">sendclick(videos,3)</onclick>
+			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,3)</onclick>
+			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,3)</onclick>
+			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,3)</onclick>
         </control>
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
@@ -30,7 +33,10 @@
             <label>31109</label>
             <altlabel>31110</altlabel>
             <width>6-col</width>
-            <onclick>sendclick(videos,4)</onclick>
+            <onclick condition="window.isactive(videos)">sendclick(videos,4)</onclick>
+			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,4)</onclick>
+			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,4)</onclick>
+			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,4)</onclick>
         </control>
         <control type="button" id="509">
             <visible>PVR.HasTVChannels</visible>
@@ -106,7 +112,10 @@
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
-            <onclick>sendclick(music,3)</onclick>
+            <onclick condition="window.isactive(music)">sendclick(music,3)</onclick>
+			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,3)</onclick>
+			<onclick condition="window.isactive(radiorecordings)">sendclick(radiorecordings,3)</onclick>
+			<onclick condition="window.isactive(radioguide)">sendclick(radioguide,3)</onclick>
         </control>
         <control type="togglebutton" id="4">
             <visible>!String.IsEmpty(Container.SortMethod)</visible>
@@ -117,7 +126,10 @@
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
-            <onclick>sendclick(music,4)</onclick>
+            <onclick condition="window.isactive(music)">sendclick(music,4)</onclick>
+			<onclick condition="window.isactive(radiochannels)">sendclick(radiochannels,4)</onclick>
+			<onclick condition="window.isactive(radiorecordings)">sendclick(radiorecordings,4)</onclick>
+			<onclick condition="window.isactive(radioguide)">sendclick(radioguide,4)</onclick>
         </control>
         <control type="button" id="509">
             <visible>PVR.HasRadioChannels</visible>

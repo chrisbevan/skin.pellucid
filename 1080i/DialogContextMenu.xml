@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">1000</defaultcontrol>
+	<onload condition="!integer.IsGreater(Container(996).NumItems,0)">control.setfocus(9004)</onload>
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
-        <control type="grouplist" id="996">
-            <posx>col-10-begin</posx>
-            <posy>4-row</posy>
+		<control type="grouplist" id="996">
+            <posx>col-6-begin</posx>
+            <posy>7-row</posy>
             <itemgap>0</itemgap>
+			<onright>9004</onright>
+			<height>17-row</height>
+        </control>
+		<control type="grouplist" id="9004">
+			<animation type="Conditional" condition="!integer.IsGreater(Container(996).NumItems,0)">
+	            <effect type="slide" end="-300" time="0"/>
+	        </animation>
+			<posx>col-14-begin</posx>
+            <posy>7-row</posy>
+            <itemgap>0</itemgap>
+            <width>6-col</width>
+            <height>17-row</height>
+            <itemgap>0</itemgap>
+			<onleft>996</onleft>
+            <include condition="Window.isactive(Videos) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
+            <include condition="Window.isactive(Music) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
+            <include condition="window.isactive(pictures)">picturesSideMenu</include>
+            <include condition="window.isactive(addonbrowser)">addonsSideMenu</include>
+			<include condition="window.isactive(games)">gameSideMenu</include>
         </control>
         <control type="button" id="1000">
             <description>Buttons</description>

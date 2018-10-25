@@ -3,13 +3,24 @@
     <visible>!window.isactive(videoosd) + !window.isactive(osdvideosettings) + !window.isactive(osdaudiosettings) + !Window.IsActive(DialogSubtitles.xml) + !Window.IsVisible(fullscreeninfo) + [VideoPlayer.IsFullscreen + !Window.IsVisible(visualisation)] + [!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
     <controls>
 		<control type="image">
+			<visible>!String.IsEmpty(player.Art(clearart))</visible>
             <posx>col-15-begin</posx>
             <posy>row-18-begin</posy>
             <width>12-col</width>
             <height>6-col</height>
             <texture>$INFO[player.Art(clearart)]</texture>
             <aspectratio align="right">scale</aspectratio>
-            <colordiffuse>99ffffff</colordiffuse>
+            <colordiffuse>BBffffff</colordiffuse>
+        </control>
+		<control type="image">
+			<visible>!String.IsEmpty(player.Art(clearlogo)) + String.IsEmpty(player.Art(clearart))</visible>
+            <posx>col-14-begin</posx>
+            <posy>row-18-begin</posy>
+            <width>12-col</width>
+            <height>6-col</height>
+            <texture>$INFO[player.Art(clearlogo)]</texture>
+            <aspectratio align="right">keep</aspectratio>
+            <colordiffuse>BBffffff</colordiffuse>
         </control>
         <control type="image">
             <include>dimensionsFullscreen</include>

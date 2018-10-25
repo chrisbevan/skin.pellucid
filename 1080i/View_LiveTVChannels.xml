@@ -57,7 +57,7 @@
                     <control type="label">
                         <posx>520</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
+                        <width>7-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -80,7 +80,7 @@
                     <control type="label">
                         <posx>1168</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
+                        <width>7-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -136,7 +136,7 @@
                     <control type="label">
                         <posx>520</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
+                        <width>7-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -159,7 +159,7 @@
                     <control type="label">
                         <posx>1168</posx>
                         <posy>0</posy>
-                        <width>6-col</width>
+                        <width>7-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
