@@ -9,7 +9,6 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>31147</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
         </control>
         <control type="button" id="3">
@@ -46,7 +45,6 @@
             <width>6-col</width>
             <label>31222</label>
             <onclick>sendclick(700,28)</onclick>
-            <onclick>dialog.close(1104)</onclick>
         </control>
         <control type="button" id="508">
             <visible>PVR.HasTVChannels</visible>
@@ -55,7 +53,6 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>31087</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>ActivateWindow(TVTimerRules)</onclick>
         </control>
         <control type="button" id="507">
@@ -63,7 +60,6 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>653</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>UpdateLibrary(video)</onclick>
         </control>
         <control type="radiobutton" id="14">
@@ -102,7 +98,6 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>31147</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
         </control>
         <control type="button" id="3">
@@ -139,7 +134,6 @@
             <width>6-col</width>
             <label>31222</label>
             <onclick>sendclick(700,28)</onclick>
-            <onclick>dialog.close(1104)</onclick>
         </control>
         <control type="button" id="508">
             <visible>PVR.HasRadioChannels</visible>
@@ -148,7 +142,6 @@
             <focusedcolor>textActive</focusedcolor>
             <width>6-col</width>
             <label>31087</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>ActivateWindow(RadioTimerRules)</onclick>
         </control>
         <control type="button" id="504">
@@ -156,7 +149,6 @@
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <label>653</label>
-            <onclick>dialog.close(1104)</onclick>
             <onclick>UpdateLibrary(music)</onclick>
         </control>
         <control type="radiobutton" id="20">
