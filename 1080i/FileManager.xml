@@ -5,6 +5,8 @@
     <include>fadeInOut</include>
     <controls>
         <include>globalBackground</include>
+		<!--mini window-->
+		<include>miniVideoPlayer</include>
         <control type="group">
             <!--animations-->
             <include>modalDialogInOutVertical</include>

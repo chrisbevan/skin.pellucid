@@ -195,18 +195,28 @@
                     </focusedlayout>
                     <content>
                         <item id="1">
+							<visible>window.isactive(tvchannels) | window.isactive(radiochannels)</visible>
+                            <label>31075</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>sendclick(2003,5)</onclick>
+                        </item>
+						<item id="2">
+							<visible>window.isactive(tvrecordings) | window.isactive(radiorecordings)</visible>
                             <label>31075</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>sendclick(2003,8)</onclick>
                         </item>
-                        <item id="2">
+                        <item id="3">
+							<visible>!window.isactive(tvrecordings) + !window.isactive(radiorecordings)</visible>
                             <label>264</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(2003,6)</onclick>
                         </item>
-                        <item id="3">
+                        <item id="4">
+							<visible>!window.isactive(tvrecordings) + !window.isactive(radiorecordings)</visible>
                             <label>31073</label>
                             <label2></label2>
                             <thumb></thumb>

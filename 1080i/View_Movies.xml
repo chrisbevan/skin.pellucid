@@ -296,8 +296,8 @@
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-							<posx>166</posx>
-							<posy>6</posy>
+							<posx>160</posx>
+							<posy>12</posy>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>

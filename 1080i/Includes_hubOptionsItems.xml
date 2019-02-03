@@ -38,7 +38,7 @@
 			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,4)</onclick>
         </control>
         <control type="button" id="509">
-            <visible>PVR.HasTVChannels</visible>
+            <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Channel Group</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
@@ -49,7 +49,7 @@
 			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,28)</onclick>
         </control>
         <control type="button" id="508">
-            <visible>PVR.HasTVChannels</visible>
+            <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Timers</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
@@ -129,7 +129,7 @@
 			<onclick condition="window.isactive(radioguide)">sendclick(radioguide,4)</onclick>
         </control>
         <control type="button" id="509">
-            <visible>PVR.HasRadioChannels</visible>
+		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Channel Group</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
@@ -138,7 +138,7 @@
             <onclick>sendclick(radiochannels,28)</onclick>
         </control>
         <control type="button" id="508">
-            <visible>PVR.HasRadioChannels</visible>
+		  	<visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasRadioChannels</visible>
             <description>PVR Timers</description>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>

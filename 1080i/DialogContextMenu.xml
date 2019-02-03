@@ -6,16 +6,16 @@
         <include>modalDialog</include>
 		<control type="textbox">
 			<visible>integer.IsGreater(Container(996).NumItems,0)</visible>
-			<posx>336</posx>
+			<posx>384</posx>
 			<posy>5-row</posy>
-			<width>8-col</width>
-			<height>3-row</height>
-			<font>sectionTitle</font>
+			<width>12-col</width>
+			<height>2-row</height>
+			<font>pageTitle</font>
 			<textcolor>textActive</textcolor>
 			<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $INFO[listitem.title]</label>
 		</control>
 		<control type="grouplist" id="996">
-            <posx>col-4-begin</posx>
+            <posx>col-5-begin</posx>
             <posy>8-row</posy>
             <itemgap>0</itemgap>
 			<onright>9004</onright>
@@ -25,17 +25,8 @@
 			<animation type="Conditional" condition="!integer.IsGreater(Container(996).NumItems,0)">
 	            <effect type="slide" end="-434" time="0"/>
 	        </animation>
-			<control type="textbox">
-				<posx>1200</posx>
-				<posy>5-row</posy>
-				<width>8-col</width>
-				<height>3-row</height>
-				<font>sectionTitle</font>
-				<textcolor>textActive</textcolor>
-				<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $LOCALIZE[31243]</label>
-			</control>
 			<control type="grouplist" id="9004">
-				<posx>col-16-begin</posx>
+				<posx>col-15-begin</posx>
 	            <posy>8-row</posy>
 	            <itemgap>0</itemgap>
 	            <width>6-col</width>

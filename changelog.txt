@@ -1,8 +1,17 @@
 *In pipeline*
 - revise controls for new window: MyGames.xml
-- addon menu grid view
+- Add file info to library info screen (help with scraping)
+- Add SD / HD flags to info screen
+- check album thumbs on fullscreenmusicview
+- Weather 
 
 **Changelog**
+
+[V2.0.1]
+*** Shout out to Loggio for a whole bunch of tweaks. Thanks! ***
+- PVR OSD channel list added
+- Various tweaks
+
 [V2.0.0] ***LEIA RELEASE***
 
 - [COMPLETE] Minor bugfixes

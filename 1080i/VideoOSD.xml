@@ -96,22 +96,33 @@
 	                    <posy>5-row</posy>
 	                    <width>600</width>
 	                    <height>3-row</height>
-	                    <font>pageSubTitle</font>
+	                    <font>buttonTitle</font>
 	                    <aligny>center</aligny>
 	                    <textcolor>textActive</textcolor>
-	                    <label>[B]$INFO[VideoPlayer.EndTime,$LOCALIZE[31160] ,] • $INFO[VideoPlayer.NextTitle,$LOCALIZE[31242]: ,][/B]</label>
+	                    <label>$INFO[VideoPlayer.EndTime,[B]$LOCALIZE[31160][/B] ,]</label>
+	                    <scroll>false</scroll>
+	                </control>
+					<control type="label">
+	                    <posx>0</posx>
+	                    <posy>6-row</posy>
+	                    <width>600</width>
+	                    <height>3-row</height>
+	                    <font>buttonTitle</font>
+	                    <aligny>center</aligny>
+	                    <textcolor>textActive</textcolor>
+	                    <label>$INFO[VideoPlayer.NextTitle,[B]$LOCALIZE[31242][/B] ,]</label>
 	                    <scroll>false</scroll>
 	                </control>
 				</control>
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>8-row</posy>
+                    <posy>9-row</posy>
                     <font>textbox</font>
                     <width>612</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
-                    <height>348</height>
+                    <height>314</height>
                     <label fallback="31205">$INFO[videoplayer.plot]</label>
                     <autoscroll>false</autoscroll>
                     <shadowcolor></shadowcolor>
@@ -226,7 +237,7 @@
                         <onclick>PlayerControl(next)</onclick>
                     </item>
                     <item>
-                        <enabled>System.GetBool(pvrmanager.enabled) + PVR.CanRecordPlayingChannel</enabled>
+                        <visible>PVR.CanRecordPlayingChannel</visible>
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
