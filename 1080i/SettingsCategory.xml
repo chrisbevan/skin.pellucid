@@ -69,8 +69,12 @@
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
                 <onright>5</onright>
+				<width>286</width>
             </control>
             <control type="grouplist" id="3">
+				<animation type="conditional" condition="control.hasfocus(1234)">
+		            <effect type="fade" start="100" end="80" time="100"/>
+		        </animation>
                 <posx>0</posx>
                 <posy>2-row</posy>
                 <width></width>

@@ -1004,3 +1004,7 @@ msgstr ""
 msgctxt "#31244"
 msgid "REC."
 msgstr ""
+
+msgctxt "#31245"
+msgid "Finishes"
+msgstr ""

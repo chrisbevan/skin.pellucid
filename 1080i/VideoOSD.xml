@@ -72,47 +72,93 @@
 	                    <label>$INFO[videoplayer.title]</label>
 	                </control>
 				</control>
-                <!--player position--> 
-  				<control type="group">
-					<posx>0</posx>
-                    <posy>5-row</posy>
-					<visible>!Pvr.IsPlayingTv</visible>
-                	<control type="label">
-	                    <posx>0</posx>
-	                    <posy>0</posy>
-	                    <width>8-col</width>
-	                    <height>3-row</height>
-	                    <font>buttonTitle</font>
-	                    <aligny>center</aligny>
-	                    <textcolor>textActive</textcolor>
-	                    <label>[B]$INFO[player.timeremaining]    $INFO[player.finishtime,$LOCALIZE[31160] ,][/B]</label>
-	                    <scroll>false</scroll>
-	                </control>
-				</control>
+				<!--player position-->
 				<control type="group">
-					<visible>Pvr.IsPlayingTv</visible>
+					<posx>0</posx>
+                    <posy>6-row</posy>
 					<control type="label">
-	                    <posx>0</posx>
-	                    <posy>5-row</posy>
-	                    <width>600</width>
-	                    <height>3-row</height>
-	                    <font>buttonTitle</font>
-	                    <aligny>center</aligny>
-	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[VideoPlayer.EndTime,[B]$LOCALIZE[31160][/B] ,]</label>
-	                    <scroll>false</scroll>
-	                </control>
+						<visible>!Pvr.IsPlayingTv</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>[B]$LOCALIZE[31143][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
 					<control type="label">
-	                    <posx>0</posx>
-	                    <posy>6-row</posy>
-	                    <width>600</width>
-	                    <height>3-row</height>
-	                    <font>buttonTitle</font>
-	                    <aligny>center</aligny>
-	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[VideoPlayer.NextTitle,[B]$LOCALIZE[31242][/B] ,]</label>
-	                    <scroll>false</scroll>
-	                </control>
+						<visible>!Pvr.IsPlayingTv</visible>
+                        <posx>0</posx>
+                        <posy>32</posy>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="31159">[B]$INFO[player.timeremaining][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+
+					<control type="label">
+						<visible>!Pvr.IsPlayingTv</visible>
+                        <posx>3-col-gutter</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>[B]$LOCALIZE[31245][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+					<control type="label">
+						<visible>!Pvr.IsPlayingTv</visible>
+                        <posx>3-col-gutter</posx>
+                        <posy>32</posy>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="31159">[B]$INFO[VideoPlayer.FinishTime][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+
+					<control type="label">
+						<visible>Pvr.IsPlayingTv</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>[B]$LOCALIZE[31160][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+					<control type="label">
+						<visible>Pvr.IsPlayingTv</visible>
+                        <posx>0</posx>
+                        <posy>32</posy>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="31159">[B]$INFO[VideoPlayer.EndTime][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+
+					<control type="label">
+						<visible>Pvr.IsPlayingTv</visible>
+                        <posx>3-col-gutter</posx>
+                        <posy>0</posy>
+                        <width>2-col</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>[B]$LOCALIZE[31242][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+					<control type="label">
+						<visible>Pvr.IsPlayingTv</visible>
+                        <posx>3-col-gutter</posx>
+                        <posy>32</posy>
+                        <width>6-col</width>
+                        <font>itemTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="31159">[B]$INFO[VideoPlayer.NextTitle][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
 				</control>
                 <!--synopsis-->
                 <control type="textbox">

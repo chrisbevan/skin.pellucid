@@ -1,7 +1,8 @@
 *In pipeline*
+
+edit in smartplaylisteditor.xml, view not rendering.
+
 - revise controls for new window: MyGames.xml
-- Add file info to library info screen (help with scraping)
-- Add SD / HD flags to info screen
 - check album thumbs on fullscreenmusicview
 - Weather 
 
