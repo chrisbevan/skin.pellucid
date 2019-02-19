@@ -135,17 +135,6 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 	                    </control>
-						<control type="label">
-							<visible>!controlgroup(9000).hasfocus + Integer.IsGreaterOrEqual(ListItem.VideoResolution,1080)</visible>
-							<posx>184</posx>
-							<posy>350</posy>
-							<width>204</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
-							<font>symbolLarge</font>
-							<textcolor>textActive</textcolor>
-	                        <label></label>
-						</control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
 			                <description>Progress Bar</description>
@@ -206,17 +195,6 @@
 		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 								<scroll>false</scroll>
 		                    </control>
-							<control type="label">
-								<visible>!controlgroup(9000).hasfocus + Integer.IsGreaterOrEqual(ListItem.VideoResolution,1080)</visible>
-								<posx>184</posx>
-								<posy>350</posy>
-								<width>204</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
-								<font>symbolLarge</font>
-								<textcolor>textActive</textcolor>
-		                        <label></label>
-							</control>
 		      				<control type="progress">
 								<visible>ListItem.IsResumable</visible>
 				                <description>Progress Bar</description>
@@ -327,17 +305,6 @@
 							<textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
 						</control>
-						<control type="label">
-							<visible>!controlgroup(9000).hasfocus + Integer.IsGreaterOrEqual(ListItem.VideoResolution,1080)</visible>
-							<posx>178</posx>
-							<posy>368</posy>
-							<width>204</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
-							<font>symbolLarge</font>
-							<textcolor>textActive</textcolor>
-	                        <label></label>
-						</control>
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
 							<posx>160</posx>
@@ -416,17 +383,6 @@
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
 		                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
-							</control>
-							<control type="label">
-								<visible>!controlgroup(9000).hasfocus + Integer.IsGreaterOrEqual(ListItem.VideoResolution,1080)</visible>
-								<posx>178</posx>
-								<posy>368</posy>
-								<width>204</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
-								<font>symbolLarge</font>
-								<textcolor>textActive</textcolor>
-		                        <label></label>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(ListItem.PlayCount)</visible>

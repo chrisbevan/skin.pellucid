@@ -135,7 +135,7 @@
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label fallback="31159">[B]$INFO[VideoPlayer.EndTime][/B]</label>
+                        <label fallback="31159">$INFO[VideoPlayer.EndTime]</label>
                         <shadowcolor></shadowcolor>
                     </control>
 
@@ -156,7 +156,7 @@
                         <width>6-col</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label fallback="31159">[B]$INFO[VideoPlayer.NextTitle][/B]</label>
+                        <label fallback="31159">$INFO[VideoPlayer.NextTitle]</label>
                         <shadowcolor></shadowcolor>
                     </control>
 				</control>

@@ -34,7 +34,7 @@
 					<width>6-col</width>
 					<height>6-col</height>
 	                <aspectratio scalediffuse="false">stretch</aspectratio>
-	                <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
+	                <texture fallback="noAlbumCover.jpg">$INFO[player.Art(thumb)]</texture>
                     <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                     <bordersize>6</bordersize>
                     <colordiffuse>BBffffff</colordiffuse>

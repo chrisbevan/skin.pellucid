@@ -40,7 +40,7 @@
                     <width>10-col</width>
                     <height>6-row</height>
                     <enable>false</enable>
-                    <itemlayout width="5-col" height="2-row">
+                    <itemlayout width="5-col" height="78">
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -52,15 +52,15 @@
                         </control>
                         <control type="label">
                             <posx>0</posx>
-                            <posy>32</posy>
+                            <posy>30</posy>
                             <width>324</width>
                             <font>itemSubTitle</font>
                             <textcolor>textActive</textcolor>
-                            <label fallback="31159">$INFO[ListItem.label2]</label>
+                            <label fallback="31159">[B]$INFO[ListItem.label2][/B]</label>
                             <shadowcolor></shadowcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="5-col" height="2-row">
+                    <focusedlayout width="5-col" height="78">
                     </focusedlayout>
                     <content>
                         <item>
