@@ -4,9 +4,9 @@
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
-		<control type="textbox">
+		<control type="label">
 			<visible>integer.IsGreater(Container(996).NumItems,0)</visible>
-			<posx>384</posx>
+			<posx>408</posx>
 			<posy>5-row</posy>
 			<width>12-col</width>
 			<height>2-row</height>
