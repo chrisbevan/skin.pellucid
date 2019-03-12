@@ -1,9 +1,7 @@
 *In pipeline*
 
-edit in smartplaylisteditor.xml, view not rendering.
-
+- edit control in smartplaylisteditor.xml
 - revise controls for new window: MyGames.xml
-- check album thumbs on fullscreenmusicview
 - Weather 
 
 **Changelog**
