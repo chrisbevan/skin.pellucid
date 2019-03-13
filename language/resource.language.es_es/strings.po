@@ -1,7 +1,7 @@
-#Kodi Media Center language file
-#Addon Name: Pellucid
-#Addon id: skin.pellucid
-#Addon Provider: chrisbevan
+# Kodi Media Center language file
+# Addon Name: Pellucid
+# Addon id: skin.pellucid
+# Addon Provider: chrisbevan
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
