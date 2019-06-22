@@ -54,7 +54,7 @@
                     <posy>row-16-begin</posy>
                     <width>1860</width>
                     <height>13-row</height>
-                    <onleft>9000</onleft>
+                    <onleft>58</onleft>
                     <onright>58</onright>
                     <orientation>horizontal</orientation>
                     <itemlayout width="4-col" height="391">

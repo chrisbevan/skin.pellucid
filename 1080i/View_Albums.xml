@@ -195,7 +195,7 @@
 	                <onleft>9000</onleft>
 	                <onright>60</onright>
 	                <ondown>54</ondown>
-	                <onup>9998</onup>
+	                <onup>54</onup>
 	                <onback>9000</onback>
 	                <pagecontrol>60</pagecontrol>
 	                <scrolltime tween="cubic" easing="out">600</scrolltime>

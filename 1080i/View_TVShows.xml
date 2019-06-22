@@ -133,7 +133,7 @@
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Season,$LOCALIZE[31011] ,]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31189]]</label>
 	                    </control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
@@ -192,7 +192,7 @@
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Season,$LOCALIZE[31011] ,]</label>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31189]]</label>
 		                    </control>
 		      				<control type="progress">
 								<visible>ListItem.IsResumable</visible>
@@ -236,7 +236,7 @@
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<ondown>52</ondown>
-				<onup>9203</onup>
+				<onup>52</onup>
 				<onback>9000</onback>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="cubic" easing="out">600</scrolltime>

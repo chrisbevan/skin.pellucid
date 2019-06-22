@@ -4,6 +4,8 @@
 - revise controls for new window: MyGames.xml
 - Weather 
 
+- add quick search
+
 **Changelog**
 
 [V2.0.1]
