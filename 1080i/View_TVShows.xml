@@ -11,14 +11,6 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
-			<control type="image">
-				<visible>!control.hasfocus(9203) + !control.hasfocus(9202)</visible>
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
 				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
@@ -125,7 +117,7 @@
 	                        <colordiffuse>BBffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
-	                        <visible>!controlgroup(9000).hasfocus</visible>
+	                        <visible>!controlgroup(9000).hasfocus + container(9202).hasfocus(1)</visible>
 	                        <posx>12</posx>
 	                        <posy>318</posy>
 	                        <width>584</width>
@@ -134,6 +126,17 @@
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
 	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31189]]</label>
+	                    </control>
+						<control type="label">
+	                        <visible>!controlgroup(9000).hasfocus + container(9202).hasfocus(2)</visible>
+	                        <posx>12</posx>
+	                        <posy>318</posy>
+	                        <width>584</width>
+	                        <height>2-row</height>
+	                        <aligny>center</aligny>
+	                        <font>thumbTitle</font>
+	                        <textcolor>textActive</textcolor>
+	                        <label>[B]$INFO[ListItem.tvshowtitle][/B][CR]$INFO[ListItem.label]</label>
 	                    </control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
@@ -184,7 +187,7 @@
 		                        <colordiffuse>BBffffff</colordiffuse>
 		                    </control>
 	                        <control type="label">
-		                        <visible>!controlgroup(9000).hasfocus</visible>
+		                        <visible>!controlgroup(9000).hasfocus + container(9202).hasfocus(1)</visible>
 		                        <posx>12</posx>
 		                        <posy>318</posy>
 		                        <width>584</width>
@@ -193,6 +196,17 @@
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
 		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[31189]]</label>
+		                    </control>
+							<control type="label">
+		                        <visible>!controlgroup(9000).hasfocus + container(9202).hasfocus(2)</visible>
+		                        <posx>12</posx>
+		                        <posy>318</posy>
+		                        <width>584</width>
+		                        <height>2-row</height>
+		                        <aligny>center</aligny>
+		                        <font>thumbTitle</font>
+		                        <textcolor>textActive</textcolor>
+		                        <label>[B]$INFO[ListItem.tvshowtitle][/B][CR]$INFO[ListItem.label]</label>
 		                    </control>
 		      				<control type="progress">
 								<visible>ListItem.IsResumable</visible>
@@ -219,7 +233,7 @@
 			<control type="label">
                 <visible>!controlgroup(9000).hasfocus + $EXP[isTVShow] + !$EXP[isMovie]</visible>
                 <posx>col-1-begin</posx>
-                <posy>760</posy>
+                <posy>736</posy>
                 <width>12-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
@@ -230,16 +244,15 @@
 			<control type="panel" id="52">
 				<visible>$EXP[isTVShow] + !$EXP[isMovie]</visible>
 				<posx>90</posx>
-				<posy>864</posy>
+				<posy>828</posy>
 				<width>1800</width>
 				<height>23-row</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<ondown>52</ondown>
-				<onup>52</onup>
-				<onback>9000</onback>
+				<onup>9203</onup>
+				<onback>9203</onback>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="cubic" easing="out">600</scrolltime>
+				<scrolltime tween="sine">250</scrolltime>
 				<itemlayout width="252" height="438">
 					<control type="image">
 						<posx>0</posx>
@@ -248,7 +261,7 @@
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/black.png</texture>
-						<bordersize>12</bordersize>
+						<bordersize>6</bordersize>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="image">
@@ -258,7 +271,7 @@
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
-						<bordersize>12</bordersize>
+						<bordersize>6</bordersize>
 						<colordiffuse>BBffffff</colordiffuse>
 					</control>
 					<control type="textbox">
@@ -307,8 +320,8 @@
 					</control>
 					<control type="group">
 						<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-						<posx>162</posx>
-						<posy>12</posy>
+						<posx>167</posx>
+						<posy>6</posy>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>

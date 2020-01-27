@@ -11,14 +11,6 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
-			<control type="image">
-				<visible>!control.hasfocus(9103) + !control.hasfocus(9102)</visible>
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
 			<control type="group" id="9101">
 				<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
 				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
@@ -219,7 +211,7 @@
 				<control type="label">
 					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + !string.contains(container.folderpath,playlists)</visible>
 	                <posx>col-1-begin</posx>
-	                <posy>760</posy>
+	                <posy>736</posy>
 	                <width>12-col</width>
 	                <height>2-row</height>
 	                <aligny>center</aligny>
@@ -230,7 +222,7 @@
 				<control type="label">
 					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + string.contains(container.folderpath,playlists)</visible>
 	                <posx>col-1-begin</posx>
-	                <posy>760</posy>
+	                <posy>736</posy>
 	                <width>12-col</width>
 	                <height>2-row</height>
 	                <aligny>center</aligny>
@@ -241,16 +233,15 @@
 				<control type="panel" id="51">
 					<visible>$EXP[isMovie]</visible>
 					<posx>90</posx>
-					<posy>864</posy>
+					<posy>828</posy>
 					<width>1800</width>
 					<height>23-row</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
-					<ondown>51</ondown>
-					<onup>51</onup>
-					<onback>9000</onback>
+					<onup>9103</onup>
+					<onback>9103</onback>
 					<pagecontrol>60</pagecontrol>
-					<scrolltime tween="cubic" easing="out">600</scrolltime>
+					<scrolltime tween="sine">250</scrolltime>
 					<itemlayout width="252" height="438">
 						<control type="image">
 							<posx>0</posx>
@@ -259,7 +250,7 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>colors/black.png</texture>
-							<bordersize>12</bordersize>
+							<bordersize>6</bordersize>
 							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="image">
@@ -269,7 +260,7 @@
 							<height>342</height>
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(poster)]</texture>
-							<bordersize>12</bordersize>
+							<bordersize>6</bordersize>
 							<colordiffuse>BBffffff</colordiffuse>
 						</control>
 						<control type="textbox">
@@ -307,8 +298,8 @@
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-							<posx>160</posx>
-							<posy>12</posy>
+							<posx>166</posx>
+							<posy>6</posy>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>

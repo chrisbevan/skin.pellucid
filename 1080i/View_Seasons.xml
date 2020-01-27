@@ -21,6 +21,12 @@
                 </animation>
                 <!--title-->
                 <control type="group">
+					<animation type="conditional" condition="!control.isvisible(58)">
+		                <effect type="fade" start="100" end="0" time="0"/>
+		            </animation>
+					<animation type="conditional" condition="control.isvisible(58)">
+		                <effect type="fade" start="0" end="100" time="250" delay="500"/>
+		            </animation>
                     <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-8-begin</posy>
@@ -49,6 +55,12 @@
                 </control>
                 <!--content-->
                 <control type="panel" id="58">
+					<animation type="conditional" condition="!control.isvisible(58)">
+		                <effect type="fade" start="100" end="0" time="0"/>
+		            </animation>
+					<animation type="conditional" condition="control.isvisible(58)">
+		                <effect type="fade" start="0" end="100" time="500" delay="1000"/>
+		            </animation>
                     <visible>$EXP[isSeason] + !String.Contains(container.folderpath,smb://)</visible>
                     <posx>84</posx>
                     <posy>row-16-begin</posy>

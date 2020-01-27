@@ -30,7 +30,7 @@
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>colors/black.png</texture>
-						<bordersize>12</bordersize>
+						<bordersize>6</bordersize>
 						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="image">
@@ -40,7 +40,7 @@
 						<height>342</height>
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
-						<bordersize>12</bordersize>
+						<bordersize>6</bordersize>
 						<colordiffuse>BBffffff</colordiffuse>
 					</control>
 					<control type="label">

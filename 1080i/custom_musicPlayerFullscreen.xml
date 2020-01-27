@@ -37,7 +37,7 @@
 	                <texture fallback="noAlbumCover.jpg">$INFO[MusicPlayer.Cover]</texture>
                     <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
                     <bordersize>6</bordersize>
-                    <colordiffuse>BBffffff</colordiffuse>
+                    <colordiffuse>ffffffff</colordiffuse>
 	            </control>
 				<!--visualisation-->
 				<control type="visualisation" id="2">
@@ -64,11 +64,11 @@
 					<posy>0</posy>			
 					<control type="label">
 						<posx>5-col</posx>
-						<posy>56</posy>
+						<posy>86</posy>
 						<width>14-col</width>
 						<height>2-row</height>
 						<align>center</align>
-						<font>mediumTitle</font>
+						<font>menuTitle3</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[MusicPlayer.Title]</label>
@@ -76,11 +76,11 @@
 					</control>
 					<control type="label">
 						<posx>4-col</posx>
-						<posy>3-row</posy>
+						<posy>124</posy>
 						<width>16-col</width>
 						<height>3-row</height>
 						<align>center</align>
-						<font>menuTitle</font>
+						<font>buttonTitle</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
 						<label>[B]$INFO[MusicPlayer.artist][/B][CR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
@@ -97,22 +97,22 @@
 		                <info>player.progress</info>
 		            </control>
 					<control type="label">
-						<posx>624</posx>
+						<posx>628</posx>
 						<posy>6-row</posy>
 						<width>4-col</width>
 						<align>right</align>
-						<font>itemTitle</font>
+						<font>buttonTitle2</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[musicplayer.Playlistposition]$INFO[musicplayer.Playlistlength, / ]</label>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
 					<control type="label">
-						<posx>1104</posx>
+						<posx>1100</posx>
 						<posy>6-row</posy>
 						<width>4-col</width>
 						<align>left</align>
-						<font>itemTitle</font>
+						<font>buttonTitle2</font>
 						<textcolor>textActive</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[MusicPlayer.timeremaining]</label>

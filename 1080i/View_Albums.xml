@@ -12,14 +12,6 @@
 	            <aspectratio>scale</aspectratio>
 				<fadetime>250</fadetime>
 	        </control>
-			<control type="image">
-				<visible>!control.hasfocus(9998) + !control.hasfocus(9123)</visible>
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container.listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
         	<control type="group" id="9125">
 				<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue] + !Skin.HasSetting(disableRecentAlbums)</visible>
 				<animation type="Conditional" condition="!controlgroup(9125).hasfocus">
@@ -194,11 +186,10 @@
 	                <height>23-row</height>
 	                <onleft>9000</onleft>
 	                <onright>60</onright>
-	                <ondown>54</ondown>
-	                <onup>54</onup>
-	                <onback>9000</onback>
+	                <onup>9998</onup>
+	                <onback>9998</onback>
 	                <pagecontrol>60</pagecontrol>
-	                <scrolltime tween="cubic" easing="out">600</scrolltime>
+	                <scrolltime tween="sine">250</scrolltime>
 	                <itemlayout width="293" height="360">
 	                    <control type="image">
 	                        <posx>0</posx>

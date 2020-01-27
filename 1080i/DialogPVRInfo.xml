@@ -88,7 +88,7 @@
                 <!--synopsis-->
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>8-row</posy>
+                    <posy>292</posy>
                     <font>textbox</font>
                     <width>12-col</width>
                     <align>left</align>

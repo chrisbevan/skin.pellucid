@@ -93,7 +93,15 @@
     </include>
     <!--music submenu items-->
     <include name="musicSideMenu">
-        <control type="button" id="506">
+        <control type="button" id="553">
+            <description>Playlist</description>
+            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+            <focusedcolor>textActive</focusedcolor>
+            <width>12-col</width>
+            <label>31123</label>
+            <onclick>activateWindow(musicplaylist)</onclick>
+        </control>
+		<control type="button" id="506">
             <description>Search</description>
             <visible>System.HasAddon(script.globalsearch)</visible>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
