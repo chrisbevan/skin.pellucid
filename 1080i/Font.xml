@@ -220,8 +220,8 @@
         <font>
             <name>thumbTitle</name>
             <filename>roboto/bold.ttf</filename>
-            <size>21</size>
-            <linespacing>1.0</linespacing>
+            <size>23</size>
+            <linespacing>1</linespacing>
         </font>
         <font>
             <name>symbol</name>

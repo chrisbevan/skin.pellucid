@@ -119,13 +119,13 @@
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>318</posy>
+	                        <posy>306</posy>
 	                        <width>524</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 	                    </control>
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
@@ -178,13 +178,13 @@
 	                        <control type="label">
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
-		                        <posy>318</posy>
+		                        <posy>316</posy>
 		                        <width>524</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
 		                        <font>thumbTitle</font>
 		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
+		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 								<scroll>false</scroll>
 		                    </control>
 		      				<control type="progress">
@@ -277,24 +277,13 @@
 						<control type="label">
 							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
-							<posy>344</posy>
+							<posy>350</posy>
 							<width>204</width>
 							<height>1-row</height>
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.title][/B]</label>
-						</control>
-						<control type="label">
-							<visible>!controlgroup(9000).hasfocus</visible>
-							<posx>12</posx>
-							<posy>368</posy>
-							<width>204</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
-							<font>thumbTitle</font>
-							<textcolor>textActive</textcolor>
-	                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
+							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
@@ -357,23 +346,13 @@
 							</control>
 							<control type="label">
 								<posx>12</posx>
-								<posy>344</posy>
+								<posy>354</posy>
 								<width>204</width>
 								<height>1-row</height>
 								<aligny>center</aligny>
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
-								<label>[B]$INFO[ListItem.title][/B]</label>
-							</control>
-							<control type="label">
-								<posx>12</posx>
-								<posy>368</posy>
-								<width>204</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
-								<font>thumbTitle</font>
-								<textcolor>textActive</textcolor>
-		                        <label>$INFO[ListItem.year]$INFO[listitem.duration(mins), • , $LOCALIZE[31018]]</label>
+								<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(ListItem.PlayCount)</visible>

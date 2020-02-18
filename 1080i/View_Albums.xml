@@ -113,7 +113,7 @@
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>318</posy>
+	                        <posy>308</posy>
 	                        <width>276</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
@@ -149,7 +149,7 @@
 	                        <control type="label">
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
-		                        <posy>318</posy>
+		                        <posy>322</posy>
 		                        <width>276</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>
@@ -273,7 +273,7 @@
 	                        <control type="label">
 		                        <visible>!controlgroup(9000).hasfocus</visible>
 		                        <posx>12</posx>
-		                        <posy>258</posy>
+		                        <posy>262</posy>
 		                        <width>226</width>
 		                        <height>2-row</height>
 		                        <aligny>center</aligny>

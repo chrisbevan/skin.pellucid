@@ -123,18 +123,7 @@
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.Title][/B]</label>
-						</control>
-						<control type="label">
-							<visible>!controlgroup(9000).hasfocus</visible>
-							<posx>12</posx>
-							<posy>292</posy>
-							<width>240</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
-							<font>thumbTitle</font>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.year]</label>
+							<label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="4-col" height="348">
@@ -172,24 +161,15 @@
 								<label>$INFO[ListItem.label]</label>
 							</control>
 							<control type="label">
+								<visible>!controlgroup(9000).hasfocus</visible>
 								<posx>12</posx>
-								<posy>268</posy>
+								<posy>280</posy>
 								<width>240</width>
 								<height>1-row</height>
 								<aligny>center</aligny>
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
-								<label>[B]$INFO[ListItem.Title][/B]</label>
-							</control>
-							<control type="label">
-								<posx>12</posx>
-								<posy>292</posy>
-								<width>240</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
-								<font>thumbTitle</font>
-								<textcolor>textActive</textcolor>
-								<label>$INFO[ListItem.year]</label>
+								<label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
 							</control>
 						</control>
 					</focusedlayout>
