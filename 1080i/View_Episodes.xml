@@ -70,7 +70,7 @@
                 <width>12-col</width>
                 <height>2-row</height>
                 <align></align>
-                <font>largeTitle</font>
+                <font>largeTitle2</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[Container.ShowTitle]</label>
             </control>

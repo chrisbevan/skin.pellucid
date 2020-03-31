@@ -146,6 +146,12 @@
             <linespacing>0.8</linespacing>
         </font>
 		<font>
+            <name>largeTitle2</name>
+            <filename>roboto_slab/regular.ttf</filename>
+            <size>52</size>
+            <linespacing>0.8</linespacing>
+        </font>
+		<font>
             <name>mediumTitle</name>
             <filename>roboto_slab/bold.ttf</filename>
             <size>44</size>
@@ -191,7 +197,7 @@
             <name>menuTitle3</name>
             <filename>roboto_slab/bold.ttf</filename>
             <size>38</size>
-            <linespacing>1.0</linespacing>
+            <linespacing>0.85</linespacing>
         </font>
         <font>
             <name>buttonTitle</name>
@@ -365,6 +371,13 @@
             <size>48</size>
             <linespacing>1.0</linespacing>
         </font>
+		<font>
+            <name>sectionTitle</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>36</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
+        </font>
         <font>
             <name>pageSubTitle</name>
             <filename>heebo/medium.ttf</filename>
@@ -391,6 +404,18 @@
             <size>60</size>
             <linespacing>0.8</linespacing>
         </font>
+		<font>
+            <name>largeTitle2</name>
+            <filename>heebo/regular.ttf</filename>
+            <size>56</size>
+            <linespacing>0.8</linespacing>
+        </font>
+		<font>
+            <name>mediumTitle</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>44</size>
+            <linespacing>0.8</linespacing>
+        </font>
         <font>
             <name>itemTitle</name>
             <filename>heebo/bold.ttf</filename>
@@ -406,7 +431,7 @@
         <font>
             <name>playlistSubTitle</name>
             <filename>heebo/bold.ttf</filename>
-            <size>26</size>
+            <size>24</size>
             <linespacing>1.0</linespacing>
         </font>
         <font>
@@ -421,10 +446,28 @@
             <size>30</size>
             <linespacing>1.0</linespacing>
         </font>
+		<font>
+            <name>menuTitle2</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>27</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>menuTitle3</name>
+            <filename>heebo/bold.ttf</filename>
+            <size>38</size>
+            <linespacing>0.85</linespacing>
+        </font>
         <font>
             <name>buttonTitle</name>
             <filename>heebo/medium.ttf</filename>
             <size>28</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>buttonTitle2</name>
+            <filename>heebo/black.ttf</filename>
+            <size>22</size>
             <linespacing>1.0</linespacing>
         </font>
 		<font>
@@ -441,9 +484,9 @@
         </font>
         <font>
             <name>thumbTitle</name>
-            <filename>heebo/regular.ttf</filename>
-            <size>20</size>
-            <linespacing>1.0</linespacing>
+            <filename>heebo/bold.ttf</filename>
+            <size>23</size>
+            <linespacing>1</linespacing>
         </font>
         <font>
             <name>symbol</name>

@@ -63,16 +63,17 @@
 					<posx>0</posx>
 					<posy>0</posy>			
 					<control type="label">
-						<posx>5-col</posx>
-						<posy>86</posy>
-						<width>14-col</width>
+						<posx>7-col</posx>
+						<posy>62</posy>
+						<width>10-col</width>
 						<height>2-row</height>
 						<align>center</align>
 						<font>menuTitle3</font>
 						<textcolor>textActive</textcolor>
-						<scroll>true</scroll>
+						<scroll>false</scroll>
 						<label>$INFO[MusicPlayer.Title]</label>
 						<shadowcolor>99000000</shadowcolor>
+						<wrapmultiline>true</wrapmultiline>
 					</control>
 					<control type="label">
 						<posx>4-col</posx>
