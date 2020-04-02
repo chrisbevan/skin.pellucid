@@ -297,6 +297,25 @@
             </control>
         </control>
     </include>
+
+	<!--touchscreen controls-->
+	<include name="touchscreenControls">
+		<control type="group">
+			<visible>System.GetBool(input.enablemouse)</visible>
+			<!--universal back button-->
+			<control type="button" id="8542">
+	            <description>black button</description>
+				<posx>0</posx>
+	            <posy>0</posy>
+	            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+	            <focusedcolor>textActive</focusedcolor>
+	            <height>fullscreenHeight</height>
+				<width>12</width>
+	            <onclick>back</onclick>
+	        </control>
+		</control>
+	</include>
+
    <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>

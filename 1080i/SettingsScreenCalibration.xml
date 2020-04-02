@@ -61,6 +61,8 @@
             <align>center</align>
             <label></label>
         </control>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

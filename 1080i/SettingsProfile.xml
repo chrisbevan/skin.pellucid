@@ -163,6 +163,8 @@
                 </focusedlayout>
             </control>
         </control>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

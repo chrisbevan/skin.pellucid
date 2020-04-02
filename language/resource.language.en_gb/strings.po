@@ -1016,3 +1016,7 @@ msgstr ""
 msgctxt "#31247"
 msgid "Import content"
 msgstr ""
+
+msgctxt "#31248"
+msgid "Hide mouse pointer"
+msgstr ""

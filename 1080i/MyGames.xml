@@ -36,6 +36,8 @@
         <include>hubMenu</include>
         <!--mini window-->
         <include>miniVideoPlayer</include>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
         <!--debug-->
         <include>DebugGrid</include>
         <control type="label">

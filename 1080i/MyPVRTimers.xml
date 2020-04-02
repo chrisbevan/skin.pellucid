@@ -249,6 +249,8 @@
         </control>
         <!--hub menu-->
         <include>hubMenu</include>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

@@ -124,6 +124,14 @@
 		</control>
 		<!--hidden buttons to handle dialog autohide-->
 		<control type="button" id="9876">
+			<visible>System.GetBool(input.enablemouse)</visible>
+			<include>dimensionsFullscreen</include>
+			<texturefocus></texturefocus>
+	        <texturenofocus></texturenofocus>
+			<onclick>activatewindow(1105)</onclick>
+		</control>
+		<control type="button" id="9876">
+			<visible>!System.GetBool(input.enablemouse)</visible>
 			<posx>-100</posx>
 			<posy>-100</posy>
 			<height>1-col</height>
@@ -134,6 +142,8 @@
 			<onright>playercontrol(next)</onright>
 			<onclick>activatewindow(1105)</onclick>
 		</control>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">
