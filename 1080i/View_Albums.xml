@@ -164,7 +164,7 @@
 			</control>
 			<!--all albums-->
 			<control type="group" id="9124">
-				<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
+				<animation type="Conditional" condition="controlgroup(9124).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus | Skin.HasSetting(disableRecentAlbums)">
 	                <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
 	            </animation>
 				<control type="label">

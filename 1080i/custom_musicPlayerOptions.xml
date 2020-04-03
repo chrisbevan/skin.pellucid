@@ -148,8 +148,7 @@
 	                    <onup>8001</onup>
 	                    <ondown>control.setfocus(8003,0)</ondown>
 	                    <onleft>decreaserating</onleft>
-	                    <onright>increaserating</onright>
-	                    
+	                    <onright>increaserating</onright>                 
 	                </control>
 	            </control>
 	            <!--final options-->

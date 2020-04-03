@@ -54,7 +54,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>MyPVRChannels.xml</label>
+            <label>MyPVRChannels.xml path: $INFO[container.folderpath] folder: $INFO[container.foldername] content: $INFO[container.content]</label>
         </control>
     </controls>
 </window>

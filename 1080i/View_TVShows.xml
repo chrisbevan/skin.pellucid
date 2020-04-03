@@ -227,7 +227,7 @@
 		</control>
 		<!--all TVShows-->
 		<control type="group" id="9204">
-			<animation type="Conditional" condition="controlgroup(9204).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
+			<animation type="Conditional" condition="controlgroup(9204).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus | Skin.HasSetting(disableRecentTVShows)">
                 <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
             </animation>
 			<control type="label">

@@ -285,6 +285,8 @@
 			<ondown>setfocus(9000,0)</ondown>
 			<onclick>setfocus(9000,0)</onclick>
         </control>
+		<!--touchscreen controls-->
+		<include>touchscreenControls</include>
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">

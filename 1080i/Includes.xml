@@ -298,24 +298,62 @@
         </control>
     </include>
 
-	<!--touchscreen controls-->
+	<!--touchscreen screen edge controls-->
 	<include name="touchscreenControls">
 		<control type="group">
 			<visible>System.GetBool(input.enablemouse)</visible>
 			<!--universal back button-->
 			<control type="button" id="8542">
-	            <description>black button</description>
+	            <description>back button</description>
 				<posx>0</posx>
 	            <posy>0</posy>
-	            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+	            <texturefocus colordiffuse="overlay">colors/black.png</texturefocus>
 	            <focusedcolor>textActive</focusedcolor>
 	            <height>fullscreenHeight</height>
-				<width>12</width>
-	            <onclick>back</onclick>
+				<width>45</width>
+				<onclick condition="String.Contains(container.folderpath,spotify)">back</onclick>
+				<onclick condition="controlgroup(9000).hasfocus">activateWindow(home)</onclick>
+	            <onclick condition="!String.Contains(container.folderpath,spotify) + [container.content(addons) | container.content(tvshows) | container.content(movies) | window.isactive(TVChannels) | window.isactive(TVGuide) | window.isactve(TVRecordings) | container.content(artists) | [container.content(albums) + !String.Contains(container.folderpath,albumartistsonly)]]">setfocus(9000)</onclick>
+				<onclick condition="!String.Contains(container.folderpath,spotify) + [String.Contains(Container.folderpath,plugin) | container.content(songs) | !container.content(tvshows) + !container.content(movies) + !window.isactive(TVChannels) + !window.isactive(TVGuide) + !window.isactve(TVRecordings) + !container.content(artists) + [container.content(albums) + String.Contains(container.folderpath,albumartistsonly)]]">Back</onclick>
+			</control>
+			<!--universal player control button-->
+			<control type="button" id="8539">
+	            <description>player controls</description>
+				<posx>45r</posx>
+	            <posy>0</posy>
+	            <texturefocus colordiffuse="overlay">colors/black.png</texturefocus>
+	            <focusedcolor>textActive</focusedcolor>
+	            <height>fullscreenHeight</height>
+				<width>45</width>
+	            <onclick condition="player.playing + Player.PauseEnabled">action(pause)</onclick>
+				<onclick condition="player.playing + !Player.PauseEnabled">action(stop)</onclick>
+				<onclick condition="player.paused">action(play)</onclick>
+	        </control>
+			<!--page up-->
+			<control type="button" id="8538">
+	            <description>page up</description>
+				<posx>0</posx>
+	            <posy>0</posy>
+	            <texturefocus colordiffuse="overlay">colors/black.png</texturefocus>
+	            <focusedcolor>textActive</focusedcolor>
+	            <width>fullscreenWidth</width>
+				<height>45</height>
+	            <onclick>PageUp(60)</onclick>
+	        </control>
+			<!--page down-->
+			<control type="button" id="8537">
+	            <description>page down</description>
+				<posx>0</posx>
+	            <posy>1035</posy>
+	            <texturefocus colordiffuse="overlay">colors/black.png</texturefocus>
+	            <focusedcolor>textActive</focusedcolor>
+	            <width>fullscreenWidth</width>
+				<height>45</height>
+	            <onclick>PageDown(60)</onclick>
 	        </control>
 		</control>
 	</include>
-
+	
    <!--debugging-->
     <include name="DialogID">
         <posx>15</posx>
