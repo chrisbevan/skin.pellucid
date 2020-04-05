@@ -173,7 +173,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>DialogID</include>
-            <label>MyPVRRecordings.xml</label>
+            <label>MyPVRRecordings.xml path: $INFO[container.folderpath] folder: $INFO[container.foldername] content: $INFO[container.content]</label>
         </control>
     </controls>
 </window>

@@ -11,7 +11,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">A skin for Kodi by theDeadMan</summary>
-        <description lang="en_GB">Built for the living room, Pellucid is a clean and simple kodi experience designed for maximum usability and minimum fuss. Skin Shortcuts addon support is available for full menu customisation. With thanks to Marco "Dadebue" Debus for the homescreen photography.</description>
+        <description lang="en_GB">Built for the living room, Pellucid is a clean and carefully designed kodi experience designed for maximum usability and minimum fuss. Skin Shortcuts addon support is available for full menu customisation. With thanks to Marco "Dadebue" Debus for the homescreen photography.</description>
         <platform>all</platform>
         <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
         <forum>https://forum.kodi.tv/forumdisplay.php?fid=267</forum>

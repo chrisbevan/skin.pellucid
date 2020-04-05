@@ -58,7 +58,7 @@
 				<animation type="conditional" condition="true">
 					<effect type="fade" end="90" time="0"/>
 				</animation>
-				<!--track info (no vis)-->
+				<!--track info-->
 				<control type="group">
 					<posx>0</posx>
 					<posy>0</posy>			
@@ -118,6 +118,42 @@
 						<scroll>true</scroll>
 						<label>$INFO[MusicPlayer.timeremaining]</label>
 						<shadowcolor>99000000</shadowcolor>
+					</control>
+					<!--additional touchscreen controls-->
+					<control type="group">
+						<visible>System.GetBool(input.enablemouse)</visible>
+						<control type="button" id="8514">
+				            <description>previous</description>
+							<posx>7-col-gutter</posx>
+				            <posy>200</posy>
+				            <texturenofocus colordiffuse="99ffffff" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+							<texturefocus colordiffuse="88ffffff" diffuse="masks/circle.png">colors/black.png</texturefocus>
+				            <focusedcolor>textActive</focusedcolor>
+				            <height>1-col</height>
+							<width>1-col</width>
+							<font>symbol</font>
+							<textoffsetx>24</textoffsetx>
+							<textcolor>22FFFFFF</textcolor>
+					        <focusedcolor>22FFFFFF</focusedcolor>
+							<label></label>
+							<onclick>playercontrol(previous)</onclick>
+				        </control>
+						<control type="button" id="8513">
+				            <description>next</description>
+							<posx>1178</posx>
+				            <posy>200</posy>
+				            <texturenofocus colordiffuse="99ffffff" diffuse="masks/circle.png">colors/black.png</texturenofocus>
+							<texturefocus colordiffuse="88ffffff" diffuse="masks/circle.png">colors/black.png</texturefocus>
+				            <focusedcolor>textActive</focusedcolor>
+				            <height>1-col</height>
+							<width>1-col</width>
+							<font>symbol</font>
+							<textoffsetx>24</textoffsetx>
+							<textcolor>22FFFFFF</textcolor>
+					        <focusedcolor>22FFFFFF</focusedcolor>
+							<label></label>
+							<onclick>playercontrol(next)</onclick>
+				        </control>		
 					</control>
 				</control>
 			</control>
