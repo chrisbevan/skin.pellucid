@@ -70,7 +70,7 @@
 						<align>center</align>
 						<font>menuTitle3</font>
 						<textcolor>textActive</textcolor>
-						<scroll>false</scroll>
+						<scroll>true</scroll>
 						<label>$INFO[MusicPlayer.Title]</label>
 						<shadowcolor>99000000</shadowcolor>
 						<wrapmultiline>true</wrapmultiline>
@@ -132,7 +132,7 @@
 				            <height>1-col</height>
 							<width>1-col</width>
 							<font>symbol</font>
-							<textoffsetx>24</textoffsetx>
+							<textoffsetx>25</textoffsetx>
 							<textcolor>22FFFFFF</textcolor>
 					        <focusedcolor>22FFFFFF</focusedcolor>
 							<label></label>
@@ -148,7 +148,7 @@
 				            <height>1-col</height>
 							<width>1-col</width>
 							<font>symbol</font>
-							<textoffsetx>24</textoffsetx>
+							<textoffsetx>25</textoffsetx>
 							<textcolor>22FFFFFF</textcolor>
 					        <focusedcolor>22FFFFFF</focusedcolor>
 							<label></label>

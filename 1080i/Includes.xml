@@ -61,7 +61,6 @@
     <!--touchscreen back function-->
 	<expression name="openSideBlade">[window.isactive(pictures) + String.IsEqual(container.folderpath,] | String.IsEqual(container.folderpath,addons://sources/game) | [window.isactive(games) + String.IsEqual(container.folderpath,] | String.IsEqual(container.folderpath,sources://video/) | String.IsEqual(container.folderpath,special://videoplaylists/) | String.IsEqual(container.folderpath,addons://sources/video) | String.IsEqual(container.folderpath,pvr://recordings/tv/active/) | String.IsEqual(container.folderpath,sources://music/) | String.IsEqual(container.folderpath,addons://sources/audio) | String.IsEqual(container.folderpath,special://musicplaylists/) | String.IsEqual(container.folderpath,musicdb://genres/) | String.IsEqual(container.folderpath,musicdb://artists/) | String.IsEqual(container.folderpath,musicdb://albums/) | container.content(movies) | container.content(tvshows) | window.isactive(TVChannels) | window.isactive(RadioChannels) | window.isactive(TVGuide) | window.isactve(TVRecordings)</expression>
 
-
 	<!--item fanart-->
     <include name="itemFanart">
         <control type="wraplist" id="99999">
@@ -311,7 +310,7 @@
 
 			<!--standard back-->
 			<control type="button" id="8542">
-				<visible>!$EXP[openSideBlade]</visible>
+				<visible>!$EXP[openSideBlade] | window.isactive(1103)</visible>
 	            <description>back button</description>
 				<posx>-5</posx>
 	            <posy>0</posy>
@@ -324,12 +323,12 @@
 				<textcolor>22FFFFFF</textcolor>
 		        <focusedcolor>22FFFFFF</focusedcolor>
 				<label></label>
-				<onclick >back</onclick>
+				<onclick>back</onclick>
 			</control>
 			
 			<!--sideblade open-->
 			<control type="button" id="8514">
-				<visible>$EXP[openSideBlade]</visible>
+				<visible>$EXP[openSideBlade] + !window.isactive(1103)</visible>
 	            <description>back button</description>
 				<posx>-5</posx>
 	            <posy>0</posy>
@@ -349,7 +348,6 @@
 			<!--home-->
 			<control type="button" id="8520">
 	            <description>home</description>
-				<enabled>!window.isactive(home)</enabled>
 				<posx>-5</posx>
 	            <posy>810</posy>
 	            <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
@@ -361,6 +359,7 @@
 				<textcolor>22FFFFFF</textcolor>
 		        <focusedcolor>22FFFFFF</focusedcolor>
 				<label></label>
+				<onclick>dialog.close(all,true)</onclick>
 				<onclick>activateWindow(home)</onclick>
 	        </control>			
 			
