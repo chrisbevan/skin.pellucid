@@ -79,7 +79,7 @@
                 <posy>2-row</posy>
                 <width></width>
                 <itemgap>0</itemgap>
-                <height>15-row</height>
+                <height>538</height>
                 <onleft>9000</onleft>
                 <onright>5</onright>
                 <onup></onup>
@@ -148,8 +148,6 @@
                 <description>Change settings level</description>
             </control>
         </control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

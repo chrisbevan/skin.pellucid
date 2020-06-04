@@ -64,8 +64,6 @@
         <include>hubMenu</include>
         <!--loading indicator-->
         <include>loadingIndicator</include>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

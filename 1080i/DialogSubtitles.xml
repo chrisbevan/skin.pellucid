@@ -13,7 +13,7 @@
                 <width>20-col</width>
                 <height>23-row</height>
                 <texture>colors/black.png</texture>
-                <colordiffuse>99FFFFFF</colordiffuse>
+                <colordiffuse>aaFFFFFF</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -256,8 +256,6 @@
                 </control>
             </control>
         </control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

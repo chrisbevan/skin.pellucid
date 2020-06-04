@@ -123,15 +123,6 @@
                 <onleft>8000</onleft>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
-
-				<control type="radiobutton" id="21">
-                    <visible>Container(8000).Hasfocus(1)</visible>
-                    <description>Hide mouse pointer</description>
-                    <width>14-col</width>
-                    <label>31248</label>
-                    <onclick>Skin.ToggleSetting(hideMouse)</onclick>
-                    <selected>Skin.HasSetting(hideMouse)</selected>
-                </control>
                 <control type="radiobutton" id="6">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Stop video on return to menu</description>
@@ -268,8 +259,6 @@
                 </control>
             </control>
         </control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

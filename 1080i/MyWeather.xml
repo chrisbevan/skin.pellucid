@@ -207,8 +207,6 @@
             <onright>Weather.LocationNext</onright>
             <onleft>Weather.LocationPrevious</onleft>
         </control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

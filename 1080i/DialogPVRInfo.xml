@@ -243,8 +243,6 @@
                 <label>19687</label>
             </control>
         </control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

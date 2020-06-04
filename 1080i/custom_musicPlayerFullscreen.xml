@@ -170,8 +170,6 @@
 			<onright>playercontrol(next)</onright>
 			<onclick>activatewindow(1105)</onclick>
 		</control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">

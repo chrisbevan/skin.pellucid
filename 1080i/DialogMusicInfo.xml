@@ -765,8 +765,6 @@
 				<label>20413</label>
 			</control>
 		</control>
-		<!--touchscreen controls-->
-		<include>touchscreenControls</include>
 		<!--debugging-->
 		<include>DebugGrid</include>
 		<control type="label">
