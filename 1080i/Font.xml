@@ -260,8 +260,9 @@
             <size>30</size>
         </font>
     </fontset>
+
 	<fontset id="heebo">
-		<!--Heebo fontset for Hebrew etc users-->
+        <!--Hebrew fontset-->
         <font>
             <name>veryLarge</name>
             <filename>heebo/black.ttf</filename>
@@ -367,7 +368,7 @@
         </font>
         <font>
             <name>pageTitle</name>
-            <filename>heebo/condensedBold.ttf</filename>
+            <filename>heebo/bold.ttf</filename>
             <size>48</size>
             <linespacing>1.0</linespacing>
         </font>
@@ -407,7 +408,7 @@
 		<font>
             <name>largeTitle2</name>
             <filename>heebo/regular.ttf</filename>
-            <size>56</size>
+            <size>52</size>
             <linespacing>0.8</linespacing>
         </font>
 		<font>
@@ -436,7 +437,7 @@
         </font>
         <font>
             <name>itemSubTitleCondensed</name>
-            <filename>heebo/condensedBold.ttf</filename>
+            <filename>heebo/bold.ttf</filename>
             <size>26</size>
             <linespacing>0.8</linespacing>
         </font>
@@ -518,5 +519,289 @@
             <filename>heebo/regular.ttf</filename>
             <size>30</size>
         </font>
-	</fontset>
+    </fontset>
+
+	<fontset id="arial">
+        <!--Arial fontset-->
+        <font>
+            <name>veryLarge</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>96</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>veryLargeLight</name>
+            <filename>arial.ttf</filename>
+            <size>96</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>large</name>
+            <filename>arial.ttf</filename>
+            <size>60</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>largeBlack</name>
+			<filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>60</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>largeStrong</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>60</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>largeLight</name>
+            <filename>arial.ttf</filename>
+            <size>54</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
+            <name>medium</name>
+            <filename>arial.ttf</filename>
+            <size>48</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>mediumStrong</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>48</size>
+            <linespacing>1</linespacing>
+        </font>
+        <font>
+            <name>mediumLight</name>
+            <filename>arial.ttf</filename>
+            <size>48</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
+            <name>regular</name>
+            <filename>arial.ttf</filename>
+            <size>36</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
+            <name>regularStrong</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>36</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
+            <name>regularLight</name>
+            <filename>arial.ttf</filename>
+            <size>36</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>small</name>
+            <filename>arial.ttf</filename>
+            <size>30</size>
+            <linespacing>0.9</linespacing>
+        </font>
+        <font>
+            <name>smallStrong</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>22</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>smallMedium</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <!--element specific-->
+        <font>
+            <name>textbox</name>
+            <filename>arial.ttf</filename>
+            <size>30</size>
+            <linespacing>1.1</linespacing>
+        </font>
+        <font>
+            <name>textboxExtraLeading</name>
+            <filename>arial.ttf</filename>
+            <size>30</size>
+            <linespacing>1</linespacing>
+        </font>
+        <font>
+            <name>pageTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>48</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>sectionTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>36</size>
+            <linespacing>1.0</linespacing>
+			<style>capitalize</style>
+        </font>
+        <font>
+            <name>pageSubTitle</name>
+            <filename>arial.ttf</filename>
+            <size>30</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>dialogTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>32</size>
+            <linespacing>1.0</linespacing>
+            <style>capitalize</style>
+        </font>
+		<font>
+            <name>confirmTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>34</size>
+            <linespacing>1.0</linespacing>
+            <style>capitalize</style>
+        </font>
+        <font>
+            <name>largeTitle</name>
+            <filename>arial.ttf</filename>
+            <size>60</size>
+            <linespacing>0.8</linespacing>
+        </font>
+		<font>
+            <name>largeTitle2</name>
+            <filename>arial.ttf</filename>
+            <size>52</size>
+            <linespacing>0.8</linespacing>
+        </font>
+		<font>
+            <name>mediumTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>44</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>itemTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>30</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>itemSubTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>playlistSubTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>24</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>itemSubTitleCondensed</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>26</size>
+            <linespacing>0.8</linespacing>
+        </font>
+        <font>
+            <name>menuTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>30</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>menuTitle2</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>27</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>menuTitle3</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>38</size>
+            <linespacing>0.85</linespacing>
+        </font>
+        <font>
+            <name>buttonTitle</name>
+            <filename>arial.ttf</filename>
+            <size>28</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>buttonTitle2</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>22</size>
+            <linespacing>1.0</linespacing>
+        </font>
+		<font>
+            <name>settingsCategory</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>30</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>settingsCategoryTitle</name>
+            <filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>22</size>
+            <linespacing>1.0</linespacing>
+        </font>
+        <font>
+            <name>thumbTitle</name>
+			<filename>arial.ttf</filename>
+			<style>bold</style>
+            <size>23</size>
+            <linespacing>1</linespacing>
+        </font>
+        <font>
+            <name>symbol</name>
+            <filename>symbol.ttf</filename>
+            <size>20</size>
+            <style/>
+        </font>
+        <font>
+            <name>symbolSmall</name>
+            <filename>symbol.ttf</filename>
+            <size>14</size>
+            <style/>
+        </font>
+        <font>
+            <name>symbolLarge</name>
+            <filename>symbol.ttf</filename>
+            <size>28</size>
+            <style/>
+        </font>
+        <font>
+            <name>symbolVeryLarge</name>
+            <filename>symbol.ttf</filename>
+            <size>72</size>
+            <style/>
+        </font>
+        <!-- Required for system -->
+        <font>
+            <name>font13</name>
+            <filename>arial.ttf</filename>
+            <size>30</size>
+        </font>
+    </fontset>
+	
 </fonts>
