@@ -370,12 +370,12 @@
                         <label></label>
                     </control>
                     <control type="label">
-                        <width>3-col</width>
+                        <width>11-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label fallback="31159">$INFO[listitem.duration]</label>
+                        <label fallback="31159">$INFO[listitem.duration]    [COLOR textboxInactive]$INFO[listitem.filename][/COLOR]</label>
                     </control>
                 </control>
                 <!--synopsis-->

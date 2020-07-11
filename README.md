@@ -7,9 +7,8 @@ Built for the living room, Pellucid is a clean and carefully designed Kodi exper
 
 #### Additional features
 
-- Skin Shortcuts addon support is available from the Krypton release onwards.
+- Skin Shortcuts addon support.
 - Full PVR / Live TV support
-- Support for touchscreens
 
 Discussion thread: http://forum.kodi.tv/forumdisplay.php?fid=267
 

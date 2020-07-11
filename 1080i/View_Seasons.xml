@@ -99,7 +99,7 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
                             <bordersize>12</bordersize>
-                            <colordiffuse>overlay</colordiffuse>
+                            <colordiffuse>77FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
@@ -122,6 +122,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <font>largeLight</font>
+							<shadowcolor>99000000</shadowcolor>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.label]</label>
                         </control>
@@ -205,6 +206,7 @@
 	                            <align>left</align>
 	                            <aligny>center</aligny>
 	                            <font>largeLight</font>
+								<shadowcolor>99000000</shadowcolor>
 	                            <textcolor>textActive</textcolor>
 	                            <label>$INFO[ListItem.label]</label>
 	                        </control>
