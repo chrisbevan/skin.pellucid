@@ -82,7 +82,7 @@
                 <align></align>
                 <font>itemTitle</font>
                 <textcolor>menuUnselected</textcolor>
-                <label>$INFO[listitem.Season,$LOCALIZE[31011] , | ]$INFO[Container(53).NumItems,, $LOCALIZE[31189]]</label>
+                <label>$INFO[listitem.Season,$LOCALIZE[20373] , | ]$INFO[Container(53).NumItems,, $LOCALIZE[31189]]</label>
             </control>
         </control>
         <!--episode synopsis & thumb-->

@@ -8,7 +8,7 @@
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>12-col</width>
-            <label>31147</label>
+            <label>137</label>
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
         </control>
         <control type="button" id="3">
@@ -107,7 +107,7 @@
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>12-col</width>
-            <label>31147</label>
+            <label>137</label>
             <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
         </control>
         <control type="button" id="3">
@@ -167,7 +167,7 @@
             <width>12-col</width>
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <label>31241</label>
+            <label>191</label>
             <onclick condition="!Playlist.IsRandom">PlayerControl(randomOn)</onclick>
             <onclick condition="Playlist.IsRandom">PlayerControl(randomOff)</onclick>
         </control>

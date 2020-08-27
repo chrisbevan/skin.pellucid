@@ -319,7 +319,7 @@
 		                    </item>
 		                    <item>
 		                        <description>Visualisation</description>
-		                        <label>31032</label>
+		                        <label>250</label>
 		                        <label2></label2>
 		                        <thumb></thumb>
 		                        <onclick>activateWindow(musicOSD)</onclick>
@@ -344,6 +344,7 @@
 			<height>1-col</height>
 			<width>1-col</width>
 			<onclick>control.setfocus(8001)</onclick>
+			<oninfo>control.setfocus(8001)</oninfo>
 		</control>
 		<!--debugging-->
 		<include>DebugGrid</include>

@@ -286,17 +286,6 @@
 						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
-						<visible>!controlgroup(9000).hasfocus</visible>
-						<posx>12</posx>
-						<posy>350</posy>
-						<width>204</width>
-						<height>1-row</height>
-						<aligny>center</aligny>
-						<font>thumbTitle</font>
-						<textcolor>textActive</textcolor>
-						<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[31189]]</label>
-					</control>
-					<control type="label">
 						<visible>!System.Setting(hidewatched) + !controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
 						<posy>350</posy>
@@ -376,17 +365,6 @@
 							<wrapmultiline>true</wrapmultiline>
 							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.label]</label>
-						</control>
-						<control type="label">
-							<visible>!controlgroup(9000).hasfocus</visible>
-							<posx>12</posx>
-							<posy>354</posy>
-							<width>204</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
-							<font>thumbTitle</font>
-							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[31189]]</label>
 						</control>
 						<control type="label">
 							<visible>!System.Setting(hidewatched) + !controlgroup(9000).hasfocus</visible>

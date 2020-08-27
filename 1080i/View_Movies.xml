@@ -68,7 +68,7 @@
 	                    </item>
 	                    <item>
 	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
-	                        <property name="textTitle">31132</property>
+	                        <property name="textTitle">31127</property>
 	                    </item>
 	                </content>
 	            </control>
@@ -228,7 +228,7 @@
 	                <aligny>center</aligny>
 	                <font>menuTitle</font>
 	                <textcolor>textActive</textcolor>
-	                <label>$LOCALIZE[31097]</label>
+	                <label>$LOCALIZE[559]</label>
 	            </control>
 				<control type="panel" id="51">
 					<visible>$EXP[isMovie]</visible>

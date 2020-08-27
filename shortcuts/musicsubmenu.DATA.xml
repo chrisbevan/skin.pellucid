@@ -26,7 +26,7 @@
     </shortcut>
     <shortcut>
         <visible>PVR.HasRadioChannels</visible>
-        <label>31059</label>
+        <label>31250</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>
         <thumb />
