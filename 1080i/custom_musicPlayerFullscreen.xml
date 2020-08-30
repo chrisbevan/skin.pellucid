@@ -194,7 +194,6 @@
 		                        <label2></label2>
 		                        <thumb></thumb>
 		                        <onclick>PlayerControl(stop)</onclick>
-		                        <onclick>Dialog.Close(1105)</onclick>
 		                        <onclick>Dialog.Close(1103)</onclick>
 		                    </item>
 		                    <item>
