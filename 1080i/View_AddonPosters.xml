@@ -41,7 +41,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>BBffffff</colordiffuse>
+						<colordiffuse>77ffffff</colordiffuse>
 					</control>
 					<control type="label">
 						<visible>!controlgroup(9000).hasfocus</visible>

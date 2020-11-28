@@ -78,7 +78,6 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
                             <bordersize>12</bordersize>
-                            <colordiffuse>overlay</colordiffuse>
                         </control>
 						<control type="image">
                             <posx>0</posx>
@@ -88,7 +87,7 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.art(poster)]</texture>
                             <bordersize>12</bordersize>
-                            <colordiffuse>BBffffff</colordiffuse>
+                            <colordiffuse>77ffffff</colordiffuse>
                         </control>
 						<control type="image">
 							<visible>String.StartsWith(ListItem.label,*)</visible>
@@ -175,8 +174,8 @@
 		                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
 		                        <bordersize>6</bordersize>
 		                        <colordiffuse>FF000000</colordiffuse>
-		                    </control>
-                            <control type="image">
+		                    </control>                        
+							<control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>252</width>
@@ -185,6 +184,17 @@
                                 <texture>$INFO[ListItem.art(poster)]</texture>
                                 <bordersize>6</bordersize>
                             </control>
+							<control type="image">
+								<visible>String.StartsWith(ListItem.label,*)</visible>
+	                            <posx>0</posx>
+	                            <posy>0</posy>
+	                            <width>252</width>
+	                            <height>378</height>
+	                            <aspectratio>stretch</aspectratio>
+	                            <texture>colors/black.png</texture>
+	                            <bordersize>6</bordersize>
+	                            <colordiffuse>DDFFFFFF</colordiffuse>
+	                        </control>
                             <control type="label">
 	                            <visible>ListItem.IsParentFolder</visible>
 	                            <posx>12</posx>

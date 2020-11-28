@@ -25,7 +25,6 @@
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/black.png</texture>
                         <bordersize>12</bordersize>
-                        <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
 						<visible>!ListItem.IsParentFolder</visible>
@@ -36,7 +35,7 @@
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
                         <bordersize>12</bordersize>
-                        <colordiffuse>BBffffff</colordiffuse>
+                        <colordiffuse>77ffffff</colordiffuse>
                     </control>
                     <control type="textbox">
                         <visible>String.IsEmpty(listitem.title)</visible>

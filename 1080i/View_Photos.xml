@@ -19,7 +19,7 @@
 	        </control>
 			<control type="label">
                 <posx>col-1-begin</posx>
-                <posy>22-row</posy>
+                <posy>20-row</posy>
                 <width>18-col</width>
                 <height>1-row</height>
                 <font>largeTitle</font>
@@ -33,7 +33,7 @@
         <control type="panel" id="50">
 			<visible>$EXP[isPhotoAlbum]</visible>
             <posx>96</posx>
-            <posy>row-24-begin</posy>
+            <posy>row-22-begin</posy>
             <width>1764</width>
             <height>10-row</height>
             <onleft>9000</onleft>
@@ -50,9 +50,9 @@
                     <aspectratio>scale</aspectratio>
                     <texture>colors/black.png</texture>
                     <bordersize>6</bordersize>
-                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="image">
+					<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>4-col-textbox</width>
@@ -60,8 +60,53 @@
                     <aspectratio>scale</aspectratio>
                     <texture>$INFO[Listitem.thumb]</texture>
                     <bordersize>6</bordersize>
-					<colordiffuse>BBffffff</colordiffuse>
+					<colordiffuse>33ffffff</colordiffuse>
                 </control>
+				<control type="image">
+					<visible>!ListItem.IsFolder + !ListItem.IsParentFolder</visible>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-textbox</width>
+                    <height>160</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture>$INFO[Listitem.thumb]</texture>
+                    <bordersize>6</bordersize>
+					<colordiffuse>77ffffff</colordiffuse>
+                </control>
+				<control type="image">
+					<visible>ListItem.IsFolder</visible>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>4-col-textbox</width>
+                    <height>160</height>
+                    <aspectratio>scale</aspectratio>
+                    <texture>colors/black.png</texture>
+                    <bordersize>6</bordersize>
+                    <colordiffuse>77111111</colordiffuse>
+                </control>
+				<control type="label">
+					<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
+					<posx>0</posx>
+					<posy>56</posy>
+					<width>4-col-textbox</width>
+					<height>1-row</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>largeLight</font>
+					<textcolor>textActive</textcolor>
+					<label>$LOCALIZE[31252]</label>
+				</control>
+				<control type="textbox">
+					<visible>ListItem.IsFolder</visible>
+					<posx>24</posx>
+					<posy>160</posy>
+					<width>230</width>
+					<height>60</height>
+					<font>thumbTitle</font>
+					<wrapmultiline>true</wrapmultiline>
+					<textcolor>textActive</textcolor>
+					<label>$INFO[ListItem.label]</label>
+				</control>
             </itemlayout>
             <focusedlayout width="4-col" height="6-row">
                 <control type="group">
@@ -77,7 +122,19 @@
                         <bordersize>6</bordersize>
                         <colordiffuse>FF000000</colordiffuse>
                     </control>
+					<control type="image">
+						<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
+	                    <posx>0</posx>
+	                    <posy>0</posy>
+	                    <width>4-col-textbox</width>
+	                    <height>160</height>
+	                    <aspectratio>scale</aspectratio>
+	                    <texture>$INFO[Listitem.thumb]</texture>
+	                    <bordersize>6</bordersize>
+						<colordiffuse>33ffffff</colordiffuse>
+	                </control>
                     <control type="image">
+						<visible>!ListItem.IsFolder + !ListItem.IsParentFolder</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>4-col-textbox</width>
@@ -86,6 +143,40 @@
                         <texture>$INFO[Listitem.thumb]</texture>
                         <bordersize>6</bordersize>
                     </control>
+					<control type="image">
+						<visible>ListItem.IsFolder</visible>
+	                    <posx>0</posx>
+	                    <posy>0</posy>
+	                    <width>4-col-textbox</width>
+	                    <height>160</height>
+	                    <aspectratio>scale</aspectratio>
+	                    <texture>colors/black.png</texture>
+	                    <bordersize>6</bordersize>
+	                    <colordiffuse>77111111</colordiffuse>
+	                </control>
+					<control type="label">
+						<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>
+						<posx>0</posx>
+						<posy>56</posy>
+						<width>4-col-textbox</width>
+						<height>1-row</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>largeLight</font>
+						<textcolor>textActive</textcolor>
+						<label>$LOCALIZE[31252]</label>
+					</control>
+					<control type="textbox">
+						<visible>ListItem.IsFolder</visible>
+						<posx>24</posx>
+						<posy>160</posy>
+						<width>230</width>
+						<height>60</height>
+						<font>thumbTitle</font>
+						<wrapmultiline>true</wrapmultiline>
+						<textcolor>textActive</textcolor>
+						<label>$INFO[ListItem.label]</label>
+					</control>
                 </control>
             </focusedlayout>
         </control>

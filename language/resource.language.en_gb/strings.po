@@ -525,3 +525,7 @@ msgctxt "#31251"
 msgid "Eject Disc"
 msgstr ""
 
+msgctxt "#31252"
+msgid "Album"
+msgstr ""
+
