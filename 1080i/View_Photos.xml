@@ -152,7 +152,7 @@
 	                    <aspectratio>scale</aspectratio>
 	                    <texture>colors/black.png</texture>
 	                    <bordersize>6</bordersize>
-	                    <colordiffuse>77111111</colordiffuse>
+	                    <colordiffuse>99FFFFFF</colordiffuse>
 	                </control>
 					<control type="label">
 						<visible>ListItem.IsFolder + !ListItem.IsParentFolder</visible>

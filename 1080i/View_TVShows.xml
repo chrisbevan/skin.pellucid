@@ -102,7 +102,7 @@
 	                        <aspectratio>stretch</aspectratio>
 	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
 	                        <bordersize>12</bordersize>
-	                        <colordiffuse>77ffffff</colordiffuse>
+	                        <colordiffuse>99FFFFFF</colordiffuse>
 	                    </control>
 						<control type="image">
 							<visible>string.isempty(ListItem.Art(fanart))</visible>
@@ -113,7 +113,7 @@
 	                        <aspectratio>scale</aspectratio>
 	                        <texture>$INFO[ListItem.Art(thumb)]</texture>
 	                        <bordersize>6</bordersize>
-	                        <colordiffuse>77ffffff</colordiffuse>
+	                        <colordiffuse>99FFFFFF</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus + container(9202).hasfocus(1)</visible>
@@ -270,7 +270,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>$INFO[ListItem.Art(poster)]</texture>
 						<bordersize>6</bordersize>
-						<colordiffuse>77ffffff</colordiffuse>
+						<colordiffuse>99FFFFFF</colordiffuse>
 					</control>
 					<control type="textbox">
 						<visible>String.IsEmpty(listitem.title)</visible>

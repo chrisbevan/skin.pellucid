@@ -87,7 +87,7 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>$INFO[ListItem.art(poster)]</texture>
                             <bordersize>12</bordersize>
-                            <colordiffuse>77ffffff</colordiffuse>
+                            <colordiffuse>99ffffff</colordiffuse>
                         </control>
 						<control type="image">
 							<visible>String.StartsWith(ListItem.label,*)</visible>
@@ -98,7 +98,7 @@
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/black.png</texture>
                             <bordersize>12</bordersize>
-                            <colordiffuse>77FFFFFF</colordiffuse>
+                            <colordiffuse>99FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
@@ -193,7 +193,7 @@
 	                            <aspectratio>stretch</aspectratio>
 	                            <texture>colors/black.png</texture>
 	                            <bordersize>6</bordersize>
-	                            <colordiffuse>DDFFFFFF</colordiffuse>
+	                            <colordiffuse>BBFFFFFF</colordiffuse>
 	                        </control>
                             <control type="label">
 	                            <visible>ListItem.IsParentFolder</visible>

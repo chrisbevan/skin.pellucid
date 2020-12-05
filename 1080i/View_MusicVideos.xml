@@ -35,7 +35,7 @@
                     <aspectratio>scale</aspectratio>
                     <texture>$INFO[Listitem.Art(thumb)]</texture>
                     <bordersize>6</bordersize>
-					<colordiffuse>77ffffff</colordiffuse>
+					<colordiffuse>99ffffff</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>12</posx>

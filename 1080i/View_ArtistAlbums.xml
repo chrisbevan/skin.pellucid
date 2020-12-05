@@ -100,7 +100,7 @@
 							<aspectratio>stretch</aspectratio>
 							<texture>$INFO[ListItem.Art(thumb)]</texture>
 							<bordersize>12</bordersize>
-							<colordiffuse>77FFFFFF</colordiffuse>
+							<colordiffuse>99FFFFFF</colordiffuse>
 						</control>
 						<control type="textbox">
 							<visible>String.IsEmpty(listitem.title)</visible>
