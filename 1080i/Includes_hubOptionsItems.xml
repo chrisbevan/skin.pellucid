@@ -86,7 +86,7 @@
             <textureradiofocus></textureradiofocus>
             <textureradionofocus></textureradionofocus>
             <onclick>right</onclick>
-            <onclick>xbmc.mastermode</onclick>
+            <onclick>Mastermode</onclick>
             <selected>system.ismaster</selected>
             <visible>system.haslocks</visible>
         </control>

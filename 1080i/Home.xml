@@ -225,7 +225,7 @@
 				<itemgap>18</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="image">
-					<visible>!player.paused + !System.Platform.Linux.RaspberryPi + !Skin.HasSetting(lowPowerMode)</visible>
+					<visible>!player.paused + !Skin.HasSetting(lowPowerMode)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1-col-gutter</width>
@@ -233,7 +233,7 @@
 					<texture>equaliser.gif</texture>
 				</control>
 				<control type="label">
-					<visible>!player.paused + [System.Platform.Linux.RaspberryPi | Skin.HasSetting(lowPowerMode)]</visible>
+					<visible>!player.paused + Skin.HasSetting(lowPowerMode)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>1-col-gutter</width>

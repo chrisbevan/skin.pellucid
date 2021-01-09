@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.pellucid" version="2.2.0" name="Pellucid" provider-name="theDeadman">
+<addon id="skin.pellucid" version="2.3" name="Pellucid" provider-name="theDeadman">
     <requires>
-        <import addon="xbmc.gui" version="5.14.0"/>
-        <import addon="script.skinshortcuts" version="1.0.13"/>
+        <import addon="xbmc.gui" version="5.15.0"/>
+        <import addon="script.skinshortcuts" version="1.1.4"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />

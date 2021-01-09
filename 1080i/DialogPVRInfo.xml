@@ -212,6 +212,13 @@
                             <onclick>SendClick(pvrguideinfo,6)</onclick>
                         </item>
                         <item id="4">
+							<visible>window.isactive(tvchannels) | window.isactive(radiochannels) | window.isactive(tvguide)</visible>
+                            <label>826</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>SendClick(pvrguideinfo,11)</onclick>
+                        </item>
+                        <item id="5">
 							<visible>!window.isactive(tvrecordings) + !window.isactive(radiorecordings) + !window.isactive(tvguide)</visible>
                             <label>31073</label>
                             <label2></label2>
@@ -241,6 +248,10 @@
             <control type="button" id="8">
                 <description>Play recording</description>
                 <label>19687</label>
+            </control>
+            <control type="button" id="11">
+                <description>Set Reminder</description>
+                <label>826</label>
             </control>
         </control>
         <!--debugging-->

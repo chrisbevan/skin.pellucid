@@ -55,31 +55,31 @@
                         <label>13016</label>
                         <visible>System.CanPowerDown + !Skin.HasSetting(exitFirst)</visible>
                         <thumb></thumb>
-                        <onclick>xbmc.powerdown()</onclick>
+                        <onclick>Powerdown()</onclick>
                     </item>
                     <item id="2">
                         <description>Exit to desktop</description>
                         <visible>Skin.HasSetting(exitFirst)</visible>
                         <label>13012</label>
                         <thumb></thumb>
-                        <onclick>XBMC.Quit()</onclick>
+                        <onclick>Quit()</onclick>
                     </item>
                     <item id="3">
                         <label>13011</label>
                         <visible>System.CanSuspend</visible>
                         <thumb></thumb>
-                        <onclick>XBMC.Suspend()</onclick>
+                        <onclick>Suspend()</onclick>
                     </item>
                     <item id="4">
                         <label>13010</label>
                         <visible>System.CanHibernate</visible>
                         <thumb></thumb>
-                        <onclick>XBMC.Hibernate()</onclick>
+                        <onclick>Hibernate()</onclick>
                     </item>
                     <item id="5">
                         <label>13013</label>
                         <thumb></thumb>
-                        <onclick>XBMC.Reboot()</onclick>
+                        <onclick>Reboot()</onclick>
                     </item>
                     <item id="6">
                         <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
@@ -94,13 +94,13 @@
                         <visible>!Skin.HasSetting(exitFirst)</visible>
                         <label>13012</label>
                         <thumb></thumb>
-                        <onclick>XBMC.Quit()</onclick>
+                        <onclick>Quit()</onclick>
                     </item>
                     <item id="8">
                         <label>13016</label>
                         <visible>System.CanPowerDown + Skin.HasSetting(exitFirst)</visible>
                         <thumb></thumb>
-                        <onclick>xbmc.powerdown()</onclick>
+                        <onclick>Powerdown()</onclick>
                     </item>
                 </content>
             </control>

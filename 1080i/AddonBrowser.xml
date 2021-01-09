@@ -190,7 +190,7 @@
                     <pagecontrol>60</pagecontrol>
                     <itemlayout width="10-col" height="2-row">
                         <control type="label">
-                            <visible>ListItem.AddonBroken</visible>
+                            <visible>ListItem.AddonLifecycleDesc</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col</width>
@@ -240,7 +240,7 @@
                                 <colordiffuse>highlight</colordiffuse>
                             </control>
                             <control type="label">
-                                <visible>ListItem.AddonBroken</visible>
+                                <visible>ListItem.AddonLifecycleDesc</visible>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>1-col</width>

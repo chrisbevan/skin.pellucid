@@ -64,7 +64,7 @@
                         <colordiffuse>highlight</colordiffuse>
                     </control>
 					<control type="image">
-                        <visible>ListItem.IsPlaying + !player.paused + !System.Platform.Linux.RaspberryPi</visible>
+                        <visible>ListItem.IsPlaying + !player.paused</visible>
                         <posx>18</posx>
                         <posy>0</posy>
                         <width>72</width>
@@ -76,7 +76,7 @@
                         </animation>
                     </control>
                     <control type="label">
-						<visible>ListItem.IsPlaying + !player.paused + [System.Platform.Linux.RaspberryPi | Skin.HasSetting(lowPowerMode)]</visible>
+						<visible>ListItem.IsPlaying + !player.paused + Skin.HasSetting(lowPowerMode)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>105</width>
@@ -172,7 +172,7 @@
                         <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="image">
-                        <visible>ListItem.IsPlaying + !player.paused + !System.Platform.Linux.RaspberryPi</visible>
+                        <visible>ListItem.IsPlaying + !player.paused</visible>
                         <posx>18</posx>
                         <posy>0</posy>
                         <width>72</width>
@@ -181,23 +181,6 @@
                         <animation type="focus" loop="false" reversible="false">
                             <effect type="fade" time="500"/>
                             <effect type="rotatey" end="360" center="44" tween="back" easing="out" time="1000"/>
-                        </animation>
-                    </control>
-                    <control type="label">
-                        <visible>ListItem.IsPlaying + !player.paused + System.Platform.Linux.RaspberryPi</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>105</width>
-                        <height>105</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor></shadowcolor>
-                        <label></label>
-                        <animation type="focus" loop="false" reversible="false">
-                            <effect type="fade" time="500"/>
-                            <effect type="rotatey" end="360" center="52" tween="back" easing="out" time="1000"/>
                         </animation>
                     </control>
                     <control type="label">

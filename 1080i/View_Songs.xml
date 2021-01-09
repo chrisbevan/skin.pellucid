@@ -95,25 +95,12 @@
 					<colordiffuse>highlight</colordiffuse>
 				</control>
 				<control type="image">
-					<visible>ListItem.IsPlaying + !player.paused  + !System.Platform.Linux.RaspberryPi</visible>
+					<visible>ListItem.IsPlaying + !player.paused</visible>
 					<posx>12</posx>
 					<posy>0</posy>
 					<width>1-col-gutter</width>
 					<height>1-col-gutter</height>
 					<texture>equaliser.gif</texture>
-				</control>
-				<control type="label">
-					<visible>ListItem.IsPlaying + !player.paused  + System.Platform.Linux.RaspberryPi</visible>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1-col-textbox</width>
-					<height>2-row</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>symbolLarge</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor/>
-					<label></label>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsPlaying + player.paused</visible>
@@ -241,25 +228,12 @@
 					<include>spinFocusIcon</include>
 				</control>
 				<control type="image">
-					<visible>ListItem.IsPlaying + !player.paused  + !System.Platform.Linux.RaspberryPi</visible>
+					<visible>ListItem.IsPlaying + !player.paused</visible>
 					<posx>12</posx>
 					<posy>0</posy>
 					<width>1-col-gutter</width>
 					<height>1-col-gutter</height>
 					<texture>equaliser.gif</texture>
-				</control>
-				<control type="label">
-					<visible>ListItem.IsPlaying + !player.paused  + System.Platform.Linux.RaspberryPi</visible>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>1-col-textbox</width>
-					<height>2-row</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>symbolLarge</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor/>
-					<label></label>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsPlaying + player.paused</visible>

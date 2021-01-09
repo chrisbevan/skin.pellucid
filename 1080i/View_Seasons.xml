@@ -138,6 +138,7 @@
                         </control>
 						<control type="group">
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+							<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
 							<posx>184</posx>
 							<posy>12</posy>
 							<control type="image">

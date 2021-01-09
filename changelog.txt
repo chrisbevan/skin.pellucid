@@ -1,4 +1,7 @@
 **Changelog**
+[V2.3]
+- Updated for Kodi Matrix
+
 
 [V2.0.1]
 *** Shout out to Loggio for a whole bunch of tweaks. Thanks! ***
