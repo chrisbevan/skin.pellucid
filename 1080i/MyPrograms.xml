@@ -34,7 +34,8 @@
 			                    <height>66</height>
 			                    <aspectratio scalediffuse="false">stretch</aspectratio>
 			                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-			                </control>
+			                	<colordiffuse>overlay</colordiffuse>
+							</control>
 			                <control type="image">
 			                    <posx>1-col</posx>
 			                    <posy>0</posy>
@@ -42,7 +43,7 @@
 			                    <height>69</height>
 			                    <aspectratio>stretch</aspectratio>
 			                    <texture border="0">colors/black.png</texture>
-			                    <colordiffuse>textboxInactive</colordiffuse>
+			                    <colordiffuse>overlay</colordiffuse>
 			                </control>
 			                <control type="label">
 			                    <posx>1-col-indent</posx>

@@ -12,6 +12,25 @@
                 <!--animations-->
                 <include condition="!Player.hasVideo">modalDialogInOutVertical</include>
                 <control type="image">
+                    <visible>player.hasvideo</visible>
+                    <posx>-12</posx>
+                    <posy>-12</posy>
+                    <width>1176</width>
+                    <height>21-row</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>99FFFFFF</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>-12</posx>
+                    <posy>-12</posy>
+                    <width>1176</width>
+                    <height>780</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+				<control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>16-col</width>
@@ -30,34 +49,6 @@
                     <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
-                <control type="image">
-                    <visible>player.hasvideo</visible>
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>16-col</width>
-                    <height>19-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>99FFFFFF</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>16-col</width>
-                    <height>19-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>12-col</posx>
-                    <posy>2-row</posy>
-                    <width>4-col</width>
-                    <height>19-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
 				<!--page scrollbar-->
 	            <control type="group" id="8001">
 	                <visible>Control.IsVisible(60)</visible>
@@ -73,13 +64,13 @@
                     <!--Used in search from cast listing etc-->
                     <control type="panel" id="3">
                         <posx>0</posx>
-                        <posy>73</posy>
+                        <posy>84</posy>
                         <width>12-col</width>
                         <height>681</height>
                         <onright>9999</onright>
 						<onleft>60</onleft>
 						<pagecontrol>60</pagecontrol>
-                        <itemlayout height="72" width="12-col">
+                        <itemlayout height="84" width="12-col">
                             <control type="image">
 								<visible>!ListItem.IsSelected</visible>
                                 <posx>0</posx>
@@ -114,7 +105,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="72" width="12-col">
+                        <focusedlayout height="84" width="12-col">
                             <control type="image">
 								<visible>!ListItem.IsSelected</visible>
                                 <posx>0</posx>
@@ -168,12 +159,12 @@
                     <!--skin selection etc-->
                     <control type="panel" id="6">
                         <posx>0</posx>
-                        <posy>73</posy>
+                        <posy>84</posy>
                         <width>12-col</width>
                         <height>19-row</height>
                         <onright>9999</onright>
 						<onleft>60</onleft>
-                        <itemlayout height="72" width="12-col">
+                        <itemlayout height="84" width="12-col">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -194,7 +185,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="72" width="12-col">
+                        <focusedlayout height="84" width="12-col">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -234,7 +225,7 @@
                 <!--OK / Cancel-->
                 <control type="panel" id="9999">
                     <posx>12-col</posx>
-                    <posy>73</posy>
+                    <posy>84</posy>
                     <width>4-col</width>
                     <height>6-row</height>
                     <orientation>vertical</orientation>

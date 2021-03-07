@@ -57,12 +57,13 @@
 							<posy>3</posy>
 							<width>66</width>
 							<height>66</height>
-							<aspectratio scalediffuse="false">keep</aspectratio>
+							<aspectratio>keep</aspectratio>
 							<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="label">
 							<posx>1-col-indent</posx>
-							<width>4-col-gutter</width>
+							<width>198</width>
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
@@ -84,7 +85,7 @@
 							<posy>3</posy>
 							<width>66</width>
 							<height>66</height>
-							<aspectratio scalediffuse="false">keep</aspectratio>
+							<aspectratio>keep</aspectratio>
 							<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 							<animation type="focus" loop="false" reversible="false">
 								<effect type="fade" time="500"/>
@@ -93,7 +94,7 @@
 						</control>
 						<control type="label">
 							<posx>1-col-indent</posx>
-							<width>4-col-gutter</width>
+							<width>198</width>
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
@@ -109,8 +110,9 @@
 							<height>69</height>
 							<aspectratio>stretch</aspectratio>
 							<texture border="0">colors/black.png</texture>
-							<bordertexture colordiffuse="highlight">colors/white.png</bordertexture>
+							<bordertexture colordiffuse="">colors/black.png</bordertexture>
 							<bordersize>3,0,0,0</bordersize>
+							<colordiffuse>overlay</colordiffuse>
 						</control>
 						<control type="label" id="1">
 							<width>204</width>

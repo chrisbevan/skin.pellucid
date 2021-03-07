@@ -38,7 +38,7 @@
                         <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
-						<animation type="conditional" condition="player.paused">
+						<animation type="conditional" condition="true">
 							<effect type="fade" start="100" end="50" time="0"/>
 						</animation>
 						<visible>ListItem.IsPlaying</visible>
@@ -107,8 +107,8 @@
                         <posy>0</posy>
                         <width>105</width>
                         <height>105</height>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-						<bordersize>6</bordersize>
+                        <aspectratio>scale</aspectratio>
+						<bordersize>1</bordersize>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                     </control>
                     <control type="label">
@@ -206,8 +206,8 @@
                         <posy>0</posy>
                         <width>105</width>
                         <height>105</height>
-						<bordersize>6</bordersize>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordersize>1</bordersize>
+                        <aspectratio>scale</aspectratio>
                         <texture fallback="colors/black.png" border="0">$INFO[Listitem.thumb]</texture>
                         <animation type="focus" loop="false" reversible="false">
                             <effect type="fade" time="500"/>

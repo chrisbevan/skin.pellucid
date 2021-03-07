@@ -29,8 +29,9 @@
 						<posy>3</posy>
 						<width>66</width>
 						<height>66</height>
-						<aspectratio scalediffuse="false">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+						<colordiffuse>overlay</colordiffuse>
 					</control>
 					<control type="label">
 						<posx>1-col-indent</posx>
@@ -104,7 +105,7 @@
 						<posy>3</posy>
 						<width>66</width>
 						<height>66</height>
-						<aspectratio scalediffuse="false">keep</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>

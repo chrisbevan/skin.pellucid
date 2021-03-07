@@ -11,20 +11,21 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1320</width>
+                <height>720</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>71</posy>
-                <width>18-col</width>
-                <height>1</height>
-                <texture>colors/black.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <!--title-->
@@ -38,15 +39,6 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>17-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <!--sub menu-->
             <control type="group">
                 <posx>0</posx>
@@ -54,8 +46,8 @@
                 <!-- Category buttons -->
                 <control type="list" id="8000">
                     <posx>0</posx>
-                    <posy>0</posy>
-                    <width>4-col</width>
+                    <posy>12</posy>
+                    <width>276</width>
                     <height>18-row</height>
                     <onright>200</onright>
                     <itemlayout height="2-row" width="4-col">
@@ -110,14 +102,14 @@
                 <posx>4-col</posx>
                 <posy>2-row</posy>
                 <width>14-col</width>
-                <height>17-row</height>
+                <height>624</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="grouplist" id="200">
                 <posx>4-col</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>14-col</width>
                 <height>17-row</height>
                 <onleft>8000</onleft>

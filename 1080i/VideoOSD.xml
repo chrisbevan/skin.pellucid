@@ -184,7 +184,7 @@
             <!--player controls-->
             <control type="panel" id="8001">
                 <posx>36</posx>
-                <posy>row-20-begin</posy>
+                <posy>row-21-begin</posy>
                 <width>10-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
@@ -293,7 +293,7 @@
             <!--menu items-->
             <control type="panel" id="8002">
                 <posx>24</posx>
-                <posy>row-23-begin</posy>
+                <posy>row-24-begin</posy>
                 <width>9-col</width>
                 <height>12-row</height>
                 <itemgap>0</itemgap>

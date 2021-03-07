@@ -23,29 +23,21 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1320</width>
+                <height>720</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>71</posy>
-                <width>18-col</width>
-                <height>1</height>
-                <texture>colors/black.png</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>17-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -62,21 +54,21 @@
             <!--Category submenu-->
             <control type="button" id="1234">
                 <posx>0</posx>
-                <posy>17-row</posy>
+                <posy>624</posy>
                 <font>smallStrong</font>
                 <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
                 <label>[B][COLOR highlight]$LOCALIZE[21417]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
                 <onright>5</onright>
-				<width>286</width>
+				<width>276</width>
             </control>
             <control type="grouplist" id="3">
 				<animation type="conditional" condition="control.hasfocus(1234)">
 		            <effect type="fade" start="100" end="80" time="100"/>
 		        </animation>
                 <posx>0</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width></width>
                 <itemgap>0</itemgap>
                 <height>538</height>
@@ -87,20 +79,11 @@
                 <orientation>vertical</orientation>
             </control>
             <!--options-->
-            <control type="image">
-                <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>14-col</width>
-                <height>17-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="grouplist" id="5">
                 <posx>4-col</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>14-col</width>
-                <height>17-row</height>
+                <height>606</height>
                 <onleft>3</onleft>
                 <onright>3</onright>
                 <onup>5</onup>
@@ -138,7 +121,7 @@
             <!--subcat menu buttons-->
             <control type="togglebutton" id="10">
                 <description>Default Category Button</description>
-                <width>287</width>
+                <width>276</width>
                 <font>buttonTitle</font>
                 <texturefocus>colors/white.png</texturefocus>
                 <texturenofocus></texturenofocus>

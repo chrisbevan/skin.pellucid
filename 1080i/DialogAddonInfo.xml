@@ -11,6 +11,16 @@
             <posy>row-4-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
+            <!--dialog background-->
+            <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1320</width>
+                <height>22-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -30,16 +40,6 @@
                 <label>$INFO[ListItem.AddonType]</label>
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
-            </control>
-            <!--dialog background-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>20-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
             </control>
             <!--addon details-->
             <control type="image">
@@ -92,20 +92,11 @@
             </control>
             <control type="group">
                 <posx>6-col</posx>
-                <posy>10-row</posy>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>12-col</width>
-                    <height>12-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <posy>372</posy>
                 <control type="label">
                     <description>Addon Title</description>
-                    <posx>12</posx>
-                    <posy>12</posy>
+                    <posx>24</posx>
+                    <posy>0</posy>
                     <width>10-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -113,25 +104,25 @@
                     <label>[B]$INFO[ListItem.addonname]$INFO[ListItem.addonversion, (,)][/B]</label>
                 </control>
                 <control type="label">
-                    <posx>12</posx>
-                    <posy>72</posy>
+                    <posx>24</posx>
+                    <posy>68</posy>
                     <width>9-col</width>
                     <font>menuTitle</font>
                     <textcolor>menuUnselected</textcolor>
                     <label>$INFO[ListItem.AddonCreator,$LOCALIZE[31082] ,]</label>
                 </control>
                 <control type="textbox" id="400">
-                    <posx>12</posx>
-                    <posy>4-row</posy>
+                    <posx>24</posx>
+                    <posy>132</posy>
                     <font>textbox</font>
-                    <width>12-col-gutter</width>
-                    <height>7-row</height>
+                    <width>11-col-gutter</width>
+                    <height>256</height>
                     <label fallback="31205">$INFO[ListItem.AddonDescription]</label>
                     <autoscroll>false</autoscroll>
                     <pagecontrol>61</pagecontrol>
                 </control>
                 <control type="scrollbar" id="61">
-                     <posx>870</posx>
+                     <posx>882</posx>
                      <posy>4-row</posy>
                      <height>7-row</height>
                      <onleft>8000</onleft>
@@ -144,7 +135,7 @@
                 <posy>10-row</posy>
                 <control type="list" id="8000">
                     <posx>0</posx>
-                    <posy>0</posy>
+                    <posy>12</posy>
                     <width>6-col</width>
                     <height>14-row</height>
                     <itemgap>3</itemgap>
@@ -176,6 +167,9 @@
                     </itemlayout>
                     <focusedlayout width="6-col" height="2-row">
                         <control type="image">
+							<animation type="focus">
+					            <effect type="fade" start="100" end="50" time="0"/>
+					        </animation>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>1-col</width>
@@ -219,7 +213,6 @@
                     </focusedlayout>
                     <content>
                         <item>
-                            <visible>Control.IsEnabled(12)</visible>
                             <label>31117</label>
                             <label2></label2>
                             <thumb></thumb>
@@ -232,28 +225,26 @@
                             <onclick>SendClick(146,6)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(9)</visible>
                             <label>$INFO[Control.GetLabel(9)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,9)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(8)</visible>
                             <label>$INFO[Control.GetLabel(8)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,8)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),enable)</visible>
+                            <visible>String.IsEqual(Control.GetLabel(7),enable)</visible>
                             <label>$LOCALIZE[31218]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
                         <item>
-                            <visible>Control.IsEnabled(7) + String.IsEqual(Control.GetLabel(7),disable)</visible>
+                            <visible>String.IsEqual(Control.GetLabel(7),disable)</visible>
                             <label>$LOCALIZE[31104]</label>
                             <label2></label2>
                             <thumb></thumb>
@@ -270,19 +261,29 @@
                 <description>Install / Uninstall addon</description>
                 <label>24022</label>
             </control>
+            <control type="button" id="7">
+                <description>Disable Addon button</description>
+            </control>
             <control type="button" id="8">
                 <description>Update Addon button</description>
                 <label>24069</label>
-            </control>
-            <control type="button" id="7">
-                <description>Disable Addon button</description>
             </control>
             <control type="button" id="9">
                 <description>Addon Settings</description>
                 <label>24020</label>
             </control>
+            <control type="button" id="10">
+                <description>Addon Dependencies</description>
+            </control>
             <control type="button" id="12">
                 <description>Launch addon</description>
+            </control>
+            <control type="radiobutton" id="13">
+                <description>Launch addon</description>
+            </control>
+            <control type="button" id="14">
+                <description>Version</description>
+				<label>24069</label>
             </control>
         </control>
         <!--debugging-->

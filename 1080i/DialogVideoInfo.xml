@@ -198,7 +198,7 @@
             <!--dialog controls-->
             <control type="panel" id="8000">
                 <posx>12</posx>
-                <posy>23-row</posy>
+                <posy>25-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <itemgap>3</itemgap>
@@ -308,6 +308,7 @@
                         <onclick>SendClick(2003,10)</onclick>
                     </item>
                     <item>
+						<visible>false</visible>
                         <label>31169</label>
                         <label2></label2>
                         <thumb></thumb>

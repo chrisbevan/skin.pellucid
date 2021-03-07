@@ -15,6 +15,15 @@
                 <posx>col-4-begin</posx>
                 <posy>row-5-begin</posy>
                 <control type="image">
+                    <posx>-12</posx>
+                    <posy>-12</posy>
+                    <width>1320</width>
+                    <height>720</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>18-col</width>
@@ -34,28 +43,10 @@
                     <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>
                 </control>
-                <control type="image">
+				<control type="image">
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>18-col</width>
-                    <height>660</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-				<control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>9-col-textbox</width>
-                    <height>71</height>
-                    <texture>colors/black.png</texture>
-					<colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-				<control type="image">
-                    <posx>9-col</posx>
-                    <posy>2-row</posy>
-                    <width>9-col</width>
                     <height>71</height>
                     <texture>colors/black.png</texture>
 					<colordiffuse>overlay</colordiffuse>
@@ -65,13 +56,13 @@
             <!--left panel-->
             <control type="group">
                 <posx>col-4-begin</posx>
-                <posy>row-7-begin</posy>
+                <posy>270</posy>
                 <control type="label" id="101">
                     <description>Header Label</description>
                     <posx>24</posx>
                     <posy>0</posy>
                     <height>2-row</height>
-                    <width>8-col-gutter</width>
+                    <width>636</width>
                     <label></label>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
@@ -91,8 +82,8 @@
                 <!--left file list-->
                 <control type="list" id="20">
                     <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>9-col</width>
+                    <posy>84</posy>
+                    <width>636</width>
                     <height>15-row</height>
                     <onright>21</onright>
 					<onleft>60</onleft>
@@ -162,7 +153,7 @@
                 </control>
                 <control type="list" id="21">
                     <posx>0</posx>
-                    <posy>2-row</posy>
+                    <posy>84</posy>
                     <width>9-col</width>
                     <height>15-row</height>
                     <onleft>20</onleft>

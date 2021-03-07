@@ -207,7 +207,7 @@
                     <height>69</height>
                     <aspectratio>stretch</aspectratio>
                     <texture border="0">colors/black.png</texture>
-                    <colordiffuse>textboxInactive</colordiffuse>
+                    <colordiffuse>overlay</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>1-col-indent</posx>

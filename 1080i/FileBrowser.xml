@@ -42,6 +42,15 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1178</width>
+                <height>792</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>16-col</width>
@@ -61,24 +70,6 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>16-col</width>
-                <height>722</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>12-col</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
-                <height>722</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
 			<!--page scrollbar-->
             <control type="group" id="8000">
                 <visible>Control.IsVisible(60)</visible>
@@ -93,13 +84,13 @@
             </control>
             <control type="panel" id="450">
                 <posx>0</posx>
-                <posy>75</posy>
+                <posy>86</posy>
                 <width>12-col</width>
-                <height>20-row</height>
+                <height>19-row</height>
                 <onright>9000</onright>
 				<onleft>60</onleft>
 				<pagecontrol>60</pagecontrol>
-                <itemlayout height="72" width="12-col">
+                <itemlayout height="84" width="12-col">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -120,7 +111,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout height="75" width="12-col">
+                <focusedlayout height="84" width="12-col">
                     <control type="image">
                         <posx>1-col</posx>
                         <posy>0</posy>
@@ -138,6 +129,7 @@
                         <height>69</height>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture fallback="colors/white.png" border="0">$INFO[Listitem.thumb]</texture>
+						<colordiffuse>highlight</colordiffuse>
                         <animation type="focus" loop="false" reversible="false">
                             <effect type="fade" time="500"/>
                             <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
@@ -170,7 +162,7 @@
             <!--OK / Cancel / New folder buttons-->
             <control type="panel" id="9000">
                 <posx>12-col</posx>
-                <posy>2-row</posy>
+                <posy>86</posy>
                 <width>4-col</width>
                 <height>6-row</height>
                 <orientation>vertical</orientation>

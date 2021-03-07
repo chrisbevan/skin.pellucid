@@ -80,6 +80,9 @@
                        <texture>colors/white.png</texture>
                        <colordiffuse>highlight</colordiffuse>
                        <include>spinFocusIcon</include>
+		   				<animation type="conditional" condition="true">
+		   					<effect type="fade" start="100" end="50" time="0"/>
+		   				</animation>
                    </control>
                    <control type="image">
                        <posx>1-col</posx>
