@@ -13,6 +13,15 @@
             <include>modalDialogInOutVertical</include>
             <!--content provider title / info-->
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1320</width>
+                <height>23-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>18-col</width>
@@ -21,15 +30,6 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>  
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>20-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="label">
                 <posx>24</posx>
                 <posy>0</posy>
@@ -43,27 +43,17 @@
             <!--subnav-->
             <control type="grouplist" id="3">
                 <posx>0</posx>
-                <posy>2-row</posy>
-                <width>4-col</width>
+                <posy>84</posy>
+                <width>276</width>
                 <height>20-row</height>
                 <onleft>9000</onleft>
                 <onright>5</onright>
                 <orientation>vertical</orientation>
             </control>
-            <!--options area-->
-            <control type="image">
-                <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>10-col</width>
-                <height>20-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="grouplist" id="5">
                 <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>10-col</width>
+                <posy>84</posy>
+                <width>708</width>
                 <height>20-row</height>
                 <onleft>3</onleft>
                 <onright>9001</onright>
@@ -72,7 +62,7 @@
             <!--OK / Cancel-->
             <control type="panel" id="9001">
                 <posx>14-col</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>4-col</width>
                 <height>20-row</height>
                 <orientation>vertical</orientation>

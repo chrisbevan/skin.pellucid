@@ -12,6 +12,15 @@
                 <posx>col-2-begin</posx>
                 <posy>row-3-begin</posy>
                 <control type="image">
+                    <posx>-12</posx>
+                    <posy>-12</posy>
+                    <width>1608</width>
+                    <height>852</height>
+                    <texture>colors/black.png</texture>
+                    <colordiffuse>overlay</colordiffuse>
+                    <aspectratio>stretch</aspectratio>
+                </control>
+                <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>22-col</width>
@@ -20,31 +29,13 @@
                     <colordiffuse>highlight</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>22-col</width>
-                    <height>21-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
 				<control type="image">
                     <posx>0</posx>
                     <posy>2-row</posy>
                     <width>22-col</width>
                     <height>71</height>
                     <texture>colors/black.png</texture>
-					<colordiffuse>textboxInactive</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
-                <control type="image">
-                    <posx>6-col</posx>
-                    <posy>2-row</posy>
-                    <width>11-col</width>
-                    <height>21-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
+					<colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
@@ -85,11 +76,11 @@
                 </control>
                 <control type="list" id="20">
                     <posx>0</posx>
-                    <posy>4-row</posy>
-                    <width>6-col-textbox</width>
+                    <posy>156</posy>
+                    <width>564</width>
                     <height>19-row</height>
                     <onright>7</onright>
-                    <itemlayout height="2-row" width="8-col">
+                    <itemlayout height="84" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -101,7 +92,7 @@
                         <control type="label">
                             <posx>1-col-indent</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
+                            <width>6-col</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
@@ -110,7 +101,7 @@
                             <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="2-row" width="8-col">
+                    <focusedlayout height="84" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -126,7 +117,7 @@
                         <control type="image">
                             <posx>72</posx>
                             <posy>0</posy>
-                            <width>502</width>
+                            <width>9-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
                             <texture>colors/white.png</texture>
@@ -136,7 +127,7 @@
                         <control type="label">
                             <posx>1-col-indent</posx>
                             <posy>0</posy>
-                            <width>5-col-gutter</width>
+                            <width>6-col</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
                             <font>buttonTitle</font>
@@ -150,7 +141,7 @@
                 <!--channel management options-->
                 <control type="label">
                     <description>name label</description>
-                    <posx>456</posx>
+                    <posx>600</posx>
                     <posy>2-row</posy>
                     <width>8-col</width>
                     <height>2-row</height>
@@ -160,13 +151,13 @@
                     <label>$LOCALIZE[31179]</label>
                 </control>
                 <control type="group">
-                    <posx>6-col</posx>
-                    <posy>4-row</posy>
+                    <posx>8-col</posx>
+                    <posy>156</posy>
                     <control type="radiobutton" id="7">
                         <description>Channel activated</description>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>11-col</width>
+                        <width>564</width>
                         <label>19074</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -175,8 +166,8 @@
                     <control type="edit" id="8">
                         <description>Channel name</description>
                         <posx>0</posx>
-                        <posy>2-row</posy>
-                        <width>11-col</width>
+                        <posy>84</posy>
+                        <width>564</width>
                         <font>buttonTitle</font>
                         <align>left</align>
                         <texturefocus>colors/white.png</texturefocus>
@@ -192,8 +183,8 @@
                     <control type="button" id="9">
                         <description>Channel logo Button</description>
                         <posx>0</posx>
-                        <posy>4-row</posy>
-                        <width>11-col</width>
+                        <posy>168</posy>
+                        <width>564</width>
                         <label>19202</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -201,8 +192,8 @@
                         <ondown>12</ondown>
                     </control>
                     <control type="image" id="10">
-                        <posx>10-col</posx>
-                        <posy>156</posy>
+                        <posx>7-col</posx>
+                        <posy>180</posy>
                         <width>48</width>
                         <height>48</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
@@ -211,8 +202,8 @@
                     <control type="radiobutton" id="12">
                         <description>EPG activated</description>
                         <posx>0</posx>
-                        <posy>6-row</posy>
-                        <width>11-col</width>
+                        <posy>252</posy>
+                        <width>564</width>
                         <label>19206</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -222,8 +213,8 @@
                     <control type="spincontrolex" id="13">
                         <description>EPG source</description>
                         <posx>0</posx>
-                        <posy>8-row</posy>
-                        <width>11-col</width>
+                        <posy>336</posy>
+                        <width>564</width>
                         <label>19200</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -233,8 +224,8 @@
                     <control type="radiobutton" id="14">
                         <description>Parental locked</description>
                         <posx>0</posx>
-                        <posy>10-row</posy>
-                        <width>11-col</width>
+                        <posy>420</posy>
+                        <width>564</width>
                         <label>19267</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -244,43 +235,19 @@
                     <control type="button" id="30">
                         <description>Group Manager Button</description>
                         <posx>0</posx>
-                        <posy>12-row</posy>
-                        <width>11-col</width>
+                        <posy>504</posy>
+                        <width>564</width>
                         <label>19205</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
                         <onup>14</onup>
                         <ondown>34</ondown>
                     </control>
-                    <control type="button" id="34">
-                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
-                        <description>TV/Radio Button</description>
-                        <posx>0</posx>
-                        <posy>14-row</posy>
-                        <width>11-col</width>
-                        <label>19024</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>30</onup>
-                        <ondown>31</ondown>
-                    </control>
-                    <control type="button" id="34">
-                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
-                        <description>TV/Radio Button</description>
-                        <posx>0</posx>
-                        <posy>14-row</posy>
-                        <width>11-col</width>
-                        <label>19023</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>30</onup>
-                        <ondown>31</ondown>
-                    </control>
                     <control type="button" id="31">
                         <description>Edit channel Button</description>
                         <posx>0</posx>
-                        <posy>16-row</posy>
-                        <width>11-col</width>
+                        <posy>588</posy>
+                        <width>420</width>
                         <label>19203</label>
                         <onleft>20</onleft>
                         <onright>9000</onright>
@@ -291,13 +258,13 @@
                 <!--OK / Cancel / apply-->                 
                 <control type="panel" id="9000">
                     <posx>17-col</posx>
-                    <posy>4-row</posy>
+                    <posy>156</posy>
                     <width>5-col</width>
-                    <height>6-row</height>
-                    <itemgap>3</itemgap>
+                    <height>10-row</height>
+                    <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
                     <onleft>7</onleft>
-                    <itemlayout width="8-col" height="2-row">
+                    <itemlayout width="6-col" height="72">
                         <control type="label">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -320,7 +287,7 @@
                             <label>$INFO[ListItem.label]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="8-col" height="2-row">
+                    <focusedlayout width="6-col" height="72">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>

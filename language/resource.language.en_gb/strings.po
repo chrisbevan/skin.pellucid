@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "Addon Summary"
-msgid "A skin for Kodi from theDeadman"
+msgid "A skin for Kodi from theDeadmanInYossariansTent"
 msgstr ""
 
 msgctxt "Addon Description"
@@ -70,7 +70,7 @@ msgid "Enable Debug Grid"
 msgstr ""
 
 msgctxt "#31035"
-msgid "Enable Debug Info"
+msgid "Enable Debug Information"
 msgstr ""
 
 msgctxt "#31043"

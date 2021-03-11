@@ -10,30 +10,21 @@
             <!--animations-->
             <include>modalDialogInOutVertical</include>
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1320</width>
+                <height>20-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
                 <texture>colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>18-col</width>
-                <height>18-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>10-col</width>
-                <height>18-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -50,7 +41,7 @@
             <control type="grouplist" id="3">
                 <description>Controller types grouplist</description>
                 <posx>0</posx>
-                <posy>75</posy>
+                <posy>86</posy>
                 <width>4-col</width>
                 <height>18-row</height>
                 <onright>9001</onright>
@@ -64,7 +55,7 @@
             <!--dialog buttons-->
             <control type="panel" id="9001">
                 <posx>14-col</posx>
-                <posy>75</posy>
+                <posy>86</posy>
                 <width>4-col</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>

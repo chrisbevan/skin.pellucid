@@ -191,10 +191,11 @@
                                 <posy>0</posy>
                                 <width>69</width>
                                 <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
+                                <aspectratio>stretch</aspectratio>
                                 <texture fallback="colors/white.png" border="0">$INFO[Listitem.icon]</texture>
+								<colordiffuse>highlight</colordiffuse>
                                 <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
+                                    <effect type="fade" time="500" end="50"/>
                                     <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
                                 </animation>
                             </control>

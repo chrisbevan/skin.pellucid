@@ -137,7 +137,7 @@
                     <posx>0</posx>
                     <posy>12</posy>
                     <width>6-col</width>
-                    <height>14-row</height>
+                    <height>11-row</height>
                     <itemgap>3</itemgap>
                     <orientation>vertical</orientation>
                     <onup>50</onup>
@@ -212,38 +212,48 @@
                         </control>
                     </focusedlayout>
                     <content>
-                        <item>
+                        <item id="1">
+							<visible>Control.IsEnabled(13)</visible>
                             <label>31117</label>
                             <label2></label2>
                             <thumb></thumb>
-                            <onclick>sendclick(146,12)</onclick>
+                            <onclick>sendclick(146,13)</onclick>
                         </item>
-                        <item>
+                        <item id="2">
                             <label>$INFO[Control.GetLabel(6)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,6)</onclick>
                         </item>
-                        <item>
+                        <item id="3">
+							<visible>Control.IsEnabled(9)</visible>
                             <label>$INFO[Control.GetLabel(9)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,9)</onclick>
                         </item>
-                        <item>
+                        <item id="4">
+							<visible>Control.IsEnabled(8)</visible>
                             <label>$INFO[Control.GetLabel(8)]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,8)</onclick>
                         </item>
-                        <item>
+                        <item id="5">
+                            <visible>Control.IsEnabled(10)</visible>
+                            <label>$LOCALIZE[39024]</label>
+                            <label2></label2>
+                            <thumb></thumb>
+                            <onclick>SendClick(146,10)</onclick>
+                        </item>
+                        <item id="6">
                             <visible>String.IsEqual(Control.GetLabel(7),enable)</visible>
                             <label>$LOCALIZE[31218]</label>
                             <label2></label2>
                             <thumb></thumb>
                             <onclick>SendClick(146,7)</onclick>
                         </item>
-                        <item>
+                        <item id="7">
                             <visible>String.IsEqual(Control.GetLabel(7),disable)</visible>
                             <label>$LOCALIZE[31104]</label>
                             <label2></label2>
