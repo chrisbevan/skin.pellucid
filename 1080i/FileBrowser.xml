@@ -151,10 +151,10 @@
             </control>
             <!--larger thumbnail-->
             <control type="image">
-                <posx>876</posx>
-                <posy>6-row</posy>
-                <width>4-col-gutter</width>
-                <height>4-col-gutter</height>
+                <posx>864</posx>
+                <posy>228</posy>
+                <width>4-col</width>
+                <height>4-col</height>
                 <aspectratio scalediffuse="false" align="left" aligny="center">keep</aspectratio>
                 <texture border="0">$INFO[Listitem.icon]</texture>
                 <fadetime>200</fadetime>

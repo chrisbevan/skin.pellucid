@@ -15,7 +15,7 @@
                     <posx>-12</posx>
                     <posy>-12</posy>
                     <width>1608</width>
-                    <height>852</height>
+                    <height>864</height>
                     <texture>colors/black.png</texture>
                     <colordiffuse>overlay</colordiffuse>
                     <aspectratio>stretch</aspectratio>
@@ -31,11 +31,10 @@
                 </control>
 				<control type="image">
                     <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>22-col</width>
+                    <posy>84</posy>
+                    <width>16-col</width>
                     <height>71</height>
-                    <texture>colors/black.png</texture>
-					<colordiffuse>overlay</colordiffuse>
+                    <texture>colors/offblack.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
                 <control type="label">
@@ -66,7 +65,7 @@
                 <control type="label">
                     <description>name label</description>
                     <posx>24</posx>
-                    <posy>2-row</posy>
+                    <posy>84</posy>
                     <width>8-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -76,17 +75,17 @@
                 </control>
                 <control type="list" id="20">
                     <posx>0</posx>
-                    <posy>156</posy>
+                    <posy>168</posy>
                     <width>564</width>
-                    <height>19-row</height>
+                    <height>672</height>
                     <onright>7</onright>
-                    <itemlayout height="84" width="8-col">
+                    <itemlayout height="72" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.Property(Icon)]</texture>
                         </control>
                         <control type="label">
@@ -101,13 +100,13 @@
                             <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="84" width="8-col">
+                    <focusedlayout height="72" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/white.png" border="0">$INFO[ListItem.Property(Icon)]</texture>
                             <animation type="focus" loop="false" reversible="false">
                                 <effect type="fade" time="500"/>
@@ -142,7 +141,7 @@
                 <control type="label">
                     <description>name label</description>
                     <posx>600</posx>
-                    <posy>2-row</posy>
+                    <posy>84</posy>
                     <width>8-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -150,13 +149,12 @@
                     <textcolor>textActive</textcolor>
                     <label>$LOCALIZE[31179]</label>
                 </control>
-                <control type="group">
+                <control type="grouplist">
                     <posx>8-col</posx>
-                    <posy>156</posy>
+                    <posy>168</posy>
+					<itemgap>0</itemgap>
                     <control type="radiobutton" id="7">
                         <description>Channel activated</description>
-                        <posx>0</posx>
-                        <posy>0</posy>
                         <width>564</width>
                         <label>19074</label>
                         <onleft>20</onleft>
@@ -165,8 +163,6 @@
                     </control>
                     <control type="edit" id="8">
                         <description>Channel name</description>
-                        <posx>0</posx>
-                        <posy>84</posy>
                         <width>564</width>
                         <font>buttonTitle</font>
                         <align>left</align>
@@ -182,8 +178,6 @@
                     </control>
                     <control type="button" id="9">
                         <description>Channel logo Button</description>
-                        <posx>0</posx>
-                        <posy>168</posy>
                         <width>564</width>
                         <label>19202</label>
                         <onleft>20</onleft>
@@ -191,18 +185,8 @@
                         <onup>8</onup>
                         <ondown>12</ondown>
                     </control>
-                    <control type="image" id="10">
-                        <posx>7-col</posx>
-                        <posy>180</posy>
-                        <width>48</width>
-                        <height>48</height>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.Property(Icon)]</texture>
-                    </control>
                     <control type="radiobutton" id="12">
                         <description>EPG activated</description>
-                        <posx>0</posx>
-                        <posy>252</posy>
                         <width>564</width>
                         <label>19206</label>
                         <onleft>20</onleft>
@@ -212,8 +196,6 @@
                     </control>
                     <control type="spincontrolex" id="13">
                         <description>EPG source</description>
-                        <posx>0</posx>
-                        <posy>336</posy>
                         <width>564</width>
                         <label>19200</label>
                         <onleft>20</onleft>
@@ -223,8 +205,6 @@
                     </control>
                     <control type="radiobutton" id="14">
                         <description>Parental locked</description>
-                        <posx>0</posx>
-                        <posy>420</posy>
                         <width>564</width>
                         <label>19267</label>
                         <onleft>20</onleft>
@@ -234,8 +214,6 @@
                     </control>
                     <control type="button" id="30">
                         <description>Group Manager Button</description>
-                        <posx>0</posx>
-                        <posy>504</posy>
                         <width>564</width>
                         <label>19205</label>
                         <onleft>20</onleft>
@@ -245,8 +223,6 @@
                     </control>
                     <control type="button" id="31">
                         <description>Edit channel Button</description>
-                        <posx>0</posx>
-                        <posy>588</posy>
                         <width>420</width>
                         <label>19203</label>
                         <onleft>20</onleft>
@@ -258,7 +234,7 @@
                 <!--OK / Cancel / apply-->                 
                 <control type="panel" id="9000">
                     <posx>17-col</posx>
-                    <posy>156</posy>
+                    <posy>84</posy>
                     <width>5-col</width>
                     <height>10-row</height>
                     <itemgap>0</itemgap>

@@ -7,10 +7,11 @@
             <posy>row-3-begin</posy>
             <!--animations-->
             <include>modalDialogInOutVertical</include>
-			<control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>20-col</width>
+            <!--dialog background-->
+            <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1464</width>
                 <height>23-row</height>
                 <texture>colors/black.png</texture>
                 <colordiffuse>aaFFFFFF</colordiffuse>
@@ -35,31 +36,12 @@
                 <label>$LOCALIZE[287] - $INFO[Player.Filename]</label>
                 <textcolor>textActive</textcolor>
             </control>
-            <!--dialog background-->
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>20-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
                 <!--options-->
-                <control type="image">
-                    <posx>4-col</posx>
-                    <posy>2-row</posy>
-                    <width>16-col</width>
-                    <height>21-row</height>
-                    <texture>colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                    <aspectratio>stretch</aspectratio>
-                </control>
                 <control type="label" id="140">
                     <posx>col-4-begin</posx>
-                    <posy>2-row</posy>
+                    <posy>84</posy>
                     <width>12-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -70,7 +52,7 @@
                 <!--subtitle file selection-->
                 <control type="panel" id="120">
                     <posx>4-col</posx>
-                    <posy>4-row</posy>
+                    <posy>156</posy>
                     <width>16-col</width>
                     <height>19-row</height>
                     <onleft>150</onleft>
@@ -158,7 +140,7 @@
             </control>
             <!--manual search button-->
             <control type="button" id="160">
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>4-col</width>
                 <label>31134</label>
                 <ondown>150</ondown>
@@ -169,13 +151,13 @@
             <control type="group">
                 <control type="list" id="150">
                     <posx>0</posx>
-                    <posy>4-row</posy>
+                    <posy>168</posy>
                     <width>4-col</width>
                     <height>11-row</height>
                     <onright>120</onright>
                     <onup>160</onup>
                     <scrolltime>200</scrolltime>
-                    <itemlayout width="4-col" height="2-row">
+                    <itemlayout width="4-col" height="84">
                         <control type="label">
                             <posx>24</posx>
                             <posy>0</posy>
@@ -203,7 +185,7 @@
                             <visible>ListItem.property(man)</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="4-col" height="2-row">
+                    <focusedlayout width="4-col" height="84">
                         <control type="image">
                             <visible>control.hasfocus(150)</visible>
                             <posx>0</posx>

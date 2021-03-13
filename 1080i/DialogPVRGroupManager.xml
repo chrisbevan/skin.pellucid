@@ -11,6 +11,15 @@
             <include>modalDialogInOutVertical</include>
             <!--content provider title / info-->
             <control type="image">
+                <posx>-12</posx>
+                <posy>-12</posy>
+                <width>1464</width>
+                <height>24-row</height>
+                <texture>colors/black.png</texture>
+                <colordiffuse>overlay</colordiffuse>
+                <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>20-col</width>
@@ -19,30 +28,12 @@
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>2-row</posy>
-                <width>20-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-                <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>12-col</width>
-                <height>21-row</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
 			<control type="image">
                 <posx>0</posx>
-                <posy>2-row</posy>
-                <width>20-col</width>
+                <posy>84</posy>
+                <width>1140</width>
                 <height>71</height>
-                <texture>colors/black.png</texture>
+                <texture>colors/offblack.png</texture>
                 <aspectratio>stretch</aspectratio>
                 <colordiffuse>textboxInactive</colordiffuse>
             </control>
@@ -61,7 +52,7 @@
             <control type="label">
                 <description>name label</description>
                 <posx>24</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <width>6-col</width>
                 <height>2-row</height>
                 <aligny>center</aligny>
@@ -71,11 +62,11 @@
             </control>
             <control type="group">
                 <posx>0</posx>
-                <posy>3-row</posy>
+                <posy>132</posy>
                 <control type="list" id="13">
                     <posx>0</posx>
                     <posy>1-row</posy>
-                    <width>4-col-textbox</width>
+                    <width>276</width>
                     <height>21-row</height>
                     <onright>12</onright>
                     <itemlayout height="2-row" width="4-col">
@@ -118,7 +109,7 @@
             <control type="group">
                 <description>Grouped Channels list</description>
                 <posx>4-col</posx>
-                <posy>2-row</posy>
+                <posy>84</posy>
                 <control type="label" id="22">
                     <description>name label</description>
                     <posx>12</posx>
@@ -131,18 +122,18 @@
                 </control>
                 <control type="panel" id="12">
                     <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>6-col-textbox</width>
-                    <height>19-row</height>
+                    <posy>84</posy>
+                    <width>420</width>
+                    <height>672</height>
                     <onleft>13</onleft>
                     <onright>11</onright>
                     <itemlayout height="2-row" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
@@ -163,9 +154,9 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/white.png" border="0">$INFO[ListItem.Icon]</texture>
                             <animation type="focus" loop="false" reversible="false">
                                 <effect type="fade" time="500"/>
@@ -207,7 +198,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 <control type="label" id="21">
                     <description>name label</description>
                     <posx>12</posx>
-                    <posy>0</posy>
+                    <posy>12</posy>
                     <width>6-col</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
@@ -216,18 +207,18 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                 </control>
                 <control type="panel" id="11">
                     <posx>0</posx>
-                    <posy>2-row</posy>
-                    <width>6-col-textbox</width>
-                    <height>19-row</height>
+                    <posy>96</posy>
+                    <width>420</width>
+                    <height>672</height>
                     <onleft>12</onleft>
                     <onright>9001</onright>
                     <itemlayout height="2-row" width="8-col">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/offblack.png" border="0">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
@@ -248,9 +239,9 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>2-row</width>
+                            <width>69</width>
                             <height>2-row</height>
-                            <aspectratio scalediffuse="false">stretch</aspectratio>
+                            <aspectratio>stretch</aspectratio>
                             <texture fallback="colors/white.png" border="0">$INFO[ListItem.Icon]</texture>
                             <animation type="focus" loop="false" reversible="false">
                                 <effect type="fade" time="500"/>
@@ -287,7 +278,7 @@ ListItem.ChannelNumberLabel,(,) - ]$INFO[ListItem.ChannelName]</label>
             <!--Dialog controls-->
             <control type="panel" id="9001">
                 <posx>16-col</posx>
-                <posy>4-row</posy>
+                <posy>84</posy>
                 <width>4-col</width>
                 <height>12-row</height>
                 <itemgap>3</itemgap>

@@ -48,7 +48,7 @@
                     <posx>0</posx>
                     <posy>84</posy>
                     <width>8-col</width>
-                    <height>20-row</height>
+                    <height>18-row</height>
                     <onleft>activateWindow(contextmenu)</onleft>
                     <ondown>50</ondown>
                     <onup>50</onup>
