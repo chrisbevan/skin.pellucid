@@ -1,5 +1,5 @@
 **Changelog**
-[V2.3]
+[V3.0.0]
 - Updated for Kodi Matrix
 
 
