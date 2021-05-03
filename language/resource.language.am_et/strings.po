@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 07:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Amharic (Ethiopia) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/am_et/>\n"
 "Language: am_et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -27,7 +28,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "መለያ በ"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -39,15 +40,15 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "ማብሪያ"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "ዝርዝሮችን መክፈቻ"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "ዝርዝሮችን ማስቀመጫ"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -95,7 +96,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "በ"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -139,7 +140,7 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "የ ጣቢያ መምሪያ"
 
 msgctxt "#31076"
 msgid "Change Title"
@@ -163,15 +164,15 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "መቁጠሪያ"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "የ ቪዲዮ ተጨማ-ሪዎች"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "የ መዚቃ ተጨማ-ሪዎች"
 
 msgctxt "#31093"
 msgid "IP"
@@ -187,15 +188,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "ቡድን መጨመሪያ"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "ቡድን እንደገና መሰየሚያ"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "ቡድን ማጥፊያ"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -235,7 +236,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "የ ቲቪ መምሪያ"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -243,7 +244,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "የ ፒክስል አቀራረብ"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -279,7 +280,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "አሁን የሚጫወተው"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -291,7 +292,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "የቀረው"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -319,7 +320,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "ቲቪ መቅረጫ"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -355,7 +356,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "ምርጫዎች"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -363,7 +364,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "በደፈናው አልበም"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -419,11 +420,11 @@ msgstr ""
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "የቲቪ ጣቢያ"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "የቲቪ ትርኢት"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -435,7 +436,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "ዲስክ ማጫወቻ"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -443,7 +444,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "ሁሉንም አልበሞች"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -475,7 +476,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "ጨዋታዎች"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -515,11 +516,11 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "ቲቪ በቀጥታ"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "ራዲዮ"
 
 msgctxt "#31251"
 msgid "Eject Disc"
@@ -527,4 +528,4 @@ msgstr ""
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "አልበም"

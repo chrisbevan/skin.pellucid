@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 09:11+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Belarusian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/be_by/>\n"
 "Language: be_by\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -28,7 +28,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Упарадкаваць па"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -40,15 +40,15 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Уключана"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Адкрыць спіс прайгравання"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Захаваць спіс прайгравання"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -60,7 +60,7 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Notification"
-msgstr ""
+msgstr "Апавяшчэнні"
 
 msgctxt "#31031"
 msgid "Play Random"
@@ -76,7 +76,7 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Перазагрузіць абалонку"
 
 msgctxt "#31044"
 msgid "Debugging"
@@ -96,7 +96,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "ад"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -140,7 +140,7 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Каналы"
 
 msgctxt "#31076"
 msgid "Change Title"
@@ -164,15 +164,15 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Таймеры"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Дапаўненні для відэа"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Дапаўненні для музыкі"
 
 msgctxt "#31093"
 msgid "IP"
@@ -188,15 +188,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Дадаць групу"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Змяніць назву групы"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Выдаліць групу"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -236,7 +236,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "Тэлепраграма"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -244,7 +244,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Фармат пікселяў"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -280,7 +280,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Зараз прайграецца"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -292,7 +292,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Засталося"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -320,7 +320,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "Тэлезапісы"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -356,7 +356,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Параметры"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -364,7 +364,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Выпадковыя альбомы"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -420,11 +420,11 @@ msgstr ""
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "Каналы ТБ"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Серыялы"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -436,7 +436,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Прайграць дыск"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "Усе альбомы"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -476,7 +476,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Гульні"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -484,7 +484,7 @@ msgstr ""
 
 msgctxt "#31234"
 msgid "Game Addons"
-msgstr ""
+msgstr "Гульнявыя дапаўненні"
 
 msgctxt "#31236"
 msgid "Radio / TV"
@@ -516,11 +516,11 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Жывое ТВ"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Радыё"
 
 msgctxt "#31251"
 msgid "Eject Disc"
@@ -528,4 +528,4 @@ msgstr ""
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "Альбом"
