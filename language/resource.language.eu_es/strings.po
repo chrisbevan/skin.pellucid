@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 09:11+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Basque (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/eu_es/>\n"
 "Language: eu_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -27,7 +28,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Ordenatu honen baitan"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -39,15 +40,15 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Piztuta"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Ireki erreprodukzio-zerrenda"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Gorde erreprodukzio-zerrenda"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -75,11 +76,11 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Birkargatu azala"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Arazketa"
 
 msgctxt "#31046"
 msgid "Field"
@@ -95,7 +96,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "norena"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -123,7 +124,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -139,7 +140,7 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Kanalen gida"
 
 msgctxt "#31076"
 msgid "Change Title"
@@ -163,19 +164,19 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Programazioak"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Bideo-gehigarriak"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Musika-gehigarriak"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IPa"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -187,15 +188,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Gehitu taldea"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Berrizendatu taldea"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Ezabatu taldea"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -235,7 +236,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "TB gida"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -243,7 +244,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pixel formatua"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -279,7 +280,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Orain erreproduzitzen"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -291,7 +292,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Geratzen dena"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -319,7 +320,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "TB grabazioak"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -355,7 +356,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Aukera"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -363,7 +364,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Ausazko albumak"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -411,7 +412,7 @@ msgstr ""
 
 msgctxt "#31212"
 msgid "From"
-msgstr ""
+msgstr "Nondik"
 
 msgctxt "#31213"
 msgid "Showing unwatched titles only"
@@ -419,11 +420,11 @@ msgstr ""
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "TB kanalak"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "TB saioak"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -435,7 +436,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Erreproduzitu diskoa"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -443,7 +444,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "Album guztiak"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -455,7 +456,7 @@ msgstr ""
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
-msgstr ""
+msgstr "LibreELECen Ezarpenak"
 
 msgctxt "#31228"
 msgid "Edit Menu"
@@ -467,7 +468,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Jokuen Ezarpenak"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -475,7 +476,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Jokoak"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -483,7 +484,7 @@ msgstr ""
 
 msgctxt "#31234"
 msgid "Game Addons"
-msgstr ""
+msgstr "Jokuen gehigarriak"
 
 msgctxt "#31236"
 msgid "Radio / TV"
@@ -515,11 +516,11 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "TB"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Irratia"
 
 msgctxt "#31251"
 msgid "Eject Disc"
@@ -527,4 +528,4 @@ msgstr ""
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "Albuma"

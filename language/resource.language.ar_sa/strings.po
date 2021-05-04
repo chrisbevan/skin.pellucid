@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 07:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Arabic (Saudi Arabia) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/ar_sa/>\n"
 "Language: ar_sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -40,15 +40,15 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "تفعيل"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "إفتح قائمة التشغيل"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "حفظ قائمة التشغيل"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -76,11 +76,11 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "إعادة تحميل الغلاف"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "التصحيح"
 
 msgctxt "#31046"
 msgid "Field"
@@ -124,7 +124,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "وحدة المعالجة"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -168,11 +168,11 @@ msgstr ""
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "إضافات الفيديو"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "إضافات الاغاني"
 
 msgctxt "#31093"
 msgid "IP"
@@ -188,15 +188,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "إضافة مجموعة"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "إعادة تسمية مجموعة"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "حذف مجموعة"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -236,7 +236,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "دليل التلفزيون"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -280,7 +280,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "المُشَغَل اﻷن"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -356,7 +356,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "الخيارات"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -420,11 +420,11 @@ msgstr ""
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "قنوات التلفاز"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "البرامج التلفزيونية"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -436,7 +436,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "تشغيل القرص"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "جميع الألبومات"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -476,7 +476,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "الألعاب"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -516,11 +516,11 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "تي في مباشر"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "إذاعة"
 
 msgctxt "#31251"
 msgid "Eject Disc"
@@ -528,4 +528,4 @@ msgstr ""
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "الألبوم"

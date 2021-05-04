@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 07:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/da_dk/>\n"
 "Language: da_dk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -27,27 +28,27 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "#31012"
 msgid "My Library"
-msgstr ""
+msgstr "Mit bibliotek"
 
 msgctxt "#31014"
 msgid "title(s)"
-msgstr ""
+msgstr "title(r)"
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Til"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Åbn playliste"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Gem playliste"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -55,15 +56,15 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr ""
+msgstr "Vælg emner"
 
 msgctxt "#31023"
 msgid "Notification"
-msgstr ""
+msgstr "Meddelelse"
 
 msgctxt "#31031"
 msgid "Play Random"
-msgstr ""
+msgstr "Afspil tilfældig"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
@@ -75,11 +76,11 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Genindlæs skin"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Foretag fejlretning"
 
 msgctxt "#31046"
 msgid "Field"
@@ -87,27 +88,27 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Create Folder"
-msgstr ""
+msgstr "Opret mappe"
 
 msgctxt "#31051"
 msgid "Disc Menu"
-msgstr ""
+msgstr "Diskmenu"
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "af"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr ""
+msgstr "Billedebibliotek"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
-msgstr ""
+msgstr "Opret musikplayliste"
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -115,7 +116,7 @@ msgstr ""
 
 msgctxt "#31062"
 msgid "Memory"
-msgstr ""
+msgstr "Hukommelse"
 
 msgctxt "#31063"
 msgid "Manage content playback"
@@ -123,7 +124,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -131,7 +132,7 @@ msgstr ""
 
 msgctxt "#31070"
 msgid "Screen"
-msgstr ""
+msgstr "Skærm"
 
 msgctxt "#31071"
 msgid "Communications and sharing"
@@ -139,19 +140,19 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Kanalguide"
 
 msgctxt "#31076"
 msgid "Change Title"
-msgstr ""
+msgstr "Ændring af titel"
 
 msgctxt "#31078"
 msgid "Now and Next"
-msgstr ""
+msgstr "Nu og næste"
 
 msgctxt "#31079"
 msgid "Import your content into Kodi"
-msgstr ""
+msgstr "Importer dit indhold til Kodi"
 
 msgctxt "#31081"
 msgid "Digital Television Setup"
@@ -163,39 +164,39 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Timeroptagelser"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Video add-ons"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Musik add-ons"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
-msgstr ""
+msgstr "Overfør og kopier filer"
 
 msgctxt "#31096"
 msgid "No items found"
-msgstr ""
+msgstr "Ingen emner fundet"
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Tilføj gruppe"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Omdøb gruppe"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Slet gruppe"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -207,19 +208,19 @@ msgstr ""
 
 msgctxt "#31104"
 msgid "Disable this addon"
-msgstr ""
+msgstr "Deaktiver dette add-on"
 
 msgctxt "#31105"
 msgid "Manage your Kodi system"
-msgstr ""
+msgstr "Håndtér dit Kodi-system"
 
 msgctxt "#31107"
 msgid "Current profile"
-msgstr ""
+msgstr "Nuværende profil"
 
 msgctxt "#31108"
 msgid "About this Kodi Installation"
-msgstr ""
+msgstr "Om denne Kodi-installation"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
@@ -231,19 +232,19 @@ msgstr ""
 
 msgctxt "#31111"
 msgid "Manage your program addons"
-msgstr ""
+msgstr "Håndtér dine program-add-ons"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV guide"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
-msgstr ""
+msgstr "Kodi add-ons"
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pixelformat"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -259,7 +260,7 @@ msgstr ""
 
 msgctxt "#31121"
 msgid "My Kodi"
-msgstr ""
+msgstr "Mit Kodi"
 
 msgctxt "#31122"
 msgid "Reset home backgrounds to default"
@@ -267,7 +268,7 @@ msgstr ""
 
 msgctxt "#31123"
 msgid "Current Queue"
-msgstr ""
+msgstr "Nuværende kø"
 
 msgctxt "#31127"
 msgid "Continue Watching"
@@ -275,11 +276,11 @@ msgstr ""
 
 msgctxt "#31134"
 msgid "Manual search"
-msgstr ""
+msgstr "Manuel søgning"
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Afspiller nu"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -291,15 +292,15 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Tilbage"
 
 msgctxt "#31144"
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 msgctxt "#31145"
 msgid "Item(s)"
-msgstr ""
+msgstr "Emne(r)"
 
 msgctxt "#31149"
 msgid "Released"

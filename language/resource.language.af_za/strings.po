@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-05-03 07:35+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Afrikaans (South Africa) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/af_za/>\n"
 "Language: af_za\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6.1\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -27,7 +28,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorteer volgens"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -39,15 +40,15 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Aan"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Maak speellys oop"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Stoor speellys"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -75,11 +76,11 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Herlaai oortreksel"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Ontfouting"
 
 msgctxt "#31046"
 msgid "Field"
@@ -95,7 +96,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "deur"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -123,7 +124,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -139,7 +140,7 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Kanaal gids"
 
 msgctxt "#31076"
 msgid "Change Title"
@@ -163,19 +164,19 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Tydhouers"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Video byvoegsels"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Musiek byvoegsels"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -187,15 +188,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Voeg groep by"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Verander groep naam"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Wis groep uit"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -235,7 +236,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV gids"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -243,7 +244,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pixel formaat"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -279,7 +280,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Speel nou"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -291,7 +292,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Oorblywend"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -319,7 +320,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "TV opnames"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -355,7 +356,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Opsies"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -363,7 +364,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Lukraak albums"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -411,7 +412,7 @@ msgstr ""
 
 msgctxt "#31212"
 msgid "From"
-msgstr ""
+msgstr "Van"
 
 msgctxt "#31213"
 msgid "Showing unwatched titles only"
@@ -419,11 +420,11 @@ msgstr ""
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "TV kanale"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV vertonings"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -435,7 +436,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Speel skyf"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -443,7 +444,7 @@ msgstr ""
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "Alle albums"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -475,7 +476,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Speletjies"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -483,7 +484,7 @@ msgstr ""
 
 msgctxt "#31234"
 msgid "Game Addons"
-msgstr ""
+msgstr "Speletjie byvoegsels"
 
 msgctxt "#31236"
 msgid "Radio / TV"
@@ -515,11 +516,11 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Lewendige TV"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Radio"
 
 msgctxt "#31251"
 msgid "Eject Disc"
@@ -527,4 +528,4 @@ msgstr ""
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "Album"
