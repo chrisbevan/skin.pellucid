@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
     <shortcut>
-        <visible>Player.HasMedia</visible>
+        <visible>Player.HasMedia + !window.isactive(1103)</visible>
         <label>31136</label>
         <label2>10005</label2>
         <icon>DefaultAddon.png</icon>

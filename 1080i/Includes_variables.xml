@@ -103,7 +103,7 @@
     <variable name="menuLogo">
         <value condition="Window.IsActive(games)"></value>
 		<value condition="Window.IsActive(pictures)"></value>
-        <value condition="window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist)"></value>
+        <value condition="window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist) | window.isactive(1103)"></value>
         <value condition="window.isactive(videos) | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)"></value>
     </variable>
     <!--extra fanart sourcing-->
