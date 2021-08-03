@@ -8,8 +8,6 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">A skin for Kodi by theDeadManInYossariansTent</summary>
-        <description lang="en_GB">Built for the living room, Pellucid is a clean and carefully designed Kodi experience designed for maximum usability and minimum fuss. Skin Shortcuts addon support is available for full menu customisation. With thanks to Marco "Dadebue" Debus for the homescreen photography.</description>
         <platform>all</platform>
         <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
         <forum>https://forum.kodi.tv/forumdisplay.php?fid=267</forum>
@@ -24,5 +22,12 @@
             <screenshot>resources/screenshot-05.jpg</screenshot>
             <screenshot>resources/screenshot-06.jpg</screenshot>
         </assets>
+        <summary lang="ca_ES">Una skin per a Kodi de theDeadmanInYossariansTent</summary>
+        <summary lang="de_DE">Ein Skin für Kodi von theDeadmanInYossariansTent</summary>
+        <summary lang="en_GB">A skin for Kodi from theDeadmanInYossariansTent</summary>
+        <summary lang="es_MX">Una máscara para Kodi por theDeadmanInYossariansTent</summary>
+        <description lang="ca_ES">Pellucid és una experiència Kodi lleugera, neta i senzilla dissenyada per a la màxima usabilitat i el mínim enrenou.</description>
+        <description lang="en_GB">Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss.</description>
+        <description lang="es_MX">Pellucid es una experiencia con Kodi ligera, simple y sencilla diseñada para máxima usabilidad y mínima molestia.</description>
     </extension>
 </addon>

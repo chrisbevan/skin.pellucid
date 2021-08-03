@@ -22,8 +22,7 @@ msgid "A skin for Kodi from theDeadmanInYossariansTent"
 msgstr "Una máscara para Kodi por theDeadmanInYossariansTent"
 
 msgctxt "Addon Description"
-msgid ""
-"Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
+msgid "Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
 msgstr "Pellucid es una experiencia con Kodi ligera, simple y sencilla diseñada para máxima usabilidad y mínima molestia."
 
 msgctxt "#31008"
