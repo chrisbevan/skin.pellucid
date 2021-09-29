@@ -211,10 +211,10 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <include condition="window.isactive(games)">skinshortcuts-group-gamesubmenu</include>
-					<include condition="window.isactive(pictures)">skinshortcuts-group-picturessubmenu</include>
-                    <include condition="String.Contains(container.folderpath,videodb://musicvideos/titles) | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist) | window.isactive(1103)">skinshortcuts-group-musicsubmenu</include>
-                    <include condition="[window.isactive(videos) + !String.Contains(container.folderpath,videodb://musicvideos/titles)] | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)">skinshortcuts-group-videosubmenu</include>
+                    <include condition="window.isactive(games)">menus-gamemenu</include>
+					<include condition="window.isactive(pictures)">menus-picturemenu</include>
+                    <include condition="String.Contains(container.folderpath,videodb://musicvideos/titles) | window.isactive(music) | window.isactive(radiochannels) | window.isactive(radioguide) | window.isactive(radiorecordings) | window.isactive(radiotimers) | window.isactive(musicplaylist) | window.isactive(1103)">menus-musicmenu</include>
+                    <include condition="[window.isactive(videos) + !String.Contains(container.folderpath,videodb://musicvideos/titles)] | window.isactive(tvchannels) | window.isactive(tvrecordings) | window.isactive(tvguide) | window.isactive(tvtimers) | window.isactive(videoplaylist)">menus-videomenu</include>
                 </content>
             </control>
         </control>

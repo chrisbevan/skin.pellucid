@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8000</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onunload>
     <controls>
         <!--background-->
         <include>globalBackground</include>
@@ -181,41 +180,6 @@
                     <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
-                </control>
-                <control type="button" id="12">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Edit home menu</description>
-                    <width>14-col</width>
-                    <label>31171</label>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
-                </control>
-                <control type="button" id="13">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Edit video menu</description>
-                    <width>14-col</width>
-                    <label>31172</label>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videosubmenu)</onclick>
-                </control>
-                <control type="button" id="14">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Edit music menu</description>
-                    <width>14-col</width>
-                    <label>31173</label>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=musicsubmenu)</onclick>
-                </control>
-                <control type="button" id="15">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Edit pictures menu</description>
-                    <width>14-col</width>
-                    <label>31174</label>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
-                </control>
-				<control type="button" id="16">
-                    <visible>Container(8000).Hasfocus(2)</visible>
-                    <description>Edit games menu</description>
-                    <width>14-col</width>
-                    <label>31233</label>
-                    <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
                 </control>
                 <control type="radiobutton" id="17">
                     <visible>Container(8000).Hasfocus(1)</visible>

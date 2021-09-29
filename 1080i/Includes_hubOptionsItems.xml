@@ -90,14 +90,6 @@
             <selected>system.ismaster</selected>
             <visible>system.haslocks</visible>
         </control>
-		<control type="button" id="13">
-            <description>Edit video menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <width>12-col</width>
-            <label>31172</label>
-            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videosubmenu)</onclick>
-        </control>
     </include>
     <!--music submenu items-->
     <include name="musicSideMenu">
@@ -179,14 +171,6 @@
             <onclick condition="!Playlist.IsRandom">PlayerControl(randomOn)</onclick>
             <onclick condition="Playlist.IsRandom">PlayerControl(randomOff)</onclick>
         </control>
-		<control type="button" id="14">
-            <description>Edit music menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <width>12-col</width>
-            <label>31173</label>
-            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=musicsubmenu)</onclick>
-        </control>
     </include>
     <!--pictures submenu items-->
     <include name="picturesSideMenu">
@@ -210,14 +194,6 @@
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
             <onclick>sendclick(pictures,4)</onclick>
-        </control>
-		<control type="button" id="17">
-            <description>Edit pictures menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <width>12-col</width>
-            <label>31174</label>
-            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=picturessubmenu)</onclick>
         </control>
     </include>
     <!--pictures submenu items-->
@@ -273,14 +249,6 @@
             <altlabel>31110</altlabel>
             <width>12-col</width>
             <onclick>sendclick(games,4)</onclick>
-        </control>
-		<control type="button" id="17">
-            <description>Edit Games menu</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <width>12-col</width>
-            <label>31233</label>
-            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=gamesubmenu)</onclick>
         </control>
 	</include>
 </includes>

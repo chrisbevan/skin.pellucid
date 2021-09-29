@@ -25,7 +25,7 @@
 	<include file="View_Games.xml"/>
 	<include file="View_SpotifyAlbums.xml"/>
 	<include file="View_SpotifyArtists.xml"/>
-    <include file="script-skinshortcuts-includes.xml"/>
+    <include file="Includes_menus.xml"/>
     <include file="Includes_mediaShowcase.xml"/>
 
     <!--view type conditions-->

@@ -2,7 +2,6 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>fadeInOut</include>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9001&amp;group=mainmenu|videosubmenu|musicsubmenu|picturessubmenu|gamesubmenu)</onload>
 	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
@@ -206,7 +205,7 @@
 					</control>
 				</focusedlayout>
 				<content>
-					<include>skinshortcuts-mainmenu</include>
+					<include>menus-mainmenu</include>
 				</content>
 			</control>
 			<!--power / settings-->
