@@ -25,8 +25,10 @@
         <summary lang="de_DE">Ein Skin für Kodi von theDeadmanInYossariansTent</summary>
         <summary lang="en_GB">A skin for Kodi from theDeadmanInYossariansTent</summary>
         <summary lang="es_MX">Una máscara para Kodi por theDeadmanInYossariansTent</summary>
+        <summary lang="zh_CN">一款theDeadmanInYossariansTent制作的KODI皮肤</summary>
         <description lang="ca_ES">Pellucid és una experiència Kodi lleugera, neta i senzilla dissenyada per a la màxima usabilitat i el mínim enrenou.</description>
         <description lang="en_GB">Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss.</description>
         <description lang="es_MX">Pellucid es una experiencia con Kodi ligera, simple y sencilla diseñada para máxima usabilidad y mínima molestia.</description>
+        <description lang="zh_CN">Pellucid提供轻巧、干净和简单的KODI体验，旨在最大限度地提高可用性和最大限度地减少麻烦。</description>
     </extension>
 </addon>
