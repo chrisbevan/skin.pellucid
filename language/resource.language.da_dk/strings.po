@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-03 07:35+0000\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/da_dk/>\n"
 "Language: da_dk\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.1\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -67,7 +67,7 @@ msgstr "Afspil tilfældig"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "Aktiver fejlsøgningsnet"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
@@ -235,7 +235,7 @@ msgstr "Håndtér dine program-add-ons"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr "TV guide"
+msgstr "Tv-guide"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -319,7 +319,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "Tv-optagelser"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -355,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Indstillinger"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -363,7 +363,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Tilfældige albummer"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -423,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Tv-serier"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -435,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Afspil disk"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -467,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Spilindstillinger"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -475,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Spil"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -511,11 +511,11 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Queue"
-msgstr ""
+msgstr "Sæt i kø"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Direkte tv"
 
 msgctxt "#31250"
 msgid "Radio"

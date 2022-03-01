@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Estonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/et_ee/>\n"
 "Language: et_ee\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Järjestusviis"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Ava esitusloend"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Salvesta esitusloend"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -62,7 +63,7 @@ msgstr ""
 
 msgctxt "#31031"
 msgid "Play Random"
-msgstr ""
+msgstr "Esita juhuslikult"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "autor on"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -122,7 +123,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -174,7 +175,7 @@ msgstr ""
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Lisa grupp"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Nimeta grupp ümber"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Kustuta grupp"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "Telekava"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Piksli vorming"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Hetkel mängib"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Jäänud"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -302,7 +303,7 @@ msgstr ""
 
 msgctxt "#31149"
 msgid "Released"
-msgstr ""
+msgstr "Välja antud"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Valikud"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -362,7 +363,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Juhuslikud albumid"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Seriaalid"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -434,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Esita plaat"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -446,11 +447,11 @@ msgstr ""
 
 msgctxt "#31224"
 msgid "All Movies"
-msgstr ""
+msgstr "Kõik filmid"
 
 msgctxt "#31225"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Kõik seriaalid"
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
@@ -466,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Mängu seaded"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Mängud"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -510,15 +511,15 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Queue"
-msgstr ""
+msgstr "Järjekord"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Otse TV"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Raadio"
 
 msgctxt "#31251"
 msgid "Eject Disc"

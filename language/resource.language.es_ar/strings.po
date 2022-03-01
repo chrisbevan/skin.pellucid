@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Spanish (Argentina) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/es_ar/>\n"
 "Language: es_ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Ordenar por"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Abrir lista de reproducción"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Guardar lista de reproducción"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "por"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -122,7 +123,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -174,7 +175,7 @@ msgstr ""
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Añdadir Grupo"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Renombrar Grupo"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Borrar Grupo"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Formato de píxel"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Reproduciendo"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Restante"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -302,7 +303,7 @@ msgstr ""
 
 msgctxt "#31149"
 msgid "Released"
-msgstr ""
+msgstr "Estrenada"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Opciones"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -362,7 +363,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Álbums Aleatorios"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Series TV"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -446,11 +447,11 @@ msgstr ""
 
 msgctxt "#31224"
 msgid "All Movies"
-msgstr ""
+msgstr "Todas las Películas"
 
 msgctxt "#31225"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Todas las Series"
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
@@ -466,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Ajustes de Juegos"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Juegos"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -510,15 +511,15 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Queue"
-msgstr ""
+msgstr "Cola"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "TV en directo"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Radio"
 
 msgctxt "#31251"
 msgid "Eject Disc"

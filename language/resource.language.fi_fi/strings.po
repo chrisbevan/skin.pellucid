@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
+"Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/fi_fi/>\n"
 "Language: fi_fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Lajittelu"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Avaa toistolista"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Tallenna toistolista"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -62,7 +63,7 @@ msgstr ""
 
 msgctxt "#31031"
 msgid "Play Random"
-msgstr ""
+msgstr "Toista Satunnainen"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
@@ -74,7 +75,7 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Lataa ulkoasu uudelleen"
 
 msgctxt "#31044"
 msgid "Debugging"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "Tekijä"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -122,7 +123,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "Prosessori"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -174,7 +175,7 @@ msgstr ""
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Lisää ryhmä"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Muuta ryhmän nimeä"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Poista ryhmä"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "Ohjelmaopas"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pikselimuoto"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Nyt toistetaan"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Jäljellä"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -302,7 +303,7 @@ msgstr ""
 
 msgctxt "#31149"
 msgid "Released"
-msgstr ""
+msgstr "Julkaistu"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
@@ -346,7 +347,7 @@ msgstr ""
 
 msgctxt "#31176"
 msgid "New Movies"
-msgstr ""
+msgstr "Uudet elokuvat"
 
 msgctxt "#31178"
 msgid "New TV Shows"
@@ -354,19 +355,19 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Asetukset"
 
 msgctxt "#31180"
 msgid "New Albums"
-msgstr ""
+msgstr "Uudet albumit"
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Satunnaiset albumit"
 
 msgctxt "#31187"
 msgid "Top Albums"
-msgstr ""
+msgstr "Suosituimmat albumit"
 
 msgctxt "#31188"
 msgid "season(s)"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Sarjat"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -434,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Toista levy"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -446,11 +447,11 @@ msgstr ""
 
 msgctxt "#31224"
 msgid "All Movies"
-msgstr ""
+msgstr "Kaikki elokuvat"
 
 msgctxt "#31225"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Kaikki TV-sarjat"
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
@@ -466,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Pelin asetukset"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Pelit"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -486,7 +487,7 @@ msgstr ""
 
 msgctxt "#31236"
 msgid "Radio / TV"
-msgstr ""
+msgstr "Radio / Televisio"
 
 msgctxt "#31237"
 msgid "Results for"
@@ -506,19 +507,19 @@ msgstr ""
 
 msgctxt "#31245"
 msgid "Finishes"
-msgstr ""
+msgstr "Päättyy"
 
 msgctxt "#31248"
 msgid "Queue"
-msgstr ""
+msgstr "Jono"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31250"
 msgid "Radio"
-msgstr ""
+msgstr "Radio"
 
 msgctxt "#31251"
 msgid "Eject Disc"
