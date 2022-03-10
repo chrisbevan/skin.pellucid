@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Malay <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/ms_my/>\n"
 "Language: ms_my\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Isih mengikut"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Buka senarai main"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Simpan senarai main"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -66,7 +67,7 @@ msgstr ""
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "Benarkan Grid Nyahpepijat"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
@@ -74,7 +75,7 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Muat Semula Kulit"
 
 msgctxt "#31044"
 msgid "Debugging"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "oleh"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -122,7 +123,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -166,15 +167,15 @@ msgstr ""
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Tambahan Video"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Tambahan Muzik"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Tambah Kumpulan"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Namakan Semula Kumpulan"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Padam Kumpulan"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "Panduan TV"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Format piksel"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Kini Dimainkan"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Berbaki"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -318,7 +319,7 @@ msgstr ""
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr ""
+msgstr "Rakaman TV"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Opsyen"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Rancangan TV"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -434,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Main Cakera"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -466,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Tetapan Permainan"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Permainan"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -514,7 +515,7 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "TV Langsung"
 
 msgctxt "#31250"
 msgid "Radio"

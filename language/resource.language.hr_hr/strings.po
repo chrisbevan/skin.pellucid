@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Croatian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/hr_hr/>\n"
 "Language: hr_hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Razvrstaj po"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -38,23 +39,23 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Uključeno"
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Otvori listu izvedbi"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Spremi listu izvedbi"
 
 msgctxt "#31021"
 msgid "Clear playlist"
-msgstr ""
+msgstr "Očisti listu za reproduciranje"
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr ""
+msgstr "Odaberi stavke"
 
 msgctxt "#31023"
 msgid "Notification"
@@ -74,15 +75,15 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Ponovno učitaj presvlaku"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Otklanjanje grešaka"
 
 msgctxt "#31046"
 msgid "Field"
-msgstr ""
+msgstr "Polje"
 
 msgctxt "#31048"
 msgid "Create Folder"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "od"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -106,7 +107,7 @@ msgstr ""
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
@@ -122,7 +123,7 @@ msgstr ""
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
@@ -138,7 +139,7 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "EPG vodič"
 
 msgctxt "#31076"
 msgid "Change Title"
@@ -162,19 +163,19 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Snimanja"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Video dodaci"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Glazbeni dodaci"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Dodaj grupu"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Preimenuj grupu"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Obriši grupu"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV Vodič"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Format piksela"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Trenutno reproducira"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Preostalo"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Mogućnosti"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV serije"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Igre"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -514,7 +515,7 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "TV uživo"
 
 msgctxt "#31250"
 msgid "Radio"
