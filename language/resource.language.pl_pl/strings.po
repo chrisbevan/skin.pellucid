@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-19 06:46+0000\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
 "Last-Translator: Konrad W <kondiwxd@gmail.com>\n"
 "Language-Team: Polish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/pl_pl/>\n"
 "Language: pl_pl\n"
@@ -55,7 +55,7 @@ msgstr "Wyczyść listę odtwarzania"
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr ""
+msgstr "Wybierz elementy"
 
 msgctxt "#31023"
 msgid "Notification"
@@ -71,7 +71,7 @@ msgstr "Pokazuj siatkę diagnostyczną"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
-msgstr ""
+msgstr "Pokaż informacje diagnostyczne"
 
 msgctxt "#31043"
 msgid "Reload Skin"
@@ -83,15 +83,15 @@ msgstr ""
 
 msgctxt "#31046"
 msgid "Field"
-msgstr ""
+msgstr "Pole"
 
 msgctxt "#31048"
 msgid "Create Folder"
-msgstr ""
+msgstr "Utwórz folder"
 
 msgctxt "#31051"
 msgid "Disc Menu"
-msgstr ""
+msgstr "Menu płyty"
 
 msgctxt "#31054"
 msgid "by"
@@ -111,7 +111,7 @@ msgstr "Telewizja"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
-msgstr "Dostosuj wygląd Kodi"
+msgstr "Dostosuj wygląd i działanie Kodi"
 
 msgctxt "#31062"
 msgid "Memory"
@@ -135,19 +135,19 @@ msgstr "Ekran"
 
 msgctxt "#31071"
 msgid "Communications and sharing"
-msgstr ""
+msgstr "Komunikacja i udostępnienie"
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Przewodnik programowy"
 
 msgctxt "#31076"
 msgid "Change Title"
-msgstr ""
+msgstr "Zarządzaj tytułem"
 
 msgctxt "#31078"
 msgid "Now and Next"
-msgstr ""
+msgstr "Teraz i następnie"
 
 msgctxt "#31079"
 msgid "Import your content into Kodi"
@@ -207,19 +207,19 @@ msgstr ""
 
 msgctxt "#31104"
 msgid "Disable this addon"
-msgstr ""
+msgstr "Wyłącz ten dodatek"
 
 msgctxt "#31105"
 msgid "Manage your Kodi system"
-msgstr ""
+msgstr "Zarządzaj swoim systemem Kodi"
 
 msgctxt "#31107"
 msgid "Current profile"
-msgstr ""
+msgstr "Bieżący profil"
 
 msgctxt "#31108"
 msgid "About this Kodi Installation"
-msgstr ""
+msgstr "O tej instalacji Kodi"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
@@ -239,7 +239,7 @@ msgstr "Przewodnik"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
-msgstr ""
+msgstr "Dodatki Kodi"
 
 msgctxt "#31114"
 msgid "Pixel format"
@@ -251,7 +251,7 @@ msgstr ""
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr ""
+msgstr "Uruchom dodatek"
 
 msgctxt "#31118"
 msgid "PVR not active"
@@ -259,7 +259,7 @@ msgstr ""
 
 msgctxt "#31121"
 msgid "My Kodi"
-msgstr ""
+msgstr "Mój Kodi"
 
 msgctxt "#31122"
 msgid "Reset home backgrounds to default"
@@ -267,7 +267,7 @@ msgstr ""
 
 msgctxt "#31123"
 msgid "Current Queue"
-msgstr ""
+msgstr "Bieżąca kolejka"
 
 msgctxt "#31127"
 msgid "Continue Watching"
@@ -335,15 +335,15 @@ msgstr "Edytuj menu główne"
 
 msgctxt "#31172"
 msgid "Edit video section menu"
-msgstr ""
+msgstr "Edytuj menu sekcji video"
 
 msgctxt "#31173"
 msgid "Edit music section menu"
-msgstr ""
+msgstr "Edytuj menu sekcji muzyki"
 
 msgctxt "#31174"
 msgid "Edit picture section menu"
-msgstr ""
+msgstr "Edytuj menu sekcji obrazów"
 
 msgctxt "#31176"
 msgid "New Movies"
@@ -367,7 +367,7 @@ msgstr "Losowe albumy"
 
 msgctxt "#31187"
 msgid "Top Albums"
-msgstr ""
+msgstr "Top albumy"
 
 msgctxt "#31188"
 msgid "season(s)"
@@ -383,7 +383,7 @@ msgstr "Wszystkie odcinki"
 
 msgctxt "#31195"
 msgid "Show only unwatched items:"
-msgstr ""
+msgstr "Pokaż tylko nie obejrzane rzeczy:"
 
 msgctxt "#31199"
 msgid "Artists in"
@@ -391,7 +391,7 @@ msgstr ""
 
 msgctxt "#31203"
 msgid "Smart Playlist"
-msgstr ""
+msgstr "Smart playlista"
 
 msgctxt "#31205"
 msgid "No further details available."
@@ -411,11 +411,11 @@ msgstr ""
 
 msgctxt "#31212"
 msgid "From"
-msgstr ""
+msgstr "Od"
 
 msgctxt "#31213"
 msgid "Showing unwatched titles only"
-msgstr ""
+msgstr "Pokazuje tylko tytuły nie obejrzane"
 
 msgctxt "#31215"
 msgid "TV Channels"
@@ -483,7 +483,7 @@ msgstr ""
 
 msgctxt "#31234"
 msgid "Game Addons"
-msgstr ""
+msgstr "Dodatki gier"
 
 msgctxt "#31236"
 msgid "Radio / TV"
