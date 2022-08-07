@@ -87,9 +87,6 @@
                         <item id="1">
                             <label>$LOCALIZE[128]</label>
                         </item>
-                        <item id="2">
-                            <label>$LOCALIZE[31170]</label>
-                        </item>
                         <item id="3">
                             <label>$LOCALIZE[31044]</label>
                         </item>
@@ -126,6 +123,8 @@
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Set home background image directory</description>
                     <width>14-col</width>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
                     <label>31116</label>
                     <label2>$INFO[Skin.String(homeBackground)]</label2>
                     <onclick>Skin.SetPath(homeBackground)</onclick>
@@ -135,6 +134,8 @@
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
                     <label>31122</label>
                     <onclick>Skin.Reset(homeBackground)</onclick>
                     <textwidth>8-col</textwidth>
@@ -168,6 +169,8 @@
                     <visible>Container(8000).Hasfocus(3)</visible>
                     <description>Reload skin</description>
                     <width>14-col</width>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
                     <label>31043</label>
                     <onclick>ReloadSkin()</onclick>
                     <onclick>activateWindow(home)</onclick>

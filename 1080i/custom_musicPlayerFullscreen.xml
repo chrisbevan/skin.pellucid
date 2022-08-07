@@ -22,7 +22,7 @@
 					<visible>!Visualisation.Enabled</visible>
 	                <include>dimensionsFullscreen</include>
 	                <aspectratio>stretch</aspectratio>
-	                <texture>$INFO[listitem.art(fanart)]</texture>
+	                <texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 	                <fadetime>500</fadetime>
 	                <colordiffuse>77ffffff</colordiffuse>
 	            </control>

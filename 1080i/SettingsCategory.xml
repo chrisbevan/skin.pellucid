@@ -56,6 +56,8 @@
                 <posx>0</posx>
                 <posy>624</posy>
                 <font>smallStrong</font>
+                <align>left</align>
+                <textoffsetx>12</textoffsetx>
                 <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
                 <label>[B][COLOR highlight]$LOCALIZE[21417]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
                 <onclick>SettingsLevelChange</onclick>
@@ -94,6 +96,8 @@
             <control type="button" id="7">
                 <description>Default Button</description>
                 <texturenofocus></texturenofocus>
+                <align>left</align>
+                <textoffsetx>24</textoffsetx>
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>

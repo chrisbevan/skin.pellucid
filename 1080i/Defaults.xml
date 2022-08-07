@@ -48,7 +48,7 @@
     <default type="button">
         <posx>0</posx>
         <posy>0</posy>
-        <align>left</align>
+        <align>center</align>
         <aligny>center</aligny>
         <height>2-row</height>
         <width>4-col</width>
@@ -57,7 +57,6 @@
         <focusedcolor>black</focusedcolor>
         <texturefocus>colors/white.png</texturefocus>
         <texturenofocus></texturenofocus>
-        <textoffsetx>24</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
         <invalidcolor>textDisabled</invalidcolor>
         <pulseonselect>false</pulseonselect>

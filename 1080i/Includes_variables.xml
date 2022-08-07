@@ -33,7 +33,7 @@
 		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR highlight]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
 	</variable>
     <variable name="listSubTitle">
-        <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]] $VAR[unwatchedOnly]</value>
+        <value condition="Window.isactive(Videos)">$INFO[Container.NumAllItems,, $LOCALIZE[31014]]</value>
         <value condition="Window.isactive(Music)">$INFO[container.NumAllItems,, $LOCALIZE[31014]]</value>
 		<value condition="Window.isactive(MyPVRTimers.xml)">$INFO[container.NumAllItems,, $LOCALIZE[31145]]</value>
 		<value condition="Window.isactive(Weather)">$LOCALIZE[31212] $INFO[Window.Property(WeatherProvider)]</value>

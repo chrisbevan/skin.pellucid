@@ -11,32 +11,6 @@
             <label>137</label>
             <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
         </control>
-        <control type="button" id="3">
-            <visible>!String.IsEmpty(Container.SortMethod)</visible>
-            <description>Sort by</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <width>12-col</width>
-            <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
-            <onclick condition="window.isactive(videos)">sendclick(videos,3)</onclick>
-			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,3)</onclick>
-			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,3)</onclick>
-			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,3)</onclick>
-        </control>
-        <control type="togglebutton" id="4">
-            <visible>!String.IsEmpty(Container.SortMethod)</visible>
-            <description>Sort direction</description>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <alttexturefocus colordiffuse="highlight">colors/white.png</alttexturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <label>31109</label>
-            <altlabel>31110</altlabel>
-            <width>12-col</width>
-            <onclick condition="window.isactive(videos)">sendclick(videos,4)</onclick>
-			<onclick condition="window.isactive(tvchannels)">sendclick(tvchannels,4)</onclick>
-			<onclick condition="window.isactive(tvrecordings)">sendclick(tvrecordings,4)</onclick>
-			<onclick condition="window.isactive(tvguide)">sendclick(tvguide,4)</onclick>
-        </control>
         <control type="button" id="509">
             <visible>[Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml)] + PVR.HasTVChannels</visible>
             <description>PVR Channel Group</description>
@@ -58,23 +32,12 @@
             <onclick>ActivateWindow(TVTimerRules)</onclick>
         </control>
         <control type="button" id="507">
+			<visible>!System.HasAddon(plugin.video.plexkodiconnect)</visible>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
             <focusedcolor>textActive</focusedcolor>
             <width>12-col</width>
             <label>653</label>
             <onclick>UpdateLibrary(video)</onclick>
-        </control>
-        <control type="radiobutton" id="14">
-            <description>Watched Toggle</description>
-            <label>31195</label>
-            <width>12-col</width>
-            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-            <focusedcolor>textActive</focusedcolor>
-            <textureradiofocus></textureradiofocus>
-            <textureradionofocus></textureradionofocus>
-            <radiowidth/>
-            <radioheight/>
-            <onclick>sendclick(videos,14)</onclick>
         </control>
         <control type="radiobutton" id="11">
             <description>Unlock Shares</description>
@@ -155,6 +118,7 @@
             <onclick>ActivateWindow(RadioTimerRules)</onclick>
         </control>
         <control type="button" id="504">
+			<visible>!System.HasAddon(plugin.video.plexkodiconnect)</visible>
             <width>12-col</width>
             <focusedcolor>textActive</focusedcolor>
             <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>

@@ -26,7 +26,7 @@
 	            </control>
 				<!--player controls-->
 				<control type="panel" id="8001">
-					<posx>col-1-begin</posx>
+					<posx>col-11-begin</posx>
 	                <posy>6</posy>
 	                <width>7-col</width>
 	                <height>2-row</height>

@@ -22,56 +22,48 @@
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
 				<!--quick link selector-->
-				<control type="list" id="9102">
+                <control type="grouplist" id="9102">
 	                <posx>col-1-begin</posx>
 	                <posy>180</posy>
-	                <width>24-col</width>
-	                <height>2-row</height>
+                    <orientation>horizontal</orientation>
 	                <onleft>9000</onleft>
 	                <ondown>9103</ondown>
 	                <onback>9000</onback>
-	                <orientation>horizontal</orientation>
-					<pulseonselect>true</pulseonselect>
-	                <itemlayout width="4-col" height="2-row">
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>4-col</width>
-	                        <height>2-row</height>
-	                        <font>menuTitle</font>
-	                        <aligny>center</aligny>
-	                        <textcolor>textDisabled</textcolor>
-	                        <shadowcolor></shadowcolor>
-	                        <label>$INFO[ListItem.property(textTitle)]</label>
-	                    </control>
-	                </itemlayout>
-	                <focusedlayout width="4-col" height="2-row">		
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>4-col</width>
-	                        <height>2-row</height>
-	                        <font>menuTitle</font>
-	                        <aligny>center</aligny>
-	                        <textcolor>textActive</textcolor>
-	                        <shadowcolor></shadowcolor>
-	                        <label>$INFO[ListItem.property(textTitle)]</label>
-							<animation type="conditional" condition="control.hasfocus(9102)" loop="true">
-	                            <effect type="fade" start="100" end="50" time="1000"/>
-	                        </animation>
-	                    </control>
-	                </focusedlayout>
-	                <content>
-	                    <item>
-	                        <label>special://skin/extras/playlists/recentMovies.xsp</label>
-	                        <property name="textTitle">31176</property>
-	                    </item>
-	                    <item>
-	                        <label>special://skin/extras/playlists/inprogressMovies.xsp</label>
-	                        <property name="textTitle">31127</property>
-	                    </item>
-	                </content>
-	            </control>
+                    
+                    <control type="button" id="4000">
+                        <label>31176</label>
+                        <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
+                    </control> 
+                    <control type="button" id="4001">
+                        <label>31127</label>
+                        <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
+                    </control>
+            		<control type="button" id="506">
+                        <description>Search</description>
+                        <visible>System.HasAddon(script.globalsearch)</visible>
+                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                        <focusedcolor>textActive</focusedcolor>
+                        <label>137</label>
+                        <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
+                    </control>
+                    <control type="radiobutton" id="14">
+                        <description>Watched Toggle</description>
+                        <label>31195</label>
+                        <width>4-col</width>
+                        <focusedcolor>textActive</focusedcolor>
+                    </control>
+                    <control type="button" id="3">
+                        <description>Sort by</description>
+                        <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
+                    </control>
+                    <control type="togglebutton" id="4">
+                        <description>Sort direction</description>
+                        <focusedcolor>textActive</focusedcolor>
+                        <label>31109</label>
+                        <altlabel>31110</altlabel>
+                    </control>
+                    
+                </control>
 				<!--quick links-->			
 				<control type="panel" id="9103">
 	                <posx>90</posx>
@@ -199,7 +191,7 @@
 				            </control>
 	                    </control>
 	                </focusedlayout>
-					<content>$INFO[control.getlabel(9102)]</content>
+					<content>$INFO[skin.string(movieQuickLinkValue)]</content>
 	            </control>
 			</control>
 			<!--all movies-->
@@ -232,53 +224,31 @@
 				<control type="panel" id="51">
 					<visible>$EXP[isMovie]</visible>
 					<posx>90</posx>
-					<posy>828</posy>
+					<posy>820</posy>
 					<width>1800</width>
-					<height>23-row</height>
+					<height>824</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>9103</onup>
 					<onback>9103</onback>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="sine">250</scrolltime>
-					<itemlayout width="252" height="438">
-						<control type="image">
-							<posx>-6</posx>
-							<posy>-6</posy>
-							<width>240</width>
-							<height>354</height>
-							<aspectratio>stretch</aspectratio>
-							<texture>colors/black.png</texture>
-							<bordersize>6</bordersize>
-							<colordiffuse>11FFFFFF</colordiffuse>
-						</control>
+					<itemlayout width="300" height="430">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>228</width>
-							<height>342</height>
-							<aspectratio>stretch</aspectratio>
+							<width>240</width>
+							<height>360</height>
+							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Art(poster)]</texture>
-							<bordersize>6</bordersize>
 							<colordiffuse>99FFFFFF</colordiffuse>
-						</control>
-						<control type="textbox">
-							<visible>String.IsEmpty(listitem.title)</visible>
-							<posx>24</posx>
-							<posy>3-row</posy>
-							<width>228</width>
-							<height>6-row</height>
-							<font>largeTitle</font>
-							<wrapmultiline>true</wrapmultiline>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.label]</label>
 						</control>
 						<control type="label">
 							<visible>!controlgroup(9000).hasfocus</visible>
-							<posx>12</posx>
-							<posy>350</posy>
-							<width>204</width>
-							<height>1-row</height>
+							<posx></posx>
+							<posy>342</posy>
+							<width>240</width>
+							<height>2-row</height>
 							<aligny>center</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
@@ -287,96 +257,56 @@
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
 							<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-							<posx>166</posx>
-							<posy>6</posy>
+							<posx>204</posx>
+							<posy>18</posy>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>
-								<width>56</width>
-								<height>56</height>
+								<width>36</width>
+								<height>36</height>
 								<aspectratio>stretch</aspectratio>
 								<texture>masks/newContent.png</texture>
 								<colordiffuse>highlight</colordiffuse>
 							</control>
-							<control type="label">
-								<posx>28</posx>
-								<posy>-4</posy>
-								<width>36</width>
-								<height>36</height>
-								<aligny>center</aligny>
-								<font>symbol</font>
-								<textcolor>textActive</textcolor>
-								<label></label>
-							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout width="252" height="438">
+					<focusedlayout width="300" height="430">
 						<control type="group">
 							<include>focusThumb</include>
 							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>228</width>
-								<height>342</height>
-								<aspectratio>stretch</aspectratio>
-								<texture border="6">colors/black.png</texture>
-								<bordertexture border="6" colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
-								<colordiffuse>FF000000</colordiffuse>
-							</control>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>228</width>
-								<height>342</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Art(poster)]</texture>
-								<bordersize>6</bordersize>
-							</control>
-							<control type="textbox">
-								<visible>String.IsEmpty(listitem.title)</visible>
-								<posx>24</posx>
-								<posy>3-row</posy>
-								<width>228</width>
-								<height>6-row</height>
-								<font>largeTitle</font>
-								<wrapmultiline>true</wrapmultiline>
-								<textcolor>textActive</textcolor>
-								<label>$INFO[ListItem.label]</label>
+    							<posx>0</posx>
+    							<posy>0</posy>
+    							<width>240</width>
+    							<height>360</height>
+    							<aspectratio>keep</aspectratio>
+    							<texture>$INFO[ListItem.Art(poster)]</texture>
+                                <bordertexture>colors/white.png</bordertexture>
+                                <bordersize>6</bordersize>
+    							<colordiffuse>FFFFFFFF</colordiffuse>
 							</control>
 							<control type="label">
-								<posx>12</posx>
-								<posy>354</posy>
-								<width>204</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
-								<font>thumbTitle</font>
-								<textcolor>textActive</textcolor>
-								<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
+    							<posx></posx>
+    							<posy>336</posy>
+    							<width>240</width>
+    							<height>2-row</height>
+    							<aligny>center</aligny>
+    							<font>thumbTitle</font>
+    							<textcolor>textActive</textcolor>
+    							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
 							</control>
 							<control type="group">
 								<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-								<posx>166</posx>
-								<posy>6</posy>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>56</width>
-									<height>56</height>
-									<aspectratio>stretch</aspectratio>
-									<texture>masks/newContent.png</texture>
-									<colordiffuse>highlight</colordiffuse>
-								</control>
-								<control type="label">
-									<posx>28</posx>
-									<posy>-4</posy>
-									<width>36</width>
-									<height>36</height>
-									<aligny>center</aligny>
-									<font>symbol</font>
-									<textcolor>textActive</textcolor>
-									<label></label>
-								</control>
+    							<posx>198</posx>
+    							<posy>24</posy>
+    							<control type="image">
+    								<posx>0</posx>
+    								<posy>0</posy>
+    								<width>36</width>
+    								<height>36</height>
+    								<aspectratio>stretch</aspectratio>
+    								<texture>masks/newContent.png</texture>
+    								<colordiffuse>highlight</colordiffuse>
+    							</control>
 							</control>
 						</control>
 					</focusedlayout>

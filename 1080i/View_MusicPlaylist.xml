@@ -131,7 +131,7 @@
                         <font>playlistSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
-                        <label>$INFO[ListItem.Artist]$INFO[ListItem.Album, • , ]$INFO[ListItem.year,(,)]</label>
+                        <label>$INFO[ListItem.Artist]  [LIGHT]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)][/LIGHT]</label>
                     </control>
                     <control type="label">
                         <right>-36</right>
@@ -234,7 +234,7 @@
                         <font>playlistSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <shadowcolor></shadowcolor>
-                        <label>$INFO[ListItem.Artist]$INFO[ListItem.Album, • , ]$INFO[ListItem.year,(,)]</label>
+                        <label>$INFO[ListItem.Artist]  [LIGHT]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)][/LIGHT]</label>
                     </control>
                     <control type="label">
                         <right>-36</right>
