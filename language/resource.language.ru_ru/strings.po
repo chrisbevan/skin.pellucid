@@ -5,20 +5,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-04-10 10:13+0000\n"
+"Last-Translator: AlekSS Lab <alekss881980@gmail.com>\n"
+"Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/ru_ru/>\n"
 "Language: ru_ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
-msgstr ""
+msgstr "Обложка для Kodi от theDeadmanInYossariansTent"
 
 msgctxt "Addon Description"
 msgid "Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
@@ -26,11 +27,11 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Сортировать по"
 
 msgctxt "#31012"
 msgid "My Library"
-msgstr ""
+msgstr "Моя библиотека"
 
 msgctxt "#31014"
 msgid "title(s)"
@@ -38,19 +39,19 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Вкл."
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Открыть плейлист"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Сохранить плейлист"
 
 msgctxt "#31021"
 msgid "Clear playlist"
-msgstr ""
+msgstr "Очистить плейлист"
 
 msgctxt "#31022"
 msgid "Select Items"
@@ -58,91 +59,91 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Notification"
-msgstr ""
+msgstr "Уведомление"
 
 msgctxt "#31031"
 msgid "Play Random"
-msgstr ""
+msgstr "Воспроизвести в случайном порядке"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "Включить отладочную сетку"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
-msgstr ""
+msgstr "Включить отладочную информацию"
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Перезагрузить обложку"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Отладка"
 
 msgctxt "#31046"
 msgid "Field"
-msgstr ""
+msgstr "Поле"
 
 msgctxt "#31048"
 msgid "Create Folder"
-msgstr ""
+msgstr "Создать папку"
 
 msgctxt "#31051"
 msgid "Disc Menu"
-msgstr ""
+msgstr "Меню диска"
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "от"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr ""
+msgstr "Фотобиблиотека"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
-msgstr ""
+msgstr "Создать плейлист с музыкой"
 
 msgctxt "#31060"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
-msgstr ""
+msgstr "Управление внешним видом Kodi"
 
 msgctxt "#31062"
 msgid "Memory"
-msgstr ""
+msgstr "Память"
 
 msgctxt "#31063"
 msgid "Manage content playback"
-msgstr ""
+msgstr "Управление воспроизведением"
 
 msgctxt "#31064"
 msgid "CPU"
-msgstr ""
+msgstr "Процессор"
 
 msgctxt "#31067"
 msgid "Extend Kodi's functionality"
-msgstr ""
+msgstr "Расширение функциональности Kodi"
 
 msgctxt "#31070"
 msgid "Screen"
-msgstr ""
+msgstr "Экран"
 
 msgctxt "#31071"
 msgid "Communications and sharing"
-msgstr ""
+msgstr "Связь и общий доступ"
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Телепрограмма канала"
 
 msgctxt "#31076"
 msgid "Change Title"
-msgstr ""
+msgstr "Изменить название"
 
 msgctxt "#31078"
 msgid "Now and Next"
@@ -150,11 +151,11 @@ msgstr ""
 
 msgctxt "#31079"
 msgid "Import your content into Kodi"
-msgstr ""
+msgstr "Импортировать контент в Kodi"
 
 msgctxt "#31081"
 msgid "Digital Television Setup"
-msgstr ""
+msgstr "Настройки цифрового телевидения"
 
 msgctxt "#31082"
 msgid "By"
@@ -162,87 +163,87 @@ msgstr ""
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Таймеры"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Видеодополнения"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Аудиодополнения"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
-msgstr ""
+msgstr "Перемещение и копирование файлов"
 
 msgctxt "#31096"
 msgid "No items found"
-msgstr ""
+msgstr "Элементы не найдены"
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Добавить группу"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Переименовать группу"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Удалить группу"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
-msgstr ""
+msgstr "Уменьшить нагрузку на процессор"
 
 msgctxt "#31103"
 msgid "Control how Kodi is used"
-msgstr ""
+msgstr "Управление использованием Kodi"
 
 msgctxt "#31104"
 msgid "Disable this addon"
-msgstr ""
+msgstr "Отключить это дополнение"
 
 msgctxt "#31105"
 msgid "Manage your Kodi system"
-msgstr ""
+msgstr "Управление системой Kodi"
 
 msgctxt "#31107"
 msgid "Current profile"
-msgstr ""
+msgstr "Текущий профиль"
 
 msgctxt "#31108"
 msgid "About this Kodi Installation"
-msgstr ""
+msgstr "Информация о Kodi"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
-msgstr ""
+msgstr "Порядок: По возрастанию"
 
 msgctxt "#31110"
 msgid "Order: Descending"
-msgstr ""
+msgstr "Порядок: По убыванию"
 
 msgctxt "#31111"
 msgid "Manage your program addons"
-msgstr ""
+msgstr "Управление программными дополнениями"
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "Программа передач"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
-msgstr ""
+msgstr "Дополнения Kodi"
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Формат пикселей"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Сейчас воспроизводится"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Осталось"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -302,7 +303,7 @@ msgstr ""
 
 msgctxt "#31149"
 msgid "Released"
-msgstr ""
+msgstr "Выпущено"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
@@ -314,7 +315,7 @@ msgstr ""
 
 msgctxt "#31160"
 msgid "Ends"
-msgstr ""
+msgstr "Заканчивается"
 
 msgctxt "#31165"
 msgid "TV Recordings"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Параметры"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -362,7 +363,7 @@ msgstr ""
 
 msgctxt "#31181"
 msgid "Random Albums"
-msgstr ""
+msgstr "Случайные альбомы"
 
 msgctxt "#31187"
 msgid "Top Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "Сериалы"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -434,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Воспр. диска"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -466,7 +467,7 @@ msgstr ""
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr ""
+msgstr "Настройки игры"
 
 msgctxt "#31231"
 msgid "Game related options"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Игры"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -510,11 +511,11 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Queue"
-msgstr ""
+msgstr "Очередь"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "ТВ"
 
 msgctxt "#31250"
 msgid "Radio"

@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:50+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Macedonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/mk_mk/>\n"
 "Language: mk_mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Сортирано по"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Отвори список на реп."
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Сочувај список на реп."
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "од"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -174,7 +175,7 @@ msgstr ""
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Додади група"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Преимени група"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Избриши група"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "ТВ Водич"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Сега се репродуцира"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Преостанува"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Опции"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Игри"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -514,7 +515,7 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#31250"
 msgid "Radio"

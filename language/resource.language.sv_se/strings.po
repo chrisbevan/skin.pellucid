@@ -5,16 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Skins\n"
-"Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-01 12:51+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/sv_se/>\n"
 "Language: sv_se\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -26,7 +27,7 @@ msgstr ""
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr ""
+msgstr "Sortera efter"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -42,11 +43,11 @@ msgstr ""
 
 msgctxt "#31019"
 msgid "Open playlist"
-msgstr ""
+msgstr "Öppna spellista"
 
 msgctxt "#31020"
 msgid "Save playlist"
-msgstr ""
+msgstr "Spara spellista"
 
 msgctxt "#31021"
 msgid "Clear playlist"
@@ -66,7 +67,7 @@ msgstr ""
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr ""
+msgstr "Aktivera debuggrutnät"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
@@ -74,7 +75,7 @@ msgstr ""
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr ""
+msgstr "Ladda om skal"
 
 msgctxt "#31044"
 msgid "Debugging"
@@ -94,7 +95,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "by"
-msgstr ""
+msgstr "av"
 
 msgctxt "#31056"
 msgid "Photo Library"
@@ -166,15 +167,15 @@ msgstr ""
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr ""
+msgstr "Videotillägg"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Misuktillägg"
 
 msgctxt "#31093"
 msgid "IP"
-msgstr ""
+msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
@@ -186,15 +187,15 @@ msgstr ""
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr ""
+msgstr "Lägg till grupp"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr ""
+msgstr "Döp om grupp"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr ""
+msgstr "Ta bort grupp"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -234,7 +235,7 @@ msgstr ""
 
 msgctxt "#31112"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV-guide"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
@@ -242,7 +243,7 @@ msgstr ""
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pixelformat"
 
 msgctxt "#31116"
 msgid "Set home background directory"
@@ -278,7 +279,7 @@ msgstr ""
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr ""
+msgstr "Nu spelas"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
@@ -290,7 +291,7 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr ""
+msgstr "Återstående"
 
 msgctxt "#31144"
 msgid "FPS"
@@ -354,7 +355,7 @@ msgstr ""
 
 msgctxt "#31179"
 msgid "Options"
-msgstr ""
+msgstr "Alternativ"
 
 msgctxt "#31180"
 msgid "New Albums"
@@ -422,7 +423,7 @@ msgstr ""
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV-program"
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -434,7 +435,7 @@ msgstr ""
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr ""
+msgstr "Spela Disc"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
@@ -474,7 +475,7 @@ msgstr ""
 
 msgctxt "#31232"
 msgid "Games"
-msgstr ""
+msgstr "Spel"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
@@ -514,7 +515,7 @@ msgstr ""
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr ""
+msgstr "Live-TV"
 
 msgctxt "#31250"
 msgid "Radio"
