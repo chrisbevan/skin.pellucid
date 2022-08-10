@@ -221,11 +221,11 @@ msgid "About this Kodi Installation"
 msgstr ""
 
 msgctxt "#31109"
-msgid "Order: Ascending"
+msgid "Asc"
 msgstr ""
 
 msgctxt "#31110"
-msgid "Order: Descending"
+msgid "Desc"
 msgstr ""
 
 msgctxt "#31111"
@@ -381,7 +381,7 @@ msgid "All Episodes"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Show only unwatched items:"
+msgid "Unwatched Only"
 msgstr ""
 
 msgctxt "#31199"

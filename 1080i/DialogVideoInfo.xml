@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">8000</defaultcontrol>
+    <defaultcontrol always="true">8</defaultcontrol>
     <animation type="windowClose">
         <effect type="fade" start="100" end="0" time="400" delay="200"/>
     </animation>
@@ -75,7 +75,7 @@
                 <aspectratio align="left">keep</aspectratio>
             </control>
         </control>
-        <!--content is movie, music video or tvshow (from XBMC Library)-->
+        <!--content is movie, music video or tvshow (from KODI Library)-->
         <control type="group">
             <visible>!String.Contains(Container.folderpath,plugin) + !container.content(episodes)</visible>
             <posx>1200</posx>
@@ -88,16 +88,14 @@
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
             </animation>
-            <!--
-            <animation type="conditional" condition="controlgroup.hasfocus(8000)">
+            <animation type="conditional" condition="control.hasfocus(8) | control.hasfocus(11) | control.hasfocus(61)">
                 <effect type="fade" start="0" end="100" time="300" delay="300"/>
                 <effect type="slide" start="800" end="0" tween="cubic" easing="out" time="400" delay="300"/>
             </animation>
-            <animation type="conditional" condition="!controlgroup.hasfocus(8000)">
+            <animation type="conditional" condition="!control.hasfocus(8) + !control.hasfocus(11) + !control.hasfocus(61)">
                 <effect type="fade" start="100" end="0" time="350"/>
                 <effect type="slide" start="0" end="900" tween="cubic" easing="out" time="400"/>
             </animation>
-            -->
             <!--overlay-->
             <control type="image">
                 <posx>0</posx>
@@ -115,11 +113,11 @@
                 <width>10-col</width>
                 <height>6-row</height>
                 <enable>false</enable>
-                <itemlayout width="5-col" height="76">
+                <itemlayout width="5-col-gutter" height="76">
                     <control type="label">
                         <posx>12</posx>
                         <posy>0</posy>
-                        <width>4-col-gutter</width>
+                        <width>252</width>
                         <font>itemSubTitle</font>
                         <textcolor>highlight</textcolor>
                         <label>[B]$INFO[ListItem.label][/B]</label>
@@ -128,15 +126,14 @@
                     <control type="label">
                         <posx>12</posx>
                         <posy>30</posy>
-                        <width>4-col-gutter</width>
+                        <width>252</width>
                         <font>itemSubTitle</font>
                         <textcolor>textActive</textcolor>
                         <label fallback="13205">[B]$INFO[ListItem.label2][/B]</label>
                         <shadowcolor></shadowcolor>
                     </control>
                 </itemlayout>
-                <focusedlayout width="5-col" height="76">
-                </focusedlayout>
+                <focusedlayout/>
                 <content>
                     <item>
                         <label>$LOCALIZE[562]</label>
@@ -155,7 +152,7 @@
                     </item>
                     <item>
                         <label>$LOCALIZE[180]</label>
-                        <label2>$INFO[ListItem.duration]</label2>
+                        <label2>$INFO[ListItem.duration(H)]hr $INFO[ListItem.duration(MM)]min</label2>
                         <thumb></thumb>
                     </item>
                 </content>
@@ -181,7 +178,7 @@
                     <posx>0</posx>
                     <posy>9-row</posy>
                     <font>textbox</font>
-                    <width>660</width>
+                    <width>8-col</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>388</height>
@@ -194,16 +191,20 @@
                     <posx>12r</posx>
                     <posy>10-row</posy>
                     <height>8-row</height>
-                    <ondown>8000</ondown>
+                    <ondown>8</ondown>
+                    <onleft>8</onleft>
                 </control>
             </control>
             <!--dialog controls-->
-            <control type="group" id="8000">
+            <control type="grouplist" id="8000">
                 <posx>24</posx>
-                <posy>23-row</posy>
+                <posy>24-row</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <orientation>horizontal</orientation>
+                <itemgap>24</itemgap>
+                <onup>61</onup>
+                <onleft>999981</onleft>
                 
                 <control type="button" id="8">
                     <description>Play</description>
@@ -215,17 +216,20 @@
                     <label>20410</label>
                 </control>
                 <control type="button" id="10">
+                    <visible>false</visible>
                     <posy>2-row</posy>
                     <description>Choose Art</description>
                     <label>13511</label>
                 </control>
                 <control type="button" id="7">
+                    <visible>false</visible>
                     <posx>4-col</posx>
                     <posy>2-row</posy>
                     <description>Ratings</description>
                     <label>31169</label>
                 </control>
                 <control type="button" id="6">
+                    <visible>false</visible>
                     <description>Refresh</description>
                     <posy>4-row</posy>
                     <label>31076</label>

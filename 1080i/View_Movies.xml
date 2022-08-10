@@ -3,14 +3,22 @@
 	<include name="movies">
 		<control type="group">
 			<visible>$EXP[isMovie]</visible>
-			<control type="image">
-				<visible>control.hasfocus(9103) | control.hasfocus(9102)</visible>
-	            <include>dimensionsFullscreen</include>
-	            <texture fallback="colors/black.png">$INFO[container(9103).listitem.art(fanart)]</texture>
-	            <colordiffuse>FF555555</colordiffuse>
-	            <aspectratio>scale</aspectratio>
-				<fadetime>250</fadetime>
-	        </control>
+			<control type="group">
+                <visible>control.hasfocus(9103) | control.hasfocus(9102)</visible>
+                <control type="image">
+    	            <include>dimensionsFullscreen</include>
+    	            <texture fallback="colors/black.png">$INFO[container(9103).listitem.art(fanart)]</texture>
+    	            <colordiffuse>FF555555</colordiffuse>
+    	            <aspectratio>scale</aspectratio>
+    				<fadetime>250</fadetime>
+    	        </control>
+                <control type="image">
+    	            <include>dimensionsFullscreen</include>
+    	            <texture>vignette.png</texture>
+    	            <colordiffuse></colordiffuse>
+    	            <aspectratio>stretch</aspectratio>
+    	        </control>
+            </control>
 			<control type="group" id="9101">
 				<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
 				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
@@ -22,89 +30,120 @@
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
 				<!--quick link selector-->
-                <control type="grouplist" id="9102">
-	                <posx>col-1-begin</posx>
-	                <posy>180</posy>
-                    <orientation>horizontal</orientation>
-	                <onleft>9000</onleft>
-	                <ondown>9103</ondown>
-	                <onback>9000</onback>
-                    
-                    <control type="button" id="4000">
-                        <label>31176</label>
-                        <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
-                    </control> 
-                    <control type="button" id="4001">
-                        <label>31127</label>
-                        <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
+                <control type="group">
+	                <posx>col-4-begin</posx>
+	                <posy>170</posy>
+    				<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>18-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/menuBar.png</texture>
+                        <colordiffuse>77000000</colordiffuse>
                     </control>
-            		<control type="button" id="506">
-                        <description>Search</description>
-                        <visible>System.HasAddon(script.globalsearch)</visible>
-                        <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
-                        <focusedcolor>textActive</focusedcolor>
-                        <label>137</label>
-                        <onclick>RunScript(script.globalsearch,movies=true&amp;tvshows=true&amp;episodes=true&amp;livetv=true&amp;actors=true&amp;directors=true)</onclick>
+                    <control type="grouplist" id="9102">
+    	                <posx>0</posx>
+    	                <posy>0</posy>
+                        <orientation>horizontal</orientation>
+                        <itemgap>0</itemgap>
+    	                <onleft>9000</onleft>
+    	                <ondown>9103</ondown>
+    	                <onback>9000</onback>
+                		<control type="button" id="506">
+                            <description>Search</description>
+                            <visible>System.HasAddon(script.globalsearch)</visible>
+                            <width>1-col</width>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus>masks/circle.png</texturefocus>
+                            <focusedcolor>black</focusedcolor>
+                            <font>symbolLarge</font>
+                            <label></label>
+                            <onclick>RunScript(script.globalsearch,movies=true)</onclick>
+                        </control>            
+                        <control type="button" id="4000">
+                            <label>31176</label>
+                            <texturenofocus></texturenofocus>
+                            <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
+                        </control> 
+                        <control type="button" id="4001">
+                            <label>31127</label>
+                            <texturenofocus></texturenofocus>
+                            <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
+                        </control>
+                        <control type="radiobutton" id="14">
+                            <description>Watched Toggle</description>
+                            <label>31195</label>
+                            <width>4-col</width>
+                            <texturenofocus></texturenofocus>
+                            <focusedcolor>textActive</focusedcolor>
+                        </control>
+                        <control type="button" id="3222">
+                            <description>Sort by</description>
+                            <texturenofocus></texturenofocus>
+                            <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
+                            <onclick>Container.NextSortMethod</onclick>
+                            <onclick>Control.setfocus(51,0,absolute)</onclick>
+                            <onclick>Control.setfocus(3222)</onclick>
+                        </control>
+                        <control type="togglebutton" id="3223">
+                            <description>Sort direction</description>
+                            <focusedcolor>black</focusedcolor>
+                            <color>textActive</color>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">masks/circle.png</texturefocus>
+                            <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
+                            <alttexturenofocus></alttexturenofocus>
+                            <textoffsetx>0</textoffsetx>
+                            <width>1-col</width>
+                            <font>symbolLarge</font>
+                            <label></label>
+                            <altlabel></altlabel>
+                            <onclick>Container.SetSortDirection</onclick>
+                            <onclick>Control.setfocus(51,0,absolute)</onclick>
+                            <onclick>Control.setfocus(3223)</onclick>
+                        </control>   
                     </control>
-                    <control type="radiobutton" id="14">
-                        <description>Watched Toggle</description>
-                        <label>31195</label>
-                        <width>4-col</width>
-                        <focusedcolor>textActive</focusedcolor>
-                    </control>
-                    <control type="button" id="3">
-                        <description>Sort by</description>
-                        <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
-                    </control>
-                    <control type="togglebutton" id="4">
-                        <description>Sort direction</description>
-                        <focusedcolor>textActive</focusedcolor>
-                        <label>31109</label>
-                        <altlabel>31110</altlabel>
-                    </control>
-                    
                 </control>
 				<!--quick links-->			
 				<control type="panel" id="9103">
-	                <posx>90</posx>
+	                <posx>96</posx>
 	                <posy>288</posy>
 	                <width>1740</width>
 	                <height>11-row</height>
 					<onup>9102</onup>
 	                <ondown>51</ondown>
-	                <onleft>9000</onleft>
+	                <onleft>9103</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 	                <itemlayout width="586" height="5-col-gutter">
-	                    <control type="image">
+						<control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>566</width>
-	                        <height>318</height>
+	                        <width>552</width>
+	                        <height>311</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>colors/black.png</texture>
-	                        <bordersize>12</bordersize>
+	                        <texture scalediffuse="true" diffuse="masks/latestLandscape.png">colors/black.png</texture>
+	                        <colordiffuse>FFFFFFFF</colordiffuse>
 	                    </control>
-						<control type="image">
+                        <control type="image">
 							<visible>!string.isempty(ListItem.Art(fanart))</visible>
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>566</width>
-	                        <height>318</height>
+	                        <width>552</width>
+	                        <height>311</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>$INFO[ListItem.Art(fanart)]</texture>
-	                        <bordersize>12</bordersize>
+	                        <texture diffuse="masks/latestLandscape.png">$INFO[ListItem.Art(fanart)]</texture>
 	                        <colordiffuse>99FFFFFF</colordiffuse>
 	                    </control>
 						<control type="image">
 							<visible>string.isempty(ListItem.Art(fanart))</visible>
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>566</width>
-	                        <height>318</height>
+	                        <width>552</width>
+	                        <height>311</height>
 	                        <aspectratio>scale</aspectratio>
-	                        <texture>$INFO[ListItem.Art(thumb)]</texture>
-	                        <bordersize>6</bordersize>
+	                        <texture diffuse="masks/latestLandscape.png">$INFO[ListItem.Art(thumb)]</texture>
 	                        <colordiffuse>99ffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
@@ -133,63 +172,54 @@
 	                <focusedlayout width="586" height="5-col-gutter">
 	                    <control type="group">
 	                        <include>focusThumb</include>
-	                        <control type="image">
-	                            <posx>0</posx>
-	                            <posy>0</posy>
-	                            <width>566</width>
-	                            <height>318</height>
-	                            <aspectratio>stretch</aspectratio>
-	                            <texture>colors/black.png</texture>
-	                            <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-	                            <bordersize>6</bordersize>
-	                            <colordiffuse>FF000000</colordiffuse>
-	                        </control>
 							<control type="image">
 								<visible>!string.isempty(ListItem.Art(fanart))</visible>
 		                        <posx>0</posx>
 		                        <posy>0</posy>
-		                        <width>566</width>
-		                        <height>318</height>
+		                        <width>552</width>
+		                        <height>311</height>
 		                        <aspectratio>stretch</aspectratio>
-		                        <texture>$INFO[ListItem.Art(fanart)]</texture>
+		                        <texture diffuse="masks/latestLandscape.png">$INFO[ListItem.Art(fanart)]</texture>
+                                <bordertexture infill="false" diffuse="masks/latestLandscape.png">colors/white.png</bordertexture>
 		                        <bordersize>6</bordersize>
-		                        <colordiffuse>BBffffff</colordiffuse>
+		                        <colordiffuse>ffffffff</colordiffuse>
 		                    </control>
 							<control type="image">
 								<visible>string.isempty(ListItem.Art(fanart))</visible>
 		                        <posx>0</posx>
 		                        <posy>0</posy>
-		                        <width>566</width>
-		                        <height>318</height>
-		                        <aspectratio>scale</aspectratio>
-		                        <texture>$INFO[ListItem.Art(thumb)]</texture>
+		                        <width>552</width>
+		                        <height>311</height>
+		                        <aspectratio>stretch</aspectratio>
+		                        <texture diffuse="masks/latestLandscape.png">$INFO[ListItem.Art(thumb)]</texture>
+                                <bordertexture infill="false" diffuse="masks/latestLandscape.png">colors/white.png</bordertexture>
 		                        <bordersize>6</bordersize>
-		                        <colordiffuse>BBffffff</colordiffuse>
+		                        <colordiffuse>FFffffff</colordiffuse>
 		                    </control>
-	                        <control type="label">
-		                        <visible>!controlgroup(9000).hasfocus</visible>
-		                        <posx>12</posx>
-		                        <posy>316</posy>
-		                        <width>524</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <font>thumbTitle</font>
-		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
-								<scroll>false</scroll>
-		                    </control>
-		      				<control type="progress">
-								<visible>ListItem.IsResumable</visible>
-				                <description>Progress Bar</description>
-				                <posx>12</posx>
-				                <posy>294</posy>
-				                <width>542</width>
-				                <height>12</height>
-				                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
-				                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
-				                <info>ListItem.PercentPlayed</info>
-				            </control>
-	                    </control>
+                            <control type="label">
+    	                        <visible>!controlgroup(9000).hasfocus</visible>
+    	                        <posx>12</posx>
+    	                        <posy>306</posy>
+    	                        <width>524</width>
+    	                        <height>2-row</height>
+    	                        <aligny>center</aligny>
+    	                        <font>thumbTitle</font>
+    	                        <textcolor>textActive</textcolor>
+    	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
+    							<scroll>false</scroll>
+    	                    </control>
+    	      				<control type="progress">
+    							<visible>ListItem.IsResumable</visible>
+    			                <description>Progress Bar</description>
+    			                <posx>12</posx>
+    			                <posy>294</posy>
+    			                <width>542</width>
+    			                <height>12</height>
+    			                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
+    			                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
+    			                <info>ListItem.PercentPlayed</info>
+    			            </control>
+                        </control>
 	                </focusedlayout>
 					<content>$INFO[skin.string(movieQuickLinkValue)]</content>
 	            </control>
@@ -226,89 +256,71 @@
 					<posx>90</posx>
 					<posy>820</posy>
 					<width>1800</width>
-					<height>824</height>
+					<height>836</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>9103</onup>
 					<onback>9103</onback>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="sine">250</scrolltime>
-					<itemlayout width="300" height="430">
+					<itemlayout width="296" height="486">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-							<width>240</width>
-							<height>360</height>
-							<aspectratio>keep</aspectratio>
-							<texture>$INFO[ListItem.Art(poster)]</texture>
-							<colordiffuse>99FFFFFF</colordiffuse>
+							<width>252</width>
+							<height>378</height>
+							<aspectratio>stretch</aspectratio>
+							<texture diffuse="masks/poster.png">colors/black.png</texture>
+							<colordiffuse>FFFFFFFF</colordiffuse>
 						</control>
-						<control type="label">
+                        <control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>252</width>
+							<height>378</height>
+							<aspectratio>stretch</aspectratio>
+							<texture diffuse="masks/poster.png">$INFO[ListItem.Art(poster)]</texture>
+							<colordiffuse>88FFFFFF</colordiffuse>
+						</control>
+						<control type="textbox">
 							<visible>!controlgroup(9000).hasfocus</visible>
-							<posx></posx>
-							<posy>342</posy>
-							<width>240</width>
-							<height>2-row</height>
-							<aligny>center</aligny>
+							<posx>12</posx>
+							<posy>382</posy>
+							<width>228</width>
+							<height>60</height>
+                            <align>center</align>
+							<aligny>top</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
-						</control>
-						<control type="group">
-							<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-							<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-							<posx>204</posx>
-							<posy>18</posy>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>36</width>
-								<height>36</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>masks/newContent.png</texture>
-								<colordiffuse>highlight</colordiffuse>
-							</control>
+							<label>$INFO[ListItem.title]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout width="300" height="430">
-						<control type="group">
-							<include>focusThumb</include>
-							<control type="image">
+					<focusedlayout width="300" height="462">
+                        <control type="group">
+                            <include>focusThumb</include>
+                            <control type="image">
     							<posx>0</posx>
     							<posy>0</posy>
-    							<width>240</width>
-    							<height>360</height>
-    							<aspectratio>keep</aspectratio>
-    							<texture>$INFO[ListItem.Art(poster)]</texture>
-                                <bordertexture>colors/white.png</bordertexture>
-                                <bordersize>6</bordersize>
-    							<colordiffuse>FFFFFFFF</colordiffuse>
-							</control>
-							<control type="label">
-    							<posx></posx>
-    							<posy>336</posy>
-    							<width>240</width>
-    							<height>2-row</height>
-    							<aligny>center</aligny>
+    							<width>252</width>
+    							<height>378</height>
+    							<aspectratio>stretch</aspectratio>
+    							<texture diffuse="masks/poster.png">$INFO[ListItem.Art(poster)]</texture>
+    	                        <bordertexture infill="false" diffuse="masks/poster.png">colors/white.png</bordertexture>
+    	                        <bordersize>6</bordersize>
+    							<colordiffuse>ffffffff</colordiffuse>
+    						</control>
+    						<control type="textbox">
+    							<posx>12</posx>
+    							<posy>378</posy>
+    							<width>228</width>
+    							<height>60</height>
+                                <align>center</align>
+    							<aligny>top</aligny>
     							<font>thumbTitle</font>
     							<textcolor>textActive</textcolor>
-    							<label>[B]$INFO[ListItem.title][/B][CR]$INFO[ListItem.year]</label>
-							</control>
-							<control type="group">
-								<visible>String.IsEmpty(ListItem.PlayCount)</visible>
-    							<posx>198</posx>
-    							<posy>24</posy>
-    							<control type="image">
-    								<posx>0</posx>
-    								<posy>0</posy>
-    								<width>36</width>
-    								<height>36</height>
-    								<aspectratio>stretch</aspectratio>
-    								<texture>masks/newContent.png</texture>
-    								<colordiffuse>highlight</colordiffuse>
-    							</control>
-							</control>
-						</control>
+    							<label>$INFO[ListItem.title]</label>
+    						</control>
+                        </control>
 					</focusedlayout>
 				</control>
 			</control>

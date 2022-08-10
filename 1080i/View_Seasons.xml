@@ -29,7 +29,7 @@
 		            </animation>
                     <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
-                    <posy>row-8-begin</posy>
+                    <posy>row-7-begin</posy>
 					<control type="label">
                         <posx>0</posx>
                         <posy>4-row</posy>
@@ -63,7 +63,7 @@
 		            </animation>
                     <visible>$EXP[isSeason] + !String.Contains(container.folderpath,smb://)</visible>
                     <posx>84</posx>
-                    <posy>row-16-begin</posy>
+                    <posy>row-15-begin</posy>
                     <width>1860</width>
                     <height>13-row</height>
                     <onleft>58</onleft>
@@ -71,33 +71,24 @@
                     <orientation>horizontal</orientation>
                     <itemlayout width="4-col" height="391">
 						<control type="image">
-							<posx>-3</posx>
-							<posy>-3</posy>
-							<width>258</width>
-							<height>384</height>
-							<aspectratio>stretch</aspectratio>
-							<texture>colors/black.png</texture>
-							<bordersize>6</bordersize>
-							<colordiffuse>overlay</colordiffuse>
-						</control>
-						<control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>252</width>
                             <height>378</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <bordersize>12</bordersize>
+                            <texture diffuse="masks/seasonPoster.png">colors/black.png</texture>
+                            <bordersize>0</bordersize>
+                            <colordiffuse>ffffffff</colordiffuse>
                         </control>
-						<control type="image">
+                        <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>252</width>
                             <height>378</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>$INFO[ListItem.art(poster)]</texture>
-                            <bordersize>12</bordersize>
-                            <colordiffuse>99ffffff</colordiffuse>
+                            <texture diffuse="masks/seasonPoster.png">$INFO[ListItem.art(poster)]</texture>
+                            <bordersize>0</bordersize>
+                            <colordiffuse>88ffffff</colordiffuse>
                         </control>
 						<control type="image">
 							<visible>String.StartsWith(ListItem.label,*)</visible>
@@ -106,9 +97,9 @@
                             <width>252</width>
                             <height>378</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/black.png</texture>
-                            <bordersize>12</bordersize>
-                            <colordiffuse>99FFFFFF</colordiffuse>
+                            <texture diffuse="masks/seasonPoster.png">colors/black.png</texture>
+                            <bordersize>0</bordersize>
+                            <colordiffuse>88FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
                             <visible>ListItem.IsParentFolder</visible>
@@ -138,7 +129,7 @@
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
-                            <posy>366</posy>
+                            <posy>382</posy>
                             <width>228</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
@@ -146,54 +137,19 @@
                             <textcolor>textActive</textcolor>
                             <label fallback="31190">[B]$INFO[ListItem.label][/B][CR][COLOR textInactive]$VAR[itemDetail][/COLOR]</label>
                         </control>
-						<control type="group">
-							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-							<animation condition="true" effect="fade" end="70" time="0">conditional</animation>
-							<posx>184</posx>
-							<posy>12</posy>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>56</width>
-								<height>56</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>masks/newContent.png</texture>
-								<colordiffuse>highlight</colordiffuse>
-							</control>
-							<control type="label">
-								<posx>28</posx>
-								<posy>-4</posy>
-								<width>36</width>
-								<height>36</height>
-								<aligny>center</aligny>
-								<font>symbol</font>
-								<textcolor>textActive</textcolor>
-								<label></label>
-							</control>
-						</control>
                     </itemlayout>
                     <focusedlayout width="4-col" height="391">
                         <control type="group">
-                            <include>focusThumb</include>
-							<control type="image">
-		                        <posx>0</posx>
-		                        <posy>0</posy>
-		                        <width>252</width>
-	                            <height>378</height>
-		                        <aspectratio>stretch</aspectratio>
-		                        <texture>colors/black.png</texture>
-		                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-		                        <bordersize>6</bordersize>
-		                        <colordiffuse>FF000000</colordiffuse>
-		                    </control>                        
+                            <include>focusThumb</include>                  
 							<control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>252</width>
 	                            <height>378</height>
-                                <aspectratio aligny="top">scale</aspectratio>
-                                <texture>$INFO[ListItem.art(poster)]</texture>
-                                <bordersize>6</bordersize>
+                                <aspectratio>stretch</aspectratio>
+    							<texture diffuse="masks/seasonPoster.png">$INFO[ListItem.Art(poster)]</texture>
+    	                        <bordertexture infill="false" diffuse="masks/seasonPoster.png">colors/white.png</bordertexture>
+    	                        <bordersize>6</bordersize>
                             </control>
 							<control type="image">
 								<visible>String.StartsWith(ListItem.label,*)</visible>
@@ -202,8 +158,8 @@
 	                            <width>252</width>
 	                            <height>378</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture>colors/black.png</texture>
-	                            <bordersize>6</bordersize>
+	                            <texture diffuse="masks/seasonPoster.png">colors/black.png</texture>
+	                            <bordersize>0</bordersize>
 	                            <colordiffuse>BBFFFFFF</colordiffuse>
 	                        </control>
                             <control type="label">
@@ -242,30 +198,6 @@
 	                            <textcolor>textActive</textcolor>
 	                            <label fallback="31190">[B]$INFO[ListItem.label][/B][CR][COLOR textInactive]$VAR[itemDetail][/COLOR]</label>
 	                        </control>
-							<control type="group">
-								<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-								<posx>190</posx>
-								<posy>6</posy>
-								<control type="image">
-									<posx>0</posx>
-									<posy>0</posy>
-									<width>56</width>
-									<height>56</height>
-									<aspectratio>stretch</aspectratio>
-									<texture>masks/newContent.png</texture>
-									<colordiffuse>highlight</colordiffuse>
-								</control>
-								<control type="label">
-									<posx>28</posx>
-									<posy>-4</posy>
-									<width>36</width>
-									<height>36</height>
-									<aligny>center</aligny>
-									<font>symbol</font>
-									<textcolor>textActive</textcolor>
-									<label></label>
-								</control>
-							</control>
                         </control>
                     </focusedlayout>
                 </control>

@@ -38,8 +38,8 @@
                             <width>23-col</width>
                             <height>69</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/black.png</texture>
-                            <colordiffuse>overlay</colordiffuse>
+    						<texture border="0">masks/tvChannel.png</texture>
+    						<colordiffuse>d0000000</colordiffuse>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -92,8 +92,8 @@
                             <width>23-col</width>
                             <height>2-row</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture border="0">colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
+    						<texture border="0">masks/tvChannel.png</texture>
+    						<colordiffuse>highlight</colordiffuse>
                         </control>
                         <control type="group">
                             <animation type="focus" loop="false" reversible="false">

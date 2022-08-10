@@ -382,7 +382,7 @@ msgid "All Episodes"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Show only unwatched items:"
+msgid "Filter Unwatched"
 msgstr ""
 
 msgctxt "#31199"

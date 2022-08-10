@@ -162,7 +162,7 @@
 						<posy>0</posy>
 						<width>4-col-textbox</width>
 						<height>105</height>
-						<texture>colors/black.png</texture>
+						<texture>masks/homeMenuButton.png</texture>
 						<colordiffuse>77000000</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 					</control>
@@ -186,7 +186,7 @@
 						<posy>0</posy>
 						<width>4-col-textbox</width>
 						<height>105</height>
-						<texture>colors/white.png</texture>
+						<texture>masks/homeMenuButton.png</texture>
 						<colordiffuse>highlight</colordiffuse>
 						<aspectratio>stretch</aspectratio>
 					</control>

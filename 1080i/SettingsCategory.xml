@@ -58,7 +58,8 @@
                 <font>smallStrong</font>
                 <align>left</align>
                 <textoffsetx>12</textoffsetx>
-                <texturenofocus colordiffuse="11FFFFFF">colors/black.png</texturenofocus>
+                <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                <texturenofocus></texturenofocus>
                 <label>[B][COLOR highlight]$LOCALIZE[21417]:[/COLOR][/B] $INFO[control.getlabel(20)]</label>
                 <onclick>SettingsLevelChange</onclick>
                 <onup>3</onup>
@@ -94,8 +95,8 @@
                 <itemgap>0</itemgap>
             </control>
             <control type="button" id="7">
-                <description>Default Button</description>
                 <texturenofocus></texturenofocus>
+                <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
                 <align>left</align>
                 <textoffsetx>24</textoffsetx>
             </control>
@@ -113,6 +114,7 @@
             <control type="radiobutton" id="8">
                 <description>Default Radio Button</description>
                 <texturenofocus></texturenofocus>
+                <texturefocus>colors/white.png</texturefocus>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
@@ -129,6 +131,8 @@
                 <font>buttonTitle</font>
                 <texturefocus>colors/white.png</texturefocus>
                 <texturenofocus></texturenofocus>
+                <alttexturefocus>colors/white.png</alttexturefocus>
+                <align>left</align>
             </control>
             <control type="button" id="20">
                 <visible>false</visible>
