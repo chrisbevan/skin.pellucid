@@ -381,7 +381,7 @@ msgid "All Episodes"
 msgstr ""
 
 msgctxt "#31195"
-msgid "Unwatched Only"
+msgid "Hide Watched"
 msgstr ""
 
 msgctxt "#31199"

@@ -65,11 +65,13 @@
                             <label>31176</label>
                             <texturenofocus></texturenofocus>
                             <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
+                            <ondown>control.setfocus(9103,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
                             <label>31127</label>
                             <texturenofocus></texturenofocus>
                             <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
+                            <ondown>control.setfocus(9103,0)</ondown>
                         </control>
                         <control type="radiobutton" id="14">
                             <description>Watched Toggle</description>
@@ -160,9 +162,9 @@
 	      				<control type="progress">
 							<visible>ListItem.IsResumable</visible>
 			                <description>Progress Bar</description>
-			                <posx>12</posx>
-			                <posy>294</posy>
-			                <width>542</width>
+			                <posx>24</posx>
+			                <posy>278</posy>
+			                <width>504</width>
 			                <height>12</height>
 			                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
 			                <midtexture colordiffuse="highlight">colors/white.png</midtexture>
@@ -211,9 +213,9 @@
     	      				<control type="progress">
     							<visible>ListItem.IsResumable</visible>
     			                <description>Progress Bar</description>
-    			                <posx>12</posx>
-    			                <posy>294</posy>
-    			                <width>542</width>
+    			                <posx>24</posx>
+    			                <posy>278</posy>
+    			                <width>504</width>
     			                <height>12</height>
     			                <texturebg colordiffuse="textboxInactive">colors/offblack.png</texturebg>
     			                <midtexture colordiffuse="highlight">colors/white.png</midtexture>

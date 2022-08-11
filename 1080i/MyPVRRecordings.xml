@@ -62,7 +62,7 @@
                             <label>✓</label>
                         </control>
                         <control type="label">
-                            <posx>1-col-indent</posx>
+                            <posx>108</posx>
                             <posy>0</posy>
                             <width>15-col</width>
                             <height>2-row</height>
@@ -121,7 +121,7 @@
                             </control>
                         </control>
                         <control type="label">
-                            <posx>1-col-indent</posx>
+                            <posx>108</posx>
                             <posy>0</posy>
                             <width>15-col</width>
                             <height>2-row</height>

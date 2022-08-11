@@ -45,12 +45,12 @@
 					<control type="label">
 		                <posx>0</posx>
 		                <posy>5-row</posy>
-		                <width>12-col</width>
+		                <width>14-col</width>
 		                <height>2-row</height>
 		                <align></align>
 		                <font>itemTitle</font>
 		                <textcolor>menuUnselected</textcolor>
-		                <label>$INFO[Container(58).ListItemAbsolute(2).genre]</label>
+		                <label>$INFO[Container(58).ListItemAbsolute(1).year,,.] $INFO[Container(58).ListItemAbsolute(2).genre,,.]</label>
 		            </control>
                 </control>
                 <!--content-->

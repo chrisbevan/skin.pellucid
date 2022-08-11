@@ -23,68 +23,91 @@
 	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
 	            </animation>
 				<!--quick link selector-->
-				<control type="list" id="9123">
-	                <posx>col-1-begin</posx>
-	                <posy>180</posy>
-	                <width>24-col</width>
-	                <height>2-row</height>
-	                <onleft>9000</onleft>
-	                <ondown>9998</ondown>
-	                <onback>9000</onback>
-	                <orientation>horizontal</orientation>
-	                <itemlayout width="246" height="2-row">
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>246</width>
-	                        <height>2-row</height>
-	                        <font>menuTitle</font>
-	                        <aligny>center</aligny>
-	                        <textcolor>textDisabled</textcolor>
-	                        <shadowcolor></shadowcolor>
-	                        <label>$INFO[ListItem.property(textTitle)]</label>
-	                    </control>
-	                </itemlayout>
-	                <focusedlayout width="246" height="2-row">
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>246</width>
-	                        <height>2-row</height>
-	                        <font>menuTitle</font>
-	                        <aligny>center</aligny>
-	                        <textcolor>textActive</textcolor>
-	                        <shadowcolor></shadowcolor>
-	                        <label>$INFO[ListItem.property(textTitle)]</label>
-							<animation type="conditional" condition="control.hasfocus(9123)" loop="true">
-	                            <effect type="fade" start="100" end="50" time="1000"/>
-	                        </animation>
-	                    </control>
-	                </focusedlayout>
-	                <content>
-	                    <item>
-	                        <label>special://skin/extras/playlists/recentAlbums.xsp</label>
-	                        <property name="textTitle">31180</property>
-	                    </item>
-	                    <item>
-	                        <label>special://skin/extras/playlists/topAlbums.xsp</label>
-	                        <property name="textTitle">31187</property>
-	                    </item>
-	                    <item>
-	                        <label>special://skin/extras/playlists/randomAlbums.xsp</label>
-	                        <property name="textTitle">31181</property>
-	                    </item>
-	                </content>
-	            </control>
+                <control type="group">
+	                <posx>col-4-begin</posx>
+	                <posy>170</posy>
+    				<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>18-col</width>
+                        <height>2-row</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>masks/menuBar.png</texture>
+                        <colordiffuse>77000000</colordiffuse>
+                    </control>
+                    <control type="grouplist" id="9202">
+    	                <posx>0</posx>
+    	                <posy>0</posy>
+                        <orientation>horizontal</orientation>
+                        <itemgap>0</itemgap>
+    	                <onleft>9000</onleft>
+    	                <ondown>9998</ondown>
+    	                <onback>9000</onback>
+                		<control type="button" id="506">
+                            <description>Search</description>
+                            <visible>System.HasAddon(script.globalsearch)</visible>
+                            <width>1-col</width>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus>masks/circle.png</texturefocus>
+                            <focusedcolor>black</focusedcolor>
+                            <font>symbolLarge</font>
+                            <label></label>
+                            <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
+                        </control>            
+                        <control type="button" id="4000">
+                            <label>31180</label>
+                            <texturenofocus></texturenofocus>
+                            <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/recentAlbums.xsp)</onfocus>
+                            <ondown>control.setfocus(9998,0)</ondown>
+                        </control> 
+                        <control type="button" id="4001">
+                            <label>31187</label>
+                            <texturenofocus></texturenofocus>
+                            <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/topAlbums.xsp)</onfocus>
+                            <ondown>control.setfocus(9998,0)</ondown>
+                        </control>
+                        <control type="button" id="4002">
+                            <label>31181</label>
+                            <texturenofocus></texturenofocus>
+                            <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/randomAlbums.xsp)</onfocus>
+                            <ondown>control.setfocus(9998,0)</ondown>
+                        </control>
+                        <control type="button" id="3222">
+                            <description>Sort by</description>
+                            <texturenofocus></texturenofocus>
+                            <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
+                            <onclick>Container.NextSortMethod</onclick>
+                            <onclick>Control.setfocus(54,0,absolute)</onclick>
+                            <onclick>Control.setfocus(3222)</onclick>
+                        </control>
+                        <control type="togglebutton" id="3223">
+                            <description>Sort direction</description>
+                            <focusedcolor>black</focusedcolor>
+                            <color>textActive</color>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">masks/circle.png</texturefocus>
+                            <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
+                            <alttexturenofocus></alttexturenofocus>
+                            <textoffsetx>0</textoffsetx>
+                            <width>1-col</width>
+                            <font>symbolLarge</font>
+                            <label></label>
+                            <altlabel></altlabel>
+                            <onclick>Container.SetSortDirection</onclick>
+                            <onclick>Control.setfocus(54,0,absolute)</onclick>
+                            <onclick>Control.setfocus(3223)</onclick>
+                        </control>   
+                    </control>
+                </control>
 				<!--quick links-->			
 				<control type="panel" id="9998">
 	                <posx>90</posx>
 	                <posy>288</posy>
 	                <width>24-col</width>
 	                <height>11-row</height>
-					<onup>9123</onup>
+					<onup>9202</onup>
 	                <ondown>54</ondown>
-	                <onleft>9000</onleft>
+	                <onleft>9998</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 	                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
@@ -96,8 +119,7 @@
 	                        <width>324</width>
 	                        <height>324</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>colors/black.png</texture>
-	                        <bordersize>12</bordersize>
+	                        <texture diffuse="masks/albumThumb_2.png">colors/black.png</texture>
 	                    </control>
 						<control type="image">
 	                        <posx>0</posx>
@@ -105,20 +127,19 @@
 	                        <width>324</width>
 	                        <height>324</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                        <bordersize>12</bordersize>
-	                        <colordiffuse>99ffffff</colordiffuse>
+	                        <texture diffuse="masks/albumThumb_2.png" fallback="colors/black.png">$INFO[ListItem.Art(thumb)]</texture>
+	                        <colordiffuse>88ffffff</colordiffuse>
 	                    </control>
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
 	                        <posx>12</posx>
-	                        <posy>308</posy>
-	                        <width>276</width>
+	                        <posy>322</posy>
+	                        <width>300</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist]</label>
 	                    </control>      
 	                </itemlayout>
 	                <focusedlayout width="352" height="5-col-gutter">
@@ -130,10 +151,7 @@
 	                            <width>324</width>
 		                        <height>324</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture>colors/black.png</texture>
-	                            <bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-	                            <bordersize>6</bordersize>
-	                            <colordiffuse>FF000000</colordiffuse>
+	                            <texture diffuse="masks/albumThumb_2.png">colors/black.png</texture>
 	                        </control>
 							<control type="image">
 	                            <posx>0</posx>
@@ -141,8 +159,9 @@
 	                            <width>324</width>
 		                        <height>324</height>
 	                            <aspectratio>stretch</aspectratio>
-	                            <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                            <bordersize>6</bordersize>
+	                            <texture diffuse="masks/albumThumb_2.png" fallback="colors/black.png">$INFO[ListItem.Art(thumb)]</texture>
+                                <bordertexture infill="false" diffuse="masks/albumThumb_2.png">colors/white.png</bordertexture>
+		                        <bordersize>6</bordersize>
 	                            <colordiffuse>ffffffff</colordiffuse>
 	                        </control>
 	                        <control type="label">
@@ -158,7 +177,7 @@
 		                    </control>
 	                    </control>
 	                </focusedlayout>
-					<content>$INFO[control.getlabel(9123)]</content>
+					<content>$INFO[skin.string(musicQuickLinkValue)]</content>
 	            </control>
 			</control>
 			<!--all albums-->
@@ -190,16 +209,6 @@
 	                <pagecontrol>60</pagecontrol>
 	                <scrolltime tween="sine">250</scrolltime>
 	                <itemlayout width="293" height="360">
-	                    <control type="image">
-	                        <posx>-6</posx>
-	                        <posy>-6</posy>
-	                        <width>276</width>
-	                        <height>276</height>
-	                        <aspectratio>stretch</aspectratio>
-	                        <texture>colors/black.png</texture>
-	                        <bordersize>12</bordersize>
-							<colordiffuse>11FFFFFF</colordiffuse>
-	                    </control>
 						<control type="image">
 							<visible>!ListItem.IsParentFolder</visible>
 	                        <posx>0</posx>
@@ -207,9 +216,18 @@
 	                        <width>4-col-gutter</width>
 	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                        <bordersize>12</bordersize>
-	                        <colordiffuse>99FFFFFF</colordiffuse>
+	                        <texture diffuse="masks/albumThumb.png">colors/black.png</texture>
+	                        <colordiffuse>FFFFFFFF</colordiffuse>
+	                    </control>
+                        <control type="image">
+							<visible>!ListItem.IsParentFolder</visible>
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>4-col-gutter</width>
+	                        <height>4-col-gutter</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture fallback="colors/black.png" diffuse="masks/albumThumb.png">$INFO[ListItem.Art(thumb)]</texture>
+	                        <colordiffuse>88FFFFFF</colordiffuse>
 	                    </control>
 	                    <control type="textbox">
 	                        <visible>String.IsEmpty(listitem.title)</visible>
@@ -222,42 +240,34 @@
 	                        <textcolor>textActive</textcolor>
 	                        <label>$INFO[ListItem.label]</label>
 	                    </control>
-	                    <control type="label">
+	                    <control type="textbox">
 	                        <visible>!controlgroup(9000).hasfocus</visible>
-	                        <posx>12</posx>
-	                        <posy>258</posy>
-	                        <width>226</width>
-	                        <height>2-row</height>
-	                        <aligny>center</aligny>
+	                        <posx></posx>
+	                        <posy>270</posy>
+	                        <width>264</width>
+	                        <height>60</height>
+                            <align>center</align>
+	                        <aligny>top</aligny>
 	                        <font>thumbTitle</font>
 	                        <textcolor>textActive</textcolor>
-	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
+	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist]</label>
 	                    </control>
 	                </itemlayout>
 	                <focusedlayout width="4-col" height="360">
 	                    <control type="group">
 	                        <include>focusThumb</include>
-	                        <control type="image">
-		                        <posx>0</posx>
-		                        <posy>0</posy>
-		                        <width>4-col-gutter</width>
-		                        <height>4-col-gutter</height>
-		                        <aspectratio>stretch</aspectratio>
-		                        <texture>colors/black.png</texture>
-		                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-		                        <bordersize>6</bordersize>
-		                        <colordiffuse>FF000000</colordiffuse>
-		                    </control>
-							<control type="image">
-								<visible>!ListItem.IsParentFolder</visible>
+                            <control type="image">
+                                <visible>!ListItem.IsParentFolder</visible>
 	                            <posx>0</posx>
 	                            <posy>0</posy>
 	                            <width>4-col-gutter</width>
 	                            <height>4-col-gutter</height>
-	                            <aspectratio>stretch</aspectratio>
-	                            <texture fallback="noAlbumCover.jpg">$INFO[ListItem.Art(thumb)]</texture>
-	                            <bordersize>6</bordersize>
-	                        </control>
+    							<aspectratio>stretch</aspectratio>
+    							<texture fallback="colors/black.png" diffuse="masks/albumThumb.png">$INFO[ListItem.Art(thumb)]</texture>
+    	                        <bordertexture infill="false" diffuse="masks/albumThumb.png">colors/white.png</bordertexture>
+    	                        <bordersize>6</bordersize>
+    							<colordiffuse>ffffffff</colordiffuse>
+    						</control>
 		                    <control type="textbox">
 		                        <visible>String.IsEmpty(listitem.title)</visible>
 		                        <posx>24</posx>
@@ -269,17 +279,18 @@
 		                        <textcolor>textActive</textcolor>
 		                        <label>$INFO[ListItem.label]</label>
 		                    </control>
-	                        <control type="label">
-		                        <visible>!controlgroup(9000).hasfocus</visible>
-		                        <posx>12</posx>
-		                        <posy>262</posy>
-		                        <width>226</width>
-		                        <height>2-row</height>
-		                        <aligny>center</aligny>
-		                        <font>thumbTitle</font>
-		                        <textcolor>textActive</textcolor>
-		                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist] - $INFO[listitem.year]</label>
-		                    </control>
+    	                    <control type="textbox">
+    	                        <visible>!controlgroup(9000).hasfocus</visible>
+    	                        <posx></posx>
+    	                        <posy>270</posy>
+    	                        <width>264</width>
+    	                        <height>60</height>
+                                <align>center</align>
+    	                        <aligny>top</aligny>
+    	                        <font>thumbTitle</font>
+    	                        <textcolor>textActive</textcolor>
+    	                        <label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.artist]</label>
+    	                    </control>
 	                    </control>
 	                </focusedlayout>
 	            </control>

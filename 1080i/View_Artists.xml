@@ -4,39 +4,96 @@
     <include name="musicartist">
         <control type="group">
 			<visible>$EXP[isMusicArtist]</visible>
+			<!--quick link selector-->
+            <control type="group">
+                <posx>col-4-begin</posx>
+                <posy>170</posy>
+				<control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>18-col</width>
+                    <height>2-row</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>masks/menuBar.png</texture>
+                    <colordiffuse>77000000</colordiffuse>
+                </control>
+                <control type="grouplist" id="9202">
+	                <posx>0</posx>
+	                <posy>0</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+	                <onleft>9000</onleft>
+	                <ondown>9998</ondown>
+	                <onback>9000</onback>
+            		<control type="button" id="506">
+                        <description>Search</description>
+                        <visible>System.HasAddon(script.globalsearch)</visible>
+                        <width>1-col</width>
+                        <texturenofocus></texturenofocus>
+                        <texturefocus>masks/circle.png</texturefocus>
+                        <focusedcolor>black</focusedcolor>
+                        <font>symbolLarge</font>
+                        <label></label>
+                        <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
+                    </control>            
+                    <control type="button" id="3222">
+                        <description>Sort by</description>
+                        <texturenofocus></texturenofocus>
+                        <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
+                        <onclick>Container.NextSortMethod</onclick>
+                        <onclick>Control.setfocus(51,0,absolute)</onclick>
+                        <onclick>Control.setfocus(3222)</onclick>
+                    </control>
+                    <control type="togglebutton" id="3223">
+                        <description>Sort direction</description>
+                        <focusedcolor>black</focusedcolor>
+                        <color>textActive</color>
+                        <texturenofocus></texturenofocus>
+                        <texturefocus colordiffuse="ffffffff">masks/circle.png</texturefocus>
+                        <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
+                        <alttexturenofocus></alttexturenofocus>
+                        <textoffsetx>0</textoffsetx>
+                        <width>1-col</width>
+                        <font>symbolLarge</font>
+                        <label></label>
+                        <altlabel></altlabel>
+                        <onclick>Container.SetSortDirection</onclick>
+                        <onclick>Control.setfocus(51,0,absolute)</onclick>
+                        <onclick>Control.setfocus(3223)</onclick>
+                    </control>   
+                </control>
+            </control>
             <!--content-->
             <control type="panel" id="51">
                 <visible>$EXP[isMusicArtist]</visible>
                 <posx>90</posx>
-	            <posy>row-5-begin</posy>
+	            <posy>row-7-begin</posy>
 	            <width>1800</width>
 	            <height>25-row</height>
 	            <onleft>9000</onleft>
 	            <onright>60</onright>
 	            <ondown>51</ondown>
 	            <onup>51</onup>
+                <onback>9202</onback>
 	            <scrolltime tween="sine">250</scrolltime>
 	            <pagecontrol>60</pagecontrol>
-	            <itemlayout width="444" height="288">
+	            <itemlayout width="444" height="266">
 	                <control type="image">
 	                    <posx>0</posx>
 	                    <posy>0</posy>
-	                    <width>6-col-gutter</width>
-	                    <height>4-col-gutter</height>
-	                    <aspectratio>scale</aspectratio>
-	                    <texture>colors/black.png</texture>
-	                    <bordersize>12</bordersize>
-	                    <colordiffuse>overlay</colordiffuse>
+	                    <width>408</width>
+	                    <height>230</height>
+	                    <aspectratio>stretch</aspectratio>
+	                    <texture diffuse="masks/artistThumb.png">colors/black.png</texture>
 	                </control>
 	                <control type="image">
 	                    <posx>0</posx>
 	                    <posy>0</posy>
-	                    <width>6-col-gutter</width>
-	                    <height>4-col-gutter</height>
-	                    <aspectratio align="center" aligny="top">scale</aspectratio>
-	                    <texture>$INFO[Listitem.art(thumb)]</texture>
-	                    <bordersize>12</bordersize>
-						<colordiffuse>99FFFFFF</colordiffuse>
+	                    <width>408</width>
+	                    <height>230</height>
+	                    <aspectratio align="center" aligny="top">stretch</aspectratio>
+	                    <texture diffuse="masks/artistThumb.png">$INFO[Listitem.art(fanart)]</texture>
+						<colordiffuse>88FFFFFF</colordiffuse>
 	                </control>
 	                <control type="textbox">
 	                    <posx>24</posx>
@@ -51,27 +108,25 @@
 						<shadowcolor>bb000000</shadowcolor>
 	                </control>
 	            </itemlayout>
-	            <focusedlayout width="444" height="264">
+	            <focusedlayout width="444" height="266">
 	                <control type="group">
 	                    <include>focusThumb</include>
 						<control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>6-col-gutter</width>
-	                        <height>4-col-gutter</height>
-	                        <aspectratio>scale</aspectratio>
-	                        <texture border="6">colors/black.png</texture>
-	                        <bordertexture border="6" colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-	                        <bordersize>6</bordersize>
-	                        <colordiffuse>FF000000</colordiffuse>
+    	                    <width>408</width>
+    	                    <height>230</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture diffuse="masks/artistThumb.png">colors/black.png</texture>
 	                    </control>
 	                    <control type="image">
 	                        <posx>0</posx>
 	                        <posy>0</posy>
-	                        <width>6-col-gutter</width>
-	                        <height>4-col-gutter</height>
-	                        <aspectratio align="center" aligny="top">scale</aspectratio>
-	                        <texture>$INFO[Listitem.art(thumb)]</texture>
+    	                    <width>408</width>
+    	                    <height>230</height>
+	                        <aspectratio align="center" aligny="top">stretch</aspectratio>
+	                        <texture diffuse="masks/artistThumb.png">$INFO[Listitem.art(fanart)]</texture>
+                            <bordertexture infill="false" diffuse="masks/albumThumb_2.png">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>
 	                    </control>
 	                    <control type="textbox">

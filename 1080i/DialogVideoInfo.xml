@@ -251,10 +251,8 @@
                     <posy>0</posy>
                     <width>12-col</width>
                     <height>486</height>
-                    <aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-                    <texture fallback="colors/black.png">$INFO[Listitem.thumb]</texture>
-                    <bordertexture colordiffuse="11ffffff">colors/white.png</bordertexture>
-                    <bordersize>6</bordersize>
+                    <aspectratio aligny="top">stretch</aspectratio>
+                    <texture fallback="colors/black.png" diffuse="masks/episodeThumb.png">$INFO[Listitem.thumb]</texture>
                 </control>
             </control>
             <!--content-->
@@ -295,7 +293,7 @@
                         <aligny>center</aligny>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label fallback="13205">$INFO[listitem.duration]    [COLOR textboxInactive]$INFO[listitem.filename][/COLOR]</label>
+                        <label fallback="13205">$INFO[ListItem.duration(H)]hr $INFO[ListItem.duration(MM)]min    [COLOR textboxInactive]$INFO[listitem.filename][/COLOR]</label>
                     </control>
                 </control>
                 <!--synopsis-->

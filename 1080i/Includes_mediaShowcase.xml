@@ -73,22 +73,18 @@
                 <posx>0</posx>
                 <width>504</width>
                 <height>756</height>
-                <texture>$INFO[listitem.art(poster)]</texture>
+                <texture diffuse="masks/showcasePoster.png">$INFO[listitem.art(poster)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(ListItem.art(fanart))</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[listitem.art(fanart)]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[listitem.art(fanart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="panel" id="50">
                 <posx>180</posx>
@@ -103,9 +99,7 @@
                         <width>300</width>
                         <height>300</height>
                         <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture border="0" fallback="colors/offblack.png">$INFO[listitem.thumb]</texture>
-                        <bordertexture border="3">colors/white.png</bordertexture>
-                        <bordersize>3</bordersize>
+                        <texture fallback="colors/offblack.png" diffuse="masks/showcaseCast.png">$INFO[listitem.thumb]</texture>
                         <colordiffuse>ffFFFFFF</colordiffuse>
                     </control>
                     <control type="group">
@@ -137,18 +131,16 @@
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(0).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[container(99999).ListItemNoWrap(0).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(listitem.art(discart))</visible>
                 <width>756</width>
                 <height>756</height>
-                <texture>$INFO[listitem.art(discart)]</texture>
+                <texture diffuse="masks/showcaseDiscart.png">$INFO[listitem.art(discart)]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -157,44 +149,36 @@
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(1).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[container(99999).ListItemNoWrap(1).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(2).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[container(99999).ListItemNoWrap(2).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(3).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[container(99999).ListItemNoWrap(3).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
             <control type="image">
                 <posx>2-col</posx>
                 <visible>!String.IsEmpty(container(99999).ListItemNoWrap(4).filenameandpath) + !Skin.HasSetting(disableExtendedFanart)</visible>
                 <width>1344</width>
                 <height>756</height>
-                <texture>$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
+                <texture diffuse="masks/showcaseFanart.png">$INFO[container(99999).ListItemNoWrap(4).filenameandpath,,]</texture>
                 <colordiffuse>ffffffff</colordiffuse>
                 <aspectratio>stretch</aspectratio>
-                <bordertexture border="3">colors/white.png</bordertexture>
-                <bordersize>3</bordersize>
             </control>
         </control>
 

@@ -13,21 +13,21 @@
             <ondown>55</ondown>
             <onup>55</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout width="8-col" height="2-row">
+            <itemlayout width="8-col" height="84">
                 <control type="image">
                     <posx>0</posx>
-                    <posy>3</posy>
-                    <width>66</width>
-                    <height>66</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-					<colordiffuse>overlay</colordiffuse>
+                    <posy>0</posy>
+                    <width>552</width>
+                    <height>72</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture diffuse="masks/genre.png">colors/white.png</texture>
+                    <colordiffuse>d0000000</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>1-col-indent</posx>
+                    <posx>48</posx>
                     <posy>0</posy>
-                    <width>6-col</width>
-                    <height>2-row</height>
+                    <width>432</width>
+                    <height>72</height>
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
@@ -35,33 +35,21 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </itemlayout>
-            <focusedlayout width="8-col" height="2-row">
-                <control type="image">
-                    <posx>1-col</posx>
-                    <posy>0</posy>
-                    <width>7-col-gutter</width>
-                    <height>2-row</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                </control>
+            <focusedlayout width="8-col" height="84">
                 <control type="image">
                     <posx>0</posx>
-                    <posy>3</posy>
-                    <width>66</width>
-                    <height>66</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                    <animation type="focus" loop="false" reversible="false">
-                        <effect type="fade" time="500"/>
-                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                    </animation>
+                    <posy>0</posy>
+                    <width>552</width>
+                    <height>72</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture diffuse="masks/genre.png">colors/white.png</texture>
+                    <colordiffuse>highlight</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>1-col-indent</posx>
+                    <posx>48</posx>
                     <posy>0</posy>
-                    <width>6-col</width>
-                    <height>2-row</height>
+                    <width>432</width>
+                    <height>72</height>
                     <aligny>center</aligny>
                     <font>itemTitle</font>
                     <textcolor>textActive</textcolor>
