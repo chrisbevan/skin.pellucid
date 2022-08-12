@@ -96,7 +96,7 @@
                             <onclick>Container.SetSortDirection</onclick>
                             <onclick>Control.setfocus(54,0,absolute)</onclick>
                             <onclick>Control.setfocus(3223)</onclick>
-                        </control>   
+                        </control>
                     </control>
                 </control>
 				<!--quick links-->			

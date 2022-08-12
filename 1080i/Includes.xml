@@ -297,11 +297,6 @@
             </control>
         </control>
     </include>
-
-	<!--touchscreen screen edge controls-->
-	<include name="touchscreenControls">
-		
-	</include>
 	
    <!--debugging-->
     <include name="DialogID">

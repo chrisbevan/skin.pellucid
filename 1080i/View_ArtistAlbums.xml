@@ -55,6 +55,18 @@
                         <label>$INFO[container.foldername]</label>
                     </control>
 					<control type="label">
+                        <visible>Integer.IsGreater(container(52).numitems,1)</visible>
+		                <posx>0</posx>
+		                <posy>5-row</posy>
+		                <width>12-col</width>
+		                <height>2-row</height>
+		                <align></align>
+		                <font>menuTitle</font>
+		                <textcolor>textActive</textcolor>
+		                <label>$INFO[Container(52).ListItemAbsolute(1).genre]</label>
+		            </control>
+					<control type="label">
+                        <visible>!Integer.IsGreater(container(52).numitems,1)</visible>
 		                <posx>0</posx>
 		                <posy>5-row</posy>
 		                <width>12-col</width>
@@ -85,14 +97,12 @@
 					<scrolltime tween="cubic" easing="out">600</scrolltime>
 					<itemlayout width="300" height="348">
 	                    <control type="image">
-	                        <posx>-6</posx>
-	                        <posy>-6</posy>
-	                        <width>276</width>
-	                        <height>276</height>
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>4-col-gutter</width>
+	                        <height>4-col-gutter</height>
 	                        <aspectratio>stretch</aspectratio>
-	                        <texture>colors/black.png</texture>
-	                        <bordersize>12</bordersize>
-							<colordiffuse>11FFFFFF</colordiffuse>
+	                        <texture diffuse="masks/albumThumb.png">colors/black.png</texture>
 	                    </control>
 						<control type="image">
 							<posx>0</posx>
@@ -100,9 +110,8 @@
 							<width>4-col-gutter</width>
 							<height>4-col-gutter</height>
 							<aspectratio>stretch</aspectratio>
-							<texture>$INFO[ListItem.Art(thumb)]</texture>
-							<bordersize>12</bordersize>
-							<colordiffuse>99FFFFFF</colordiffuse>
+							<texture diffuse="masks/albumThumb.png">$INFO[ListItem.Art(thumb)]</texture>
+							<colordiffuse>88FFFFFF</colordiffuse>
 						</control>
 						<control type="textbox">
 							<visible>String.IsEmpty(listitem.title)</visible>
@@ -115,16 +124,17 @@
 							<textcolor>textActive</textcolor>
 							<label>$INFO[ListItem.label]</label>
 						</control>
-						<control type="label">
+						<control type="textbox">
 							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
 							<posy>268</posy>
 							<width>240</width>
-							<height>1-row</height>
-							<aligny>center</aligny>
+							<height>60</height>
+                            <align>center</align>
+							<aligny>top</aligny>
 							<font>thumbTitle</font>
 							<textcolor>textActive</textcolor>
-							<label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
+							<label>$INFO[ListItem.Title]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout width="4-col" height="348">
@@ -136,19 +146,10 @@
 								<width>4-col-gutter</width>
 								<height>4-col-gutter</height>
 								<aspectratio>stretch</aspectratio>
-								<texture>colors/black.png</texture>
-								<bordertexture colordiffuse="ffFFFFFF">colors/white.png</bordertexture>
-								<bordersize>6</bordersize>
-								<colordiffuse>FF000000</colordiffuse>
-							</control>
-							<control type="image">
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>4-col-gutter</width>
-								<height>4-col-gutter</height>
-								<aspectratio>stretch</aspectratio>
-								<texture>$INFO[ListItem.Art(thumb)]</texture>
-								<bordersize>6</bordersize>
+    							<aspectratio>stretch</aspectratio>
+    							<texture fallback="colors/black.png" diffuse="masks/albumThumb.png">$INFO[ListItem.Art(thumb)]</texture>
+    	                        <bordertexture infill="false" diffuse="masks/albumThumb.png">colors/white.png</bordertexture>
+    	                        <bordersize>6</bordersize>
 							</control>
 							<control type="textbox">
 								<visible>String.IsEmpty(listitem.title)</visible>
@@ -161,16 +162,17 @@
 								<textcolor>textActive</textcolor>
 								<label>$INFO[ListItem.label]</label>
 							</control>
-							<control type="label">
+							<control type="textbox">
 								<visible>!controlgroup(9000).hasfocus</visible>
 								<posx>12</posx>
-								<posy>280</posy>
+								<posy>268</posy>
 								<width>240</width>
-								<height>1-row</height>
-								<aligny>center</aligny>
+								<height>60</height>
+                                <align>center</align>
+								<aligny>top</aligny>
 								<font>thumbTitle</font>
 								<textcolor>textActive</textcolor>
-								<label>[B]$INFO[ListItem.Title][/B][CR]$INFO[ListItem.year]</label>
+								<label>$INFO[ListItem.Title]</label>
 							</control>
 						</control>
 					</focusedlayout>

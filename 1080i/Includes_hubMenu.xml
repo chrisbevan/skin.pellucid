@@ -171,7 +171,6 @@
                 <width>col-5-begin</width>
                 <height>832</height>
                 <orientation>vertical</orientation>
-                <onleft condition="!window.isactive(home)">activateWindow(contextmenu)</onleft>
                 <onright condition="!window.isactive(1103)">9999</onright>
                 <onright condition="window.isactive(1103)">9876</onright>
                 <onup condition="control.isvisible(5115)">control.setfocus(5115)</onup>
