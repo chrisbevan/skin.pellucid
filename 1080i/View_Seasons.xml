@@ -129,7 +129,7 @@
                         <control type="label">
                             <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
                             <posx>12</posx>
-                            <posy>382</posy>
+                            <posy>388</posy>
                             <width>228</width>
                             <height>2-row</height>
                             <aligny>center</aligny>
@@ -190,7 +190,7 @@
                             <control type="label">
 	                            <visible>!controlgroup(9000).hasfocus + !ListItem.IsParentFolder</visible>
 	                            <posx>12</posx>
-	                            <posy>376</posy>
+	                            <posy>388</posy>
 	                            <width>228</width>
 	                            <height>2-row</height>
 	                            <aligny>center</aligny>

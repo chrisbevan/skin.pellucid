@@ -127,7 +127,7 @@
 						<control type="textbox">
 							<visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
-							<posy>268</posy>
+							<posy>274</posy>
 							<width>240</width>
 							<height>60</height>
                             <align>center</align>
@@ -165,7 +165,7 @@
 							<control type="textbox">
 								<visible>!controlgroup(9000).hasfocus</visible>
 								<posx>12</posx>
-								<posy>268</posy>
+								<posy>274</posy>
 								<width>240</width>
 								<height>60</height>
                                 <align>center</align>

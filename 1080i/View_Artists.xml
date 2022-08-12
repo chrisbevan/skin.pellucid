@@ -67,7 +67,7 @@
             <control type="panel" id="51">
                 <visible>$EXP[isMusicArtist]</visible>
                 <posx>90</posx>
-	            <posy>row-7-begin</posy>
+	            <posy>276</posy>
 	            <width>1800</width>
 	            <height>25-row</height>
 	            <onleft>9000</onleft>
@@ -77,7 +77,7 @@
                 <onback>9202</onback>
 	            <scrolltime tween="sine">250</scrolltime>
 	            <pagecontrol>60</pagecontrol>
-	            <itemlayout width="444" height="266">
+	            <itemlayout width="444" height="260">
 	                <control type="image">
 	                    <posx>0</posx>
 	                    <posy>0</posy>

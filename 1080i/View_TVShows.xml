@@ -152,7 +152,7 @@
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus + String.IsEqual(skin.string(tvQuickLinkValue),special://skin/extras/playlists/recentEpisodes.xsp)</visible>
 	                        <posx>12</posx>
-	                        <posy>306</posy>
+	                        <posy>312</posy>
 	                        <width>524</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
@@ -163,7 +163,7 @@
 	                    <control type="label">
 	                        <visible>!controlgroup(9000).hasfocus + String.IsEqual(skin.string(tvQuickLinkValue),special://skin/extras/playlists/inprogressTVShows.xsp)</visible>
 	                        <posx>12</posx>
-	                        <posy>306</posy>
+	                        <posy>312</posy>
 	                        <width>524</width>
 	                        <height>2-row</height>
 	                        <aligny>center</aligny>
@@ -213,7 +213,7 @@
     	                    <control type="label">
     	                        <visible>!controlgroup(9000).hasfocus + String.IsEqual(skin.string(tvQuickLinkValue),special://skin/extras/playlists/recentEpisodes.xsp)</visible>
     	                        <posx>12</posx>
-    	                        <posy>306</posy>
+    	                        <posy>312</posy>
     	                        <width>524</width>
     	                        <height>2-row</height>
     	                        <aligny>center</aligny>
@@ -224,7 +224,7 @@
     	                    <control type="label">
     	                        <visible>!controlgroup(9000).hasfocus + String.IsEqual(skin.string(tvQuickLinkValue),special://skin/extras/playlists/inprogressTVShows.xsp)</visible>
     	                        <posx>12</posx>
-    	                        <posy>306</posy>
+    	                        <posy>312</posy>
     	                        <width>524</width>
     	                        <height>2-row</height>
     	                        <aligny>center</aligny>
@@ -299,7 +299,7 @@
 					<control type="textbox">
 						<visible>!controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
-						<posy>382</posy>
+						<posy>388</posy>
 						<width>228</width>
 						<height>60</height>
                         <align>center</align>
@@ -326,7 +326,7 @@
 						<control type="textbox">
                             <visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>
-							<posy>378</posy>
+							<posy>388</posy>
 							<width>228</width>
 							<height>60</height>
                             <align>center</align>

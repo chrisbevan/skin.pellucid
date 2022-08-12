@@ -94,15 +94,6 @@
                 </control>
             </control>
             <!--options-->
-            <control type="image">
-                <posx>4-col</posx>
-                <posy>2-row</posy>
-                <width>14-col</width>
-                <height>624</height>
-                <texture>colors/black.png</texture>
-                <colordiffuse>overlay</colordiffuse>
-                <aspectratio>stretch</aspectratio>
-            </control>
             <control type="grouplist" id="200">
                 <posx>4-col</posx>
                 <posy>84</posy>
@@ -116,6 +107,8 @@
                     <description>Stop video on return to menu</description>
                     <width>14-col</width>
                     <label>31138</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(stopVideoOnMenu)</onclick>
                     <selected>Skin.HasSetting(stopVideoOnMenu)</selected>
                 </control>
@@ -129,6 +122,8 @@
                     <label2>$INFO[Skin.String(homeBackground)]</label2>
                     <onclick>Skin.SetPath(homeBackground)</onclick>
                     <textwidth>8-col</textwidth>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                 </control>
                 <control type="button" id="3">
                     <visible>Container(8000).Hasfocus(1)</visible>
@@ -139,6 +134,8 @@
                     <label>31122</label>
                     <onclick>Skin.Reset(homeBackground)</onclick>
                     <textwidth>8-col</textwidth>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                 </control>
 
                 <control type="radiobutton" id="1">
@@ -146,6 +143,8 @@
                     <description>Reverse power down options</description>
                     <width>14-col</width>
                     <label>31142</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(exitFirst)</onclick>
                     <selected>Skin.HasSetting(exitFirst)</selected>
                 </control>
@@ -154,6 +153,8 @@
                     <description>Enable Debug Grid</description>
                     <width>14-col</width>
                     <label>31034</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(DebugGrid)</onclick>
                     <selected>Skin.HasSetting(DebugGrid)</selected>
                 </control>
@@ -162,6 +163,8 @@
                     <description>Disable Debug Info</description>
                     <width>14-col</width>
                     <label>31035</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(DebugInfo)</onclick>
                     <selected>Skin.HasSetting(DebugInfo)</selected>
                 </control>
@@ -172,6 +175,8 @@
                     <align>left</align>
                     <textoffsetx>24</textoffsetx>
                     <label>31043</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>ReloadSkin()</onclick>
                     <onclick>activateWindow(home)</onclick>
                 </control>
@@ -180,6 +185,8 @@
                     <description>Disable fanart animation effect</description>
                     <width>14-col</width>
                     <label>31102</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(lowPowerMode)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <selected>Skin.HasSetting(lowPowerMode)</selected>
@@ -189,6 +196,8 @@
                     <description>Extended Fanart</description>
                     <width>14-col</width>
                     <label>31220</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(disableExtendedFanart)</onclick>
                     <selected>Skin.HasSetting(disableExtendedFanart)</selected>
                 </control>
@@ -197,6 +206,8 @@
                     <description>Disable recently added Movies</description>
                     <width>14-col</width>
                     <label>31238</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(disableRecentMovies)</onclick>
                     <selected>Skin.HasSetting(disableRecentMovies)</selected>
                 </control>
@@ -205,6 +216,8 @@
                     <description>Disable recently added TVShows</description>
                     <width>14-col</width>
                     <label>31239</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(disableRecentTVShows)</onclick>
                     <selected>Skin.HasSetting(disableRecentTVShows)</selected>
                 </control>
@@ -213,6 +226,8 @@
                     <description>Disable recently added Albums</description>
                     <width>14-col</width>
                     <label>31240</label>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
                     <onclick>Skin.ToggleSetting(disableRecentAlbums)</onclick>
                     <selected>Skin.HasSetting(disableRecentAlbums)</selected>
                 </control>

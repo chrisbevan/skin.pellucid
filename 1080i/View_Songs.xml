@@ -71,7 +71,7 @@
 					<width>1-col-textbox</width>
 					<height>69</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/black.png</texture>
+					<texture diffuse="masks/circle.png">colors/black.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>textboxInactive</colordiffuse>
 				</control>
@@ -88,7 +88,7 @@
 					<width>1-col-textbox</width>
 					<height>2-row</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/white.png</texture>
+					<texture diffuse="masks/circle.png">colors/white.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>highlight</colordiffuse>
 				</control>
@@ -129,10 +129,10 @@
 				<control type="image">
 					<posx>1-col</posx>
 					<posy>0</posy>
-					<width>12-col-textbox</width>
+					<width>861</width>
 					<height>69</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/black.png</texture>
+					<texture diffuse="masks/songList1.png">colors/black.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>textboxInactive</colordiffuse>
 				</control>
@@ -143,10 +143,24 @@
 					<visible>ListItem.IsPlaying</visible>
 					<posx>1-col</posx>
 					<posy>0</posy>
-					<width>15-col</width>
-					<height>2-row</height>
+					<width>861</width>
+					<height>69</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/white.png</texture>
+					<texture diffuse="masks/songList1.png">colors/white.png</texture>
+					<bordersize>0</bordersize>
+					<colordiffuse>highlight</colordiffuse>
+				</control>
+				<control type="image">
+					<animation type="conditional" condition="player.paused">
+						<effect type="fade" start="100" end="50" time="0"/>
+					</animation>
+					<visible>ListItem.IsPlaying</visible>
+					<posx>13-col</posx>
+					<posy>0</posy>
+					<width>141</width>
+					<height>71</height>
+					<aspectratio>stretch</aspectratio>
+					<texture diffuse="masks/songList2.png">colors/white.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>highlight</colordiffuse>
 				</control>
@@ -154,16 +168,16 @@
 					<visible>!ListItem.IsPlaying</visible>
 					<posx>13-col</posx>
 					<posy>0</posy>
-					<width>2-col-textbox</width>
+					<width>141</width>
 					<height>69</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/black.png</texture>
+					<texture diffuse="masks/songList2.png">colors/black.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>textboxInactive</colordiffuse>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsParentFolder</visible>
-					<posx>1-col-indent</posx>
+					<posx>108</posx>
 					<posy>0</posy>
 					<width>11-col-gutter</width>
 					<height>2-row</height>
@@ -174,7 +188,7 @@
 					<label>..</label>
 				</control>
 				<control type="label">
-					<posx>1-col-indent</posx>
+					<posx>108</posx>
 					<posy>0</posy>
 					<width>11-col-gutter</width>
 					<height>2-row</height>
@@ -183,19 +197,6 @@
 					<textcolor>textActive</textcolor>
 					<shadowcolor/>
 					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="label">
-					<visible>!ListItem.IsParentFolder</visible>
-					<posx>12-col-gutter</posx>
-					<posy>0</posy>
-					<width>1-col</width>
-					<height>2-row</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor/>
-					<label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
 				</control>
 				<control type="label">
 					<posx>13-col-indent</posx>
@@ -220,7 +221,7 @@
 					<width>1-col-textbox</width>
 					<height>2-row</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/white.png</texture>
+					<texture diffuse="masks/circle.png">colors/white.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>highlight</colordiffuse>
 					<include>spinFocusIcon</include>
@@ -231,7 +232,7 @@
 					<posy>0</posy>
 					<width>1-col-gutter</width>
 					<height>1-col-gutter</height>
-					<texture>equaliser.gif</texture>
+					<texture diffuse="masks/circle.png">equaliser.gif</texture>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsPlaying + player.paused</visible>
@@ -265,16 +266,29 @@
 					</animation>
 					<posx>1-col</posx>
 					<posy>0</posy>
-					<width>15-col</width>
-					<height>2-row</height>
+					<width>861</width>
+					<height>69</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>colors/white.png</texture>
+					<texture diffuse="masks/songList1.png">colors/white.png</texture>
+					<bordersize>0</bordersize>
+					<colordiffuse>highlight</colordiffuse>
+				</control>
+				<control type="image">
+					<animation type="condition" condition="player.playing">
+						<effect type="fade" start="100" end="33" time="0"/>
+					</animation>
+					<posx>13-col</posx>
+					<posy>0</posy>
+					<width>141</width>
+					<height>71</height>
+					<aspectratio>stretch</aspectratio>
+					<texture diffuse="masks/songList2.png">colors/white.png</texture>
 					<bordersize>0</bordersize>
 					<colordiffuse>highlight</colordiffuse>
 				</control>
 				<control type="label">
 					<visible>ListItem.IsParentFolder</visible>
-					<posx>1-col-indent</posx>
+					<posx>108</posx>
 					<posy>0</posy>
 					<width>11-col-gutter</width>
 					<height>2-row</height>
@@ -285,7 +299,7 @@
 					<label>..</label>
 				</control>
 				<control type="label">
-					<posx>1-col-indent</posx>
+					<posx>108</posx>
 					<posy>0</posy>
 					<width>11-col-gutter</width>
 					<height>2-row</height>
@@ -294,19 +308,6 @@
 					<textcolor>textActive</textcolor>
 					<shadowcolor/>
 					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="label">
-					<visible>!ListItem.IsParentFolder</visible>
-					<posx>12-col-gutter</posx>
-					<posy>0</posy>
-					<width>1-col</width>
-					<height>2-row</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor/>
-					<label fallback="•••">$INFO[ListItem.UserRating,,*]</label>
 				</control>
 				<control type="label">
 					<posx>13-col-indent</posx>
