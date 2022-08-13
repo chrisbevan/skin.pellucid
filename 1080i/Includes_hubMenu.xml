@@ -110,7 +110,7 @@
                             <width>66</width>
                             <height>66</height>
                             <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
+                            <texture diffuse="masks/square.png">colors/white.png</texture>
                             <colordiffuse>highlight</colordiffuse>
                         </control>
                         <control type="label">

@@ -4,32 +4,13 @@
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
-		<control type="label">
-			<visible>integer.IsGreater(Container(996).NumItems,0)</visible>
-			<posx>552</posx>
-			<posy>5-row</posy>
-			<width>12-col</width>
-			<height>2-row</height>
-			<font>pageTitle</font>
-			<textcolor>textActive</textcolor>
-			<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $INFO[listitem.title]</label>
-		</control>
-		<control type="label">
-			<visible>!integer.IsGreater(Container(996).NumItems,0)</visible>
-			<posx>552</posx>
-			<posy>5-row</posy>
-			<width>12-col</width>
-			<height>2-row</height>
-			<font>pageTitle</font>
-			<textcolor>textActive</textcolor>
-			<label>[COLOR highlight]$LOCALIZE[31179][/COLOR] $INFO[container(996).content]</label>
-		</control>
 		<control type="grouplist" id="996">
-            <posx>col-7-begin</posx>
-            <posy>8-row</posy>
+            <posx>col-9-begin</posx>
+            <posy>6-row</posy>
+            <width>8-col</width>
             <itemgap>0</itemgap>
 			<onright>9004</onright>
-			<height>16-row</height>
+			<height>18-row</height>
         </control>
 		<control type="group">
 			<control type="grouplist" id="9004">
@@ -37,7 +18,7 @@
 				<posx>col-7-begin</posx>
 	            <posy>8-row</posy>
 	            <itemgap>0</itemgap>
-	            <width>12-col</width>
+	            <width>8-col</width>
 	            <height>16-row</height>
 	            <itemgap>0</itemgap>
 				<onleft>996</onleft>
@@ -49,9 +30,13 @@
 	        </control>
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
-	            <texturefocus colordiffuse="highlight">colors/white.png</texturefocus>
+                <texturenofocus colordiffuse="d0000000" diffuse="masks/contextMenu.png">colors/black.png</texturenofocus>
+	            <texturefocus colordiffuse="highlight" diffuse="masks/contextMenu.png">colors/white.png</texturefocus>
 	            <focusedcolor>textActive</focusedcolor>
-	            <width>12-col</width>
+	            <width>8-col</width>
+                <align>left</align>
+                <textoffsetx>24</textoffsetx>
+                <font>buttonTitle</font>
 	        </control>
 		</control>
         <!--debugging-->

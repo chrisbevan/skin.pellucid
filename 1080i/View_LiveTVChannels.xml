@@ -26,15 +26,15 @@
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>3</posy>
+						<posy>0</posy>
 						<width>69</width>
 						<height>69</height>
 						<aspectratio>stretch</aspectratio>
-						<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+						<texture fallback="colors/black.png" diffuse="masks/iconEndCapLeft.png" border="0">$INFO[Listitem.thumb]</texture>
 						<colordiffuse>d0000000</colordiffuse>
 					</control>
 					<control type="label">
-						<posx>108</posx>
+						<posx>96</posx>
 						<posy>0</posy>
 						<width>276</width>
 						<height>2-row</height>
@@ -95,25 +95,27 @@
 						<posx>1-col</posx>
 						<posy>0</posy>
 						<width>23-col</width>
-						<height>2-row</height>
+						<height>71</height>
 						<aspectratio>stretch</aspectratio>
 						<texture border="0">masks/tvChannel.png</texture>
 						<colordiffuse>highlight</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
-						<posy>3</posy>
-						<width>66</width>
-						<height>66</height>
-						<aspectratio>keep</aspectratio>
-						<texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
+						<posy>0</posy>
+						<width>69</width>
+						<height>69</height>
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="colors/white.png" diffuse="masks/iconEndCapLeft.png" border="0">$INFO[Listitem.thumb]</texture>
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>
 							<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+                            <effect type="fade" start="100" end="50" time="0"/>
 						</animation>
+                        <colordiffuse>highlight</colordiffuse>
 					</control>
 					<control type="label">
-						<posx>108</posx>
+						<posx>96</posx>
 						<posy>0</posy>
 						<width>276</width>
 						<height>2-row</height>

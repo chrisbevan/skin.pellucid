@@ -113,7 +113,7 @@
                         <width>1-col-textbox</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture diffuse="masks/circle.png">colors/black.png</texture>
+                        <texture diffuse="masks/iconEndCapLeft.png">colors/black.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>textboxInactive</colordiffuse>
                     </control>
@@ -189,7 +189,7 @@
                         <width>1-col-textbox</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture diffuse="masks/circle.png">colors/white.png</texture>
+                        <texture diffuse="masks/iconEndCapLeft.png">colors/white.png</texture>
                         <bordersize>0</bordersize>
                         <colordiffuse>highlight</colordiffuse>
                     </control>

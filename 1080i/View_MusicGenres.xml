@@ -13,7 +13,7 @@
             <ondown>55</ondown>
             <onup>55</onup>
             <pagecontrol>60</pagecontrol>
-            <itemlayout width="8-col" height="84">
+            <itemlayout width="8-col" height="96">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -35,7 +35,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </itemlayout>
-            <focusedlayout width="8-col" height="84">
+            <focusedlayout width="8-col" height="96">
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
