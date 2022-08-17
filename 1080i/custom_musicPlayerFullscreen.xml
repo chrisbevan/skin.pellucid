@@ -63,9 +63,7 @@
 					<width>7-col</width>
 					<height>7-col</height>
 	                <aspectratio scalediffuse="false">stretch</aspectratio>
-	                <texture fallback="noAlbumCover.jpg">$INFO[MusicPlayer.Cover]</texture>
-                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-                    <bordersize>6</bordersize>
+	                <texture diffuse="masks/fullScreenAlbumArt.png" fallback="noAlbumCover.jpg">$INFO[MusicPlayer.Cover]</texture>
                     <colordiffuse>ffffffff</colordiffuse>
 	            </control>
 				<!--track info-->

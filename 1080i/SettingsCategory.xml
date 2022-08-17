@@ -36,7 +36,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture diffuse="masks/menuTitle.png">colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -99,6 +99,7 @@
                 <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
                 <align>left</align>
                 <textoffsetx>24</textoffsetx>
+                <font>buttonTitle</font>
             </control>
             <control type="label" id="14">
                 <description>Default Label</description>
@@ -115,10 +116,12 @@
                 <description>Default Radio Button</description>
                 <texturenofocus></texturenofocus>
                 <texturefocus>colors/white.png</texturefocus>
+                <font>buttonTitle</font>
             </control>
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
                 <texturenofocus></texturenofocus>
+                <font>buttonTitle</font>
             </control>
             <control type="sliderex" id="13">
                 <description>Default Slider</description>
