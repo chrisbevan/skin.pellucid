@@ -58,18 +58,28 @@
                             <texturefocus>masks/circle.png</texturefocus>
                             <focusedcolor>black</focusedcolor>
                             <font>symbolLarge</font>
+                            <textoffsetx>0</textoffsetx>
+                            <align>center</align>
                             <label></label>
                             <onclick>RunScript(script.globalsearch,movies=true)</onclick>
                         </control>            
                         <control type="button" id="4000">
                             <label>31176</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
                             <ondown>control.setfocus(9103,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
                             <label>31127</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
                             <ondown>control.setfocus(9103,0)</ondown>
                         </control>
@@ -77,12 +87,20 @@
                             <description>Watched Toggle</description>
                             <label>31195</label>
                             <width>4-col</width>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
                             <focusedcolor>textActive</focusedcolor>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
                             <onclick>Container.NextSortMethod</onclick>
                             <onclick>Control.setfocus(51,0,absolute)</onclick>
@@ -98,6 +116,7 @@
                             <alttexturenofocus></alttexturenofocus>
                             <textoffsetx>0</textoffsetx>
                             <width>1-col</width>
+                            <align>center</align>
                             <font>symbolLarge</font>
                             <label></label>
                             <altlabel></altlabel>

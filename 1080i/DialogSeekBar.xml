@@ -83,7 +83,7 @@
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
                 <description>Progress Bar</description>
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>88</posy>
                 <width>20-col</width>
                 <height>6</height>
                 <texturebg colordiffuse="77000000">colors/black.png</texturebg>
@@ -93,7 +93,7 @@
 			<control type="progress">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<posx>0</posx>
-				<posy>84</posy>
+				<posy>88</posy>
 				<width>20-col</width>
 				<height>6</height>
 				<texturebg colordiffuse="77000000">colors/black.png</texturebg>
@@ -102,7 +102,7 @@
 			</control>
             <control type="slider" id="401">
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>88</posy>
                 <width>20-col</width>
                 <height>6</height>
                 <texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>
@@ -111,7 +111,7 @@
             </control>
 			<control type="slider" id="403">
 				<posx>0</posx>
-				<posy>84</posy>
+				<posy>88</posy>
 				<width>20-col</width>
 				<height>6</height>
 				<texturesliderbar colordiffuse="00FFFFFF">colors/white.png</texturesliderbar>

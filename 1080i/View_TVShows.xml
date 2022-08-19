@@ -58,18 +58,28 @@
                             <texturefocus>masks/circle.png</texturefocus>
                             <focusedcolor>black</focusedcolor>
                             <font>symbolLarge</font>
+                            <textoffsetx>0</textoffsetx>
+                            <align>center</align>
                             <label></label>
                             <onclick>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;)</onclick>
                         </control>            
                         <control type="button" id="4000">
                             <label>31178</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/recentEpisodes.xsp)</onfocus>
                             <ondown>control.setfocus(9203,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
                             <label>31127</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/inprogressTVShows.xsp)</onfocus>
                             <ondown>control.setfocus(9203,0)</ondown>
                         </control>
@@ -78,11 +88,19 @@
                             <label>31195</label>
                             <width>4-col</width>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <focusedcolor>textActive</focusedcolor>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
                             <onclick>Container.NextSortMethod</onclick>
                             <onclick>Control.setfocus(52,0,absolute)</onclick>

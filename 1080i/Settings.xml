@@ -17,7 +17,8 @@
                 <posy>-12</posy>
                 <width>1324</width>
                 <height>504</height>
-                <texture>colors/black.png</texture>
+                <texture border="24">dialogBackground.png</texture>
+                <border></border>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -26,7 +27,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture diffuse="masks/menuTitle.png">colors/white.png</texture>
+                <texture border="10">masks/menuTitle.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>

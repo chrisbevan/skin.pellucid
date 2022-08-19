@@ -48,6 +48,24 @@
     <default type="button">
         <posx>0</posx>
         <posy>0</posy>
+        <align>left</align>
+        <aligny>center</aligny>
+        <height>2-row</height>
+        <width>4-col</width>
+        <font>buttonTitle</font>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <texturefocus>colors/white.png</texturefocus>
+        <texturenofocus></texturenofocus>
+        <textoffsetx>24</textoffsetx>
+        <disabledcolor>textDisabled</disabledcolor>
+        <invalidcolor>textDisabled</invalidcolor>
+        <pulseonselect>false</pulseonselect>
+    </default>
+    <!--
+    <default type="button">
+        <posx>0</posx>
+        <posy>0</posy>
         <align>center</align>
         <aligny>center</aligny>
         <height>2-row</height>
@@ -61,6 +79,28 @@
         <invalidcolor>textDisabled</invalidcolor>
         <pulseonselect>false</pulseonselect>
     </default>
+    -->
+    <default type="togglebutton">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>2-col</width>
+        <height>2-row</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textoffsetx>24</textoffsetx>
+        <label></label>
+        <texturefocus>colors/white.png</texturefocus>
+        <texturenofocus></texturenofocus>
+        <alttexturefocus>colors/white.png</alttexturefocus>
+        <alttexturenofocus></alttexturenofocus>
+        <font>buttonTitle</font>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>textDisabled</disabledcolor>
+        <pulseonselect>false</pulseonselect>
+        <colordiffuse>ffFFFFFF</colordiffuse>
+    </default>    
+    <!--    
     <default type="togglebutton">
         <posx>0</posx>
         <posy>0</posy>
@@ -81,6 +121,33 @@
         <pulseonselect>false</pulseonselect>
         <colordiffuse>ffFFFFFF</colordiffuse>
     </default>
+    -->
+    <default type="radiobutton">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width></width>
+        <height>2-row</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textoffsetx>24</textoffsetx>
+        <textoffsety>0</textoffsety>
+        <font>buttonTitle</font>
+        <label></label>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>textDisabled</disabledcolor>
+        <radioposx>0</radioposx>
+        <radioposy>0</radioposy>
+        <texturefocus>colors/white.png</texturefocus>
+        <texturenofocus></texturenofocus>
+        <pulseonselect>false</pulseonselect>
+        <colordiffuse>FFFFFFFF</colordiffuse>
+        <textureradiofocus></textureradiofocus>
+        <textureradionofocus></textureradionofocus>
+        <radiowidth/>
+        <radioheight/>
+    </default>    
+    <!--
     <default type="radiobutton">
         <posx>0</posx>
         <posy>0</posy>
@@ -105,6 +172,56 @@
         <radiowidth/>
         <radioheight/>
     </default>
+    -->
+        
+    <default type="spincontrolex">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width></width>
+        <height>2-row</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textoffsetx>24</textoffsetx>
+        <font>buttonTitle</font>
+        <label></label>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>textDisabled</disabledcolor>
+        <spinwidth>30</spinwidth>
+        <spinheight>30</spinheight>
+        <texturefocus>colors/white.png</texturefocus>
+        <texturenofocus></texturenofocus>
+        <textureup>UIControls/arrow-up-nf.png</textureup>
+        <texturedown>UIControls/arrow-down-nf.png</texturedown>
+        <textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
+        <texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>
+        <pulseonselect>false</pulseonselect>
+    </default>
+    <default type="spincontrol">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width></width>
+        <height>2-row</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textoffsetx>24</textoffsetx>
+        <font>buttonTitle</font>
+        <label></label>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>textDisabled</disabledcolor>
+        <spinwidth>36</spinwidth>
+        <spinheight>36</spinheight>
+        <texturefocus>colors/white.png</texturefocus>
+        <texturenofocus></texturenofocus>
+        <textureup>UIControls/arrow-up-nf.png</textureup>
+        <texturedown>UIControls/arrow-down-nf.png</texturedown>
+        <textureupfocus>UIControls/arrow-up-fo.png</textureupfocus>
+        <texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>
+        <pulseonselect>false</pulseonselect>
+    </default>
+    
+    <!--
     <default type="spincontrolex">
         <posx>0</posx>
         <posy>0</posy>
@@ -151,7 +268,31 @@
         <texturedownfocus>UIControls/arrow-down-fo.png</texturedownfocus>
         <pulseonselect>false</pulseonselect>
     </default>
+    -->
     <!--used in audio settings etc-->
+    <default type="sliderex">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width></width>
+        <height>2-row</height>
+        <aligny>center</aligny>
+        <font>buttonTitle</font>
+        <textoffsetx>24</textoffsetx>
+        <textoffsety>0</textoffsety>
+        <textcolor>textActive</textcolor>
+        <focusedcolor>black</focusedcolor>
+        <disabledcolor>textDisabled</disabledcolor>
+        <texturenofocus></texturenofocus>
+        <texturefocus>colors/white.png</texturefocus>
+        <sliderwidth>0</sliderwidth>
+        <sliderheight>0</sliderheight>
+        <texturesliderbar></texturesliderbar>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
+        <pulseonselect>false</pulseonselect>
+    </default>
+    
+    <!--
     <default type="sliderex">
         <posx>0</posx>
         <posy>0</posy>
@@ -173,6 +314,7 @@
         <textureslidernibfocus></textureslidernibfocus>
         <pulseonselect>false</pulseonselect>
     </default>
+    -->
     <default type="progress">
         <height>12</height>
         <texturebg border="0"></texturebg>

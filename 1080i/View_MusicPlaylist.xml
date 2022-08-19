@@ -4,16 +4,61 @@
     <include name="musicPlayList">
         <control type="group">
             <visible>$EXP[isMusicPlaylist]</visible>
+			<!--quick link selector-->
+            <control type="group">
+                <posx>col-4-begin</posx>
+                <posy>170</posy>
+				<control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>18-col</width>
+                    <height>2-row</height>
+                    <aspectratio>stretch</aspectratio>
+                    <texture>masks/menuBar.png</texture>
+                    <colordiffuse>77000000</colordiffuse>
+                </control>
+                <control type="grouplist" id="9103">
+	                <posx>0</posx>
+	                <posy>0</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+	                <onleft>9000</onleft>
+	                <ondown>59</ondown>
+	                <onback>9000</onback>           
+                    <control type="button" id="3500">
+                        <description>Sort by</description>
+                        <texturenofocus></texturenofocus>
+                        <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
+                        <onclick>Container.NextSortMethod</onclick>
+                    </control>
+                    <control type="togglebutton" id="3501">
+                        <description>Sort direction</description>
+                        <focusedcolor>black</focusedcolor>
+                        <color>textActive</color>
+                        <texturenofocus></texturenofocus>
+                        <texturefocus colordiffuse="ffffffff">masks/circle.png</texturefocus>
+                        <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
+                        <alttexturenofocus></alttexturenofocus>
+                        <textoffsetx>0</textoffsetx>
+                        <width>1-col</width>
+                        <font>symbolLarge</font>
+                        <label></label>
+                        <altlabel></altlabel>
+                        <onclick>Container.SetSortDirection</onclick>
+                    </control>   
+                </control>
+            </control>
+            
             <control type="panel" id="59">
                 <posx>col-1-begin</posx>
-                <posy>row-5-begin</posy>
+                <posy>row-7-begin</posy>
                 <width>24-col</width>
                 <height>23-row</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
-                <onup>59</onup>
+                <onup>9103</onup>
                 <ondown>59</ondown>
-                <onback>9000</onback>
+                <onback>9103</onback>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime tween="sine" easing="inout">200</scrolltime>
                 <itemlayout width="23-col" height="2-row">
@@ -23,7 +68,7 @@
                         <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture diffuse="masks/iconEndCapLeft.png">colors/black.png</texture>
+                        <texture fallback="colors/black.png" diffuse="masks/iconEndCapLeft.png">$INFO[listitem.icon]</texture>
                         <colordiffuse>overlay</colordiffuse>
                     </control>
 					<control type="image">
@@ -65,7 +110,7 @@
                     <control type="label">
                         <posx>96</posx>
                         <posy>0</posy>
-                        <width>7-col-gutter</width>
+                        <width>6-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>
@@ -118,7 +163,7 @@
                         <width>1-col</width>
                         <height>69</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture diffuse="masks/iconEndCapLeft.png">colors/white.png</texture>
+                        <texture fallback="colors/white.png" diffuse="masks/iconEndCapLeft.png">$INFO[listitem.icon]</texture>
                         <colordiffuse>highlight</colordiffuse>
                     </control>
 					<control type="image">
@@ -160,7 +205,7 @@
                     <control type="label">
                         <posx>96</posx>
                         <posy>0</posy>
-                        <width>7-col-gutter</width>
+                        <width>6-col</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>itemTitle</font>

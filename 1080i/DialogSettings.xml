@@ -18,7 +18,7 @@
                 <posy>-12</posy>
                 <width>1176</width>
                 <height>768</height>
-                <texture>colors/black.png</texture>
+                <texture border="24">dialogBackground.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -28,7 +28,7 @@
                 <posy>-12</posy>
                 <width>1176</width>
                 <height>768</height>
-                <texture>colors/black.png</texture>
+                <texture border="24">dialogBackground.png</texture>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -37,7 +37,7 @@
                 <posy>0</posy>
                 <width>16-col</width>
                 <height>71</height>
-                <texture>colors/white.png</texture>
+                <texture border="10">masks/menuTitle2.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>

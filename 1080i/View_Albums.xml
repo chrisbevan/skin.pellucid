@@ -49,6 +49,8 @@
                             <width>1-col</width>
                             <texturenofocus></texturenofocus>
                             <texturefocus>masks/circle.png</texturefocus>
+                            <textoffsetx>0</textoffsetx>
+                            <align>center</align>
                             <focusedcolor>black</focusedcolor>
                             <font>symbolLarge</font>
                             <label></label>
@@ -57,24 +59,40 @@
                         <control type="button" id="4000">
                             <label>31180</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/recentAlbums.xsp)</onfocus>
                             <ondown>control.setfocus(9998,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
                             <label>31187</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/topAlbums.xsp)</onfocus>
                             <ondown>control.setfocus(9998,0)</ondown>
                         </control>
                         <control type="button" id="4002">
                             <label>31181</label>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/randomAlbums.xsp)</onfocus>
                             <ondown>control.setfocus(9998,0)</ondown>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
+                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>0</textoffsetx>
                             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
                             <onclick>Container.NextSortMethod</onclick>
                             <onclick>Control.setfocus(54,0,absolute)</onclick>

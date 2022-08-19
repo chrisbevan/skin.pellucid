@@ -33,12 +33,18 @@
                         <texturefocus>masks/circle.png</texturefocus>
                         <focusedcolor>black</focusedcolor>
                         <font>symbolLarge</font>
+                        <textoffsetx>0</textoffsetx>
+                        <align>center</align>
                         <label></label>
                         <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
                     </control>            
                     <control type="button" id="3222">
                         <description>Sort by</description>
                         <texturenofocus></texturenofocus>
+                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <font>thumbTitle</font>
+                        <align>center</align>
+                        <textoffsetx>0</textoffsetx>
                         <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
                         <onclick>Container.NextSortMethod</onclick>
                         <onclick>Control.setfocus(51,0,absolute)</onclick>
@@ -53,6 +59,7 @@
                         <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
                         <alttexturenofocus></alttexturenofocus>
                         <textoffsetx>0</textoffsetx>
+                        <align>center</align>
                         <width>1-col</width>
                         <font>symbolLarge</font>
                         <label></label>
