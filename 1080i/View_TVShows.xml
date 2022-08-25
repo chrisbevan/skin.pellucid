@@ -66,7 +66,8 @@
                         <control type="button" id="4000">
                             <label>31178</label>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
+                            <width>3-col</width>
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
@@ -87,17 +88,24 @@
                             <description>Watched Toggle</description>
                             <label>31195</label>
                             <width>4-col</width>
-                            <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
                             <font>thumbTitle</font>
-                            <align>center</align>
-                            <textoffsetx>0</textoffsetx>
-                            <focusedcolor>textActive</focusedcolor>
+                            <align>left</align>
+                            <textoffsetx>24</textoffsetx>
+                            <label></label>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus>UIControls/button.png</texturefocus>
+                            <textureradiofocus colordiffuse="highlight">UIControls/toggle-on.png</textureradiofocus>
+                            <textureradionofocus>UIControls/toggle-off.png</textureradionofocus>
+                            <radiowidth>60</radiowidth>
+                            <radioheight>30</radioheight>
+                            <radioposx>204</radioposx>
+                            <focusedcolor>black</focusedcolor>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
+                            <width>5-col</width>
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
@@ -115,6 +123,7 @@
                             <alttexturefocus colordiffuse="FFFFFFFF">masks/circle.png</alttexturefocus>
                             <alttexturenofocus></alttexturenofocus>
                             <textoffsetx>0</textoffsetx>
+                            <align>center</align>
                             <width>1-col</width>
                             <font>symbolLarge</font>
                             <label></label>
@@ -133,7 +142,7 @@
 	                <height>11-row</height>
 					<onup>9202</onup>
 	                <ondown>52</ondown>
-	                <onleft>9203</onleft>
+	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 					<onclick condition="String.IsEqual(skin.string(tvQuickLinkValue),special://skin/extras/playlists/recentEpisodes.xsp)">activatewindow(Videos,videodb://tvshows/titles/$INFO[listitem.dbid]/)</onclick>

@@ -527,3 +527,15 @@ msgstr ""
 msgctxt "#31252"
 msgid "Album"
 msgstr ""
+
+msgctxt "#31253"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "#31254"
+msgid "Go to Artist"
+msgstr ""
+
+msgctxt "#31255"
+msgid "Go to Album"
+msgstr ""

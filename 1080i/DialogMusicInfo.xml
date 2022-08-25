@@ -110,187 +110,97 @@
 			<!--synopsis-->
 			<control type="textbox">
 				<posx>24</posx>
-				<posy>row-6-begin</posy>
+				<posy>row-9-begin</posy>
 				<font>textbox</font>
-				<width>660</width>
+				<width>8-col</width>
 				<align>left</align>
 				<textcolor>textActive</textcolor>
-				<height>390</height>
+				<height>524</height>
 				<label fallback="31205">$INFO[ListItem.Property(Artist_Description)]</label>
 				<autoscroll>false</autoscroll>
 				<pagecontrol>61</pagecontrol>
 			</control>
 			<control type="scrollbar" id="61">
 				<posx>12r</posx>
-				<posy>246</posy>
+				<posy>446</posy>
 				<height>10-row</height>
-				<ondown>8000</ondown>
+				<ondown>6</ondown>
+                <onleft>6</onleft>
 			</control>
 			<!--meta-->
 			<control type="panel">
 				<posx>12</posx>
-				<posy>18-row</posy>
+				<posy>row-6-begin</posy>
 				<width>10-col</width>
 				<height>6-row</height>
 				<enable>false</enable>
-				<itemlayout width="5-col" height="78">
-					<control type="label">
-						<posx>12</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<font>itemSubTitle</font>
-						<textcolor>highlight</textcolor>
-						<label>[B]$INFO[ListItem.label][/B]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-					<control type="label">
-						<posx>12</posx>
-						<posy>30</posy>
-						<width>4-col-gutter</width>
-						<font>itemSubTitle</font>
-						<textcolor>textActive</textcolor>
-						<label fallback="13205">[B]$INFO[ListItem.label2][/B]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout width="5-col" height="78">
-                </focusedlayout>
+                <itemlayout width="5-col-gutter" height="76">
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>0</posy>
+                        <width>252</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>highlight</textcolor>
+                        <label>[B]$INFO[ListItem.label][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                    <control type="label">
+                        <posx>12</posx>
+                        <posy>30</posy>
+                        <width>252</width>
+                        <font>itemSubTitle</font>
+                        <textcolor>textActive</textcolor>
+                        <label fallback="13205">[B]$INFO[ListItem.label2][/B]</label>
+                        <shadowcolor></shadowcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout/>
 				<content>
 					<item>
 						<label>$LOCALIZE[21894]</label>
-						<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
+						<label2 fallback="31253">$INFO[ListItem.Property(Artist_Formed)]</label2>
 						<thumb></thumb>
 					</item>
 					<item>
 						<label>$LOCALIZE[515]</label>
-						<label2>$INFO[ListItem.Property(Artist_Genre)]</label2>
-						<thumb></thumb>
-					</item>
-					<item>
-						<label>$LOCALIZE[21898]</label>
-						<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-						<thumb></thumb>
-					</item>
-					<item>
-						<label>$LOCALIZE[180]</label>
-						<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
+						<label2 fallback="31253">$INFO[ListItem.Property(Artist_Genre)]</label2>
 						<thumb></thumb>
 					</item>
 				</content>
 			</control>
 			<!--dialog controls-->
-			<control type="panel" id="8000">
+            <control type="group" id="8000">
 				<posx>12</posx>
 				<posy>row-25-begin</posy>
 				<width>10-col</width>
-				<height>4-row</height>
-				<onup>61</onup>
-				<orientation>vertical</orientation>
-				<itemlayout width="5-col" height="2-row">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col-textbox</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/black.png</texture>
-						<colordiffuse>textboxInactive</colordiffuse>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-					<control type="label">
-						<posx>1-col-indent</posx>
-						<posy>0</posy>
-						<width>4-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>buttonTitle</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout width="5-col" height="2-row">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
-						<colordiffuse>highlight</colordiffuse>
-						<include>spinFocusIcon</include>
-					</control>
-					<control type="image">
-						<posx>1-col</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-					<control type="label">
-						<posx>1-col-indent</posx>
-						<posy>0</posy>
-						<width>3-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>buttonTitle</font>
-						<textcolor>black</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>184</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(6)</onclick>
-					</item>
-					<item>
-						<label>13405</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(10)</onclick>
-					</item>
-					<item>
-						<label>20413</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(12)</onclick>
-					</item>
-					<item>
-						<label>31169</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(7)</onclick>
-					</item>
-				</content>
-			</control>
+				<height>6-row</height>
+    			<control type="button" id="6">
+    				<description>Refresh button</description>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+    				<label>184</label>
+                    <onright>10</onright>
+                    <onup>61</onup>
+    			</control>
+    			<control type="button" id="10">
+    				<description>Get Thumb</description>
+                    <posx>4-col</posx>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+    				<label>13405</label>
+                    <onleft>6</onleft>
+                    <onup>61</onup>
+    			</control>
+            </control>
 		</control>
+                
+                
 		<!--content is album-->
 		<control type="group">
 			<visible>container.content(albums) + !container.content(artists)</visible>
@@ -347,10 +257,10 @@
 					<posx>0</posx>
 					<posy>row-5-begin</posy>
 					<font>textbox</font>
-					<width>660</width>
+					<width>8-col</width>
 					<align>left</align>
 					<textcolor>textActive</textcolor>
-					<height>390</height>
+					<height>402</height>
 					<label fallback="31205">$INFO[ListItem.Property(Album_Description)]</label>
 					<autoscroll>false</autoscroll>
 					<pagecontrol>61</pagecontrol>
@@ -359,7 +269,8 @@
 					<posx>12r</posx>
 					<posy>216</posy>
 					<height>10-row</height>
-					<ondown>8000</ondown>
+					<ondown>6</ondown>
+                    <onleft>6</onleft>
 				</control>
 				<!--meta-->
 				<control type="panel">
@@ -368,164 +279,107 @@
 					<width>10-col</width>
 					<height>6-row</height>
 					<enable>false</enable>
-					<itemlayout width="5-col" height="78">
-						<control type="label">
-							<posx>12</posx>
-							<posy>0</posy>
-							<width>4-col-gutter</width>
-							<font>itemSubTitle</font>
-							<textcolor>highlight</textcolor>
-							<label>[B]$INFO[ListItem.label][/B]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-						<control type="label">
-							<posx>12</posx>
-							<posy>30</posy>
-							<width>4-col-gutter</width>
-							<font>itemSubTitle</font>
-							<textcolor>textActive</textcolor>
-							<label fallback="13205">[B]$INFO[ListItem.label2][/B]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-					</itemlayout>
-					<focusedlayout width="5-col" height="78">
-                 </focusedlayout>
+                    <itemlayout width="5-col-gutter" height="76">
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>0</posy>
+                            <width>252</width>
+                            <font>itemSubTitle</font>
+                            <textcolor>highlight</textcolor>
+                            <label>[B]$INFO[ListItem.label][/B]</label>
+                            <shadowcolor></shadowcolor>
+                        </control>
+                        <control type="label">
+                            <posx>12</posx>
+                            <posy>30</posy>
+                            <width>252</width>
+                            <font>itemSubTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <label fallback="13205">[B]$INFO[ListItem.label2][/B]</label>
+                            <shadowcolor></shadowcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout/>
 					<content>
 						<item>
 							<label>$LOCALIZE[31149]</label>
-							<label2>$INFO[ListItem.Year]</label2>
+							<label2 fallback="31253">$INFO[ListItem.Year]</label2>
 							<thumb></thumb>
 						</item>
 						<item>
 							<label>$LOCALIZE[21899]</label>
-							<label2>$INFO[ListItem.Property(Album_Label)]</label2>
+							<label2 fallback="31253">$INFO[ListItem.Property(Album_Label)]</label2>
 							<thumb></thumb>
 						</item>
 						<item>
 							<label>$LOCALIZE[515]</label>
-							<label2>$INFO[ListItem.Genre]</label2>
+							<label2 fallback="31253">$INFO[ListItem.Genre]</label2>
 							<thumb></thumb>
 						</item>
 						<item>
 							<label>$LOCALIZE[736]</label>
-							<label2>$INFO[ListItem.Property(Album_Style)]</label2>
+							<label2 fallback="31253">$INFO[ListItem.Property(Album_Style)]</label2>
 							<thumb></thumb>
 						</item>
 					</content>
 				</control>
 			</control>
-			<!--dialog controls-->
-			<control type="panel" id="8000">
+            <control type="group" id="8000">
 				<posx>12</posx>
-				<posy>row-25-begin</posy>
+				<posy>row-24-begin</posy>
 				<width>10-col</width>
 				<height>6-row</height>
-				<onup>61</onup>
-				<orientation>vertical</orientation>
-				<itemlayout width="5-col" height="2-row">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col-textbox</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/black.png</texture>
-						<colordiffuse>overlay</colordiffuse>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-					<control type="label">
-						<posx>1-col-indent</posx>
-						<posy>0</posy>
-						<width>3-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>buttonTitle</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout width="5-col" height="2-row">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
-						<colordiffuse>highlight</colordiffuse>
-						<include>spinFocusIcon</include>
-					</control>
-					<control type="image">
-						<posx>1-col</posx>
-						<posy>0</posy>
-						<width>3-col</width>
-						<height>2-row</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>colors/white.png</texture>
-					</control>
-					<control type="label">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<label>$INFO[ListItem.label2]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-					<control type="label">
-						<posx>1-col-indent</posx>
-						<posy>0</posy>
-						<width>3-col-gutter</width>
-						<height>2-row</height>
-						<aligny>center</aligny>
-						<font>buttonTitle</font>
-						<textcolor>black</textcolor>
-						<label>$INFO[ListItem.label]</label>
-						<shadowcolor></shadowcolor>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>184</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(6)</onclick>
-					</item>
-					<item>
-						<label>13405</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(10)</onclick>
-					</item>
-					<item>
-						<label>20413</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(12)</onclick>
-					</item>
-					<item>
-						<label>31169</label>
-						<label2></label2>
-						<thumb></thumb>
-						<onclick>SendClick(7)</onclick>
-					</item>
-				</content>
-			</control>
+    			<control type="button" id="6">
+    				<description>Refresh button</description>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+    				<label>184</label>
+                    <onright>7</onright>
+                    <onup>61</onup>
+                    <ondown>10</ondown>
+    			</control>
+    			<control type="button" id="7">
+    				<description>Set rating</description>
+                    <posx>4-col</posx>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <label>31169</label>
+                    <onleft>6</onleft>
+                    <onup>61</onup>
+                    <ondown>12</ondown>
+    			</control>
+    			<control type="button" id="10">
+    				<description>Get Thumb</description>
+                    <posy>2-row</posy>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+    				<label>13405</label>
+                    <onup>6</onup>
+                    <onright>12</onright>
+    			</control>
+    			<control type="button" id="12">
+    				<description>Get Fanart</description>
+                    <posx>4-col</posx>
+                    <posy>2-row</posy>
+                    <font>thumbTitle</font>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+    				<label>20413</label>
+                    <onup>7</onup>
+                    <onleft>10</onleft>
+    			</control>
+            </control>            
 		</control>
 		<!--content is a song-->
 		<control type="group">
@@ -548,229 +402,79 @@
 			</control>
 			<!--content-->
 			<control type="group">
-				<posx>col-7-begin</posx>
-				<posy>row-5-begin</posy>
+				<posx>708</posx>
+				<posy>row-4-begin</posy>
 				<include>modalDialogInOut</include>
-				<!--titles-->
-				<control type="label">
-					<description>Song title</description>
-					<posx>0</posx>
+				<!--cover art-->
+				<control type="image">
+	                <posx>0</posx>
 					<posy>0</posy>
-					<width>12-col-gutter</width>
-					<height>3-row</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>largeTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>$INFO[ListItem.title]</label>
-					<wrapmultiline>true</wrapmultiline>
-				</control>
-				<!--col 1-->
-				<control type="label">
-					<posx>0</posx>
-					<posy>4-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[557][/COLOR] $INFO[ListItem.artist]</label>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>5-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[562][/COLOR] $INFO[ListItem.year]</label>
-				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>6-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[180][/COLOR] $INFO[ListItem.duration]</label>
-				</control>
-				<!--col 2-->
-				<control type="label">
-					<posx>6-col</posx>
-					<posy>4-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[558][/COLOR] $INFO[ListItem.album]</label>
-				</control>
-				<control type="label">
-					<posx>6-col</posx>
-					<posy>5-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[515][/COLOR] $INFO[ListItem.genre]</label>
-				</control>
-				<control type="label">
-					<posx>6-col</posx>
-					<posy>6-row</posy>
-					<width>6-col-gutter</width>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>itemTitle</font>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<label>[COLOR highlight]$LOCALIZE[563][/COLOR] $INFO[ListItem.UserRating]</label>
-				</control>
-				<!--synopsis-->
-				<control type="textbox">
-					<posx>0</posx>
-					<posy>8-row</posy>
-					<font>textbox</font>
-					<width>12-col</width>
-					<align>left</align>
-					<textcolor>textActive</textcolor>
-					<shadowcolor></shadowcolor>
-					<height>200</height>
-					<label>$INFO[ListItem.Property(Album_Description)]</label>
-					<autoscroll delay="10000" time="1000" repeat="10000"/>
-				</control>
+					<width>7-col</width>
+					<height>7-col</height>
+	                <aspectratio scalediffuse="false">stretch</aspectratio>
+	                <texture diffuse="masks/fullScreenAlbumArt.png" fallback="noAlbumCover.jpg">$INFO[listitem.art(thumb)]</texture>
+                    <colordiffuse>ffffffff</colordiffuse>
+	            </control>
+				<!--titles-->
+                <control type="group">
+                    <posy>13-row</posy>
+    				<control type="label">
+    					<posx>0</posx>
+    					<posy>50</posy>
+    					<width>7-col</width>
+    					<height>2-row</height>
+    					<align>center</align>
+    					<font>menuTitle3</font>
+    					<textcolor>textActive</textcolor>
+    					<scroll>true</scroll>
+    					<label>$INFO[listitem.Title]</label>
+    					<shadowcolor>99000000</shadowcolor>
+    					<wrapmultiline>true</wrapmultiline>
+    				</control>
+    				<control type="label">
+    					<posx>0</posx>
+    					<posy>112</posy>
+    					<width>7-col</width>
+    					<height>3-row</height>
+    					<align>center</align>
+    					<font>buttonTitle</font>
+    					<textcolor>textActive</textcolor>
+    					<scroll>true</scroll>
+    					<label>[B]$INFO[listitem.artist][/B][CR]$INFO[listitem.Album,, ]$INFO[listitem.year,(,)]</label>
+    					<shadowcolor>99000000</shadowcolor>
+    				</control>
+                </control>
+            
+				
 				<!--dialog controls-->
-				<control type="list" id="8000">
-					<posx>0</posx>
-					<posy>16-row</posy>
-					<width>12-col</width>
+                <control type="grouplist" id="8000">
+					<posx>-36</posx>
+					<posy>20-row</posy>
+					<width>10-col</width>
 					<height>2-row</height>
-					<orientation>horizontal</orientation>
-					<itemlayout width="4-col" height="2-row">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>4-col</width>
-							<height>2-row</height>
-							<aspectratio>stretch</aspectratio>
-							<texture>colors/black.png</texture>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1-col</width>
-							<height>2-row</height>
-							<aligny>center</aligny>
-							<align>center</align>
-							<font>symbolLarge</font>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.label2]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-						<control type="label">
-							<posx>1-col-indent</posx>
-							<posy>0</posy>
-							<width>3-col</width>
-							<height>2-row</height>
-							<aligny>center</aligny>
-							<font>buttonTitle</font>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.label]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-					</itemlayout>
-					<focusedlayout width="4-col" height="2-row">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1-col-textbox</width>
-							<height>2-row</height>
-							<aspectratio>stretch</aspectratio>
-							<texture>colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
-							<include>spinFocusIcon</include>
-						</control>
-						<control type="image">
-							<posx>1-col</posx>
-							<posy>0</posy>
-							<width>3-col</width>
-							<height>2-row</height>
-							<aspectratio>stretch</aspectratio>
-							<texture>colors/white.png</texture>
-						</control>
-						<control type="label">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1-col</width>
-							<height>2-row</height>
-							<aligny>center</aligny>
-							<align>center</align>
-							<font>symbolLarge</font>
-							<textcolor>textActive</textcolor>
-							<label>$INFO[ListItem.label2]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-						<control type="label">
-							<posx>1-col-indent</posx>
-							<posy>0</posy>
-							<width>3-col</width>
-							<height>2-row</height>
-							<aligny>center</aligny>
-							<font>buttonTitle</font>
-							<textcolor>black</textcolor>
-							<label>$INFO[ListItem.label]</label>
-							<shadowcolor></shadowcolor>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>208</label>
-							<label2></label2>
-							<thumb></thumb>
-							<onclick>dialog.close(all,true)</onclick>
-							<onclick>action(select)</onclick>
-						</item>
-						<item id="2">
-							<label>31169</label>
-							<label2></label2>
-							<thumb></thumb>
-							<onclick>SendClick(2003,7)</onclick>
-						</item>
-						<item id="3">
-							<label>13511</label>
-							<label2></label2>
-							<thumb></thumb>
-							<onclick>SendClick(2003,10)</onclick>
-						</item>
-					</content>
-				</control>
-			</control>
-		</control>
-		<!--dialog controls-->
-		<control type="group">
-			<visible>false</visible>
-			<control type="button" id="6">
-				<description>Refresh button</description>
-				<label>184</label>
-			</control>
-			<control type="button" id="7">
-				<description>Set rating</description>
-			</control>
-			<control type="button" id="10">
-				<description>Get Thumb</description>
-				<label>13405</label>
-			</control>
-			<control type="button" id="12">
-				<description>Get Fanart</description>
-				<label>20413</label>
+                    <orientation>horizontal</orientation>
+        			<control type="button" id="80000">
+        				<description>Go to artist</description>
+                        <font>thumbTitle</font>
+                        <align>center</align>
+                        <textoffsetx>0</textoffsetx>
+                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+        				<label>31254</label>
+                        <onclick>dialog.close(all,true)</onclick>
+                        <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
+        			</control>
+        			<control type="button" id="80001">
+        				<description>Go to album</description>
+                        <font>thumbTitle</font>
+                        <align>center</align>
+                        <textoffsetx>0</textoffsetx>
+                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+        				<label>31255</label>
+                        <onclick></onclick>
+        			</control>
+                </control>    
 			</control>
 		</control>
 		<!--debugging-->

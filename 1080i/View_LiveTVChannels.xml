@@ -38,9 +38,9 @@
 						<posy>0</posy>
 						<width>69</width>
 						<height>69</height>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>scale</aspectratio>
 						<texture diffuse="masks/iconEndCapLeft.png">$INFO[listitem.thumb]</texture>
-                        <bordersize>8</bordersize>
+                        <bordersize>6</bordersize>
 						<colordiffuse></colordiffuse>
 					</control>
 					<control type="label">
@@ -114,7 +114,6 @@
 						<animation type="focus" loop="false" reversible="false">
 							<effect type="fade" time="500"/>
 							<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                            <effect type="fade" start="100" end="50" time="0"/>
 						</animation>
     					<control type="image">
     						<posx>0</posx>
@@ -130,9 +129,9 @@
     						<posy>0</posy>
     						<width>69</width>
     						<height>69</height>
-    						<aspectratio>stretch</aspectratio>
+    						<aspectratio>scale</aspectratio>
     						<texture diffuse="masks/iconEndCapLeft.png">$INFO[listitem.thumb]</texture>
-                            <bordersize>8</bordersize>
+                            <bordersize>6</bordersize>
     					</control>
                     </control>
 					<control type="label">

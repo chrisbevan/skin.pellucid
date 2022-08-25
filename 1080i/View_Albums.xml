@@ -24,15 +24,15 @@
 	            </animation>
 				<!--quick link selector-->
                 <control type="group">
-	                <posx>col-4-begin</posx>
+	                <posx>col-5-begin</posx>
 	                <posy>170</posy>
     				<control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>18-col</width>
+                        <width>16-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
-                        <texture>masks/menuBar.png</texture>
+                        <texture border="24">masks/menuBar.png</texture>
                         <colordiffuse>77000000</colordiffuse>
                     </control>
                     <control type="grouplist" id="9202">
@@ -59,7 +59,8 @@
                         <control type="button" id="4000">
                             <label>31180</label>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
+                            <width>3-col</width>
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
@@ -69,7 +70,8 @@
                         <control type="button" id="4001">
                             <label>31187</label>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
+                            <width>3-col</width>
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
@@ -89,8 +91,9 @@
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
                             <font>thumbTitle</font>
+                            <width>4-col</width>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
                             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
@@ -108,6 +111,7 @@
                             <alttexturenofocus></alttexturenofocus>
                             <textoffsetx>0</textoffsetx>
                             <width>1-col</width>
+                            <align>center</align>
                             <font>symbolLarge</font>
                             <label></label>
                             <altlabel></altlabel>
@@ -125,7 +129,7 @@
 	                <height>11-row</height>
 					<onup>9202</onup>
 	                <ondown>54</ondown>
-	                <onleft>9998</onleft>
+	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 	                <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>

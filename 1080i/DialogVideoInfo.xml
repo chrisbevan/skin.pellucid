@@ -137,17 +137,17 @@
                 <content>
                     <item>
                         <label>$LOCALIZE[562]</label>
-                        <label2>$INFO[ListItem.year]</label2>
+                        <label2 fallback="31253">$INFO[ListItem.year]</label2>
                         <thumb></thumb>
                     </item>
                     <item>
                         <label>$LOCALIZE[515]</label>
-                        <label2>$INFO[ListItem.genre]</label2>
+                        <label2 fallback="31253">$INFO[ListItem.genre]</label2>
                         <thumb></thumb>
                     </item>
                     <item>
                         <label>$LOCALIZE[20339]</label>
-                        <label2>$INFO[ListItem.director]</label2>
+                        <label2 fallback="31253">$INFO[ListItem.director]</label2>
                         <thumb></thumb>
                     </item>
                     <item>

@@ -66,9 +66,10 @@
                         <control type="button" id="4000">
                             <label>31176</label>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
                             <font>thumbTitle</font>
                             <align>center</align>
+                            <width>3-col</width>
                             <textoffsetx>0</textoffsetx>
                             <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
                             <ondown>control.setfocus(9103,0)</ondown>
@@ -88,17 +89,24 @@
                             <label>31195</label>
                             <width>4-col</width>
                             <font>thumbTitle</font>
-                            <align>center</align>
-                            <textoffsetx>0</textoffsetx>
+                            <align>left</align>
+                            <textoffsetx>24</textoffsetx>
+                            <label></label>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
-                            <focusedcolor>textActive</focusedcolor>
+                            <texturefocus>UIControls/button.png</texturefocus>
+                            <textureradiofocus colordiffuse="highlight">UIControls/toggle-on.png</textureradiofocus>
+                            <textureradionofocus>UIControls/toggle-off.png</textureradionofocus>
+                            <radiowidth>60</radiowidth>
+                            <radioheight>30</radioheight>
+                            <radioposx>204</radioposx>
+                            <focusedcolor>black</focusedcolor>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
                             <texturenofocus></texturenofocus>
-                            <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                            <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
                             <font>thumbTitle</font>
+                            <width>5-col</width>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
                             <label>$LOCALIZE[31008]: $INFO[Container.SortMethod]</label>
@@ -134,7 +142,7 @@
 	                <height>11-row</height>
 					<onup>9102</onup>
 	                <ondown>51</ondown>
-	                <onleft>9103</onleft>
+	                <onleft>9000</onleft>
 	                <onback>9000</onback>
 	                <orientation>horizontal</orientation>
 	                <itemlayout width="586" height="5-col-gutter">

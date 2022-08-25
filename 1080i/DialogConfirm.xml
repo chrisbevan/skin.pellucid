@@ -31,6 +31,7 @@
                 <height>2-row</height>
                 <wrapmultiline>true</wrapmultiline>
                 <font>confirmTitle</font>
+                <textcolor>highlight</textcolor>
                 <textcolor>textActive</textcolor>
             </control>
             <control type="textbox" id="9">
@@ -54,12 +55,24 @@
                
                <control type="button" id="10">
                    <description>No</description>
+                   <align>center</align>
+                   <textoffsetx>0</textoffsetx>
+                   <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                   <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
                </control>
                <control type="button" id="11">
                      <description>Yes</description>
+                     <align>center</align>
+                     <textoffsetx>0</textoffsetx>
+                     <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                     <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
                  </control>
                <control type="button" id="12">
                    <description>Custom</description>
+                   <align>center</align>
+                   <textoffsetx>0</textoffsetx>
+                   <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                   <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
                </control>
            </control>
        </control>
