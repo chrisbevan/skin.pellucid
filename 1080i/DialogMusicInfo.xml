@@ -176,6 +176,7 @@
 				<height>6-row</height>
     			<control type="button" id="6">
     				<description>Refresh button</description>
+                    <visible>false</visible>
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
@@ -187,6 +188,7 @@
     			</control>
     			<control type="button" id="10">
     				<description>Get Thumb</description>
+                    <visible>false</visible>
                     <posx>4-col</posx>
                     <font>thumbTitle</font>
                     <align>center</align>
@@ -255,12 +257,12 @@
 				<!--synopsis-->
 				<control type="textbox">
 					<posx>0</posx>
-					<posy>row-5-begin</posy>
+					<posy>10-row</posy>
 					<font>textbox</font>
 					<width>8-col</width>
 					<align>left</align>
 					<textcolor>textActive</textcolor>
-					<height>402</height>
+					<height>482</height>
 					<label fallback="31205">$INFO[ListItem.Property(Album_Description)]</label>
 					<autoscroll>false</autoscroll>
 					<pagecontrol>61</pagecontrol>
@@ -269,13 +271,13 @@
 					<posx>12r</posx>
 					<posy>216</posy>
 					<height>10-row</height>
-					<ondown>6</ondown>
-                    <onleft>6</onleft>
+					<ondown>8000</ondown>
+                    <onleft>8000</onleft>
 				</control>
 				<!--meta-->
 				<control type="panel">
 					<posx>-12</posx>
-					<posy>18-row</posy>
+					<posy>row-5-begin</posy>
 					<width>10-col</width>
 					<height>6-row</height>
 					<enable>false</enable>
@@ -324,60 +326,34 @@
 					</content>
 				</control>
 			</control>
-            <control type="group" id="8000">
+            <control type="grouplist" id="8000">
 				<posx>12</posx>
-				<posy>row-24-begin</posy>
+				<posy>row-26-begin</posy>
 				<width>10-col</width>
-				<height>6-row</height>
-    			<control type="button" id="6">
-    				<description>Refresh button</description>
+				<height>2-row</height>
+                <orientation>horizontal</orientation>
+                <onup>61</onup>
+                
+    			<control type="button" id="80000">
+    				<description>Go to artist</description>
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
                     <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
-    				<label>184</label>
-                    <onright>7</onright>
-                    <onup>61</onup>
-                    <ondown>10</ondown>
+    				<label>31254</label>
+                    <onclick>dialog.close(all,true)</onclick>
+                    <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
     			</control>
-    			<control type="button" id="7">
-    				<description>Set rating</description>
-                    <posx>4-col</posx>
+    			<control type="button" id="80001">
+    				<description>Go to album</description>
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
                     <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
-                    <label>31169</label>
-                    <onleft>6</onleft>
-                    <onup>61</onup>
-                    <ondown>12</ondown>
-    			</control>
-    			<control type="button" id="10">
-    				<description>Get Thumb</description>
-                    <posy>2-row</posy>
-                    <font>thumbTitle</font>
-                    <align>center</align>
-                    <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
-    				<label>13405</label>
-                    <onup>6</onup>
-                    <onright>12</onright>
-    			</control>
-    			<control type="button" id="12">
-    				<description>Get Fanart</description>
-                    <posx>4-col</posx>
-                    <posy>2-row</posy>
-                    <font>thumbTitle</font>
-                    <align>center</align>
-                    <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
-    				<label>20413</label>
-                    <onup>7</onup>
-                    <onleft>10</onleft>
+    				<label>31255</label>
+                    <onclick></onclick>
     			</control>
             </control>            
 		</control>
@@ -444,8 +420,7 @@
     					<shadowcolor>99000000</shadowcolor>
     				</control>
                 </control>
-            
-				
+        	
 				<!--dialog controls-->
                 <control type="grouplist" id="8000">
 					<posx>-36</posx>

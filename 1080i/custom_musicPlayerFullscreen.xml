@@ -95,6 +95,19 @@
 						<label>[B]$INFO[MusicPlayer.artist][/B][CR]$INFO[MusicPlayer.Album,, ]$INFO[MusicPlayer.year,(,)]</label>
 						<shadowcolor>99000000</shadowcolor>
 					</control>
+					<control type="label">
+                        <visible>Pvr.IsPlayingRadio</visible>
+						<posx>4-col</posx>
+						<posy>112</posy>
+						<width>16-col</width>
+						<height>3-row</height>
+						<align>center</align>
+						<font>buttonTitle</font>
+						<textcolor>textActive</textcolor>
+						<scroll>true</scroll>
+						<label>[B]$INFO[MusicPlayer.channelname][/B]</label>
+						<shadowcolor>99000000</shadowcolor>
+					</control>
 					<control type="progress">
 		                <description>Progress Bar</description>
 		                <posx>9-col</posx>

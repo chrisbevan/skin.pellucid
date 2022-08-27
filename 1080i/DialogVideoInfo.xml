@@ -198,11 +198,11 @@
             <!--dialog controls-->
             <control type="grouplist" id="8000">
                 <posx>24</posx>
-                <posy>24-row</posy>
+                <posy>948</posy>
                 <width>10-col</width>
                 <height>6-row</height>
                 <orientation>horizontal</orientation>
-                <itemgap>24</itemgap>
+                <itemgap>12</itemgap>
                 <onup>61</onup>
                 <onleft>999981</onleft>
                 

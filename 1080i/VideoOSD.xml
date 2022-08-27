@@ -165,7 +165,7 @@
                     <posx>0</posx>
                     <posy>9-row</posy>
                     <font>textbox</font>
-                    <width>564</width>
+                    <width>552</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>314</height>
@@ -238,10 +238,16 @@
                 </focusedlayout>
                 <content>
                     <item>
-                        <description>Previous</description>
-                        <label2></label2>
+                        <description>Vol Down</description>
+                        <label2></label2>
                         <thumb></thumb>
-                        <onclick>PlayerControl(previous)</onclick>
+                        <onclick>VolumeDown</onclick>
+                    </item>
+                    <item>
+                        <description>Vol Up</description>
+                        <label2></label2>
+                        <thumb></thumb>
+                        <onclick>VolumeUp</onclick>
                     </item>
                     <item>
                         <description>Rewind</description>
@@ -276,12 +282,7 @@
                         <thumb></thumb>
                         <onclick>PlayerControl(forward)</onclick>
                     </item>
-                    <item>
-                        <description>Next Chapter</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(next)</onclick>
-                    </item>
+                    
                     <item>
                         <visible>PVR.CanRecordPlayingChannel</visible>
                         <label2></label2>
