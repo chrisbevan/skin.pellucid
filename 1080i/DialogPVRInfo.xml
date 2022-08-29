@@ -116,8 +116,9 @@
                         <description>Switch to Channel</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <label>208</label>
                     </control>
                     <control type="button" id="4">
@@ -125,31 +126,35 @@
                         <description>Find similar</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <label>19003</label>
                     </control>
                     <control type="button" id="6">
                         <description>Record</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                     </control>
                     <control type="button" id="8">
                         <description>Play recording</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <label>19687</label>
                     </control>
                     <control type="button" id="11">
                         <description>Set Reminder</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <label>826</label>
                     </control>
                     <control type="button" id="4110">
@@ -157,8 +162,9 @@
                         <label>31073</label>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <onclick>dialog.close(all,true)</onclick>
                         <onclick>ActivateWindow(TVGuide)</onclick>
                         <onclick>Control.SetFocus(10)</onclick>

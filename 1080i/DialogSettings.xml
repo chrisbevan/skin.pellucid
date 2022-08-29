@@ -29,7 +29,7 @@
                 <width>888</width>
                 <height>768</height>
                 <texture border="24">dialogBackground.png</texture>
-                <colordiffuse>overlay</colordiffuse>
+                <colordiffuse>99000000</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
 			<control type="image">

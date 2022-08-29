@@ -15,8 +15,9 @@
 		<control type="group">
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
-                <texturefocus border="24" colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                <texturefocus border="24" colordiffuse="highlight">UIControls/button.png</texturefocus>
                 <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                <focusedcolor>textActive</focusedcolor>
 	            <width>8-col</width>
                 <align>center</align>
                 <textoffsetx>0</textoffsetx>

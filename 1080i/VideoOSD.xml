@@ -284,7 +284,7 @@
                     </item>
                     
                     <item>
-                        <visible>PVR.CanRecordPlayingChannel</visible>
+                        <visible>false</visible>
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
@@ -329,7 +329,7 @@
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>UIControls/button.png</texture>
-                        <colordiffuse>ffffffff</colordiffuse>
+                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -339,7 +339,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <font>thumbTitle</font>
-                        <textcolor>black</textcolor>
+                        <textcolor>textActive</textcolor>
                         <label>$INFO[ListItem.label]</label>
                     </control>
                 </focusedlayout>

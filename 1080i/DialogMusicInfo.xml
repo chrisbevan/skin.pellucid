@@ -180,8 +180,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
     				<label>184</label>
                     <onright>10</onright>
                     <onup>61</onup>
@@ -193,8 +194,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
     				<label>13405</label>
                     <onleft>6</onleft>
                     <onup>61</onup>
@@ -339,8 +341,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
     				<label>31254</label>
                     <onclick>dialog.close(all,true)</onclick>
                     <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
@@ -350,8 +353,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
     				<label>31255</label>
                     <onclick></onclick>
     			</control>
@@ -433,8 +437,9 @@
                         <font>thumbTitle</font>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
         				<label>31254</label>
                         <onclick>dialog.close(all,true)</onclick>
                         <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
@@ -444,8 +449,9 @@
                         <font>thumbTitle</font>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
         				<label>31255</label>
                         <onclick></onclick>
         			</control>

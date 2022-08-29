@@ -98,7 +98,7 @@
 	                    <posy>0</posy>
 	                    <width>408</width>
 	                    <height>230</height>
-	                    <aspectratio align="center" aligny="center">scale</aspectratio>
+	                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 	                    <texture diffuse="masks/artistThumb.png">$INFO[Listitem.art(thumb)]</texture>
 						<colordiffuse>88FFFFFF</colordiffuse>
 	                </control>
@@ -131,7 +131,7 @@
 	                        <posy>0</posy>
     	                    <width>408</width>
     	                    <height>230</height>
-	                        <aspectratio align="center" aligny="center">scale</aspectratio>
+	                        <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 	                        <texture diffuse="masks/artistThumb.png">$INFO[Listitem.art(thumb)]</texture>
                             <bordertexture infill="false" diffuse="masks/albumThumb_2.png">colors/white.png</bordertexture>
 	                        <bordersize>6</bordersize>

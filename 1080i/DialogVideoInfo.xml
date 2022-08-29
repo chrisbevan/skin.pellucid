@@ -218,8 +218,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>208</label>
                 </control>
                 <control type="button" id="11">
@@ -228,8 +229,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>20410</label>
                 </control>
                 <control type="button" id="10">
@@ -239,9 +241,10 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
                     <label>13511</label>
+                    <focusedcolor>textActive</focusedcolor>
                 </control>
                 <control type="button" id="7">
                     <visible>false</visible>
@@ -251,8 +254,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>31169</label>
                 </control>
                 <control type="button" id="6">
@@ -262,8 +266,9 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                     <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <focusedcolor>textActive</focusedcolor>
                     <label>31076</label>
                 </control>
             </control>
@@ -360,8 +365,9 @@
                         <description>Play</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
                         <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <focusedcolor>textActive</focusedcolor>
                         <label>208</label>
                     </control>
                     
