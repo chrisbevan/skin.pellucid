@@ -539,3 +539,7 @@ msgstr ""
 msgctxt "#31255"
 msgid "Go to Album"
 msgstr ""
+
+msgctxt "#31256"
+msgid "Unwatched Episodes"
+msgstr ""

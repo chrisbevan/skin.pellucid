@@ -323,6 +323,31 @@
 						<texture diffuse="masks/poster.png">$INFO[ListItem.Art(poster)]</texture>
 						<colordiffuse>88FFFFFF</colordiffuse>
 					</control>
+                    <control type="group">
+                        <visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+                        <posx>96r</posx>
+                        <posy>12</posy>
+    					<control type="image">
+    						<posx>0</posx>
+    						<posy>0</posy>
+    						<width>38</width>
+    						<height>38</height>
+    						<aspectratio>stretch</aspectratio>
+    						<texture diffuse="masks/square.png">colors/white.png</texture>
+    						<colordiffuse>highlight</colordiffuse>
+    					</control>
+            			<control type="label">
+                            <posx>0</posx>
+                            <posy>-2</posy>
+                            <width>38</width>
+                            <height>38</height>
+                            <aligny>center</aligny>
+                            <align>center</align>
+                            <font>smallStrong</font>
+                            <textcolor>textActive</textcolor>
+                            <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+                        </control>
+                    </control>
 					<control type="textbox">
 						<visible>!controlgroup(9000).hasfocus</visible>
 						<posx>12</posx>
@@ -350,6 +375,31 @@
 	                        <bordersize>6</bordersize>
 							<colordiffuse>ffffffff</colordiffuse>
 						</control>
+                        <control type="group">
+                            <visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
+                            <posx>98r</posx>
+                            <posy>12</posy>
+        					<control type="image">
+        						<posx>0</posx>
+        						<posy>0</posy>
+        						<width>38</width>
+        						<height>38</height>
+        						<aspectratio>stretch</aspectratio>
+        						<texture diffuse="masks/square.png">colors/white.png</texture>
+        						<colordiffuse>highlight</colordiffuse>
+        					</control>
+                			<control type="label">
+                                <posx>0</posx>
+                                <posy>-2</posy>
+                                <width>38</width>
+                                <height>38</height>
+                                <aligny>center</aligny>
+                                <align>center</align>
+                                <font>smallStrong</font>
+                                <textcolor>textActive</textcolor>
+                                <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+                            </control>
+                        </control>
 						<control type="textbox">
                             <visible>!controlgroup(9000).hasfocus</visible>
 							<posx>12</posx>

@@ -151,8 +151,15 @@
                         <thumb></thumb>
                     </item>
                     <item>
+                        <visible>container.content(movies)</visible>
                         <label>$LOCALIZE[180]</label>
                         <label2>$INFO[ListItem.duration(H)]hr $INFO[ListItem.duration(MM)]min</label2>
+                        <thumb></thumb>
+                    </item>
+                    <item>
+                        <visible>!container.content(movies)</visible>
+                        <label>$LOCALIZE[31256]</label>
+                        <label2>$INFO[ListItem.Property(UnWatchedEpisodes)]</label2>
                         <thumb></thumb>
                     </item>
                 </content>

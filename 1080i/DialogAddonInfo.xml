@@ -129,7 +129,7 @@
                  </control>
             </control>
             <!--dialog controls-->
-            <control type="grouplist">
+            <control type="grouplist" id="8000">
                 <visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
                 <posx>0</posx>
                 <posy>372</posy>

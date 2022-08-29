@@ -13,30 +13,14 @@
 			<height>18-row</height>
         </control>
 		<control type="group">
-			<control type="grouplist" id="9004">
-				<visible>!integer.IsGreater(Container(996).NumItems,0)</visible>
-				<posx>col-7-begin</posx>
-	            <posy>8-row</posy>
-	            <itemgap>0</itemgap>
-	            <width>8-col</width>
-	            <height>16-row</height>
-	            <itemgap>0</itemgap>
-				<onleft>996</onleft>
-	            <include condition="Window.isactive(Videos) | window.isactive(videoplaylist) | window.isactive(tvchannels) | window.isactive(tvguide) | window.isactive(TVRecordings) | window.isactive(tvtimers)">videoSideMenu</include>
-	            <include condition="Window.isactive(Music) | window.isactive(musicplaylist) | window.isactive(radiochannels)">musicSideMenu</include>
-	            <include condition="window.isactive(pictures)">picturesSideMenu</include>
-	            <include condition="window.isactive(addonbrowser)">addonsSideMenu</include>
-				<include condition="window.isactive(games)">gameSideMenu</include>
-	        </control>
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
-                <texturenofocus colordiffuse="d0000000" diffuse="masks/contextMenu.png">colors/black.png</texturenofocus>
-	            <texturefocus colordiffuse="highlight" diffuse="masks/contextMenu.png">colors/white.png</texturefocus>
-	            <focusedcolor>textActive</focusedcolor>
+                <texturefocus border="24" colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
 	            <width>8-col</width>
+                <align>center</align>
+                <textoffsetx>0</textoffsetx>
                 <align>left</align>
-                <textoffsetx>24</textoffsetx>
-                <font>buttonTitle</font>
 	        </control>
 		</control>
         <!--debugging-->
