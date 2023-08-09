@@ -78,7 +78,7 @@ msgstr "Recharger l'habillage"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr "Déboggage"
+msgstr "Débogage"
 
 msgctxt "#31046"
 msgid "Field"
@@ -182,7 +182,7 @@ msgstr "Transférer et copier des fichiers"
 
 msgctxt "#31096"
 msgid "No items found"
-msgstr "Aucun élement trouvé"
+msgstr "Aucun élément trouvé"
 
 msgctxt "#31099"
 msgid "Add Group"
@@ -190,7 +190,7 @@ msgstr "Ajouter un groupe"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr "Renomer le groupe"
+msgstr "Renommer le groupe"
 
 msgctxt "#31101"
 msgid "Delete Group"
@@ -318,7 +318,7 @@ msgstr "Fins"
 
 msgctxt "#31165"
 msgid "TV Recordings"
-msgstr "Enregistrement TV"
+msgstr "Enregistrements TV"
 
 msgctxt "#31169"
 msgid "Rate"
@@ -434,7 +434,7 @@ msgstr "Déactiver les fanarts étendus"
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr "Lecture du disque"
+msgstr "Lire un disque"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
