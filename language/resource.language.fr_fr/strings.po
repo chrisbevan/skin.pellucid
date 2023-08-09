@@ -7,16 +7,6 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: chris@chrisbevan.co.uk\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-<<<<<<< HEAD
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: oc_fr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-=======
 "PO-Revision-Date: 2023-02-28 15:15+0000\n"
 "Last-Translator: skypichat <skypichat@hotmail.fr>\n"
 "Language-Team: French (France) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/fr_fr/>\n"
@@ -26,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.15.2\n"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
@@ -206,11 +195,7 @@ msgstr "Renommer le groupe"
 
 msgctxt "#31101"
 msgid "Delete Group"
-<<<<<<< HEAD
-msgstr "Effacer le groupe"
-=======
 msgstr "Supprimer le groupe"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
@@ -330,11 +315,7 @@ msgstr "Liste de lecture sauvegardée"
 
 msgctxt "#31160"
 msgid "Ends"
-<<<<<<< HEAD
-msgstr "Fins"
-=======
 msgstr "Prend fin"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
 
 msgctxt "#31165"
 msgid "TV Recordings"
@@ -442,11 +423,8 @@ msgstr "Chaines TV"
 
 msgctxt "#31216"
 msgid "TV Shows"
-<<<<<<< HEAD
 msgstr "séries"
-=======
-msgstr "Séries TV"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
+
 
 msgctxt "#31218"
 msgid "Enable this addon"
@@ -474,11 +452,7 @@ msgstr "Tous les films"
 
 msgctxt "#31225"
 msgid "All TV Shows"
-<<<<<<< HEAD
 msgstr "Toutes les séries"
-=======
-msgstr "Toutes les séries TV"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
@@ -542,11 +516,7 @@ msgstr "File d'attente"
 
 msgctxt "#31249"
 msgid "Live TV"
-<<<<<<< HEAD
-msgstr "TV Directe"
-=======
 msgstr "TV en direct"
->>>>>>> 0eb9a3cc91d6e31af0a460babae08e8f9c851b34
 
 msgctxt "#31250"
 msgid "Radio"
