@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-08-26 19:14+0000\n"
+"PO-Revision-Date: 2024-01-12 08:13+0000\n"
 "Last-Translator: Konrad W <kondiwxd@gmail.com>\n"
 "Language-Team: Polish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/pl_pl/>\n"
 "Language: pl_pl\n"
@@ -15,19 +15,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 5.3\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
-msgstr ""
+msgstr "Skin dla Kodi stworzony przez theDeadmanInYossariansTent"
 
 msgctxt "Addon Description"
 msgid "Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
-msgstr ""
+msgstr "Pellucid zapewnia lekkie, czyste i proste doświadczenie z aplikacją Kodi. Stworzone z myślą o maksymalnym użytkowaniu przy minimalnym stopniu konfiguracji."
 
 msgctxt "#31008"
 msgid "Sort by"
-msgstr "Sortowanie"
+msgstr "Sortuj według"
 
 msgctxt "#31012"
 msgid "My Library"
@@ -39,7 +39,7 @@ msgstr "tytuł(ów)"
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "Dnia"
 
 msgctxt "#31019"
 msgid "Open playlist"
@@ -79,7 +79,7 @@ msgstr "Wczytaj skórę ponownie"
 
 msgctxt "#31044"
 msgid "Debugging"
-msgstr ""
+msgstr "Debugowanie"
 
 msgctxt "#31046"
 msgid "Field"
@@ -163,7 +163,7 @@ msgstr "Według"
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Czasomierz"
 
 msgctxt "#31088"
 msgid "Video Addons"
@@ -283,11 +283,11 @@ msgstr "Teraz odtwarzane"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
-msgstr ""
+msgstr "Zatrzymaj odtwarzanie video po powrocie do menu"
 
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr ""
+msgstr "Priorytetowe wyście niż zamknięcie w menu zasilania"
 
 msgctxt "#31143"
 msgid "Remaining"
@@ -295,11 +295,11 @@ msgstr "Pozostało"
 
 msgctxt "#31144"
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 msgctxt "#31145"
 msgid "Item(s)"
-msgstr ""
+msgstr "element(ów)"
 
 msgctxt "#31149"
 msgid "Released"
@@ -327,7 +327,7 @@ msgstr "Oceń"
 
 msgctxt "#31170"
 msgid "Menus"
-msgstr ""
+msgstr "Menu"
 
 msgctxt "#31171"
 msgid "Edit home menu"
@@ -387,7 +387,7 @@ msgstr "Pokaż tylko nie obejrzane rzeczy:"
 
 msgctxt "#31199"
 msgid "Artists in"
-msgstr ""
+msgstr "Artyści w"
 
 msgctxt "#31203"
 msgid "Smart Playlist"
@@ -395,19 +395,19 @@ msgstr "Smart playlista"
 
 msgctxt "#31205"
 msgid "No further details available."
-msgstr ""
+msgstr "Brak dalszych szczegółów."
 
 msgctxt "#31206"
 msgid "Kodi System Information"
-msgstr ""
+msgstr "Informacje o systemie Kodi"
 
 msgctxt "#31209"
 msgid "<Source name>"
-msgstr ""
+msgstr "<Nazwa źródł"
 
 msgctxt "#31211"
 msgid "<Smart playlist name>"
-msgstr ""
+msgstr "<Nazwa Smart playlisty>"
 
 msgctxt "#31212"
 msgid "From"
@@ -427,11 +427,11 @@ msgstr "Seriale"
 
 msgctxt "#31218"
 msgid "Enable this addon"
-msgstr ""
+msgstr "Włącz ten dodatek"
 
 msgctxt "#31220"
 msgid "Disable extended fanart"
-msgstr ""
+msgstr "Wyłącz rozszerzoną fototapetę"
 
 msgctxt "#31221"
 msgid "Play Disc"
@@ -439,7 +439,7 @@ msgstr "Dysk"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
-msgstr ""
+msgstr "Zmień grupę kanałów"
 
 msgctxt "#31223"
 msgid "All Albums"
@@ -479,7 +479,7 @@ msgstr "Gry"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
-msgstr ""
+msgstr "Edytuj menu sekcji gry"
 
 msgctxt "#31234"
 msgid "Game Addons"
@@ -495,15 +495,15 @@ msgstr "Wyniki dla"
 
 msgctxt "#31238"
 msgid "Disable recently added section for Movies"
-msgstr ""
+msgstr "Wyłącz sekcję ostatnio dodane dla Filmów"
 
 msgctxt "#31239"
 msgid "Disable recently added section for TV Shows"
-msgstr ""
+msgstr "Wyłącz sekcję ostatnio dodane dla Seriali TV"
 
 msgctxt "#31240"
 msgid "Disable recently added section for Albums"
-msgstr ""
+msgstr "Wyłącz sekcję ostatnio dodane dla Albumów"
 
 msgctxt "#31245"
 msgid "Finishes"
