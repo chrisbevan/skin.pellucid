@@ -2,7 +2,7 @@
 <window>
 	<views>10</views>
 	<defaultcontrol always="true">9999</defaultcontrol>
-	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+	<onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
 	<onload>Skin.SetString(recentitems,video)</onload>
 	<animation type="windowClose">
 		<effect type="fade" start="100" end="0" time="300"/>
@@ -56,28 +56,31 @@
     						<posx>0</posx>
     						<posy>0</posy>
     						<width>69</width>
-    						<height>69</height>
+    						<height>70</height>
     						<aspectratio>stretch</aspectratio>
     						<texture diffuse="masks/iconEndCapLeft.png" border="0">colors/black.png</texture>
     						<colordiffuse>d0000000</colordiffuse>
     					</control>
-    					<control type="image">
-    						<posx>0</posx>
-    						<posy>0</posy>
-    						<width>69</width>
-    						<height>69</height>
-    						<aspectratio>stretch</aspectratio>
-    						<texture diffuse="masks/iconEndCapLeft.png">$INFO[listitem.thumb]</texture>
-                            <bordersize>8</bordersize>
-    						<colordiffuse></colordiffuse>
-    					</control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>69</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel]</label>
+                            <scroll>false</scroll>
+                        </control>
     					<control type="image">
     						<posx>1-col</posx>
     						<posy>0</posy>
-    						<width>3-col-textbox</width>
-    						<height>69</height>
+    						<width>213</width>
+    						<height>70</height>
     						<aspectratio>stretch</aspectratio>
-    						<texture border="0">masks/tvChannel.png</texture>
+    						<texture border="0">colors/black.png</texture>
     						<colordiffuse>d0000000</colordiffuse>
     					</control>
 						<control type="label">
@@ -94,39 +97,41 @@
 					<focusedchannellayout height="2-row" width="288">
 						<control type="image">
 							<posx>1-col</posx>
-							<width>216</width>
+							<width>213</width>
 							<height>2-row</height>
 							<texture>colors/white.png</texture>
 							<colordiffuse>highlight</colordiffuse>
 						</control>
                         <control type="group">
 							<animation type="focus" loop="false" reversible="false">
-								<effect type="fade" time="500"/>
-								<effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
+								<effect type="fade" time="0" end="50"/>
 							</animation>
         					<control type="image">
         						<posx>0</posx>
         						<posy>0</posy>
-        						<width>69</width>
+        						<width>72</width>
         						<height>72</height>
         						<aspectratio>stretch</aspectratio>
         						<texture diffuse="masks/iconEndCapLeft.png" border="0">colors/white.png</texture>
         						<colordiffuse>highlight</colordiffuse>
         					</control>
-        					<control type="image">
-        						<posx>0</posx>
-        						<posy>0</posy>
-        						<width>69</width>
-        						<height>69</height>
-        						<aspectratio>stretch</aspectratio>
-        						<texture diffuse="masks/iconEndCapLeft.png">$INFO[listitem.thumb]</texture>
-                                <bordersize>8</bordersize>
-        						<colordiffuse></colordiffuse>
-        					</control>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1-col-textbox</width>
+                            <height>69</height>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <font>itemTitle</font>
+                            <textcolor>textActive</textcolor>
+                            <shadowcolor></shadowcolor>
+                            <label>$INFO[ListItem.ChannelNumberLabel]</label>
+                            <scroll>false</scroll>
                         </control>
 						<control type="label">
 							<posx>1-col-indent</posx>
-							<width>198</width>
+							<width>186</width>
 							<height>2-row</height>
 							<font>itemTitle</font>
 							<textcolor>textActive</textcolor>
@@ -196,8 +201,6 @@
 				<visible>false</visible>
 			</control>
 		</control>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
 		<!--hub menu-->
 		<include>hubMenu</include>
 		<!--debugging-->

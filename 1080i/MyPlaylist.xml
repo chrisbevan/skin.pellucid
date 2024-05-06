@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">59</defaultcontrol>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <defaultcontrol always="true">9876</defaultcontrol>
+    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
 	<views>59</views>
     <controls>
@@ -41,16 +41,27 @@
                     <onleft>9999</onleft>
                     <onback>9999</onback>
                 </control>
-            </control>
-			<!--page header-->
+            </control> 
+            
+            <!--page header-->
             <control type="group">
+                <visible>control.hasfocus(59)</visible>
 				<include>pageHeader</include>    
-            </control>           
+            </control>          
         </control>
-        <!--mini window-->
-        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
+		<!--hidden buttons to handle dialog autohide-->
+		<control type="button" id="9876">
+			<posx>-100</posx>
+			<posy>-100</posy>
+			<height>1-col</height>
+			<width>1-col</width>
+			<onclick>control.setfocus(9000)</onclick>
+			<onleft>control.setfocus(9000)</onleft>
+            <ondown>control.setfocus(2100)</ondown>
+			<oninfo>control.setfocus(9000)</oninfo>
+		</control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">

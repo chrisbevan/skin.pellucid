@@ -4,8 +4,6 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
         <!--main menu-->
         <control type="group">
             <posx>col-4-begin</posx>
@@ -100,7 +98,6 @@
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <texture border="0">masks/square.png</texture>
                         <colordiffuse>textActive</colordiffuse>
-                        <include>spinFocusIcon</include>
                     </control>
                     <control type="label">
                         <posx>0</posx>
@@ -178,6 +175,7 @@
                         <onclick>activatewindow(gamesettings)</onclick>
                     </item>
                     <item>
+                        <visible>false</visible>
                         <description>Profiles</description>
                         <label>$LOCALIZE[14210]</label>
                         <label2></label2>
@@ -197,13 +195,6 @@
                         <label2></label2>
                         <property name="label3">$LOCALIZE[31067]</property>
                         <onclick>activatewindow(AddonBrowser)</onclick>
-                    </item>
-                    <item>
-                        <description>File Manager</description>
-                        <label>10003</label>
-                        <label2></label2>
-                        <property name="label3">$LOCALIZE[31095]</property>
-                        <onclick>activatewindow(filemanager)</onclick>
                     </item>
                     <item>
                         <description>Programs</description>

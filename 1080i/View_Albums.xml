@@ -14,13 +14,15 @@
 	        </control>
         	<control type="group" id="9125">
 				<visible>$EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue] + !Skin.HasSetting(disableRecentAlbums)</visible>
-				<animation type="Conditional" condition="!controlgroup(9125).hasfocus">
+			
+                <animation type="Conditional" condition="!controlgroup(9125).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-200" time="200"/>
 					<effect type="fade" start="100" end="0" time="200"/>
 	            </animation>
-				<animation type="Conditional" condition="controlgroup(9125).hasfocus">
-					<effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
-	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
+             
+                <animation type="Conditional" condition="controlgroup(9125).hasfocus">
+	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="400"/>
+	                <effect type="fade" start="0" end="100" time="200" delay="350"/>
 	            </animation>
 				<!--quick link selector-->
                 <control type="group">
@@ -45,7 +47,6 @@
     	                <onback>9000</onback>
                 		<control type="button" id="506">
                             <description>Search</description>
-                            <visible>System.HasAddon(script.globalsearch)</visible>
                             <width>1-col</width>
                             <texturenofocus></texturenofocus>
                             <texturefocus>masks/circle.png</texturefocus>
@@ -54,7 +55,7 @@
                             <focusedcolor>black</focusedcolor>
                             <font>symbolLarge</font>
                             <label></label>
-                            <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
+                            <onclick>Runscript(script.quickfind,media=albums)</onclick>                        
                         </control>            
                         <control type="button" id="4000">
                             <label>31180</label>

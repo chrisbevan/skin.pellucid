@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="!integer.IsGreater(Container(996).NumItems,0)">control.setfocus(9004)</onload>
     <include>fadeInOut</include>
     <controls>
         <include>modalDialog</include>
@@ -15,13 +14,11 @@
 		<control type="group">
 	        <control type="button" id="1000">
 	            <description>Buttons</description>
-                <texturefocus border="24" colordiffuse="highlight">UIControls/button.png</texturefocus>
-                <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
                 <focusedcolor>textActive</focusedcolor>
 	            <width>8-col</width>
-                <align>center</align>
-                <textoffsetx>0</textoffsetx>
                 <align>left</align>
+                <textoffsetx>24</textoffsetx>
 	        </control>
 		</control>
         <!--debugging-->

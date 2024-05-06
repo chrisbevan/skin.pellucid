@@ -218,8 +218,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
                     <label>208</label>
                 </control>
@@ -229,8 +229,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
                     <label>20410</label>
                 </control>
@@ -241,8 +241,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <label>13511</label>
                     <focusedcolor>textActive</focusedcolor>
                 </control>
@@ -254,8 +254,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
                     <label>31169</label>
                 </control>
@@ -266,8 +266,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
                     <label>31076</label>
                 </control>
@@ -365,8 +365,8 @@
                         <description>Play</description>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                        <texturenofocus colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                        <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                        <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                         <focusedcolor>textActive</focusedcolor>
                         <label>208</label>
                     </control>

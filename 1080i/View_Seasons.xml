@@ -30,7 +30,7 @@
                     <visible>!String.Contains(Container.folderpath,plugin)</visible>
                     <posx>col-1-begin</posx>
                     <posy>row-7-begin</posy>
-					<control type="label">
+                    <control type="label">
                         <posx>0</posx>
                         <posy>4-row</posy>
                         <width>12-col</width>
@@ -159,8 +159,8 @@
 	                            <height>378</height>
 	                            <aspectratio>stretch</aspectratio>
 	                            <texture diffuse="masks/seasonPoster.png">colors/black.png</texture>
-	                            <bordersize>0</bordersize>
-	                            <colordiffuse>BBFFFFFF</colordiffuse>
+                                <bordertexture infill="false" diffuse="masks/seasonPoster.png">colors/white.png</bordertexture>
+	                            <bordersize>6</bordersize>
 	                        </control>
                             <control type="label">
 	                            <visible>ListItem.IsParentFolder</visible>

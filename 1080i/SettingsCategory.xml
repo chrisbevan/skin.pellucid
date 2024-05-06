@@ -4,8 +4,6 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-		<!--mini window-->
-		<include>miniVideoPlayer</include>
         <!--placeholder label for current setting group title-->
         <control type="label" id="2">
             <visible>false</visible>

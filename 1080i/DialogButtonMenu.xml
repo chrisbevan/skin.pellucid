@@ -18,7 +18,7 @@
                 <itemgap>0</itemgap>
                 <itemlayout width="6-col" height="2-row">
                     <control type="label">
-                        <posx>12</posx>
+                        <posx>24</posx>
                         <posy>0</posy>
                         <width>6-col-gutter</width>
                         <height>2-row</height>
@@ -34,13 +34,12 @@
                         <posy>0</posy>
                         <width>6-col</width>
                         <height>2-row</height>
-                        <aspectratio scalediffuse="false">scale</aspectratio>
-                        <texture border="0">colors/white.png</texture>
+                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <texture border="24" colordiffuse="highlight">masks/menuTitle.png</texture>
                         <bordersize>0</bordersize>
-                        <colordiffuse>highlight</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>12</posx>
+                        <posx>24</posx>
                         <posy>0</posy>
                         <width>6-col-gutter</width>
                         <height>2-row</height>

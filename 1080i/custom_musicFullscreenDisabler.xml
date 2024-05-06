@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1101">
     <onload>action(back)</onload>
-    <visible>Window.IsActive(1103) + !player.playing + !player.paused</visible>
+    <visible>Window.IsActive(musicplaylist) + !player.playing + !player.paused</visible>
     <controls>
         <!--debugging-->
         <include>DebugGrid</include>

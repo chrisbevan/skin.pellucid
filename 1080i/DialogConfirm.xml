@@ -58,8 +58,8 @@
                    <align>center</align>
                    <textoffsetx>0</textoffsetx>
                    <width>8-col</width>
-                   <texturefocus border="24" colordiffuse="highlight">UIControls/button.png</texturefocus>
-                   <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                   <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                   <texturenofocus border="24" colordiffuse="77000000">masks/menuTitle.png</texturenofocus>
                    <focusedcolor>textActive</focusedcolor>
                </control>
                <control type="button" id="11">
@@ -67,8 +67,8 @@
                      <align>center</align>
                      <textoffsetx>0</textoffsetx>
                      <width>8-col</width>
-                     <texturefocus border="24" colordiffuse="highlight">UIControls/button.png</texturefocus>
-                     <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                     <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                     <texturenofocus border="24" colordiffuse="77000000">masks/menuTitle.png</texturenofocus>
                      <focusedcolor>textActive</focusedcolor>
                  </control>
                <control type="button" id="12">
@@ -76,8 +76,8 @@
                    <align>center</align>
                    <textoffsetx>0</textoffsetx>
                    <width>8-col</width>
-                   <texturefocus border="24" colordiffuse="highlight">UIControls/button.png</texturefocus>
-                   <texturenofocus border="24" colordiffuse="ff000000">UIControls/button.png</texturenofocus>
+                   <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                   <texturenofocus border="24" colordiffuse="77000000">masks/menuTitle.png</texturenofocus>
                    <focusedcolor>textActive</focusedcolor>
                </control>
            </control>

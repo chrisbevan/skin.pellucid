@@ -284,8 +284,8 @@
         <disabledcolor>textDisabled</disabledcolor>
         <texturenofocus></texturenofocus>
         <texturefocus>colors/white.png</texturefocus>
-        <sliderwidth>0</sliderwidth>
-        <sliderheight>0</sliderheight>
+        <sliderwidth>-24</sliderwidth>
+        <sliderheight></sliderheight>
         <texturesliderbar></texturesliderbar>
         <textureslidernib></textureslidernib>
         <textureslidernibfocus></textureslidernibfocus>

@@ -67,7 +67,7 @@
     </include>
     <include name="modalDialogContentShift">
         <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
-            <effect type="zoom" end="140" time="200" center="auto" tween="linear" easing="out"/>
+            <effect type="zoom" end="130" time="200" center="auto" tween="linear" easing="out"/>
         </animation>
     </include>
 </includes>

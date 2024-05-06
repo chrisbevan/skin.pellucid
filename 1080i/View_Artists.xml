@@ -6,15 +6,15 @@
 			<visible>$EXP[isMusicArtist]</visible>
 			<!--quick link selector-->
             <control type="group">
-                <posx>col-4-begin</posx>
+                <posx>col-8-begin</posx>
                 <posy>170</posy>
 				<control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>18-col</width>
+                    <width>10-col</width>
                     <height>2-row</height>
                     <aspectratio>stretch</aspectratio>
-                    <texture>masks/menuBar.png</texture>
+                    <texture border="24">masks/menuBar.png</texture>
                     <colordiffuse>77000000</colordiffuse>
                 </control>
                 <control type="grouplist" id="9202">
@@ -38,6 +38,17 @@
                         <label></label>
                         <onclick>RunScript(script.globalsearch,artists=true&amp;albums=true&amp;songs=true&amp;musicvideos=true)</onclick>
                     </control>            
+                    <control type="button" id="3221">
+                        <texturenofocus></texturenofocus>
+                        <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>
+                        <font>thumbTitle</font>
+                        <width>4-col</width>
+                        <align>center</align>
+                        <textoffsetx>0</textoffsetx>
+                        <label>Genres</label>
+                        <onclick>Container.Update(musicdb://genres/)</onclick>
+                        <onclick>control.setfocus(55)</onclick>
+                    </control>
                     <control type="button" id="3222">
                         <description>Sort by</description>
                         <texturenofocus></texturenofocus>
@@ -80,7 +91,7 @@
 	            <onleft>9000</onleft>
 	            <onright>60</onright>
 	            <ondown>51</ondown>
-	            <onup>51</onup>
+	            <onup>9202</onup>
                 <onback>9202</onback>
 	            <scrolltime tween="sine">250</scrolltime>
 	            <pagecontrol>60</pagecontrol>
@@ -100,7 +111,7 @@
 	                    <height>230</height>
 	                    <aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 	                    <texture diffuse="masks/artistThumb.png">$INFO[Listitem.art(thumb)]</texture>
-						<colordiffuse>88FFFFFF</colordiffuse>
+						<colordiffuse>55FFFFFF</colordiffuse>
 	                </control>
 	                <control type="textbox">
 	                    <posx>24</posx>

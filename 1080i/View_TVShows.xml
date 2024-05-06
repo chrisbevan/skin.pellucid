@@ -21,13 +21,15 @@
             </control>
 			<control type="group" id="9201">
 				<visible>$EXP[isTVShow] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentTVShows)</visible>
-				<animation type="Conditional" condition="!controlgroup(9201).hasfocus">
+				
+                <animation type="Conditional" condition="!controlgroup(9201).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-200" time="200"/>
 					<effect type="fade" start="100" end="0" time="200"/>
 	            </animation>
-				<animation type="Conditional" condition="controlgroup(9201).hasfocus">
-	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
-	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
+                
+                <animation type="Conditional" condition="controlgroup(9201).hasfocus">
+	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="400"/>
+	                <effect type="fade" start="0" end="100" time="200" delay="350"/>
 	            </animation>
 				<!--quick link selector-->
                 <control type="group">
@@ -50,9 +52,8 @@
     	                <onleft>9000</onleft>
     	                <ondown>9203</ondown>
     	                <onback>9000</onback>
-                		<control type="button" id="506">
+                		<control type="button" id="3999">
                             <description>Search</description>
-                            <visible>System.HasAddon(script.globalsearch)</visible>
                             <width>1-col</width>
                             <texturenofocus></texturenofocus>
                             <texturefocus>masks/circle.png</texturefocus>
@@ -61,7 +62,7 @@
                             <textoffsetx>0</textoffsetx>
                             <align>center</align>
                             <label></label>
-                            <onclick>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;)</onclick>
+                            <onclick>Runscript(script.quickfind,media=tvshows)</onclick>
                         </control>            
                         <control type="button" id="4000">
                             <label>31178</label>
@@ -71,7 +72,7 @@
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
-                            <onfocus>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/recentEpisodes.xsp)</onfocus>
+                            <onclick>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/recentEpisodes.xsp)</onclick>
                             <ondown>control.setfocus(9203,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
@@ -81,25 +82,36 @@
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
-                            <onfocus>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/inprogressTVShows.xsp)</onfocus>
+                            <onclick>Skin.SetString(tvQuickLinkValue,special://skin/extras/playlists/inprogressTVShows.xsp)</onclick>
                             <ondown>control.setfocus(9203,0)</ondown>
                         </control>
-                        <control type="radiobutton" id="14">
+                        <control type="button" id="3224">
+                            <visible>System.Setting(hidewatched)</visible>
                             <description>Watched Toggle</description>
-                            <label>31195</label>
+                            <label>Unwatched Only:   </label>
                             <width>4-col</width>
                             <font>thumbTitle</font>
-                            <align>left</align>
+                            <align>center</align>
                             <textoffsetx>24</textoffsetx>
                             <label></label>
                             <texturenofocus></texturenofocus>
                             <texturefocus>UIControls/button.png</texturefocus>
-                            <textureradiofocus colordiffuse="highlight">UIControls/toggle-on.png</textureradiofocus>
-                            <textureradionofocus>UIControls/toggle-off.png</textureradionofocus>
-                            <radiowidth>60</radiowidth>
-                            <radioheight>30</radioheight>
-                            <radioposx>204</radioposx>
-                            <focusedcolor>black</focusedcolor>
+                            <label2>[COLOR highlight]On[/COLOR]</label2>
+                            <onclick>sendclick(14)</onclick>
+                        </control>
+                        <control type="button" id="3225">
+                            <visible>!System.Setting(hidewatched)</visible>
+                            <description>Watched Toggle</description>
+                            <label>Unwatched Only:    </label>
+                            <width>4-col</width>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>24</textoffsetx>
+                            <label></label>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus>UIControls/button.png</texturefocus>
+                            <label2>[COLOR highlight]Off[/COLOR]</label2>
+                            <onclick>sendclick(14)</onclick>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
@@ -282,7 +294,18 @@
                 <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
             </animation>
 			<control type="label">
-                <visible>!controlgroup(9000).hasfocus + $EXP[isTVShow] + !$EXP[isMovie]</visible>
+				<visible>!controlgroup(9000).hasfocus + $EXP[isTVShow] + !$EXP[isMovie] + System.Setting(hidewatched)</visible>
+                <posx>col-1-begin</posx>
+                <posy>736</posy>
+                <width>12-col</width>
+                <height>2-row</height>
+                <aligny>center</aligny>
+                <font>menuTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>Unwatched TV Shows</label>
+            </control>
+			<control type="label">
+				<visible>!controlgroup(9000).hasfocus + $EXP[isTVShow] + !$EXP[isMovie] + !System.Setting(hidewatched)</visible>
                 <posx>col-1-begin</posx>
                 <posy>736</posy>
                 <width>12-col</width>
@@ -325,25 +348,25 @@
 					</control>
                     <control type="group">
                         <visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                        <posx>96r</posx>
-                        <posy>12</posy>
+                        <posx>174</posx>
+                        <posy>6</posy>
     					<control type="image">
     						<posx>0</posx>
     						<posy>0</posy>
-    						<width>38</width>
-    						<height>38</height>
+    						<width>72</width>
+    						<height>36</height>
     						<aspectratio>stretch</aspectratio>
-    						<texture diffuse="masks/square.png">colors/white.png</texture>
+    						<texture border="12">masks/homeMenuButton.png</texture>
     						<colordiffuse>highlight</colordiffuse>
     					</control>
-            			<control type="label">
+                        <control type="label">
                             <posx>0</posx>
                             <posy>-2</posy>
-                            <width>38</width>
-                            <height>38</height>
+                            <width>72</width>
+                            <height>36</height>
                             <aligny>center</aligny>
                             <align>center</align>
-                            <font>smallStrong</font>
+                            <font>thumbTitle</font>
                             <textcolor>textActive</textcolor>
                             <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
                         </control>
@@ -377,25 +400,25 @@
 						</control>
                         <control type="group">
                             <visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                            <posx>98r</posx>
+                            <posx>168</posx>
                             <posy>12</posy>
         					<control type="image">
         						<posx>0</posx>
         						<posy>0</posy>
-        						<width>38</width>
-        						<height>38</height>
+        						<width>72</width>
+        						<height>36</height>
         						<aspectratio>stretch</aspectratio>
-        						<texture diffuse="masks/square.png">colors/white.png</texture>
+        						<texture border="12">masks/homeMenuButton.png</texture>
         						<colordiffuse>highlight</colordiffuse>
         					</control>
-                			<control type="label">
+                            <control type="label">
                                 <posx>0</posx>
                                 <posy>-2</posy>
-                                <width>38</width>
-                                <height>38</height>
+                                <width>72</width>
+                                <height>36</height>
                                 <aligny>center</aligny>
                                 <align>center</align>
-                                <font>smallStrong</font>
+                                <font>thumbTitle</font>
                                 <textcolor>textActive</textcolor>
                                 <label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
                             </control>

@@ -12,7 +12,6 @@
             <posx>col-7-begin</posx>
             <posy>row-4-begin</posy>
             <!--animations-->
-            <include>modalDialogInOutVertical</include>
             <control type="image">
                 <posx>-12</posx>
                 <posy>-12</posy>
@@ -51,15 +50,53 @@
                 <textcolor>textActive</textcolor>
                 <shadowcolor></shadowcolor>
             </control>
+            <!--settings selector-->
+            <control type="grouplist" id="4500">
+                <posx>0</posx>
+                <posy>78</posy>
+                <orientation>horizontal</orientation>
+                <itemgap>0</itemgap>
+                <ondown>5</ondown>
+                <control type="button" id="4501">
+                    <label>Subtitles</label>
+                    <width>4-col</width>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturenofocus colordiffuse="44000000">colors/black.png</texturenofocus>
+                    <onclick>dialog.close(osdaudiosettings,force)</onclick>
+                    <onclick>dialog.close(osdvideosettings,force)</onclick>
+                    <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+                </control> 
+                <control type="button" id="4502">
+                    <label>Audio</label>
+                    <width>4-col</width>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturenofocus colordiffuse="44000000">colors/black.png</texturenofocus>
+                    <onclick>dialog.close(osdvideosettings,force)</onclick>
+                    <onclick>dialog.close(osdsubtitlesettings,force)</onclick>
+                    <onclick>ActivateWindow(osdaudiosettings)</onclick>
+                </control> 
+                <control type="button" id="4503">
+                    <label>Video</label>
+                    <width>4-col</width>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <texturenofocus colordiffuse="44000000">colors/black.png</texturenofocus>
+                    <onclick>dialog.close(osdaudiosettings,force)</onclick>
+                    <onclick>dialog.close(osdsubtitlesettings,force)</onclick>
+                    <onclick>ActivateWindow(osdvideosettings)</onclick>
+                </control>  
+            </control>
             <control type="grouplist" id="5">
                 <description>control area</description>
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>160</posy>
                 <width>12-col</width>
-                <height>654</height>
+                <height>556</height>
                 <onright>9000</onright>
-                <onup>5</onup>
-                <ondown>5</ondown>
+                <onup>4501</onup>
+                <onback>4501</onback>
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>

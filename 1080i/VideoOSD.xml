@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8001</defaultcontrol>
-    <onload>Control.SetFocus(8001,3)</onload>
     <controls>
         <control type="label">
             <posx>col-1-begin</posx>
@@ -20,7 +19,7 @@
             <textcolor>textActive</textcolor>
         </control>
         <control type="group">
-            <posx>1236</posx>
+            <posx>1284</posx>
             <posy>0</posy>
             <animation type="Windowopen">
 				<effect type="fade" start="0" end="100" time="400"/>
@@ -54,15 +53,25 @@
 					<orientation>vertical</orientation>
 					<itemgap>32</itemgap>
 					<control type="label">
+                        <visible>!Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
 	                    <align>left</align>
 	                    <height>1-row</height>
-	                    <font>itemTitle</font>
+	                    <font>menuTitle</font>
 	                    <textcolor>textActive</textcolor>
-	                    <label>$INFO[videoplayer.TVShowTitle]$INFO[VideoPlayer.ChannelName]</label>
+	                    <label>$INFO[videoplayer.TVShowTitle] $INFO[videoplayer.season,(S,] $INFO[videoplayer.Episode,Ep,)]</label>
 	                </control>
 					<control type="label">
+                        <visible>Pvr.IsPlayingTv</visible>
 	                    <width>8-col</width>
+	                    <align>left</align>
+	                    <height>1-row</height>
+	                    <font>menuTitle</font>
+	                    <textcolor>textActive</textcolor>
+	                    <label>$INFO[VideoPlayer.ChannelName]</label>
+	                </control>
+					<control type="label">
+	                    <width>8-col-gutter</width>
 	                    <align>left</align>
 	                    <height>3-row</height>
 	                    <aligny>center</aligny>
@@ -138,7 +147,6 @@
                         <label fallback="13205">$INFO[VideoPlayer.EndTime]</label>
                         <shadowcolor></shadowcolor>
                     </control>
-
 					<control type="label">
 						<visible>Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
@@ -153,7 +161,7 @@
 						<visible>Pvr.IsPlayingTv</visible>
                         <posx>3-col-gutter</posx>
                         <posy>32</posy>
-                        <width>6-col</width>
+                        <width>5-col-gutter</width>
                         <font>itemTitle</font>
                         <textcolor>textActive</textcolor>
                         <label fallback="13205">$INFO[VideoPlayer.NextTitle]</label>
@@ -165,7 +173,7 @@
                     <posx>0</posx>
                     <posy>9-row</posy>
                     <font>textbox</font>
-                    <width>552</width>
+                    <width>540</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <height>314</height>
@@ -184,18 +192,17 @@
             <!--player controls-->
             <control type="panel" id="8001">
                 <posx>36</posx>
-                <posy>row-21-begin</posy>
+                <posy>row-26-begin</posy>
                 <width>10-col</width>
                 <height>2-row</height>
                 <itemgap>0</itemgap>
-                <ondown>Control.SetFocus(8002,0)</ondown>
                 <onup>Control.SetFocus(61)</onup>
                 <orientation>horizontal</orientation>
-                <itemlayout width="92" height="2-row">
+                <itemlayout width="128" height="2-row">
 					<control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>116</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture diffuse="masks/square.png">colors/black.png</texture>
@@ -204,7 +211,7 @@
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>116</width>
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -213,11 +220,11 @@
                         <label>$INFO[ListItem.label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="92" height="2-row">
+                <focusedlayout width="128" height="2-row">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>116</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture diffuse="masks/square.png">colors/white.png</texture>
@@ -226,7 +233,7 @@
                     <control type="label">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>116</width>
                         <height>2-row</height>
                         <align>center</align>
                         <aligny>center</aligny>
@@ -236,24 +243,12 @@
                         <shadowcolor></shadowcolor>
                     </control>
                 </focusedlayout>
-                <content>
+                <content>     
                     <item>
-                        <description>Vol Down</description>
-                        <label2></label2>
+                        <description>settings</description>
+                        <label2></label2>
                         <thumb></thumb>
-                        <onclick>VolumeDown</onclick>
-                    </item>
-                    <item>
-                        <description>Vol Up</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>VolumeUp</onclick>
-                    </item>
-                    <item>
-                        <description>Rewind</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(rewind)</onclick>
+                        <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
                     </item>
                     <item>
                         <description>Stop</description>
@@ -277,102 +272,10 @@
                         <onclick>PlayerControl(play)</onclick>
                     </item>
                     <item>
-                        <description>Fast forward</description>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(forward)</onclick>
-                    </item>
-                    
-                    <item>
-                        <visible>false</visible>
+                        <visible>true</visible>
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>PVR.ToggleRecordPlayingChannel</onclick>
-                    </item>
-                </content>
-            </control>
-            <!--menu items--> 
-            <control type="panel" id="8002">
-                <posx>36</posx>
-                <posy>row-24-begin</posy>
-                <width>8-col</width>
-                <height>12-row</height>
-                <itemgap>12</itemgap>
-                <onup>8001</onup>
-                <itemlayout width="270" height="78">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>UIControls/button.png</texture>
-                        <colordiffuse>44000000</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>thumbTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="270" height="78">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>UIControls/button.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>thumbTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item>
-                        <visible>VideoPlayer.HasMenu</visible>
-                        <label>31051</label>
-                        <thumb></thumb>
-                        <onclick>PlayerControl(ShowVideoMenu)</onclick>
-                    </item>
-                    <item>
-                        <description>Subtitles</description>
-                        <label>287</label>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Video Settings</description>
-                        <label>13395</label>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdvideosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Audio Settings</description>
-                        <label>13396</label>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(osdaudiosettings)</onclick>
-                    </item>
-                    <item>
-                        <description>Bookmarks</description>
-                        <label>298</label>
-                        <thumb></thumb>
-                        <onclick>ActivateWindow(videobookmarks)</onclick>
                     </item>
                 </content>
             </control>

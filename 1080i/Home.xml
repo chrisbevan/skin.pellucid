@@ -2,157 +2,56 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>fadeInOut</include>
-	<onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload>PlayMedia(special://skin/extras/playlists/homeBackground.xsp,1)</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
+    <onunload>Playercontrol(stop)</onunload>
 	<controls>
 		<include>globalBackground</include>
+        
+        <!--background-->
+        <control type="group">
+			<control type="image">
+			   <include>dimensionsFullscreen</include>
+	           <texture>colors/black.png</texture>
+	           <colordiffuse>ffFFFFFF</colordiffuse>
+	           <aspectratio>stretch</aspectratio>
+	       </control>
+			<control type="multiimage">
+				<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
+				<include>dimensionsFullscreen</include>
+				<imagepath>$VAR[homeBackgroundLocation]</imagepath>
+				<timeperimage>45000</timeperimage>
+				<fadetime>200</fadetime>
+				<pauseatend>10000</pauseatend>
+				<randomize>true</randomize>
+				<loop>yes</loop>
+				<aspectratio>scale</aspectratio>
+				<colordiffuse>99ffffff</colordiffuse>
+			</control>
+            <!--video window-->
+            <control type="videowindow">
+                <include>dimensionsFullScreen</include>
+            </control>
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<texture>vignette.png</texture>
+				<colordiffuse>ffffffff</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		</control>
 		<control type="group">
-			<animation type="conditional" condition="control.hasfocus(8001) | control.hasfocus(8002)">
-				<effect type="slide" start="0,0" end="0,-80" tween="sine" time="400"/>
-			</animation>
-			<!--player controls and options-->
-			<control type="group">
-				<posx>0</posx>
-				<posy>1080</posy>
-				<control type="image">
-	                <posx></posx>
-	                <posy>0</posy>
-	                <width>fullscreenWidth</width>
-	                <height>3-row</height>
-	                <texture>colors/black.png</texture>
-	                <colordiffuse>ffffffff</colordiffuse>
-	                <aspectratio>stretch</aspectratio>
-	            </control>
-				<!--player controls-->
-				<control type="panel" id="8001">
-					<posx>col-11-begin</posx>
-	                <posy>6</posy>
-	                <width>7-col</width>
-	                <height>2-row</height>
-	                <itemgap>0</itemgap>
-	                <onleft>8001</onleft>
-					<onright>8001</onright>
-	                <onup>9001</onup>
-	                <orientation>horizontal</orientation>
-	                <itemlayout width="1-col" height="2-row">
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>1-col</width>
-	                        <height>2-row</height>
-	                        <align>center</align>
-	                        <aligny>center</aligny>
-	                        <font>symbol</font>
-	                        <textcolor>textActive</textcolor>
-	                        <label>$INFO[ListItem.label2]</label>
-	                    </control>
-	                </itemlayout>
-	                <focusedlayout width="1-col" height="2-row">
-	                    <control type="image">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>1-col</width>
-	                        <height>69</height>
-	                        <aspectratio>stretch</aspectratio>
-	                        <texture diffuse="masks/square.png">colors/white.png</texture>
-							<colordiffuse>highlight</colordiffuse>
-	                    </control>
-	                    <control type="label">
-	                        <posx>0</posx>
-	                        <posy>0</posy>
-	                        <width>1-col</width>
-	                        <height>2-row</height>
-	                        <align>center</align>
-	                        <aligny>center</aligny>
-	                        <font>symbol</font>
-	                        <textcolor>textActive</textcolor>
-	                        <label>$INFO[ListItem.label2]</label>
-	                        <shadowcolor></shadowcolor>
-	                    </control>
-	                </focusedlayout>
-	                <content>
-	                    <item>
-	                        <description>Playlist</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>activateWindow(musicplaylist)</onclick>
-	                    </item>
-	                    <item>
-	                        <description>Previous</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(previous)</onclick>
-	                    </item>
-	                    <item>
-	                        <description>Stop</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(stop)</onclick>
-	                        <onclick>Dialog.Close(1103)</onclick>
-	                    </item>
-	                    <item>
-	                        <visible>Player.Playing | player.forwarding | player.rewinding</visible>
-	                        <description>Play/Pause</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(play)</onclick>
-	                    </item>
-	                    <item>
-	                        <visible>Player.Paused</visible>
-	                        <description>Pause</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(play)</onclick>
-	                    </item>
-	                    <item>
-	                        <description>Next Chapter</description>
-	                        <label2></label2>
-	                        <thumb></thumb>
-	                        <onclick>PlayerControl(next)</onclick>
-	                    </item>
-	                </content>
-	            </control>            
-			</control>
-			<control type="group">
-				<control type="image">
-				   <include>dimensionsFullscreen</include>
-		           <texture>colors/black.png</texture>
-		           <colordiffuse>ffFFFFFF</colordiffuse>
-		           <aspectratio>stretch</aspectratio>
-		       </control>
-				<control type="multiimage">
-					<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
-					<include>dimensionsFullscreen</include>
-					<imagepath>$VAR[homeBackgroundLocation]</imagepath>
-					<timeperimage>45000</timeperimage>
-					<fadetime>200</fadetime>
-					<pauseatend>10000</pauseatend>
-					<randomize>true</randomize>
-					<loop>yes</loop>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>99ffffff</colordiffuse>
-				</control>
-				<control type="image">
-					<include>dimensionsFullscreen</include>
-					<texture>vignette.png</texture>
-					<colordiffuse>ffffffff</colordiffuse>
-					<aspectratio>stretch</aspectratio>
-				</control>
-			</control>
-			<!--mini window-->
-			<include>miniVideoPlayer</include>
 			<!--main menu-->
 			<control type="panel" id="9000">
 				<animation type="conditional" condition="control.hasfocus(9999)" reversible="true">
 					<effect type="fade" start="100" end="0" time="500" delay="0"/>
 				</animation>
-				<posx>col-5-begin</posx>
+				<posx>col-7-begin</posx>
 				<animation condition="string.isEqual(Container(9000).NumItems,1)" effect="slide" end="432,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,2)" effect="slide" end="288,0" time="0">conditional</animation>
 				<animation condition="string.isEqual(Container(9000).NumItems,3)" effect="slide" end="144,0" time="0">conditional</animation>			
 				<posy>row-12-begin</posy>
-				<width>18-col</width>
+				<width>12-col</width>
 				<height>12-row</height>
 				<ondown>setfocus(9001,1)</ondown>
 				<orientation>vertical</orientation>
@@ -219,7 +118,6 @@
 					<height>1-col</height>
 					<orientation>horizontal</orientation>
 					<onup>9000</onup>
-					<ondown>8001</ondown>
 					<itemlayout width="1-col" height="1-col">
 						<control type="label">
 							<posx>0.4</posx>
@@ -291,19 +189,6 @@
 					<label>$INFO[System.Time]</label>
 				</control>
 				<control type="label">
-					<visible>$EXP[hasWeather]</visible>
-					<posx>0</posx>
-					<posy>1-row</posy>
-					<width>24-col</width>
-					<height>2-row</height>
-					<font>regular</font>
-					<align>center</align>
-					<textcolor>textActive</textcolor>
-					<shadowcolor>44000000</shadowcolor>
-					<label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)] [B]$INFO[weather.temperature][/B] [CAPITALIZE]$INFO[weather.conditions][/CAPITALIZE]</label>
-				</control>
-				<control type="label">
-					<visible>!$EXP[hasWeather]</visible>
 					<posx>0</posx>
 					<posy>1-row</posy>
 					<width>24-col</width>
@@ -313,68 +198,6 @@
 					<textcolor>textActive</textcolor>
 					<shadowcolor>44000000</shadowcolor>
 					<label>$INFO[System.Date(DDD)] [B]$INFO[System.Date(dd)][/B] $INFO[System.Date(MMM)]</label>
-				</control>
-			</control>
-			<!--now playing music-->
-			<control type="group">
-				<visible>player.hasaudio</visible>
-				<posx>col-1-begin</posx>
-				<posy>row-24-begin</posy>
-				<control type="grouplist">
-					<posx>0</posx>
-					<posy>8</posy>
-					<width>24-col</width>
-					<align>center</align>
-					<itemgap>18</itemgap>
-					<orientation>horizontal</orientation>
-					<control type="image">
-						<visible>!player.paused + !Skin.HasSetting(lowPowerMode)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col-gutter</width>
-						<height>1-col-gutter</height>
-						<texture>equaliser.gif</texture>
-					</control>
-					<control type="label">
-						<visible>!player.paused + Skin.HasSetting(lowPowerMode)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col-gutter</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<shadowcolor></shadowcolor>
-						<label></label>
-					</control>
-					<control type="label">
-						<visible>player.paused</visible>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>1-col-gutter</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>symbolLarge</font>
-						<textcolor>textActive</textcolor>
-						<shadowcolor></shadowcolor>
-						<label></label>
-					</control>
-					<control type="label">
-						<description>Artist</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<font>small</font>
-						<width>auto</width>
-						<height>2-row</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>$INFO[MusicPlayer.TimeRemaining,, ][B]$INFO[musicplayer.Artist,, ][/B]$INFO[MusicPlayer.Title]</label>
-						<scroll>true</scroll>
-						<textcolor>textActive</textcolor>
-						<wrapmultiline>false</wrapmultiline>
-					</control>
 				</control>
 			</control>
 		</control>	

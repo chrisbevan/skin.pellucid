@@ -34,8 +34,6 @@
         </control>
         <!--hub menu-->
         <include>hubMenu</include>
-        <!--mini window-->
-        <include>miniVideoPlayer</include>
         <!--debug-->
         <include>DebugGrid</include>
         <control type="label">

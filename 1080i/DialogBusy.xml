@@ -6,7 +6,7 @@
             <posy>0</posy>
             <include>DialogID</include>
             <label>DialogBusy.xml</label>
-        </control>
+        </control>        
         <include>loadingIndicator</include>
         <include>DebugGrid</include>
     </controls>

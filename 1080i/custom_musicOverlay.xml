@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1102">
-    <visible>player.hasaudio + !Window.IsActive(visualisation) + !window.isactive(home) + !window.isactive(1103)</visible>
+    <visible>player.hasaudio + !Window.IsActive(visualisation) + !window.isactive(home) + !window.isactive(musicplaylist)</visible>
     <controls>
         <control type="group">
             <posx>col-12-begin</posx>

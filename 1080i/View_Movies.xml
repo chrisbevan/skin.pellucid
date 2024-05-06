@@ -21,14 +21,17 @@
             </control>
 			<control type="group" id="9101">
 				<visible>$EXP[isMovie] + !string.contains(container.folderpath,playlists) + !Skin.HasSetting(disableRecentMovies)</visible>
-				<animation type="Conditional" condition="!controlgroup(9101).hasfocus">
-	                <effect type="slide" start="0,0" end="0,-200" time="200"/>
+				
+                <animation type="Conditional" condition="!controlgroup(9101).hasfocus">
+	                <effect type="slide" start="0,0" end="0,-300" time="200"/>
 					<effect type="fade" start="100" end="0" time="200"/>
 	            </animation>
-				<animation type="Conditional" condition="controlgroup(9101).hasfocus">
-	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="300"/>
-	                <effect type="fade" start="0" end="100" time="300" delay="350"/>
+          
+                <animation type="Conditional" condition="controlgroup(9101).hasfocus">
+	                <effect type="slide" start="0,-200" end="0,0" time="200" delay="400"/>
+	                <effect type="fade" start="0" end="100" time="200" delay="350"/>
 	            </animation>
+                
 				<!--quick link selector-->
                 <control type="group">
 	                <posx>col-4-begin</posx>
@@ -50,9 +53,8 @@
     	                <onleft>9000</onleft>
     	                <ondown>9103</ondown>
     	                <onback>9000</onback>
-                		<control type="button" id="506">
+                		<control type="button" id="3999">
                             <description>Search</description>
-                            <visible>System.HasAddon(script.globalsearch)</visible>
                             <width>1-col</width>
                             <texturenofocus></texturenofocus>
                             <texturefocus>masks/circle.png</texturefocus>
@@ -61,7 +63,7 @@
                             <textoffsetx>0</textoffsetx>
                             <align>center</align>
                             <label></label>
-                            <onclick>RunScript(script.globalsearch,movies=true)</onclick>
+                            <onclick>Runscript(script.quickfind,media=movies)</onclick>
                         </control>            
                         <control type="button" id="4000">
                             <label>31176</label>
@@ -71,7 +73,7 @@
                             <align>center</align>
                             <width>3-col</width>
                             <textoffsetx>0</textoffsetx>
-                            <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onfocus>
+                            <onclick>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/recentMovies.xsp)</onclick>
                             <ondown>control.setfocus(9103,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
@@ -81,25 +83,36 @@
                             <font>thumbTitle</font>
                             <align>center</align>
                             <textoffsetx>0</textoffsetx>
-                            <onfocus>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onfocus>
+                            <onclick>Skin.SetString(movieQuickLinkValue,special://skin/extras/playlists/inprogressMovies.xsp)</onclick>
                             <ondown>control.setfocus(9103,0)</ondown>
                         </control>
-                        <control type="radiobutton" id="14">
+                        <control type="button" id="3224">
+                            <visible>System.Setting(hidewatched)</visible>
                             <description>Watched Toggle</description>
-                            <label>31195</label>
+                            <label>Unwatched Only:   </label>
                             <width>4-col</width>
                             <font>thumbTitle</font>
-                            <align>left</align>
+                            <align>center</align>
                             <textoffsetx>24</textoffsetx>
                             <label></label>
                             <texturenofocus></texturenofocus>
                             <texturefocus>UIControls/button.png</texturefocus>
-                            <textureradiofocus colordiffuse="highlight">UIControls/toggle-on.png</textureradiofocus>
-                            <textureradionofocus>UIControls/toggle-off.png</textureradionofocus>
-                            <radiowidth>60</radiowidth>
-                            <radioheight>30</radioheight>
-                            <radioposx>204</radioposx>
-                            <focusedcolor>black</focusedcolor>
+                            <label2>[COLOR highlight]On[/COLOR]</label2>
+                            <onclick>sendclick(14)</onclick>
+                        </control>
+                        <control type="button" id="3225">
+                            <visible>!System.Setting(hidewatched)</visible>
+                            <description>Watched Toggle</description>
+                            <label>Unwatched Only:    </label>
+                            <width>4-col</width>
+                            <font>thumbTitle</font>
+                            <align>center</align>
+                            <textoffsetx>24</textoffsetx>
+                            <label></label>
+                            <texturenofocus></texturenofocus>
+                            <texturefocus>UIControls/button.png</texturefocus>
+                            <label2>[COLOR highlight]Off[/COLOR]</label2>
+                            <onclick>sendclick(14)</onclick>
                         </control>
                         <control type="button" id="3222">
                             <description>Sort by</description>
@@ -255,11 +268,22 @@
 			</control>
 			<!--all movies-->
 			<control type="group" id="9104">
-				<animation type="Conditional" condition="controlgroup(9104).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus | Skin.HasSetting(disableRecentMovies)">
+				<animation type="Conditional" condition="controlgroup(9104).hasfocus | controlgroup(8000).hasfocus | controlgroup(9000).hasfocus">
 	                <effect type="slide" start="0,0" end="0,-576" tween="sine" time="400"/>
 	            </animation>
 				<control type="label">
-					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + !string.contains(container.folderpath,playlists)</visible>
+					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + System.Setting(hidewatched)</visible>
+	                <posx>col-1-begin</posx>
+	                <posy>736</posy>
+	                <width>12-col</width>
+	                <height>2-row</height>
+	                <aligny>center</aligny>
+	                <font>menuTitle</font>
+	                <textcolor>textActive</textcolor>
+	                <label>Unwatched Movies</label>
+	            </control>
+				<control type="label">
+					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + !System.Setting(hidewatched)</visible>
 	                <posx>col-1-begin</posx>
 	                <posy>736</posy>
 	                <width>12-col</width>
@@ -268,17 +292,6 @@
 	                <font>menuTitle</font>
 	                <textcolor>textActive</textcolor>
 	                <label>$LOCALIZE[31224]</label>
-	            </control>
-				<control type="label">
-					<visible>!controlgroup(9000).hasfocus + !$EXP[isTVShow] + $EXP[isMovie] + string.contains(container.folderpath,playlists)</visible>
-	                <posx>col-1-begin</posx>
-	                <posy>736</posy>
-	                <width>12-col</width>
-	                <height>2-row</height>
-	                <aligny>center</aligny>
-	                <font>menuTitle</font>
-	                <textcolor>textActive</textcolor>
-	                <label>$LOCALIZE[559]</label>
 	            </control>
 				<control type="panel" id="51">
 					<visible>$EXP[isMovie]</visible>

@@ -7,7 +7,7 @@
         <include condition="!Player.HasVideo">globalBackground</include>
         <control type="group">
             <control type="group">
-                <posx>col-5-begin</posx>
+                <posx>col-7-begin</posx>
                 <posy>row-4-begin</posy>
                 <!--animations-->
                 <include condition="!Player.hasVideo">modalDialogInOutVertical</include>
@@ -24,7 +24,7 @@
                 <control type="image">
                     <posx>-12</posx>
                     <posy>-12</posy>
-                    <width>1176</width>
+                    <width>888</width>
                     <height>780</height>
                     <texture border="24">dialogBackground.png</texture>
                     <colordiffuse>overlay</colordiffuse>
@@ -33,7 +33,7 @@
 				<control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>16-col</width>
+                    <width>12-col</width>
                     <height>2-row</height>
                     <texture border="10">masks/menuTitle2.png</texture>
                     <colordiffuse>highlight</colordiffuse>
@@ -67,19 +67,10 @@
                         <posy>84</posy>
                         <width>12-col</width>
                         <height>681</height>
-                        <onright>9999</onright>
+                        <onright>9760</onright>
 						<onleft>60</onleft>
 						<pagecontrol>60</pagecontrol>
                         <itemlayout height="84" width="12-col">
-                            <control type="image">
-								<visible>!ListItem.IsSelected</visible>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
-                            </control>
                             <control type="label">
                                 <visible>ListItem.IsSelected</visible>
                                 <posx>0</posx>
@@ -94,7 +85,7 @@
                                 <label>✓</label>
                             </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>1-col</posx>
                                 <posy>0</posy>
                                 <width>11-col-gutter</width>
                                 <height>2-row</height>
@@ -107,22 +98,9 @@
                         </itemlayout>
                         <focusedlayout height="84" width="12-col">
                             <control type="image">
-								<visible>!ListItem.IsSelected</visible>
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/white.png" border="0">$INFO[Listitem.icon]</texture>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
-                            <control type="image">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>11-col</width>
+                                <width>12-col</width>
                                 <height>69</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
@@ -138,13 +116,13 @@
                                 <align>center</align>
                                 <aligny>center</aligny>
                                 <font>symbolLarge</font>
-                                <textcolor>textActive</textcolor>
-                                <selectedcolor>textActive</selectedcolor>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
                                 <shadowcolor></shadowcolor>
                                 <label>✓</label>
                             </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>1-col</posx>
                                 <posy>0</posy>
                                 <width>11-col-gutter</width>
                                 <height>2-row</height>
@@ -162,19 +140,24 @@
                         <posy>84</posy>
                         <width>12-col</width>
                         <height>19-row</height>
-                        <onright>9999</onright>
+                        <onright>9760</onright>
 						<onleft>60</onleft>
                         <itemlayout height="84" width="12-col">
-                            <control type="image">
+                            <control type="label">
+                                <visible>ListItem.IsSelected</visible>
                                 <posx>0</posx>
-                                <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/offblack.png" border="0">$INFO[Listitem.icon]</texture>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>symbolLarge</font>
+                                <textcolor>textActive</textcolor>
+                                <selectedcolor>textActive</selectedcolor>
+                                <label>✓</label>
                             </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <posx>1-col</posx>
                                 <posy>0</posy>
                                 <width>11-col-gutter</width>
                                 <height>2-row</height>
@@ -189,20 +172,7 @@
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>69</width>
-                                <height>69</height>
-                                <aspectratio>stretch</aspectratio>
-                                <texture fallback="colors/white.png" border="0">$INFO[Listitem.icon]</texture>
-								<colordiffuse>highlight</colordiffuse>
-                                <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500" end="50"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                                </animation>
-                            </control>
-                            <control type="image">
-                                <posx>1-col</posx>
-                                <posy>0</posy>
-                                <width>11-col</width>
+                                <width>12-col</width>
                                 <height>69</height>
                                 <aspectratio>stretch</aspectratio>
                                 <texture>colors/white.png</texture>
@@ -210,7 +180,21 @@
                                 <colordiffuse>ffffffff</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>1-col-indent</posx>
+                                <visible>ListItem.IsSelected</visible>
+                                <posx>0</posx>
+                                <posy>3</posy>
+                                <width>66</width>
+                                <height>66</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>symbolLarge</font>
+                                <textcolor>black</textcolor>
+                                <selectedcolor>black</selectedcolor>
+                                <shadowcolor></shadowcolor>
+                                <label>✓</label>
+                            </control>
+                            <control type="label">
+                                <posx>1-col</posx>
                                 <posy>0</posy>
                                 <width>11-col-gutter</width>
                                 <height>2-row</height>
@@ -223,106 +207,18 @@
                         </focusedlayout>
                     </control>
                 </control>
-                <!--OK / Cancel-->
-                <control type="panel" id="9999">
+            
+                <!--buttons-->
+                <control type="grouplist" id="9760">
                     <posx>12-col</posx>
-                    <posy>84</posy>
-                    <width>4-col</width>
-                    <height>6-row</height>
-                    <orientation>vertical</orientation>
+                    <posy>2-row</posy>
                     <onleft>9000</onleft>
-                    <itemlayout width="4-col" height="2-row">
-                        <control type="label">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="4-col" height="2-row">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                            <colordiffuse>highlight</colordiffuse>
-                            <include>spinFocusIcon</include>
-                        </control>
-                        <control type="image">
-                            <posx>1-col</posx>
-                            <posy>0</posy>
-                            <width>5-col</width>
-                            <height>2-row</height>
-                            <aspectratio>stretch</aspectratio>
-                            <texture>colors/white.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>1-col</width>
-                            <height>2-row</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>symbolLarge</font>
-                            <textcolor>textActive</textcolor>
-                            <label>$INFO[ListItem.label2]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                        <control type="label">
-                            <posx>1-col-indent</posx>
-                            <posy>0</posy>
-                            <width>5-col-gutter</width>
-                            <height>2-row</height>
-                            <aligny>center</aligny>
-                            <font>buttonTitle</font>
-                            <textcolor>black</textcolor>
-                            <label>$INFO[ListItem.label]</label>
-                            <shadowcolor></shadowcolor>
-                        </control>
-                    </focusedlayout>
-                    <content>
-                        <item id="1">
-                            <description>Ok / manual / get more Button</description>
-                            <label fallback="186">$INFO[control.getlabel(5)]</label>
-                            <label2></label2>
-                            <thumb></thumb>
-                            <onclick>SendClick(2000,5)</onclick>
-                        </item>
-                        <item id="2">
-                            <description>Cancel Button</description>
-                            <label>222</label>
-                            <label2></label2>
-                            <thumb></thumb>
-                            <onclick>PreviousMenu</onclick>
-                        </item>
-                    </content>
-                </control>
-                <control type="group">
-                    <visible>false</visible>
                     <control type="button" id="5">
                         <description>OK / Manual button</description>
                         <label>186</label>
                     </control>
                 </control>
+            
             </control>
         </control>
         <!--debugging-->

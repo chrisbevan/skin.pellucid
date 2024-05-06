@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9999</defaultcontrol>
-    <onload condition="Skin.hassetting(stopVideoOnMenu) + !Player.HasAudio">PlayerControl(stop)</onload>
+    <onload condition="!Player.HasAudio">PlayerControl(stop)</onload>
     <include>fadeInOut</include>
 	<views>50</views>
     <controls>
@@ -33,8 +33,8 @@
                                 <width>69</width>
                                 <height>69</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/black.png" diffuse="masks/iconEndCapLeft.png" border="0">$INFO[Listitem.thumb]</texture>
-            					<colordiffuse>overlay</colordiffuse>
+                                <texture diffuse="masks/iconEndCapLeft.png" border="0">colors/black.png</texture>
+            					<colordiffuse>d0000000</colordiffuse>
                             </control>
                             <control type="image">
                                 <posx>1-col</posx>
@@ -73,13 +73,11 @@
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
-                                <width>69</width>
+                                <width>1-col</width>
                                 <height>69</height>
                                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                                <texture fallback="colors/white.png" diffuse="masks/iconEndCapLeft.png" border="0">$INFO[Listitem.thumb]</texture>
+                                <texture diffuse="masks/iconEndCapLeft.png" border="0">colors/white.png</texture>
                                 <animation type="focus" loop="false" reversible="false">
-                                    <effect type="fade" time="500"/>
-                                    <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
                                     <effect type="fade" start="100" end="50" time="0"/>
                                 </animation>
                                 <colordiffuse>highlight</colordiffuse>
@@ -137,8 +135,6 @@
 				<include>pageHeader</include>    
             </control>
         </control>
-        <!--mini window-->
-        <include>miniVideoPlayer</include>
         <!--hub menu-->
         <include>hubMenu</include>
         <!--debugging-->

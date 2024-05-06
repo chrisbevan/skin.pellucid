@@ -221,14 +221,6 @@
     <!--busy indicator-->
     <include name="loadingIndicator">
         <control type="group">
-            <animation type="Visible" reversible="false">
-                <effect type="zoom" start="80" end="100" center="960,540" tween="back" time="240" />
-                <effect type="fade" end="100" time="240" />
-            </animation>
-            <animation type="Hidden" reversible="false">
-                <effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="240" />
-                <effect type="fade" start="100" end="0" time="240" />
-            </animation>
             <visible>!Window.IsActive(startup) + !String.IsEmpty(container.foldername) + !Integer.IsGreater(container.numitems,0) + !ListItem.IsParentFolder | window.isactive(busydialog)</visible>
             <control type="image">
                 <texture>colors/black.png</texture>
@@ -237,7 +229,7 @@
                 <animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
                 <animation effect="fade" end="100" time="560">WindowOpen</animation>
                 <animation effect="fade" start="100" end="0" time="240">WindowClose</animation>
-            </control>
+            </control>     
             <control type="image">
                 <depth>DepthMax</depth>
                 <left>920</left>
@@ -265,31 +257,6 @@
      <!--conditional positioning for progress dialogs (avoid overlaps)-->
     <include name="progressPosition1"><posy>row-2-begin</posy></include>
     <include name="progressPosition2"><posy>row-6-begin</posy></include>
-     
-	<!--mini player window-->
-    <include name="miniVideoPlayer">
-        <control type="group">
-            <visible>!Skin.hassetting(stopVideoOnMenu) + Player.HasVideo + !VideoPlayer.IsFullscreen + !SlideShow.IsActive</visible>
-            <posx>col-20-begin</posx>
-            <posy>12</posy>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>444</width>
-                <height>255</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>colors/black.png</texture>
-                <bordertexture border="6" colordiffuse="overlay">colors/black.png</bordertexture>
-                <bordersize>6</bordersize>
-            </control>
-            <control type="videowindow">
-                <posx>6</posx>
-                <posy>6</posy>
-                <width>6-col</width>
-                <height>243</height>
-            </control>
-        </control>
-    </include>
 	
    <!--debugging-->
     <include name="DialogID">

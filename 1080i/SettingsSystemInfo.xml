@@ -5,92 +5,55 @@
     <controls>
         <!--background-->
         <include>globalBackground</include>
-        <!--Folder titles-->
-        <control type="group">
-            <posx>col-1-begin</posx>
+		<control type="group">
+			<posx>col-1-begin</posx>
             <posy>row-1-begin</posy>
-            <animation type="Conditional" condition="Integer.IsGreater(container.numitems,0)">
-                <effect type="fade" start="0" end="100" time="300"/>
-            </animation>
-            <!--source title-->
-            <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>14-col</width>
-                <font>pageTitle</font>
-                <label>$LOCALIZE[31206]</label>
-                <textcolor>textActive</textcolor>
-            </control>
+			<!--title-->
+			<control type="label">
+	            <posx>0</posx>
+	            <posy>0</posy>
+	            <width>18-col</width>
+	            <font>sectionTitle</font>
+	            <label>Kodi</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
+	        <!--subtitle-->
+	        <control type="label">
+	            <posx>0</posx>
+	            <posy>26</posy>
+	            <width>12-col</width>
+				<height>2-row</height>
+	            <font>menuTitle2</font>
+	            <label>System Information</label>
+	            <textcolor>textActive</textcolor>
+	        </control>
 			<!--time-->
 			<control type="label">
 	            <posx>24-col</posx>
 	            <posy>0</posy>
 	            <width>12-col</width>
 	            <align>right</align>
-	            <font>pageTitle</font>
-	            <label>$INFO[System.Time]</label>
+	            <font>sectionTitle</font>
+	            <label>[B]$INFO[System.Time][/B]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
 			<!--date-->
 	        <control type="label">
 	            <posx>24-col</posx>
-	            <posy>1-row</posy>
+	            <posy>26</posy>
 	            <width>12-col</width>
 				<height>2-row</height>
 				<align>right</align>
-	            <font>pageSubTitle</font>
+	            <font>menuTitle2</font>
 	            <label>$INFO[System.Date(DDD)], $INFO[system.Date(mmm d)]</label>
 	            <textcolor>textActive</textcolor>
 	        </control>
-            <!--source subtitle / content selector-->
-            <control type="list" id="95">
-                <posx>0</posx>
-                <posy>1-row</posy>
-                <width>12-col</width>
-                <height>2-row</height>
-                <orientation>horizontal</orientation>
-                <itemlayout width="2-col" height="2-row">
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col</width>
-						<height>2-row</height>
-                        <font>pageSubTitle</font>
-                        <textcolor>44FFFFFF</textcolor>
-                        <shadowcolor></shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="2-col" height="2-row">
-                    <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col</width>
-						<height>2-row</height>
-                        <font>pageSubTitle</font>
-                        <textcolor>textActive</textcolor>
-                        <shadowcolor></shadowcolor>
-                        <label>$INFO[ListItem.label]</label>
-                        <animation effect="fade" start="100" end="20" time="750" condition="Control.HasFocus(9123)" pulse="true">Conditional</animation>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item id="1">
-                        <label>$LOCALIZE[31121]</label>
-                        
-                    </item>
-                    <item id="2">
-                        <label>12389</label>
-                    </item>
-                </content>
-            </control>
-        </control>
+		</control>
         <control type="group">
             <posx>col-1-begin</posx>
             <posy>row-6-begin</posy>
             <include>modalDialogInOutVertical</include>
             <control type="panel">
-                <visible>container(95).hasfocus(1)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>24-col</width>
@@ -216,18 +179,6 @@
                         <thumb></thumb>
                     </item>
                 </content>
-            </control>
-            <!--privacy policy-->
-            <control type="textbox">
-                <visible>container(95).hasfocus(2)</visible>
-                <posx>0</posx>
-                <posy>-36</posy>
-                <font>textbox</font>
-                <width>24-col</width>
-                <textcolor>textActive</textcolor>
-                <height>23-row</height>
-                <label>$INFO[System.PrivacyPolicy]</label>
-                <autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
             </control>
         </control>
         <!--debugging-->

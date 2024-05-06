@@ -115,7 +115,7 @@
 				<width>8-col</width>
 				<align>left</align>
 				<textcolor>textActive</textcolor>
-				<height>524</height>
+				<height>612</height>
 				<label fallback="31205">$INFO[ListItem.Property(Artist_Description)]</label>
 				<autoscroll>false</autoscroll>
 				<pagecontrol>61</pagecontrol>
@@ -180,8 +180,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
     				<label>184</label>
                     <onright>10</onright>
@@ -194,8 +194,8 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
     				<label>13405</label>
                     <onleft>6</onleft>
@@ -271,7 +271,7 @@
 				</control>
 				<control type="scrollbar" id="61">
 					<posx>12r</posx>
-					<posy>216</posy>
+					<posy>row-10-begin</posy>
 					<height>10-row</height>
 					<ondown>8000</ondown>
                     <onleft>8000</onleft>
@@ -341,22 +341,22 @@
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
-    				<label>31254</label>
+    				<label>View Artist</label>
                     <onclick>dialog.close(all,true)</onclick>
-                    <onclick>activatewindow(music,musicdb://albums/$INFO[listitem.DBID]/,return)</onclick>
+                    <onclick>activatewindow(music,musicdb://artists/$INFO[listitem.DBID]/,return)</onclick>
     			</control>
     			<control type="button" id="80001">
     				<description>Go to album</description>
                     <font>thumbTitle</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                    <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                    <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                    <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                     <focusedcolor>textActive</focusedcolor>
-    				<label>31255</label>
+    				<label>View Album</label>
                     <onclick></onclick>
     			</control>
             </control>            
@@ -437,8 +437,8 @@
                         <font>thumbTitle</font>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                        <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                        <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                        <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                         <focusedcolor>textActive</focusedcolor>
         				<label>31254</label>
                         <onclick>dialog.close(all,true)</onclick>
@@ -449,8 +449,8 @@
                         <font>thumbTitle</font>
                         <align>center</align>
                         <textoffsetx>0</textoffsetx>
-                        <texturefocus colordiffuse="highlight">UIControls/button.png</texturefocus>
-                        <texturenofocus colordiffuse="77000000">UIControls/button.png</texturenofocus>
+                        <texturefocus border="24" colordiffuse="highlight">masks/menuTitle.png</texturefocus>
+                        <texturenofocus border="24" colordiffuse="bb1a1a1a">masks/menuTitle.png</texturenofocus>
                         <focusedcolor>textActive</focusedcolor>
         				<label>31255</label>
                         <onclick></onclick>
