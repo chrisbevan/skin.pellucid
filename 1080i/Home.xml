@@ -2,10 +2,11 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>fadeInOut</include>
-    <onload>PlayMedia(special://skin/extras/playlists/homeBackground.xsp,1)</onload>
+    <onload condition="!String.IsEmpty(Skin.String(homeBackgroundVideos)) + System.AddonIsEnabled(script.randomvideo)">Runscript(script.randomvideo,dir=$INFO[Skin.String(homeBackgroundVideos)])</onload>
 	<onload>AlarmClock(hidemenu,setfocus(9999),00:20,true)</onload>
 	<onunload>CancelAlarm(hidemenu,true)</onunload>
     <onunload>Playercontrol(stop)</onunload>
+    <onunload>Playlist.Clear</onunload>
 	<controls>
 		<include>globalBackground</include>
         
@@ -18,6 +19,7 @@
 	           <aspectratio>stretch</aspectratio>
 	       </control>
 			<control type="multiimage">
+                <visible>!player.hasvideo</visible>
 				<animation effect="fade" start="0" end="100" time="1000">WindowOpen</animation>
 				<include>dimensionsFullscreen</include>
 				<imagepath>$VAR[homeBackgroundLocation]</imagepath>
@@ -31,7 +33,11 @@
 			</control>
             <!--video window-->
             <control type="videowindow">
-                <include>dimensionsFullScreen</include>
+                <left>0</left>
+                <top>0</top>
+                <width>fullscreenWidth</width>
+                <height>fullscreenHeight</height>
+                <aspectratio>scale</aspectratio>
             </control>
 			<control type="image">
 				<include>dimensionsFullscreen</include>

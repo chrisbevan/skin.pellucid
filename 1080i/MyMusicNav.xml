@@ -35,9 +35,7 @@
                     <include>musicgenre</include>
                     <include>musicartistcatalogue</include>
                     <include>musicartist</include>
-					<include>musicspotifyartist</include>
                     <include>musicalbum</include>
-					<include>musicspotifyalbum</include>
                     <include>musicsongs</include>
                     <include>musicPlayList</include>
                 </control>

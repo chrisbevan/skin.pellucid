@@ -103,12 +103,12 @@
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="button" id="2">
-                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <visible>Container(8000).Hasfocus(1) + String.IsEmpty(Skin.String(homeBackground))</visible>
                     <description>Set home background image directory</description>
                     <width>14-col</width>
                     <align>left</align>
                     <textoffsetx>24</textoffsetx>
-                    <label>31116</label>
+                    <label>Set home background directory (images)</label>
                     <label2>$INFO[Skin.String(homeBackground)]</label2>
                     <onclick>Skin.SetPath(homeBackground)</onclick>
                     <textwidth>8-col</textwidth>
@@ -117,19 +117,45 @@
                     <font>buttonTitle</font>
                 </control>
                 <control type="button" id="3">
-                    <visible>Container(8000).Hasfocus(1)</visible>
+                    <visible>Container(8000).Hasfocus(1) + !String.IsEmpty(Skin.String(homeBackground))</visible>
                     <description>Reset home background image directory</description>
                     <width>14-col</width>
                     <align>left</align>
                     <textoffsetx>24</textoffsetx>
-                    <label>31122</label>
+                    <label>Reset home background directory (images)</label>
                     <onclick>Skin.Reset(homeBackground)</onclick>
                     <textwidth>8-col</textwidth>
                     <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
                     <texturenofocus></texturenofocus>
                     <font>buttonTitle</font>
                 </control>
-
+                <control type="button" id="4">
+                    <visible>Container(8000).Hasfocus(1) + String.IsEmpty(Skin.String(homeBackgroundVideos)) + System.AddonIsEnabled(script.randomvideo)</visible>
+                    <description>Set home background video directory</description>
+                    <width>14-col</width>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
+                    <label>Set home background directory (videos)</label>
+                    <label2>$INFO[Skin.String(homeBackgroundVideo)]</label2>
+                    <onclick>Skin.SetPath(homeBackgroundVideos)</onclick>
+                    <textwidth>8-col</textwidth>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <font>buttonTitle</font>
+                </control>
+                <control type="button" id="5">
+                    <visible>Container(8000).Hasfocus(1) + !String.IsEmpty(Skin.String(homeBackgroundVideos)) + System.AddonIsEnabled(script.randomvideo)</visible>
+                    <description>Reset home background video directory</description>
+                    <width>14-col</width>
+                    <align>left</align>
+                    <textoffsetx>24</textoffsetx>
+                    <label>Reset home background directory (videos)</label>
+                    <onclick>Skin.Reset(homeBackgroundVideos)</onclick>
+                    <textwidth>8-col</textwidth>
+                    <texturefocus colordiffuse="ffffffff">colors/white.png</texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <font>buttonTitle</font>
+                </control>
                 <control type="radiobutton" id="1">
                     <visible>Container(8000).Hasfocus(1)</visible>
                     <description>Reverse power down options</description>
