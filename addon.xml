@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.pellucid" version="3.1.0" name="Pellucid" provider-name="theDeadman">
+    <backwards-compatibility abi="5.17.0"/>
     <requires>
         <import addon="xbmc.gui" version="5.17.0"/>
     </requires>
