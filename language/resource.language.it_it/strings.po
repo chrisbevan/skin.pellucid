@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Kodi Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-08-21 10:19+0000\n"
+"PO-Revision-Date: 2023-05-22 14:42+0000\n"
 "Last-Translator: Massimo Pissarello <mapi68@gmail.com>\n"
 "Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-pellucid/it_it/>\n"
 "Language: it_it\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.17\n"
 
 msgctxt "Addon Summary"
 msgid "A skin for Kodi from theDeadmanInYossariansTent"
-msgstr "Una skin per Kodi da theDeadmanInYossariansTent"
+msgstr "Una skin per Kodi da DeadmanInYossariansTent"
 
 msgctxt "Addon Description"
 msgid "Pellucid is a lightweight, clean and simple Kodi experience designed for maximum usability and minimum fuss."
@@ -31,15 +31,15 @@ msgstr "Ordina per"
 
 msgctxt "#31012"
 msgid "My Library"
-msgstr ""
+msgstr "La mia libreria"
 
 msgctxt "#31014"
 msgid "title(s)"
-msgstr ""
+msgstr "titolo(i)"
 
 msgctxt "#31015"
 msgid "On"
-msgstr ""
+msgstr "On"
 
 msgctxt "#31019"
 msgid "Open playlist"
@@ -51,11 +51,11 @@ msgstr "Salva playlist"
 
 msgctxt "#31021"
 msgid "Clear playlist"
-msgstr "Cancella playlist"
+msgstr "Svuota playlist"
 
 msgctxt "#31022"
 msgid "Select Items"
-msgstr ""
+msgstr "Seleziona elementi"
 
 msgctxt "#31023"
 msgid "Notification"
@@ -63,11 +63,11 @@ msgstr "Notifica"
 
 msgctxt "#31031"
 msgid "Play Random"
-msgstr ""
+msgstr "Riproduzione casuale"
 
 msgctxt "#31034"
 msgid "Enable Debug Grid"
-msgstr "Abilita griglia Debug"
+msgstr "Abilita griglia debug"
 
 msgctxt "#31035"
 msgid "Enable Debug Information"
@@ -75,7 +75,7 @@ msgstr "Abilita informazioni di debug"
 
 msgctxt "#31043"
 msgid "Reload Skin"
-msgstr "Ricarica Skin"
+msgstr "Ricarica skin"
 
 msgctxt "#31044"
 msgid "Debugging"
@@ -99,7 +99,7 @@ msgstr "da"
 
 msgctxt "#31056"
 msgid "Photo Library"
-msgstr ""
+msgstr "Libreria immagini"
 
 msgctxt "#31057"
 msgid "Create Music Playlist"
@@ -111,7 +111,7 @@ msgstr "PVR"
 
 msgctxt "#31061"
 msgid "Adjust look and feel of Kodi"
-msgstr "Regola l'aspetto grafico di Kodi"
+msgstr "Regola l'aspetto di Kodi"
 
 msgctxt "#31062"
 msgid "Memory"
@@ -139,39 +139,39 @@ msgstr "Comunicazione e condivisione"
 
 msgctxt "#31073"
 msgid "Channel Guide"
-msgstr ""
+msgstr "Guida canali"
 
 msgctxt "#31076"
 msgid "Change Title"
-msgstr ""
+msgstr "Cambia titolo"
 
 msgctxt "#31078"
 msgid "Now and Next"
-msgstr ""
+msgstr "Adesso e successivo"
 
 msgctxt "#31079"
 msgid "Import your content into Kodi"
-msgstr ""
+msgstr "Importa i tuoi contenuti in Kodi"
 
 msgctxt "#31081"
 msgid "Digital Television Setup"
-msgstr ""
+msgstr "Configurazione TV digitale"
 
 msgctxt "#31082"
 msgid "By"
-msgstr ""
+msgstr "Di"
 
 msgctxt "#31087"
 msgid "Timers"
-msgstr ""
+msgstr "Timer"
 
 msgctxt "#31088"
 msgid "Video Addons"
-msgstr "Addon Video"
+msgstr "Add-on video"
 
 msgctxt "#31090"
 msgid "Music Addons"
-msgstr ""
+msgstr "Add-on musica"
 
 msgctxt "#31093"
 msgid "IP"
@@ -179,7 +179,7 @@ msgstr "IP"
 
 msgctxt "#31095"
 msgid "Transfer and copy files"
-msgstr ""
+msgstr "Trasferisci e copia file"
 
 msgctxt "#31096"
 msgid "No items found"
@@ -187,51 +187,51 @@ msgstr "Nessun elemento trovato"
 
 msgctxt "#31099"
 msgid "Add Group"
-msgstr "Aggiungi Gruppo"
+msgstr "Aggiungi gruppo"
 
 msgctxt "#31100"
 msgid "Rename Group"
-msgstr "Rinomina Gruppo"
+msgstr "Rinomina gruppo"
 
 msgctxt "#31101"
 msgid "Delete Group"
-msgstr "Cancella Gruppo"
+msgstr "Elimina gruppo"
 
 msgctxt "#31102"
 msgid "Low CPU power mode"
-msgstr ""
+msgstr "Modalità basso consumo CPU"
 
 msgctxt "#31103"
 msgid "Control how Kodi is used"
-msgstr ""
+msgstr "Controlla come viene usato Kodi"
 
 msgctxt "#31104"
 msgid "Disable this addon"
-msgstr ""
+msgstr "Disabilita questo add-on"
 
 msgctxt "#31105"
 msgid "Manage your Kodi system"
-msgstr ""
+msgstr "Gestisci il tuo sistema Kodi"
 
 msgctxt "#31107"
 msgid "Current profile"
-msgstr ""
+msgstr "Profilo attuale"
 
 msgctxt "#31108"
 msgid "About this Kodi Installation"
-msgstr ""
+msgstr "Informazioni su questa installazione di Kodi"
 
 msgctxt "#31109"
 msgid "Order: Ascending"
-msgstr ""
+msgstr "Ordine: Ascendente"
 
 msgctxt "#31110"
 msgid "Order: Descending"
-msgstr ""
+msgstr "Ordine: Discendente"
 
 msgctxt "#31111"
 msgid "Manage your program addons"
-msgstr ""
+msgstr "Gestisci add-on programmi"
 
 msgctxt "#31112"
 msgid "TV Guide"
@@ -239,83 +239,83 @@ msgstr "Guida TV"
 
 msgctxt "#31113"
 msgid "Kodi Addons"
-msgstr ""
+msgstr "Add-on Kodi"
 
 msgctxt "#31114"
 msgid "Pixel format"
-msgstr "Formato Pixel"
+msgstr "Formato pixel"
 
 msgctxt "#31116"
 msgid "Set home background directory"
-msgstr ""
+msgstr "Imposta cartella per gli sfondi schermata principale"
 
 msgctxt "#31117"
 msgid "Launch addon"
-msgstr ""
+msgstr "Avvia add-on"
 
 msgctxt "#31118"
 msgid "PVR not active"
-msgstr ""
+msgstr "PVR non attivo"
 
 msgctxt "#31121"
 msgid "My Kodi"
-msgstr ""
+msgstr "Il mio Kodi"
 
 msgctxt "#31122"
 msgid "Reset home backgrounds to default"
-msgstr ""
+msgstr "Reimposta sfondi schermata principale ai valori predefiniti"
 
 msgctxt "#31123"
 msgid "Current Queue"
-msgstr ""
+msgstr "Coda attuale"
 
 msgctxt "#31127"
 msgid "Continue Watching"
-msgstr ""
+msgstr "Continua a guardare"
 
 msgctxt "#31134"
 msgid "Manual search"
-msgstr ""
+msgstr "Ricerca manuale"
 
 msgctxt "#31136"
 msgid "Now Playing"
-msgstr "In riproduzione"
+msgstr "Ora in riproduzione"
 
 msgctxt "#31138"
 msgid "Stop video playing on return to menu"
-msgstr ""
+msgstr "Arresta riproduzione video quando ritorni al menu"
 
 msgctxt "#31142"
 msgid "Prioritise exit over shutdown in power menu"
-msgstr ""
+msgstr "Priorità all'uscita rispetto allo spegnimento nel menu uscita"
 
 msgctxt "#31143"
 msgid "Remaining"
-msgstr "Rimanente"
+msgstr "Rimanenti"
 
 msgctxt "#31144"
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 msgctxt "#31145"
 msgid "Item(s)"
-msgstr ""
+msgstr "Elemento(i)"
 
 msgctxt "#31149"
 msgid "Released"
-msgstr "Rilasciato"
+msgstr "Uscito"
 
 msgctxt "#31152"
 msgid "Press OK to cancel"
-msgstr ""
+msgstr "Premi OK per annullare"
 
 msgctxt "#31153"
 msgid "Playlist saved"
-msgstr ""
+msgstr "Playlist salvata"
 
 msgctxt "#31160"
 msgid "Ends"
-msgstr ""
+msgstr "Fine"
 
 msgctxt "#31165"
 msgid "TV Recordings"
@@ -323,35 +323,35 @@ msgstr "Registrazioni TV"
 
 msgctxt "#31169"
 msgid "Rate"
-msgstr ""
+msgstr "Valuta"
 
 msgctxt "#31170"
 msgid "Menus"
-msgstr ""
+msgstr "Menu"
 
 msgctxt "#31171"
 msgid "Edit home menu"
-msgstr ""
+msgstr "Modifica menu principale"
 
 msgctxt "#31172"
 msgid "Edit video section menu"
-msgstr ""
+msgstr "Modifica menu sezione video"
 
 msgctxt "#31173"
 msgid "Edit music section menu"
-msgstr ""
+msgstr "Modifica menu sezione musica"
 
 msgctxt "#31174"
 msgid "Edit picture section menu"
-msgstr ""
+msgstr "Modifica menu sezione immagini"
 
 msgctxt "#31176"
 msgid "New Movies"
-msgstr "Nuovi Film Aggiunti"
+msgstr "Nuovi film"
 
 msgctxt "#31178"
 msgid "New TV Shows"
-msgstr ""
+msgstr "Nuove serie TV"
 
 msgctxt "#31179"
 msgid "Options"
@@ -359,7 +359,7 @@ msgstr "Opzioni"
 
 msgctxt "#31180"
 msgid "New Albums"
-msgstr "Nuovi Album"
+msgstr "Nuovi album"
 
 msgctxt "#31181"
 msgid "Random Albums"
@@ -367,83 +367,83 @@ msgstr "Album casuali"
 
 msgctxt "#31187"
 msgid "Top Albums"
-msgstr "Top Album"
+msgstr "Top album"
 
 msgctxt "#31188"
 msgid "season(s)"
-msgstr ""
+msgstr "stagione(i)"
 
 msgctxt "#31189"
 msgid "episode(s)"
-msgstr ""
+msgstr "episodio(i)"
 
 msgctxt "#31190"
 msgid "All Episodes"
-msgstr ""
+msgstr "Tutti gli episodi"
 
 msgctxt "#31195"
 msgid "Show only unwatched items:"
-msgstr ""
+msgstr "Mostra solo elementi non visti:"
 
 msgctxt "#31199"
 msgid "Artists in"
-msgstr ""
+msgstr "Artisti in"
 
 msgctxt "#31203"
 msgid "Smart Playlist"
-msgstr ""
+msgstr "Playlist intelligente"
 
 msgctxt "#31205"
 msgid "No further details available."
-msgstr ""
+msgstr "Non sono disponibili ulteriori dettagli."
 
 msgctxt "#31206"
 msgid "Kodi System Information"
-msgstr ""
+msgstr "Informazioni di sistema Kodi"
 
 msgctxt "#31209"
 msgid "<Source name>"
-msgstr ""
+msgstr "<Nome sorgente>"
 
 msgctxt "#31211"
 msgid "<Smart playlist name>"
-msgstr ""
+msgstr "<Nome playlist intelligente>"
 
 msgctxt "#31212"
 msgid "From"
-msgstr ""
+msgstr "Da"
 
 msgctxt "#31213"
 msgid "Showing unwatched titles only"
-msgstr ""
+msgstr "Mostra solo titoli non visti"
 
 msgctxt "#31215"
 msgid "TV Channels"
-msgstr ""
+msgstr "Canali TV"
 
 msgctxt "#31216"
 msgid "TV Shows"
-msgstr "Programmi TV"
+msgstr "Serie TV"
 
 msgctxt "#31218"
 msgid "Enable this addon"
-msgstr ""
+msgstr "Abilita questo add-on"
 
 msgctxt "#31220"
 msgid "Disable extended fanart"
-msgstr ""
+msgstr "Disabilita fanart estesa"
 
 msgctxt "#31221"
 msgid "Play Disc"
-msgstr "Avvia il Disco"
+msgstr "Riproduci disco"
 
 msgctxt "#31222"
 msgid "Change Channel Group"
-msgstr ""
+msgstr "Cambia gruppo canali"
 
 msgctxt "#31223"
 msgid "All Albums"
-msgstr ""
+msgstr "Tutti gli album"
 
 msgctxt "#31224"
 msgid "All Movies"
@@ -455,23 +455,23 @@ msgstr "Tutte le serie TV"
 
 msgctxt "#31226"
 msgid "LibreElec Settings"
-msgstr ""
+msgstr "Impostazioni LibreELEC"
 
 msgctxt "#31228"
 msgid "Edit Menu"
-msgstr ""
+msgstr "Menu modifica"
 
 msgctxt "#31229"
 msgid "Play Music"
-msgstr ""
+msgstr "Riproduci"
 
 msgctxt "#31230"
 msgid "Game Settings"
-msgstr "Impostazioni Giochi"
+msgstr "Impostazioni giochi"
 
 msgctxt "#31231"
 msgid "Game related options"
-msgstr ""
+msgstr "Opzioni relative al gioco"
 
 msgctxt "#31232"
 msgid "Games"
@@ -479,35 +479,35 @@ msgstr "Giochi"
 
 msgctxt "#31233"
 msgid "Edit game section menu"
-msgstr ""
+msgstr "Modifica menu sezione giochi"
 
 msgctxt "#31234"
 msgid "Game Addons"
-msgstr ""
+msgstr "Add-on giochi"
 
 msgctxt "#31236"
 msgid "Radio / TV"
-msgstr ""
+msgstr "Radio / TV"
 
 msgctxt "#31237"
 msgid "Results for"
-msgstr ""
+msgstr "Risultati per"
 
 msgctxt "#31238"
 msgid "Disable recently added section for Movies"
-msgstr ""
+msgstr "Disabilita sezione film aggiunti di recente"
 
 msgctxt "#31239"
 msgid "Disable recently added section for TV Shows"
-msgstr ""
+msgstr "Disabilita sezione serie TV aggiunte di recente"
 
 msgctxt "#31240"
 msgid "Disable recently added section for Albums"
-msgstr ""
+msgstr "Disabilita sezione album aggiunti di recente"
 
 msgctxt "#31245"
 msgid "Finishes"
-msgstr ""
+msgstr "Finiture"
 
 msgctxt "#31248"
 msgid "Queue"
@@ -515,7 +515,7 @@ msgstr "Coda"
 
 msgctxt "#31249"
 msgid "Live TV"
-msgstr "TV"
+msgstr "Live TV"
 
 msgctxt "#31250"
 msgid "Radio"
@@ -523,8 +523,8 @@ msgstr "Radio"
 
 msgctxt "#31251"
 msgid "Eject Disc"
-msgstr "Espelli Disco"
+msgstr "Espelli disco"
 
 msgctxt "#31252"
 msgid "Album"
-msgstr ""
+msgstr "Album"
