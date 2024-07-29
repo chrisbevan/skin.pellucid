@@ -56,7 +56,7 @@
             </control>
             <control type="panel" id="450">
                 <posx>0</posx>
-                <posy>86</posy>
+                <posy>76</posy>
                 <width>12-col</width>
                 <height>19-row</height>
                 <onright>9000</onright>
@@ -130,7 +130,7 @@
             <!--OK / Cancel / New folder buttons-->
             <control type="grouplist" id="9000">
                 <posx>12-col</posx>
-                <posy>86</posy>
+                <posy>76</posy>
                 <width>4-col</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>

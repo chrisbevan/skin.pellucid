@@ -127,8 +127,8 @@
 			<thumb />
 			<property name="labelID">31232</property>
 			<property name="defaultID">31232</property>
-			<onclick>ActivateWindow(games)</onclick>
-			<property name="path">ActivateWindow(games)</property>
+			<onclick>ActivateWindow(games,plugin://plugin.program.akl/sources)</onclick>
+			<property name="path">ActivateWindow(games,plugin://plugin.program.akl/sources)</property>
 			<property name="list">games</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-31232</property>
@@ -282,7 +282,7 @@
 			<property name="defaultID">31136</property>
 			<visible>Player.HasMedia</visible>
 			<onclick condition="true">control.setfocus(9999)</onclick>
-			<onclick>activateWindow(1103)</onclick>
+			<onclick>activateWindow(musicplaylist)</onclick>
 			<property name="path">activateWindow(musicplaylist)</property>
 			<property name="list">activateWindow(musicplaylist)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>

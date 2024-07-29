@@ -59,14 +59,14 @@
 			<width>1-col</width>
 			<onclick>control.setfocus(9000)</onclick>
 			<onleft>control.setfocus(9000)</onleft>
-            <ondown>control.setfocus(2100)</ondown>
+            <ondown condition="!PVR.IsPlayingRadio">control.setfocus(2100)</ondown>
 			<oninfo>control.setfocus(9000)</oninfo>
 		</control>
         <!--debugging-->
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>MyPlaylist.xml path: $INFO[container.folderpath]   name: $INFO[container.foldername]   content: $INFO[container.content]    Control: $INFO[System.CurrentControl]</label>
+            <label>MyPlaylist.xml path: $INFO[container.folderpath]   name: $INFO[container.foldername]   content: $INFO[container.content]    Control: $INFO[System.CurrentControl] $INFO[MusicPlayer.ChannelName]</label>
         </control>
     </controls>
 </window>

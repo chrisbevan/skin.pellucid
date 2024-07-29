@@ -44,7 +44,7 @@
                 <control type="panel" id="50">
                     <visible>String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>0</posx>
-                    <posy>84</posy>
+                    <posy>76</posy>
                     <width>8-col</width>
                     <height>18-row</height>
                     <ondown>50</ondown>
@@ -128,7 +128,7 @@
                 <control type="panel" id="51">
                     <visible>!String.IsEqual(container.folderpath,addons://)</visible>
                     <posx>0</posx>
-                    <posy>84</posy>
+                    <posy>76</posy>
                     <width>12-col</width>
                     <height>710</height>
                     <onleft>60</onleft>

@@ -4,7 +4,7 @@
     <include>fadeInOut</include>
     <onload>Skin.SetString(recentitems,music)</onload>
     <onload>Skin.SetString(musicQuickLinkValue,special://skin/extras/playlists/recentAlbums.xsp)</onload>
-	<views>50,51,52,53,54,55,56,57,59</views>
+	<views>50,51,52,53,54,55,59</views>
     <controls>
         <include>globalBackground</include>
 		<control type="group">

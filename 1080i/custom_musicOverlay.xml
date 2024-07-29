@@ -15,7 +15,7 @@
 				</animation>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>69</width>
+                <width>72</width>
                 <height>54</height>
                 <texture diffuse="masks/nowPlaying1.png">colors/white.png</texture>
                 <colordiffuse>highlight</colordiffuse>

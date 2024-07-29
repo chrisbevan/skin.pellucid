@@ -42,6 +42,7 @@
                 <height>124</height>
                 <font>textbox</font>
                 <textcolor>textActive</textcolor>
+                <wrapmultiline>false</wrapmultiline>
                 <autoscroll delay="3000" time="2000" repeat="5000"/>
            </control>
            <!--options-->

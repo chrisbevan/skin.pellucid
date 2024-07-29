@@ -6,6 +6,7 @@
     <include file="Includes_animations.xml"/>
     <include file="Includes_hubMenu.xml"/>
     <include file="Includes_hubOptionsItems.xml"/>
+    <include file="View_FileList.xml"/>
     <include file="View_LiveTVChannels.xml"/>
     <include file="View_Seasons.xml"/>
     <include file="View_Episodes.xml"/>
@@ -20,10 +21,11 @@
     <include file="View_MusicFiles.xml"/>
     <include file="View_MusicPlaylist.xml"/>
     <include file="View_ArtistAlbums.xml"/>
-    <include file="View_MusicVideos.xml"/>
 	<include file="View_Games.xml"/>
+    <include file="View_GamePlatforms.xml"/>
     <include file="Includes_menus.xml"/>
     <include file="Includes_mediaShowcase.xml"/>
+    <include file="Includes_gameShowcase.xml"/>
 
     <!--view type conditions-->
     <expression name="isVideoList">!String.Contains(container.folderpath,special://profile/playlists/video) + !String.Contains(container.folderpath,videodb://) + !String.Contains(container.folderpath,plugin://) | container.content(files) | String.IsEmpty(container.content) | container.content(addons) | container.content(videos) | container.content(episodes)</expression>
@@ -46,12 +48,17 @@
 	<expression name="isPhotoAlbum">container.content(images)</expression>
 	
 	<!--games-->
-	<expression name="isGame">container.content(games)</expression>
+	<expression name="isGamePlatform">String.Contains(Container.FolderPath,plugin://plugin.program.akl/sources)</expression>
+	<expression name="isGame">String.Contains(Container.FolderPath,plugin://plugin.program.akl/source/) | String.Contains(Container.FolderPath,plugin://plugin.program.akl/collection/virtual/vcategory)</expression>
+    
 
 	<!--weather-->
 	<expression name="hasWeather">!String.IsEmpty(Window(Weather).Property(WeatherProvider)) + !String.String.IsEmpty(weather.temperature) + !String.String.IsEmpty(weather.conditions)</expression>
 
-	<!--item fanart-->
+    <!--generic file list-->
+	<expression name="isFileList">container.content(files)</expression>
+    
+    <!--item fanart-->
     <include name="itemFanart">
         <control type="wraplist" id="99999">
             <posx>0</posx>

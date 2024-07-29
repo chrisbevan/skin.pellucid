@@ -11,111 +11,88 @@
             <aspectratio>stretch</aspectratio>
             <colordiffuse>BBffffff</colordiffuse>
         </control>
-        
         <control type="image">
             <include>dimensionsFullscreen</include>
             <texture>vignette.png</texture>
             <colordiffuse>ffffffff</colordiffuse>
             <aspectratio>stretch</aspectratio>
         </control>
-        <!--OSD-->
+        <!--Revised OSD-->
         <control type="group">
             <posx>col-1-begin</posx>
-            <posy>row-1-begin</posy>
-
+            <posy>row-26-begin</posy>
+            
             <control type="label">
                 <posx>0</posx>
-                <posy>21-row</posy>
-                <width>24-col</width>
-                <height>4-row</height>
-                <align>center</align>
-                <font>dialogTitle</font>
+                <posy>-24</posy>
+                <width>20-col-gutter</width>
+                <height>1-row</height>
+                <align>left</align>
+                <font>pageTitle</font>
                 <textcolor>textActive</textcolor>
                 <label>$INFO[VideoPlayer.ChannelName,, - ]$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[Player.title]</label>
                 <shadowcolor>44000000</shadowcolor>
             </control>
             
-            <control type="group">
+            <control type="progress">
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>24-col</width>
+				<height>12</height>
+				<texturebg>colors/white.png</texturebg>
+				<midtexture colordiffuse="highlight">colors/white.png</midtexture>
+                <info>Player.Progress</info>
+            </control>
+            <control type="label">
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+                <posx>24-col</posx>
+                <posy>-18</posy>
+                <width>4-col</width>
+				<align>right</align>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[Player.Time]/$INFO[Player.Duration]</label>
+                <shadowcolor></shadowcolor>
+            </control>
+            
+            
+			<control type="progress">
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<posx>0</posx>
+				<posy>1-row</posy>
+				<width>24-col</width>
+				<height>12</height>
+				<texturebg>colors/white.png</texturebg>
+				<midtexture colordiffuse="highlight">colors/white.png</midtexture>
+				<info>PVR.EpgEventProgress</info>
+			</control>
+			<control type="label">
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+                <posx>24-col</posx>
+                <posy>-18</posy>
+                <width>4-col</width>
+				<align>right</align>
+                <font>dialogTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>$INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration]</label>
+            </control>
+            
+            <control type="label">
+                <visible>Player.Paused + !Player.Caching</visible>
                 <posx>0</posx>
-                <posy>24-row</posy>
-                <control type="progress">
-    				<visible>!VideoPlayer.Content(LiveTV)</visible>
-    				<posx>2-col</posx>
-    				<posy>14</posy>
-    				<width>20-col</width>
-    				<height>6</height>
-    				<texturebg>colors/white.png</texturebg>
-    				<midtexture colordiffuse="highlight">colors/white.png</midtexture>
-                    <info>Player.Progress</info>
-                </control>
-    			<control type="progress">
-    				<visible>VideoPlayer.Content(LiveTV)</visible>
-    				<posx>2-col</posx>
-    				<posy>14</posy>
-    				<width>20-col</width>
-    				<height>6</height>
-    				<texturebg>colors/white.png</texturebg>
-    				<midtexture colordiffuse="highlight">colors/white.png</midtexture>
-    				<info>PVR.EpgEventProgress</info>
-    			</control>
-                
-                <control type="label">
-    				<visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>2-col-gutter</width>
-    				<align>left</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[Player.Time]</label>
-                    <shadowcolor></shadowcolor>
-                </control>		
-    			<control type="label">
-    				<visible>VideoPlayer.Content(LiveTV)</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>2-col-gutter</width>
-    				<align>left</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[PVR.EpgEventElapsedTime]</label>
-                </control>
-    			<control type="label">
-    				<visible>VideoPlayer.Content(LiveTV)</visible>
-                    <posx>24-col</posx>
-                    <posy>0</posy>
-                    <width>2-col-gutter</width>
-    				<align>right</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[PVR.EpgEventDuration]</label>
-                </control> 
-    			<control type="label">
-    				<visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <posx>24-col</posx>
-                    <posy>0</posy>
-                    <width>2-col-gutter</width>
-    				<align>right</align>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>$INFO[Player.Duration]</label>
-                </control> 
-                
-                <control type="label">
-                    <visible>Player.Paused + !Player.Caching</visible>
-                    <posx>0</posx>
-                    <posy>24</posy>
-                    <width>24-col</width>
-                    <height>2-row</height>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>112</label>
-                </control> 
-            </control>  
-                      
+                <posy>40</posy>
+                <width>24-col</width>
+                <height>2-row</height>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>itemSubTitle</font>
+                <textcolor>textActive</textcolor>
+                <label>112</label>
+            </control> 
+            
         </control>
+        
         
         <!--ff / rw speed indicators-->
         <control type="group">

@@ -8,7 +8,7 @@
         <control type="group">
             <control type="group">
                 <posx>col-7-begin</posx>
-                <posy>row-4-begin</posy>
+                <posy>row-3-begin</posy>
                 <!--animations-->
                 <include condition="!Player.hasVideo">modalDialogInOutVertical</include>
                 <control type="image">
@@ -42,11 +42,12 @@
                 <control type="label" id="1">
                     <posx>24</posx>
                     <posy>0</posy>
-                    <width>16-col-gutter</width>
+                    <width>14-col-gutter</width>
                     <height>2-row</height>
                     <aligny>center</aligny>
                     <font>dialogTitle</font>
                     <textcolor>textActive</textcolor>
+                    <wrapmultiline>false</wrapmultiline>
                     <shadowcolor></shadowcolor>
                 </control>
 				<!--page scrollbar-->
@@ -64,10 +65,11 @@
                     <!--Used in search from cast listing etc-->
                     <control type="panel" id="3">
                         <posx>0</posx>
-                        <posy>84</posy>
+                        <posy>76</posy>
                         <width>12-col</width>
                         <height>681</height>
                         <onright>9760</onright>
+                        <ondown>9760</ondown>
 						<onleft>60</onleft>
 						<pagecontrol>60</pagecontrol>
                         <itemlayout height="84" width="12-col">
@@ -137,10 +139,11 @@
                     <!--skin selection etc-->
                     <control type="panel" id="6">
                         <posx>0</posx>
-                        <posy>84</posy>
+                        <posy>76</posy>
                         <width>12-col</width>
                         <height>19-row</height>
                         <onright>9760</onright>
+                        <ondown>9760</ondown>
 						<onleft>60</onleft>
                         <itemlayout height="84" width="12-col">
                             <control type="label">
@@ -210,11 +213,16 @@
             
                 <!--buttons-->
                 <control type="grouplist" id="9760">
-                    <posx>12-col</posx>
-                    <posy>2-row</posy>
+                    <posx>3-col</posx>
+                    <posy>22-row</posy>
                     <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <onup>9000</onup>
                     <control type="button" id="5">
                         <description>OK / Manual button</description>
+                        <width>6-col</width>
+        				<align>center</align>
+        				<texturenofocus>colors/offblack.png</texturenofocus>
                         <label>186</label>
                     </control>
                 </control>

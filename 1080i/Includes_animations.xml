@@ -57,17 +57,17 @@
     </include>
     <include name="modalDialogInOutVertical">
         <animation type="Windowopen">
-            <effect type="fade" start="0" end="100" time="300"/>
-            <effect type="slide" start="0,-200" end="0" tween="cubic" easing="out" time="400"/>
+            <effect type="fade" start="0" end="150" time="200"/>
+            <effect type="slide" start="0,-100" end="0" tween="cubic" easing="out" time="300"/>
         </animation>
         <animation type="Windowclose">
-            <effect type="fade" start="100" end="0" time="300"/>
-            <effect type="slide" start="0" end="0,300" tween="cubic" easing="out" time="400"/>
+            <effect type="fade" start="150" end="0" time="200"/>
+            <effect type="slide" start="0" end="0,100" tween="cubic" easing="out" time="300"/>
         </animation>
     </include>
     <include name="modalDialogContentShift">
         <animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
-            <effect type="zoom" end="130" time="200" center="auto" tween="linear" easing="out"/>
+            <effect type="zoom" end="110" time="250" center="auto" tween="linear" easing="out"/>
         </animation>
     </include>
 </includes>

@@ -1,167 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="games">
-		<control type="panel" id="50">
-			<!--<visible>$EXP[isGame]</visible>-->
-			<visible>false</visible>
-            <posx>col-1-begin</posx>
-            <posy>row-5-begin</posy>
-            <width>1800</width>
-            <height>24-row</height>
-            <onleft>9000</onleft>
-            <onright>60</onright>
-            <ondown>50</ondown>
-            <onup>50</onup>
-            <onback>9000</onback>
-            <pagecontrol>60</pagecontrol>
-            <scrolltime tween="cubic" easing="out">600</scrolltime>
-            <itemlayout width="293" height="348">
+		<!--fanart-->
+		<control type="group">
+			<visible>$EXP[isGame]</visible>
+			<control type="group">
+				<animation type="conditional" condition="!control.isvisible(502)">
+	                <effect type="fade" start="100" end="0" time="0"/>
+	            </animation>
+				<animation type="conditional" condition="control.isvisible(502)">
+	                <effect type="fade" start="0" end="100" time="500" delay="500"/>
+	            </animation>
+				<control type="image">
+					<include>dimensionsFullscreen</include>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture border="0">$INFO[listitem.Art(fanart)]</texture>
+					<fadetime>0</fadetime>
+					<colordiffuse>66ffffff</colordiffuse>
+				</control>
+				<control type="image">
+					<visible>string.isempty(listitem.Art(fanart))</visible>
+					<include>dimensionsFullscreen</include>
+					<texture border="0">$INFO[listitem.Art(snap)]</texture>
+					<fadetime>0</fadetime>
+					<colordiffuse>66ffffff</colordiffuse>
+				</control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>4-col-gutter</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>colors/black.png</texture>
-                    <bordertexture colordiffuse="overlay">colors/black.png</bordertexture>
-                    <bordersize>6</bordersize>
-                    <colordiffuse>overlay</colordiffuse>
+                    <posx>col-18-begin</posx>
+                    <posy>row-12-begin</posy>
+                    <width>6-col</width>
+                    <height>3-col</height>
+                    <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                    <aspectratio align="right">keep</aspectratio>
+                    <colordiffuse>ccffffff</colordiffuse>
                 </control>
 				<control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>4-col-gutter</width>
-                    <height>4-col-gutter</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture>$INFO[ListItem.Art(thumb)]</texture>
-                    <bordersize>6</bordersize>
-                    <colordiffuse>77ffffff</colordiffuse>
-                </control>
-                <control type="textbox">
-                    <visible>!controlgroup(9000).hasfocus</visible>
-                    <posx>12</posx>
-                    <posy>258</posy>
-                    <width>240</width>
-                    <height>60</height>
-                    <aligny>center</aligny>
-                    <font>thumbTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <label>[B]$INFO[ListItem.label][/B]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout width="4-col" height="348">
+					<visible>!string.isempty(listitem.Art(fanart))</visible>
+					<include>dimensionsFullscreen</include>
+					<texture>vignette.png</texture>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<animation type="Conditional" condition="controlgroup(9000).hasfocus | controlgroup(9002).hasfocus | controlgroup(100).hasfocus">
+					<effect type="fade" start="100" end="0" time="200"/>
+				</animation>
+				<!--title-->
                 <control type="group">
-                    <include>focusThumb</include>
-                    <control type="image">
+                    <posx>col-1-begin</posx>
+                    <posy>row-10-begin</posy>
+					<animation type="conditional" condition="!control.isvisible(502)">
+		                <effect type="fade" start="100" end="0" time="0"/>
+		            </animation>
+					<animation type="conditional" condition="control.isvisible(502)">
+		                <effect type="fade" start="0" end="100" time="250" delay="500"/>
+		            </animation>        
+                    <control type="label">
                         <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/black.png</texture>
-                        <bordertexture colordiffuse="FFFFFFFF">colors/white.png</bordertexture>
-                        <bordersize>6</bordersize>
-                        <colordiffuse>FF000000</colordiffuse>
-                    </control>
-					<control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>4-col-gutter</width>
-                        <height>4-col-gutter</height>
-                        <aspectratio>scale</aspectratio>
-                        <texture>$INFO[ListItem.Art(thumb)]</texture>
-                        <bordersize>6</bordersize>
-                    </control>
-                    <control type="textbox">
-                        <visible>!controlgroup(9000).hasfocus</visible>
-                        <posx>12</posx>
-                        <posy>258</posy>
-                        <width>240</width>
-                        <height>60</height>
-                        <aligny>center</aligny>
-                        <font>thumbTitle</font>
+                        <posy>4-row</posy>
+                        <width>12-col</width>
+                        <height>1-row</height>
+                        <font>largeTitle</font>
                         <textcolor>textActive</textcolor>
-                        <label>[B]$INFO[ListItem.label][/B]</label>
+						<aligny>center</aligny>
+                        <shadowcolor></shadowcolor>
+                        <wrapmultiline>true</wrapmultiline>
+                        <label>$INFO[listitem.title]</label>
                     </control>
+					<control type="label">
+		                <posx>0</posx>
+		                <posy>5-row</posy>
+		                <width>12-col</width>
+		                <height>2-row</height>
+		                <align></align>
+		                <font>menuTitle</font>
+		                <textcolor>textActive</textcolor>
+		                <label>$INFO[listitem.studio,,]$INFO[listitem.year, (,).] $INFO[listitem.genre,,.]</label>
+		            </control>
                 </control>
-            </focusedlayout>
-        </control>
-        <control type="panel" id="51">
-			<!--<visible>!$EXP[isGame]</visible>-->
-            <posx>col-1-begin</posx>
-            <posy>row-5-begin</posy>
-            <width>24-col</width>
-            <height>23-row</height>
-            <onleft>9000</onleft>
-            <onright>61</onright>
-            <ondown>51</ondown>
-            <onup>51</onup>
-            <pagecontrol>61</pagecontrol>
-            <itemlayout width="24-col" height="2-row">
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>3</posy>
-                    <width>66</width>
-                    <height>66</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="colors/black.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-					<colordiffuse>overlay</colordiffuse>
-                </control>
-                <control type="image">
-                    <posx>1-col</posx>
-                    <posy>0</posy>
-                    <width>23-col</width>
-                    <height>69</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture border="0">colors/black.png</texture>
-                    <colordiffuse>overlay</colordiffuse>
-                </control>
-                <control type="label">
-                    <posx>1-col-indent</posx>
-                    <posy>0</posy>
-                    <width>22-col-gutter</width>
-                    <height>2-row</height>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor></shadowcolor>
-                    <label>$INFO[ListItem.label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout width="24-col" height="2-row">
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>3</posy>
-                    <width>66</width>
-                    <height>66</height>
-                    <aspectratio scalediffuse="false">stretch</aspectratio>
-                    <texture fallback="colors/white.png" diffuse="masks/circle.png" border="0">$INFO[Listitem.thumb]</texture>
-                    <animation type="focus" loop="false" reversible="false">
-                        <effect type="fade" time="500"/>
-                        <effect type="rotatey" end="360" center="33" tween="back" easing="out" time="1000"/>
-                    </animation>
-                </control>
-                <control type="image">
-                    <posx>1-col</posx>
-                    <posy>0</posy>
-                    <width>23-col</width>
-                    <height>2-row</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture border="0">colors/white.png</texture>
-                    <colordiffuse>highlight</colordiffuse>
-                </control>
-                <control type="label">
-                    <posx>1-col-indent</posx>
-                    <posy>0</posy>
-                    <width>22-col-gutter</width>
-                    <height>2-row</height>
-                    <aligny>center</aligny>
-                    <font>itemTitle</font>
-                    <textcolor>textActive</textcolor>
-                    <shadowcolor></shadowcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-            </focusedlayout>
-        </control>
+				<control type="panel" id="502">
+					<animation type="conditional" condition="!control.isvisible(502)">
+		                <effect type="fade" start="100" end="0" time="0"/>
+		            </animation>
+					<animation type="conditional" condition="control.isvisible(502)">
+		                <effect type="fade" start="0" end="100" time="500" delay="1000"/>
+		            </animation>
+					<visible>$EXP[isGame]</visible>
+					<posx>84</posx>
+					<posy>696</posy>
+					<width>24-col</width>
+					<height>19-row</height>
+					<onleft>9000</onleft>
+					<orientation>horizontal</orientation>
+					<scrolltime tween="cubic" easing="out">600</scrolltime>
+					<itemlayout width="300" height="348">
+	                    <control type="image">
+	                        <posx>0</posx>
+	                        <posy>0</posy>
+	                        <width>4-col-gutter</width>
+	                        <height>4-col-gutter</height>
+	                        <aspectratio>stretch</aspectratio>
+	                        <texture diffuse="masks/albumThumb.png">colors/black.png</texture>
+	                    </control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>4-col-gutter</width>
+							<height>4-col-gutter</height>
+							<aspectratio>scale</aspectratio>
+							<texture diffuse="masks/albumThumb.png">$INFO[ListItem.art(snap)]</texture>
+							<colordiffuse>88FFFFFF</colordiffuse>
+						</control>
+						<control type="textbox">
+							<visible>String.IsEmpty(listitem.title)</visible>
+							<posx>24</posx>
+							<posy>3-row</posy>
+							<width>228</width>
+							<height>6-row</height>
+							<font>largeLight</font>
+							<wrapmultiline>true</wrapmultiline>
+							<textcolor>textActive</textcolor>
+							<label>$INFO[ListItem.label]</label>
+						</control>
+						<control type="textbox">
+							<visible>!controlgroup(9000).hasfocus</visible>
+							<posx>12</posx>
+							<posy>274</posy>
+							<width>240</width>
+							<height>60</height>
+                            <align>center</align>
+							<aligny>top</aligny>
+							<font>thumbTitle</font>
+							<textcolor>textActive</textcolor>
+							<label>$INFO[ListItem.Title]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout width="4-col" height="348">
+						<control type="group">
+							<include>focusThumb</include>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>4-col-gutter</width>
+								<height>4-col-gutter</height>
+    							<aspectratio>scale</aspectratio>
+    							<texture fallback="colors/black.png" diffuse="masks/albumThumb.png">$INFO[ListItem.Art(snap)]</texture>
+    	                        <bordertexture infill="false" diffuse="masks/albumThumb.png">colors/white.png</bordertexture>
+    	                        <bordersize>6</bordersize>
+							</control>
+							<control type="textbox">
+								<visible>String.IsEmpty(listitem.title)</visible>
+								<posx>24</posx>
+								<posy>3-row</posy>
+								<width>228</width>
+								<height>6-row</height>
+								<font>largeLight</font>
+								<wrapmultiline>true</wrapmultiline>
+								<textcolor>textActive</textcolor>
+								<label>$INFO[ListItem.label]</label>
+							</control>
+							<control type="textbox">
+								<visible>!controlgroup(9000).hasfocus</visible>
+								<posx>12</posx>
+								<posy>274</posy>
+								<width>240</width>
+								<height>60</height>
+                                <align>center</align>
+								<aligny>top</aligny>
+								<font>thumbTitle</font>
+								<textcolor>textActive</textcolor>
+								<label>$INFO[ListItem.Title]</label>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+		</control>
     </include>
 </includes>

@@ -21,11 +21,9 @@
                 <control type="group" id="9500">
                     <include>videofiles</include>
                     <include>movies</include>
-					<include>addonposters</include>
                     <include>tvshows</include>
                     <include>seasons</include>
                     <include>episodes</include>
-                    <include>musicvideos</include>
                 </control>
             </control>
             <!--page scrollbar-->

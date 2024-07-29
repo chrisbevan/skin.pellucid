@@ -28,6 +28,8 @@
 		<value condition="Window.isactive(TVRecordings)">$LOCALIZE[19020] [COLOR highlight]$LOCALIZE[31165][/COLOR]</value>
 		<value condition="Window.isactive(programs)">$LOCALIZE[10506]</value>
 		<value condition="Window.isactive(musicplaylist) | Window.isactive(videoplaylist)">$LOCALIZE[31123]</value>
+        <value condition="String.Contains(Container.FolderPath,plugin://plugin.program.akl/sources)">$LOCALIZE[31232] [LOWERCASE][COLOR highlight]All Platforms[/COLOR][/LOWERCASE]</value>
+        <value condition="String.Contains(Container.FolderPath,plugin://plugin.program.akl/source/)">$LOCALIZE[31232] [LOWERCASE][COLOR highlight]$INFO[listitem.property(platform)][/COLOR][/LOWERCASE]</value>
 		<value condition="Window.isactive(games)">$LOCALIZE[31232] [LOWERCASE][COLOR highlight]$INFO[container.foldername][/COLOR][/LOWERCASE]</value>
 	</variable>
     <variable name="listSubTitle">

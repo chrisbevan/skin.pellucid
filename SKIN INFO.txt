@@ -1,0 +1,20 @@
+**View IDs**
+50 - filelist - $EXP[isFileList]
+51 - movies - $EXP[isMovie]
+52 - tvshows - $EXP[isTVShow] + !$EXP[isMovie]
+53 - episodes - $EXP[isEpisode] + !String.Contains(container.folderpath,smb://) + String.Contains(container.folderpath,videodb://)
+
+
+55 - videofiles - $EXP[isVideoList]
+58 - seasons - $EXP[isSeason] + !String.Contains(container.folderpath,smb://)
+
+
+
+/*music*
+50 - musicfiles - !$EXP[isMusicPlaylist] + !$EXP[isMusicSong] + !$EXP[isMusicAlbum] + $EXP[isMusicList]
+51 - musicartist - $EXP[isMusicArtist]
+52 - musicartistcatalogue - $EXP[isMusicArtistCatalogue]
+53 - musicsongs - $EXP[isMusicSong]
+54 - musicalbum - $EXP[isMusicAlbum] + !$EXP[isMusicArtistCatalogue]
+55 - musicgenre - $EXP[isMusicGenre]
+59 - musicPlayList

@@ -301,7 +301,7 @@
                     <description>Episode title</description>
                     <posx>0</posx>
                     <posy>2-row</posy>
-                    <width>12-col-gutter</width>
+                    <width>11-col</width>
                     <height>2-row</height>
                     <align>left</align>
                     <aligny>center</aligny>
@@ -338,7 +338,7 @@
                     <posx>0</posx>
                     <posy>5-row</posy>
                     <font>textbox</font>
-                    <width>12-col</width>
+                    <width>12-col-gutter</width>
                     <align>left</align>
                     <textcolor>textActive</textcolor>
                     <shadowcolor></shadowcolor>

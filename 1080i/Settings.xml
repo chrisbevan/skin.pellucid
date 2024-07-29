@@ -210,6 +210,13 @@
                         <property name="label3">$LOCALIZE[31108]</property>
                         <onclick>ActivateWindow(systeminfo)</onclick>
                     </item>
+                    <item>
+                        <description>File Manager</description>
+                        <label>10003</label>
+                        <label2></label2>
+                        <property name="label3">$LOCALIZE[31095]</property>
+                        <onclick>activatewindow(filemanager)</onclick>
+                    </item>
                 </content>
             </control>
 			<!--libreelec builds only-->

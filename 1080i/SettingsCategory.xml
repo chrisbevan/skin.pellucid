@@ -69,7 +69,7 @@
 		            <effect type="fade" start="100" end="80" time="100"/>
 		        </animation>
                 <posx>0</posx>
-                <posy>84</posy>
+                <posy>76</posy>
                 <width></width>
                 <itemgap>0</itemgap>
                 <height>538</height>
@@ -81,8 +81,8 @@
             </control>
             <!--options-->
             <control type="grouplist" id="5">
-                <posx>4-col</posx>
-                <posy>84</posy>
+                <posx>280</posx>
+                <posy>76</posy>
                 <width>14-col</width>
                 <height>606</height>
                 <onleft>3</onleft>

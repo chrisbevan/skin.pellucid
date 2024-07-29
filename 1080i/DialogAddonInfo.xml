@@ -130,7 +130,7 @@
             <control type="grouplist" id="8000">
                 <visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
                 <posx>0</posx>
-                <posy>372</posy>
+                <posy>366</posy>
                 <width>6-col</width>
                 <height>11-row</height>
                 <orientation>vertical</orientation>

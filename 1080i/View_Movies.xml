@@ -66,6 +66,9 @@
                             <onclick>Runscript(script.quickfind,media=movies)</onclick>
                         </control>            
                         <control type="button" id="4000">
+                            <animation type="Conditional" condition="!String.IsEqual(skin.string(movieQuickLinkValue),special://skin/extras/playlists/recentMovies.xsp)">
+            					<effect type="fade" start="100" end="33" time="200"/>
+            	            </animation>
                             <label>31176</label>
                             <texturenofocus></texturenofocus>
                             <texturefocus colordiffuse="ffffffff" border="24">UIControls/button.png</texturefocus>
@@ -77,6 +80,9 @@
                             <ondown>control.setfocus(9103,0)</ondown>
                         </control> 
                         <control type="button" id="4001">
+                            <animation type="Conditional" condition="!String.IsEqual(skin.string(movieQuickLinkValue),special://skin/extras/playlists/inprogressMovies.xsp)">
+            					<effect type="fade" start="100" end="33" time="200"/>
+            	            </animation>
                             <label>31127</label>
                             <texturenofocus></texturenofocus>
                             <texturefocus colordiffuse="ffffffff">UIControls/button.png</texturefocus>

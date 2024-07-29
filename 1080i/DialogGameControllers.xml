@@ -12,9 +12,10 @@
             <control type="image">
                 <posx>-12</posx>
                 <posy>-12</posy>
-                <width>1320</width>
+                <width>1324</width>
                 <height>20-row</height>
-                <texture>colors/black.png</texture>
+                <texture border="24">dialogBackground.png</texture>
+                <border></border>
                 <colordiffuse>overlay</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -23,7 +24,7 @@
                 <posy>0</posy>
                 <width>18-col</width>
                 <height>2-row</height>
-                <texture>colors/white.png</texture>
+                <texture border="10">masks/menuTitle2.png</texture>
                 <colordiffuse>highlight</colordiffuse>
                 <aspectratio>stretch</aspectratio>
             </control>
@@ -41,7 +42,7 @@
             <control type="grouplist" id="3">
                 <description>Controller types grouplist</description>
                 <posx>0</posx>
-                <posy>86</posy>
+                <posy>76</posy>
                 <width>4-col</width>
                 <height>18-row</height>
                 <onright>9001</onright>
@@ -55,27 +56,16 @@
             <!--dialog buttons-->
             <control type="panel" id="9001">
                 <posx>14-col</posx>
-                <posy>86</posy>
+                <posy>76</posy>
                 <width>4-col</width>
                 <height>10-row</height>
                 <orientation>vertical</orientation>
                 <onleft>3</onleft>
                 <itemlayout width="6-col" height="2-row">
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
+                        <posx>12</posx>
                         <posy>-1</posy>
-                        <width>3-col-gutter</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
@@ -87,37 +77,15 @@
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col-textbox</width>
-                        <height>2-row</height>
-                        <aspectratio>stretch</aspectratio>
-                        <texture>colors/white.png</texture>
-                        <colordiffuse>highlight</colordiffuse>
-                        <include>spinFocusIcon</include>
-                    </control>
-                    <control type="image">
-                        <posx>1-col</posx>
-                        <posy>0</posy>
-                        <width>3-col-textbox</width>
+                        <width>4-col</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture>colors/white.png</texture>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1-col</width>
-                        <height>2-row</height>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <font>symbolLarge</font>
-                        <textcolor>textActive</textcolor>
-                        <label>$INFO[ListItem.label2]</label>
-                        <shadowcolor></shadowcolor>
-                    </control>
-                    <control type="label">
-                        <posx>1-col-indent</posx>
+                        <posx>12</posx>
                         <posy>-1</posy>
-                        <width>5-col-gutter</width>
+                        <width>4-col-gutter</width>
                         <height>2-row</height>
                         <aligny>center</aligny>
                         <font>buttonTitle</font>
@@ -147,13 +115,6 @@
                         <label2></label2>
                         <thumb></thumb>
                         <onclick>SendClick(10820,20)</onclick>
-                    </item>
-                    <item id="4">
-                        <description>Help Button</description>
-                        <label>$LOCALIZE[10043]</label>
-                        <label2></label2>
-                        <thumb></thumb>
-                        <onclick>SendClick(10820,17)</onclick>
                     </item>
                 </content>
             </control>

@@ -186,7 +186,7 @@
 				        </animation>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>1-col</width>
+                        <width>72</width>
                         <height>2-row</height>
                         <aspectratio>stretch</aspectratio>
                         <texture diffuse="masks/iconEndCapLeft.png">colors/white.png</texture>
@@ -210,7 +210,7 @@
                         <posx>1-col</posx>
                         <posy>0</posy>
                         <width>11-col</width>
-                        <height>2-row</height>
+                        <height>73</height>
                         <aspectratio>stretch</aspectratio>
                         <texture diffuse="masks/episodeMenu.png">colors/white.png</texture>
                         <bordersize>0</bordersize>

@@ -41,8 +41,8 @@
 		            </animation>
 					<animation type="conditional" condition="control.isvisible(52)">
 		                <effect type="fade" start="0" end="100" time="250" delay="500"/>
-		            </animation>
-					<control type="label">
+		            </animation>        
+                    <control type="label">
                         <posx>0</posx>
                         <posy>4-row</posy>
                         <width>12-col</width>

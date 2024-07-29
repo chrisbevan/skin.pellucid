@@ -92,7 +92,7 @@
                         <shadowcolor></shadowcolor>
                     </control>
                     <control type="label">
-                        <posx>0</posx>
+                        <posx>24</posx>
                         <posy>row-3-begin</posy>
                         <width>384</width>
                         <align>center</align>

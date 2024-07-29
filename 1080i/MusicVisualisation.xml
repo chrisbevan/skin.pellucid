@@ -2,7 +2,7 @@
 <window>
     <!--content moved to custom_musicPlayerFullscreen.xml-->
     <onload>action(back)</onload>
-    <onload>activateWindow(1103)</onload>
+    <onload>AlarmClock(gotoplaylist,activateWindow(musicplaylist),00:01,true)</onload>
     <controls>
         <!--debugging-->
         <include>DebugGrid</include>
