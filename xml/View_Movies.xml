@@ -220,6 +220,15 @@
 	                <focusedlayout width="586" height="5-col-gutter">
 	                    <control type="group">
 	                        <include>focusThumb</include>
+    						<control type="image">
+    	                        <posx>0</posx>
+    	                        <posy>0</posy>
+    	                        <width>552</width>
+    	                        <height>311</height>
+    	                        <aspectratio>stretch</aspectratio>
+    	                        <texture scalediffuse="true" diffuse="masks/latestLandscape.png">colors/black.png</texture>
+    	                        <colordiffuse>FFFFFFFF</colordiffuse>
+    	                    </control>
 							<control type="image">
 								<visible>!string.isempty(ListItem.Art(fanart))</visible>
 		                        <posx>0</posx>
@@ -346,6 +355,15 @@
 					<focusedlayout width="300" height="462">
                         <control type="group">
                             <include>focusThumb</include>
+    						<control type="image">
+    							<posx>0</posx>
+    							<posy>0</posy>
+    							<width>252</width>
+    							<height>378</height>
+    							<aspectratio>stretch</aspectratio>
+    							<texture diffuse="masks/poster.png">colors/black.png</texture>
+    							<colordiffuse>FFFFFFFF</colordiffuse>
+    						</control>
                             <control type="image">
     							<posx>0</posx>
     							<posy>0</posy>

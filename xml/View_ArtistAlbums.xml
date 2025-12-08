@@ -140,6 +140,14 @@
 					<focusedlayout width="4-col" height="348">
 						<control type="group">
 							<include>focusThumb</include>
+    	                    <control type="image">
+    	                        <posx>0</posx>
+    	                        <posy>0</posy>
+    	                        <width>4-col-gutter</width>
+    	                        <height>4-col-gutter</height>
+    	                        <aspectratio>stretch</aspectratio>
+    	                        <texture diffuse="masks/albumThumb.png">colors/black.png</texture>
+    	                    </control>
 							<control type="image">
 								<posx>0</posx>
 								<posy>0</posy>

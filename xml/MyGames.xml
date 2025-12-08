@@ -3,7 +3,7 @@
     <defaultcontrol always="true">9999</defaultcontrol>
     <onload></onload>
     <include>fadeInOut</include>
-	<views>50,501,502</views>
+	<views>50</views>
     <controls>
         <!--page container group-->
         <control type="group">
@@ -15,14 +15,7 @@
                 <!--source content-->
                 <control type="group">
                     <include>contentOpen</include>
-                    <!--source content-->
-                    <control type="group" id="9500">
-                        <include>videofiles</include>
-                        <include>gamePlatform</include>
-                        <include>games</include>
-                    </control>
                     <control type="panel" id="50">
-                        <visible>!$EXP[isGame] + !$EXP[isGamePlatform]</visible>
 			            <posx>col-1-begin</posx>
 			            <posy>row-5-begin</posy>
 			            <width>24-col</width>
@@ -123,7 +116,7 @@
         <include>DebugGrid</include>
         <control type="label">
             <include>WindowID</include>
-            <label>$INFO[container(502).listitem.trailer] MyGames.xml path: $INFO[container.folderpath] folder: $INFO[container.foldername] content: $INFO[container(502).listitem.trailer]</label>
+            <label>MyGames.xml</label>
         </control>
     </controls>
 </window>

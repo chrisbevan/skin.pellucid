@@ -127,8 +127,8 @@
 			<thumb />
 			<property name="labelID">31232</property>
 			<property name="defaultID">31232</property>
-			<onclick>ActivateWindow(games,plugin://plugin.program.akl/sources)</onclick>
-			<property name="path">ActivateWindow(games,plugin://plugin.program.akl/sources)</property>
+			<onclick>ActivateWindow(games,addons)</onclick>
+			<property name="path">ActivateWindow(games,addons)</property>
 			<property name="list">games</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-31232</property>

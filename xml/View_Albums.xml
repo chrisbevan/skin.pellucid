@@ -289,6 +289,15 @@
 	                <focusedlayout width="4-col" height="360">
 	                    <control type="group">
 	                        <include>focusThumb</include>
+    						<control type="image">
+    	                        <posx>0</posx>
+    	                        <posy>0</posy>
+    	                        <width>4-col-gutter</width>
+    	                        <height>4-col-gutter</height>
+    	                        <aspectratio>stretch</aspectratio>
+    	                        <texture diffuse="masks/albumThumb.png">colors/black.png</texture>
+    	                        <colordiffuse>FFFFFFFF</colordiffuse>
+    	                    </control>
                             <control type="image">
                                 <visible>!ListItem.IsParentFolder</visible>
 	                            <posx>0</posx>

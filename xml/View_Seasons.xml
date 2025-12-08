@@ -140,7 +140,17 @@
                     </itemlayout>
                     <focusedlayout width="4-col" height="391">
                         <control type="group">
-                            <include>focusThumb</include>                  
+                            <include>focusThumb</include>
+    						<control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>252</width>
+                                <height>378</height>
+                                <aspectratio>stretch</aspectratio>
+                                <texture diffuse="masks/seasonPoster.png">colors/black.png</texture>
+                                <bordersize>0</bordersize>
+                                <colordiffuse>ffffffff</colordiffuse>
+                            </control>                  
 							<control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
